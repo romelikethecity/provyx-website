@@ -1606,17 +1606,23 @@ img {
 /* Pain Stats - Hero Section */
 .pain-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 3rem auto;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .pain-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pain-stats {
+    grid-template-columns: 1fr;
   }
 }
 

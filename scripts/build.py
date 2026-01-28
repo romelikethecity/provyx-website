@@ -41,12 +41,12 @@ CATEGORIES = {
         "short": "Mental Health",
         "description": "Access verified contact data for psychiatrists, therapists, counselors, and mental health clinics across the US.",
         "hero_title": "Mental Health Provider Data & Contact Lists",
-        "intro": "The mental health sector is growing fast, with provider shortages driving demand for accurate contact data. Whether you're selling EHR software to psychiatrists or recruiting therapists for a telehealth platform, you need data that goes beyond a name and address. Our mental health provider database includes direct emails, phone numbers, NPI details, taxonomy codes, and practice information for thousands of verified providers.",
+        "intro": "The mental health sector is growing fast, with provider shortages driving demand for accurate contact data. Whether you're selling EHR software to psychiatrists or recruiting therapists for a telehealth platform, you need data that goes beyond a name and address. Our mental health provider database includes practice details, owner contacts, NPI verification, taxonomy codes, and LinkedIn profiles for thousands of verified providers.",
     },
     "chiropractic": {
         "name": "Chiropractic",
         "short": "Chiropractic",
-        "description": "Verified chiropractor contact data with NPI, email, phone, and practice details for targeted outreach.",
+        "description": "Verified chiropractor practice data with NPI, owner contacts, and practice details for targeted outreach.",
         "hero_title": "Chiropractor Data & Contact Lists",
         "intro": "Chiropractors operate independently more often than most provider types, which makes them both easier to reach and harder to find accurate data for. Solo practices change addresses, phone numbers, and email systems frequently. Our chiropractic provider database tracks these changes continuously, giving you verified contact data you can actually use for outreach.",
     },
@@ -139,7 +139,7 @@ CATEGORIES = {
         "short": "Rheumatology",
         "description": "Rheumatologist contact data for arthritis, autoimmune disease, and inflammatory condition specialists.",
         "hero_title": "Rheumatology Provider Data & Contact Lists",
-        "intro": "Rheumatologists treat complex autoimmune and inflammatory conditions, making them high-priority targets for pharmaceutical companies and clinical research organizations. With a limited number of practicing rheumatologists in the US, accurate contact data is especially valuable. Our database covers rheumatology practices with verified emails, phone numbers, and practice details.",
+        "intro": "Rheumatologists treat complex autoimmune and inflammatory conditions, making them high-priority targets for pharmaceutical companies and clinical research organizations. With a limited number of practicing rheumatologists in the US, accurate contact data is especially valuable. Our database covers rheumatology practices with verified owner contacts, NPI details, and practice intelligence.",
     },
     "weight-loss": {
         "name": "Weight Loss",
@@ -161,11 +161,11 @@ CATEGORIES = {
 SUBTYPES = [
     # Mental Health
     ("psychiatrists", "Psychiatrists", "mental-health", ["psychiatry"],
-     "Verified psychiatrist contact data including direct emails, phone numbers, NPI details, and practice information for targeted outreach campaigns."),
+     "Verified psychiatrist practice data including owner contacts, NPI details, taxonomy codes, and practice information for targeted outreach campaigns."),
     ("psychiatric-nurse-practitioners", "Psychiatric Nurse Practitioners", "mental-health", ["MHNP", "psychiatric NP"],
      "Contact data for psychiatric nurse practitioners providing medication management and mental health treatment services."),
     ("psychotherapists", "Psychotherapists", "mental-health", [],
-     "Psychotherapist contact data with practice details, specialty focus areas, and verified email and phone information."),
+     "Psychotherapist practice data with owner contacts, specialty focus areas, and verified NPI information."),
     ("counselors", "Counselors", "mental-health", ["licensed counselors", "LPC"],
      "Licensed counselor contact data for outreach to individual, family, and group therapy providers."),
     ("therapists", "Therapists", "mental-health", ["licensed therapists"],
@@ -188,7 +188,7 @@ SUBTYPES = [
      "Crisis center and intervention program data for behavioral health emergency service providers."),
     # Chiropractic
     ("chiropractors", "Chiropractors", "chiropractic", ["chiropractic clinic", "chiropractic wellness"],
-     "Chiropractor contact data with verified emails, direct phone numbers, NPI records, and practice details."),
+     "Chiropractor practice data with verified owner contacts, NPI records, and practice details."),
     ("sports-chiropractors", "Sports Chiropractors", "chiropractic", [],
      "Sports chiropractic provider data for practitioners specializing in athletic injury treatment and performance."),
     ("functional-chiropractors", "Functional Chiropractors", "chiropractic", [],
@@ -201,7 +201,7 @@ SUBTYPES = [
     ("cosmetic-dentists", "Cosmetic Dentists", "dental", ["aesthetic dentist"],
      "Cosmetic dentist contact data for practices specializing in veneers, whitening, smile makeovers, and aesthetic procedures."),
     ("general-dentists", "General Dentists", "dental", ["family dentist", "general dentistry"],
-     "General dentist contact data with verified emails, phone numbers, and practice details for the largest dental segment."),
+     "General dentist practice data with verified owner contacts, NPI records, and practice details for the largest dental segment."),
     ("orthodontists", "Orthodontists", "dental", [],
      "Orthodontist contact data for providers offering braces, Invisalign, and other alignment treatments."),
     ("oral-surgeons", "Oral Surgeons", "dental", ["oral and maxillofacial surgery"],
@@ -232,7 +232,7 @@ SUBTYPES = [
      "Emergency dentist data for practices offering same-day and after-hours dental care services."),
     # Dermatology
     ("dermatologists", "Dermatologists", "dermatology", ["dermatology clinic", "medical dermatology"],
-     "Dermatologist contact data with specialty focus, practice size, and verified email and phone information."),
+     "Dermatologist practice data with specialty focus, practice size, and verified owner contact information."),
     ("cosmetic-dermatologists", "Cosmetic Dermatologists", "dermatology", [],
      "Cosmetic dermatology provider data for practices focused on aesthetic skin treatments and procedures."),
     ("skin-care-clinics", "Skin Care Clinics", "dermatology", [],
@@ -432,7 +432,7 @@ ICP_PAGES = [
         "slug": "healthcare-marketing-agencies",
         "name": "Healthcare Marketing Agencies",
         "title": "Provider Data for Healthcare Marketing Agencies",
-        "description": "Build targeted provider lists for your healthcare marketing clients. Verified emails, phones, and practice data.",
+        "description": "Build targeted provider lists for your healthcare marketing clients. Verified practice data and owner contacts.",
         "intro": "Your clients need patients. You need provider data to build referral networks, run outreach campaigns, and target the right practices. Generic B2B databases don't understand healthcare taxonomy codes, practice types, or provider specialties. Provyx gives you the provider-level data that makes campaigns actually work.",
         "use_cases": ["Build targeted email lists by specialty and geography", "Identify practices for digital advertising campaigns", "Create referral network maps for health systems", "Segment providers by practice size and technology stack"],
     },
@@ -563,7 +563,7 @@ def build_homepage():
 
     faqs = [
         {"question": "What kind of healthcare provider data does Provyx offer?",
-         "answer": "We provide verified contact data for healthcare providers across 40+ specialties. This includes direct emails, phone numbers, NPI details, taxonomy codes, practice addresses, and firmographic data like practice size and technology stack."},
+         "answer": "We provide verified practice data and owner contacts for healthcare providers across 40+ specialties. Every record includes practice name, address, business phone, website, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Direct email and mobile phone enrichment are available as add-ons."},
         {"question": "Where does Provyx source its provider data?",
          "answer": "Our data comes from public registries including the CMS NPI Registry, state licensing boards, commercial databases, and proprietary web intelligence. Every record is verified against multiple sources before delivery."},
         {"question": "How often is the provider data updated?",
@@ -571,7 +571,7 @@ def build_homepage():
         {"question": "Can I get a custom provider list for my specific needs?",
          "answer": "Yes. We build custom lists filtered by specialty, geography, practice size, technology stack, and other criteria. Tell us what you're targeting and we'll build a matched list."},
         {"question": "How is Provyx different from ZoomInfo or Apollo?",
-         "answer": "Generic B2B databases treat healthcare as one of many industries. ZoomInfo starts at $15K/year with annual contracts. Apollo isn't built for regulated industries like healthcare. Provyx is built exclusively for healthcare provider data with NPI verification, taxonomy code segmentation, and pay-per-record pricing with no annual contracts."},
+         "answer": "Generic B2B databases treat healthcare as one of many industries. ZoomInfo starts at $15K/year with annual contracts. Apollo isn't built for regulated industries like healthcare. Provyx is built exclusively for healthcare provider data with NPI verification, taxonomy code segmentation, and pay-per-record pricing. We deliver in days, not weeks, with no annual contracts."},
     ]
 
     # Build category cards for the hub links on homepage
@@ -587,7 +587,7 @@ def build_homepage():
         <section class="hero section">
             <div class="container hero__content">
                 <h1 class="hero__title">Find Any Healthcare Provider. Get Their Data.</h1>
-                <p class="hero__subtitle">Verified contact data for 40+ healthcare specialties. NPI-verified emails, phones, practice details, and technology data. No annual contracts. Pay per record.</p>
+                <p class="hero__subtitle">Practice data, owner contacts, and provider intelligence for 40+ healthcare specialties. NPI-verified. Delivered in days, not weeks. No annual contracts.</p>
                 <div class="hero__buttons">
                     <a href="/contact/" class="btn btn--primary btn--lg">Get Provider Data</a>
                     <a href="/providers/" class="btn btn--secondary btn--lg">Browse Specialties</a>
@@ -595,6 +595,7 @@ def build_homepage():
                 <div class="pain-stats">
                     <div class="pain-stat"><span class="pain-stat__number">2.4M+</span><span class="pain-stat__label">Provider Records</span></div>
                     <div class="pain-stat"><span class="pain-stat__number">40+</span><span class="pain-stat__label">Specialties</span></div>
+                    <div class="pain-stat"><span class="pain-stat__number">Days</span><span class="pain-stat__label">Not Weeks</span></div>
                     <div class="pain-stat"><span class="pain-stat__number">No</span><span class="pain-stat__label">Annual Contract</span></div>
                 </div>
             </div>
@@ -636,7 +637,7 @@ def build_homepage():
                     <a href="/services/provider-contact-data/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg></div>
                         <h3 class="service-card__title">Provider Contact Data</h3>
-                        <p class="service-card__text">Direct emails, phone numbers, and mailing addresses for healthcare providers. NPI-verified against the CMS registry.</p>
+                        <p class="service-card__text">Practice details, owner names, business phone, website, and LinkedIn profile for healthcare providers. NPI-verified against the CMS registry.</p>
                     </a>
                     <a href="/services/practice-location-data/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg></div>
@@ -736,7 +737,7 @@ def build_homepage():
 
     html = get_page_wrapper(
         title="Healthcare Provider Data & Contact Intelligence",
-        description="Healthcare provider contact data across 40+ specialties. NPI-verified emails, phones, practice details. No annual contracts. Pay per record.",
+        description="Healthcare provider data across 40+ specialties. Practice details, owner contacts, NPI verification. Delivered in days. No annual contracts. Pay per record.",
         canonical_path="/",
         body_content=body,
         extra_schema=extra_schema,
@@ -772,7 +773,7 @@ def build_about():
                 <p>We source data from public registries (CMS NPI Registry, state licensing boards), commercial databases, and proprietary web intelligence. Every record is verified against multiple sources before it enters our database. We don't scrape and dump. We build verified provider profiles with the data points that matter for B2B outreach.</p>
                 <ul>
                     <li>NPI-verified provider records across 40+ specialties</li>
-                    <li>Direct emails, phone numbers, and mailing addresses</li>
+                    <li>Practice details, owner contacts, LinkedIn profiles</li>
                     <li>Practice-level data: size, location, technology, ownership</li>
                     <li>Continuous verification to catch moves, closures, and staff changes</li>
                     <li>Custom list building for targeted campaigns</li>
@@ -873,14 +874,16 @@ def build_pricing():
     ]
 
     faqs = [
-        {"question": "What's included in the per-record price?",
-         "answer": "Each record includes the provider's name, NPI number, specialty/taxonomy code, practice name, address, and available contact information (email, phone). Additional data points like technology stack or firmographics may be included depending on your plan."},
+        {"question": "What's included in each record?",
+         "answer": "Every record includes practice name, address, business phone, website URL, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Growth plans add practice firmographics and technology detection."},
         {"question": "Can I get a sample before purchasing?",
          "answer": "Yes. We provide a free sample of 25-50 records matched to your target criteria so you can validate data quality before committing to a purchase."},
-        {"question": "Do you offer ongoing data subscriptions?",
-         "answer": "Yes. Growth and Enterprise plans include regular data refreshes. We can also set up custom delivery schedules based on your team's cadence."},
+        {"question": "Do you offer email or mobile phone data?",
+         "answer": "Yes. Direct email and mobile phone enrichment are available as add-ons. Contact us for enrichment pricing based on your volume and match rate requirements."},
+        {"question": "How fast can I get my data?",
+         "answer": "Most orders ship within a few business days. We routinely turn around 10,000+ records in a single day for standard specialties and geographies. Custom requests with unusual filtering criteria may take longer."},
         {"question": "What if I need a specialty or geography you don't cover?",
-         "answer": "Contact us. We can build custom datasets for specialties or regions outside our standard coverage. Turnaround is typically 5-10 business days for custom requests."},
+         "answer": "Contact us. We can build custom datasets for specialties or regions outside our standard coverage."},
     ]
 
     extra_schema = get_breadcrumb_schema(breadcrumbs)
@@ -890,7 +893,7 @@ def build_pricing():
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
                 <h1 class="page-hero__title">Simple, Transparent Pricing</h1>
-                <p class="page-hero__subtitle">Pay for the data you need. No annual contracts required.</p>
+                <p class="page-hero__subtitle">Pay per record. No annual contracts. Delivered in days, not weeks.</p>
             </div>
         </section>
 
@@ -899,27 +902,30 @@ def build_pricing():
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <h3 class="pricing-card__name">Starter</h3>
-                        <div class="pricing-card__price">$500</div>
+                        <div class="pricing-card__price">$750</div>
                         <div class="pricing-card__period">one-time purchase</div>
                         <ul class="pricing-card__features">
                             <li>Up to 1,000 provider records</li>
-                            <li>Name, NPI, specialty, address</li>
-                            <li>Available email and phone</li>
+                            <li>Practice name, address, business phone</li>
+                            <li>Owner / decision-maker name</li>
+                            <li>NPI number and taxonomy codes</li>
+                            <li>Website URL and LinkedIn profile</li>
                             <li>CSV or Excel delivery</li>
-                            <li>One-time purchase</li>
+                            <li>Delivered in days, not weeks</li>
                         </ul>
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Get Started</a>
                     </div>
                     <div class="pricing-card pricing-card--featured">
                         <h3 class="pricing-card__name">Growth</h3>
                         <div class="pricing-card__price">$2,500</div>
-                        <div class="pricing-card__period">per month</div>
+                        <div class="pricing-card__period">5,000 records</div>
                         <ul class="pricing-card__features">
-                            <li>Up to 10,000 records/month</li>
-                            <li>All Starter data points</li>
+                            <li>Up to 5,000 provider records</li>
+                            <li>Everything in Starter</li>
                             <li>Practice firmographics</li>
                             <li>Technology detection</li>
-                            <li>Monthly data refresh</li>
+                            <li>Volume pricing at $0.50/record</li>
+                            <li>Delivered in days, not weeks</li>
                             <li>Dedicated support</li>
                         </ul>
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Contact Us</a>
@@ -927,17 +933,20 @@ def build_pricing():
                     <div class="pricing-card">
                         <h3 class="pricing-card__name">Enterprise</h3>
                         <div class="pricing-card__price">Custom</div>
-                        <div class="pricing-card__period">annual agreement</div>
+                        <div class="pricing-card__period">10,000+ records</div>
                         <ul class="pricing-card__features">
-                            <li>Unlimited records</li>
-                            <li>All Growth data points</li>
+                            <li>10,000+ provider records</li>
+                            <li>Everything in Growth</li>
                             <li>API access</li>
                             <li>Custom enrichment fields</li>
-                            <li>Continuous data refresh</li>
+                            <li>Ongoing data refresh</li>
                             <li>SLA and priority support</li>
                         </ul>
                         <a href="/contact/" class="btn btn--secondary" style="width:100%">Talk to Sales</a>
                     </div>
+                </div>
+                <div style="margin-top:2rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
+                    <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Need verified email or mobile?</strong> Direct email and mobile phone enrichment available as add-ons. <a href="/contact/">Contact us</a> for enrichment pricing based on your volume.</p>
                 </div>
             </div>
         </section>
@@ -947,7 +956,7 @@ def build_pricing():
 
     html = get_page_wrapper(
         title="Pricing",
-        description="Provyx healthcare provider data pricing. Plans from $500 for starter lists to custom enterprise agreements. No annual contracts required.",
+        description="Provyx healthcare provider data pricing starting at $0.50/record. Practice data, owner contacts, NPI verification. No annual contracts. Delivered in days.",
         canonical_path="/pricing/",
         body_content=body,
         active_page="/pricing/",
@@ -1110,7 +1119,7 @@ SERVICES = [
     {
         "slug": "provider-contact-data",
         "title": "Provider Contact Data",
-        "description": "Verified healthcare provider emails, phone numbers, and mailing addresses. NPI-verified against the CMS registry.",
+        "description": "Verified healthcare provider contacts, practice details, and owner identification. NPI-verified against the CMS registry.",
         "intro": "Direct provider contacts are the foundation of healthcare B2B outreach. But generic databases serve up stale records scraped months ago. Our provider contact data is verified against the CMS NPI Registry, so you're reaching real providers at their current practice. No annual contracts required.",
         "features": [
             ("Direct Email Addresses", "Verified provider and practice email addresses, not generic info@ accounts."),
@@ -1349,7 +1358,7 @@ def build_hub_page(cat_key, cat_data):
 
     faqs = [
         {"question": f"What {cat_data['short'].lower()} provider data does Provyx offer?",
-         "answer": f"We provide verified contact data for {len(cat_subtypes)} types of {cat_data['short'].lower()} providers, including direct emails, phone numbers, NPI details, taxonomy codes, and practice information. All records are verified against the CMS NPI Registry."},
+         "answer": f"We provide verified practice data and owner contacts for {len(cat_subtypes)} types of {cat_data['short'].lower()} providers, including practice details, NPI numbers, taxonomy codes, website, and LinkedIn profile. All records are verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons."},
         {"question": f"How is {cat_data['short'].lower()} data different from generic provider databases?",
          "answer": f"Generic databases lump all healthcare providers together without understanding {cat_data['short'].lower()} specialty distinctions. We segment by specific provider subtypes, making it easy to target exactly the right {cat_data['short'].lower()} providers for your campaign."},
         {"question": f"How often is the {cat_data['short'].lower()} provider data updated?",
@@ -1357,7 +1366,7 @@ def build_hub_page(cat_key, cat_data):
         {"question": f"Can I get a custom {cat_data['short'].lower()} provider list?",
          "answer": f"Yes. We build custom lists filtered by specific {cat_data['short'].lower()} subtypes, geography, practice size, and other criteria. Contact us with your requirements and we'll put together a matched list."},
         {"question": f"What data fields are included for {cat_data['short'].lower()} providers?",
-         "answer": "Every record includes provider name, NPI number, taxonomy code, practice name, address, and available contact information (email, phone). Additional fields like practice size, technology stack, and ownership type are available on Growth and Enterprise plans."},
+         "answer": "Every record includes practice name, address, business phone, website URL, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Growth plans add practice firmographics and technology detection. Direct email and mobile enrichment available as add-ons."},
     ]
 
     spoke_cards = ""
@@ -1428,7 +1437,7 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
 
     faqs = [
         {"question": f"What {name_lower} data does Provyx provide?",
-         "answer": f"We provide verified contact data for {name_lower} including direct emails, phone numbers, NPI details, taxonomy codes, practice addresses, and available firmographic data. Every record is verified against the CMS NPI Registry."},
+         "answer": f"We provide verified practice data for {name_lower} including owner contacts, NPI details, taxonomy codes, practice addresses, website, and LinkedIn profile. Every record is verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons."},
         {"question": f"How accurate is the {name_lower} contact data?",
          "answer": f"Our {name_lower} data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We continuously verify records to catch moves, closures, and contact changes."},
         {"question": f"Can I filter {name_lower} data by geography?",
@@ -1544,7 +1553,7 @@ def build_icp_page(icp):
                 </ul>
 
                 <h2>Data You Get</h2>
-                <p>Every provider record includes name, NPI, specialty, practice address, and available contact information. Depending on your plan, you also get practice firmographics, technology detection, social profiles, and custom enrichment fields.</p>
+                <p>Every provider record includes practice name, address, business phone, website, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Volume plans add practice firmographics and technology detection. Direct email and mobile enrichment available as add-ons.</p>
                 <p><a href="/pricing/">See pricing plans</a> or <a href="/contact/">request a custom list</a> for your specific needs.</p>
             </div>
         </section>
