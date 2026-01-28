@@ -493,24 +493,24 @@ COMPARISONS = [
         "competitor": "ZoomInfo",
         "title": "Provyx vs ZoomInfo for Healthcare Data",
         "description": "Compare Provyx and ZoomInfo for healthcare provider data. See why healthcare-focused data outperforms generic B2B databases.",
-        "competitor_cons": ["Generic B2B database not built for healthcare", "Provider data is a small fraction of their total dataset", "No NPI verification or taxonomy code filtering", "Expensive enterprise contracts with healthcare as an add-on"],
-        "provyx_pros": ["Built specifically for healthcare provider data", "NPI-verified with taxonomy code segmentation", "Practice-level intelligence beyond basic contacts", "Pricing designed for healthcare data buyers"],
+        "competitor_cons": ["Generic B2B database covering 50+ industries", "Starts at $14,995/yr with 60-day cancellation traps", "No NPI verification or taxonomy code filtering", "10-30% price hikes at renewal with auto-renewal lock-in"],
+        "provyx_pros": ["Built exclusively for healthcare provider data", "Pay per record with no annual contract required", "NPI-verified with full taxonomy code segmentation", "Transparent pricing. No hidden fees or renewal surprises."],
     },
     {
         "slug": "provyx-vs-definitive-healthcare",
         "competitor": "Definitive Healthcare",
         "title": "Provyx vs Definitive Healthcare",
         "description": "Compare Provyx and Definitive Healthcare for provider contact data. Purpose-built intelligence vs enterprise platform.",
-        "competitor_cons": ["Enterprise pricing starting at $30K+ annually", "Complex platform with steep learning curve", "Hospital and health system focus over individual providers", "Long sales cycle and annual contract commitments"],
-        "provyx_pros": ["Accessible pricing for teams of any size", "Simple data delivery without platform complexity", "Strong individual provider and practice-level data", "Flexible engagement from one-time lists to ongoing feeds"],
+        "competitor_cons": ["Enterprise pricing from $25K to $100K+ annually", "Complex platform with unintuitive search and data exports", "$22K add-on just for Salesforce integration", "Auto-renewal contracts with 5% annual uplifts"],
+        "provyx_pros": ["Accessible pricing with no annual contract required", "Simple data delivery: CSV, Excel, or API", "Strong individual provider and practice-level data", "Flexible engagement from one-time lists to ongoing feeds"],
     },
     {
         "slug": "provyx-vs-apollo",
         "competitor": "Apollo",
         "title": "Provyx vs Apollo for Healthcare Data",
         "description": "Compare Provyx and Apollo.io for healthcare provider outreach. Specialized healthcare data vs general sales intelligence.",
-        "competitor_cons": ["General purpose sales tool not designed for healthcare", "Healthcare provider coverage is shallow and unverified", "No NPI data, taxonomy codes, or practice intelligence", "Email data quality varies significantly for healthcare contacts"],
-        "provyx_pros": ["Healthcare-first database with deep provider coverage", "NPI-verified contacts with specialty taxonomy data", "Practice-level details generic tools can't provide", "Data quality validated against public healthcare registries"],
+        "competitor_cons": ["General purpose sales tool flagged as non-compliant for healthcare", "Up to 35% email bounce rates reported by users", "No NPI data, taxonomy codes, or practice intelligence", "Confusing credit system with unexpected caps and overages"],
+        "provyx_pros": ["Built exclusively for healthcare provider data", "NPI-verified contacts with specialty taxonomy data", "Practice-level details generic tools can't provide", "Transparent pay-per-record pricing. No credit games."],
     },
 ]
 
@@ -520,13 +520,13 @@ ALTERNATIVES = [
         "slug": "zoominfo-alternative",
         "competitor": "ZoomInfo",
         "title": "Best ZoomInfo Alternative for Healthcare Data",
-        "description": "Looking for a ZoomInfo alternative for healthcare provider data? Provyx offers specialized, NPI-verified provider contacts.",
+        "description": "Looking for a ZoomInfo alternative for healthcare data? Provyx offers NPI-verified provider contacts. No $15K annual contract required.",
     },
     {
         "slug": "definitive-healthcare-alternative",
         "competitor": "Definitive Healthcare",
         "title": "Best Definitive Healthcare Alternative",
-        "description": "Need a Definitive Healthcare alternative? Provyx provides accessible healthcare provider data without enterprise pricing.",
+        "description": "Need a Definitive Healthcare alternative? Provyx provides NPI-verified provider data without $25K+ annual contracts.",
     },
 ]
 
@@ -571,7 +571,7 @@ def build_homepage():
         {"question": "Can I get a custom provider list for my specific needs?",
          "answer": "Yes. We build custom lists filtered by specialty, geography, practice size, technology stack, and other criteria. Tell us what you're targeting and we'll build a matched list."},
         {"question": "How is Provyx different from ZoomInfo or Apollo?",
-         "answer": "Generic B2B databases treat healthcare as one of many industries. Provyx is built specifically for healthcare provider data. We verify against NPI registries, segment by medical taxonomy codes, and include practice-level details that general databases don't capture."},
+         "answer": "Generic B2B databases treat healthcare as one of many industries. ZoomInfo starts at $15K/year with annual contracts. Apollo isn't built for regulated industries like healthcare. Provyx is built exclusively for healthcare provider data with NPI verification, taxonomy code segmentation, and pay-per-record pricing with no annual contracts."},
     ]
 
     # Build category cards for the hub links on homepage
@@ -587,7 +587,7 @@ def build_homepage():
         <section class="hero section">
             <div class="container hero__content">
                 <h1 class="hero__title">Find Any Healthcare Provider. Get Their Data.</h1>
-                <p class="hero__subtitle">Verified contact data for 40+ healthcare specialties. NPI-verified emails, phones, practice details, and technology data. 98%+ accuracy guaranteed.</p>
+                <p class="hero__subtitle">Verified contact data for 40+ healthcare specialties. NPI-verified emails, phones, practice details, and technology data. No annual contracts. Pay per record.</p>
                 <div class="hero__buttons">
                     <a href="/contact/" class="btn btn--primary btn--lg">Get Provider Data</a>
                     <a href="/providers/" class="btn btn--secondary btn--lg">Browse Specialties</a>
@@ -595,7 +595,7 @@ def build_homepage():
                 <div class="pain-stats">
                     <div class="pain-stat"><span class="pain-stat__number">2.4M+</span><span class="pain-stat__label">Provider Records</span></div>
                     <div class="pain-stat"><span class="pain-stat__number">40+</span><span class="pain-stat__label">Specialties</span></div>
-                    <div class="pain-stat"><span class="pain-stat__number">98%+</span><span class="pain-stat__label">Data Accuracy</span></div>
+                    <div class="pain-stat"><span class="pain-stat__number">No</span><span class="pain-stat__label">Annual Contract</span></div>
                 </div>
             </div>
         </section>
@@ -614,13 +614,13 @@ def build_homepage():
                     </div>
                     <div class="problem-card">
                         <div class="problem-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
-                        <h3 class="problem-card__title">You're Paying Too Much for Bad Data</h3>
-                        <p class="problem-card__text">Enterprise data platforms charge $30K+ per year and still deliver stale provider contacts. Bounce rates over 15% are common because the data was never verified against healthcare registries.</p>
+                        <h3 class="problem-card__title">$15K+ Annual Contracts for Bad Data</h3>
+                        <p class="problem-card__text">ZoomInfo starts at $15K/year. Definitive Healthcare at $25K+. Both lock you into annual contracts with auto-renewal traps and 10-30% price hikes. And you still get stale provider contacts with bounce rates over 15%.</p>
                     </div>
                     <div class="problem-card">
                         <div class="problem-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.172 16.172a4 4 0 0 1 5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
                         <h3 class="problem-card__title">Generic Vendors Don't Get Healthcare</h3>
-                        <p class="problem-card__text">You can't filter by NPI taxonomy code in ZoomInfo. You can't segment by practice type in Apollo. Healthcare requires healthcare-specific data infrastructure.</p>
+                        <p class="problem-card__text">You can't filter by NPI taxonomy code in ZoomInfo. Apollo isn't even built for regulated industries. Healthcare provider data requires healthcare-specific infrastructure, not a generic B2B database with healthcare bolted on.</p>
                     </div>
                 </div>
             </div>
@@ -636,7 +636,7 @@ def build_homepage():
                     <a href="/services/provider-contact-data/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg></div>
                         <h3 class="service-card__title">Provider Contact Data</h3>
-                        <p class="service-card__text">Direct emails, phone numbers, and mailing addresses for healthcare providers. NPI-verified with 98%+ accuracy.</p>
+                        <p class="service-card__text">Direct emails, phone numbers, and mailing addresses for healthcare providers. NPI-verified against the CMS registry.</p>
                     </a>
                     <a href="/services/practice-location-data/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg></div>
@@ -665,11 +665,12 @@ def build_homepage():
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Healthcare is one of 50+ industries</td><td>Healthcare is our only focus</td></tr>
+                        <tr><td>Healthcare is one of 50+ industries</td><td>Built exclusively for healthcare</td></tr>
                         <tr><td>No NPI verification</td><td>Every record verified against NPI registry</td></tr>
                         <tr><td>Can't filter by taxonomy code</td><td>Full taxonomy code segmentation</td></tr>
-                        <tr><td>Quarterly or monthly refreshes</td><td>Continuous multi-source verification</td></tr>
-                        <tr><td>$25K+ annual enterprise contracts</td><td>Flexible pricing from $500/month</td></tr>
+                        <tr><td>Annual contracts starting at $15,000</td><td>Pay per record. Cancel anytime.</td></tr>
+                        <tr><td>60-day cancellation windows</td><td>No lock-in. No auto-renewal traps.</td></tr>
+                        <tr><td>$22K+ for CRM integration add-ons</td><td>CSV, Excel, or API. No hidden fees.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -693,7 +694,7 @@ def build_homepage():
 
     html = get_page_wrapper(
         title="Healthcare Provider Data & Contact Intelligence",
-        description="Verified healthcare provider contact data across 40+ specialties. NPI-verified emails, phones, practice details. 98%+ accuracy. Custom lists available.",
+        description="Healthcare provider contact data across 40+ specialties. NPI-verified emails, phones, practice details. No annual contracts. Pay per record.",
         canonical_path="/",
         body_content=body,
         extra_schema=extra_schema,
@@ -747,7 +748,7 @@ def build_about():
 
     html = get_page_wrapper(
         title="About Provyx",
-        description="Provyx builds healthcare provider databases for B2B teams. NPI-verified contacts across 40+ specialties with 98%+ accuracy.",
+        description="Provyx builds healthcare provider databases for B2B teams. NPI-verified contacts across 40+ specialties. No annual contracts.",
         canonical_path="/about/",
         body_content=body,
         active_page="/about/",
@@ -1067,8 +1068,8 @@ SERVICES = [
     {
         "slug": "provider-contact-data",
         "title": "Provider Contact Data",
-        "description": "Verified healthcare provider emails, phone numbers, and mailing addresses. NPI-verified with 98%+ accuracy.",
-        "intro": "Direct provider contacts are the foundation of healthcare B2B outreach. But generic databases serve up stale records scraped months ago. Our provider contact data is verified against the CMS NPI Registry with 98%+ accuracy, so you're reaching real providers at their current practice.",
+        "description": "Verified healthcare provider emails, phone numbers, and mailing addresses. NPI-verified against the CMS registry.",
+        "intro": "Direct provider contacts are the foundation of healthcare B2B outreach. But generic databases serve up stale records scraped months ago. Our provider contact data is verified against the CMS NPI Registry, so you're reaching real providers at their current practice. No annual contracts required.",
         "features": [
             ("Direct Email Addresses", "Verified provider and practice email addresses, not generic info@ accounts."),
             ("Phone Numbers", "Direct lines and office numbers with extension data where available."),
@@ -1385,7 +1386,7 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
 
     faqs = [
         {"question": f"What {name_lower} data does Provyx provide?",
-         "answer": f"We provide verified contact data for {name_lower} including direct emails, phone numbers, NPI details, taxonomy codes, practice addresses, and available firmographic data. Every record is verified against the CMS NPI Registry with 98%+ accuracy."},
+         "answer": f"We provide verified contact data for {name_lower} including direct emails, phone numbers, NPI details, taxonomy codes, practice addresses, and available firmographic data. Every record is verified against the CMS NPI Registry."},
         {"question": f"How accurate is the {name_lower} contact data?",
          "answer": f"Our {name_lower} data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We continuously verify records to catch moves, closures, and contact changes."},
         {"question": f"Can I filter {name_lower} data by geography?",
@@ -1562,7 +1563,7 @@ def build_comparison_page(comp):
             <div class="container" style="max-width:800px">
                 <h2>Why Healthcare Teams Choose Provyx Over {comp["competitor"]}</h2>
                 <p>{comp["competitor"]} is a well-known platform, but it wasn't built for healthcare provider data. If you're targeting specific medical specialties, need NPI-verified contacts, or want to segment by taxonomy code, you need a database built for healthcare from the ground up.</p>
-                <p>Provyx focuses exclusively on healthcare provider data. Every record is verified against the CMS NPI Registry. You can filter by medical specialty, practice type, geography, and technology stack. And you don't need a $30K enterprise contract to get started.</p>
+                <p>Provyx focuses exclusively on healthcare provider data. Every record is verified against the CMS NPI Registry. You can filter by medical specialty, practice type, geography, and technology stack. No annual contracts, no auto-renewal traps, no hidden add-on fees.</p>
             </div>
         </section>
 
@@ -1599,16 +1600,16 @@ def build_alternative_page(alt):
         <section class="section content">
             <div class="container" style="max-width:800px">
                 <h2>Why Look for a {alt["competitor"]} Alternative?</h2>
-                <p>Teams searching for a {alt["competitor"]} alternative for healthcare data usually have one of three problems: the pricing doesn't fit their budget, the healthcare provider coverage isn't deep enough, or the platform complexity exceeds what they actually need.</p>
+                <p>Teams searching for a {alt["competitor"]} alternative for healthcare data usually have one of three problems: the annual contract doesn't fit their budget, the healthcare provider coverage isn't deep enough, or the platform complexity exceeds what they actually need.</p>
 
-                <h2>Provyx: Built for Healthcare Provider Data</h2>
-                <p>Provyx is a healthcare-first provider data platform. We don't try to cover every industry. We focus on healthcare providers across 40+ specialties with NPI-verified contacts, taxonomy code segmentation, and practice-level intelligence.</p>
+                <h2>Provyx: Built Exclusively for Healthcare</h2>
+                <p>Provyx is a healthcare-only provider data platform. We don't try to cover every industry. We focus on healthcare providers across 40+ specialties with NPI-verified contacts, taxonomy code segmentation, and practice-level intelligence. No annual contracts. No auto-renewal traps. Pay for the data you need.</p>
 
                 <h2>What Makes Provyx Different</h2>
                 <ul class="benefits-list">
+                    <li>Built exclusively for healthcare provider data</li>
                     <li>NPI-verified provider records across 40+ specialties</li>
-                    <li>98%+ data accuracy through multi-source verification</li>
-                    <li>Flexible pricing from $500 one-time to enterprise plans</li>
+                    <li>No annual contracts. Pay per record. Cancel anytime.</li>
                     <li>Practice-level data: size, technology, ownership</li>
                     <li>Custom list building for targeted campaigns</li>
                 </ul>
