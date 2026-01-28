@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="provyxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9"/>
+      <stop offset="100%" style="stop-color:#1B2A4A"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="256" height="256" rx="56" ry="56" fill="url(#provyxGrad)"/>
+  <path d="M128 48 C88 48 60 78 60 112 C60 156 128 208 128 208 C128 208 196 156 196 112 C196 78 168 48 128 48 Z" fill="white"/>
+  <circle cx="128" cy="108" r="24" fill="url(#provyxGrad)"/>
+</svg>

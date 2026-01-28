@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" width="64" height="80">
+  <!-- Pin icon without background - white version for dark backgrounds -->
+  <path d="M32 0 C16 0 4 13 4 28 C4 46 32 72 32 72 C32 72 60 46 60 28 C60 13 48 0 32 0 Z" fill="white"/>
+  <circle cx="32" cy="26" r="10" fill="#1B2A4A"/>
+</svg>

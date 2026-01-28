@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F1B2D"/>
+      <stop offset="100%" style="stop-color:#1B2A4A"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9"/>
+      <stop offset="100%" style="stop-color:#1B2A4A"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800');
+      .wordmark { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 800; }
+      .tagline { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 500; }
+    </style>
+  </defs>
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <!-- Icon -->
+  <rect x="430" y="160" width="100" height="100" rx="22" ry="22" fill="url(#iconGrad)"/>
+  <path d="M480 178 C468 178 460 187 460 196 C460 210 480 226 480 226 C480 226 500 210 500 196 C500 187 492 178 480 178 Z" fill="white"/>
+  <circle cx="480" cy="195" r="9" fill="url(#iconGrad)"/>
+  <!-- Wordmark -->
+  <text x="548" y="237" class="wordmark" font-size="60" fill="white" letter-spacing="-1">Provyx</text>
+  <!-- Tagline -->
+  <text x="600" y="340" class="tagline" font-size="22" fill="#94A3B8" letter-spacing="3" text-anchor="middle">HEALTHCARE PROVIDER INTELLIGENCE</text>
+  <!-- URL -->
+  <text x="600" y="500" class="tagline" font-size="18" fill="#64748B" letter-spacing="1" text-anchor="middle">getprovyx.com</text>
+</svg>

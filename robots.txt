@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getprovyx.com/sitemap.xml
