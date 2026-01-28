@@ -24,7 +24,7 @@ from templates import (
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FORMSPREE_ID = "xpznqkdl"  # placeholder
+FORMSPREE_ID = "mrekgwqk"
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
 # Track all generated paths for sitemap
@@ -48,7 +48,7 @@ CATEGORIES = {
         "short": "Chiropractic",
         "description": "Verified chiropractor contact data with NPI, email, phone, and practice details for targeted outreach.",
         "hero_title": "Chiropractor Data & Contact Lists",
-        "intro": "Chiropractors operate independently more often than most provider types, which makes them both easier to reach and harder to find accurate data for. Solo practices change addresses, phone numbers, and email systems frequently. Our chiropractic provider database tracks these changes weekly, giving you verified contact data you can actually use for outreach.",
+        "intro": "Chiropractors operate independently more often than most provider types, which makes them both easier to reach and harder to find accurate data for. Solo practices change addresses, phone numbers, and email systems frequently. Our chiropractic provider database tracks these changes continuously, giving you verified contact data you can actually use for outreach.",
     },
     "dental": {
         "name": "Dental",
@@ -90,7 +90,7 @@ CATEGORIES = {
         "short": "Medical Spas",
         "description": "Medical spa and aesthetic clinic data with owner contacts, service offerings, and practice details.",
         "hero_title": "Medical Spa & Aesthetics Provider Data",
-        "intro": "The med spa industry has exploded, with new clinics opening weekly across the country. These businesses blend medical oversight with consumer aesthetics, creating a unique sales environment. Decision-makers are often the medical director or business owner, not a traditional office manager. Our med spa database identifies these contacts directly.",
+        "intro": "The med spa industry has exploded, with new clinics opening constantly across the country. These businesses blend medical oversight with consumer aesthetics, creating a unique sales environment. Decision-makers are often the medical director or business owner, not a traditional office manager. Our med spa database identifies these contacts directly.",
     },
     "womens-health": {
         "name": "OB/GYN & Women's Health",
@@ -567,7 +567,7 @@ def build_homepage():
         {"question": "Where does Provyx source its provider data?",
          "answer": "Our data comes from public registries including the CMS NPI Registry, state licensing boards, commercial databases, and proprietary web intelligence. Every record is verified against multiple sources before delivery."},
         {"question": "How often is the provider data updated?",
-         "answer": "We refresh our database weekly. Provider contact information changes frequently as staff turn over and practices move. Weekly updates ensure you're working with current data, not records that are months old."},
+         "answer": "We continuously verify and refresh our database. Provider contact information changes frequently as staff turn over and practices move. Our multi-source verification process catches these changes so you're working with current data, not records that are months old."},
         {"question": "Can I get a custom provider list for my specific needs?",
          "answer": "Yes. We build custom lists filtered by specialty, geography, practice size, technology stack, and other criteria. Tell us what you're targeting and we'll build a matched list."},
         {"question": "How is Provyx different from ZoomInfo or Apollo?",
@@ -587,7 +587,7 @@ def build_homepage():
         <section class="hero section">
             <div class="container hero__content">
                 <h1 class="hero__title">Find Any Healthcare Provider. Get Their Data.</h1>
-                <p class="hero__subtitle">Verified contact data for 40+ healthcare specialties. NPI-verified emails, phones, practice details, and technology data. Updated weekly.</p>
+                <p class="hero__subtitle">Verified contact data for 40+ healthcare specialties. NPI-verified emails, phones, practice details, and technology data. 98%+ accuracy guaranteed.</p>
                 <div class="hero__buttons">
                     <a href="/contact/" class="btn btn--primary btn--lg">Get Provider Data</a>
                     <a href="/providers/" class="btn btn--secondary btn--lg">Browse Specialties</a>
@@ -595,7 +595,7 @@ def build_homepage():
                 <div class="pain-stats">
                     <div class="pain-stat"><span class="pain-stat__number">2.4M+</span><span class="pain-stat__label">Provider Records</span></div>
                     <div class="pain-stat"><span class="pain-stat__number">40+</span><span class="pain-stat__label">Specialties</span></div>
-                    <div class="pain-stat"><span class="pain-stat__number">Weekly</span><span class="pain-stat__label">Data Refresh</span></div>
+                    <div class="pain-stat"><span class="pain-stat__number">98%+</span><span class="pain-stat__label">Data Accuracy</span></div>
                 </div>
             </div>
         </section>
@@ -636,7 +636,7 @@ def build_homepage():
                     <a href="/services/provider-contact-data/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg></div>
                         <h3 class="service-card__title">Provider Contact Data</h3>
-                        <p class="service-card__text">Direct emails, phone numbers, and mailing addresses for healthcare providers. NPI-verified and updated weekly.</p>
+                        <p class="service-card__text">Direct emails, phone numbers, and mailing addresses for healthcare providers. NPI-verified with 98%+ accuracy.</p>
                     </a>
                     <a href="/services/practice-location-data/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg></div>
@@ -668,7 +668,7 @@ def build_homepage():
                         <tr><td>Healthcare is one of 50+ industries</td><td>Healthcare is our only focus</td></tr>
                         <tr><td>No NPI verification</td><td>Every record verified against NPI registry</td></tr>
                         <tr><td>Can't filter by taxonomy code</td><td>Full taxonomy code segmentation</td></tr>
-                        <tr><td>Quarterly or monthly refreshes</td><td>Weekly data refresh cycle</td></tr>
+                        <tr><td>Quarterly or monthly refreshes</td><td>Continuous multi-source verification</td></tr>
                         <tr><td>$25K+ annual enterprise contracts</td><td>Flexible pricing from $500/month</td></tr>
                     </tbody>
                 </table>
@@ -693,7 +693,7 @@ def build_homepage():
 
     html = get_page_wrapper(
         title="Healthcare Provider Data & Contact Intelligence",
-        description="Verified healthcare provider contact data across 40+ specialties. NPI-verified emails, phones, practice details. Updated weekly. Custom lists available.",
+        description="Verified healthcare provider contact data across 40+ specialties. NPI-verified emails, phones, practice details. 98%+ accuracy. Custom lists available.",
         canonical_path="/",
         body_content=body,
         extra_schema=extra_schema,
@@ -723,7 +723,7 @@ def build_about():
             <div class="container" style="max-width:800px">
                 <h2>Healthcare Data Shouldn't Be This Hard</h2>
                 <p>If you've tried to buy healthcare provider contact data, you already know the problem. The big platforms charge enterprise prices for databases that are 30% stale. Generic B2B tools don't understand the difference between an NPI taxonomy code and a SIC code. And the cheap data brokers sell lists that bounce at 20%+.</p>
-                <p>We built Provyx because healthcare provider data requires healthcare-specific infrastructure. NPI verification. Taxonomy code segmentation. Practice-level intelligence that goes beyond name and email. Weekly refresh cycles because provider information changes constantly.</p>
+                <p>We built Provyx because healthcare provider data requires healthcare-specific infrastructure. NPI verification. Taxonomy code segmentation. Practice-level intelligence that goes beyond name and email. Continuous verification because provider information changes constantly.</p>
 
                 <h2>Our Approach</h2>
                 <p>We source data from public registries (CMS NPI Registry, state licensing boards), commercial databases, and proprietary web intelligence. Every record is verified against multiple sources before it enters our database. We don't scrape and dump. We build verified provider profiles with the data points that matter for B2B outreach.</p>
@@ -731,7 +731,7 @@ def build_about():
                     <li>NPI-verified provider records across 40+ specialties</li>
                     <li>Direct emails, phone numbers, and mailing addresses</li>
                     <li>Practice-level data: size, location, technology, ownership</li>
-                    <li>Weekly refresh to catch moves, closures, and staff changes</li>
+                    <li>Continuous verification to catch moves, closures, and staff changes</li>
                     <li>Custom list building for targeted campaigns</li>
                 </ul>
 
@@ -747,7 +747,7 @@ def build_about():
 
     html = get_page_wrapper(
         title="About Provyx",
-        description="Provyx builds healthcare provider databases for B2B teams. NPI-verified contacts across 40+ specialties, updated weekly.",
+        description="Provyx builds healthcare provider databases for B2B teams. NPI-verified contacts across 40+ specialties with 98%+ accuracy.",
         canonical_path="/about/",
         body_content=body,
         active_page="/about/",
@@ -783,7 +783,7 @@ def build_contact():
                         <h3>Custom list requests</h3>
                         <p>Need a specific provider list? Tell us your target criteria: specialty, state/region, practice size, technology stack, or any other filters. We'll build a matched list and send you a sample before you commit.</p>
                         <h3>Questions?</h3>
-                        <p>Email us directly at <a href="mailto:hello@getprovyx.com">hello@getprovyx.com</a></p>
+                        <p>Use the form and we'll get back to you within one business day.</p>
                     </div>
                     <div class="contact-form">
                         <form class="form" action="https://formspree.io/f/{FORMSPREE_ID}" method="POST">
@@ -835,7 +835,7 @@ def build_pricing():
         {"question": "Can I get a sample before purchasing?",
          "answer": "Yes. We provide a free sample of 25-50 records matched to your target criteria so you can validate data quality before committing to a purchase."},
         {"question": "Do you offer ongoing data subscriptions?",
-         "answer": "Yes. Growth and Enterprise plans include monthly data refreshes. We can also set up custom delivery schedules for teams that need weekly updates."},
+         "answer": "Yes. Growth and Enterprise plans include regular data refreshes. We can also set up custom delivery schedules based on your team's cadence."},
         {"question": "What if I need a specialty or geography you don't cover?",
          "answer": "Contact us. We can build custom datasets for specialties or regions outside our standard coverage. Turnaround is typically 5-10 business days for custom requests."},
     ]
@@ -890,7 +890,7 @@ def build_pricing():
                             <li>All Growth data points</li>
                             <li>API access</li>
                             <li>Custom enrichment fields</li>
-                            <li>Weekly data refresh</li>
+                            <li>Continuous data refresh</li>
                             <li>SLA and priority support</li>
                         </ul>
                         <a href="/contact/" class="btn btn--secondary" style="width:100%">Talk to Sales</a>
@@ -954,10 +954,10 @@ def build_privacy():
                 <p>We use cookies set by Google Analytics to understand website traffic patterns. You can disable cookies in your browser settings without affecting core website functionality.</p>
 
                 <h2>Your Rights</h2>
-                <p>You may request access to, correction of, or deletion of any personal information we hold about you. To make a request, email <a href="mailto:hello@getprovyx.com">hello@getprovyx.com</a>.</p>
+                <p>You may request access to, correction of, or deletion of any personal information we hold about you. To make a request, <a href="/contact/">contact us through our form</a>.</p>
 
                 <h2>Contact</h2>
-                <p>For privacy-related questions, contact us at <a href="mailto:hello@getprovyx.com">hello@getprovyx.com</a>.</p>
+                <p>For privacy-related questions, <a href="/contact/">reach out through our contact page</a>.</p>
             </div>
         </section>'''
 
@@ -1021,7 +1021,7 @@ def build_terms():
                 <p>We may update these terms from time to time. Continued use of our services after changes constitutes acceptance of the updated terms.</p>
 
                 <h2>Contact</h2>
-                <p>For questions about these terms, contact <a href="mailto:hello@getprovyx.com">hello@getprovyx.com</a>.</p>
+                <p>For questions about these terms, <a href="/contact/">reach out through our contact page</a>.</p>
             </div>
         </section>'''
 
@@ -1067,8 +1067,8 @@ SERVICES = [
     {
         "slug": "provider-contact-data",
         "title": "Provider Contact Data",
-        "description": "Verified healthcare provider emails, phone numbers, and mailing addresses. NPI-verified and updated weekly.",
-        "intro": "Direct provider contacts are the foundation of healthcare B2B outreach. But generic databases serve up stale records scraped months ago. Our provider contact data is verified against the CMS NPI Registry and refreshed weekly, so you're reaching real providers at their current practice.",
+        "description": "Verified healthcare provider emails, phone numbers, and mailing addresses. NPI-verified with 98%+ accuracy.",
+        "intro": "Direct provider contacts are the foundation of healthcare B2B outreach. But generic databases serve up stale records scraped months ago. Our provider contact data is verified against the CMS NPI Registry with 98%+ accuracy, so you're reaching real providers at their current practice.",
         "features": [
             ("Direct Email Addresses", "Verified provider and practice email addresses, not generic info@ accounts."),
             ("Phone Numbers", "Direct lines and office numbers with extension data where available."),
@@ -1310,7 +1310,7 @@ def build_hub_page(cat_key, cat_data):
         {"question": f"How is {cat_data['short'].lower()} data different from generic provider databases?",
          "answer": f"Generic databases lump all healthcare providers together without understanding {cat_data['short'].lower()} specialty distinctions. We segment by specific provider subtypes, making it easy to target exactly the right {cat_data['short'].lower()} providers for your campaign."},
         {"question": f"How often is the {cat_data['short'].lower()} provider data updated?",
-         "answer": f"Our {cat_data['short'].lower()} provider database is refreshed weekly. Provider contacts change frequently as staff turns over and practices relocate. Weekly updates keep your outreach data current."},
+         "answer": f"Our {cat_data['short'].lower()} provider database is continuously verified against multiple sources. Provider contacts change frequently as staff turns over and practices relocate. Our verification process catches these changes to keep your outreach data current."},
         {"question": f"Can I get a custom {cat_data['short'].lower()} provider list?",
          "answer": f"Yes. We build custom lists filtered by specific {cat_data['short'].lower()} subtypes, geography, practice size, and other criteria. Contact us with your requirements and we'll put together a matched list."},
         {"question": f"What data fields are included for {cat_data['short'].lower()} providers?",
@@ -1385,9 +1385,9 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
 
     faqs = [
         {"question": f"What {name_lower} data does Provyx provide?",
-         "answer": f"We provide verified contact data for {name_lower} including direct emails, phone numbers, NPI details, taxonomy codes, practice addresses, and available firmographic data. Every record is verified against the CMS NPI Registry and refreshed weekly."},
+         "answer": f"We provide verified contact data for {name_lower} including direct emails, phone numbers, NPI details, taxonomy codes, practice addresses, and available firmographic data. Every record is verified against the CMS NPI Registry with 98%+ accuracy."},
         {"question": f"How accurate is the {name_lower} contact data?",
-         "answer": f"Our {name_lower} data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We refresh records weekly to catch moves, closures, and contact changes."},
+         "answer": f"Our {name_lower} data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We continuously verify records to catch moves, closures, and contact changes."},
         {"question": f"Can I filter {name_lower} data by geography?",
          "answer": f"Yes. You can filter {name_lower} records by state, metro area, ZIP code, or custom radius. We can build targeted lists for specific regions or provide nationwide coverage."},
     ]
@@ -1607,7 +1607,7 @@ def build_alternative_page(alt):
                 <h2>What Makes Provyx Different</h2>
                 <ul class="benefits-list">
                     <li>NPI-verified provider records across 40+ specialties</li>
-                    <li>Weekly data refresh cycle for current contacts</li>
+                    <li>98%+ data accuracy through multi-source verification</li>
                     <li>Flexible pricing from $500 one-time to enterprise plans</li>
                     <li>Practice-level data: size, technology, ownership</li>
                     <li>Custom list building for targeted campaigns</li>

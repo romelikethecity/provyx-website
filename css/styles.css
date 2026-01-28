@@ -192,12 +192,14 @@ img {
 .header__logo {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
 }
 
-.header__logo img {
+.header__logo-icon {
   height: 32px;
-  width: auto;
+  width: 32px;
+  flex-shrink: 0;
 }
 
 .header__logo-text {
@@ -1101,9 +1103,18 @@ img {
 }
 
 .footer__logo {
-  height: 32px;
-  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
   margin-bottom: var(--space-md);
+}
+
+.footer__logo-icon {
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
 }
 
 .footer__logo-text {
@@ -1111,7 +1122,6 @@ img {
   font-weight: 700;
   color: var(--color-white);
   text-decoration: none;
-  display: inline-block;
   margin-bottom: var(--space-md);
   letter-spacing: -0.01em;
 }

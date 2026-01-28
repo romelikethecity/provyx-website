@@ -84,8 +84,8 @@ def get_html_head(title, description, canonical_path, extra_schema=""):
     <meta name="twitter:image" content="{BASE_URL}/assets/logos/logo-social-og.svg">
 {extra_schema}
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/assets/logos/favicon.svg">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logos/favicon-16.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -168,6 +168,7 @@ def get_nav_html(active_page=None):
     <header class="header" role="banner">
         <div class="container header__inner">
             <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
                 <span class="header__logo-text">{SITE_NAME}</span>
             </a>
 
@@ -256,7 +257,10 @@ def get_footer_html():
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <a href="/" class="footer__logo-text">{SITE_NAME}</a>
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">{SITE_NAME}</span>
+                    </a>
                     <p class="footer__tagline">{SITE_TAGLINE}</p>
                 </div>
                 {columns_html}
