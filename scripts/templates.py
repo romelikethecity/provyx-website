@@ -95,8 +95,14 @@ def get_html_head(title, description, canonical_path, extra_schema=""):
     <!-- CSS -->
     <link rel="stylesheet" href="/css/styles.css?v={CSS_VERSION}">
 
-    <!-- GA4 (placeholder) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
 </head>'''
 
 
