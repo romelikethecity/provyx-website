@@ -596,7 +596,6 @@ def build_homepage():
                     <div class="pain-stat"><span class="pain-stat__number">2.4M+</span><span class="pain-stat__label">Provider Records</span></div>
                     <div class="pain-stat"><span class="pain-stat__number">40+</span><span class="pain-stat__label">Specialties</span></div>
                     <div class="pain-stat"><span class="pain-stat__number">Days</span><span class="pain-stat__label">Not Weeks</span></div>
-                    <div class="pain-stat"><span class="pain-stat__number">No</span><span class="pain-stat__label">Annual Contract</span></div>
                 </div>
             </div>
         </section>
