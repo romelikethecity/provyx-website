@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Data Decay in Healthcare: How Fast Provider Records Go Stale | Provyx</title>
+    <meta name="description" content="Healthcare provider data decays faster than most B2B data. Learn the decay rates, causes, and practical strategies to keep your CRM provider records accurate.">
+    <link rel="canonical" href="https://getprovyx.com/resources/crm-data-decay-healthcare/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/resources/crm-data-decay-healthcare/">
+    <meta property="og:title" content="CRM Data Decay in Healthcare: How Fast Provider Records Go Stale | Provyx">
+    <meta property="og:description" content="Healthcare provider data decays faster than most B2B data. Learn the decay rates, causes, and practical strategies to keep your CRM provider records accurate.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CRM Data Decay in Healthcare: How Fast Provider Records Go Stale | Provyx">
+    <meta name="twitter:description" content="Healthcare provider data decays faster than most B2B data. Learn the decay rates, causes, and practical strategies to keep your CRM provider records accurate.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://getprovyx.com/resources/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CRM Data Decay: How Fast Provider Records Go Stale",
+      "item": "https://getprovyx.com/resources/crm-data-decay-healthcare/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=1">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">CRM Data Decay: How Fast Provider Records Go Stale</span>
+        </nav>
+        <h1>CRM Data Decay: How Fast Provider Records Go Stale</h1>
+        <p class="subtitle">Your CRM was accurate when you loaded it. Six months later, a significant percentage of those provider records are wrong. Here's how fast healthcare data decays, why it happens, and what you can do about it.</p>
+      </div>
+    </section>
+
+    
+    <section class="content-section">
+      <div class="container">
+        <h2>How Fast Healthcare Provider Data Actually Decays</h2>
+        <p>All B2B data decays over time. People change jobs, companies relocate, phone numbers get reassigned. But healthcare provider data decays faster than most B2B verticals, and the rate catches teams off guard if they're used to working with corporate contact databases.</p>
+
+<p>Industry estimates suggest that 20-30% of healthcare provider contact records become inaccurate within 12 months. That includes changes to phone numbers, email addresses, practice addresses, and provider affiliations. Some data fields decay faster than others. Email addresses are among the most volatile, with some sources citing annual decay rates of 25% or higher for business email in healthcare.</p>
+
+<p>Phone numbers decay more slowly than emails, but disconnections and reassignments still affect 10-15% of records annually. Practice addresses change at a lower rate for established practices, but relocations, closures, and consolidations add up. And the most insidious form of decay is the information that becomes misleading rather than outright wrong: a provider who's still at the same address but has changed their specialty focus, or a practice that's technically active but has been acquired and now routes through a corporate office.</p>
+
+<p>For a CRM with 10,000 provider records, 20% annual decay means 2,000 records are degraded after one year, 3,600 after two years (accounting for some overlap), and close to half the database within three years if no maintenance is performed. That's not a theoretical problem. It's a predictable one.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Why Healthcare Data Decays Faster Than Other B2B Data</h2>
+        <p>Several factors unique to healthcare drive faster data decay compared to other industries.</p>
+
+<p><strong>High workforce mobility.</strong> Healthcare providers change employers, practice locations, and even specialties more frequently than professionals in most other industries. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> documents ongoing workforce shifts across healthcare sectors. Physicians move between health systems, clinicians shift from clinical to administrative roles, and practice ownership changes through acquisitions and retirements. Each change invalidates the contact data tied to the previous position.</p>
+
+<p><strong>Practice consolidation and closures.</strong> The healthcare industry is experiencing significant consolidation. Private equity-backed groups are acquiring independent practices. Health systems are absorbing physician groups. DSOs are consolidating dental practices. Each acquisition changes the practice name, often the address, and frequently the administrative contacts. The small practice that was in your CRM may now be part of a 50-location group with centralized procurement.</p>
+
+<p><strong>Multiple practice locations.</strong> Many providers practice at more than one location: a primary office, a hospital, an ambulatory surgery center. When they drop or add a location, the "correct" address in your CRM depends on which location matters for your outreach. The NPI Registry typically lists one or two addresses per provider, and there's no guarantee the listed address is the one most relevant to your team.</p>
+
+<p><strong>Technology and email infrastructure changes.</strong> Practices switch email providers, adopt new domain names, and change their IT infrastructure more frequently than large corporations. When a practice migrates from one email system to another, every email address associated with that practice can change overnight. Unlike corporate email migrations, which usually maintain old addresses as aliases for months, practice email changes often happen without a transition period.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>The Compounding Cost of Ignoring Data Decay</h2>
+        <p>Data decay doesn't announce itself. Your CRM doesn't flag records that went stale yesterday. The problems accumulate silently until they show up in campaign performance, sales productivity, and pipeline accuracy.</p>
+
+<p><strong>Campaign performance degrades gradually.</strong> Your email open rate drops from 22% to 18% to 15% over three quarters. Your team attributes it to "email fatigue" or "subject line issues" and spends time A/B testing copy when the real problem is that an increasing percentage of sends are hitting dead mailboxes or spam folders due to bounce-related reputation damage.</p>
+
+<p><strong>Sales productivity erodes quietly.</strong> Reps don't track the time they spend working around bad data because they don't think of it as a distinct activity. They just know that it takes longer to find the right contact at a practice, that more calls go to voicemail or disconnected numbers, and that a growing share of their activity feels unproductive. The collective impact across a sales team is significant but invisible in standard reporting.</p>
+
+<p><strong>Pipeline forecasts lose accuracy.</strong> When your CRM contains provider records that are no longer valid, your total addressable market calculation is inflated. Territories that look balanced on paper are actually imbalanced because some records represent real opportunities and others represent providers who've left the market. Quota attainment gaps that look like sales execution problems may actually be data quality problems.</p>
+
+<p><strong>Reporting and analysis become unreliable.</strong> Every report that relies on CRM data is only as accurate as the underlying records. Win rate analysis, market penetration calculations, and customer segmentation all degrade when the data they're built on is stale. Decisions based on decayed data carry hidden risk that no one can see in the dashboard.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Building a CRM Data Maintenance Program</h2>
+        <p>The solution to data decay isn't a one-time cleanup. It's a recurring maintenance program that keeps your provider records current on an ongoing basis.</p>
+
+<p><strong>Establish a refresh cadence.</strong> At minimum, refresh your provider CRM data annually. For active campaign and outreach lists, quarterly refreshes are more appropriate. For high-velocity sales teams that depend on daily outreach, monthly or real-time enrichment is worth the investment. The refresh cadence should match the rate at which your team interacts with the data.</p>
+
+<p><strong>Use external data as a validation layer.</strong> Cross-reference your CRM records against external provider databases (like Provyx) to identify records that have drifted. Look for address mismatches, phone number discrepancies, and providers whose NPI status has changed. External validation catches decay that internal processes miss.</p>
+
+<p><strong>Leverage your team's field intelligence.</strong> Your sales reps and account managers talk to providers every day. They know when a practice has moved, when a contact has left, and when a new decision-maker has joined. Build a simple process for feeding this intelligence back into the CRM. A 30-second update after each call prevents the record from going stale until the next external refresh.</p>
+
+<p><strong>Track data quality metrics.</strong> Measure email bounce rate, phone connect rate, and undeliverable mail rate on a rolling basis. Set thresholds that trigger a data refresh when quality drops below acceptable levels. If your email bounce rate exceeds 5% on any campaign, that's a signal to investigate data quality rather than just messaging.</p>
+
+<p><strong>Automate where possible.</strong> Many CRM platforms support scheduled data enrichment through integrations or API connections. If your data provider offers an enrichment API or scheduled file delivery, set it up to run automatically on your refresh cadence. Manual refreshes work for small databases, but they don't scale reliably.</p>
+      </div>
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="author-bio">
+          <h3>About the Author</h3>
+          <p><strong>Rome</strong></p>
+          <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How fast do email addresses decay in healthcare CRMs?", "acceptedAnswer": {"@type": "Answer", "text": "Business email addresses in healthcare typically decay at 20-25% per year, which is faster than the 15-20% rate common in other B2B industries. The higher rate is driven by practice closures, email system migrations, staff turnover, and providers changing practice affiliations. Active campaign lists should be refreshed quarterly to maintain deliverability above 90%."}}, {"@type": "Question", "name": "What's the most cost-effective way to keep provider CRM data current?", "acceptedAnswer": {"@type": "Answer", "text": "Combine scheduled external data refreshes with internal field intelligence. Order updated provider data from an external source quarterly to catch bulk changes, and implement a process for your team to update records when they discover changes through direct interactions. This hybrid approach balances cost with accuracy."}}, {"@type": "Question", "name": "Should I clean my CRM data before or after running a campaign?", "acceptedAnswer": {"@type": "Answer", "text": "Before. Running a campaign on dirty data damages your sender reputation (for email), wastes your team's time (for phone), and burns budget (for direct mail). Clean and verify your data before every significant campaign. The cost of verification is a fraction of the cost of running on bad data."}}, {"@type": "Question", "name": "How can I tell if poor campaign performance is a data problem or a messaging problem?", "acceptedAnswer": {"@type": "Answer", "text": "Check your delivery and bounce metrics separately from engagement metrics. If deliverability is above 95% and bounce rate is under 3%, your data is probably fine and poor performance is a messaging or targeting issue. If deliverability is below 90% or bounce rate exceeds 5%, data quality is likely dragging your performance down regardless of message quality."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>How fast do email addresses decay in healthcare CRMs?</h3>
+                <p>Business email addresses in healthcare typically decay at 20-25% per year, which is faster than the 15-20% rate common in other B2B industries. The higher rate is driven by practice closures, email system migrations, staff turnover, and providers changing practice affiliations. Active campaign lists should be refreshed quarterly to maintain deliverability above 90%.</p>
+                <h3>What's the most cost-effective way to keep provider CRM data current?</h3>
+                <p>Combine scheduled external data refreshes with internal field intelligence. Order updated provider data from an external source quarterly to catch bulk changes, and implement a process for your team to update records when they discover changes through direct interactions. This hybrid approach balances cost with accuracy.</p>
+                <h3>Should I clean my CRM data before or after running a campaign?</h3>
+                <p>Before. Running a campaign on dirty data damages your sender reputation (for email), wastes your team's time (for phone), and burns budget (for direct mail). Clean and verify your data before every significant campaign. The cost of verification is a fraction of the cost of running on bad data.</p>
+                <h3>How can I tell if poor campaign performance is a data problem or a messaging problem?</h3>
+                <p>Check your delivery and bounce metrics separately from engagement metrics. If deliverability is above 95% and bounce rate is under 3%, your data is probably fine and poor performance is a messaging or targeting issue. If deliverability is below 90% or bounce rate exceeds 5%, data quality is likely dragging your performance down regardless of message quality.</p>
+            </div>
+        </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="outbound-references">
+          <h4>Sources and References</h4>
+          <ul><li><a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics: Healthcare Occupations</a></li>
+<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+</ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Related Resources</h2>
+        <ul class="related-links"><li><a href="/resources/cost-of-bad-provider-data/">The Hidden Cost of Bad Provider Data</a></li>
+<li><a href="/use-cases/healthcare-email-marketing/">Healthcare Email Marketing</a></li>
+<li><a href="/services/provider-contact-data/">Provider Contact Data Product Details</a></li>
+<li><a href="/resources/healthcare-marketing-list-guide/">How to Build a Healthcare Marketing List</a></li>
+</ul>
+      </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

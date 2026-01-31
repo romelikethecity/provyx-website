@@ -931,6 +931,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getprovyx.com/for/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://getprovyx.com/for/healthcare-marketing-agencies/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -973,6 +979,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getprovyx.com/compare/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://getprovyx.com/compare/provyx-vs-zoominfo/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -991,6 +1003,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getprovyx.com/compare/provyx-vs-iqvia/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/compare/provyx-vs-lusha/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/compare/provyx-vs-cognism/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/alternatives/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://getprovyx.com/alternatives/zoominfo-alternative/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -998,6 +1034,126 @@
   </url>
   <url>
     <loc>https://getprovyx.com/alternatives/definitive-healthcare-alternative/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/healthcare-sales-prospecting/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/medical-device-territory-planning/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/healthcare-abm/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/physician-outreach/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/healthcare-market-sizing/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/provider-network-analysis/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/healthcare-email-marketing/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/provider-credentialing/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/healthcare-competitive-intelligence/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/use-cases/medical-staffing-recruitment/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/cost-of-bad-provider-data/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/npi-registry-guide/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/healthcare-marketing-list-guide/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/provider-data-buying-guide/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/crm-data-decay-healthcare/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/healthcare-abm-strategy/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/medical-device-territory-planning-guide/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/resources/roi-clean-provider-data/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

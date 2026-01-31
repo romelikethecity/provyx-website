@@ -41,6 +41,17 @@ NAV_ITEMS = [
             {"href": "/services/custom-list-building/", "label": "Custom Lists"},
         ],
     },
+    {
+        "href": "/resources/",
+        "label": "Resources",
+        "children": [
+            {"href": "/use-cases/", "label": "Use Cases"},
+            {"href": "/resources/", "label": "Guides & Articles"},
+            {"href": "/compare/", "label": "Comparisons"},
+            {"href": "/alternatives/", "label": "Alternatives"},
+            {"href": "/for/", "label": "By Industry"},
+        ],
+    },
     {"href": "/pricing/", "label": "Pricing"},
     {"href": "/about/", "label": "About"},
 ]
@@ -61,8 +72,16 @@ FOOTER_COLUMNS = {
         {"href": "/pricing/", "label": "Pricing"},
         {"href": "/contact/", "label": "Contact Us"},
     ],
+    "Resources": [
+        {"href": "/use-cases/", "label": "Use Cases"},
+        {"href": "/resources/", "label": "Guides & Articles"},
+        {"href": "/compare/", "label": "Comparisons"},
+        {"href": "/alternatives/", "label": "Alternatives"},
+        {"href": "/for/", "label": "By Industry"},
+    ],
     "Company": [
         {"href": "/about/", "label": "About Provyx"},
+        {"href": "/pricing/", "label": "Pricing"},
         {"href": "/privacy/", "label": "Privacy Policy"},
         {"href": "/terms/", "label": "Terms of Service"},
     ],

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Device Sales Territory Planning with Provider Data | Provyx</title>
+    <meta name="description" content="Plan medical device sales territories using verified provider data. Step-by-step guide to mapping surgeons, balancing workloads, and optimizing coverage.">
+    <link rel="canonical" href="https://getprovyx.com/resources/medical-device-territory-planning-guide/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/resources/medical-device-territory-planning-guide/">
+    <meta property="og:title" content="Medical Device Sales Territory Planning with Provider Data | Provyx">
+    <meta property="og:description" content="Plan medical device sales territories using verified provider data. Step-by-step guide to mapping surgeons, balancing workloads, and optimizing coverage.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Medical Device Sales Territory Planning with Provider Data | Provyx">
+    <meta name="twitter:description" content="Plan medical device sales territories using verified provider data. Step-by-step guide to mapping surgeons, balancing workloads, and optimizing coverage.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://getprovyx.com/resources/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Medical Device Territory Planning with Provider Data",
+      "item": "https://getprovyx.com/resources/medical-device-territory-planning-guide/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=1">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Medical Device Territory Planning with Provider Data</span>
+        </nav>
+        <h1>Medical Device Territory Planning with Provider Data</h1>
+        <p class="subtitle">Territory planning for medical device sales requires more than drawing lines on a map. This guide covers how to use provider-level data to build territories that are balanced, data-driven, and aligned with actual market opportunity.</p>
+      </div>
+    </section>
+
+    
+    <section class="content-section">
+      <div class="container">
+        <h2>Why Provider Data Is the Foundation of Territory Planning</h2>
+        <p>Medical device territory planning is a resource allocation problem: you have a limited number of sales reps and an uneven distribution of target surgeons and specialists across geographies. The goal is to assign territories so that each rep has a realistic workload, access to enough high-potential accounts, and a manageable travel footprint.</p>
+
+<p>Most territory planning efforts start with one of two approaches, both of which are flawed without good provider data. The first is geographic splitting: dividing the country or a region into roughly equal-sized areas and assigning one rep per area. This ignores the fact that target provider density varies dramatically by geography. A rep covering Phoenix might have 300 target orthopedic surgeons within a 30-mile radius, while a rep covering rural Montana has 15 spread across a 200-mile territory.</p>
+
+<p>The second common approach is revenue-based splitting: assigning territories based on existing sales revenue so each rep has a roughly equal quota. This perpetuates historical patterns and doesn't account for untapped potential. A territory that generates $2M in revenue might have $10M in addressable market, while another $2M territory might be nearly fully penetrated. Without provider-level data, you can't distinguish between these situations.</p>
+
+<p>Provider data solves both problems by giving you a ground-truth view of where your target accounts actually are. When you can count and map every target surgeon in every geography, you're building territories on facts rather than assumptions.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Step 1: Define Your Target Provider Universe</h2>
+        <p>Before you can plan territories, you need a complete picture of your target market. For medical device companies, this means identifying every provider who fits your clinical profile across your geographic footprint.</p>
+
+<p>Start with <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> to define your target specialties. If you sell orthopedic implants, your target providers might include taxonomy codes for orthopedic surgery, sports medicine, spine surgery, and hand surgery. If you sell ophthalmic devices, you're looking at ophthalmology and its subspecialties. Be precise about which taxonomy codes define your market. Casting too wide a net inflates your addressable market and makes territory planning less accurate.</p>
+
+<p>Next, define your geographic scope. Are you planning territories for the entire US, or for specific regions? Do you include territories in markets where you don't currently have reps, to identify expansion opportunities? Most device companies plan territories for their current footprint plus one or two expansion markets they're considering.</p>
+
+<p>Then pull the data. A comprehensive provider dataset for your target specialties and geographies gives you the universe of potential accounts. Each record should include the provider's NPI number, taxonomy codes, verified practice address, and ideally some indicator of practice type (solo, group, health system). This is your starting point for territory design.</p>
+
+<p>A note on data quality: your territory plan is only as good as the provider data it's built on. If 15% of the addresses in your dataset are wrong, your provider count per territory will be off by a corresponding margin. Verify that your data source differentiates between practice locations and billing addresses, and that addresses have been validated against postal records.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Step 2: Map Provider Density and Identify Clusters</h2>
+        <p>With your target provider dataset in hand, map the providers geographically to visualize density patterns. This step reveals the natural territory boundaries that geographic or revenue-based splitting misses.</p>
+
+<p>Plot provider locations on a map using geocoded address data. Most BI tools (Tableau, Power BI) and mapping platforms (Salesforce Maps, Google Maps) can ingest CSV data with latitude and longitude coordinates and render point maps. The visual immediately shows you where providers cluster and where coverage is sparse.</p>
+
+<p>Look for natural clusters: metro areas with high provider density, suburban belts where practices are more spread out, and rural areas with isolated providers who require significant travel time to reach. These clusters often suggest logical territory boundaries. A metro area with 200 target surgeons might justify its own territory, while a surrounding suburban ring with 80 providers could be a second territory.</p>
+
+<p>Calculate provider density per geographic unit. Depending on your territory size, this could be providers per state, per MSA, per county, or per ZIP code. The density numbers tell you where the opportunity is concentrated and where a rep would need to travel extensively to generate enough activity.</p>
+
+<p>Don't forget to factor in existing customer locations. Overlay your current customer base on the provider map to see penetration rates by area. A territory with 150 target providers and 50 existing customers has a 33% penetration rate and significant room for growth. A territory with 150 targets and 120 customers is nearly saturated and might not justify dedicated rep coverage.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Step 3: Balance Territories by Opportunity, Not Just Geography</h2>
+        <p>The goal of territory balancing is to give each rep a roughly equal opportunity to hit quota. "Equal opportunity" doesn't mean equal geographic size or even equal provider count. It means equal potential revenue, which depends on provider count, provider type, and market penetration.</p>
+
+<p>Weight your provider data to create an opportunity score for each territory. A simple weighting might assign higher values to surgical specialties that purchase more frequently or at higher average order values. A more sophisticated model incorporates practice size (larger practices place bigger orders), procedure volume indicators (from claims data if available), and current penetration (whitespace accounts are worth more than existing customers from a growth perspective).</p>
+
+<p>Use the opportunity scores to draw territory boundaries that balance total potential across reps. This is an iterative process. Start with natural geographic clusters, calculate the opportunity score for each cluster, and then adjust boundaries to move providers from over-weighted territories to under-weighted ones. The adjustments should respect geographic contiguity and travel feasibility: splitting a metro area across two territories is fine if both halves have enough density, but assigning a rep disconnected pockets of a state doesn't work logistically.</p>
+
+<p>Consider travel time and cost in your balancing model. A territory with 100 target providers spread across a 200-mile radius may actually be less productive than a territory with 60 providers concentrated in a single metro area, because the travel time per provider visit is so much higher. Factor in drive times or flight requirements when assessing whether a territory is manageable for a single rep.</p>
+
+<p>Document your assumptions and methodology. Territory plans are inevitably debated by leadership and challenged by reps. When you can show that territories were balanced based on verified provider counts, opportunity weighting, and travel feasibility, the conversation is about data rather than politics.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Step 4: Refresh and Reassess on a Regular Cycle</h2>
+        <p>Territory plans aren't permanent. The provider landscape changes as practices open, close, merge, and relocate. New reps join your team, existing reps leave, and product launches change which specialties you're targeting. A territory plan that was optimal in January may be suboptimal by July.</p>
+
+<p>Build a refresh cadence into your territory planning process. Most device companies do a major territory realignment annually, with minor adjustments mid-year as needed. For each refresh cycle, pull updated provider data to capture market changes since the last plan. Compare the new provider map to the current territory assignments and identify imbalances that have developed.</p>
+
+<p>Track territory performance metrics that signal when adjustments are needed: quota attainment variance across territories, provider-to-rep ratios, travel expense per territory, and new account acquisition rates. If one territory is consistently underperforming despite having a good rep, the issue may be a data problem (wrong provider counts) or a structural problem (too large, too rural, too saturated).</p>
+
+<p>When you refresh your provider data, look specifically for new providers in your target specialties. New practice openings represent immediate opportunities for reps who can reach them before competitors. Practices that have closed or merged should be removed from territory counts and account lists. Providers who've relocated may need to be reassigned from one territory to another.</p>
+
+<p>The companies that treat territory planning as a continuous process rather than an annual project consistently outperform those that set territories once and leave them alone. The investment in refreshed provider data pays for itself in better rep productivity and more balanced coverage of your addressable market.</p>
+      </div>
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="author-bio">
+          <h3>About the Author</h3>
+          <p><strong>Rome</strong></p>
+          <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often should I refresh provider data for territory planning?", "acceptedAnswer": {"@type": "Answer", "text": "Refresh provider data at least annually before your major territory planning cycle. If your company does mid-year territory adjustments, pull refreshed data for those reviews as well. For device companies in fast-moving specialties where new practices open frequently, quarterly data refreshes catch market changes faster."}}, {"@type": "Question", "name": "Can I use Provyx data with Salesforce Maps for territory planning?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Provyx data is delivered in CSV format with geocoded addresses that import directly into Salesforce Maps and other territory mapping tools. The data includes latitude and longitude coordinates for provider locations, NPI numbers for CRM matching, and taxonomy codes for specialty filtering."}}, {"@type": "Question", "name": "How do I account for hospital-employed surgeons vs. independent surgeons?", "acceptedAnswer": {"@type": "Answer", "text": "Hospital-employed surgeons typically require a different sales approach than independent practitioners. Our data includes indicators for practice type (solo, group, health system) that help you weight territories differently. A territory with mostly hospital-employed surgeons may need relationship-based selling, while one with independent surgeons may respond better to direct outreach."}}, {"@type": "Question", "name": "What if my territory plan is based on procedure volume rather than provider count?", "acceptedAnswer": {"@type": "Answer", "text": "Provider data from Provyx covers identity, location, and contact information, not procedure volume. Most device companies combine our provider data with CMS claims data or proprietary procedure volume estimates to create opportunity-weighted territory plans. We provide the provider foundation; claims data adds the utilization layer."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>How often should I refresh provider data for territory planning?</h3>
+                <p>Refresh provider data at least annually before your major territory planning cycle. If your company does mid-year territory adjustments, pull refreshed data for those reviews as well. For device companies in fast-moving specialties where new practices open frequently, quarterly data refreshes catch market changes faster.</p>
+                <h3>Can I use Provyx data with Salesforce Maps for territory planning?</h3>
+                <p>Yes. Provyx data is delivered in CSV format with geocoded addresses that import directly into Salesforce Maps and other territory mapping tools. The data includes latitude and longitude coordinates for provider locations, NPI numbers for CRM matching, and taxonomy codes for specialty filtering.</p>
+                <h3>How do I account for hospital-employed surgeons vs. independent surgeons?</h3>
+                <p>Hospital-employed surgeons typically require a different sales approach than independent practitioners. Our data includes indicators for practice type (solo, group, health system) that help you weight territories differently. A territory with mostly hospital-employed surgeons may need relationship-based selling, while one with independent surgeons may respond better to direct outreach.</p>
+                <h3>What if my territory plan is based on procedure volume rather than provider count?</h3>
+                <p>Provider data from Provyx covers identity, location, and contact information, not procedure volume. Most device companies combine our provider data with CMS claims data or proprietary procedure volume estimates to create opportunity-weighted territory plans. We provide the provider foundation; claims data adds the utilization layer.</p>
+            </div>
+        </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="outbound-references">
+          <h4>Sources and References</h4>
+          <ul><li><a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC Healthcare Provider Taxonomy</a></li>
+<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+</ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Related Resources</h2>
+        <ul class="related-links"><li><a href="/use-cases/medical-device-territory-planning/">Medical Device Territory Planning Use Case</a></li>
+<li><a href="/services/practice-location-data/">Practice Location Data Product Details</a></li>
+<li><a href="/for/medical-device-sales/">Provider Data for Medical Device Sales</a></li>
+<li><a href="/resources/provider-data-buying-guide/">Healthcare Provider Data Buying Guide</a></li>
+</ul>
+      </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

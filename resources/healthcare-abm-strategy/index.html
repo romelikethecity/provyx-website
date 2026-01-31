@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare ABM Strategy: Targeting Practices, Not Just Providers | Provyx</title>
+    <meta name="description" content="Build a healthcare ABM strategy that targets practices as accounts. Account identification, multi-threading, and data requirements for ABM campaigns.">
+    <link rel="canonical" href="https://getprovyx.com/resources/healthcare-abm-strategy/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/resources/healthcare-abm-strategy/">
+    <meta property="og:title" content="Healthcare ABM Strategy: Targeting Practices, Not Just Providers | Provyx">
+    <meta property="og:description" content="Build a healthcare ABM strategy that targets practices as accounts. Account identification, multi-threading, and data requirements for ABM campaigns.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Healthcare ABM Strategy: Targeting Practices, Not Just Providers | Provyx">
+    <meta name="twitter:description" content="Build a healthcare ABM strategy that targets practices as accounts. Account identification, multi-threading, and data requirements for ABM campaigns.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://getprovyx.com/resources/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Healthcare ABM: Targeting Practices, Not Providers",
+      "item": "https://getprovyx.com/resources/healthcare-abm-strategy/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=1">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Healthcare ABM: Targeting Practices, Not Providers</span>
+        </nav>
+        <h1>Healthcare ABM: Targeting Practices, Not Providers</h1>
+        <p class="subtitle">Account-based marketing works differently in healthcare. Your accounts are practices and provider groups, not Fortune 500 companies. This guide covers how to adapt ABM strategy for healthcare's unique structure.</p>
+      </div>
+    </section>
+
+    
+    <section class="content-section">
+      <div class="container">
+        <h2>Why Traditional ABM Frameworks Don't Fit Healthcare</h2>
+        <p>Account-based marketing was designed for enterprise software sales: identify a target company, map the buying committee, orchestrate multi-channel outreach, and nurture the account through a long sales cycle. The frameworks assume you're targeting organizations with thousands of employees, publicly available org charts, and decision-makers who can be found on LinkedIn.</p>
+
+<p>Healthcare doesn't work this way. Your target accounts are often small practices with 2-20 employees. The "buying committee" might be one physician-owner who makes all decisions, or it might be a partnership where three doctors have to agree. The practice doesn't have a LinkedIn company page. The decision-makers don't list their title as "VP of Procurement" because that role doesn't exist at a five-person dental practice.</p>
+
+<p>Standard ABM platforms like Demandbase, 6sense, and Terminus are built for B2B enterprise targeting. Their account identification algorithms look for company domain traffic, firmographic attributes, and intent signals that are calibrated for the tech industry. Apply those same algorithms to a chiropractic practice with a GoDaddy website and three employees, and the results are unreliable at best.</p>
+
+<p>This doesn't mean ABM doesn't work in healthcare. It means you need a different approach to the foundational steps: account identification, contact mapping, and targeting criteria. The strategy layer (personalized outreach, multi-channel coordination, account progression) still applies. It's the data layer that needs to be rebuilt for healthcare's reality.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Defining Healthcare Accounts: Practices as Business Entities</h2>
+        <p>The first adaptation for healthcare ABM is redefining what an "account" means. In traditional ABM, an account is a company. In healthcare ABM, an account is a practice or provider group defined by shared ownership, shared location, or organizational affiliation.</p>
+
+<p>This distinction matters because the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> lists individual providers and organizational NPIs, not practices as functional business entities. A three-physician cardiology group might have four NPI records (three individual, one organizational). Without practice-level aggregation, your "account list" is actually a provider list, and your ABM campaign hits the same practice three times with three different messages.</p>
+
+<p>Building a healthcare account list requires grouping providers into practice entities. This can be done using organizational NPI linkages, shared practice addresses, and business name matching. The result is a list of practices, each with associated providers, a primary decision-maker, and practice-level attributes you can use for segmentation.</p>
+
+<p>Once you have practice-level accounts, you can apply standard ABM tiering. Tier 1 accounts (your best-fit practices) get fully personalized, multi-channel outreach. Tier 2 accounts get targeted but less customized campaigns. Tier 3 accounts get programmatic outreach at scale. The tiering criteria should reflect practice characteristics that predict revenue potential: specialty match, practice size, geography, and technology stack.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Multi-Threading Healthcare Accounts</h2>
+        <p>One of ABM's core principles is multi-threading: reaching multiple contacts within a target account to build awareness across the buying committee. In healthcare, multi-threading is both important and structurally different from enterprise ABM.</p>
+
+<p>At a solo practice, multi-threading might mean reaching the physician-owner and the office manager. The physician makes clinical purchasing decisions; the office manager handles operational vendor relationships. Getting both contacts aware of your product increases the likelihood that a sales conversation happens, because either contact can initiate the evaluation.</p>
+
+<p>At a group practice, the buying committee is more complex. The managing partner or practice owner typically has final authority. Clinical leadership (department heads, medical directors) influence decisions related to clinical products. Administrative leadership (practice administrator, operations director) manages vendor relationships and contracts. Your ABM campaign should address different concerns for each role: clinical value for the physicians, operational efficiency for administrators, and financial impact for the owner.</p>
+
+<p>Finding these contacts is the hard part. For smaller practices, the decision-maker data needs to come from provider databases that identify practice owners and administrators, not from LinkedIn searches that return individual provider profiles. For larger groups, a combination of provider database records and LinkedIn research usually covers the key contacts.</p>
+
+<p>The important principle is that multi-threading in healthcare is about roles, not volume. You don't need 15 contacts per account like you might in enterprise software sales. You need 2-4 contacts with distinct roles in the purchasing process, and you need to tailor your messaging to each role's perspective.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Channel Strategy for Healthcare ABM</h2>
+        <p>Healthcare ABM campaigns use the same channels as traditional ABM (email, direct mail, phone, ads, social) but the execution differs.</p>
+
+<p><strong>Email.</strong> Still the primary digital channel, but deliverability is harder in healthcare. Many practice email systems have aggressive spam filtering, and health system-employed providers often have corporate email that rejects external marketing messages. Segmentation by practice type helps: independent practice providers are more reachable via email than hospital-employed providers. Personalize by specialty, not just name.</p>
+
+<p><strong>Direct mail.</strong> Underrated in healthcare ABM. Physical mail to a practice address reaches the front desk, which often passes relevant materials to the physician. Lumpy mail (dimensional mailers) stands out in a medical office environment where most incoming mail is insurance paperwork. For Tier 1 accounts, a well-timed direct mail piece can break through when digital channels are saturated.</p>
+
+<p><strong>Phone.</strong> Cold calling works in healthcare when the data supports it. Direct phone numbers for decision-makers convert at significantly higher rates than calls to practice main lines. For ABM, phone outreach should be coordinated with other channels: call after the email sequence and direct mail piece have landed, so the provider has context for who you are and why you're calling.</p>
+
+<p><strong>LinkedIn.</strong> Increasingly effective for reaching physician-owners and practice administrators who are active on the platform. Connect with target contacts, engage with their content, and use InMail for personalized outreach. LinkedIn's targeting for ads by healthcare job title is less precise than for tech or business titles, but it's improving. Custom audience uploads using verified provider data can sharpen your ad targeting significantly.</p>
+
+<p><strong>Display and retargeting.</strong> Account-based display ads work best when you can upload a precise practice list to your advertising platform. Retarget visitors from target accounts who've engaged with your website content. The key is that the initial account list needs to be accurate, because display ad spend against misidentified accounts is wasted budget.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Measuring Healthcare ABM: Metrics That Matter</h2>
+        <p>Healthcare ABM measurement follows the same account-centric framework as traditional ABM, with some adjustments for smaller account sizes and shorter sales cycles.</p>
+
+<p><strong>Account engagement.</strong> Track which target accounts are engaging across channels. In enterprise ABM, this means website visits, ad clicks, and content downloads at the account level. In healthcare ABM, add direct response metrics: email replies, phone conversations, and direct mail responses. For smaller practices, a single engaged contact often represents meaningful account engagement.</p>
+
+<p><strong>Pipeline influenced by ABM.</strong> Measure how many qualified opportunities come from accounts in your ABM target list vs. accounts sourced through other channels. This is the most important metric for justifying ABM investment. If your ABM accounts convert to pipeline at a higher rate than non-ABM accounts, the strategy is working.</p>
+
+<p><strong>Time to first meeting.</strong> In healthcare ABM, the sales cycle from first touch to first meeting is often shorter than in enterprise sales. Physician-owners at small practices can take a meeting within days of becoming interested, whereas enterprise accounts may take months. Track how quickly ABM-targeted accounts progress from first engagement to a sales conversation compared to non-ABM accounts.</p>
+
+<p><strong>Data quality metrics.</strong> Since the entire ABM program depends on accurate account and contact data, track data quality as a leading indicator. Measure email deliverability on ABM campaigns, phone connect rate for ABM outreach, and the percentage of ABM accounts that have been contacted at all. Low contact rates often indicate data quality issues rather than poor messaging.</p>
+
+<p>The goal of measurement is to prove that the targeted, personalized approach of ABM produces better results than spray-and-pray outreach. In healthcare, the proof point is usually clear: when you're reaching verified decision-makers at practices that match your ideal customer profile, conversion rates are meaningfully higher than untargeted campaigns.</p>
+      </div>
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="author-bio">
+          <h3>About the Author</h3>
+          <p><strong>Rome</strong></p>
+          <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many accounts should a healthcare ABM program target?", "acceptedAnswer": {"@type": "Answer", "text": "Start small. Most healthcare ABM programs work best with 50-200 Tier 1 accounts that get fully personalized outreach, 200-500 Tier 2 accounts with targeted campaigns, and a broader Tier 3 segment for programmatic outreach. Scaling beyond these numbers before your data and processes are dialed in usually dilutes quality without improving results."}}, {"@type": "Question", "name": "Can I run healthcare ABM without a dedicated ABM platform?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many healthcare ABM programs run effectively with a CRM (Salesforce or HubSpot), an email marketing tool, and verified provider data. Dedicated ABM platforms add intent signals and account-level analytics, but they're not required to execute the core strategy of targeted, personalized outreach to defined accounts."}}, {"@type": "Question", "name": "How do I identify healthcare practice owners for ABM targeting?", "acceptedAnswer": {"@type": "Answer", "text": "Practice owners can be identified through a combination of NPI record type (providers enumerated as both individual and organizational NPIs), state business registration data, and provider databases that include ownership indicators. Provyx identifies practice owners and decision-makers using multi-source matching. LinkedIn can supplement for verification."}}, {"@type": "Question", "name": "What practice size is the minimum for healthcare ABM?", "acceptedAnswer": {"@type": "Answer", "text": "There's no strict minimum. Solo practitioners can be ABM targets if the deal value justifies personalized outreach. In practice, most healthcare ABM programs find the best ROI targeting practices with 3+ providers, because larger practices have higher contract values and more complex buying processes that benefit from multi-threaded ABM approaches."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>How many accounts should a healthcare ABM program target?</h3>
+                <p>Start small. Most healthcare ABM programs work best with 50-200 Tier 1 accounts that get fully personalized outreach, 200-500 Tier 2 accounts with targeted campaigns, and a broader Tier 3 segment for programmatic outreach. Scaling beyond these numbers before your data and processes are dialed in usually dilutes quality without improving results.</p>
+                <h3>Can I run healthcare ABM without a dedicated ABM platform?</h3>
+                <p>Yes. Many healthcare ABM programs run effectively with a CRM (Salesforce or HubSpot), an email marketing tool, and verified provider data. Dedicated ABM platforms add intent signals and account-level analytics, but they're not required to execute the core strategy of targeted, personalized outreach to defined accounts.</p>
+                <h3>How do I identify healthcare practice owners for ABM targeting?</h3>
+                <p>Practice owners can be identified through a combination of NPI record type (providers enumerated as both individual and organizational NPIs), state business registration data, and provider databases that include ownership indicators. Provyx identifies practice owners and decision-makers using multi-source matching. LinkedIn can supplement for verification.</p>
+                <h3>What practice size is the minimum for healthcare ABM?</h3>
+                <p>There's no strict minimum. Solo practitioners can be ABM targets if the deal value justifies personalized outreach. In practice, most healthcare ABM programs find the best ROI targeting practices with 3+ providers, because larger practices have higher contract values and more complex buying processes that benefit from multi-threaded ABM approaches.</p>
+            </div>
+        </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="outbound-references">
+          <h4>Sources and References</h4>
+          <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+<li><a href="https://www.forrester.com/" target="_blank" rel="noopener">Forrester Research</a></li>
+</ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Related Resources</h2>
+        <ul class="related-links"><li><a href="/use-cases/healthcare-abm/">Healthcare ABM Use Case</a></li>
+<li><a href="/services/provider-contact-data/">Provider Contact Data Product Details</a></li>
+<li><a href="/use-cases/healthcare-email-marketing/">Healthcare Email Marketing</a></li>
+<li><a href="/resources/healthcare-marketing-list-guide/">How to Build a Healthcare Marketing List</a></li>
+</ul>
+      </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

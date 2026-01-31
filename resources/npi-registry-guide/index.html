@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPI Registry: What It Gives You and What It Doesn't | Provyx</title>
+    <meta name="description" content="Understand what's in the CMS NPI Registry and what's missing. A practical guide to NPI data fields, limitations, and how to fill gaps for outreach.">
+    <link rel="canonical" href="https://getprovyx.com/resources/npi-registry-guide/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/resources/npi-registry-guide/">
+    <meta property="og:title" content="NPI Registry: What It Gives You and What It Doesn't | Provyx">
+    <meta property="og:description" content="Understand what's in the CMS NPI Registry and what's missing. A practical guide to NPI data fields, limitations, and how to fill gaps for outreach.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NPI Registry: What It Gives You and What It Doesn't | Provyx">
+    <meta name="twitter:description" content="Understand what's in the CMS NPI Registry and what's missing. A practical guide to NPI data fields, limitations, and how to fill gaps for outreach.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://getprovyx.com/resources/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NPI Registry: What It Gives You and What It Doesn't",
+      "item": "https://getprovyx.com/resources/npi-registry-guide/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=1">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">NPI Registry: What It Gives You and What It Doesn't</span>
+        </nav>
+        <h1>NPI Registry: What It Gives You and What It Doesn't</h1>
+        <p class="subtitle">The NPI Registry is the most comprehensive free source of healthcare provider data in the US. It's also incomplete in ways that matter if you're using it for outreach, market sizing, or provider verification.</p>
+      </div>
+    </section>
+
+    
+    <section class="content-section">
+      <div class="container">
+        <h2>What the NPI Registry Actually Contains</h2>
+        <p>The National Provider Identifier (NPI) Registry, maintained by CMS through the <a href="https://nppes.cms.hhs.gov/" target="_blank" rel="noopener">National Plan and Provider Enumeration System (NPPES)</a>, is a public database of every healthcare provider and organization that has been assigned an NPI number. It's the closest thing to a comprehensive provider directory in the United States, and it's free to access.</p>
+
+<p>Every NPI record includes the provider's name, NPI number, enumeration date, provider type (individual or organization), and one or more <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> that classify their specialty. For individual providers, you get their credentials (MD, DO, NP, etc.) and gender. For organizational providers, you get the organization name and an authorized official contact.</p>
+
+<p>Address data is included but comes with important caveats. Each record has a "mailing address" and a "practice location address." These are self-reported by the provider during enrollment and revalidation. For many providers, the mailing address is a PO box or billing service, not the location where they see patients. The practice address is supposed to reflect where they actually practice, but updates depend on the provider submitting a change.</p>
+
+<p>The NPPES data dissemination files, available for bulk download, contain over 8 million records covering every active and deactivated NPI in the system. The files are updated weekly, though individual records may not have been updated in years. Each weekly file is a full replacement, not an incremental update, which makes tracking changes over time a data engineering exercise.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>What the NPI Registry Doesn't Give You</h2>
+        <p>For all its value as a foundational data source, the NPI Registry has significant gaps that limit its usefulness for sales, marketing, and operational applications.</p>
+
+<p><strong>No email addresses.</strong> The Registry doesn't collect or publish email addresses. If you need to email healthcare providers, you'll need a separate data source entirely. This is the single biggest limitation for marketing teams.</p>
+
+<p><strong>No phone numbers (effectively).</strong> There's a phone number field, but it's often a fax number, a generic practice line, or a number that's years out of date. The Registry doesn't distinguish between phone types, and providers aren't required to keep their phone numbers current. For outbound calling, NPI phone data is unreliable.</p>
+
+<p><strong>No decision-maker identification.</strong> The individual NPI tells you who the provider is, and the organizational NPI lists an authorized official. But it doesn't tell you who makes purchasing decisions at a practice. The authorized official on an organizational NPI is often a compliance officer or billing administrator, not the person your sales team needs to talk to.</p>
+
+<p><strong>No practice-level business intelligence.</strong> You won't find practice revenue, employee count, years in operation, technology stack, or any firmographic data in the NPI Registry. It's a licensing and identification database, not a business intelligence platform. For account-based marketing or territory planning, the Registry gives you names and addresses but not the business context that drives targeting decisions.</p>
+
+<p><strong>Stale addresses.</strong> Providers are supposed to update their NPI records when they change practice locations, but compliance is inconsistent. Many records show addresses from the provider's original enrollment, which could be years or even decades old. There's no way to tell from the record itself when the address was last verified.</p>
+
+<p><strong>No LinkedIn or social profiles.</strong> The Registry has no social media data. If you want to connect with providers on LinkedIn or identify their online presence, you need a different source.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>How Teams Use NPI Data (and Where They Hit Limits)</h2>
+        <p>Despite its limitations, the NPI Registry is a valuable starting point for several healthcare data applications. The key is understanding what it can do well and where you need to supplement it.</p>
+
+<p><strong>Provider identification and verification.</strong> The NPI number is the gold standard for uniquely identifying healthcare providers. If you're building a provider database, matching records across systems, or verifying that a provider is who they claim to be, the NPI is your primary key. It's permanent, unique, and doesn't change even when a provider switches employers or moves to a new state.</p>
+
+<p><strong>Specialty classification.</strong> Taxonomy codes in the NPI Registry provide a standardized way to classify providers by specialty and subspecialty. This is essential for market sizing, campaign targeting, and directory organization. However, providers sometimes list only their primary taxonomy code and omit secondary specialties, which can create gaps in specialty-based analyses.</p>
+
+<p><strong>Market sizing (directional).</strong> You can count providers by taxonomy code and geography to get directional market size estimates. These counts are useful for back-of-the-envelope calculations, but they overcount the market because they include deactivated NPIs, providers who've relocated, and duplicate records for providers with multiple enumeration records. Accurate market sizing requires deduplication and address verification on top of the raw NPI data.</p>
+
+<p><strong>Where teams hit limits.</strong> The moment you need to actually contact providers, whether by email, phone, or direct mail, the NPI Registry isn't enough. And the moment you need business intelligence about practices rather than just provider identification, you need enrichment from other sources. The Registry is a foundation, not a finished product.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Filling the Gaps: From NPI Data to Actionable Provider Intelligence</h2>
+        <p>Turning raw NPI data into something your sales, marketing, or operations team can actually use requires several enrichment steps.</p>
+
+<p><strong>Address verification and geocoding.</strong> Run NPI addresses through postal address validation to confirm they're deliverable. Geocode the verified addresses so you can do geographic analysis, territory mapping, and drive-time calculations. This step alone eliminates a significant portion of the "bad data" problem, because it identifies records with outdated or non-existent addresses.</p>
+
+<p><strong>Contact enrichment.</strong> Append phone numbers and email addresses from business listing databases, commercial data providers, and web intelligence sources. Validate phone numbers against carrier databases and email addresses at the mail-server level. This is where the NPI Registry's biggest gap gets filled.</p>
+
+<p><strong>Decision-maker identification.</strong> Cross-reference NPI records with state business registration data, practice websites, and LinkedIn profiles to identify practice owners and key contacts. For group practices, map the organizational hierarchy to distinguish between the provider who sees patients and the administrator who signs contracts.</p>
+
+<p><strong>Practice-level aggregation.</strong> Group individual provider NPIs into practice-level entities using shared addresses, organizational NPI linkages, and business name matching. This gives you the practice-level view that the Registry's provider-centric structure doesn't naturally support.</p>
+
+<p><strong>Continuous verification.</strong> None of this is a one-time exercise. Provider data changes continuously, so the enrichment and verification process needs to run on a regular cycle. The NPI Registry updates weekly, but individual record changes happen unpredictably. An enrichment process that runs quarterly catches most changes; monthly is better for high-velocity outreach teams.</p>
+
+<p>This is exactly what Provyx does. We start with the NPI Registry as a foundation and build a verified, enriched provider database that includes the contact details, business intelligence, and practice-level data that the Registry doesn't provide. The result is healthcare provider business data that's actually useful for outreach, not just identification.</p>
+      </div>
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="author-bio">
+          <h3>About the Author</h3>
+          <p><strong>Rome</strong></p>
+          <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is NPI Registry data free to use for commercial purposes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The NPPES data dissemination files are public data and free to download and use. CMS makes the data available without licensing restrictions. However, the raw data requires significant processing, cleaning, and enrichment before it's useful for commercial applications like sales outreach or marketing campaigns."}}, {"@type": "Question", "name": "How often is the NPI Registry updated?", "acceptedAnswer": {"@type": "Answer", "text": "CMS publishes updated NPPES data files weekly. However, individual provider records update on varying schedules depending on when the provider re-enrolls, revalidates, or submits a change. Some records haven't been updated since the provider's original enrollment. The weekly update cycle reflects new and modified records, not a full re-verification of all existing records."}}, {"@type": "Question", "name": "Can I use NPI numbers to match providers across different data systems?", "acceptedAnswer": {"@type": "Answer", "text": "NPI numbers are designed for exactly this purpose. They're unique, permanent identifiers assigned to each provider. You can use NPI as a primary key to match records across your CRM, billing system, credentialing database, and external data sources. It's the most reliable matching key in healthcare provider data."}}, {"@type": "Question", "name": "What's the difference between Type 1 and Type 2 NPI numbers?", "acceptedAnswer": {"@type": "Answer", "text": "Type 1 NPIs are assigned to individual healthcare providers (physicians, nurses, therapists, etc.). Type 2 NPIs are assigned to organizations (practices, hospitals, group practices, laboratories, etc.). A solo physician might have both a Type 1 individual NPI and a Type 2 organizational NPI for their practice entity."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>Is NPI Registry data free to use for commercial purposes?</h3>
+                <p>Yes. The NPPES data dissemination files are public data and free to download and use. CMS makes the data available without licensing restrictions. However, the raw data requires significant processing, cleaning, and enrichment before it's useful for commercial applications like sales outreach or marketing campaigns.</p>
+                <h3>How often is the NPI Registry updated?</h3>
+                <p>CMS publishes updated NPPES data files weekly. However, individual provider records update on varying schedules depending on when the provider re-enrolls, revalidates, or submits a change. Some records haven't been updated since the provider's original enrollment. The weekly update cycle reflects new and modified records, not a full re-verification of all existing records.</p>
+                <h3>Can I use NPI numbers to match providers across different data systems?</h3>
+                <p>NPI numbers are designed for exactly this purpose. They're unique, permanent identifiers assigned to each provider. You can use NPI as a primary key to match records across your CRM, billing system, credentialing database, and external data sources. It's the most reliable matching key in healthcare provider data.</p>
+                <h3>What's the difference between Type 1 and Type 2 NPI numbers?</h3>
+                <p>Type 1 NPIs are assigned to individual healthcare providers (physicians, nurses, therapists, etc.). Type 2 NPIs are assigned to organizations (practices, hospitals, group practices, laboratories, etc.). A solo physician might have both a Type 1 individual NPI and a Type 2 organizational NPI for their practice entity.</p>
+            </div>
+        </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="outbound-references">
+          <h4>Sources and References</h4>
+          <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+<li><a href="https://nppes.cms.hhs.gov/" target="_blank" rel="noopener">NPPES Data Dissemination</a></li>
+<li><a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC Healthcare Provider Taxonomy</a></li>
+</ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Related Resources</h2>
+        <ul class="related-links"><li><a href="/services/provider-contact-data/">Provider Contact Data Product Details</a></li>
+<li><a href="/resources/cost-of-bad-provider-data/">The Hidden Cost of Bad Provider Data</a></li>
+<li><a href="/resources/provider-data-buying-guide/">Healthcare Provider Data Buying Guide</a></li>
+<li><a href="/use-cases/provider-credentialing/">Provider Credentialing Data Enrichment</a></li>
+</ul>
+      </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
