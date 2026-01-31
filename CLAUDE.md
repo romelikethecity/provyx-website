@@ -58,17 +58,112 @@
 mental-health, chiropractic, dental, dermatology, primary-care, senior-care, integrative-medicine, medical-spas, womens-health, eye-care, orthopedics, pain-management, physical-therapy, plastic-surgery, rheumatology, weight-loss, neurology
 
 ## SEO Rules
+
+### Meta Tags
 - Title tags: 50-60 chars, keyword-first, hyphens not pipes
-- Meta descriptions: 120-158 chars, action-oriented, unique per page
+- Meta descriptions: 120-158 chars (optimal 150-158), action-oriented, unique per page
+- Meta description templates by page type:
+  - Product/Service: `{Service} for {audience}. {Key benefit}. {Differentiator or CTA}.`
+  - Resource/Guide: `{Topic} for {audience}. {Key benefit or use case}.`
+  - Category/Directory: `Find {item type} with {key feature}. {What's included}.`
 - H1: one per page, 46-60 chars
-- Canonical URL on every page (absolute)
+- Canonical URL on every page (absolute, always getprovyx.com, NEVER GitHub Pages URL)
+
+### Schema Markup (JSON-LD)
 - BreadcrumbList schema on every non-homepage page
-- FAQPage schema on pages with FAQ sections
+- FAQPage schema on ALL pages with FAQ sections (minimum 3 FAQs per page)
 - Organization + WebSite schema on homepage
+- Article schema on comparison and resource pages (headline, author, publisher, datePublished, dateModified)
 - OG + Twitter card meta tags on every page
-- 3+ internal links per page
-- 2+ outbound links to authoritative sources per content page (CMS NPI Registry, BLS, specialty associations)
-- Minimum ~500 words per programmatic page
+
+### Content Quality & Word Count Minimums
+
+| Page Type | Minimum Words | Location |
+|-----------|--------------|----------|
+| Comparison pages (/compare/) | 3,000-5,000 | Deep feature-by-feature analysis |
+| Alternative pages (/alternatives/) | 3,000-5,000 | Full alternative breakdown |
+| ICP/audience pages (/for/) | 1,200-1,500 | Industry-specific use cases |
+| Service pages (/services/) | 1,200-1,500 | Data field docs, methodology, use cases |
+| Provider hub pages (/providers/{category}/) | 500+ | Category overview with subtypes |
+| Provider subtype pages (/providers/{subtype}/) | 500+ | Specialty-specific data description |
+| Core pages (about, pricing, etc.) | 500+ | Company/product information |
+
+### Linking Requirements
+- 3+ internal links per page (beyond nav/footer)
+- 2+ outbound links to authoritative sources per content page
+- Authoritative sources for healthcare: CMS NPI Registry, BLS.gov, specialty associations (ADA, APA, AAFP, AOA, ASPS, AAD, etc.)
+- Related links section at bottom of every content page: 3-4 related pages, at least 1 cross-category
+
+### FAQ Requirements
+- Minimum 3 FAQs per page that has a FAQ section
+- FAQPage schema must match visible FAQ content
+- Data-driven FAQs preferred (use actual data points, not generic templates)
+- Every comparison, alternative, ICP, and service page MUST have a FAQ section
+
+### Images & Performance
+- All images MUST include width and height attributes (prevents CLS)
+- Social preview image: 1200 x 630px, PNG or JPG
+- Core Web Vitals targets: Performance 90+, Accessibility 90+, SEO 100, CLS < 0.1
+- Heading hierarchy: h1 > h2 > h3, never skip levels
+
+### Pre-Commit SEO Checklist
+- [ ] Title tag is unique, 50-60 characters, keyword-first
+- [ ] Meta description is 120-158 characters, action-oriented
+- [ ] Canonical URL set correctly (getprovyx.com)
+- [ ] CSS link includes version parameter (?v=N)
+- [ ] Open Graph tags present (type, url, title, description, site_name, image)
+- [ ] Twitter Card tags present (card, title, description, image)
+- [ ] BreadcrumbList schema present (inner pages)
+- [ ] FAQPage schema present (pages with FAQ sections)
+- [ ] All JSON-LD blocks are complete and valid
+- [ ] H1 tag present, unique, 46-60 chars
+- [ ] Images have width/height attributes
+- [ ] 2+ outbound links to authoritative sources
+- [ ] Related links section present
+- [ ] No placeholder values anywhere
+- [ ] Page added to sitemap
+
+### Citation Requirements (E-E-A-T)
+- Every statistic or factual claim needs an authoritative source
+- Government sources: BLS.gov, CMS.gov, Census.gov
+- Industry sources: specialty associations (ADA, APA, AAFP, etc.)
+- Research sources: Gartner, Forrester, McKinsey, HBR
+- Author bio section on resource/comparison pages (Rome's credentials + LinkedIn link)
+
+### Pain Stats Formatting
+- No spaces in stat numbers (causes line-wrap on mobile)
+- GOOD: `30%`, `$12.9M`, `2.4M+`, `40+`, `24&#8209;48hr` (non-breaking hyphen)
+- BAD: `13 hrs`, `84 days`, `24-48 hr` (spaces cause wrapping)
+
+## Comparison Article Format (from CROReport)
+Reference: https://thecroreport.com/tools/ai-sdr/11x-vs-artisan/
+
+### Required Sections (in order), 3,000-5,000 words total:
+1. **Hero** - Badge ("PROVIDER DATA COMPARISON"), H1 ("{Tool A} vs {Tool B}: {Honest Hook}"), lead paragraph, "Short Version" verdict callout box
+2. **Stats Grid** - 4 key metrics in stat cards (pricing, contract terms, key differentiator, risk indicator)
+3. **Quick Comparison Table** - 6-8 row table: Factor | Tool A | Tool B (pricing, contracts, data coverage, NPI verification, best for, big risk)
+4. **Deep Dive: Tool A** (800-1,200 words) - Company card with metadata (founded, funding, HQ), alert box for red flags/news, "What They're Selling You" prose, "What It Actually Costs" with sourced pricing, user quotes with attribution, pros/cons grid (checkmark/X format)
+5. **Deep Dive: Tool B** (800-1,200 words) - Same structure as Tool A
+6. **Stage-Specific Guidance** (150-250 words per stage) - "So Which One Should You Actually Buy?" with 3 buyer segments:
+   - Small teams (under 5 reps): colored alert box with verdict
+   - Growth teams (5-20 reps): caution box with cost analysis
+   - Enterprise (20+ reps): info box with options
+7. **The Honest Take** (~300 words) - "Why Most of You Should Skip {Tool}" with meta-problem analysis, "Bottom Line" subsection with actionable bullet points
+8. **Questions to Ask Before Signing** - 8-10 specific vendor-vetting questions in ordered list, bold question + explanation format
+9. **Alternatives Table** - 4-6 lower-risk options: Tool | Price | Contract | Best For, closing insight about contract terms
+10. **Author Bio** - Rome's credentials, LinkedIn link
+11. **CTA Section** - Lead to contact form
+12. **Disclosure + Sources** - Transparency statement, last updated date, source list
+
+### Comparison Writing Rules:
+- Every factual claim needs a linked source
+- Bad: "Users report terrible results"
+- Good: "One G2 reviewer noted 15% bounce rates on provider emails." [with link]
+- All user quotes need attribution and link
+- Pricing must be sourced or labeled "Not Public"
+- Use color-coded tags in tables: red (bad), yellow (caution), green (good)
+- Show your thinking with natural pauses and visible reasoning
+- Be honest about both tools - don't just sell Provyx
 
 ## Writing Style
 - DO: contractions, varied sentence length, specific industry details, second-person "you", admit limitations, pain-first messaging

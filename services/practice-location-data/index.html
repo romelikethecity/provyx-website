@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Location Data | Provyx</title>
-    <meta name="description" content="Healthcare practice addresses, NPI details, taxonomy codes, and multi-location mapping for provider organizations.">
-    <link rel="canonical" href="https://getprovyx.com/services/practice-location-data/">
+    <title>Geocoded Healthcare Practice Location Intelligence | Provyx | Provyx</title>
+    <meta name="description" content="Geocoded healthcare practice location data with lat/long coordinates, multi-site mapping, and practice vs mailing address differentiation. Updated quarterly.">
+    <link rel="canonical" href="https://getprovyx.comhttps://getprovyx.com/services/practice-location-data">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://getprovyx.com/services/practice-location-data/">
-    <meta property="og:title" content="Practice Location Data | Provyx">
-    <meta property="og:description" content="Healthcare practice addresses, NPI details, taxonomy codes, and multi-location mapping for provider organizations.">
+    <meta property="og:url" content="https://getprovyx.comhttps://getprovyx.com/services/practice-location-data">
+    <meta property="og:title" content="Geocoded Healthcare Practice Location Intelligence | Provyx | Provyx">
+    <meta property="og:description" content="Geocoded healthcare practice location data with lat/long coordinates, multi-site mapping, and practice vs mailing address differentiation. Updated quarterly.">
     <meta property="og:site_name" content="Provyx">
     <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Practice Location Data | Provyx">
-    <meta name="twitter:description" content="Healthcare practice addresses, NPI details, taxonomy codes, and multi-location mapping for provider organizations.">
+    <meta name="twitter:title" content="Geocoded Healthcare Practice Location Intelligence | Provyx | Provyx">
+    <meta name="twitter:description" content="Geocoded healthcare practice location data with lat/long coordinates, multi-site mapping, and practice vs mailing address differentiation. Updated quarterly.">
     <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
 
     <script type="application/ld+json">
@@ -30,19 +30,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://getprovyx.com"
+      "item": "/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://getprovyx.com/services/"
+      "item": "/services"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Practice Location Data",
-      "item": "https://getprovyx.com/services/practice-location-data/"
+      "item": "/services/practice-location-data"
     }
   ]
 }
@@ -174,47 +174,117 @@
     <main>
 
 
-        <section class="page-hero section">
-            <div class="container">
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="https://getprovyx.com">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/services/">Services</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Practice Location Data</span>
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> <span class="breadcrumb__separator">/</span> <a href="/services">Services</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Practice Location Data</span>
         </nav>
-                <h1 class="page-hero__title">Practice Location Data</h1>
-                <p class="page-hero__subtitle">Healthcare practice addresses, NPI details, taxonomy codes, and multi-location mapping for provider organizations.</p>
-            </div>
-        </section>
+    <h1>Geocoded Healthcare Practice Location Intelligence</h1>
+    <p class="subtitle">Geocoded practice addresses, multi-site mapping, and location type classification for every NPI-registered provider in the United States.</p>
+  </div>
+</section>
 
-        <section class="section content">
-            <div class="container" style="max-width:800px">
-                <p>Knowing where providers practice matters as much as knowing how to reach them. Our practice location data maps providers to their current practice sites, with full address details, NPI enumeration data, and taxonomy codes. We also identify multi-location practices and flag the primary vs. secondary sites.</p>
-            </div>
-        </section>
+<section class="content-section">
+  <div class="container">
+    <h2>Why Practice Location Data Is Harder Than It Looks</h2>
+    <p>You'd think addresses would be the easy part. They're not. The NPI Registry contains two address fields per provider: a practice location address and a mailing address. For roughly 40% of records, these are different. The mailing address might be a billing company in another state. The practice address might be a hospital campus with no suite number. Neither address tells you whether the provider is still physically seeing patients at that location.</p><p>It gets worse for multi-location providers. A dermatology group with five offices might list their corporate headquarters as the NPI practice address while patients are actually seen across town. An urgent care chain might have twenty locations but only one Type 2 organizational NPI, making it impossible to distinguish sites from the <a href="https://npiregistry.cms.hhs.gov/">NPI Registry</a> alone.</p><p>For territory planning, network adequacy analysis, and location-based marketing, approximate addresses aren't good enough. You need geocoded coordinates, site-level differentiation, and a clear picture of which locations are active patient care sites versus administrative offices. That's what practice location intelligence provides.</p>
+  </div>
+</section>
 
-        <section class="section section--alt">
+<section class="content-section features-section">
+  <div class="container">
+    <h2>What's in a Provyx Practice Location Record</h2>
+    <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="feature-icon"><i data-feather="map-pin"></i></div>
+      <h3>Geocoded Addresses with Latitude and Longitude</h3>
+      <p>Every practice address is geocoded to rooftop-level precision where possible, with latitude and longitude coordinates included in every record. This allows you to run radius searches, build heat maps, calculate drive-time polygons, and perform spatial analysis without a separate geocoding step. Addresses that can only be geocoded to the zip centroid level are flagged so you know the precision level of each coordinate pair.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon"><i data-feather="layers"></i></div>
+      <h3>Type 1 and Type 2 NPI Classification</h3>
+      <p>We classify every location by its association with Type 1 (individual provider) and Type 2 (organizational) NPI records. This matters because an individual physician might practice at a location registered under a group's Type 2 NPI. Our records link both, so you can see all individual providers associated with an organizational location and all locations associated with an individual provider. This cross-referencing is sourced from <a href="https://nppes.cms.hhs.gov/">NPPES</a> files and supplemented with claims-derived affiliation data.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon"><i data-feather="git-branch"></i></div>
+      <h3>Multi-Location Mapping with Primary and Secondary Designation</h3>
+      <p>For providers and organizations with multiple practice sites, we map every known location and designate which is the primary site. Primary designation is based on the address listed on the NPI record, supplemented by web presence signals and appointment availability data. Secondary sites are listed with their own full address records. This is critical for medical device reps planning routes and for payers validating network directory listings at the site level.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon"><i data-feather="mail"></i></div>
+      <h3>Practice Address vs Mailing Address Differentiation</h3>
+      <p>We maintain separate fields for practice location address and mailing address, and we flag records where these differ. About 40% of NPI records have mismatched addresses. If you're sending physical mail, you need the mailing address. If you're dispatching a field rep, you need the practice address. Conflating the two is one of the most common and costly mistakes in healthcare location data. Our records make the distinction explicit.</p>
+    </div>
+
+    </div>
+    <p class="addons-note"><strong>Add-ons:</strong> Additional location enrichment includes hours of operation, wheelchair accessibility flags, and public transit proximity scores where available from business listing sources.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <h2>How We Build Practice Location Intelligence</h2>
+    <p>The foundation is the NPPES data dissemination, which provides the self-reported practice and mailing addresses for every NPI record. We supplement this with commercial business listing databases, Google Places data, and state facility licensing records to validate and enrich each address.</p><p>Geocoding is handled through a multi-provider approach. We run addresses through two independent geocoding services and compare results. When both agree within a tight tolerance, we use the higher-precision result. When they diverge, we flag the record for manual review. This catches common geocoding failures like addresses that resolve to the wrong side of the street or to a zip centroid instead of the actual building.</p><p>Multi-location mapping draws from organizational NPI records, practice website analysis, and appointment booking platforms. If a practice website lists three office locations, we capture all three and link them to the appropriate NPI records.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <h2>Who Uses Practice Location Data</h2>
+    <p><strong>Medical device sales teams</strong> use geocoded location data for territory planning and route optimization. Knowing the exact coordinates of every orthopedic practice within a 50-mile radius, along with which are primary vs satellite sites, makes daily route planning far more efficient. See our <a href="/for/medical-device-companies">medical device solutions</a>.</p><p><strong>Health plan network teams</strong> rely on practice location intelligence for network adequacy reporting. CMS and state regulators require health plans to demonstrate that members have access to providers within specific distance and drive-time thresholds. Accurate geocoded data makes those calculations possible.</p><p><strong>Healthcare real estate developers</strong> use location data to identify underserved areas and site new facilities. Understanding where existing practices cluster and where gaps exist drives development strategy. Overlaying provider density maps with population data reveals opportunities that spreadsheets alone can't surface.</p><p><strong>Healthcare marketers</strong> use location data to build geo-targeted campaigns that reach providers in specific zip codes, counties, or MSAs. Visit our <a href="/for/health-tech-companies">health tech page</a> for more.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <h2>Data Quality and Accuracy</h2>
+    <p>Practice addresses are the most stable field in our database. Providers move less often than they change phone numbers. That said, we still see roughly 8-12% of addresses change annually due to practice relocations, closures, and mergers.</p><p>Every address goes through USPS standardization to correct formatting issues like misspelled street names, missing suite numbers, and inconsistent abbreviations. Geocoding accuracy is validated against known reference points. Records where the geocoded location doesn't match the state or zip code in the address are flagged for review. We also cross-check against commercial business listing databases to confirm that the address corresponds to an active healthcare practice and not a vacant building or unrelated business. The location database is refreshed quarterly, with NPPES-sourced updates applied weekly.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What's the geocoding precision level?", "acceptedAnswer": {"@type": "Answer", "text": "Most addresses are geocoded to rooftop-level precision, meaning the coordinates point to the specific building. When rooftop geocoding isn't possible, typically for rural addresses or new construction, we fall back to parcel or street-level precision. Every record includes a precision indicator so you know the accuracy level of the coordinates."}}, {"@type": "Question", "name": "How do you handle practices that have closed?", "acceptedAnswer": {"@type": "Answer", "text": "We check NPI deactivation records, business registration status, and web presence signals to identify closed practices. Deactivated NPI records are flagged, and addresses associated with confirmed closures are marked as inactive. We don't remove them from the database because historical location data is valuable for market analysis, but they won't appear in active-only data pulls."}}, {"@type": "Question", "name": "Can I get location data in a GIS-compatible format?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We deliver location data in CSV with lat/long columns by default, which imports directly into any GIS tool. We can also provide GeoJSON or Shapefile formats on request. If you're integrating with a mapping platform like Mapbox or Google Maps, the default CSV format with WGS84 coordinates works without any conversion."}}, {"@type": "Question", "name": "How many practice locations are in the database?", "acceptedAnswer": {"@type": "Answer", "text": "The database covers over 3.5 million practice location records linked to active NPI registrations across all 50 states and territories. This includes both Type 1 individual provider locations and Type 2 organizational locations. The count fluctuates as new providers enumerate and others deactivate, but we track every active NPI in the NPPES system."}}]}</script>
+        <section class="section faq-section">
             <div class="container">
-                <h2 class="text-center mb-xl">What's Included</h2>
-                <div class="feature-grid">
-                    
-                <div class="feature-card">
-                    <h3 class="feature-card__title">Geocoded Addresses</h3>
-                    <p class="feature-card__text">Full street addresses with latitude and longitude for mapping and territory planning.</p>
-                </div>
-                <div class="feature-card">
-                    <h3 class="feature-card__title">NPI Enumeration Data</h3>
-                    <p class="feature-card__text">Type 1 (individual) and Type 2 (organizational) NPI records with enumeration dates.</p>
-                </div>
-                <div class="feature-card">
-                    <h3 class="feature-card__title">Taxonomy Codes</h3>
-                    <p class="feature-card__text">Healthcare Provider Taxonomy codes for specialty classification and filtering.</p>
-                </div>
-                <div class="feature-card">
-                    <h3 class="feature-card__title">Multi-Location Mapping</h3>
-                    <p class="feature-card__text">Identify providers practicing at multiple sites and flag primary locations.</p>
-                </div>
-                </div>
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>What's the geocoding precision level?</h3>
+                <p>Most addresses are geocoded to rooftop-level precision, meaning the coordinates point to the specific building. When rooftop geocoding isn't possible, typically for rural addresses or new construction, we fall back to parcel or street-level precision. Every record includes a precision indicator so you know the accuracy level of the coordinates.</p>
+                <h3>How do you handle practices that have closed?</h3>
+                <p>We check NPI deactivation records, business registration status, and web presence signals to identify closed practices. Deactivated NPI records are flagged, and addresses associated with confirmed closures are marked as inactive. We don't remove them from the database because historical location data is valuable for market analysis, but they won't appear in active-only data pulls.</p>
+                <h3>Can I get location data in a GIS-compatible format?</h3>
+                <p>Yes. We deliver location data in CSV with lat/long columns by default, which imports directly into any GIS tool. We can also provide GeoJSON or Shapefile formats on request. If you're integrating with a mapping platform like Mapbox or Google Maps, the default CSV format with WGS84 coordinates works without any conversion.</p>
+                <h3>How many practice locations are in the database?</h3>
+                <p>The database covers over 3.5 million practice location records linked to active NPI registrations across all 50 states and territories. This includes both Type 1 individual provider locations and Type 2 organizational locations. The count fluctuates as new providers enumerate and others deactivate, but we track every active NPI in the NPPES system.</p>
             </div>
         </section>
+  </div>
+</section>
 
+<section class="content-section">
+  <div class="container">
+<section class="related-links">
+  <h2>Related Data Products</h2>
+  <ul>
+    <li><a href="/services/provider-contact-data">Provider Contact Data</a></li>
+    <li><a href="/services/practice-firmographics">Practice Firmographics</a></li>
+    <li><a href="/services/custom-list-building">Custom List Building</a></li>
+  </ul>
+  <h3>Related Provider Categories</h3>
+  <ul>
+    <li><a href="/providers/primary-care-physicians">Primary Care Physicians</a></li>
+    <li><a href="/providers/urgent-care-centers">Urgent Care Centers</a></li>
+    <li><a href="/providers/hospitals">Hospitals</a></li>
+  </ul>
+</section>
+  </div>
+</section>
 
         <section class="section cta-section">
             <div class="container">
