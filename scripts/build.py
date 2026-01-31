@@ -1183,14 +1183,30 @@ COMPARISONS = [
 
         # -- Quick Comparison Table (8 rows) --
         "comparison_table_rows": [
-            ("Starting Price", "$14,995/year (Professional plan)", "Pay-per-record; no annual minimum"),
-            ("Contract Terms", "Annual contract, auto-renews, 60-day cancellation notice", "Month-to-month or per-project; cancel anytime"),
-            ("Healthcare Focus", "One of 50+ industries covered", "100% healthcare provider focus"),
-            ("NPI Verification", "Not available", "Every record matched against the NPI Registry"),
-            ("Taxonomy Filtering", "Not available", "Filter by 800+ NUCC taxonomy codes"),
-            ("Data Delivery", "Platform access with seat-based licensing", "CSV, API, or direct CRM push"),
-            ("Best For", "Multi-industry enterprise sales teams", "Teams selling exclusively into healthcare"),
-            ("Key Risk", "High annual cost; data may lack healthcare depth", "Not suitable if you also prospect outside healthcare"),
+            ("Starting Price",
+             '$14,995/year <span class="tag tag--red">Enterprise Only</span>',
+             'Pay-per-record <span class="tag tag--green">No Minimum</span>'),
+            ("Contract Terms",
+             'Annual, auto-renews <span class="tag tag--red">60-Day Notice</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Healthcare Focus",
+             'One of 50+ industries <span class="tag tag--amber">Horizontal</span>',
+             '100% healthcare <span class="tag tag--green">Vertical</span>'),
+            ("NPI Verification",
+             'Not available <span class="tag tag--red">No NPI</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("Taxonomy Filtering",
+             'Not available <span class="tag tag--red">No Taxonomy</span>',
+             '800+ codes <span class="tag tag--green">NUCC Taxonomy</span>'),
+            ("Data Delivery",
+             'Platform access <span class="tag tag--amber">Seat-Based</span>',
+             'CSV, API, CRM push <span class="tag tag--green">Flexible</span>'),
+            ("Best For",
+             "Multi-industry enterprise sales teams",
+             "Teams selling exclusively into healthcare"),
+            ("Key Risk",
+             'High annual cost; thin healthcare data <span class="tag tag--red">Lock-In</span>',
+             'Healthcare only <span class="tag tag--amber">No Other Verticals</span>'),
         ],
 
         # -- Deep Dive: Competitor (800-1,200 words) --
@@ -1547,10 +1563,126 @@ COMPARISONS = [
 
         # -- Related links --
         "related_links": [
-            {"url": "/comparisons/provyx-vs-definitive-healthcare/", "text": "Provyx vs. Definitive Healthcare"},
-            {"url": "/comparisons/provyx-vs-apollo/", "text": "Provyx vs. Apollo.io"},
-            {"url": "/healthcare-provider-data/", "text": "Healthcare Provider Data Overview"},
+            {"url": "/compare/provyx-vs-definitive-healthcare/", "text": "Provyx vs. Definitive Healthcare"},
+            {"url": "/compare/provyx-vs-apollo/", "text": "Provyx vs. Apollo.io"},
+            {"url": "/providers/", "text": "Healthcare Provider Data Overview"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
+        ],
+
+        # -- NEW: CROReport-style visual fields --
+        "verdict": (
+            "If your team only sells into healthcare, Provyx gives you NPI-verified "
+            "records at a fraction of ZoomInfo's cost with no annual contract. If you "
+            "prospect across multiple industries, ZoomInfo's breadth is hard to beat."
+        ),
+        "verdict_icon": "&#x26A0;&#xFE0F;",
+        "stats": [
+            {"value": "$14,995+", "label": "ZoomInfo Starting<br>Annual Price", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "100%", "label": "Provyx Records<br>NPI-Verified", "color": "green"},
+            {"value": "None", "label": "ZoomInfo NPI<br>Verification", "color": "red"},
+        ],
+        "competitor_meta": {
+            "founded": "2007",
+            "hq": "Waltham, MA",
+            "status": "Public (NASDAQ: ZI)",
+        },
+        "competitor_logo": "/assets/logos/competitors/zoominfo.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x26A1;",
+            "heading": "Auto-Renewal Contract Risk",
+            "text": (
+                "Multiple G2 reviewers report surprise auto-renewals with price "
+                "increases of 10-30%. A 60-day written cancellation notice is "
+                "required to exit. Missing the window locks you in for another year."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "For enterprise prospecting across industries, ZoomInfo's data "
+                    "depth is hard to beat. We've tried alternatives and ZoomInfo "
+                    "consistently has the most accurate direct dials."
+                ),
+                "source": "G2 Reviewer",
+                "url": "https://www.g2.com/products/zoominfo-sales/reviews",
+                "sentiment": "positive",
+            },
+            {
+                "text": (
+                    "They auto-renewed our contract without clear warning and "
+                    "refused to let us out. The healthcare data was thinner than "
+                    "we expected for the price."
+                ),
+                "source": "Trustpilot Reviewer, 2024",
+                "url": "https://www.trustpilot.com/review/zoominfo.com",
+                "sentiment": "negative",
+            },
+        ],
+        "competitor_pros": [
+            "Largest general B2B contact database (100M+ profiles)",
+            "Strong intent data and website visitor tracking",
+            "Robust CRM integrations and workflow automation",
+            "Covers 50+ industries in a single platform",
+            "Well-established enterprise sales infrastructure",
+        ],
+        "competitor_cons": [
+            "No NPI verification for healthcare providers",
+            "No taxonomy code filtering for clinical specialties",
+            "Annual contracts with aggressive auto-renewal terms",
+            "Starting at $14,995/year; multi-seat deals exceed $60K",
+            "Healthcare-specific data accuracy issues reported on G2",
+            "Practice-level data (direct lines, fax) often missing",
+        ],
+        "provyx_pros": [
+            "Every record NPI-verified against CMS registry",
+            "800+ NUCC taxonomy codes for specialty filtering",
+            "Practice-level data including direct phone, fax, address",
+            "Pay-per-record pricing with no annual contract",
+            "CSV, API, or direct CRM push delivery options",
+            "Built exclusively for healthcare provider intelligence",
+        ],
+        "provyx_limitations": [
+            "US healthcare providers only; no international coverage",
+            "No intent data, website visitor tracking, or technographics",
+            "No built-in email sequencer or sales engagement tools",
+            "Not suitable if you prospect outside the healthcare vertical",
+        ],
+        "bottom_line_html": (
+            "<p>If healthcare providers are your entire addressable market, paying "
+            "$15,000+ per year for a general-purpose database doesn't make financial "
+            "sense. You're subsidizing data collection for dozens of industries you "
+            "will never sell into.</p>"
+            "<p><strong>The smart play:</strong></p>"
+            "<ul>"
+            "<li><strong>Healthcare-only teams:</strong> Start with Provyx. Buy a "
+            "sample list, compare the records side-by-side with ZoomInfo, and decide "
+            "based on data quality, not marketing.</li>"
+            "<li><strong>Multi-vertical teams:</strong> Keep ZoomInfo for non-healthcare "
+            "verticals and supplement with Provyx for provider-specific campaigns.</li>"
+            "<li><strong>Currently on ZoomInfo:</strong> Request Provyx data before "
+            "your renewal window. You need at least 90 days to evaluate properly.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What's the actual cost per qualified healthcare provider record?</strong> "
+            "Divide total annual platform cost by the number of healthcare records you actually "
+            "use. Not the total database size.",
+            "<strong>Can I filter by NUCC taxonomy codes?</strong> If the answer is no, "
+            "you'll be doing manual specialty research on every record.",
+            "<strong>Are records NPI-verified?</strong> If not, ask how they confirm a "
+            "contact is an active, licensed healthcare provider.",
+            "<strong>What's the contract term and cancellation process?</strong> Get the "
+            "exact notice period and method in writing before you sign.",
+            "<strong>What are the renewal terms?</strong> Ask specifically about automatic "
+            "renewal, price increase caps, and opt-out deadlines.",
+            "<strong>Can I see healthcare-specific accuracy metrics?</strong> Overall "
+            "accuracy across 50 industries doesn't reflect healthcare data quality.",
+            "<strong>What practice-level data is included?</strong> Practice address, "
+            "phone, fax, owner name, and website matter more than corporate HQ data.",
+            "<strong>Can I export data without per-seat restrictions?</strong> Your "
+            "team shouldn't need individual licenses to access records you've paid for.",
         ],
     },
 
@@ -1605,14 +1737,30 @@ COMPARISONS = [
 
         # -- Quick Comparison Table (8 rows) --
         "comparison_table_rows": [
-            ("Starting Price", "$25,000-$100,000+/year (enterprise pricing)", "Pay-per-record; no annual minimum"),
-            ("Contract Terms", "Annual contracts with auto-renewal and 5% annual uplifts", "Month-to-month or per-project; cancel anytime"),
-            ("Healthcare Focus", "100% healthcare; strong on hospitals and health systems", "100% healthcare; strong on individual providers"),
-            ("NPI Verification", "Available for many records", "Every record matched against the NPI Registry"),
-            ("Taxonomy Filtering", "Available within the platform", "Filter by 800+ NUCC taxonomy codes on export"),
-            ("Data Delivery", "Platform access; Salesforce integration is a $22,000+ add-on", "CSV, API, or direct CRM push included"),
-            ("Best For", "Enterprise teams analyzing hospital systems and referral networks", "Sales and marketing teams building provider outreach lists"),
-            ("Key Risk", "High cost and steep learning curve for smaller teams", "Less depth on hospital-system-level analytics"),
+            ("Starting Price",
+             '$25,000-$100,000+/year <span class="tag tag--red">Enterprise Only</span>',
+             'Pay-per-record <span class="tag tag--green">No Minimum</span>'),
+            ("Contract Terms",
+             'Annual, auto-renews <span class="tag tag--red">5% Annual Uplifts</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Healthcare Focus",
+             '100% healthcare <span class="tag tag--green">Hospitals &amp; Systems</span>',
+             '100% healthcare <span class="tag tag--green">Individual Providers</span>'),
+            ("NPI Verification",
+             'Available for many records <span class="tag tag--amber">Partial</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("Taxonomy Filtering",
+             'Platform-only <span class="tag tag--amber">Limited Export</span>',
+             '800+ codes on export <span class="tag tag--green">NUCC Taxonomy</span>'),
+            ("Data Delivery",
+             'Platform access <span class="tag tag--red">CRM Add-On $22K+</span>',
+             'CSV, API, CRM push <span class="tag tag--green">Included</span>'),
+            ("Best For",
+             "Enterprise teams analyzing hospital systems",
+             "Sales/marketing teams building provider outreach lists"),
+            ("Key Risk",
+             'High cost, steep learning curve <span class="tag tag--red">Complex</span>',
+             'Less institutional analytics depth <span class="tag tag--amber">No Claims Data</span>'),
         ],
 
         # -- Deep Dive: Competitor (800-1,200 words) --
@@ -1973,10 +2121,110 @@ COMPARISONS = [
 
         # -- Related links --
         "related_links": [
-            {"url": "/comparisons/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
-            {"url": "/comparisons/provyx-vs-apollo/", "text": "Provyx vs. Apollo.io"},
-            {"url": "/healthcare-provider-data/", "text": "Healthcare Provider Data Overview"},
+            {"url": "/compare/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
+            {"url": "/compare/provyx-vs-apollo/", "text": "Provyx vs. Apollo.io"},
+            {"url": "/providers/", "text": "Healthcare Provider Data Overview"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
+        ],
+
+        # -- NEW: CROReport-style visual fields --
+        "verdict": (
+            "Definitive Healthcare is the gold standard for hospital analytics and "
+            "claims data. But if you need individual provider contact lists for "
+            "outreach, Provyx delivers the same NPI-verified records without the "
+            "six-figure price tag or enterprise learning curve."
+        ),
+        "verdict_icon": "&#x1F3E5;",
+        "stats": [
+            {"value": "$25K+", "label": "Definitive HC<br>Starting Price", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "$22K+", "label": "CRM Integration<br>Add-On Cost", "color": "red"},
+            {"value": "$0", "label": "Provyx CRM Push<br>Add-On Cost", "color": "green"},
+        ],
+        "competitor_meta": {
+            "founded": "2011",
+            "hq": "Framingham, MA",
+            "status": "Public (NASDAQ: DH)",
+        },
+        "competitor_logo": "/assets/logos/competitors/definitive-healthcare.svg",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F4CA;",
+            "heading": "Different Products for Different Use Cases",
+            "text": (
+                "Definitive Healthcare excels at institutional analytics: claims data, "
+                "referral networks, procedure volumes, and hospital technology stacks. "
+                "It's a different product category from Provyx. If you need those "
+                "analytics, Definitive is likely the right choice."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "The claims analytics and hospital-level data are unmatched. But "
+                    "for individual provider outreach, we found ourselves exporting "
+                    "data and cleaning it manually before every campaign."
+                ),
+                "source": "G2 Reviewer",
+                "url": "https://www.g2.com/products/definitive-healthcare/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "competitor_pros": [
+            "Deepest hospital and health system analytics in the market",
+            "Claims-based insights: procedure volumes, referral patterns",
+            "Technology installation data for hospital IT targeting",
+            "Executive contact data for C-suite at health systems",
+            "100% healthcare focused, unlike horizontal B2B tools",
+        ],
+        "competitor_cons": [
+            "Starting at $25K+/year; total cost often $50K-$100K+",
+            "CRM integration (Salesforce) is a $22K+ annual add-on",
+            "Steep learning curve for the analytics platform",
+            "Individual provider contact data is secondary to institutional data",
+            "Annual contracts with 5% automatic annual uplifts",
+        ],
+        "provyx_pros": [
+            "Every record NPI-verified against CMS registry",
+            "Purpose-built for individual provider outreach",
+            "Practice-level data: direct phone, fax, address, owner",
+            "Pay-per-record pricing; no six-figure annual commitment",
+            "CRM delivery included at no extra cost",
+        ],
+        "provyx_limitations": [
+            "No claims analytics or procedure volume data",
+            "No hospital technology installation tracking",
+            "No referral network mapping or institutional hierarchies",
+            "Limited executive-level data for health system C-suites",
+        ],
+        "bottom_line_html": (
+            "<p>These two products serve different primary needs. Definitive Healthcare "
+            "is an analytics platform that also has contact data. Provyx is a contact "
+            "data platform built for outreach.</p>"
+            "<p><strong>The smart play:</strong></p>"
+            "<ul>"
+            "<li><strong>If you need hospital analytics:</strong> Definitive Healthcare "
+            "is the right tool. Claims data, referral mapping, and technology installs "
+            "are its core strength.</li>"
+            "<li><strong>If you need provider outreach lists:</strong> Provyx delivers "
+            "NPI-verified contacts at a fraction of the cost, with simpler delivery.</li>"
+            "<li><strong>If you need both:</strong> Use Definitive for strategic "
+            "analysis and Provyx for tactical outreach execution.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Do you primarily need institutional analytics or provider contact data?</strong> "
+            "This single question determines which platform fits better.",
+            "<strong>What's the total cost including CRM integration?</strong> "
+            "The Salesforce add-on alone can exceed the cost of Provyx for a year.",
+            "<strong>How many individual provider records will you actually use?</strong> "
+            "If it's under 50,000, the per-record cost at Definitive may be $1-2+ each.",
+            "<strong>Can your team fully utilize the analytics platform?</strong> "
+            "If you're only exporting contact lists, you're paying for features you won't use.",
+            "<strong>What are the renewal terms?</strong> "
+            "Ask about automatic uplifts, multi-year lock-ins, and cancellation windows.",
+            "<strong>How are individual provider records sourced and verified?</strong> "
+            "Understand whether records come from claims data, manual research, or NPI matching.",
         ],
     },
 
@@ -2033,14 +2281,30 @@ COMPARISONS = [
 
         # -- Quick Comparison Table (8 rows) --
         "comparison_table_rows": [
-            ("Starting Price", "Free tier available; paid plans $49-$119/month per user", "Pay-per-record; no monthly subscription required"),
-            ("Contract Terms", "Monthly or annual billing; credit-based system with caps", "Month-to-month or per-project; no credit caps"),
-            ("Healthcare Focus", "General sales intelligence; no healthcare specialization", "100% healthcare provider focus"),
-            ("NPI Verification", "Not available", "Every record matched against the NPI Registry"),
-            ("Taxonomy Filtering", "Not available", "Filter by 800+ NUCC taxonomy codes"),
-            ("Data Delivery", "Platform access with built-in email sequencing", "CSV, API, or direct CRM push"),
-            ("Best For", "Tech/SaaS sales teams with multi-industry outreach", "Teams selling exclusively into healthcare providers"),
-            ("Key Risk", "20-35% email bounce rates reported for healthcare contacts", "Not suitable for non-healthcare prospecting"),
+            ("Starting Price",
+             'Free tier; paid $49-$119/mo/user <span class="tag tag--green">Affordable</span>',
+             'Pay-per-record <span class="tag tag--green">No Subscription</span>'),
+            ("Contract Terms",
+             'Monthly or annual <span class="tag tag--green">Flexible</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Healthcare Focus",
+             'General B2B <span class="tag tag--red">No Healthcare</span>',
+             '100% healthcare <span class="tag tag--green">Vertical</span>'),
+            ("NPI Verification",
+             'Not available <span class="tag tag--red">No NPI</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("Taxonomy Filtering",
+             'Not available <span class="tag tag--red">No Taxonomy</span>',
+             '800+ codes <span class="tag tag--green">NUCC Taxonomy</span>'),
+            ("Data Delivery",
+             'Platform + email sequencing <span class="tag tag--green">Built-In</span>',
+             'CSV, API, CRM push <span class="tag tag--green">Flexible</span>'),
+            ("Best For",
+             "Tech/SaaS teams with multi-industry outreach",
+             "Teams selling exclusively into healthcare"),
+            ("Key Risk",
+             'Healthcare bounce rates 20-35% <span class="tag tag--red">Data Quality</span>',
+             'No email sequencer <span class="tag tag--amber">Data Only</span>'),
         ],
 
         # -- Deep Dive: Competitor (800-1,200 words) --
@@ -2402,10 +2666,111 @@ COMPARISONS = [
 
         # -- Related links --
         "related_links": [
-            {"url": "/comparisons/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
-            {"url": "/comparisons/provyx-vs-definitive-healthcare/", "text": "Provyx vs. Definitive Healthcare"},
-            {"url": "/healthcare-provider-data/", "text": "Healthcare Provider Data Overview"},
+            {"url": "/compare/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
+            {"url": "/compare/provyx-vs-definitive-healthcare/", "text": "Provyx vs. Definitive Healthcare"},
+            {"url": "/providers/", "text": "Healthcare Provider Data Overview"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
+        ],
+
+        # -- NEW: CROReport-style visual fields --
+        "verdict": (
+            "Apollo is a great all-in-one sales tool at an unbeatable price for "
+            "general B2B outreach. But healthcare teams report 20-35% email bounce "
+            "rates because Apollo lacks NPI verification and specialty data. "
+            "If healthcare is your market, Provyx delivers cleaner records."
+        ),
+        "verdict_icon": "&#x1F4E7;",
+        "stats": [
+            {"value": "$49/mo", "label": "Apollo Starting<br>Per-User Price", "color": "green"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "20-35%", "label": "Apollo Healthcare<br>Bounce Rates", "color": "red"},
+            {"value": "270M+", "label": "Apollo Total<br>Contact Database", "color": ""},
+        ],
+        "competitor_meta": {
+            "founded": "2015",
+            "hq": "San Francisco, CA",
+            "status": "$251M raised, $1.6B valuation",
+        },
+        "competitor_logo": "/assets/logos/competitors/apollo.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x26A0;&#xFE0F;",
+            "heading": "Healthcare Data Quality Warning",
+            "text": (
+                "Apollo's 270M+ database prioritizes tech and SaaS contacts. "
+                "Healthcare provider records are often scraped from general web "
+                "sources without NPI verification. G2 reviewers report "
+                "significantly higher bounce rates on healthcare campaigns."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "Apollo is incredible for tech sales. The sequences, the data, "
+                    "the integrations. But when we tried running healthcare "
+                    "campaigns, the bounce rates were brutal."
+                ),
+                "source": "G2 Reviewer",
+                "url": "https://www.g2.com/products/apollo-io/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "competitor_pros": [
+            "Free tier with 10,000 export credits per month",
+            "Built-in email sequencing and dialer",
+            "270M+ total contact database",
+            "Strong CRM integrations (Salesforce, HubSpot)",
+            "Affordable paid plans starting at $49/month",
+        ],
+        "competitor_cons": [
+            "No NPI verification for healthcare providers",
+            "No taxonomy code filtering for clinical specialties",
+            "Healthcare email bounce rates of 20-35% reported",
+            "No practice-level data (direct lines, fax numbers)",
+            "Credit caps on exports limit high-volume campaigns",
+        ],
+        "provyx_pros": [
+            "Every record NPI-verified against CMS registry",
+            "800+ NUCC taxonomy codes for specialty targeting",
+            "Practice-level contacts with direct phone and fax",
+            "No credit caps or per-seat subscription model",
+            "Built exclusively for healthcare outreach",
+        ],
+        "provyx_limitations": [
+            "No built-in email sequencer or dialer",
+            "No free tier; pay-per-record from the start",
+            "Healthcare providers only; no general B2B data",
+            "No intent data or website visitor tracking",
+        ],
+        "bottom_line_html": (
+            "<p>This isn't a close comparison if healthcare is your market. Apollo "
+            "wins on price and feature breadth for general B2B. But healthcare data "
+            "quality is where it falls apart.</p>"
+            "<p><strong>The smart play:</strong></p>"
+            "<ul>"
+            "<li><strong>General B2B teams:</strong> Apollo is the better value. "
+            "Built-in sequences, huge database, affordable pricing.</li>"
+            "<li><strong>Healthcare teams:</strong> Use Provyx for provider data "
+            "and pipe it into your Apollo sequences. You get clean records with "
+            "Apollo's outreach tools.</li>"
+            "<li><strong>Testing the waters:</strong> Run one campaign through "
+            "Apollo with healthcare contacts and track the bounce rate. Then run "
+            "the same campaign with Provyx data. The numbers will speak.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What's your healthcare email bounce rate on Apollo?</strong> "
+            "Pull your campaign analytics. If it's over 10%, you have a data quality problem.",
+            "<strong>Can you filter Apollo contacts by NPI or taxonomy code?</strong> "
+            "If no, you can't confirm records are active licensed providers.",
+            "<strong>How many Apollo credits do you burn on bad healthcare contacts?</strong> "
+            "Wasted credits on bounced emails are a hidden cost.",
+            "<strong>Would you save money buying clean data separately?</strong> "
+            "Compare: Provyx records into Apollo sequences vs. Apollo's built-in data.",
+            "<strong>Do you need practice-level details?</strong> "
+            "Direct phone, fax, practice address, and owner data aren't in Apollo.",
+            "<strong>Are you paying per-seat for data you mostly don't use?</strong> "
+            "If your team only prospects into healthcare, most of Apollo's database is irrelevant.",
         ],
     },
 
@@ -2449,43 +2814,43 @@ COMPARISONS = [
     "comparison_table_rows": [
         (
             "Starting Price",
-            "Not publicly listed; enterprise quotes typically start at $50,000+/year based on industry reports",
-            "Pay-per-record; no minimum spend",
+            'Typically $50,000+/year <span class="tag tag--red">Not Published</span>',
+            'Pay-per-record <span class="tag tag--green">No Minimum</span>',
         ),
         (
             "Contract Terms",
-            "Annual contracts required, often multi-year",
-            "No annual contracts, pay as you go",
+            'Annual or multi-year <span class="tag tag--red">Lock-In</span>',
+            'Pay as you go <span class="tag tag--green">Cancel Anytime</span>',
         ),
         (
             "Healthcare Focus",
-            "Deep pharma/life sciences analytics, prescribing data, clinical trials, plus HCP contact data",
-            "Healthcare provider business data: NPI-verified contacts, emails, phones, practice addresses",
+            'Deep pharma analytics + HCP data <span class="tag tag--green">Pharma-Grade</span>',
+            'Provider business contacts <span class="tag tag--green">NPI-Verified</span>',
         ),
         (
             "NPI Verification",
-            "Proprietary verification through surveys and claims data matching",
-            "Verified against CMS NPI Registry with every record",
+            'Proprietary surveys + claims <span class="tag tag--green">Verified</span>',
+            'CMS NPI Registry <span class="tag tag--green">Every Record</span>',
         ),
         (
             "Taxonomy Filtering",
-            "Specialty filtering available within OneKey platform",
-            "800+ NUCC taxonomy codes for granular provider filtering",
+            'Platform-only <span class="tag tag--amber">OneKey UI</span>',
+            '800+ NUCC codes <span class="tag tag--green">On Export</span>',
         ),
         (
             "Data Delivery",
-            "Platform access, API, custom integrations (implementation required)",
-            "CSV download, API, or direct CRM push",
+            'Platform, API, custom <span class="tag tag--amber">Implementation Required</span>',
+            'CSV, API, CRM push <span class="tag tag--green">Self-Serve</span>',
         ),
         (
             "Best For",
-            "Pharma commercial teams needing prescribing data, claims analytics, and global HCP coverage",
-            "Sales and marketing teams needing clean, verified provider contact data without enterprise overhead",
+            "Pharma teams needing prescribing data + global HCP coverage",
+            "Sales/marketing teams needing clean provider contact data",
         ),
         (
             "Key Risk",
-            "Expensive overkill if you only need provider contact records; long implementation timelines",
-            "No prescribing data, no claims analytics, no global coverage outside the U.S.",
+            'Overkill if you only need contacts <span class="tag tag--red">$50K+ Minimum</span>',
+            'No Rx data, no claims, US only <span class="tag tag--amber">Contact Data Only</span>',
         ),
     ],
     "competitor_what_they_offer": (
@@ -2905,6 +3270,106 @@ COMPARISONS = [
         {"url": "/for/pharma-sales/", "text": "Provider Data for Pharma Sales Teams"},
         {"url": "/pricing/", "text": "Provyx Pricing"},
     ],
+
+    # -- NEW: CROReport-style visual fields --
+    "verdict": (
+        "IQVIA OneKey is the gold standard for pharma commercial teams that need "
+        "prescribing data and global HCP coverage. But if your team needs clean "
+        "provider contacts for outreach without six-figure contracts and long "
+        "implementation timelines, Provyx is purpose-built for that."
+    ),
+    "verdict_icon": "&#x1F48A;",
+    "stats": [
+        {"value": "$50K+", "label": "IQVIA Typical<br>Starting Price", "color": "red"},
+        {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+        {"value": "9M+", "label": "OneKey Global<br>HCP Profiles", "color": ""},
+        {"value": "80+", "label": "Countries in<br>OneKey Database", "color": ""},
+    ],
+    "competitor_meta": {
+        "founded": "2016 (IMS Health + Quintiles merger)",
+        "hq": "Durham, NC",
+        "status": "Public (NYSE: IQV), ~$45B market cap",
+    },
+    "competitor_logo": "/assets/logos/competitors/iqvia.svg",
+    "competitor_alert": {
+        "type": "info",
+        "icon": "&#x1F4CA;",
+        "heading": "Enterprise Pharma Product",
+        "text": (
+            "IQVIA OneKey is designed for pharma commercial operations at scale. "
+            "The prescribing data, claims analytics, and global coverage are "
+            "genuinely unmatched. But most of that capability is irrelevant "
+            "if you're building outreach lists, not managing drug brand strategy."
+        ),
+    },
+    "competitor_quotes": [
+        {
+            "text": (
+                "OneKey data is essential for our pharma commercial operations. "
+                "The prescribing insights alone justify the investment. But the "
+                "implementation took months and required dedicated analyst support."
+            ),
+            "source": "Gartner Peer Insights",
+            "url": "https://www.gartner.com/reviews/market/healthcare-payer-care-management-workflow-applications",
+            "sentiment": "positive",
+        },
+    ],
+    "competitor_pros": [
+        "Prescribing data linked to individual providers (unmatched)",
+        "9M+ HCP profiles across 80+ countries globally",
+        "Claims-based analytics and referral pattern mapping",
+        "Deep pharma commercial intelligence and brand tracking",
+        "Proprietary HCP identity resolution across channels",
+    ],
+    "competitor_cons": [
+        "Starting at $50K+/year; pharma enterprise contracts run six figures",
+        "Long implementation timelines (months, not days)",
+        "Requires dedicated analyst resources to operate",
+        "Multi-year contracts standard with complex renewal terms",
+        "Overkill if you only need provider contact records",
+    ],
+    "provyx_pros": [
+        "Every record NPI-verified against CMS registry",
+        "Self-serve: order data and receive it in days, not months",
+        "Pay-per-record with no annual commitment",
+        "Practice-level data including direct phone, fax, address",
+        "800+ NUCC taxonomy codes for specialty filtering",
+    ],
+    "provyx_limitations": [
+        "No prescribing or Rx data",
+        "No claims analytics or referral network mapping",
+        "US healthcare providers only, no global coverage",
+        "No HCP identity resolution across marketing channels",
+    ],
+    "bottom_line_html": (
+        "<p>This comparison comes down to what you actually need the data for.</p>"
+        "<p><strong>The smart play:</strong></p>"
+        "<ul>"
+        "<li><strong>Pharma commercial teams:</strong> If you need prescribing data, "
+        "claims analytics, and global HCP coverage, IQVIA OneKey is the right "
+        "tool. Nothing else matches it at scale.</li>"
+        "<li><strong>Sales/marketing teams:</strong> If you need clean contact "
+        "lists for healthcare outreach, Provyx delivers NPI-verified records "
+        "without the enterprise overhead or six-figure price tag.</li>"
+        "<li><strong>Pharma teams needing both:</strong> Use IQVIA for commercial "
+        "strategy and prescriber analytics, and Provyx for tactical outreach "
+        "execution where you need practice-level contacts quickly.</li>"
+        "</ul>"
+    ),
+    "questions": [
+        "<strong>Do you actually need prescribing data?</strong> "
+        "If no, you're paying for IQVIA's most expensive capability without using it.",
+        "<strong>How long is the implementation timeline?</strong> "
+        "IQVIA deployments often take 3-6 months. Can your team wait?",
+        "<strong>Do you have analysts to operate the platform?</strong> "
+        "OneKey isn't self-serve. Factor staff time into total cost.",
+        "<strong>Is your target market US-only or global?</strong> "
+        "If US-only, IQVIA's global coverage adds cost without value.",
+        "<strong>What's the total contract value including integration?</strong> "
+        "Platform fees, integration, training, and analyst time add up fast.",
+        "<strong>Could you get the same contact data for 90% less?</strong> "
+        "Compare the provider records side-by-side with a Provyx sample list.",
+    ],
 },
 
     # ======================================================================
@@ -2959,14 +3424,30 @@ COMPARISONS = [
 
     # -- Quick Comparison Table (8 rows) --
     "comparison_table_rows": [
-        ("Starting Price", "Free (5 credits/mo); Pro $36/user/mo", "Pay-per-record; no monthly subscription"),
-        ("Contract Terms", "Monthly or annual; credit-based with caps per plan", "Month-to-month or per-project; cancel anytime"),
-        ("Healthcare Focus", "General B2B; no healthcare-specific features", "100% healthcare provider focus"),
-        ("NPI Verification", "Not available", "Every record matched against the NPI Registry"),
-        ("Taxonomy Filtering", "Not available", "Filter by 800+ NUCC taxonomy codes"),
-        ("Data Delivery", "Chrome extension, platform, CRM integrations", "CSV, API, or direct CRM push"),
-        ("Best For", "LinkedIn prospecting across general B2B industries", "Teams selling exclusively into healthcare providers"),
-        ("Key Risk", "No healthcare provider identifiers; shallow specialty data", "Not suitable for non-healthcare prospecting"),
+        ("Starting Price",
+         'Free (5 credits/mo); Pro $36/mo <span class="tag tag--green">Affordable</span>',
+         'Pay-per-record <span class="tag tag--green">No Subscription</span>'),
+        ("Contract Terms",
+         'Monthly or annual <span class="tag tag--green">Flexible</span>',
+         'Per-project <span class="tag tag--green">Cancel Anytime</span>'),
+        ("Healthcare Focus",
+         'General B2B <span class="tag tag--red">No Healthcare</span>',
+         '100% healthcare <span class="tag tag--green">Vertical</span>'),
+        ("NPI Verification",
+         'Not available <span class="tag tag--red">No NPI</span>',
+         'Every record <span class="tag tag--green">NPI-Verified</span>'),
+        ("Taxonomy Filtering",
+         'Not available <span class="tag tag--red">No Taxonomy</span>',
+         '800+ codes <span class="tag tag--green">NUCC Taxonomy</span>'),
+        ("Data Delivery",
+         'Chrome extension + platform <span class="tag tag--green">LinkedIn Integration</span>',
+         'CSV, API, CRM push <span class="tag tag--green">Bulk Delivery</span>'),
+        ("Best For",
+         "LinkedIn prospecting across general B2B",
+         "Teams selling exclusively into healthcare"),
+        ("Key Risk",
+         'No provider identifiers <span class="tag tag--red">Shallow Data</span>',
+         'No LinkedIn extension <span class="tag tag--amber">Data Only</span>'),
     ],
 
     # -- Deep Dive: Competitor (600-800 words) --
@@ -3369,10 +3850,96 @@ COMPARISONS = [
 
     # -- Related links --
     "related_links": [
-        {"url": "/comparisons/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
-        {"url": "/comparisons/provyx-vs-apollo/", "text": "Provyx vs. Apollo.io"},
+        {"url": "/compare/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
+        {"url": "/compare/provyx-vs-apollo/", "text": "Provyx vs. Apollo.io"},
         {"url": "/alternatives/zoominfo-alternative/", "text": "ZoomInfo Alternative for Healthcare"},
         {"url": "/pricing/", "text": "Provyx Pricing"},
+    ],
+
+    # -- NEW: CROReport-style visual fields --
+    "verdict": (
+        "Lusha is a solid LinkedIn prospecting tool for general B2B sales. "
+        "But it has zero healthcare-specific features: no NPI data, no taxonomy "
+        "codes, no practice-level records. For healthcare provider outreach, "
+        "Provyx is the clear choice."
+    ),
+    "verdict_icon": "&#x1F50D;",
+    "stats": [
+        {"value": "$36/mo", "label": "Lusha Pro<br>Per-User Price", "color": "green"},
+        {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+        {"value": "0", "label": "Lusha NPI<br>Verification", "color": "red"},
+        {"value": "100M+", "label": "Lusha Total<br>Business Profiles", "color": ""},
+    ],
+    "competitor_meta": {
+        "founded": "2016",
+        "hq": "Tel Aviv, Israel",
+        "status": "$205M raised, Series B",
+    },
+    "competitor_logo": "/assets/logos/competitors/lusha.svg",
+    "competitor_quotes": [
+        {
+            "text": (
+                "Great for grabbing quick contact info from LinkedIn. But when "
+                "we tried building healthcare provider lists, the data was too "
+                "shallow. No NPI numbers, no specialty info beyond job titles."
+            ),
+            "source": "G2 Reviewer",
+            "url": "https://www.g2.com/products/lusha/reviews",
+            "sentiment": "negative",
+        },
+    ],
+    "competitor_pros": [
+        "Chrome extension for quick LinkedIn prospecting",
+        "Affordable pricing starting at $36/user/month",
+        "Simple, easy-to-learn interface",
+        "100M+ business profiles in database",
+        "Good CRM integrations (Salesforce, HubSpot)",
+    ],
+    "competitor_cons": [
+        "No NPI verification for healthcare providers",
+        "No taxonomy code filtering for clinical specialties",
+        "Credit-based system with strict monthly caps",
+        "No practice-level data (direct lines, fax, practice address)",
+        "Healthcare specialty data limited to generic job titles",
+    ],
+    "provyx_pros": [
+        "Every record NPI-verified against CMS registry",
+        "800+ NUCC taxonomy codes for specialty targeting",
+        "Practice-level data: direct phone, fax, address, owner",
+        "Bulk list delivery (not one-at-a-time lookups)",
+        "No credit caps or per-user seat licensing",
+    ],
+    "provyx_limitations": [
+        "No Chrome extension or LinkedIn integration",
+        "No real-time contact lookups from web browsing",
+        "Healthcare providers only; no general B2B data",
+        "No built-in email sequencer or engagement tools",
+    ],
+    "bottom_line_html": (
+        "<p>Lusha and Provyx solve fundamentally different problems. Lusha is a "
+        "point-and-click prospecting tool for LinkedIn. Provyx is a healthcare "
+        "data platform for building targeted provider lists at scale.</p>"
+        "<p><strong>The smart play:</strong></p>"
+        "<ul>"
+        "<li><strong>LinkedIn-first teams:</strong> Lusha's Chrome extension "
+        "is unbeatable for grabbing individual contacts from profiles.</li>"
+        "<li><strong>Healthcare outreach teams:</strong> Provyx delivers verified "
+        "provider lists with NPI, taxonomy, and practice data that Lusha can't match.</li>"
+        "<li><strong>Using both:</strong> Use Lusha for ad-hoc LinkedIn research "
+        "and Provyx for systematic healthcare campaign list building.</li>"
+        "</ul>"
+    ),
+    "questions": [
+        "<strong>How many healthcare contacts do you need per month?</strong> "
+        "Lusha's credit caps may force you into higher-priced tiers for volume.",
+        "<strong>Do you need NPI numbers in your records?</strong> "
+        "If yes, Lusha doesn't have them. Full stop.",
+        "<strong>Are you building lists or doing one-off lookups?</strong> "
+        "Lusha excels at individual lookups; Provyx excels at bulk list building.",
+        "<strong>Do your campaigns require taxonomy-based targeting?</strong> "
+        "Filtering by psychiatrist vs. psychologist vs. counselor requires taxonomy codes.",
+        "<strong>What practice-level data do you need?</strong> "
+        "Direct phone, fax, practice address, and owner aren't in Lusha.",
     ],
 },
 
@@ -3418,14 +3985,30 @@ COMPARISONS = [
         " job you actually need to do.</p>"
     ),
     "comparison_table_rows": [
-        ("Starting Price", "Pay-per-record, no minimum commitment", "Not publicly listed; estimated $15,000\u2013$25,000+/year"),
-        ("Contract Terms", "No annual contract required", "Annual contracts standard"),
-        ("Healthcare Focus", "Purpose-built for healthcare provider business data", "General B2B sales intelligence; no healthcare-specific features"),
-        ("NPI Verification", "All records NPI-verified against CMS registry", "No NPI data available"),
-        ("Taxonomy Filtering", "800+ NUCC taxonomy codes supported", "Standard industry/title filters only"),
-        ("Data Delivery", "CSV, API, or direct CRM push", "Platform access, CSV export, CRM integrations"),
-        ("Best For", "Healthcare marketing agencies, medical device sales, pharma teams, healthcare SaaS vendors", "European B2B outbound teams, SDR-heavy orgs focused on phone outreach"),
-        ("Key Risk", "Not a general B2B platform; limited outside healthcare vertical", "Weak US healthcare coverage; no provider-specific data fields"),
+        ("Starting Price",
+         'Est. $15,000\u2013$25,000+/year <span class="tag tag--red">Not Published</span>',
+         'Pay-per-record <span class="tag tag--green">No Minimum</span>'),
+        ("Contract Terms",
+         'Annual contracts standard <span class="tag tag--red">Lock-In</span>',
+         'No annual contract <span class="tag tag--green">Cancel Anytime</span>'),
+        ("Healthcare Focus",
+         'General B2B <span class="tag tag--red">No Healthcare</span>',
+         '100% healthcare <span class="tag tag--green">Vertical</span>'),
+        ("NPI Verification",
+         'No NPI data <span class="tag tag--red">Not Available</span>',
+         'Every record <span class="tag tag--green">NPI-Verified</span>'),
+        ("Taxonomy Filtering",
+         'Industry/title filters only <span class="tag tag--red">No Taxonomy</span>',
+         '800+ NUCC codes <span class="tag tag--green">Taxonomy</span>'),
+        ("Data Delivery",
+         'Platform, CSV, CRM <span class="tag tag--green">Chrome Extension</span>',
+         'CSV, API, CRM push <span class="tag tag--green">Bulk Delivery</span>'),
+        ("Best For",
+         "European B2B outbound, SDR-heavy phone teams",
+         "Healthcare agencies, med device, pharma, healthcare SaaS"),
+        ("Key Risk",
+         'Weak US healthcare coverage <span class="tag tag--red">EMEA Focus</span>',
+         'Healthcare only <span class="tag tag--amber">No General B2B</span>'),
     ],
     "competitor_what_they_offer": (
         "<h3>What Cognism Offers</h3>"
@@ -3818,6 +4401,101 @@ COMPARISONS = [
         {"url": "/for/medical-device-sales/", "text": "Provider Data for Medical Device Sales"},
         {"url": "/pricing/", "text": "Provyx Pricing"},
     ],
+
+    # -- NEW: CROReport-style visual fields --
+    "verdict": (
+        "Cognism dominates European B2B outbound with phone-verified Diamond Data. "
+        "But it has zero healthcare-specific features and weak US provider coverage. "
+        "If you sell into US healthcare providers, Provyx is the better fit."
+    ),
+    "verdict_icon": "&#x1F4DE;",
+    "stats": [
+        {"value": "$15K+", "label": "Cognism Estimated<br>Annual Price", "color": "red"},
+        {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+        {"value": "400M+", "label": "Cognism Total<br>Business Profiles", "color": ""},
+        {"value": "0", "label": "Cognism NPI<br>Verification", "color": "red"},
+    ],
+    "competitor_meta": {
+        "founded": "2015",
+        "hq": "London, UK",
+        "status": "$130M+ raised",
+    },
+    "competitor_logo": "/assets/logos/competitors/cognism.svg",
+    "competitor_alert": {
+        "type": "warning",
+        "icon": "&#x1F30D;",
+        "heading": "EMEA-First Platform",
+        "text": (
+            "Cognism's strength is European B2B data. Their US healthcare "
+            "coverage is notably weaker, and they have no healthcare-specific "
+            "data fields like NPI numbers or taxonomy codes."
+        ),
+    },
+    "competitor_quotes": [
+        {
+            "text": (
+                "Diamond Data is the real deal for phone outreach in EMEA. "
+                "The connect rates are noticeably higher than other providers. "
+                "But we struggled with US healthcare contacts."
+            ),
+            "source": "G2 Reviewer",
+            "url": "https://www.g2.com/products/cognism/reviews",
+            "sentiment": "positive",
+        },
+    ],
+    "competitor_pros": [
+        "Diamond Data: phone-verified mobile numbers with high connect rates",
+        "Strong EMEA coverage and GDPR compliance",
+        "400M+ business profiles globally",
+        "Intent data partnerships for buying signals",
+        "Chrome extension for LinkedIn prospecting",
+    ],
+    "competitor_cons": [
+        "No NPI verification for healthcare providers",
+        "No taxonomy code filtering for clinical specialties",
+        "Weak US healthcare provider coverage",
+        "Annual contracts estimated at $15K-$25K+",
+        "No practice-level data (fax, direct lines, practice address)",
+        "EMEA-first product; US is secondary market",
+    ],
+    "provyx_pros": [
+        "Every record NPI-verified against CMS registry",
+        "800+ NUCC taxonomy codes for specialty targeting",
+        "Deep US healthcare provider coverage across 40+ specialties",
+        "Practice-level data: direct phone, fax, address, owner",
+        "Pay-per-record with no annual contract",
+    ],
+    "provyx_limitations": [
+        "US healthcare providers only; no EMEA or APAC coverage",
+        "No phone-verified Diamond Data equivalent",
+        "No intent data or buying signal partnerships",
+        "No Chrome extension or LinkedIn integration",
+    ],
+    "bottom_line_html": (
+        "<p>Cognism and Provyx serve different geographies and use cases with "
+        "minimal overlap.</p>"
+        "<p><strong>The smart play:</strong></p>"
+        "<ul>"
+        "<li><strong>European B2B outbound:</strong> Cognism's Diamond Data "
+        "and EMEA coverage are hard to beat for SDR-heavy teams.</li>"
+        "<li><strong>US healthcare outreach:</strong> Provyx delivers NPI-verified "
+        "records with practice-level data that Cognism doesn't have.</li>"
+        "<li><strong>Global healthcare teams:</strong> You may need both: Cognism "
+        "for EMEA general B2B and Provyx for US healthcare provider data.</li>"
+        "</ul>"
+    ),
+    "questions": [
+        "<strong>Is your healthcare outreach primarily US-based?</strong> "
+        "If yes, Cognism's US healthcare coverage won't meet your needs.",
+        "<strong>Do you need NPI numbers in your records?</strong> "
+        "Cognism doesn't have them. This is a dealbreaker for healthcare compliance.",
+        "<strong>Is phone outreach your primary channel?</strong> "
+        "If EMEA phone outreach, Cognism's Diamond Data is genuinely valuable.",
+        "<strong>Do you need taxonomy-based specialty filtering?</strong> "
+        "Cognism offers job title filters, not clinical specialty codes.",
+        "<strong>What's your total budget including all seats?</strong> "
+        "Cognism's per-seat model can scale quickly with larger teams.",
+    ],
 },
 ]
 
@@ -3962,14 +4640,30 @@ ALTERNATIVES = [
         # Section 4 -- Comparison Table
         "comparison_heading": "ZoomInfo vs. Provyx: Quick Comparison",
         "comparison_rows": [
-            ("Starting Price", "~$14,995/year", "Pay per record, no minimum"),
-            ("Contract Terms", "Annual, auto-renew with 60-day cancellation notice", "Month-to-month or per-list purchase"),
-            ("Healthcare Specialties", "General industry tags, no taxonomy codes", "800+ specialties via NUCC taxonomy codes"),
-            ("NPI Verification", "Not included", "Every provider record is NPI-verified"),
-            ("Taxonomy Codes", "Not available", "Included on all provider records"),
-            ("Practice Data", "Company-level records, limited practice detail", "Practice name, address, phone, fax, owner name"),
-            ("Data Delivery", "Platform access, CRM sync, API", "CSV, Excel, or API"),
-            ("Best For", "Multi-industry B2B sales teams", "Teams that sell exclusively to healthcare providers"),
+            ("Starting Price",
+             '~$14,995/year <span class="tag tag--red">Enterprise</span>',
+             'Pay per record <span class="tag tag--green">No Minimum</span>'),
+            ("Contract Terms",
+             'Annual, auto-renew <span class="tag tag--red">60-Day Notice</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Healthcare Specialties",
+             'General industry tags <span class="tag tag--red">No Taxonomy</span>',
+             '800+ NUCC codes <span class="tag tag--green">Taxonomy</span>'),
+            ("NPI Verification",
+             'Not included <span class="tag tag--red">No NPI</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("Taxonomy Codes",
+             'Not available <span class="tag tag--red">Missing</span>',
+             'Included <span class="tag tag--green">On All Records</span>'),
+            ("Practice Data",
+             'Company-level <span class="tag tag--amber">Limited</span>',
+             'Practice-level <span class="tag tag--green">Full Detail</span>'),
+            ("Data Delivery",
+             'Platform, CRM, API <span class="tag tag--green">Integrated</span>',
+             'CSV, Excel, API <span class="tag tag--green">Flexible</span>'),
+            ("Best For",
+             "Multi-industry B2B sales teams",
+             "Teams selling exclusively to healthcare providers"),
         ],
 
         # Section 5 -- How Provyx Works
@@ -4226,6 +4920,83 @@ ALTERNATIVES = [
             "https://npiregistry.cms.hhs.gov/",
             "https://www.bls.gov/ooh/healthcare/",
         ],
+
+        # -- NEW: CROReport-style visual fields --
+        "verdict": (
+            "ZoomInfo is the dominant B2B sales intelligence platform. But for "
+            "healthcare-only teams, it's expensive overkill. Provyx delivers "
+            "NPI-verified provider contacts at a fraction of the cost."
+        ),
+        "verdict_icon": "&#x1F504;",
+        "stats": [
+            {"value": "$14,995+", "label": "ZoomInfo Starting<br>Annual Price", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "50+", "label": "Industries in<br>ZoomInfo", "color": ""},
+            {"value": "1", "label": "Industries in<br>Provyx", "color": "green"},
+        ],
+        "competitor_meta": {
+            "founded": "2007",
+            "hq": "Waltham, MA",
+            "status": "Public (NASDAQ: ZI)",
+        },
+        "competitor_logo": "/assets/logos/competitors/zoominfo.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x26A1;",
+            "heading": "Contract Auto-Renewal Risk",
+            "text": (
+                "ZoomInfo requires a 60-day written cancellation notice before "
+                "renewal. Missing the window locks you into another annual term. "
+                "Budget for $15K-$60K+ annually depending on seats."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "We were paying $40K/year for ZoomInfo and using maybe 10% "
+                    "of the database. The healthcare data was decent for basic "
+                    "contacts but had no NPI numbers or specialty codes."
+                ),
+                "source": "Healthcare SaaS VP of Sales",
+                "url": "https://www.g2.com/products/zoominfo-sales/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Eliminate $15K-$60K+ annual platform cost",
+            "Get NPI-verified records instead of generic B2B contacts",
+            "Filter by 800+ NUCC taxonomy codes for specialty targeting",
+            "No annual contract lock-in or auto-renewal risk",
+            "Practice-level data ZoomInfo doesn't provide",
+        ],
+        "stay_reasons": [
+            "You prospect across multiple industries (not just healthcare)",
+            "You rely on ZoomInfo's intent data and website visitor tracking",
+            "Your team uses ZoomInfo's built-in engagement tools daily",
+            "Your org has a deeply integrated ZoomInfo workflow",
+        ],
+        "bottom_line_html": (
+            "<p>If your pipeline is 80%+ healthcare providers, you're overpaying "
+            "for ZoomInfo. Provyx gives you cleaner healthcare records without "
+            "the platform tax.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Request a Provyx sample list for your "
+            "target specialty and geography.</li>"
+            "<li><strong>Step 2:</strong> Compare it side-by-side with your "
+            "ZoomInfo exports for the same criteria.</li>"
+            "<li><strong>Step 3:</strong> Calculate the per-record cost difference.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What percentage of your outreach is healthcare-only?</strong> "
+            "If it's over 80%, you're paying for data you don't use.",
+            "<strong>When does your ZoomInfo contract renew?</strong> "
+            "Start evaluating alternatives at least 90 days before renewal.",
+            "<strong>Have you tested your ZoomInfo healthcare data for NPI accuracy?</strong> "
+            "Pull a sample and cross-check against the CMS NPI Registry.",
+            "<strong>What's your actual cost per qualified healthcare contact?</strong> "
+            "Divide annual ZoomInfo cost by healthcare records actually used.",
+        ],
     },
 
     # ===================================================================
@@ -4363,14 +5134,30 @@ ALTERNATIVES = [
         # Section 4 -- Comparison Table
         "comparison_heading": "Definitive Healthcare vs. Provyx: Quick Comparison",
         "comparison_rows": [
-            ("Starting Price", "$25,000-$50,000+/year", "Pay per record, no minimum"),
-            ("Contract Terms", "Annual, auto-renew with 5% annual uplifts", "Month-to-month or per-list purchase"),
-            ("Healthcare Specialties", "Broad specialty categories with claims-based grouping", "800+ specialties via NUCC taxonomy codes"),
-            ("NPI Verification", "NPI data included but primary focus is facility-level", "Every individual provider record is NPI-verified"),
-            ("Taxonomy Codes", "Available but secondary to claims-based classification", "Primary classification system on all records"),
-            ("Practice Data", "Strong on hospitals/systems, limited on small practices", "Practice name, address, phone, fax, owner name for all sizes"),
-            ("Data Delivery", "Platform-based with optional CRM integration ($22K+)", "CSV, Excel, or API included"),
-            ("Best For", "Hospital/health system analytics and strategy teams", "Teams running outbound to individual providers and practices"),
+            ("Starting Price",
+             '$25,000-$50,000+/year <span class="tag tag--red">Enterprise</span>',
+             'Pay per record <span class="tag tag--green">No Minimum</span>'),
+            ("Contract Terms",
+             'Annual, auto-renew <span class="tag tag--red">5% Uplifts</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Healthcare Specialties",
+             'Claims-based categories <span class="tag tag--amber">Broad</span>',
+             '800+ NUCC codes <span class="tag tag--green">Granular</span>'),
+            ("NPI Verification",
+             'Facility-focused <span class="tag tag--amber">Partial</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("Taxonomy Codes",
+             'Secondary to claims <span class="tag tag--amber">Limited</span>',
+             'Primary classification <span class="tag tag--green">On All Records</span>'),
+            ("Practice Data",
+             'Hospitals strong, small practices weak <span class="tag tag--amber">Mixed</span>',
+             'All sizes covered <span class="tag tag--green">Full Detail</span>'),
+            ("Data Delivery",
+             'Platform + CRM add-on <span class="tag tag--red">$22K+ Extra</span>',
+             'CSV, Excel, API <span class="tag tag--green">Included</span>'),
+            ("Best For",
+             "Hospital/system analytics and strategy teams",
+             "Teams running outbound to individual providers"),
         ],
 
         # Section 5 -- How Provyx Works
@@ -4626,6 +5413,74 @@ ALTERNATIVES = [
             "https://www.definitivehc.com/",
             "https://npiregistry.cms.hhs.gov/",
             "https://www.bls.gov/ooh/healthcare/",
+        ],
+
+        # -- NEW: CROReport-style visual fields --
+        "verdict": (
+            "Definitive Healthcare is built for enterprise hospital analytics. "
+            "If you need individual provider outreach lists without the "
+            "six-figure price tag, Provyx is the focused alternative."
+        ),
+        "verdict_icon": "&#x1F3E5;",
+        "stats": [
+            {"value": "$25K+", "label": "Definitive HC<br>Starting Price", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "$22K+", "label": "CRM Integration<br>Add-On Cost", "color": "red"},
+            {"value": "$0", "label": "Provyx CRM Push<br>Extra Cost", "color": "green"},
+        ],
+        "competitor_meta": {
+            "founded": "2011",
+            "hq": "Framingham, MA",
+            "status": "Public (NASDAQ: DH)",
+        },
+        "competitor_logo": "/assets/logos/competitors/definitive-healthcare.svg",
+        "competitor_quotes": [
+            {
+                "text": (
+                    "The hospital-level analytics are incredible but the price "
+                    "is hard to justify if you're mainly pulling provider lists. "
+                    "The CRM integration fee was a surprise."
+                ),
+                "source": "G2 Reviewer",
+                "url": "https://www.g2.com/products/definitive-healthcare/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Reduce data spend from $25K-$100K+ to pay-per-record",
+            "Get NPI-verified individual provider contacts",
+            "Eliminate $22K+ annual CRM integration add-on",
+            "Simpler workflow: no analytics platform learning curve",
+            "Practice-level data optimized for outreach, not analysis",
+        ],
+        "stay_reasons": [
+            "You actively use claims data and procedure volume analytics",
+            "You need hospital technology installation tracking",
+            "Your strategy depends on referral network mapping",
+            "You target health system executives (C-suite contacts)",
+        ],
+        "bottom_line_html": (
+            "<p>If you're using Definitive Healthcare mainly to pull provider "
+            "contact lists, you're paying enterprise analytics pricing for a "
+            "basic data export workflow.</p>"
+            "<ul>"
+            "<li><strong>Keep Definitive:</strong> If you use claims analytics, "
+            "referral mapping, or hospital technology data regularly.</li>"
+            "<li><strong>Switch to Provyx:</strong> If your main workflow is "
+            "building provider contact lists for sales and marketing.</li>"
+            "<li><strong>Use both:</strong> Definitive for strategic analysis, "
+            "Provyx for tactical outreach list building.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What Definitive features do you actually use weekly?</strong> "
+            "If it's mainly contact list exports, you're overpaying.",
+            "<strong>What's your total annual cost including CRM integration?</strong> "
+            "Factor in the $22K+ Salesforce add-on.",
+            "<strong>How many individual provider records do you export per month?</strong> "
+            "Calculate the per-record cost at your current spend level.",
+            "<strong>Does your team fully utilize the analytics platform?</strong> "
+            "Enterprise analytics require dedicated analyst resources.",
         ],
     },
 ]
@@ -8499,87 +9354,257 @@ def build_all_icp_pages() -> None:
 # PAGE GENERATORS - COMPARISON & ALTERNATIVE PAGES
 # =============================================================================
 
-def build_comparison_page(comp):
-    """
-    Build a single comparison page from a comparison data dict.
+# -- Shared HTML builder helpers (used by comparison + alternative pages) ------
 
-    Assumes the following are importable from the main build script:
-        generate_faq_html, generate_cta_section, get_page_wrapper,
-        write_page, BASE_URL, get_breadcrumb_schema, get_breadcrumb_html,
-        ALL_PAGES
-    """
+def _build_verdict_html(data):
+    """Build verdict box HTML from a dict with 'verdict' and optional 'verdict_icon'."""
+    if not data.get("verdict"):
+        return ""
+    icon = data.get("verdict_icon", "&#x2139;&#xFE0F;")
+    return (
+        f'<div class="verdict-box">'
+        f'<div class="verdict-box__icon">{icon}</div>'
+        f'<div class="verdict-box__text">'
+        f'<strong>The Short Version:</strong> {data["verdict"]}'
+        f'</div></div>'
+    )
+
+
+def _build_stats_html(stats):
+    """Build stats grid HTML from a list of stat dicts."""
+    if not stats:
+        return ""
+    cards = ""
+    for s in stats:
+        color_cls = f' stat-card__number--{s["color"]}' if s.get("color") else ""
+        cards += (
+            f'<div class="stat-card">'
+            f'<div class="stat-card__number{color_cls}">{s["value"]}</div>'
+            f'<div class="stat-card__label">{s["label"]}</div>'
+            f'</div>\n'
+        )
+    return (
+        f'<section class="content-section"><div class="container">'
+        f'<div class="stats-grid">\n{cards}</div>'
+        f'</div></section>\n'
+    )
+
+
+def _build_enhanced_table_html(rows, competitor_name):
+    """Build comparison table with navy header and td-factor class."""
+    rows_html = ""
+    for label, comp_val, provyx_val in rows:
+        rows_html += (
+            f'<tr><td class="td-factor">{label}</td>'
+            f'<td>{comp_val}</td>'
+            f'<td>{provyx_val}</td></tr>\n'
+        )
+    return (
+        f'<div class="table-responsive">'
+        f'<table class="comparison-table--enhanced"><thead><tr>'
+        f'<th>Factor</th><th>{competitor_name}</th><th>Provyx</th>'
+        f'</tr></thead><tbody>\n{rows_html}</tbody></table></div>\n'
+    )
+
+
+def _build_company_card_html(name, logo_path, meta_dict, alert_dict,
+                              inner_html, quotes_html="", rec_html="",
+                              outbound_html="", modifier=""):
+    """Build a company card wrapper with logo header and optional components."""
+    mod_cls = f" {modifier}" if modifier else ""
+
+    # Logo
+    if logo_path:
+        logo_inner = f'<img src="{logo_path}" alt="{name} Logo" width="44" height="44">'
+    else:
+        logo_inner = f'<span class="company-card__logo--text">{name}</span>'
+
+    # Meta line
+    meta_html = ""
+    if meta_dict:
+        parts = []
+        if meta_dict.get("founded"):
+            parts.append(f'Founded {meta_dict["founded"]}')
+        if meta_dict.get("hq"):
+            parts.append(meta_dict["hq"])
+        if meta_dict.get("status"):
+            parts.append(meta_dict["status"])
+        if parts:
+            meta_html = f'<div class="company-card__meta">{"&middot;".join(f" {p} " for p in parts).strip()}</div>'
+
+    # Alert box
+    alert_html = ""
+    if alert_dict:
+        alert_html = _build_alert_html(alert_dict)
+
+    return (
+        f'<div class="company-card{mod_cls}">'
+        f'<div class="company-card__header">'
+        f'<div class="company-card__logo">{logo_inner}</div>'
+        f'<div class="company-card__info"><h3>{name}</h3>{meta_html}</div>'
+        f'</div>\n'
+        f'{alert_html}\n{inner_html}\n{quotes_html}\n{rec_html}\n{outbound_html}\n'
+        f'</div>\n'
+    )
+
+
+def _build_alert_html(alert):
+    """Build a single alert box from a dict {type, icon, heading, text}."""
+    if not alert:
+        return ""
+    atype = alert.get("type", "info")
+    icon = alert.get("icon", "&#x2139;&#xFE0F;")
+    return (
+        f'<div class="alert-box alert-box--{atype}">'
+        f'<div class="alert-box__icon">{icon}</div>'
+        f'<div class="alert-box__content">'
+        f'<h4>{alert["heading"]}</h4>'
+        f'<p>{alert["text"]}</p>'
+        f'</div></div>\n'
+    )
+
+
+def _build_quotes_html(quotes):
+    """Build quote block HTML from a list of quote dicts."""
+    if not quotes:
+        return ""
+    html = ""
+    for q in quotes:
+        mod = f' quote-block--{q["sentiment"]}' if q.get("sentiment") else ""
+        source = ""
+        if q.get("url"):
+            source = f'<a href="{q["url"]}" target="_blank" rel="noopener">{q.get("source", "Source")}</a>'
+        elif q.get("source"):
+            source = q["source"]
+        html += (
+            f'<div class="quote-block{mod}">'
+            f'<div class="quote-block__text">&ldquo;{q["text"]}&rdquo;</div>'
+            f'<div class="quote-block__source">&mdash; {source}</div>'
+            f'</div>\n'
+        )
+    return html
+
+
+def _build_rec_grid_html(pros, cons, pro_label="Strengths",
+                          con_label="Weaknesses"):
+    """Build recommendation grid with pros/cons boxes."""
+    if not pros and not cons:
+        return ""
+    pros_li = "".join(f"<li>{p}</li>" for p in (pros or []))
+    cons_li = "".join(f"<li>{c}</li>" for c in (cons or []))
+    return (
+        f'<div class="rec-grid">'
+        f'<div class="rec-box rec-box--use"><h4>&#10003; {pro_label}</h4>'
+        f'<ul>{pros_li}</ul></div>'
+        f'<div class="rec-box rec-box--skip"><h4>&#10007; {con_label}</h4>'
+        f'<ul>{cons_li}</ul></div>'
+        f'</div>\n'
+    )
+
+
+def _build_bottom_line_html(content):
+    """Build bottom-line navy gradient box."""
+    if not content:
+        return ""
+    return (
+        f'<div class="bottom-line">'
+        f'<h3>The Bottom Line</h3>'
+        f'{content}</div>\n'
+    )
+
+
+def _build_questions_html(questions):
+    """Build questions-list navy box."""
+    if not questions:
+        return ""
+    items = "".join(f"<li>{q}</li>" for q in questions)
+    return (
+        f'<div class="questions-list">'
+        f'<h3>Questions to Ask Before Signing</h3>'
+        f'<ol>{items}</ol></div>\n'
+    )
+
+
+def _build_outbound_links_html(links):
+    """Build outbound references section from list of (url, text) tuples."""
+    if not links:
+        return ""
+    links_li = "".join(
+        f'<li><a href="{url}" target="_blank" rel="noopener">{text}</a></li>\n'
+        for url, text in links
+    )
+    return (
+        f'<div class="outbound-references">'
+        f'<h4>Sources and References</h4>'
+        f'<ul>\n{links_li}</ul></div>\n'
+    )
+
+
+# -- Comparison page builder --------------------------------------------------
+
+def build_comparison_page(comp):
+    """Build a single comparison page with CROReport-style visual components."""
 
     slug = comp["slug"]
     competitor = comp["competitor_name"]
-    canonical = f"{BASE_URL}/compare/{slug}/"
 
     # -- Breadcrumbs --
     breadcrumb_items = [
         {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Comparisons", "url": f"{BASE_URL}/compare/"},
-        {"name": f"Provyx vs. {competitor}", "url": canonical},
+        {"name": f"Provyx vs. {competitor}", "url": f"{BASE_URL}/compare/{slug}/"},
     ]
     breadcrumb_schema = get_breadcrumb_schema(breadcrumb_items)
     breadcrumb_html = get_breadcrumb_html(breadcrumb_items)
 
-    # -- FAQ schema --
-    faq_schema_items = []
-    for faq in comp["faqs"]:
-        faq_schema_items.append({
-            "@type": "FAQPage",
-            "mainEntity": [{
-                "@type": "Question",
-                "name": faq["question"],
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": faq["answer"],
-                },
-            }],
-        })
+    # -- Build visual component HTML --
+    verdict_html = _build_verdict_html(comp)
+    stats_html = _build_stats_html(comp.get("stats"))
+    table_html = _build_enhanced_table_html(comp["comparison_table_rows"], competitor)
+    outbound_html = _build_outbound_links_html(comp.get("competitor_outbound_links"))
+    quotes_html = _build_quotes_html(comp.get("competitor_quotes"))
+    comp_rec_html = _build_rec_grid_html(
+        comp.get("competitor_pros"), comp.get("competitor_cons"))
+    provyx_rec_html = _build_rec_grid_html(
+        comp.get("provyx_pros"), comp.get("provyx_limitations"),
+        pro_label="Strengths", con_label="Honest Limitations")
+    bottom_line_html = _build_bottom_line_html(comp.get("bottom_line_html"))
+    questions_html = _build_questions_html(comp.get("questions"))
 
-    # -- Build comparison table HTML --
-    table_rows_html = ""
-    for label, competitor_val, provyx_val in comp["comparison_table_rows"]:
-        table_rows_html += (
-            f"<tr>"
-            f"<td><strong>{label}</strong></td>"
-            f"<td>{competitor_val}</td>"
-            f"<td>{provyx_val}</td>"
-            f"</tr>\n"
-        )
-
-    comparison_table_html = (
-        f'<div class="comparison-table">\n'
-        f"<table>\n"
-        f"<thead>\n"
-        f"<tr>"
-        f"<th>Feature</th>"
-        f"<th>{competitor}</th>"
-        f"<th>Provyx</th>"
-        f"</tr>\n"
-        f"</thead>\n"
-        f"<tbody>\n"
-        f"{table_rows_html}"
-        f"</tbody>\n"
-        f"</table>\n"
-        f"</div>\n"
+    # -- Competitor company card --
+    comp_card_mod = "company-card--warning" if comp.get("competitor_alert") else ""
+    competitor_card_html = _build_company_card_html(
+        name=competitor,
+        logo_path=comp.get("competitor_logo"),
+        meta_dict=comp.get("competitor_meta"),
+        alert_dict=comp.get("competitor_alert"),
+        inner_html=(
+            f'{comp["competitor_what_they_offer"]}\n'
+            f'{comp["competitor_pricing"]}\n'
+            f'{comp["competitor_shortcomings"]}'
+        ),
+        quotes_html=quotes_html,
+        rec_html=comp_rec_html,
+        outbound_html=outbound_html,
+        modifier=comp_card_mod,
     )
 
-    # -- Build outbound links reference list --
-    outbound_links_html = ""
-    if comp.get("competitor_outbound_links"):
-        links_li = "".join(
-            f'<li><a href="{url}" target="_blank" rel="noopener">{text}</a></li>\n'
-            for url, text in comp["competitor_outbound_links"]
-        )
-        outbound_links_html = (
-            f'<div class="outbound-references">\n'
-            f"<h4>Sources and References</h4>\n"
-            f"<ul>\n{links_li}</ul>\n"
-            f"</div>\n"
-        )
+    # -- Provyx company card --
+    provyx_card_html = _build_company_card_html(
+        name="Provyx",
+        logo_path="/assets/favicons/favicon.svg",
+        meta_dict={"status": "Healthcare Provider Intelligence", "hq": "San Francisco"},
+        alert_dict=None,
+        inner_html=(
+            f'{comp["provyx_what_delivers"]}\n'
+            f'{comp["provyx_healthcare_handling"]}\n'
+            f'{comp["provyx_pricing"]}'
+        ),
+        rec_html=provyx_rec_html,
+        modifier="company-card--highlight",
+    )
 
-    # -- Build related links HTML --
+    # -- Related links --
     related_links_html = ""
     if comp.get("related_links"):
         links_li = "".join(
@@ -8588,38 +9613,14 @@ def build_comparison_page(comp):
         )
         related_links_html = (
             f'<section class="related-links">\n'
-            f"<div class=\"container\">\n"
-            f"<h2>Related Comparisons and Resources</h2>\n"
-            f"<ul>\n{links_li}</ul>\n"
-            f"</div>\n"
-            f"</section>\n"
+            f'<div class="container">\n'
+            f'<h2>Related Comparisons and Resources</h2>\n'
+            f'<ul>\n{links_li}</ul>\n'
+            f'</div>\n</section>\n'
         )
 
-    # -- Build FAQ HTML --
     faq_html = generate_faq_html(comp["faqs"])
-
-    # -- Build CTA section --
     cta_html = generate_cta_section()
-
-    # -- Build who-should-choose section --
-    who_should_html = (
-        f'<section class="content-section">\n'
-        f"<div class=\"container\">\n"
-        f"<h2>Who Should Choose What</h2>\n"
-        f"<div class=\"scenario-list\">\n"
-        f"<div class=\"scenario\">\n"
-        f"<p>{comp['scenario_general_b2b']}</p>\n"
-        f"</div>\n"
-        f"<div class=\"scenario\">\n"
-        f"<p>{comp['scenario_healthcare_specific']}</p>\n"
-        f"</div>\n"
-        f"<div class=\"scenario\">\n"
-        f"<p>{comp['scenario_enterprise_budget']}</p>\n"
-        f"</div>\n"
-        f"</div>\n"
-        f"</div>\n"
-        f"</section>\n"
-    )
 
     # -- Assemble full page body --
     page_body = f"""
@@ -8627,10 +9628,15 @@ def build_comparison_page(comp):
 <section class="page-hero">
     <div class="container">
         {breadcrumb_html}
+        <span class="comp-badge">PROVIDER DATA COMPARISON</span>
         <h1>{comp["hero_headline"]}</h1>
         <p class="hero-subheadline">{comp["hero_subheadline"]}</p>
+        {verdict_html}
     </div>
 </section>
+
+<!-- Stats Grid -->
+{stats_html}
 
 <!-- Intro -->
 <section class="content-section">
@@ -8640,36 +9646,70 @@ def build_comparison_page(comp):
 </section>
 
 <!-- Quick Comparison Table -->
-<section class="content-section">
+<section class="content-section bg-light">
     <div class="container">
+        <div class="section-label">Quick Comparison</div>
         <h2>{competitor} vs. Provyx at a Glance</h2>
-        {comparison_table_html}
+        {table_html}
     </div>
 </section>
 
 <!-- Deep Dive: Competitor -->
 <section class="content-section">
     <div class="container">
-        <h2>Deep Dive: {competitor}</h2>
-        {comp["competitor_what_they_offer"]}
-        {comp["competitor_pricing"]}
-        {comp["competitor_shortcomings"]}
-        {outbound_links_html}
+        <div class="section-label">Deep Dive</div>
+        <h2>{competitor}</h2>
+        {competitor_card_html}
     </div>
 </section>
 
 <!-- Deep Dive: Provyx -->
-<section class="content-section">
+<section class="content-section bg-light">
     <div class="container">
-        <h2>Deep Dive: Provyx</h2>
-        {comp["provyx_what_delivers"]}
-        {comp["provyx_healthcare_handling"]}
-        {comp["provyx_pricing"]}
+        <div class="section-label">Deep Dive</div>
+        <h2>Provyx</h2>
+        {provyx_card_html}
     </div>
 </section>
 
 <!-- Who Should Choose What -->
-{who_should_html}
+<section class="content-section">
+    <div class="container">
+        <div class="section-label">Stage-Specific Guidance</div>
+        <h2>Who Should Choose What</h2>
+        <div class="alert-box alert-box--info">
+            <div class="alert-box__icon">&#x1F465;</div>
+            <div class="alert-box__content">
+                <h4>General B2B Teams</h4>
+                <p>{comp['scenario_general_b2b']}</p>
+            </div>
+        </div>
+        <div class="alert-box alert-box--success">
+            <div class="alert-box__icon">&#x1F3E5;</div>
+            <div class="alert-box__content">
+                <h4>Healthcare-Focused Teams</h4>
+                <p>{comp['scenario_healthcare_specific']}</p>
+            </div>
+        </div>
+        <div class="alert-box alert-box--warning">
+            <div class="alert-box__icon">&#x1F3E2;</div>
+            <div class="alert-box__content">
+                <h4>Enterprise Teams</h4>
+                <p>{comp['scenario_enterprise_budget']}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Honest Take -->
+<section class="content-section bg-light">
+    <div class="container">
+        <div class="section-label">The Honest Take</div>
+        <h2>Our Recommendation</h2>
+        {bottom_line_html}
+        {questions_html}
+    </div>
+</section>
 
 <!-- FAQ -->
 <section class="content-section faq-section">
@@ -8708,17 +9748,16 @@ def build_all_comparison_pages():
 
 
 def build_alternative_page(alt):
-    """Build a single alternative page from an ALTERNATIVES dict entry."""
+    """Build a single alternative page with CROReport-style visual components."""
 
     slug = alt["slug"]
     competitor = alt["competitor"]
-    page_url = f"{BASE_URL}/alternative/{slug}/"
 
     # -- Breadcrumbs -------------------------------------------------------
     breadcrumb_items = [
         {"name": "Home", "url": BASE_URL + "/"},
-        {"name": "Alternatives", "url": BASE_URL + "/alternative/"},
-        {"name": f"{competitor} Alternative", "url": page_url},
+        {"name": "Alternatives", "url": BASE_URL + "/alternatives/"},
+        {"name": f"{competitor} Alternative", "url": f"{BASE_URL}/alternatives/{slug}/"},
     ]
     breadcrumb_schema = get_breadcrumb_schema(breadcrumb_items)
     breadcrumb_html = get_breadcrumb_html(breadcrumb_items)
@@ -8747,55 +9786,47 @@ def build_alternative_page(alt):
     }}
     </script>"""
 
-    # -- Comparison table --------------------------------------------------
-    comparison_rows_html = ""
-    for row_label, competitor_val, provyx_val in alt["comparison_rows"]:
-        comparison_rows_html += f"""
-                    <tr>
-                        <td><strong>{row_label}</strong></td>
-                        <td>{competitor_val}</td>
-                        <td>{provyx_val}</td>
-                    </tr>"""
+    # -- Build visual components -------------------------------------------
+    verdict_html = _build_verdict_html(alt)
+    stats_html = _build_stats_html(alt.get("stats"))
+    table_html = _build_enhanced_table_html(alt["comparison_rows"], competitor)
+    bottom_line_html = _build_bottom_line_html(alt.get("bottom_line_html"))
+    questions_html = _build_questions_html(alt.get("questions"))
+    quotes_html = _build_quotes_html(alt.get("competitor_quotes"))
 
-    comparison_table_html = f"""
-        <section class="comparison-table-section">
-            <div class="container">
-                <h2>{alt["comparison_heading"]}</h2>
-                <div class="table-responsive">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Feature</th>
-                                <th>{competitor}</th>
-                                <th>Provyx</th>
-                            </tr>
-                        </thead>
-                        <tbody>{comparison_rows_html}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>"""
+    # -- Competitor company card (for why-switch section) -------------------
+    comp_card_html = ""
+    if alt.get("competitor_meta") or alt.get("competitor_logo"):
+        comp_card_html = _build_company_card_html(
+            name=competitor,
+            logo_path=alt.get("competitor_logo"),
+            meta_dict=alt.get("competitor_meta"),
+            alert_dict=alt.get("competitor_alert"),
+            inner_html=alt["why_switch_body"],
+            quotes_html=quotes_html,
+            rec_html=_build_rec_grid_html(
+                alt.get("switch_pros"), alt.get("stay_reasons"),
+                pro_label="Reasons to Switch", con_label="Reasons to Stay"),
+        )
+        why_switch_content = comp_card_html
+    else:
+        why_switch_content = alt["why_switch_body"]
 
     # -- Related links section ---------------------------------------------
     related_links_items = ""
     for link in alt["related_links"]:
-        related_links_items += f"""
-                    <li><a href="{link['url']}">{link['label']}</a></li>"""
+        related_links_items += f'<li><a href="{link["url"]}">{link["label"]}</a></li>\n'
 
-    related_links_html = f"""
-        <section class="related-links-section">
-            <div class="container">
-                <h2>Related Resources</h2>
-                <ul class="related-links-list">{related_links_items}
-                </ul>
-            </div>
-        </section>"""
+    related_links_html = (
+        f'<section class="related-links">\n'
+        f'<div class="container">\n'
+        f'<h2>Related Resources</h2>\n'
+        f'<ul>\n{related_links_items}</ul>\n'
+        f'</div>\n</section>\n'
+    )
 
-    # -- FAQ section -------------------------------------------------------
     faq_section_html = generate_faq_html(alt["faqs"])
 
-    # -- CTA section -------------------------------------------------------
     cta_section_html = generate_cta_section(
         title=f"Ready to See How Provyx Compares to {competitor}?",
         text=(
@@ -8814,66 +9845,93 @@ def build_alternative_page(alt):
     {breadcrumb_html}
 
     <!-- Hero -->
-    <section class="page-hero alternative-hero">
+    <section class="page-hero">
         <div class="container">
+            <span class="comp-badge">PROVIDER DATA ALTERNATIVE</span>
             <h1>{alt["hero_h1"]}</h1>
-            <p class="hero-subtitle">{alt["hero_subtitle"]}</p>
+            <p class="hero-subheadline">{alt["hero_subtitle"]}</p>
+            {verdict_html}
         </div>
     </section>
 
+    <!-- Stats Grid -->
+    {stats_html}
+
     <!-- Why Teams Look for an Alternative -->
-    <section class="content-section why-switch-section">
+    <section class="content-section">
         <div class="container">
+            <div class="section-label">The Problem</div>
             <h2>{alt["why_switch_heading"]}</h2>
-            {alt["why_switch_body"]}
+            {why_switch_content}
         </div>
     </section>
 
     <!-- What Healthcare Teams Actually Need -->
-    <section class="content-section what-teams-need-section">
+    <section class="content-section bg-light">
         <div class="container">
+            <div class="section-label">Requirements</div>
             <h2>{alt["what_teams_need_heading"]}</h2>
             {alt["what_teams_need_body"]}
         </div>
     </section>
 
     <!-- Comparison Table -->
-    {comparison_table_html}
+    <section class="content-section">
+        <div class="container">
+            <div class="section-label">Quick Comparison</div>
+            <h2>{alt["comparison_heading"]}</h2>
+            {table_html}
+        </div>
+    </section>
 
     <!-- How Provyx Works as an Alternative -->
-    <section class="content-section how-it-works-section">
+    <section class="content-section bg-light">
         <div class="container">
+            <div class="section-label">The Solution</div>
             <h2>{alt["how_it_works_heading"]}</h2>
             {alt["how_it_works_body"]}
         </div>
     </section>
 
     <!-- What Provyx Doesn't Do -->
-    <section class="content-section limitations-section">
+    <section class="content-section">
         <div class="container">
+            <div class="section-label">Honest Limitations</div>
             <h2>{alt["limitations_heading"]}</h2>
             {alt["limitations_body"]}
         </div>
     </section>
 
     <!-- Who Switches to Provyx -->
-    <section class="content-section who-switches-section">
+    <section class="content-section bg-light">
         <div class="container">
+            <div class="section-label">Who It's For</div>
             <h2>{alt["who_switches_heading"]}</h2>
             {alt["who_switches_body"]}
         </div>
     </section>
 
     <!-- Migration Guide -->
-    <section class="content-section migration-section">
+    <section class="content-section">
         <div class="container">
+            <div class="section-label">Getting Started</div>
             <h2>{alt["migration_heading"]}</h2>
             {alt["migration_body"]}
         </div>
     </section>
 
+    <!-- The Honest Take -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="section-label">The Honest Take</div>
+            <h2>Our Recommendation</h2>
+            {bottom_line_html}
+            {questions_html}
+        </div>
+    </section>
+
     <!-- FAQ -->
-    <section class="faq-section">
+    <section class="content-section faq-section">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             {faq_section_html}
