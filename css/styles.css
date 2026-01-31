@@ -729,7 +729,7 @@ img {
 
 @media (min-width: 768px) {
   .steps {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
@@ -1943,6 +1943,69 @@ img {
   color: var(--color-text-secondary);
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* ============================================
+   Content Sections (use case & hub pages)
+   ============================================ */
+.content-section {
+  padding: var(--space-4xl) 0;
+}
+
+.content-section.bg-light {
+  background-color: var(--color-bg-secondary);
+}
+
+.content-section p {
+  max-width: 800px;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.content-section h2 {
+  margin-bottom: var(--space-xl);
+}
+
+/* Subtitle (use case hero, generic) */
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* Outbound references / sources section */
+.outbound-references {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+.outbound-references h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.outbound-references ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.outbound-references a {
+  color: var(--color-teal);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.outbound-references a:hover {
+  color: var(--color-teal-dark);
 }
 
 /* Visually hidden (accessibility) */

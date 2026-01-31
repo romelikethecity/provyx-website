@@ -434,7 +434,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "healthcare-marketing-agencies",
-        "title": "Healthcare Provider Data for Marketing Agencies | Provyx",
+        "title": "Provider Data for Healthcare Marketing Agencies",
         "h1": "Healthcare Provider Business Data for Marketing Agencies",
         "subtitle": "Build targeted prospect lists for your healthcare clients. Specialty-segmented, geography-filtered provider contact intelligence sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Get healthcare provider business data built for marketing agencies. Specialty-segmented, geography-filtered lists for dental, med spa, chiropractic, and mental health campaigns.",
@@ -522,10 +522,10 @@ ICP_PAGES = [
 
         # -- Related Links --
         "related_links": [
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "Data Enrichment", "url": "/services/data-enrichment/"},
-            {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
+            {"text": "Healthcare Email Marketing with Verified Lists", "url": "/use-cases/healthcare-email-marketing/"},
+            {"text": "How to Build a Healthcare Marketing List", "url": "/resources/healthcare-marketing-list-guide/"},
+            {"text": "Healthcare ABM Strategy Guide", "url": "/resources/healthcare-abm-strategy/"},
+            {"text": "Compare Provider Data Platforms", "url": "/compare/"},
         ],
 
         # -- Outbound authority links (used in pain/use sections above) --
@@ -540,7 +540,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "medical-device-sales",
-        "title": "Healthcare Provider Data for Medical Device Sales | Provyx",
+        "title": "Provider Data for Medical Device Sales Teams",
         "h1": "Healthcare Provider Contact Intelligence for Medical Device Sales Teams",
         "subtitle": "Find the surgeons, physicians, and practice decision-makers your reps actually need to reach. Territory-ready provider business data sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Provider contact intelligence for medical device sales reps. Territory-mapped, specialty-filtered data with decision-maker names, NPI numbers, and practice details.",
@@ -622,10 +622,10 @@ ICP_PAGES = [
         ],
 
         "related_links": [
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "CRM Data Enrichment", "url": "/services/data-enrichment/"},
-            {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
+            {"text": "Medical Device Territory Planning", "url": "/use-cases/medical-device-territory-planning/"},
+            {"text": "Territory Planning Guide", "url": "/resources/medical-device-territory-planning-guide/"},
+            {"text": "Healthcare Competitive Intelligence", "url": "/use-cases/healthcare-competitive-intelligence/"},
+            {"text": "Compare Provider Data Platforms", "url": "/compare/"},
         ],
 
         "outbound_links": [
@@ -639,7 +639,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "healthcare-saas",
-        "title": "Healthcare Provider Data for SaaS Companies | Provyx",
+        "title": "Healthcare Provider Data for SaaS Companies",
         "h1": "Healthcare Provider Business Data for SaaS Vendors",
         "subtitle": "Identify which practices need your software and who makes the buying decision. Technology-enriched provider contact intelligence sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Provider business data for healthcare SaaS companies. Identify practices by technology stack, size, and specialty. Find decision-makers for EHR, practice management, and telehealth sales.",
@@ -721,10 +721,10 @@ ICP_PAGES = [
         ],
 
         "related_links": [
+            {"text": "Healthcare Sales Prospecting", "url": "/use-cases/healthcare-sales-prospecting/"},
+            {"text": "Provider Data Buying Guide", "url": "/resources/provider-data-buying-guide/"},
             {"text": "Technology Detection Data", "url": "/services/technology-detection/"},
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
+            {"text": "Provyx vs. ZoomInfo", "url": "/compare/provyx-vs-zoominfo/"},
         ],
 
         "outbound_links": [
@@ -738,7 +738,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "pharma-sales",
-        "title": "Healthcare Provider Data for Pharma Sales | Provyx",
+        "title": "Healthcare Provider Data for Pharma Sales Teams",
         "h1": "Healthcare Provider Business Data for Pharma Sales Teams",
         "subtitle": "Prescriber-level provider contact intelligence for territory planning and outreach. NPI-verified, taxonomy-coded records sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Provider business data for pharma sales teams. NPI-verified prescriber contacts filtered by specialty, geography, and therapeutic area for territory planning and rep outreach.",
@@ -823,10 +823,10 @@ ICP_PAGES = [
         ],
 
         "related_links": [
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "Data Enrichment", "url": "/services/data-enrichment/"},
+            {"text": "Physician Outreach Campaigns", "url": "/use-cases/physician-outreach/"},
+            {"text": "Provider Data Buying Guide", "url": "/resources/provider-data-buying-guide/"},
+            {"text": "Provyx vs. Definitive Healthcare", "url": "/compare/provyx-vs-definitive-healthcare/"},
             {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
         ],
 
         "outbound_links": [
@@ -840,7 +840,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "medical-staffing",
-        "title": "Healthcare Facility Data for Medical Staffing Agencies | Provyx",
+        "title": "Healthcare Facility Data for Medical Staffing",
         "h1": "Healthcare Facility and Provider Data for Medical Staffing Agencies",
         "subtitle": "Find the facility contacts, administrators, and hiring managers your recruiters need. Facility-level business data sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Facility and provider business data for medical staffing agencies. Administrator contacts, facility type filters, and geographic targeting for recruiter outreach.",
@@ -922,10 +922,10 @@ ICP_PAGES = [
         ],
 
         "related_links": [
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "Data Enrichment", "url": "/services/data-enrichment/"},
+            {"text": "Medical Staffing Recruitment", "url": "/use-cases/medical-staffing-recruitment/"},
+            {"text": "CRM Data Decay in Healthcare", "url": "/resources/crm-data-decay-healthcare/"},
+            {"text": "Provider Credentialing Data", "url": "/use-cases/provider-credentialing/"},
             {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
         ],
 
         "outbound_links": [
@@ -939,7 +939,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "healthcare-consulting",
-        "title": "Healthcare Provider Data for Consulting Firms | Provyx",
+        "title": "Healthcare Provider Data for Consulting Firms",
         "h1": "Healthcare Provider Business Data for Consulting Firms",
         "subtitle": "Market sizing, competitive analysis, and provider demographics for strategic engagements. Project-scoped provider contact intelligence sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Provider business data for healthcare consulting firms. Market sizing, competitive analysis, M&A due diligence, and provider demographics on a per-project basis.",
@@ -1020,10 +1020,10 @@ ICP_PAGES = [
         ],
 
         "related_links": [
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "Market Analysis Data", "url": "/services/market-analysis/"},
-            {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
+            {"text": "Healthcare Market Sizing", "url": "/use-cases/healthcare-market-sizing/"},
+            {"text": "Healthcare Competitive Intelligence", "url": "/use-cases/healthcare-competitive-intelligence/"},
+            {"text": "ROI of Clean Provider Data", "url": "/resources/roi-clean-provider-data/"},
+            {"text": "Compare Provider Data Platforms", "url": "/compare/"},
         ],
 
         "outbound_links": [
@@ -1037,7 +1037,7 @@ ICP_PAGES = [
     # ===================================================================
     {
         "slug": "health-it",
-        "title": "Healthcare Provider Data for Health IT Companies | Provyx",
+        "title": "Healthcare Provider Data for Health IT Companies",
         "h1": "Healthcare Provider Business Data for Health IT Companies",
         "subtitle": "Find practices that need your technology by seeing what they already use. Technology-enriched provider contact intelligence sourced from public NPI registries, business listings, and commercial databases.",
         "meta_description": "Provider business data with technology detection for health IT companies. Identify practices by current EHR, practice management system, and tech readiness for targeted sales outreach.",
@@ -1119,10 +1119,10 @@ ICP_PAGES = [
         ],
 
         "related_links": [
+            {"text": "Healthcare ABM with Provider Data", "url": "/use-cases/healthcare-abm/"},
+            {"text": "Provider Data Buying Guide", "url": "/resources/provider-data-buying-guide/"},
             {"text": "Technology Detection Data", "url": "/services/technology-detection/"},
-            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
-            {"text": "Browse Providers by Specialty", "url": "/providers/"},
-            {"text": "Pricing", "url": "/pricing/"},
+            {"text": "Provyx vs. Cognism", "url": "/compare/provyx-vs-cognism/"},
         ],
 
         "outbound_links": [
@@ -2415,12 +2415,12 @@ COMPARISONS = [
     {
     "slug": "provyx-vs-iqvia",
     "competitor_name": "IQVIA OneKey",
-    "page_title": "Provyx vs. IQVIA OneKey: Healthcare Provider Data Compared",
+    "page_title": "Provyx vs. IQVIA OneKey: Provider Data Compared",
     "meta_description": (
         "Compare Provyx and IQVIA OneKey for healthcare provider data. "
         "See pricing, NPI verification, data depth, and which fits your team."
     ),
-    "hero_headline": "Provyx vs. IQVIA OneKey",
+    "hero_headline": "Provyx vs. IQVIA OneKey: Provider Data Compared",
     "hero_subheadline": (
         "IQVIA is a powerhouse in pharma analytics and clinical data. "
         "Provyx is a focused healthcare provider business data vendor with pay-per-record pricing. "
@@ -2919,7 +2919,7 @@ COMPARISONS = [
         "NPI verification, taxonomy filtering, and pricing evaluated "
         "for healthcare sales teams."
     ),
-    "hero_headline": "Provyx vs. Lusha",
+    "hero_headline": "Provyx vs. Lusha: Provider Data Platform Comparison",
     "hero_subheadline": (
         "Lusha is a fast, affordable way to grab B2B contact data from LinkedIn. "
         "But healthcare provider outreach needs more than names and emails. "
@@ -2944,7 +2944,8 @@ COMPARISONS = [
         "and practice managers rather than VP-level buyers at SaaS "
         "companies.</p>"
         "<p>All information here is based on publicly available product "
-        "pages, G2 reviews, Lusha's published pricing, and our own "
+        "pages, <a href=\"https://www.g2.com/products/lusha/reviews\" target=\"_blank\" rel=\"noopener\">G2 reviews</a>, "
+        "Lusha's published pricing, and our own "
         "product documentation. Where we reference Provyx capabilities, "
         "those are based on data sourced from public NPI registries, "
         "business listings, and commercial databases.</p>"
@@ -3381,12 +3382,12 @@ COMPARISONS = [
     {
     "slug": "provyx-vs-cognism",
     "competitor_name": "Cognism",
-    "page_title": "Provyx vs. Cognism: Healthcare Provider Data Compared",
+    "page_title": "Provyx vs. Cognism: Provider Data Compared",
     "meta_description": (
         "Compare Provyx and Cognism for healthcare provider data. NPI-verified records vs."
         " phone-verified B2B contacts. Pricing, features, and coverage side by side."
     ),
-    "hero_headline": "Provyx vs. Cognism",
+    "hero_headline": "Provyx vs. Cognism: Healthcare Data Comparison",
     "hero_subheadline": (
         "Cognism built its reputation on phone-verified mobile numbers and European B2B coverage."
         " Provyx was built from the ground up for healthcare provider business data in the US."
@@ -3829,7 +3830,7 @@ ALTERNATIVES = [
         "slug": "zoominfo-alternative",
         "competitor": "ZoomInfo",
         "competitor_url": "https://www.zoominfo.com/",
-        "title": "Best ZoomInfo Alternative for Healthcare Data | Provyx",
+        "title": "Best ZoomInfo Alternative for Healthcare Data",
         "meta_description": (
             "Provyx is a ZoomInfo alternative built for healthcare. "
             "Get NPI-verified provider contact intelligence with pay-per-record "
@@ -4234,7 +4235,7 @@ ALTERNATIVES = [
         "slug": "definitive-healthcare-alternative",
         "competitor": "Definitive Healthcare",
         "competitor_url": "https://www.definitivehc.com/",
-        "title": "Best Definitive Healthcare Alternative | Provyx",
+        "title": "Best Definitive Healthcare Alternative for Data",
         "meta_description": (
             "Provyx is a Definitive Healthcare alternative for teams that need "
             "provider contact intelligence without enterprise pricing. NPI-verified "
@@ -4673,7 +4674,9 @@ USE_CASES = [
 
 <p>The impact goes beyond raw activity metrics. When reps trust their data, they approach calls with more confidence and better preparation. They know the provider's specialty, practice size, and location before they dial, which means the first 30 seconds of every call are relevant rather than exploratory. That preparation translates to higher conversion from conversation to meeting.</p>
 
-<p>Teams also report shorter ramp time for new hires. Instead of spending their first weeks learning how to research providers manually, new reps start with verified lists from day one and focus on developing their pitch and product knowledge. The data infrastructure is already in place.</p>""",
+<p>Teams also report shorter ramp time for new hires. Instead of spending their first weeks learning how to research providers manually, new reps start with verified lists from day one and focus on developing their pitch and product knowledge. The data infrastructure is already in place.</p>
+
+<p>For sales managers, verified provider data simplifies pipeline forecasting. When you know the total addressable market in each territory and can track penetration rates against clean provider counts, your forecast reflects reality rather than guesswork. That visibility makes quota setting fairer and resource allocation more precise.</p>""",
         "faqs": [
             {"question": "What CRM formats do you support for sales prospect lists?",
              "answer": "We deliver data in CSV and Excel formats that import directly into Salesforce, HubSpot, Outreach, Salesloft, Apollo, and other sales platforms. If your CRM requires a specific field mapping, we can adjust the export format to match your import template at no extra cost."},
@@ -4701,7 +4704,7 @@ USE_CASES = [
     # =========================================================================
     {
         "slug": "medical-device-territory-planning",
-        "title": "Medical Device Territory Planning with Provider Data",
+        "title": "Medical Device Territory Planning with Data",
         "meta_description": "Plan medical device sales territories with verified provider data. Map surgeon and specialist locations by geography and specialty for balanced coverage.",
         "h1": "Medical Device Territory Planning with Provider Data",
         "subtitle": "Territory planning for device reps requires knowing exactly where target surgeons and specialists practice. Provyx gives you the provider-level data to carve territories that are balanced, reachable, and productive.",
@@ -4737,7 +4740,9 @@ USE_CASES = [
 
 <p>Operations teams spend less time manually researching providers and reconciling conflicting data sources. Instead of pulling from the NPI Registry, cross-referencing with state licensing boards, and filling gaps with Google searches, they start with a single verified dataset that's already been matched and deduplicated.</p>
 
-<p>The result is territory plans that hold up longer, require fewer mid-year adjustments, and give reps a clear map of who to call and where they're located. For companies entering new markets or launching new products, accurate provider data cuts months off the territory design process.</p>""",
+<p>The result is territory plans that hold up longer, require fewer mid-year adjustments, and give reps a clear map of who to call and where they're located. For companies entering new markets or launching new products, accurate provider data cuts months off the territory design process.</p>
+
+<p>Sales leadership also gains better visibility into market coverage. When territories are built on verified provider counts rather than rough estimates, you can measure true market penetration per territory and identify where additional investment or headcount would generate the highest return. That level of precision supports both annual planning and real-time resource reallocation.</p>""",
         "faqs": [
             {"question": "Can you provide provider data for specific surgical subspecialties?",
              "answer": "Yes. We filter by NUCC taxonomy codes, which break down broad specialties like orthopedics into subspecialties such as spine surgery, sports medicine, hand surgery, and joint replacement. You can request data for one subspecialty or a combination that matches your device's clinical application."},
@@ -4765,7 +4770,7 @@ USE_CASES = [
     # =========================================================================
     {
         "slug": "healthcare-abm",
-        "title": "Healthcare Account-Based Marketing with Provider Data",
+        "title": "Healthcare ABM with Verified Provider Data",
         "meta_description": "Run account-based marketing campaigns targeting healthcare practices. Verified provider contacts, practice firmographics, and specialty data for ABM.",
         "h1": "Healthcare Account-Based Marketing with Provider Data",
         "subtitle": "ABM in healthcare requires practice-level targeting, not just provider names. Provyx gives you the firmographic and contact data to build account lists that match your ideal customer profile.",
@@ -4802,7 +4807,9 @@ USE_CASES = [
 
 <p>The account list itself becomes a strategic asset. Instead of a static spreadsheet that goes stale in 60 days, teams treat it as a living database that gets refreshed quarterly. Each refresh cycle updates contacts, flags practice changes, and identifies new accounts that have entered the target market.</p>
 
-<p>Sales and marketing alignment also improves. When both teams work from the same verified account list with consistent data fields, there's less friction over lead quality and account ownership. Marketing knows exactly which accounts they're warming up, and sales knows exactly who to call when an account shows engagement signals.</p>""",
+<p>Sales and marketing alignment also improves. When both teams work from the same verified account list with consistent data fields, there's less friction over lead quality and account ownership. Marketing knows exactly which accounts they're warming up, and sales knows exactly who to call when an account shows engagement signals.</p>
+
+<p>Attribution clarity is another benefit. When your ABM account list is precise and verified, you can measure engagement and pipeline influence at the account level with confidence. You know which practices were targeted, which contacts engaged, and which deals resulted from your ABM program versus inbound or other sources.</p>""",
         "faqs": [
             {"question": "Can I get multiple contacts per healthcare practice for ABM?",
              "answer": "Yes. For group practices and larger organizations, we identify multiple decision-makers including the practice owner, managing partner, office administrator, and clinical leadership. The number of contacts per account depends on practice size, but we aim to provide at least the primary decision-maker and an operational contact for each account."},
@@ -4821,7 +4828,7 @@ USE_CASES = [
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
-            ("https://taxonomy.nucc.org/", "NUCC Healthcare Provider Taxonomy"),
+            ("https://www.forrester.com/", "Forrester Research: ABM and Demand Generation"),
         ],
     },
 
@@ -4866,7 +4873,9 @@ USE_CASES = [
 
 <p>The quality of engagement improves too. When your outreach reaches the right physician at the right practice with the right specialty context, response rates are higher because the message is relevant. Physicians are more likely to engage with a vendor who clearly understands their specialty and practice setting than one who's obviously blasting a generic list.</p>
 
-<p>Teams running multi-channel campaigns see the biggest gains. When email, phone, and LinkedIn outreach all target the same verified contact, the combined touchpoints create familiarity that no single channel can achieve alone. The consistency of contact data across channels is what makes multi-channel outreach feel coordinated rather than scattershot.</p>""",
+<p>Teams running multi-channel campaigns see the biggest gains. When email, phone, and LinkedIn outreach all target the same verified contact, the combined touchpoints create familiarity that no single channel can achieve alone. The consistency of contact data across channels is what makes multi-channel outreach feel coordinated rather than scattershot.</p>
+
+<p>Campaign iteration also gets faster. When your first outreach wave returns clean engagement data because the underlying contacts were accurate, you can A/B test messaging, adjust targeting criteria, and refine your approach on the second wave rather than spending that cycle cleaning up data quality issues that obscured your results.</p>""",
         "faqs": [
             {"question": "What physician specialties can I target with Provyx data?",
              "answer": "We cover all physician specialties and subspecialties recognized by NUCC taxonomy codes. This includes primary care, surgical specialties, medical specialties, and subspecialties like interventional cardiology, sports medicine, and reproductive endocrinology. If a specialty has a taxonomy code, we can filter for it."},
@@ -4930,7 +4939,9 @@ USE_CASES = [
 
 <p>Investor presentations and board decks become more credible when total addressable market numbers are grounded in verifiable data rather than top-down projections from industry reports. You can show exactly how many target providers exist in each market, what percentage you've penetrated, and where the remaining whitespace lives.</p>
 
-<p>For companies entering new specialties or geographies, accurate market sizing prevents expensive missteps. If there are only 800 target providers in a market you estimated at 3,000, you need a different go-to-market strategy. That insight is worth the cost of the data many times over.</p>""",
+<p>For companies entering new specialties or geographies, accurate market sizing prevents expensive missteps. If there are only 800 target providers in a market you estimated at 3,000, you need a different go-to-market strategy. That insight is worth the cost of the data many times over.</p>
+
+<p>Recurring market sizing analysis also tracks market dynamics over time. By comparing provider counts and practice distributions quarter over quarter, you can spot consolidation trends, new market entrants, and geographic shifts before they show up in industry reports. That early visibility supports both strategic planning and competitive positioning.</p>""",
         "faqs": [
             {"question": "Can I get provider counts by specific NUCC taxonomy code?",
              "answer": "Yes. We filter by any taxonomy code in the NUCC system, which covers hundreds of provider specialties and subspecialties. You can request counts for a single code, a group of related codes, or all codes within a taxonomy family. We'll deliver both the counts and the underlying records if you need them."},
@@ -4994,7 +5005,9 @@ USE_CASES = [
 
 <p>Network development teams also find new contracting targets faster. Instead of waiting for providers to approach them or relying on word-of-mouth referrals, they can see exactly which uncontracted providers are practicing in underserved areas and prioritize recruitment accordingly.</p>
 
-<p>The operational benefit is reduced manual verification effort. Instead of having staff call individual practices to confirm addresses and active status, the external dataset provides a baseline that flags the records most likely to need attention. This lets your team focus verification efforts where they matter most.</p>""",
+<p>The operational benefit is reduced manual verification effort. Instead of having staff call individual practices to confirm addresses and active status, the external dataset provides a baseline that flags the records most likely to need attention. This lets your team focus verification efforts where they matter most.</p>
+
+<p>For organizations preparing for mergers or market expansion, provider network data also reveals strategic partnership opportunities. Understanding which providers practice in your target area, their specialty mix, and which are unaffiliated helps network development teams prioritize recruitment outreach and identify potential anchor relationships for new service areas.</p>""",
         "faqs": [
             {"question": "Can Provyx data support CMS network adequacy reporting?",
              "answer": "Our data includes the fields typically required for network adequacy analysis: NPI number, taxonomy codes, verified practice address with geocoding, and provider type classification. We don't generate the regulatory filings themselves, but the underlying data supports the distance, provider count, and specialty coverage analyses that those filings require."},
@@ -5058,7 +5071,9 @@ USE_CASES = [
 
 <p>Open and click-through rates also improve when emails reach the right inboxes. A verified list targeted to pediatric dentists will outperform a generic "dental" list because the segmentation is tighter and the personalization is accurate. When every email reaches a real person in the right specialty, the content does its job.</p>
 
-<p>The long-term value is even more significant. Maintaining a healthy sender reputation means your marketing team can scale email volume over time without deliverability degrading. Instead of hitting a ceiling where your domain gets throttled, you build a track record that ESPs reward with better placement. That compounding effect starts with clean data on the first campaign.</p>""",
+<p>The long-term value is even more significant. Maintaining a healthy sender reputation means your marketing team can scale email volume over time without deliverability degrading. Instead of hitting a ceiling where your domain gets throttled, you build a track record that ESPs reward with better placement. That compounding effect starts with clean data on the first campaign.</p>
+
+<p>Teams also report lower unsubscribe rates when emails reach the right audience. A psychiatrist who receives a well-targeted email about mental health EHR software is far less likely to unsubscribe than one who receives a generic healthcare pitch. The specificity that good data enables isn't just about deliverability; it shapes how recipients perceive your brand.</p>""",
         "faqs": [
             {"question": "What email deliverability rate should I expect from Provyx lists?",
              "answer": "We target deliverability rates above 90% on verified business email addresses. Actual rates vary by specialty and practice type, since some provider segments have more volatile email infrastructure than others. We provide deliverability estimates with your order and will replace or credit batches that fall below our stated threshold."},
@@ -5086,7 +5101,7 @@ USE_CASES = [
     # =========================================================================
     {
         "slug": "provider-credentialing",
-        "title": "Provider Credentialing Data Enrichment with Provyx",
+        "title": "Provider Credentialing Data Enrichment",
         "meta_description": "Enrich credentialing records with verified NPI data, practice addresses, and taxonomy codes. Reduce manual verification and speed up provider onboarding.",
         "h1": "Provider Credentialing Data Enrichment with Provyx",
         "subtitle": "Credentialing teams spend hours verifying provider information manually. Provyx provides verified NPI data, practice addresses, and specialty details that accelerate onboarding and reduce the burden of primary source verification.",
@@ -5122,7 +5137,9 @@ USE_CASES = [
 
 <p>Data quality in the credentialing system also improves over time. Each enrichment cycle updates stale records, corrects address mismatches, and standardizes taxonomy codes. The cumulative effect is a cleaner, more reliable provider directory that reduces errors in downstream processes like claims adjudication and network reporting.</p>
 
-<p>For organizations that credential providers across multiple states or specialties, the standardization benefit is especially valuable. Instead of dealing with inconsistent data formats from different sources and different provider-submitted applications, the enrichment layer creates a consistent data foundation that your credentialing platform can work with reliably.</p>""",
+<p>For organizations that credential providers across multiple states or specialties, the standardization benefit is especially valuable. Instead of dealing with inconsistent data formats from different sources and different provider-submitted applications, the enrichment layer creates a consistent data foundation that your credentialing platform can work with reliably.</p>
+
+<p>Risk reduction is the less visible but equally important outcome. When credentialing decisions are supported by current, verified data, the risk of onboarding providers with outdated or inaccurate records decreases. For health plans and hospital systems, that data accuracy directly supports compliance obligations and reduces exposure during regulatory audits and accreditation reviews.</p>""",
         "faqs": [
             {"question": "Can Provyx data replace primary source verification for credentialing?",
              "answer": "Provyx data supplements and accelerates primary source verification but doesn't replace it. Credentialing standards from NCQA and CMS require specific primary source checks that include license verification, education confirmation, and malpractice history. Our data helps with the practice address, NPI, and taxonomy verification components, reducing the total verification workload."},
@@ -5150,7 +5167,7 @@ USE_CASES = [
     # =========================================================================
     {
         "slug": "healthcare-competitive-intelligence",
-        "title": "Healthcare Competitive Intelligence with Provider Data",
+        "title": "Healthcare Competitive Intel with Provider Data",
         "meta_description": "Build competitive intelligence for healthcare markets with verified provider data. Map competitor presence, track shifts, and find growth opportunities.",
         "h1": "Healthcare Competitive Intelligence with Provider Data",
         "subtitle": "Understanding your competitive landscape requires knowing which providers exist, where they're located, and how the market is shifting. Provyx gives you the provider-level data to map competitive dynamics across specialties and geographies.",
@@ -5186,7 +5203,9 @@ USE_CASES = [
 
 <p>Sales teams benefit from competitive intelligence that's grounded in data. When a rep can see exactly which providers are in their territory, what type of practices they run, and what technology they use, they can tailor their approach to the competitive context of each account. That specificity converts more conversations to deals.</p>
 
-<p>For private equity-backed healthcare platforms, provider-level competitive data supports both acquisition targeting and portfolio management. You can identify fragmented markets ripe for consolidation, evaluate the competitive position of acquisition targets, and monitor market dynamics across your portfolio's geographic footprint.</p>""",
+<p>For private equity-backed healthcare platforms, provider-level competitive data supports both acquisition targeting and portfolio management. You can identify fragmented markets ripe for consolidation, evaluate the competitive position of acquisition targets, and monitor market dynamics across your portfolio's geographic footprint.</p>
+
+<p>The repeatability of data-driven competitive analysis is another advantage. When your competitive framework is built on standardized provider data fields, you can apply the same methodology across new markets, new product lines, and new time periods. Each analysis builds on the last, creating institutional knowledge that compounds over time rather than starting from scratch with every new strategic question.</p>""",
         "faqs": [
             {"question": "Can Provyx track new practice openings in my market?",
              "answer": "By comparing datasets over time, you can identify new NPI registrations and new practice addresses that appeared since your last data pull. We can flag records that are new to our database since a specific date, which serves as a proxy for new practice openings or provider relocations into your market."},
@@ -5459,7 +5478,7 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "healthcare-marketing-list-guide",
-        "title": "How to Build a Healthcare Marketing List That Converts",
+        "title": "Build a Healthcare Marketing List That Converts",
         "meta_description": "Step-by-step guide to building healthcare marketing lists that drive results. Data sources, verification, and segmentation for provider outreach.",
         "h1": "How to Build a Healthcare Marketing List That Converts",
         "subtitle": "A healthcare marketing list is only as good as the data behind it. This guide walks through the process of defining your audience, sourcing accurate provider data, and building lists that actually produce campaign results.",
@@ -5557,7 +5576,7 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "provider-data-buying-guide",
-        "title": "Healthcare Provider Data Buying Guide",
+        "title": "Healthcare Provider Data Buying Guide for 2026",
         "meta_description": "What to evaluate when buying healthcare provider data. Sourcing, verification, pricing models, and red flags to watch for when comparing data vendors.",
         "h1": "Healthcare Provider Data Buying Guide for 2026",
         "subtitle": "Buying provider data can feel like buying a used car: every vendor claims their data is accurate, but the quality varies dramatically. This guide covers what to evaluate, what to ask, and what red flags to watch for.",
@@ -5657,7 +5676,7 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "crm-data-decay-healthcare",
-        "title": "CRM Data Decay in Healthcare: How Fast Provider Records Go Stale",
+        "title": "CRM Data Decay: How Fast Provider Records Go Stale",
         "meta_description": "Healthcare provider data decays faster than most B2B data. Learn the decay rates, causes, and practical strategies to keep your CRM provider records accurate.",
         "h1": "CRM Data Decay: How Fast Provider Records Go Stale",
         "subtitle": "Your CRM was accurate when you loaded it. Six months later, a significant percentage of those provider records are wrong. Here's how fast healthcare data decays, why it happens, and what you can do about it.",
@@ -5739,7 +5758,7 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "healthcare-abm-strategy",
-        "title": "Healthcare ABM Strategy: Targeting Practices, Not Just Providers",
+        "title": "Healthcare ABM Strategy: Target Practices First",
         "meta_description": "Build a healthcare ABM strategy that targets practices as accounts. Account identification, multi-threading, and data requirements for ABM campaigns.",
         "h1": "Healthcare ABM: Targeting Practices, Not Providers",
         "subtitle": "Account-based marketing works differently in healthcare. Your accounts are practices and provider groups, not Fortune 500 companies. This guide covers how to adapt ABM strategy for healthcare's unique structure.",
@@ -5833,7 +5852,7 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "medical-device-territory-planning-guide",
-        "title": "Medical Device Sales Territory Planning with Provider Data",
+        "title": "Medical Device Territory Planning with Provider Data",
         "meta_description": "Plan medical device sales territories using verified provider data. Step-by-step guide to mapping surgeons, balancing workloads, and optimizing coverage.",
         "h1": "Medical Device Territory Planning with Provider Data",
         "subtitle": "Territory planning for medical device sales requires more than drawing lines on a map. This guide covers how to use provider-level data to build territories that are balanced, data-driven, and aligned with actual market opportunity.",
@@ -5914,8 +5933,8 @@ RESOURCES = [
             {"url": "/resources/provider-data-buying-guide/", "text": "Healthcare Provider Data Buying Guide"},
         ],
         "outbound_links": [
-            ("https://taxonomy.nucc.org/", "NUCC Healthcare Provider Taxonomy"),
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm", "BLS: Physicians and Surgeons Occupational Outlook"),
         ],
         "author": AUTHOR_ROME,
     },
@@ -6276,7 +6295,7 @@ def build_about():
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
-        title="About Provyx",
+        title="About Us",
         description="Provyx builds healthcare provider databases for B2B teams. NPI-verified contacts across 40+ specialties. No annual contracts.",
         canonical_path="/about/",
         body_content=body,
@@ -7992,9 +8011,9 @@ def build_service_page(svc):
 
     # -- Wrap and write --
     page_html = get_page_wrapper(
-        title=f"{svc['title']} | Provyx",
+        title=svc['title'],
         description=svc["meta_description"],
-        canonical_path=canonical,
+        canonical_path=f"/services/{slug}/",
         body_content=body,
         extra_schema=breadcrumb_schema,
     )
@@ -8081,9 +8100,9 @@ def build_services_index():
 """
 
     page_html = get_page_wrapper(
-        title="Healthcare Provider Data Products and Services | Provyx",
+        title="Healthcare Provider Data Products and Services",
         description=meta_description,
-        canonical_path=canonical,
+        canonical_path="/services/",
         body_content=body,
         extra_schema=breadcrumb_schema,
     )
@@ -8180,6 +8199,15 @@ def build_hub_page(cat_key, cat_data):
 
     extra_schema = get_breadcrumb_schema(breadcrumbs)
 
+    # -- Related links (cross-category) --
+    related_links = [
+        f'<li><a href="/use-cases/healthcare-sales-prospecting/">Healthcare Sales Prospecting with Provider Data</a></li>',
+        f'<li><a href="/resources/provider-data-buying-guide/">Healthcare Provider Data Buying Guide</a></li>',
+        f'<li><a href="/compare/">Compare Provider Data Platforms</a></li>',
+        f'<li><a href="/services/provider-contact-data/">Provider Contact Data Product Details</a></li>',
+    ]
+    related_links_html = "\n".join(related_links)
+
     body = f'''
         <section class="page-hero section">
             <div class="container">
@@ -8205,6 +8233,16 @@ def build_hub_page(cat_key, cat_data):
         </section>
 
 {generate_faq_html(faqs)}
+
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    {related_links_html}
+                </ul>
+            </div>
+        </section>
+
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
@@ -8261,6 +8299,19 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
             </div>
         </section>'''
 
+    cross_links_html = f'''
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    <li><a href="/use-cases/healthcare-sales-prospecting/">Healthcare Sales Prospecting</a></li>
+                    <li><a href="/resources/provider-data-buying-guide/">Provider Data Buying Guide</a></li>
+                    <li><a href="/services/provider-contact-data/">Provider Contact Data Details</a></li>
+                    <li><a href="/compare/">Compare Provider Data Platforms</a></li>
+                </ul>
+            </div>
+        </section>'''
+
     extra_schema = get_breadcrumb_schema(breadcrumbs)
 
     body = f'''
@@ -8304,6 +8355,7 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
 
 {generate_faq_html(faqs)}
 {related_html}
+{cross_links_html}
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
@@ -8873,23 +8925,46 @@ def build_comparisons_index():
         <section class="page-hero section">
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
-                <h1 class="page-hero__title">Healthcare Provider Data Comparisons</h1>
+                <h1 class="page-hero__title">Compare Healthcare Provider Data Platforms Side by Side</h1>
                 <p class="page-hero__subtitle">Side-by-side analysis of Provyx against other provider data platforms. Pricing, data quality, NPI coverage, and healthcare focus compared honestly.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Why Compare Provider Data Vendors</h2>
+                <p>Most healthcare provider data vendors look similar on the surface. They all claim millions of records, high accuracy rates, and broad specialty coverage. The differences show up in the details: how they verify records, what contract terms they require, how they price data access, and whether their databases are built for healthcare or retrofitted from general B2B platforms.</p>
+                <p>We built these comparisons because we kept hearing the same question from sales and marketing teams evaluating provider data: "How is Provyx different from [vendor]?" Rather than give you a sales pitch, we put the details side by side. Each comparison covers pricing structures, contract terms, data verification methods, NPI coverage, and the specific scenarios where each vendor is the better fit.</p>
+                <p>Every comparison includes sourced pricing (or notes when pricing is not public), real user feedback from review platforms like G2 and Gartner Peer Insights, and an honest assessment of where Provyx falls short. We are not the right choice for every team. If you need global HCP data, prescribing analytics, or intent signals, some of these competitors will serve you better. If you need clean, NPI-verified contact records for US healthcare providers without enterprise contracts, that is where Provyx fits.</p>
+                <p>These pages are updated regularly as competitors change their pricing, features, and contract terms. If you spot something outdated, <a href="/contact/">let us know</a> and we will correct it. All comparisons reference publicly available information from vendor websites, third-party review platforms, and published pricing documentation. We link to our sources throughout each article so you can verify claims independently.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
+                <h2>Provider Data Platform Comparisons</h2>
                 <div class="provider-grid">
                     {cards}
                 </div>
             </div>
         </section>
 
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    <li><a href="/alternatives/">Healthcare Provider Data Alternatives</a></li>
+                    <li><a href="/resources/provider-data-buying-guide/">Provider Data Buying Guide</a></li>
+                    <li><a href="/pricing/">Provyx Pricing</a></li>
+                    <li><a href="/for/medical-device-sales/">Provider Data for Medical Device Sales</a></li>
+                </ul>
+            </div>
+        </section>
+
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
-        title="Healthcare Provider Data Comparisons",
+        title="Compare Healthcare Provider Data Platforms",
         description="Compare Provyx to ZoomInfo, Definitive Healthcare, Apollo, and other provider data vendors. Honest pricing, data quality, and healthcare coverage analysis.",
         canonical_path="/compare/",
         body_content=body,
@@ -8919,23 +8994,47 @@ def build_alternatives_index():
         <section class="page-hero section">
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
-                <h1 class="page-hero__title">Healthcare Provider Data Alternatives</h1>
+                <h1 class="page-hero__title">Top Healthcare Provider Data Alternatives for 2026</h1>
                 <p class="page-hero__subtitle">Looking for a provider data vendor that actually focuses on healthcare? See how Provyx compares as an alternative to general-purpose data platforms.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>When to Look for an Alternative Provider Data Vendor</h2>
+                <p>Switching data vendors is not something most teams do on a whim. It usually starts with a specific frustration: bounce rates climbing on provider email campaigns, sales reps wasting hours on disconnected phone numbers, or a renewal quote that doubled from last year. If any of that sounds familiar, you are in the right place.</p>
+                <p>The healthcare provider data market has a few large incumbents that bundle provider contacts with analytics, intent data, and platform features that many teams never use. You end up paying for a suite when all you needed was a verified list of orthopedic surgeons in Texas with direct emails and phone numbers. That mismatch between what you need and what you are paying for is the most common reason teams start looking for alternatives.</p>
+                <p>Each alternative page below examines a specific vendor, what they do well, where they fall short for healthcare-focused teams, and how Provyx compares on the dimensions that matter most: data accuracy, NPI verification, healthcare taxonomy coverage, pricing transparency, and contract flexibility. We source our information from vendor websites, G2 and Gartner Peer Insights reviews, published pricing where available, and our own experience competing in this market.</p>
+                <p>We are honest about our limitations. If you need global coverage, prescribing data, or a full sales engagement platform, Provyx is probably not the right fit. These pages will tell you that directly. Our goal is to help you make a well-informed decision, whether or not that decision includes us.</p>
+                <p>Each alternative page follows the same structure: an overview of the incumbent vendor, their strengths and weaknesses for healthcare provider data specifically, a side-by-side comparison on the factors that matter most, and a clear recommendation for which teams should stick with the incumbent versus explore alternatives. We update these pages as vendors release new features, change pricing, or adjust their contract terms, and we source all claims from public documentation and verified review platforms.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
+                <h2>Explore Provider Data Alternatives</h2>
                 <div class="provider-grid">
                     {cards}
                 </div>
             </div>
         </section>
 
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    <li><a href="/compare/">Provider Data Platform Comparisons</a></li>
+                    <li><a href="/resources/provider-data-buying-guide/">Provider Data Buying Guide</a></li>
+                    <li><a href="/pricing/">Provyx Pricing</a></li>
+                    <li><a href="/use-cases/healthcare-sales-prospecting/">Healthcare Sales Prospecting</a></li>
+                </ul>
+            </div>
+        </section>
+
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
-        title="Healthcare Provider Data Alternatives",
+        title="Top Healthcare Provider Data Alternatives for 2026",
         description="Find a better healthcare provider data vendor. Provyx alternatives to ZoomInfo, Definitive Healthcare, and other platforms compared.",
         canonical_path="/alternatives/",
         body_content=body,
@@ -8967,23 +9066,46 @@ def build_icp_index():
         <section class="page-hero section">
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
-                <h1 class="page-hero__title">Healthcare Provider Data by Industry</h1>
+                <h1 class="page-hero__title">Healthcare Provider Data Solutions by Industry Vertical</h1>
                 <p class="page-hero__subtitle">Provider contact intelligence built for your specific use case. Whether you sell to providers, market to practices, or staff healthcare facilities, we have the data you need.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Provider Data Built for Your Industry</h2>
+                <p>Every team that sells into healthcare has a different definition of "good data." A medical device sales team needs surgeon-level contacts with practice addresses and procedure volumes. A healthcare marketing agency needs verified emails segmented by specialty and geography. A staffing firm needs to know which facilities are hiring and who runs the recruitment department. Generic provider databases treat all these use cases the same, and none of them get served well.</p>
+                <p>We built industry-specific pages because the way you use provider data shapes what data points matter most. A pharma sales rep running territory plans cares about prescribing affiliations and group practice structures. A health IT vendor targeting EHR adoption needs technology stack data and practice size indicators. The fields, filters, and delivery formats that make data useful vary meaningfully across these buyer types.</p>
+                <p>Each page below is tailored to a specific industry vertical. You will find the data points most relevant to your workflows, the provider types and specialties your team targets most often, common use cases, and how Provyx data integrates with the tools you already use. Whether you are building outbound lists, enriching your CRM, planning territories, or sizing a new market, these pages show you exactly how verified provider data fits into your process.</p>
+                <p>All provider records are NPI-verified against the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> and include taxonomy codes mapped to the <a href="https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40" target="_blank" rel="noopener">NUCC Health Care Provider Taxonomy</a>, so you can filter by specialty with confidence regardless of your industry.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
+                <h2>Choose Your Industry</h2>
                 <div class="provider-grid">
                     {cards}
                 </div>
             </div>
         </section>
 
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    <li><a href="/use-cases/">Provider Data Use Cases</a></li>
+                    <li><a href="/services/provider-contact-data/">Provider Contact Data Product Details</a></li>
+                    <li><a href="/resources/healthcare-marketing-list-guide/">Healthcare Marketing List Guide</a></li>
+                    <li><a href="/compare/">Provider Data Platform Comparisons</a></li>
+                </ul>
+            </div>
+        </section>
+
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
-        title="Healthcare Provider Data by Industry",
+        title="Healthcare Provider Data Solutions by Industry",
         description="Healthcare provider business data for marketing agencies, medical device sales, pharma teams, SaaS vendors, staffing agencies, and consulting firms.",
         canonical_path="/for/",
         body_content=body,
@@ -9023,10 +9145,10 @@ def build_use_case_page(uc):
     steps_html = ""
     for i, step in enumerate(uc["how_it_works_steps"], 1):
         steps_html += f"""
-            <div class="step-card">
-              <div class="step-card__number">{i}</div>
-              <h3 class="step-card__title">{step['title']}</h3>
-              <p>{step['description']}</p>
+            <div class="step">
+              <div class="step__number">{i}</div>
+              <h3 class="step__title">{step['title']}</h3>
+              <p class="step__text">{step['description']}</p>
             </div>"""
 
     # -- Outbound links HTML --
@@ -9099,7 +9221,7 @@ def build_use_case_page(uc):
     <section class="content-section">
       <div class="container">
         <h2>{uc["how_it_works_heading"]}</h2>
-        <div class="steps-grid">
+        <div class="steps">
           {steps_html}
         </div>
       </div>
@@ -9283,13 +9405,24 @@ def build_use_cases_index():
         <section class="page-hero section">
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
-                <h1 class="page-hero__title">Healthcare Provider Data Use Cases</h1>
+                <h1 class="page-hero__title">Healthcare Provider Data Use Cases for Sales and Marketing</h1>
                 <p class="page-hero__subtitle">See how sales, marketing, operations, and recruitment teams use verified provider data to drive results. Each use case includes the problem, the solution, and how Provyx data fits.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>How Teams Use Provider Data</h2>
+                <p>Healthcare provider data powers more workflows than most teams realize. The obvious use case is sales prospecting: build a list of dermatologists in California, load it into your CRM, and start calling. But verified provider data also drives territory planning, account-based marketing, competitive intelligence, market sizing, credentialing operations, and recruitment campaigns. Each of these workflows has different requirements for data fields, freshness, and delivery format.</p>
+                <p>We created these use case pages because "we sell provider data" does not tell you much about whether Provyx actually solves your problem. A medical device company running territory plans needs different data points than a staffing agency sourcing travel nurses. A healthcare SaaS vendor running ABM campaigns against mid-size practices needs different filters than a consulting firm sizing a new market. The use case determines which data fields matter, how many records you need, and how you should structure your outreach.</p>
+                <p>Each page below walks through a specific workflow: what the problem looks like without good data, how verified provider intelligence changes the process, the step-by-step approach, and the results teams typically see. We include the specific data points that matter for each use case, integration guidance for common CRM and marketing platforms, and links to related resources for deeper reading.</p>
+                <p>All use cases reference real data capabilities available through Provyx, sourced from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, business listings, and commercial databases. No synthetic data, no inflated record counts.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
+                <h2>Explore Use Cases</h2>
                 <div class="provider-grid">
                     {cards}
                 </div>
@@ -9299,7 +9432,7 @@ def build_use_cases_index():
 {generate_cta_section()}"""
 
     html = get_page_wrapper(
-        title="Healthcare Provider Data Use Cases",
+        title="Healthcare Provider Data Use Cases and Applications",
         description=meta_description,
         canonical_path="/use-cases/",
         body_content=body,
@@ -9341,16 +9474,39 @@ def build_resources_index():
         <section class="page-hero section">
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
-                <h1 class="page-hero__title">Healthcare Provider Data Guides and Articles</h1>
+                <h1 class="page-hero__title">Healthcare Provider Data Guides, Articles, and Resources</h1>
                 <p class="page-hero__subtitle">Practical guides on sourcing, verifying, and using healthcare provider business data. Written for the sales, marketing, and operations teams that depend on accurate provider intelligence.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Learn About Healthcare Provider Data</h2>
+                <p>Healthcare provider data is a specialized category of B2B intelligence. It includes NPI numbers, practice addresses, direct phone lines, verified email addresses, specialty taxonomy codes, practice size indicators, and technology signals. Understanding how this data is sourced, verified, and maintained is the difference between campaigns that convert and outreach that bounces.</p>
+                <p>We write these guides for the people who actually use provider data day to day: sales development reps building call lists, marketing managers running email campaigns, operations teams maintaining CRM hygiene, and analysts sizing new markets. Each article focuses on a specific topic and gives you actionable guidance rather than generic overviews. You will find sourced statistics, real-world examples, and specific recommendations tied to healthcare provider workflows.</p>
+                <p>Topics range from foundational concepts like how the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> works and what NUCC taxonomy codes mean, to applied strategies like building account-based marketing programs for healthcare and calculating the ROI of data quality investments. We update these guides as the provider data landscape changes, including new data sources, evolving best practices, and shifts in how healthcare organizations manage their provider information.</p>
+                <p>Whether you are new to healthcare provider data or optimizing an existing data strategy, these resources are designed to help you make better decisions about how you source, verify, and deploy provider intelligence across your organization.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
+                <h2>Guides and Articles</h2>
                 <div class="provider-grid">
                     {cards}
                 </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    <li><a href="/use-cases/">Provider Data Use Cases</a></li>
+                    <li><a href="/compare/">Provider Data Platform Comparisons</a></li>
+                    <li><a href="/services/">Data Products and Services</a></li>
+                    <li><a href="/for/healthcare-marketing-agencies/">Provider Data for Marketing Agencies</a></li>
+                </ul>
             </div>
         </section>
 
