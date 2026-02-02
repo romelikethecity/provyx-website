@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health System Org Chart Mapping with Provider Data | Provyx</title>
+    <meta name="description" content="Map health system org charts and IDN decision-making hierarchies using provider affiliation and NPI data. Find the right entry point for enterprise healthcare sales.">
+    <link rel="canonical" href="https://getprovyx.com/use-cases/health-system-org-chart-mapping/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/use-cases/health-system-org-chart-mapping/">
+    <meta property="og:title" content="Health System Org Chart Mapping with Provider Data | Provyx">
+    <meta property="og:description" content="Map health system org charts and IDN decision-making hierarchies using provider affiliation and NPI data. Find the right entry point for enterprise healthcare sales.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Health System Org Chart Mapping with Provider Data | Provyx">
+    <meta name="twitter:description" content="Map health system org charts and IDN decision-making hierarchies using provider affiliation and NPI data. Find the right entry point for enterprise healthcare sales.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Use Cases",
+      "item": "https://getprovyx.com/use-cases/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Health System Org Chart Mapping",
+      "item": "https://getprovyx.com/use-cases/health-system-org-chart-mapping/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/use-cases/">Use Cases</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Health System Org Chart Mapping</span>
+        </nav>
+        <h1>Health System Org Chart Mapping</h1>
+        <p class="subtitle">Use provider affiliation data and NPI records to map IDN decision-making hierarchies and identify the right entry points for enterprise healthcare sales.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Why Health System Org Charts Are Hard to Map</h2>
+        
+<p>
+Selling into integrated delivery networks (IDNs) and large health systems requires knowing
+who makes purchasing decisions, who influences them, and how authority flows across the
+organization. Most B2B sales teams struggle with this because health system structures are
+unusually complex compared to typical corporate hierarchies.
+</p>
+<p>
+<strong>Multi-layered governance.</strong> A typical IDN may include a parent corporation, regional
+divisions, individual hospitals, physician groups, and ambulatory sites. Purchasing authority
+for the same product category can sit at the corporate level for one system and at the
+facility level for another. The <a href="https://www.aha.org/statistics/fast-facts-us-hospitals"
+target="_blank" rel="noopener">American Hospital Association</a> reports that roughly 67% of
+community hospitals now belong to a health system, meaning most hospital sales require
+understanding the parent organization's structure. A rep selling an EHR module might need
+corporate IT approval at one IDN and departmental sign-off at another, with no way to know
+which without mapping the hierarchy first.
+</p>
+<p>
+<strong>Constant reorganization.</strong> Health systems merge, acquire physician practices, divest
+service lines, and restructure leadership teams regularly. The name on the building may not
+reflect the current corporate parent. A VP of Supply Chain listed on LinkedIn may have moved
+to a different division or left entirely. Static org charts go stale within months. In 2023
+alone, the AHA tracked dozens of announced hospital mergers and acquisitions, each one
+reshuffling reporting lines and purchasing authority across multiple facilities.
+</p>
+<p>
+<strong>Opaque decision-making committees.</strong> Capital equipment purchases, IT platform
+selections, and formulary decisions often involve committees that span clinical, operational,
+and financial leadership. Identifying who sits on a value analysis committee or IT steering
+group is rarely documented in any public directory. These committees may include a Chief
+Medical Officer, a VP of Operations, a department head, a biomedical engineering director,
+and a finance representative. Missing any one of these stakeholders can stall a deal for
+months or derail it entirely.
+</p>
+<p>
+<strong>Scattered data sources.</strong> Reps piece together org charts from the
+<a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>,
+LinkedIn, health system websites, press releases, and word of mouth. This manual process
+is time-consuming and produces incomplete maps that miss key influencers. A typical enterprise
+rep might spend 4-6 hours researching a single IDN's structure, only to discover during the
+first meeting that the decision maker sits in a different division than expected.
+</p>
+<p>
+<strong>Confusion between clinical and administrative hierarchies.</strong> Health systems operate
+dual hierarchies: a clinical chain (Chief Medical Officer to department chiefs to attending
+physicians) and an administrative chain (CEO to COO to department directors to managers).
+Purchasing decisions often require alignment across both. A device rep needs the clinical
+champion (a surgeon) and the administrative buyer (supply chain director). An IT vendor needs
+the clinical informatics lead and the CIO. Mapping only one hierarchy leaves blind spots
+that surface as deal-killing surprises late in the sales cycle, when a stakeholder you never
+identified raises objections you never anticipated.
+</p>
+
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>How Provider Data Enables Org Chart Mapping</h2>
+        
+<p>
+Structured provider data turns the manual org-charting process into a scalable, repeatable
+workflow. By combining NPI affiliation records, provider contact data, and firmographic
+attributes, sales teams can map health system hierarchies systematically rather than relying
+on ad hoc research.
+</p>
+<p>
+<strong>Start with NPI affiliation trees.</strong> Every provider with an NPI has affiliation
+records that link individual practitioners (Type 1 NPIs) to organizations (Type 2 NPIs).
+These affiliations reveal which physicians practice at which facilities, and which facilities
+belong to which parent organizations. When this data is enriched and normalized, it forms
+the skeleton of an org chart, showing the structural relationships between entities in the
+system. For a 15-hospital IDN, this means mapping every hospital, every affiliated physician
+group, every ambulatory clinic, and every post-acute facility into a single coherent tree.
+</p>
+<p>
+<strong>Layer in leadership contacts.</strong> NPI data tells you the structure. Contact data
+tells you the people. Enriching organizational NPIs with named contacts, including C-suite
+executives, department heads, directors, and managers, fills in the boxes on the org chart
+with actual decision makers. This is where generic NPI lookups fall short: they show
+clinicians, not the operational and administrative leaders who control budgets. A complete
+org chart for an IDN includes the system-level CEO, CFO, CIO, and CMO; each hospital's
+administrator and medical staff leadership; and each department's clinical and operational
+heads.
+</p>
+<p>
+<strong>Add firmographic context.</strong> Bed counts, revenue ranges, patient volumes, specialty
+mix, and technology stack data help you understand each node in the org chart. A 600-bed
+flagship hospital and a 30-bed critical access hospital within the same system have very
+different purchasing authority and product needs. Firmographics let reps prioritize which
+parts of the system to engage first and tailor their pitch to the specific characteristics
+of each facility. A capital equipment sale at the flagship may be a $2M deal; the same
+product category at the rural hospital may be a $200K deal or not viable at all.
+</p>
+<p>
+<strong>Track changes over time.</strong> Provider data that is refreshed regularly captures
+leadership changes, facility acquisitions, and organizational restructuring. Instead of
+discovering that your champion left six months ago, updated data flags the change so you
+can re-map the affected branch of the org chart. This is especially critical in healthcare,
+where C-suite turnover averages 18-20% annually according to industry surveys, and where
+mergers can restructure entire regional divisions overnight.
+</p>
+<p>
+<strong>Differentiate purchasing authority levels.</strong> Not all parts of an IDN have the
+same purchasing autonomy. Some systems centralize all procurement at the corporate level.
+Others give individual hospitals significant latitude for purchases below a certain dollar
+threshold. Still others have hybrid models where corporate negotiates contracts but facilities
+choose among approved vendors. Provider data combined with organizational intelligence helps
+reps identify where purchasing authority actually resides, preventing wasted effort pitching
+at the wrong level.
+</p>
+<p>
+Provyx delivers the building blocks for this workflow: verified provider contacts mapped
+to organizational NPIs, parent-child affiliation hierarchies, and firmographic attributes
+for every practice and facility in the system. Sales teams use this data to build
+org charts in their CRM rather than on whiteboards.
+</p>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step__number">1</div>
+              <h3 class="step__title">Identify the Target Health System</h3>
+              <p class="step__text">Start with the parent IDN or health system name. Provyx resolves it to the Type 2 organizational NPI and maps all subsidiary organizations, hospitals, clinics, and affiliated physician groups beneath it. Even systems with complex corporate structures spanning multiple states are resolved into a single coherent hierarchy.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">2</div>
+              <h3 class="step__title">Map the Affiliation Hierarchy</h3>
+              <p class="step__text">Using NPI affiliation data, we build the structural tree: parent corporation to regional divisions to individual facilities to practice groups. Each node includes firmographic data such as bed count, specialty mix, patient volume, and technology stack. The result is a complete picture of how the system is organized.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">3</div>
+              <h3 class="step__title">Attach Decision-Maker Contacts</h3>
+              <p class="step__text">For each organizational node, Provyx provides verified contacts for administrative and clinical leadership: CEOs, CMOs, CFOs, VPs of Supply Chain, IT directors, department heads, and practice managers with direct phone numbers and email addresses. Contacts are mapped to their specific organizational position within the hierarchy.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">4</div>
+              <h3 class="step__title">Deliver to Your CRM</h3>
+              <p class="step__text">The complete hierarchy with contacts and firmographics is delivered in a flat file or pushed directly to Salesforce or HubSpot. Account hierarchies in your CRM mirror the actual organizational structure, giving every rep a clear map of their territory with parent-child relationships intact.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>What Org Chart Mapping Enables</h2>
+        
+<p>
+<strong>Faster identification of the right entry point.</strong> Instead of cold-calling the main
+hospital switchboard, reps can identify the specific director or VP who owns the budget for
+their product category. For a surgical robotics company, that might be the Chief of Surgery
+at the flagship hospital. For an IT vendor, it might be the system-level CIO. For a GPO
+contract holder, it might be the VP of Supply Chain at corporate. Provider data narrows the
+search from thousands of employees to the handful of people who matter. Teams report reducing
+their account research time from hours to minutes per target IDN.
+</p>
+<p>
+<strong>Multi-threaded account engagement.</strong> Enterprise healthcare sales rarely close with
+a single contact. Org chart mapping reveals the full buying committee: the economic buyer,
+the clinical champion, the compliance stakeholder, and the operational implementer. Teams
+that engage multiple threads close deals at higher rates because they are not dependent on
+a single relationship. When a champion leaves or goes silent, the deal survives because
+other threads are active. Research from Gartner consistently shows that multi-threaded
+enterprise deals close at 2-3x the rate of single-threaded deals.
+</p>
+<p>
+<strong>Reduced cycle time on enterprise deals.</strong> Navigating an IDN without a map wastes
+months. Reps spend time pitching people who cannot authorize purchases or who redirect them
+to another division. A mapped org chart eliminates this trial-and-error navigation. Teams
+using structured provider data for account mapping typically report compressing their
+discovery phase by several weeks, because they enter the first meeting knowing who the
+stakeholders are rather than spending the first three meetings figuring it out.
+</p>
+<p>
+<strong>Scalable territory planning.</strong> When every IDN in a territory is mapped with the
+same methodology, managers can allocate resources based on system size, purchasing authority
+level, and product fit. This is not possible when org charts exist only in individual reps'
+heads or scattered spreadsheets. Standardized org chart data feeds territory balancing models,
+account scoring frameworks, and strategic account planning processes across the entire
+sales organization.
+</p>
+<p>
+<strong>Institutional knowledge that survives turnover.</strong> When a rep leaves, their
+account knowledge typically leaves with them. Org charts built from structured data and
+maintained in the CRM stay with the organization. A new rep inheriting an IDN account starts
+with the complete map rather than rebuilding it from scratch, reducing ramp time from months
+to weeks.
+</p>
+<p>
+<strong>Strategic account planning grounded in data.</strong> Quarterly business reviews and
+strategic account plans for top IDN targets become more rigorous when based on structured
+org charts. Instead of hand-drawn boxes on a whiteboard, account teams work from verified
+hierarchies that show every facility, every decision maker, and every firmographic attribute.
+This makes QBRs more productive, account plans more actionable, and cross-functional
+collaboration between sales, marketing, and customer success more aligned. The org chart
+becomes a shared strategic asset rather than tribal knowledge locked in one rep's head. It
+also enables executive sponsors and deal desk teams to review account strategies with full
+organizational context, improving deal support and resource allocation decisions.
+</p>
+
+      </div>
+    </section>
+
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can NPI data really show org chart hierarchies?", "acceptedAnswer": {"@type": "Answer", "text": "NPI data shows structural affiliations: which providers are linked to which organizations, and which organizations are subsidiaries of larger entities. This provides the framework for an org chart. When combined with contact data for leadership roles, it produces a functional decision-maker map. It will not show internal reporting lines within a department, but it maps the organizational units and the leaders associated with each unit, which is what sales teams need to navigate an IDN."}}, {"@type": "Question", "name": "How current is the affiliation data?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx refreshes provider affiliation and contact data on a continuous cycle. NPI affiliation records from NPPES are updated weekly by CMS. We layer in additional verification from multiple commercial and public sources to catch leadership changes, facility acquisitions, and organizational restructuring that NPPES alone may lag on. For high-priority enterprise accounts, we recommend quarterly data refreshes."}}, {"@type": "Question", "name": "Does this work for non-hospital health systems like DSOs or PE-backed groups?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The same methodology applies to dental service organizations, private-equity-backed physician groups, behavioral health platforms, and other consolidated healthcare entities. Any organization with Type 2 NPIs and affiliated providers can be mapped using this approach. The hierarchy depth and complexity varies, but the data structure is the same."}}, {"@type": "Question", "name": "How is this different from buying an IDN database from Definitive Healthcare?", "acceptedAnswer": {"@type": "Answer", "text": "Definitive Healthcare provides IDN profiles with high-level executive contacts. Provyx provides the underlying provider-level data that lets you build granular org charts: every affiliated physician, every facility, every practice group, with contacts at each level. This gives you depth within the system, not just the top-level executive summary. For enterprise sales, this depth is what enables multi-threaded engagement."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>Can NPI data really show org chart hierarchies?</h3>
+                <p>NPI data shows structural affiliations: which providers are linked to which organizations, and which organizations are subsidiaries of larger entities. This provides the framework for an org chart. When combined with contact data for leadership roles, it produces a functional decision-maker map. It will not show internal reporting lines within a department, but it maps the organizational units and the leaders associated with each unit, which is what sales teams need to navigate an IDN.</p>
+                <h3>How current is the affiliation data?</h3>
+                <p>Provyx refreshes provider affiliation and contact data on a continuous cycle. NPI affiliation records from NPPES are updated weekly by CMS. We layer in additional verification from multiple commercial and public sources to catch leadership changes, facility acquisitions, and organizational restructuring that NPPES alone may lag on. For high-priority enterprise accounts, we recommend quarterly data refreshes.</p>
+                <h3>Does this work for non-hospital health systems like DSOs or PE-backed groups?</h3>
+                <p>Yes. The same methodology applies to dental service organizations, private-equity-backed physician groups, behavioral health platforms, and other consolidated healthcare entities. Any organization with Type 2 NPIs and affiliated providers can be mapped using this approach. The hierarchy depth and complexity varies, but the data structure is the same.</p>
+                <h3>How is this different from buying an IDN database from Definitive Healthcare?</h3>
+                <p>Definitive Healthcare provides IDN profiles with high-level executive contacts. Provyx provides the underlying provider-level data that lets you build granular org charts: every affiliated physician, every facility, every practice group, with contacts at each level. This gives you depth within the system, not just the top-level executive summary. For enterprise sales, this depth is what enables multi-threaded engagement.</p>
+            </div>
+        </section>
+    
+        <section class="content-section">
+          <div class="container">
+            <div class="outbound-references">
+              <h4>Sources and References</h4>
+              <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+<li><a href="https://www.aha.org/statistics/fast-facts-us-hospitals" target="_blank" rel="noopener">AHA Fast Facts on U.S. Hospitals</a></li>
+</ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="content-section bg-light">
+          <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/use-cases/healthcare-decision-maker-data/">Healthcare Decision-Maker Data</a></li>
+<li><a href="/use-cases/healthcare-abm/">Healthcare Account-Based Marketing</a></li>
+<li><a href="/services/practice-firmographics/">Practice Firmographic Data</a></li>
+<li><a href="/for/medical-device-sales/">Data for Medical Device Sales Teams</a></li>
+</ul>
+          </div>
+        </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us your target criteria and we'll build a verified list matched to your use case. No annual contract required.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get a Sample List</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

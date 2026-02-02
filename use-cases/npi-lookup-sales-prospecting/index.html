@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPI Lookup for Sales Prospecting | Provyx</title>
+    <meta name="description" content="Go beyond basic NPI lookup for sales prospecting. Learn how to use NPI data to build prospect lists, filter by specialty and geography, and enrich with contacts.">
+    <link rel="canonical" href="https://getprovyx.com/use-cases/npi-lookup-sales-prospecting/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/use-cases/npi-lookup-sales-prospecting/">
+    <meta property="og:title" content="NPI Lookup for Sales Prospecting | Provyx">
+    <meta property="og:description" content="Go beyond basic NPI lookup for sales prospecting. Learn how to use NPI data to build prospect lists, filter by specialty and geography, and enrich with contacts.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NPI Lookup for Sales Prospecting | Provyx">
+    <meta name="twitter:description" content="Go beyond basic NPI lookup for sales prospecting. Learn how to use NPI data to build prospect lists, filter by specialty and geography, and enrich with contacts.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Use Cases",
+      "item": "https://getprovyx.com/use-cases/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NPI Lookup for Sales Prospecting",
+      "item": "https://getprovyx.com/use-cases/npi-lookup-sales-prospecting/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/use-cases/">Use Cases</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">NPI Lookup for Sales Prospecting</span>
+        </nav>
+        <h1>NPI Lookup for Sales Prospecting</h1>
+        <p class="subtitle">Use the NPI system as a foundation for healthcare sales prospecting by enriching basic NPI records with contacts, firmographics, and technology data.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Why Basic NPI Lookup Falls Short for Sales</h2>
+        
+<p>
+The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>
+is the most commonly used free tool for looking up healthcare providers. Every provider and
+healthcare organization in the United States has a unique National Provider Identifier, and
+the NPPES database makes these records searchable. Sales reps in medical devices, health IT,
+pharmaceuticals, and healthcare services use NPI lookup daily to research prospects. The
+problem is that the NPI registry was built for claims processing, not sales prospecting.
+</p>
+<p>
+<strong>Limited fields for sales use.</strong> An NPI record contains the provider's legal name,
+taxonomy code (specialty classification), practice address, enumeration date, and authorized
+official. It does not include email addresses, direct phone numbers, practice size, technology
+stack, or any of the fields sales reps need to qualify and reach prospects.
+The <a href="https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand"
+target="_blank" rel="noopener">CMS NPI documentation</a> makes clear that NPPES is an
+administrative system designed for claims processing and provider identification, not a
+business directory. It answers "does this provider exist?" but not "should I sell to them
+and how do I reach the buyer?"
+</p>
+<p>
+<strong>One record at a time.</strong> The NPI registry web interface is designed for individual
+lookups. A rep can search for a specific physician or organization, but building a list of
+all cardiologists in Houston requires downloading the entire NPPES bulk file (7+ GB) and
+filtering it manually. Most reps do not have the technical skills or tools to work with the
+bulk data extract. They are left with a one-at-a-time lookup process that cannot support
+systematic territory coverage or prospecting at scale.
+</p>
+<p>
+<strong>Stale and incomplete addresses.</strong> Providers are responsible for updating their own
+NPI records, and many do not do so promptly. Address data in NPPES can lag actual practice
+locations by months or years. The practice address listed may be a billing address, a
+credentialing address, or a location the provider left years ago. CMS does not independently
+verify that the address on an NPI record is the provider's current primary practice location.
+For sales reps planning field visits or assigning geographic territories, inaccurate addresses
+create real operational problems.
+</p>
+<p>
+<strong>No contact information for non-clinical staff.</strong> NPI records identify the provider
+themselves. They do not identify the office manager, practice administrator, IT director, or
+purchasing agent, the people who often control buying decisions for the products B2B
+companies sell. Looking up a physician's NPI tells you they exist and where they are supposed
+to be located. It does not tell you who to call, what email to use, or what role to ask for
+when you reach the practice.
+</p>
+<p>
+<strong>No practice context or qualification data.</strong> Two NPI records for solo family
+medicine physicians look identical in NPPES. But one might be a concierge practice seeing
+200 patients and the other a high-volume practice seeing 3,000 patients. One might use an
+advanced EHR with a patient portal; the other might still use paper charts. NPPES provides
+no way to distinguish them. Without practice context, every NPI record looks equally
+promising, which means reps waste time on prospects that are too small, the wrong type, or
+a poor fit for the product.
+</p>
+
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Turning NPI Data into a Sales Prospecting Engine</h2>
+        
+<p>
+NPI data is valuable not as a standalone lookup tool, but as a foundational identifier that
+connects to richer datasets. The NPI is the unique key that links a provider to their
+practice locations, organizational affiliations, contacts, technology stack, and market
+context. When used correctly, it transforms a single lookup into a complete prospect profile.
+</p>
+<p>
+<strong>Bulk filtering by specialty and geography.</strong> Instead of looking up providers one
+at a time, sales teams can query the entire NPI universe by taxonomy code (which maps to
+specialty), geographic region, and provider type. Want all orthopedic surgeons within 50 miles
+of Dallas? All Type 2 organizational NPIs for multi-provider cardiology groups in the
+Southeast? All pediatric practices in the Chicago MSA with 5+ providers? Bulk querying turns
+NPI data from a lookup tool into a list-building tool. This is the difference between
+researching one prospect at a time and building a complete territory map in a single request.
+</p>
+<p>
+<strong>Enrichment with sales-ready contact data.</strong> Once you have a list of relevant NPIs,
+the next step is enriching each record with direct contact information for decision makers.
+This means appending verified email addresses, direct phone numbers, and named contacts for
+roles like practice manager, office administrator, and department head. The NPI identifies the
+practice; enrichment identifies the person you need to reach. For group practices and
+organizations, this means contacts for multiple roles, enabling multi-threaded outreach from
+the start.
+</p>
+<p>
+<strong>Firmographic qualification.</strong> An NPI for a solo dermatologist and an NPI for a
+50-provider dermatology group look similar in NPPES. Firmographic enrichment distinguishes
+them. Practice size, provider count, location count, estimated revenue, and ownership type
+let you filter your NPI-sourced list to match your ideal customer profile. This prevents
+reps from spending time on prospects that are too small, too large, or the wrong practice
+type. It also enables account scoring: assign a numeric score to each prospect based on
+firmographic fit, and prioritize outreach to the highest-scoring records.
+</p>
+<p>
+<strong>Technology stack context.</strong> For health IT companies, knowing a provider's NPI is
+far less useful than knowing their NPI plus their EHR platform, practice management system,
+and other installed technologies. Technology enrichment transforms an NPI list into a
+competitive intelligence asset. If you sell a product that integrates with eClinicalWorks,
+you can filter your NPI list to show only eClinicalWorks practices. If you are displacing
+a competitor's billing platform, you can identify every practice running that competitor's
+software.
+</p>
+<p>
+<strong>Organizational affiliation mapping.</strong> NPI records can reveal that a physician is
+affiliated with multiple organizations. Enriched data maps these affiliations, showing which
+health system, physician group, or management company the provider belongs to. This is
+critical for understanding buying authority: a physician employed by a large group practice
+may not make independent purchasing decisions. Knowing the organizational context prevents
+wasted outreach to providers who cannot buy independently and redirects attention to the
+actual decision-making entity.
+</p>
+<p>
+Provyx builds on NPI data as a starting point, adding the layers of contact, firmographic,
+and technology data that make NPI records useful for sales prospecting at scale.
+</p>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step__number">1</div>
+              <h3 class="step__title">Define Your Target Criteria</h3>
+              <p class="step__text">Specify the provider specialties (taxonomy codes), geographic regions, practice types, and size thresholds that define your ideal customer profile. This replaces one-at-a-time NPI lookups with a systematic list build that covers your entire addressable market.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">2</div>
+              <h3 class="step__title">Build the NPI-Based Prospect List</h3>
+              <p class="step__text">Provyx queries the full NPI universe plus supplementary data sources to generate a list of providers matching your criteria. Each record starts with the NPI as the unique identifier and includes current, verified practice location data.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">3</div>
+              <h3 class="step__title">Enrich Every Record</h3>
+              <p class="step__text">Each NPI record is enriched with verified decision-maker contacts, practice firmographics (size, revenue, provider count), technology stack data, and organizational affiliations. The result is a complete prospect profile, not a bare NPI record.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">4</div>
+              <h3 class="step__title">Deliver for Outreach</h3>
+              <p class="step__text">The enriched list is delivered as a CSV, pushed to your CRM, or integrated into your sales engagement platform. NPI remains the unique key, so future enrichment refreshes can be matched precisely to update existing records without creating duplicates.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>What NPI-Based Prospecting Delivers</h2>
+        
+<p>
+<strong>Complete prospect coverage within your ICP.</strong> Instead of finding providers ad hoc
+through Google searches, referrals, or conference badge scans, NPI-based prospecting
+systematically identifies every provider that matches your target criteria within a geographic
+territory. Coverage is a function of the NPI universe (which is comprehensive for licensed
+providers) plus your filtering criteria, not a function of how many hours a rep spent
+researching. This eliminates the coverage gaps that plague manual prospecting.
+</p>
+<p>
+<strong>Consistent data quality across the territory.</strong> Every prospect record contains the
+same fields, at the same level of completeness. This makes CRM hygiene, lead scoring, and
+reporting reliable. Managers can trust territory metrics because the underlying data is
+uniform. No more territories where one rep has rich data because they researched manually
+while another has bare records because they did not. This consistency also enables meaningful
+performance comparisons across territories, since each rep is working from the same data
+foundation.
+</p>
+<p>
+<strong>Faster ramp for new territories and new reps.</strong> When a rep takes over a new
+territory, an NPI-based prospect build gives them a complete map of the market from day one.
+Instead of spending the first three months learning who is in their territory through
+networking and manual research, they start with a full, enriched list and spend their time
+selling. This is especially valuable during expansion, when multiple new reps are ramping
+simultaneously and cannot rely on institutional knowledge.
+</p>
+<p>
+<strong>Repeatable process for expansion and refresh.</strong> Because the methodology is
+systematic rather than ad hoc, the same process can be repeated for new geographies, new
+specialties, or periodic data refreshes. Opening a new territory in the Pacific Northwest
+uses the same process as the original Southeast build. Adding a new specialty vertical to
+your target list requires rerunning the query with different taxonomy codes. NPI-based
+prospecting scales in a way that manual research does not.
+</p>
+<p>
+<strong>Clean foundation for account-based marketing.</strong> ABM programs require a defined
+target account list with complete firmographic and contact data. NPI-based prospecting
+produces exactly this: a comprehensive list of accounts matching your ICP, with the data
+fields needed to run personalized multi-channel campaigns. The NPI serves as the persistent
+key that links marketing engagement data back to the provider record over time.
+</p>
+<p>
+<strong>Data-driven competitive intelligence.</strong> When your prospect list includes technology
+stack data for every provider, you gain a territory-wide view of competitive positioning.
+You know exactly how many practices in your territory use each competing platform, where your
+product has penetration, and where whitespace exists. This competitive map, built
+systematically from NPI-based prospect data rather than from anecdotal rep reports, gives
+sales leadership the intelligence to allocate resources, craft competitive messaging, and
+identify the highest-probability conversion opportunities across the entire territory.
+This level of competitive visibility transforms territory reviews from opinion-based
+discussions into data-driven strategy sessions where managers and reps can make
+evidence-based decisions about where to focus their efforts next.
+</p>
+
+      </div>
+    </section>
+
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I just download the NPPES file myself and build lists?", "acceptedAnswer": {"@type": "Answer", "text": "Technically yes, but the NPPES bulk download is a 7+ GB file with over 8 million records in a format that requires technical processing. It also contains only the fields CMS collects: name, taxonomy, address, enumeration date. It does not contain contacts, firmographics, or technology data. Downloading NPPES gives you raw identifiers; it does not give you sales-ready prospect lists. Most teams that try the DIY approach spend weeks on data engineering before producing a usable list."}}, {"@type": "Question", "name": "How do taxonomy codes map to medical specialties?", "acceptedAnswer": {"@type": "Answer", "text": "The Healthcare Provider Taxonomy Code Set maintained by NUCC maps codes to specialties. For example, 207X00000X maps to Orthopedic Surgery. There are over 800 taxonomy codes covering physicians, non-physician practitioners, organizations, and ancillary providers. Provyx translates taxonomy codes into plain-language specialty labels and lets you filter using common specialty names rather than memorizing code numbers."}}, {"@type": "Question", "name": "Is NPI data HIPAA-protected?", "acceptedAnswer": {"@type": "Answer", "text": "No. NPI data is public information published by CMS. NPI numbers, provider names, practice addresses, and taxonomy codes are freely available through the NPPES registry. NPI data does not contain patient information or protected health information (PHI). It is a provider directory, not a clinical database. Using NPI data for B2B sales prospecting is a standard, legal practice."}}, {"@type": "Question", "name": "How accurate are NPI practice addresses?", "acceptedAnswer": {"@type": "Answer", "text": "NPPES addresses are self-reported by providers and may be outdated. Providers are required to update their NPI records within 30 days of a change, but compliance varies widely. Some estimates suggest 15-20% of NPPES addresses are outdated at any given time. Provyx validates and supplements NPPES addresses with data from additional sources including state license records, practice websites, and commercial databases to provide current, verified practice locations."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>Can I just download the NPPES file myself and build lists?</h3>
+                <p>Technically yes, but the NPPES bulk download is a 7+ GB file with over 8 million records in a format that requires technical processing. It also contains only the fields CMS collects: name, taxonomy, address, enumeration date. It does not contain contacts, firmographics, or technology data. Downloading NPPES gives you raw identifiers; it does not give you sales-ready prospect lists. Most teams that try the DIY approach spend weeks on data engineering before producing a usable list.</p>
+                <h3>How do taxonomy codes map to medical specialties?</h3>
+                <p>The Healthcare Provider Taxonomy Code Set maintained by NUCC maps codes to specialties. For example, 207X00000X maps to Orthopedic Surgery. There are over 800 taxonomy codes covering physicians, non-physician practitioners, organizations, and ancillary providers. Provyx translates taxonomy codes into plain-language specialty labels and lets you filter using common specialty names rather than memorizing code numbers.</p>
+                <h3>Is NPI data HIPAA-protected?</h3>
+                <p>No. NPI data is public information published by CMS. NPI numbers, provider names, practice addresses, and taxonomy codes are freely available through the NPPES registry. NPI data does not contain patient information or protected health information (PHI). It is a provider directory, not a clinical database. Using NPI data for B2B sales prospecting is a standard, legal practice.</p>
+                <h3>How accurate are NPI practice addresses?</h3>
+                <p>NPPES addresses are self-reported by providers and may be outdated. Providers are required to update their NPI records within 30 days of a change, but compliance varies widely. Some estimates suggest 15-20% of NPPES addresses are outdated at any given time. Provyx validates and supplements NPPES addresses with data from additional sources including state license records, practice websites, and commercial databases to provide current, verified practice locations.</p>
+            </div>
+        </section>
+    
+        <section class="content-section">
+          <div class="container">
+            <div class="outbound-references">
+              <h4>Sources and References</h4>
+              <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+<li><a href="https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand" target="_blank" rel="noopener">CMS NPI Standards</a></li>
+</ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="content-section bg-light">
+          <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/use-cases/npi-data-enrichment/">NPI Data Enrichment</a></li>
+<li><a href="/resources/npi-registry-guide/">NPI Registry Guide</a></li>
+<li><a href="/resources/nppes-vs-commercial-provider-data/">NPPES vs. Commercial Provider Data</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+</ul>
+          </div>
+        </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us your target criteria and we'll build a verified list matched to your use case. No annual contract required.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get a Sample List</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

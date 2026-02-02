@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA | Provyx</title>
+    <meta name="description" content="B2B emails to physicians and practice administrators are governed by CAN-SPAM, not HIPAA. This guide explains the rules, common misconceptions, and compliance requirements.">
+    <link rel="canonical" href="https://getprovyx.com/resources/b2b-healthcare-email-compliance/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/resources/b2b-healthcare-email-compliance/">
+    <meta property="og:title" content="B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA | Provyx">
+    <meta property="og:description" content="B2B emails to physicians and practice administrators are governed by CAN-SPAM, not HIPAA. This guide explains the rules, common misconceptions, and compliance requirements.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA | Provyx">
+    <meta name="twitter:description" content="B2B emails to physicians and practice administrators are governed by CAN-SPAM, not HIPAA. This guide explains the rules, common misconceptions, and compliance requirements.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://getprovyx.com/resources/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA",
+      "item": "https://getprovyx.com/resources/b2b-healthcare-email-compliance/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA</span>
+        </nav>
+        <h1>B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA</h1>
+        <p class="subtitle">Sending sales emails to healthcare providers at their practice addresses is a CAN-SPAM question, not a HIPAA question. Here is what the law actually requires.</p>
+      </div>
+    </section>
+
+    
+    <section class="content-section">
+      <div class="container">
+        <h2>The Most Common Misconception in Healthcare Sales</h2>
+        <p>Ask a healthcare sales rep whether they can send a cold email to a physician and you'll often hear: "We can't — HIPAA." This is wrong. It's one of the most widespread misconceptions in the industry, and it costs companies real revenue by making them afraid of a perfectly legal and common outreach channel.</p>
+
+<p><strong>HIPAA governs protected health information (PHI).</strong> The <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html" target="_blank" rel="noopener">HIPAA Privacy Rule</a> restricts how covered entities (healthcare providers, health plans, and healthcare clearinghouses) and their business associates handle individually identifiable health information. It has nothing to do with a medical device company emailing a surgeon about a new implant system. It has nothing to do with a health IT vendor emailing a practice administrator about EHR integration. Those are B2B commercial communications, and they're governed by the same laws that govern any other B2B email: primarily the <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener">CAN-SPAM Act</a>.</p>
+
+<p><strong>Where the confusion comes from.</strong> Healthcare organizations spend enormous effort on HIPAA compliance. Every employee takes annual HIPAA training. Every vendor signs a Business Associate Agreement. HIPAA is so pervasive in healthcare culture that people assume it governs all communications involving healthcare professionals. It doesn't. HIPAA applies to PHI — patient names, diagnoses, treatment records, billing information. A physician's business email address and practice phone number are not PHI. They're professional contact information, publicly available through the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI registry</a> and other directories.</p>
+
+<p><strong>This misconception creates a competitive advantage for those who understand the rules.</strong> Many healthcare vendors avoid email outreach entirely because their legal teams (often unfamiliar with marketing law) default to "HIPAA might apply." Companies that understand the actual regulatory framework can use email as a legitimate, high-ROI channel while competitors sit on the sidelines. The key is compliance — not with HIPAA, but with CAN-SPAM and applicable state laws.</p>
+
+<p>This guide explains exactly what rules apply to B2B healthcare email outreach, what those rules require, and how to stay compliant. It is not legal advice — consult your own attorney for your specific situation. But it is a factual overview of the regulatory landscape that too few healthcare sales teams understand.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>CAN-SPAM Requirements for B2B Healthcare Emails</h2>
+        <p>The CAN-SPAM Act of 2003 is the primary federal law governing commercial email in the United States. It applies to any "commercial electronic mail message" — defined as email whose primary purpose is the commercial advertisement or promotion of a commercial product or service. A sales email to a physician or practice administrator falls squarely within this definition.</p>
+
+<p><strong>CAN-SPAM does not require prior opt-in for B2B emails.</strong> This is a critical point. Unlike GDPR in Europe or CASL in Canada, CAN-SPAM does not prohibit unsolicited commercial email. You can legally send a cold email to a physician at their practice email address without prior consent. What CAN-SPAM does require is that you follow specific rules when sending those emails.</p>
+
+<p><strong>The seven CAN-SPAM requirements.</strong> Every commercial email you send must comply with these rules, per the <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener">FTC's compliance guide</a>:</p>
+
+<p>1. <strong>No false or misleading header information.</strong> Your "From," "To," and "Reply-To" fields must accurately identify the person or business sending the message. You can't spoof a hospital's domain or pretend to be a colleague of the recipient.</p>
+
+<p>2. <strong>No deceptive subject lines.</strong> The subject line must accurately reflect the content of the email. "Urgent patient referral" as a subject line for a sales email is deceptive. "New data integration for [their EHR]" is fine if the email actually discusses that.</p>
+
+<p>3. <strong>Identify the message as an advertisement.</strong> The law requires disclosure that the message is an ad. The FTC gives flexibility in how you do this — it doesn't need to be a large banner. A footer line such as "This is a commercial message from [Company]" is generally sufficient.</p>
+
+<p>4. <strong>Include your physical postal address.</strong> Every commercial email must contain the sender's valid physical postal address. A street address, a P.O. box registered with the U.S. Postal Service, or a private mailbox registered with a commercial mail receiving agency all qualify.</p>
+
+<p>5. <strong>Provide a clear opt-out mechanism.</strong> Every email must include a clear, conspicuous way for the recipient to opt out of future emails. This can be an unsubscribe link or a reply-to address with opt-out instructions.</p>
+
+<p>6. <strong>Honor opt-out requests within 10 business days.</strong> Once someone opts out, you must stop emailing them within 10 business days. You cannot charge a fee, require information beyond an email address, or make the recipient take multiple steps to unsubscribe.</p>
+
+<p>7. <strong>Monitor what others do on your behalf.</strong> If you hire a third party to send emails for you, you're still legally responsible for compliance. This includes outsourced SDR teams, marketing agencies, and email service providers.</p>
+
+<p>Violations carry penalties of up to $51,744 per email (adjusted for inflation). The FTC enforces CAN-SPAM, and state attorneys general can also bring actions.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Why HIPAA Does Not Apply to B2B Sales Emails</h2>
+        <p>To understand why HIPAA is irrelevant to B2B sales outreach, you need to understand what HIPAA actually covers and who it applies to.</p>
+
+<p><strong>HIPAA applies to covered entities and business associates.</strong> Covered entities are healthcare providers who transmit health information electronically, health plans, and healthcare clearinghouses. Business associates are companies that handle PHI on behalf of covered entities — billing services, EHR vendors, cloud hosting providers for patient data, etc. If your company is not a covered entity or business associate, HIPAA's Privacy and Security Rules do not apply to you directly.</p>
+
+<p><strong>Even if your company is a business associate of some healthcare clients, that relationship doesn't extend to your sales emails.</strong> A Business Associate Agreement (BAA) governs how you handle the PHI that specific client shares with you. It doesn't restrict you from emailing other physicians about your product. Those are completely separate activities.</p>
+
+<p><strong>The content of your email matters.</strong> HIPAA protects protected health information — individually identifiable information about a patient's health condition, treatment, or payment for healthcare. A sales email that says "Our device reduces surgical complication rates by 15%" contains no PHI. A sales email that says "We noticed your patient John Smith had a complication with the XYZ implant" would be a HIPAA violation — but it would also be a CAN-SPAM violation (deceptive content) and arguably several other legal violations. Normal B2B sales communications don't contain PHI, period.</p>
+
+<p><strong>A physician's professional contact information is not PHI.</strong> Dr. Smith's name, NPI number, practice address, practice phone number, and professional email address are all publicly available through the CMS NPI Registry, state licensing boards, and hospital staff directories. This information is explicitly not protected health information under HIPAA. It's professional directory information, and using it for B2B outreach is no different from looking up an attorney in the state bar directory and sending them an email about your legal software product.</p>
+
+<p><strong>One legitimate intersection.</strong> If you're sending emails that contain actual patient information — for example, a care coordination platform emailing a physician about a specific patient's referral — that is governed by HIPAA. But that's not sales outreach. That's an operational communication within the care delivery process. The distinction is clear: B2B marketing and sales communications to healthcare providers are CAN-SPAM territory. Communications containing patient data are HIPAA territory. Don't mix them up.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>State-Specific Laws and Additional Considerations</h2>
+        <p>CAN-SPAM is the federal baseline, but several states have their own email and privacy laws that may impose additional requirements. These don't change the fundamental framework — B2B healthcare emails are still a CAN-SPAM question — but they add layers you need to know about.</p>
+
+<p><strong>California (CCPA/CPRA).</strong> The <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener">California Consumer Privacy Act</a> and its amendment, the California Privacy Rights Act, grant California residents rights over their personal information. However, CCPA includes an exemption for information collected in a B2B context. As of current law, contact information collected for B2B marketing purposes has specific provisions. The situation is evolving, so monitor updates. Importantly, CCPA doesn't prohibit B2B email — it creates disclosure and opt-out requirements around data collection.</p>
+
+<p><strong>Nevada and other state laws.</strong> Nevada requires a specific type of opt-out mechanism. Other states have proposed or enacted privacy laws with varying B2B exemptions. The trend is toward more state-level privacy regulation, not less. Keep a compliance checklist that you review quarterly against new state legislation.</p>
+
+<p><strong>Industry-specific considerations.</strong> Some healthcare sub-sectors have additional rules. Pharmaceutical companies sending emails to physicians about prescription drugs must comply with FDA regulations on promotional communications. Medical device companies must follow FDA rules on device promotion. These aren't email laws per se — they're product promotion rules that apply across all channels, including email. If you market regulated products, your compliance team should review all outreach content for FDA compliance in addition to CAN-SPAM compliance.</p>
+
+<p><strong>Professional courtesy norms.</strong> Beyond legal requirements, healthcare has cultural norms around communication that affect your email strategy. Many physician practices have policies against sharing physician email addresses with vendors. Some health systems route all vendor communications through supply chain departments. These aren't legal restrictions — they're organizational preferences. Ignoring them isn't illegal, but it damages relationships. Respect stated communication preferences even when the law doesn't require you to.</p>
+
+<p><strong>International recipients.</strong> If any of your contacts are in Canada, the EU, or other jurisdictions, different laws apply. Canada's CASL requires express opt-in consent for commercial emails (with a narrow implied consent exception). GDPR requires a lawful basis for processing personal data, which for cold emails typically means legitimate interest (not consent) in B2B contexts, but the requirements are stricter than CAN-SPAM. If you sell internationally, you need jurisdiction-specific compliance.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Email List Hygiene and Data Quality for Compliance</h2>
+        <p>Compliance isn't just about following rules in the emails you send. It starts with the quality and maintenance of your email list. Bad data causes compliance problems even when your intent is good.</p>
+
+<p><strong>Bounce management.</strong> High bounce rates (emails sent to invalid addresses) damage your sender reputation and can trigger spam filters. More importantly, repeatedly sending to invalid addresses suggests you're not maintaining your list — a red flag for ISPs and, potentially, regulators. Remove hard bounces immediately. Investigate soft bounces and remove after three consecutive failures. Aim for a bounce rate below 2%.</p>
+
+<p><strong>Opt-out list maintenance.</strong> Every company sending commercial email must maintain a suppression list of everyone who has opted out. This list must be checked against every outbound email campaign. Sounds obvious, but in practice, it breaks down when companies use multiple email tools, when reps send from personal email clients, or when contact lists get shared across teams without syncing the suppression list. Centralize your suppression list and make it the single source of truth.</p>
+
+<p><strong>Data freshness.</strong> Healthcare contact data decays at 20-30% per year. Physicians retire, change practices, or join new systems. Administrators leave. Email addresses change when practices rebrand or get acquired. If your email list hasn't been refreshed in 12 months, a significant percentage of addresses are wrong. Wrong addresses lead to bounces, complaints, and wasted effort. Refresh your provider data at least quarterly.</p>
+
+<p><strong>Source verification.</strong> Know where your email addresses come from. Addresses sourced from the NPI registry, commercial provider databases, and professional directories are legitimate B2B data. Addresses scraped from patient-facing web forms, social media profiles, or personal (non-professional) email accounts are problematic. The source of the data affects both its quality and the legal defensibility of your outreach.</p>
+
+<p><strong>Segmentation reduces complaints.</strong> Sending a medical device email to a family practice physician who has no use for it isn't illegal, but it generates opt-outs and spam complaints. High complaint rates damage your domain reputation and deliverability. Use provider data to segment your list by specialty, practice type, and relevance before sending. A targeted email to 500 relevant prospects will outperform a blast to 5,000 irrelevant contacts on every metric — open rate, reply rate, conversion rate, and complaint rate.</p>
+
+<p><strong>Document your compliance processes.</strong> Maintain a written record of your CAN-SPAM compliance practices: how you collect email addresses, how you manage opt-outs, how you verify data sources, and how you review email content for compliance. If a complaint arises, this documentation is your defense. It doesn't need to be elaborate — a clear one-page policy that your team follows consistently is far better than a 50-page document that nobody reads.</p>
+      </div>
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="author-bio">
+          <h3>About the Author</h3>
+          <p><strong>Rome</strong></p>
+          <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I send a cold email to a physician at their practice email address?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A B2B sales email to a physician at their professional/practice email address is governed by CAN-SPAM, not HIPAA. CAN-SPAM does not require prior opt-in for commercial emails. You must comply with CAN-SPAM's requirements: accurate header information, non-deceptive subject line, identification as an advertisement, physical postal address, and a clear opt-out mechanism. The email must not contain any patient health information."}}, {"@type": "Question", "name": "Does HIPAA apply to B2B healthcare marketing emails?", "acceptedAnswer": {"@type": "Answer", "text": "No. HIPAA governs the use and disclosure of protected health information (PHI) by covered entities and their business associates. A sales email from a vendor to a physician about a product or service does not involve PHI. The physician's name, NPI, specialty, and practice email address are professional directory information, not protected health information. HIPAA has no provisions that restrict B2B commercial communications."}}, {"@type": "Question", "name": "What happens if I violate CAN-SPAM when emailing healthcare providers?", "acceptedAnswer": {"@type": "Answer", "text": "CAN-SPAM violations carry penalties of up to $51,744 per non-compliant email, enforced by the FTC. State attorneys general can also bring actions. In practice, enforcement typically targets egregious and systematic violations \u2014 thousands of emails with deceptive subject lines, no opt-out mechanism, or spoofed sender information. Single accidental violations rarely trigger enforcement, but a pattern of non-compliance can result in significant fines and damage to your domain reputation."}}, {"@type": "Question", "name": "Do I need a Business Associate Agreement (BAA) to email physicians about my product?", "acceptedAnswer": {"@type": "Answer", "text": "No. A BAA is required only when your company will receive, create, maintain, or transmit protected health information on behalf of a covered entity. Sending sales or marketing emails to physicians does not involve handling PHI and does not create a business associate relationship. You would need a BAA if, for example, you implemented your software at their practice and that software stored patient data \u2014 but that's a separate operational relationship, not a sales communication."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>Can I send a cold email to a physician at their practice email address?</h3>
+                <p>Yes. A B2B sales email to a physician at their professional/practice email address is governed by CAN-SPAM, not HIPAA. CAN-SPAM does not require prior opt-in for commercial emails. You must comply with CAN-SPAM's requirements: accurate header information, non-deceptive subject line, identification as an advertisement, physical postal address, and a clear opt-out mechanism. The email must not contain any patient health information.</p>
+                <h3>Does HIPAA apply to B2B healthcare marketing emails?</h3>
+                <p>No. HIPAA governs the use and disclosure of protected health information (PHI) by covered entities and their business associates. A sales email from a vendor to a physician about a product or service does not involve PHI. The physician's name, NPI, specialty, and practice email address are professional directory information, not protected health information. HIPAA has no provisions that restrict B2B commercial communications.</p>
+                <h3>What happens if I violate CAN-SPAM when emailing healthcare providers?</h3>
+                <p>CAN-SPAM violations carry penalties of up to $51,744 per non-compliant email, enforced by the FTC. State attorneys general can also bring actions. In practice, enforcement typically targets egregious and systematic violations — thousands of emails with deceptive subject lines, no opt-out mechanism, or spoofed sender information. Single accidental violations rarely trigger enforcement, but a pattern of non-compliance can result in significant fines and damage to your domain reputation.</p>
+                <h3>Do I need a Business Associate Agreement (BAA) to email physicians about my product?</h3>
+                <p>No. A BAA is required only when your company will receive, create, maintain, or transmit protected health information on behalf of a covered entity. Sending sales or marketing emails to physicians does not involve handling PHI and does not create a business associate relationship. You would need a BAA if, for example, you implemented your software at their practice and that software stored patient data — but that's a separate operational relationship, not a sales communication.</p>
+            </div>
+        </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="outbound-references">
+          <h4>Sources and References</h4>
+          <ul><li><a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener">FTC CAN-SPAM Compliance Guide</a></li>
+<li><a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html" target="_blank" rel="noopener">HHS HIPAA Privacy Rule</a></li>
+<li><a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener">California Attorney General — CCPA</a></li>
+<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+</ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Related Resources</h2>
+        <ul class="related-links"><li><a href="/services/provider-contact-data/">Provider Contact Data</a></li>
+<li><a href="/resources/physician-prospect-list-guide/">Building a Physician Prospect List</a></li>
+<li><a href="/resources/b2b-healthcare-lead-generation/">B2B Healthcare Lead Generation</a></li>
+</ul>
+      </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

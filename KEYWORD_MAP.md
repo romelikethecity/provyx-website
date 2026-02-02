@@ -1,7 +1,7 @@
 # Provyx Website Keyword Map
 
-> **Last updated:** 2026-02-01
-> **Total pages:** 199
+> **Last updated:** 2026-02-02
+> **Total pages:** 226
 > **Update this file whenever new content is published or existing pages are modified.**
 
 ---
@@ -65,7 +65,7 @@
 
 ---
 
-## 5. Use Case Pages (15)
+## 5. Use Case Pages (24)
 
 | # | Primary Keyword | Secondary Keywords | URL | Title Tag | Status |
 |---|----------------|-------------------|-----|-----------|--------|
@@ -84,10 +84,19 @@
 | 13 | healthcare CRM data enrichment | CRM enrichment NPI, Salesforce provider data refresh, CRM data quality | `/use-cases/healthcare-crm-enrichment/` | Healthcare CRM Data Enrichment | live |
 | 14 | EHR install base data for sales | technology detection healthcare, competitive displacement lists, EHR vendor data | `/use-cases/ehr-install-base-targeting/` | EHR Install Base Data for Sales Targeting | live |
 | 15 | medical device territory planning data sources | territory data sourcing, geocoded provider data, mapping tool data | `/use-cases/territory-planning-data-sources/` | Medical Device Territory Planning Data Sources | live |
+| 16 | health system org chart mapping | IDN decision makers, health system hierarchy, org chart healthcare | `/use-cases/health-system-org-chart-mapping/` | Health System Org Chart Mapping with Provider Data | live |
+| 17 | telehealth provider data for sales | virtual care provider targeting, telehealth-active practices, hybrid practice data | `/use-cases/telehealth-provider-targeting/` | Telehealth Provider Data for Sales Targeting | live |
+| 18 | healthcare data enrichment for sales | provider data enrichment B2B, NPI list enrichment, sales data append | `/use-cases/healthcare-data-enrichment/` | Healthcare Data Enrichment for Sales Teams | live |
+| 19 | NPI lookup for sales reps | NPI search prospecting, NPI data sales intelligence, NPI beyond verification | `/use-cases/npi-lookup-sales-prospecting/` | NPI Lookup for Sales Prospecting | live |
+| 20 | hospital supply chain decision makers | materials management contacts, VP supply chain hospital, purchasing committee | `/use-cases/hospital-supply-chain-decision-makers/` | Identifying Hospital Supply Chain Decision Makers | live |
+| 21 | dental practice database for B2B | dentist email list, dental practice data, DSO database | `/use-cases/dental-practice-data/` | Dental Practice Data for B2B Sales | live |
+| 22 | behavioral health provider data | mental health provider database, behavioral health contacts, therapist data | `/use-cases/behavioral-health-provider-targeting/` | Behavioral Health Provider Data for Sales | live |
+| 23 | ambulatory surgery center database | ASC data medical device, surgery center contacts, ASC procedure volumes | `/use-cases/ambulatory-surgery-center-data/` | Ambulatory Surgery Center Data for Medical Device Sales | live |
+| 24 | physician referral data for sales | referral pattern intelligence, PCP-to-specialist referrals, claims referral data | `/use-cases/physician-referral-data/` | Physician Referral Data for Sales Intelligence | live |
 
 ---
 
-## 6. Resource / Guide Pages (15)
+## 6. Resource / Guide Pages (27)
 
 | # | Primary Keyword | Secondary Keywords | URL | Title Tag | Status |
 |---|----------------|-------------------|-----|-----------|--------|
@@ -106,6 +115,18 @@
 | 13 | how to clean healthcare provider data in Salesforce | Salesforce data cleaning, CRM deduplication NPI, provider data hygiene | `/resources/clean-provider-data-salesforce/` | How to Clean Healthcare Provider Data in Salesforce | live |
 | 14 | best healthcare data providers for small sales teams | small team data vendors, affordable provider data, per-record healthcare data | `/resources/healthcare-data-providers-small-teams/` | Best Healthcare Data Providers for Small Sales Teams | live |
 | 15 | healthcare provider firmographic data | practice firmographics, healthcare account intelligence, provider practice size data | `/resources/healthcare-provider-firmographic-data/` | Healthcare Provider Firmographic Data: What It Is and Why It Matters | live |
+| 16 | healthcare account planning template | account plan healthcare sales, data-driven account planning, health system account plan | `/resources/healthcare-account-planning-template/` | Healthcare Account Planning: A Data-Driven Template | live |
+| 17 | healthcare cold calling with provider data | data-driven cold calling healthcare, pre-call research providers, physician cold calling | `/resources/healthcare-cold-calling-provider-data/` | Data-Driven Cold Calling for Healthcare Sales | live |
+| 18 | B2B healthcare email compliance | CAN-SPAM healthcare, HIPAA B2B email, healthcare outreach compliance | `/resources/b2b-healthcare-email-compliance/` | B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA | live |
+| 19 | healthcare value analysis committee vendor guide | VAC preparation vendors, value analysis submission, hospital purchasing committee | `/resources/healthcare-value-analysis-committee-guide/` | Winning the Value Analysis Committee: A Vendor Guide | live |
+| 20 | GPO navigation for medical device companies | group purchasing organization strategy, GPO contracts devices, Premier Vizient HealthTrust | `/resources/gpo-navigation-medical-device/` | GPO Navigation for Medical Device Companies | live |
+| 21 | hospital buying cycle for vendors | healthcare procurement timeline, hospital purchasing process, capital budget cycle | `/resources/hospital-buying-cycle-guide/` | The Hospital Buying Cycle: A Data-Mapped Guide for Vendors | live |
+| 22 | healthcare data vendor comparison 2026 | data vendor comparison healthcare, IQVIA vs Definitive Healthcare, provider data platforms | `/resources/healthcare-data-vendor-comparison/` | Healthcare Data Vendor Comparison 2026 | live |
+| 23 | KOL identification for medical device companies | key opinion leader medtech, surgical KOL mapping, device champion identification | `/resources/kol-identification-medical-devices/` | KOL Identification for Medical Device Companies | live |
+| 24 | pre-RFP intelligence for healthcare sales | healthcare RFP prediction, pre-RFP signals, hospital capital budget timing | `/resources/pre-rfp-intelligence-healthcare/` | Pre-RFP Intelligence: Win Healthcare Deals Before the RFP Drops | live |
+| 25 | medical device territory assessment first 90 days | new territory playbook device rep, territory data audit, account tiering medtech | `/resources/medical-device-territory-assessment/` | Medical Device Territory Assessment: Your First 90 Days | live |
+| 26 | PECOS data for sales prospecting | Medicare enrollment data sales, PECOS vs NPI, CMS PECOS download | `/resources/pecos-data-sales-prospecting/` | PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't | live |
+| 27 | how to find physician email addresses | physician email lookup, doctor email B2B outreach, verified physician emails | `/resources/find-physician-email-addresses/` | How to Find Physician Email Addresses for B2B Outreach | live |
 
 ---
 
@@ -367,13 +388,13 @@
 |---------------------|--------------|----------|-------|
 | physician email list NPI verified | transactional | high | Differentiate on NPI verification vs scraped lists |
 | medical practice owner contact list | transactional | high | Ownership data is a unique differentiator |
-| healthcare provider data for account based marketing | commercial | medium | Bridge ABM strategy to data sourcing |
 | independent physician practice database | commercial | medium | Ownership status filter (independent vs employed) |
 | how to verify physician contact data accuracy | informational | medium | Trust-building educational content |
-| healthcare provider contact data compliance CAN-SPAM | informational | medium | Compliance angle builds credibility |
 | chiropractor practice owner email list | transactional | medium | Specialty-specific, repeatable across specialties |
 | optometrist email list for B2B marketing | transactional | medium | Specialty-specific, repeatable pattern |
-| telehealth company sales prospecting physician lists | commercial | low | Niche intersection |
+| healthcare sales intelligence | commercial | medium | Category term — compete on long-tail ("for mid-market") |
+| medical device sales data for SMB | commercial | medium | AcuityMD/IQVIA are enterprise; SMB gap exists |
+| hospital IT decision maker contacts | transactional | medium | CIO/CISO/CMIO contacts for health IT sellers |
 | group practice NPI data for pharmaceutical sales | commercial | low | Group practice data for pharma |
 
 ---
@@ -382,5 +403,6 @@
 
 | Date | Change | Pages Affected |
 |------|--------|----------------|
+| 2026-02-02 | Added 21 new pages (9 use cases + 12 resources) targeting sales-execution keywords with open SERPs: account planning, cold calling, email compliance, VAC prep, GPO navigation, hospital buying cycle, data vendor comparison, KOL identification, pre-RFP intel, territory assessment, PECOS data, physician emails, org chart mapping, telehealth targeting, data enrichment, NPI for sales, supply chain decision makers, dental data, behavioral health, ASC data, referral data | 21 new pages, KEYWORD_MAP updated |
 | 2026-02-01 | Added 12 new long-tail keyword pages (5 use cases + 7 resources) targeting low-competition searches | 12 new pages, KEYWORD_MAP updated |
 | 2026-01-31 | Initial keyword map created from all 187 live pages | All |
