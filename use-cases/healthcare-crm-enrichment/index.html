@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare CRM Data Enrichment | NPI-Matched Updates | Provyx</title>
+    <meta name="description" content="Fix decaying CRM records with NPI-verified provider contacts, updated addresses, and flagged relocations. Quarterly refresh, per-record pricing.">
+    <link rel="canonical" href="https://getprovyx.com/use-cases/healthcare-crm-enrichment/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/use-cases/healthcare-crm-enrichment/">
+    <meta property="og:title" content="Healthcare CRM Data Enrichment | NPI-Matched Updates | Provyx">
+    <meta property="og:description" content="Fix decaying CRM records with NPI-verified provider contacts, updated addresses, and flagged relocations. Quarterly refresh, per-record pricing.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Healthcare CRM Data Enrichment | NPI-Matched Updates | Provyx">
+    <meta name="twitter:description" content="Fix decaying CRM records with NPI-verified provider contacts, updated addresses, and flagged relocations. Quarterly refresh, per-record pricing.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Use Cases",
+      "item": "https://getprovyx.com/use-cases/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Healthcare CRM Data Enrichment",
+      "item": "https://getprovyx.com/use-cases/healthcare-crm-enrichment/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/use-cases/">Use Cases</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Healthcare CRM Data Enrichment</span>
+        </nav>
+        <h1>Healthcare CRM Data Enrichment</h1>
+        <p class="subtitle">Your CRM is decaying at 20-30% per year. NPI-matched enrichment updates stale contacts, flags provider relocations, and fills gaps your team can't fix manually.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Why Healthcare CRM Data Decays So Fast</h2>
+        <p><strong>Provider data has a short shelf life.</strong> Healthcare providers change practice locations, phone numbers, and organizational affiliations more frequently than contacts in most B2B industries. Physicians leave group practices to start solo practices. Practices merge, rebrand, or get acquired by health systems. Office managers — your actual decision makers — turn over at high rates. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> captures some of these changes, but updates lag by months and don't cover contact-level details like phone and email.</p>
+
+<p><strong>Decay is invisible until campaigns fail.</strong> A stale CRM record looks identical to a current one. There's no flag that says "this provider moved six months ago." Your team discovers decay when emails bounce, calls reach disconnected numbers, and direct mail gets returned. By then you've already spent the campaign budget. Marketing reports declining engagement metrics and blames messaging or targeting, when the real problem is that 25% of the contact data is outdated.</p>
+
+<p><strong>Manual cleanup doesn't scale.</strong> Sales ops teams run periodic "data hygiene" projects — pulling a CRM export, Googling practice names, calling phone numbers, updating records one at a time. A dedicated coordinator can verify maybe 50-80 records per day. If your CRM has 30,000 provider records, manual verification takes months, and by the time you finish the last segment, the first segment is already decaying again. It's a treadmill with no end.</p>
+
+<p><strong>Duplicate and conflicting records compound the problem.</strong> When field reps update records manually, they create inconsistencies. One rep enters "Dr. Smith" at "Main Street Medical" while another enters "John Smith MD" at "Main St. Medical Group." Without a unique identifier tying records together, your CRM accumulates duplicates that fragment your account history and inflate your total addressable market counts. Standard deduplication tools match on name and address, but when both have changed, duplicates survive.</p>
+
+<p><strong>Your CRM is the system of record, but nobody trusts it.</strong> When reps don't trust CRM data, they build their own spreadsheets. Marketing pulls lists and then manually scrubs them before every campaign. Leadership looks at pipeline reports built on account data that's 20% wrong and makes planning decisions based on fiction. The downstream cost of bad CRM data extends far beyond bounced emails — it undermines every function that depends on accurate provider records.</p>
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>How Provyx Cleans and Enriches Your CRM</h2>
+        <p><strong>NPI-anchored matching eliminates ambiguity.</strong> Provyx matches your CRM records to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> to establish a persistent unique identifier for every provider and organization. Once an NPI is attached to a CRM record, future updates are deterministic — we know exactly which record to update regardless of name changes, address changes, or practice rebranding. NPI matching also identifies duplicates that name-based deduplication misses.</p>
+
+<p><strong>Full contact refresh on every matched record.</strong> For each NPI-matched record, Provyx returns the current verified phone number, email address, practice address (resolved to the actual care location, not a billing address), fax number, and decision-maker contact. We check your existing data against our verified records and flag every field that's changed. You get a clear picture of what's stale, what's current, and what was missing entirely.</p>
+
+<p><strong>Provider relocation and closure detection.</strong> When a provider leaves a practice, Provyx identifies both the departure and the new location. Your CRM record gets updated to reflect where the provider is now, not where they were when your rep last visited. Practices that have closed are flagged so your team stops wasting outreach on dead accounts. Newly opened practices in your territory are surfaced as net-new opportunities.</p>
+
+<p><strong>Firmographic and technology updates.</strong> Beyond contact data, Provyx refreshes practice-level intelligence: current provider headcount, specialty mix, practice ownership type, and technology systems in use (EHR, practice management, telehealth). These fields change as practices grow, merge, or switch vendors. Keeping firmographics current means your segmentation and lead scoring models reflect reality, not last year's snapshot.</p>
+
+<p><strong>Quarterly refresh cadence without annual lock-in.</strong> CRM enrichment isn't a one-time project — it's an ongoing process. Provyx offers quarterly refresh cycles where we re-process your CRM export and deliver updated records. Each cycle is priced per record with no annual contract. You can adjust the scope each quarter based on which segments need the most attention. Start with your highest-value territories and expand as you see the impact on campaign performance.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step__number">1</div>
+              <h3 class="step__title">Export Your CRM Data</h3>
+              <p class="step__text">Pull an export of your provider and account records from Salesforce, HubSpot, or whatever CRM you use. Include NPI numbers if you have them, plus name, address, phone, and any other fields you want refreshed.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">2</div>
+              <h3 class="step__title">Provyx Matches and Audits</h3>
+              <p class="step__text">We NPI-match every record, identify duplicates, and audit each field against our verified data. You receive a data quality report showing match rates, staleness by field, and detected relocations or closures.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">3</div>
+              <h3 class="step__title">Review and Approve Updates</h3>
+              <p class="step__text">You review the audit report and approve which fields and segments to update. We deliver the enriched file with change flags on every modified field so your ops team can track what was updated and why.</p>
+            </div>
+            <div class="step">
+              <div class="step__number">4</div>
+              <h3 class="step__title">Import and Maintain</h3>
+              <p class="step__text">Load the updated records back into your CRM. Schedule quarterly refreshes to keep data current. Each cycle builds on the NPI matching from previous rounds, so match rates improve over time.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>What Clean CRM Data Delivers</h2>
+        <p><strong>Restored campaign performance.</strong> When 95% of your email addresses are current and phone numbers connect to real people, campaign metrics recover. Teams that run CRM enrichment through Provyx typically see email bounce rates drop to under 5% and phone connect rates improve by 30-50% compared to pre-enrichment baselines. The data was always the bottleneck — not the messaging, not the channel strategy.</p>
+
+<p><strong>Accurate pipeline and territory reporting.</strong> When CRM records reflect current practice locations, provider affiliations, and account status, your pipeline reports become trustworthy. Territory plans are built on accounts that actually exist. TAM calculations exclude closed practices and relocated providers. Leadership makes planning decisions based on data that represents the current market, not a stale snapshot from the last enrichment project.</p>
+
+<p><strong>Rep confidence and CRM adoption.</strong> Reps use the CRM when they trust the data in it. When they can pull up an account and see a verified phone number, current address, and the decision maker's name, they work from the CRM instead of building shadow spreadsheets. Higher CRM adoption means better activity tracking, more accurate forecasting, and less time spent on manual research. The ROI of CRM enrichment extends beyond marketing deliverability into sales productivity and operational visibility.</p>
+      </div>
+    </section>
+
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What CRM platforms can you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx works with CRM exports in CSV or Excel format, which means any CRM that supports data export works \u2014 Salesforce, HubSpot, Zoho, Microsoft Dynamics, Veeva, and others. We don't require API integration. You export your data, we enrich it, and you import the updated file. If you prefer API-based enrichment, contact us to discuss integration options."}}, {"@type": "Question", "name": "How do you handle records that don't have NPI numbers in our CRM?", "acceptedAnswer": {"@type": "Answer", "text": "We match on whatever identifiers you have \u2014 provider name, address, phone, specialty, state license number. Our matching engine resolves these to NPI numbers and then enriches from there. Records without enough identifying information to match confidently are flagged as unmatched rather than guessed. Typical match rates for CRM exports with name and address are 75-90%."}}, {"@type": "Question", "name": "What does the data quality audit report include?", "acceptedAnswer": {"@type": "Answer", "text": "The audit report shows overall match rate, field-by-field staleness percentages (e.g., 22% of phone numbers are outdated, 15% of addresses have changed), detected duplicates, provider relocations, and practice closures. It gives you a clear picture of your CRM's current data quality before you commit to the full enrichment. Many teams use the audit alone to prioritize internal cleanup efforts."}}, {"@type": "Question", "name": "How often should we re-enrich our CRM?", "acceptedAnswer": {"@type": "Answer", "text": "Quarterly is the most common cadence for teams actively running outbound campaigns. Healthcare provider data decays at roughly 20-30% per year, so quarterly refreshes catch most changes before they impact campaign performance. Teams with smaller databases or less frequent outreach may find semi-annual enrichment sufficient. Provyx has no minimum frequency requirement."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>What CRM platforms can you work with?</h3>
+                <p>Provyx works with CRM exports in CSV or Excel format, which means any CRM that supports data export works — Salesforce, HubSpot, Zoho, Microsoft Dynamics, Veeva, and others. We don't require API integration. You export your data, we enrich it, and you import the updated file. If you prefer API-based enrichment, contact us to discuss integration options.</p>
+                <h3>How do you handle records that don't have NPI numbers in our CRM?</h3>
+                <p>We match on whatever identifiers you have — provider name, address, phone, specialty, state license number. Our matching engine resolves these to NPI numbers and then enriches from there. Records without enough identifying information to match confidently are flagged as unmatched rather than guessed. Typical match rates for CRM exports with name and address are 75-90%.</p>
+                <h3>What does the data quality audit report include?</h3>
+                <p>The audit report shows overall match rate, field-by-field staleness percentages (e.g., 22% of phone numbers are outdated, 15% of addresses have changed), detected duplicates, provider relocations, and practice closures. It gives you a clear picture of your CRM's current data quality before you commit to the full enrichment. Many teams use the audit alone to prioritize internal cleanup efforts.</p>
+                <h3>How often should we re-enrich our CRM?</h3>
+                <p>Quarterly is the most common cadence for teams actively running outbound campaigns. Healthcare provider data decays at roughly 20-30% per year, so quarterly refreshes catch most changes before they impact campaign performance. Teams with smaller databases or less frequent outreach may find semi-annual enrichment sufficient. Provyx has no minimum frequency requirement.</p>
+            </div>
+        </section>
+    
+        <section class="content-section">
+          <div class="container">
+            <div class="outbound-references">
+              <h4>Sources and References</h4>
+              <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+</ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="content-section bg-light">
+          <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/resources/crm-data-decay/">CRM Data Decay in Healthcare</a></li>
+<li><a href="/resources/cost-of-bad-provider-data/">The Cost of Bad Provider Data</a></li>
+<li><a href="/use-cases/provider-contact-data/">Provider Contact Data</a></li>
+</ul>
+          </div>
+        </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us your target criteria and we'll build a verified list matched to your use case. No annual contract required.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get a Sample List</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

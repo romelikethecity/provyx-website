@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Clean Healthcare Provider Data in Salesforce | Provyx</title>
+    <meta name="description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
+    <link rel="canonical" href="https://getprovyx.com/resources/clean-provider-data-salesforce/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getprovyx.com/resources/clean-provider-data-salesforce/">
+    <meta property="og:title" content="How to Clean Healthcare Provider Data in Salesforce | Provyx">
+    <meta property="og:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Clean Healthcare Provider Data in Salesforce | Provyx">
+    <meta name="twitter:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://getprovyx.com/resources/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Clean Healthcare Provider Data in Salesforce",
+      "item": "https://getprovyx.com/resources/clean-provider-data-salesforce/"
+    }
+  ]
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=3">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main>
+
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">How to Clean Healthcare Provider Data in Salesforce</span>
+        </nav>
+        <h1>How to Clean Healthcare Provider Data in Salesforce</h1>
+        <p class="subtitle">Dirty provider data in Salesforce costs you deals through bounced emails, wrong numbers, and wasted rep time. Here is how to audit, clean, and maintain your healthcare CRM data systematically.</p>
+      </div>
+    </section>
+
+    
+    <section class="content-section">
+      <div class="container">
+        <h2>Signs Your Salesforce Provider Data Needs Cleaning</h2>
+        <p><strong>High email bounce rates are the most visible symptom.</strong> If your email campaigns to provider contacts are bouncing at more than 3-5%, your CRM contains a significant number of invalid email addresses. Hard bounces mean the mailbox does not exist or the domain is dead. Soft bounces may indicate full mailboxes or temporary server issues, but persistent soft bounces are effectively hard bounces. Beyond the immediate campaign impact, high bounce rates damage your sender domain reputation, which means even your valid emails start landing in spam folders.</p>
+
+<p><strong>Low phone connect rates signal stale or incorrect phone data.</strong> If reps are connecting on fewer than 10% of outbound dials to provider contacts, the phone numbers in your CRM are likely outdated main practice lines, fax numbers, or disconnected numbers. Reps lose confidence in the data, start cherry-picking records they think are good, and overall outbound activity declines. The data quality problem becomes an activity problem.</p>
+
+<p><strong>Duplicate accounts create confusion and split activity history.</strong> It is common for Salesforce instances that track healthcare providers to have the same physician appearing under multiple account records with slight name variations, different addresses, or different NPI numbers. Rep A works one record while Rep B works the duplicate, leading to conflicting outreach, double-counted pipeline, and a fragmented view of the account relationship. Duplicates also inflate your total addressable market counts and distort campaign targeting.</p>
+
+<p><strong>Rep complaints are a lagging indicator but a reliable one.</strong> When sales reps stop trusting the data in Salesforce, they start maintaining their own spreadsheets, researching contacts manually, and ignoring CRM records in favor of personal notes. This behavior is a clear signal that data quality has degraded to the point where reps view the CRM as an obstacle rather than a tool. If you hear reps say the data is bad, the data has been bad for months.</p>
+
+<p><strong>Missing fields on critical records indicate systematic gaps.</strong> Run a report on your provider contact records filtered by missing email, missing phone, or missing specialty. If more than 20% of records are missing a key field, your data was either poorly sourced initially or has not been maintained. Missing fields reduce the usable portion of your database and limit your ability to segment and target effectively.</p>
+
+<p><strong>Inconsistent formatting creates hidden duplicates and broken automation.</strong> If some records store specialty as "Family Medicine," others as "FM," and others as a taxonomy code like "207Q00000X," your Salesforce reports, list views, and automation rules cannot group them correctly. The same applies to state abbreviations, phone number formatting, and address structure. Formatting inconsistency is less visible than missing data but equally damaging to operational efficiency. It silently breaks segmentation, routing, and reporting that depend on clean field values.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>The Audit: Quantifying Your Data Quality Problem</h2>
+        <p><strong>Before you clean anything, measure how bad the problem is.</strong> An audit gives you a baseline to measure improvement against and helps you prioritize which cleaning steps will have the most impact. Run these Salesforce reports as your starting point. Refer to <a href="https://help.salesforce.com/" target="_blank" rel="noopener">Salesforce Help</a> for report-building guidance if needed.</p>
+
+<p><strong>Completeness report: count records with missing critical fields.</strong> For each field you consider essential (email, phone, specialty, NPI, address, practice name), calculate the percentage of total provider records where that field is blank. This gives you the fill rate for each field. A fill rate below 80% for email or phone means your outreach capacity is severely limited. A fill rate below 90% for NPI means you cannot reliably deduplicate or match against external data sources.</p>
+
+<p><strong>Duplicate detection report: identify records that share key identifiers.</strong> Search for accounts or contacts that share the same NPI number, the same email address, or the same combination of first name + last name + city. NPI-based duplicates are definitive. Name-based duplicates require manual review to confirm, as two physicians can share a name. Count the total number of suspected duplicates and estimate the percentage of your database that is duplicated. Duplicate rates of 10-20% are common in Salesforce instances that have ingested data from multiple sources over time.</p>
+
+<p><strong>Staleness report: identify records with no activity in 12+ months.</strong> Pull records where the last activity date (email, call, meeting, opportunity update) is more than 12 months ago. These records are likely to have stale contact information, as healthcare providers change practices, retire, and update contact details over time. A large stale segment indicates your database is aging without refresh. Records with no activity ever were likely loaded in bulk and never worked, which raises questions about the original data quality.</p>
+
+<p><strong>Bounce and disconnect report: quantify known-bad contact information.</strong> Pull all contacts where the email field is marked as bounced or invalid, and all contacts where the phone field is noted as disconnected or wrong number. These are records you already know are bad based on prior outreach attempts. If this segment is growing over time, your data is decaying faster than you are refreshing it. This report also gives you the minimum number of records that need immediate re-enrichment or removal.</p>
+
+<p><strong>Compile the audit results into a single scorecard.</strong> Total records, fill rate per field, duplicate rate, staleness rate, and known-bad rate. This scorecard becomes your business case for investing in a cleaning project and your benchmark for measuring improvement after cleaning.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>The Cleaning Process: Dedup, Standardize, Validate</h2>
+        <p><strong>Deduplicate on NPI number first.</strong> The NPI is a unique 10-digit identifier assigned to every healthcare provider by CMS. If two records in your Salesforce instance share the same NPI, they are definitively the same provider. Merge these duplicates, keeping the record with the most complete data and the most recent activity. NPI-based deduplication is deterministic and should be your first pass. It typically resolves 30-50% of duplicates immediately.</p>
+
+<p><strong>For records without NPI numbers, deduplicate on name + address combinations.</strong> Match on last name + first name + practice city, then manually review matches to confirm they are true duplicates rather than different providers who share a name. Fuzzy matching algorithms can help catch variations like "Robert" vs "Bob" or "Smith Jr" vs "Smith," but always require human review before merging. Set a confidence threshold and route low-confidence matches to a manual review queue rather than auto-merging and potentially combining two different providers.</p>
+
+<p><strong>Standardize taxonomy codes to the NUCC Healthcare Provider Taxonomy.</strong> Specialty information in Salesforce often comes from multiple sources and is stored inconsistently: "Family Medicine," "Family Practice," "FP," "207Q00000X" might all refer to the same specialty. Map every specialty value in your CRM to a standardized taxonomy code from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> taxonomy system. This standardization enables accurate filtering, segmentation, and reporting by specialty.</p>
+
+<p><strong>Validate addresses against USPS databases.</strong> Run every practice address through USPS Address Verification to confirm it is a deliverable address in the correct standardized format. USPS validation catches suite number errors, outdated street names, and completely invalid addresses. For healthcare provider data specifically, address validation also identifies providers who have moved to a new practice location. Flag invalid addresses for re-enrichment rather than keeping them in your active outreach lists.</p>
+
+<p><strong>Verify emails via SMTP and phones via carrier lookup.</strong> SMTP verification confirms that an email address exists and can receive mail without actually sending an email. Carrier lookup confirms a phone number is active and identifies whether it is a landline, mobile, or VoIP number. Run both verifications on your entire database after deduplication and standardization. Mark invalid emails and disconnected phones so they are excluded from outreach and flagged for re-enrichment.</p>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>External Enrichment: Filling Gaps with Provider Data</h2>
+        <p><strong>Internal cleaning fixes errors in your existing data but does not fill fields that were never populated.</strong> If 40% of your provider contacts are missing email addresses, no amount of deduplication or standardization will create those emails. You need external enrichment: matching your CRM records to an external provider database to fill missing fields and update stale ones.</p>
+
+<p><strong>Match on NPI first, then on name + address for records without NPI.</strong> Export your provider records with NPI, name, practice name, and address. Your enrichment vendor matches these records against their database and returns the missing fields: email, phone, practice firmographics, decision-maker identification, technology detection, and other enrichment layers. NPI matching produces the highest confidence results. Name + address matching is reliable for common practice names but may require manual review for ambiguous matches.</p>
+
+<p><strong>Prioritize enrichment by record value.</strong> Not every record in your Salesforce instance deserves enrichment spend. Focus enrichment on records that match your current ICP, are in active territories, or have recent activity indicating rep interest. Enriching 5,000 high-priority records is a better investment than enriching 50,000 records that include retired physicians, out-of-territory practices, and closed accounts.</p>
+
+<p><strong>Validate enriched data before loading it back into Salesforce.</strong> External data is not automatically clean. Verify enriched emails and phones before importing them. Spot-check enriched firmographic data against practice websites to confirm accuracy. Load enriched data into a staging area first, review a sample, and then push to production Salesforce records. This prevents overwriting good data with bad enrichment or introducing new errors into a freshly cleaned database.</p>
+
+<p><strong>Track enrichment match rates and accuracy to evaluate your vendor.</strong> If your vendor matches 80% of records and 90% of matched emails pass SMTP verification, your effective enrichment rate is 72% with verified contact data. Compare this across vendors if you are evaluating options. A vendor with a 70% match rate but 95% accuracy may be more valuable than one with a 90% match rate but 75% accuracy, depending on whether you prioritize coverage or precision.</p>
+
+<p><strong>Document the enrichment process so it is repeatable.</strong> Record which vendor you used, what match criteria were applied, what fields were enriched, and what validation was performed. This documentation becomes your playbook for quarterly refreshes and enables anyone on the team to manage the process, not just the person who ran it the first time. As your team grows, a documented enrichment process scales; a process that lives in one person's head does not.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Maintaining Clean Data: Validation Rules, Feedback Loops, and Refresh Cadence</h2>
+        <p><strong>Cleaning is a project; maintenance is a process.</strong> A one-time cleaning effort will restore data quality for a few months, but without ongoing maintenance, your database will degrade back to its pre-cleaning state within 12-18 months. Healthcare provider data decays at 15-25% per year. You need systematic processes to keep the data current.</p>
+
+<p><strong>Implement Salesforce validation rules to prevent bad data at the point of entry.</strong> Require NPI numbers on provider records (and validate the 10-digit format). Standardize specialty fields using a picklist mapped to taxonomy codes rather than free text. Require state standardization on address fields. Validate email format on entry. These rules do not guarantee accuracy, but they prevent the most common data entry errors that create downstream quality issues.</p>
+
+<p><strong>Build a rep feedback loop so field intelligence flows back to the data team.</strong> When a rep discovers that a phone number is wrong, an email bounces, or a physician has left a practice, that information should be captured in a structured way, not buried in a call note. Create a simple mechanism (a button, a field update, a Slack channel) for reps to flag bad data. Route flagged records to a data team member or automated re-enrichment workflow. Reps are your frontline data quality sensors. Use them.</p>
+
+<p><strong>Schedule external enrichment refreshes on a quarterly cadence at minimum.</strong> Every quarter, export records that have not been verified in 90+ days, records flagged by reps, and records with recent bounces or disconnects. Send them to your enrichment vendor for re-verification and update. This quarterly refresh prevents the gradual accumulation of stale data that undermines campaign performance and rep productivity.</p>
+
+<p><strong>Run your audit reports monthly to track data quality trends.</strong> The same reports you ran during the initial audit (fill rates, duplicate rates, bounce rates, staleness) should be re-run monthly to monitor data health. Set thresholds that trigger action: if email bounce rate exceeds 3%, initiate an email re-verification cycle. If duplicate rate climbs above 5%, run a dedup pass. Treating data quality as an ongoing operational metric rather than a periodic project keeps your Salesforce instance healthy and your outreach effective.</p>
+      </div>
+    </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="author-bio">
+          <h3>About the Author</h3>
+          <p><strong>Rome</strong></p>
+          <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often should healthcare provider data in Salesforce be refreshed?", "acceptedAnswer": {"@type": "Answer", "text": "At minimum, refresh quarterly. Healthcare provider data decays at 15-25% annually due to practice moves, retirements, acquisitions, and role changes. A quarterly refresh cycle catches most decay before it impacts campaign performance. High-volume outbound teams should verify email addresses monthly and refresh phone data quarterly. Re-run your data quality audit reports monthly to detect decay trends early and trigger refresh cycles before quality degrades to the point where it impacts deliverability or connect rates."}}, {"@type": "Question", "name": "What is the best way to deduplicate healthcare provider records in Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Start by deduplicating on NPI number, which is a unique identifier that definitively identifies each provider. Records sharing an NPI are the same provider. This resolves 30-50% of duplicates immediately. For records without NPI, match on last name + first name + practice city and manually review matches before merging. Use Salesforce duplicate rules or a third-party dedup tool to automate detection. Always keep the record with the most complete data and the most recent activity when merging."}}, {"@type": "Question", "name": "Should I delete bad records or try to re-enrich them?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the record value and the nature of the problem. Records with bounced emails or disconnected phones should be flagged and sent for re-enrichment, not deleted, because the provider may still be a valid prospect at a new contact point. Records for providers who have retired, had their NPI deactivated, or left your target market should be archived or deleted. Records with no usable contact information and no strategic value should be removed to keep your database lean and your metrics accurate."}}, {"@type": "Question", "name": "What Salesforce validation rules help prevent healthcare provider data quality issues?", "acceptedAnswer": {"@type": "Answer", "text": "Implement these rules: require NPI field on provider records with format validation (10 digits, passes the Luhn check digit algorithm), use a controlled picklist for specialty/taxonomy rather than free text, require state abbreviation standardization on address fields, validate email format on entry, and set a required field policy for at least name, NPI, specialty, and one contact method (email or phone). These rules prevent the most common data entry errors and ensure a baseline level of data completeness on every new record."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>How often should healthcare provider data in Salesforce be refreshed?</h3>
+                <p>At minimum, refresh quarterly. Healthcare provider data decays at 15-25% annually due to practice moves, retirements, acquisitions, and role changes. A quarterly refresh cycle catches most decay before it impacts campaign performance. High-volume outbound teams should verify email addresses monthly and refresh phone data quarterly. Re-run your data quality audit reports monthly to detect decay trends early and trigger refresh cycles before quality degrades to the point where it impacts deliverability or connect rates.</p>
+                <h3>What is the best way to deduplicate healthcare provider records in Salesforce?</h3>
+                <p>Start by deduplicating on NPI number, which is a unique identifier that definitively identifies each provider. Records sharing an NPI are the same provider. This resolves 30-50% of duplicates immediately. For records without NPI, match on last name + first name + practice city and manually review matches before merging. Use Salesforce duplicate rules or a third-party dedup tool to automate detection. Always keep the record with the most complete data and the most recent activity when merging.</p>
+                <h3>Should I delete bad records or try to re-enrich them?</h3>
+                <p>It depends on the record value and the nature of the problem. Records with bounced emails or disconnected phones should be flagged and sent for re-enrichment, not deleted, because the provider may still be a valid prospect at a new contact point. Records for providers who have retired, had their NPI deactivated, or left your target market should be archived or deleted. Records with no usable contact information and no strategic value should be removed to keep your database lean and your metrics accurate.</p>
+                <h3>What Salesforce validation rules help prevent healthcare provider data quality issues?</h3>
+                <p>Implement these rules: require NPI field on provider records with format validation (10 digits, passes the Luhn check digit algorithm), use a controlled picklist for specialty/taxonomy rather than free text, require state abbreviation standardization on address fields, validate email format on entry, and set a required field policy for at least name, NPI, specialty, and one contact method (email or phone). These rules prevent the most common data entry errors and ensure a baseline level of data completeness on every new record.</p>
+            </div>
+        </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="outbound-references">
+          <h4>Sources and References</h4>
+          <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
+<li><a href="https://help.salesforce.com/" target="_blank" rel="noopener">Salesforce Help</a></li>
+</ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section bg-light">
+      <div class="container">
+        <h2>Related Resources</h2>
+        <ul class="related-links"><li><a href="/resources/crm-data-decay/">CRM Data Decay Guide</a></li>
+<li><a href="/use-cases/healthcare-crm-enrichment/">Healthcare CRM Enrichment</a></li>
+<li><a href="/resources/cost-of-bad-provider-data/">The Cost of Bad Provider Data</a></li>
+<li><a href="/pricing/">Provyx Pricing</a></li>
+</ul>
+      </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
