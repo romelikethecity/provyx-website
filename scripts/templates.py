@@ -246,7 +246,10 @@ def get_footer_html():
     for heading, links in FOOTER_COLUMNS.items():
         links_html = ""
         for link in links:
-            links_html += f'<li><a href="{link["href"]}">{link["label"]}</a></li>\n'
+            if link["href"].startswith("http"):
+                links_html += f'<li><a href="{link["href"]}" target="_blank" rel="noopener noreferrer">{link["label"]}</a></li>\n'
+            else:
+                links_html += f'<li><a href="{link["href"]}">{link["label"]}</a></li>\n'
 
         columns_html += f'''
             <div class="footer__column">

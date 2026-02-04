@@ -82,6 +82,7 @@ FOOTER_COLUMNS = {
     "Company": [
         {"href": "/about/", "label": "About Provyx"},
         {"href": "/pricing/", "label": "Pricing"},
+        {"href": "https://datastackguide.com/", "label": "DataStackGuide"},
         {"href": "/privacy/", "label": "Privacy Policy"},
         {"href": "/terms/", "label": "Terms of Service"},
     ],
