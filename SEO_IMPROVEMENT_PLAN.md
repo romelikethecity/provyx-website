@@ -109,6 +109,13 @@ All Tier 2 items DONE:
 
 - ~~#11 Glossary / Learn Pages~~ ✅ Round 6 (33 terms at `/glossary/[term]/`, hub at `/glossary/`, DefinedTerm + FAQPage + Article + BreadcrumbList schema, related terms cross-linking, author bio, outbound authority links. Data in `scripts/glossary_data.py`)
 
+#### 11b. Comparison & Alternative Page Expansion
+**Status:** ✅ Round 7 (Feb 15, 2026)
+**Added:** 4 new comparison pages (Veeva OpenData, Ribbon Health, Doximity, Komodo Health) + 4 matching alternative pages
+**Total comparisons:** 6 → 10 | **Total alternatives:** 6 → 10 | **Pages added:** 8
+**Data files:** `scripts/comparisons_new.py` (new), `scripts/alternatives_new.py` (expanded)
+**Competitors covered:** ZoomInfo, Definitive Healthcare, Apollo, IQVIA, Lusha, Cognism, Veeva OpenData, Ribbon Health, Doximity, Komodo Health
+
 #### 12. Location/State Pages
 **Source:** programmatic-seo/references/playbooks.md (Locations playbook)
 **Gap:** Zero location-specific content. "Healthcare provider data in [state]" queries have commercial intent.
@@ -177,16 +184,17 @@ All Tier 2 items DONE:
 |------|--------|-----------------|
 | **1** | ✅ ALL DONE | #1-5 (Article schema, GA4 events, robots.txt, dates, defer) |
 | **2** | ✅ ALL DONE | #6-10 (Speakable, HowTo, comparison table pending, AEO expansion, testimonials) |
-| **3** | Not started | #11-14 (Glossary, locations, blog, free tools — high effort, content-dependent) |
+| **3** | In progress | #11 Glossary ✅, #11b Comparisons expanded ✅, #12-14 remaining (locations, blog, free tools) |
 | **4** | ✅ ALL DONE | #15-18 (Sticky header, scroll CTA, social proof, pricing) |
 | **5** | Mostly done | #19 done, #20-21 are ongoing process items |
 
 ## What's Left (Content-Dependent, High Effort)
 
 1. **Comparison Table Schema** (#8) — Medium effort, low-med impact
-2. **Glossary Pages** (#11) — 30-50 new pages, requires content creation
-3. **Location/State Pages** (#12) — 50 pages, requires per-state data
-4. **Blog** (#13) — Ongoing content production
-5. **Free Tools** (#14) — NPI lookup, provider estimator, etc.
-6. **UTM Standards** (#20) — Documentation task
-7. **GSC Monitoring** (#21) — Ongoing process
+2. ~~**Glossary Pages** (#11)~~ ✅ Done (33 terms)
+3. ~~**Comparison & Alternative Expansion** (#11b)~~ ✅ Done (10 comparisons, 10 alternatives)
+4. **Location/State Pages** (#12) — 50 pages, requires per-state data
+5. **Blog** (#13) — Ongoing content production
+6. **Free Tools** (#14) — NPI lookup, provider estimator, etc.
+7. **UTM Standards** (#20) — Documentation task
+8. **GSC Monitoring** (#21) — Ongoing process

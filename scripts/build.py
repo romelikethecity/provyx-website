@@ -27,6 +27,7 @@ from templates import (
 )
 from glossary_data import GLOSSARY_TERMS
 from alternatives_new import NEW_ALTERNATIVES
+from comparisons_new import NEW_COMPARISONS
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FORMSPREE_ID = "mrekgwqk"
@@ -4502,7 +4503,7 @@ COMPARISONS = [
         "Cognism's per-seat model can scale quickly with larger teams.",
     ],
 },
-]
+] + NEW_COMPARISONS
 
 # Alternative pages
 ALTERNATIVES = [
@@ -15190,7 +15191,7 @@ def build_comparisons_index():
 
     html = get_page_wrapper(
         title="Compare Healthcare Provider Data Platforms",
-        description="Compare Provyx to ZoomInfo, Definitive Healthcare, Apollo, and other provider data vendors. Honest pricing, data quality, and healthcare coverage analysis.",
+        description="Compare Provyx to ZoomInfo, Definitive Healthcare, Veeva, Doximity, and other provider data vendors. Honest pricing, data quality, and healthcare coverage analysis.",
         canonical_path="/compare/",
         body_content=body,
         extra_schema=extra_schema,

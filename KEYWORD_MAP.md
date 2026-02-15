@@ -1,7 +1,7 @@
 # Provyx Website Keyword Map
 
 > **Last updated:** 2026-02-15
-> **Total pages:** 264
+> **Total pages:** 272
 > **Update this file whenever new content is published or existing pages are modified.**
 
 ---
@@ -29,7 +29,7 @@
 
 ---
 
-## 2. Comparison Pages (6)
+## 2. Comparison Pages (10)
 
 | # | Primary Keyword | Secondary Keywords | URL | Title Tag | Status |
 |---|----------------|-------------------|-----|-----------|--------|
@@ -39,10 +39,14 @@
 | 4 | provyx vs iqvia | iqvia onekey alternative, provider data pharma, healthcare data enterprise | `/compare/provyx-vs-iqvia/` | Provyx vs. IQVIA OneKey: Provider Data Compared | live |
 | 5 | provyx vs lusha | lusha healthcare data, provider contact data comparison, NPI verification lusha | `/compare/provyx-vs-lusha/` | Provyx vs. Lusha: Healthcare Provider Data Compared | live |
 | 6 | provyx vs cognism | cognism healthcare data, B2B provider data comparison, phone-verified contacts | `/compare/provyx-vs-cognism/` | Provyx vs. Cognism: Provider Data Compared | live |
+| 7 | provyx vs veeva opendata | veeva opendata alternative, veeva crm provider data, pharma provider database | `/compare/provyx-vs-veeva-opendata/` | Provyx vs. Veeva OpenData: Healthcare Provider Data Compared | live |
+| 8 | provyx vs ribbon health | ribbon health alternative, provider directory api, healthcare data api | `/compare/provyx-vs-ribbon-health/` | Provyx vs. Ribbon Health: Healthcare Provider Data Compared | live |
+| 9 | provyx vs doximity | doximity alternative sales, physician data export, doximity vs data vendor | `/compare/provyx-vs-doximity/` | Provyx vs. Doximity: Healthcare Provider Data Compared | live |
+| 10 | provyx vs komodo health | komodo health alternative, claims analytics vs contact data, prescriber data | `/compare/provyx-vs-komodo-health/` | Provyx vs. Komodo Health: Provider Data Compared | live |
 
 ---
 
-## 3. Alternative Pages (6)
+## 3. Alternative Pages (10)
 
 | # | Primary Keyword | Secondary Keywords | URL | Title Tag | Status |
 |---|----------------|-------------------|-----|-----------|--------|
@@ -52,6 +56,10 @@
 | 4 | iqvia alternative healthcare | iqvia onekey alternative, healthcare provider data iqvia replacement, cheaper than iqvia | `/alternatives/iqvia-alternative/` | Best IQVIA Alternative for Healthcare Provider Data | live |
 | 5 | lusha alternative healthcare | lusha alternative healthcare data, provider contact data lusha replacement | `/alternatives/lusha-alternative/` | Best Lusha Alternative for Healthcare Provider Data | live |
 | 6 | cognism alternative healthcare | cognism alternative healthcare data, provider contact intelligence cognism replacement | `/alternatives/cognism-alternative/` | Best Cognism Alternative for Healthcare Provider Data | live |
+| 7 | veeva opendata alternative | veeva alternative healthcare data, veeva crm replacement, standalone provider data | `/alternatives/veeva-opendata-alternative/` | Best Veeva OpenData Alternative for Healthcare Data | live |
+| 8 | ribbon health alternative | ribbon health alternative sales, provider contact data api alternative | `/alternatives/ribbon-health-alternative/` | Best Ribbon Health Alternative for Provider Contact Data | live |
+| 9 | doximity alternative sales | doximity alternative for sales data, physician contact data export | `/alternatives/doximity-alternative/` | Best Doximity Alternative for Provider Sales Data | live |
+| 10 | komodo health alternative | komodo health alternative contact data, claims analytics alternative | `/alternatives/komodo-health-alternative/` | Best Komodo Health Alternative for Provider Contact Data | live |
 
 ---
 
@@ -448,6 +456,7 @@
 
 | Date | Change | Pages Affected |
 |------|--------|----------------|
+| 2026-02-15 | Added 8 new pages: 4 comparison pages (Veeva OpenData, Ribbon Health, Doximity, Komodo Health) + 4 matching alternative pages. Total: 264→272 pages | 8 new pages, KEYWORD_MAP + SEO_IMPROVEMENT_PLAN updated |
 | 2026-02-15 | Added 38 new pages: 33 glossary terms + 1 glossary hub (NPI, NPPES, PECOS, CAQH, taxonomy codes, credentialing, data quality, healthcare industry, B2B sales, data operations terms) + 4 new alternative pages (Apollo, IQVIA, Lusha, Cognism). Total: 226→264 pages | 38 new pages, KEYWORD_MAP + SEO_IMPROVEMENT_PLAN updated |
 | 2026-02-02 | Added 21 new pages (9 use cases + 12 resources) targeting sales-execution keywords with open SERPs: account planning, cold calling, email compliance, VAC prep, GPO navigation, hospital buying cycle, data vendor comparison, KOL identification, pre-RFP intel, territory assessment, PECOS data, physician emails, org chart mapping, telehealth targeting, data enrichment, NPI for sales, supply chain decision makers, dental data, behavioral health, ASC data, referral data | 21 new pages, KEYWORD_MAP updated |
 | 2026-02-01 | Added 12 new long-tail keyword pages (5 use cases + 7 resources) targeting low-competition searches | 12 new pages, KEYWORD_MAP updated |
