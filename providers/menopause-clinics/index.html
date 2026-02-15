@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
     <title>Menopause Clinics Data & Contact Lists | Provyx</title>
     <meta name="description" content="Menopause clinic data for providers specializing in perimenopause and menopause management.">
     <link rel="canonical" href="https://getprovyx.com/providers/menopause-clinics/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -13,13 +15,13 @@
     <meta property="og:title" content="Menopause Clinics Data & Contact Lists | Provyx">
     <meta property="og:description" content="Menopause clinic data for providers specializing in perimenopause and menopause management.">
     <meta property="og:site_name" content="Provyx">
-    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-providers.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Menopause Clinics Data & Contact Lists | Provyx">
     <meta name="twitter:description" content="Menopause clinic data for providers specializing in perimenopause and menopause management.">
-    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-providers.png">
 
     <script type="application/ld+json">
 {
@@ -30,7 +32,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://getprovyx.com"
+      "item": "https://getprovyx.com/"
     },
     {
       "@type": "ListItem",
@@ -56,29 +58,58 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=7" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css?v=3">
+    <link rel="stylesheet" href="/css/styles.min.css?v=7">
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-QERDPYTQ9D');
     </script>
 </head>
 <body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
     <header class="header" role="banner">
         <div class="container header__inner">
             <a href="/" class="header__logo">
-                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
                 <span class="header__logo-text">Provyx</span>
             </a>
 
@@ -197,13 +228,13 @@
     })();
     </script>
 
-    <main>
+    <main id="main-content">
 
 
         <section class="page-hero section">
             <div class="container">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="https://getprovyx.com">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/providers/">Providers</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/providers/womens-health/">OB/GYN & Women's Health</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Menopause Clinics</span>
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/providers/">Providers</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/providers/womens-health/">OB/GYN & Women's Health</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Menopause Clinics</span>
         </nav>
                 <h1 class="page-hero__title">Menopause Clinics Data & Contact Lists</h1>
                 <p class="page-hero__subtitle">Menopause clinic data for providers specializing in perimenopause and menopause management.</p>
@@ -246,12 +277,18 @@
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 
-                <h3>What menopause clinics data does Provyx provide?</h3>
-                <p>We provide verified practice data for menopause clinics including owner contacts, NPI details, taxonomy codes, practice addresses, website, and LinkedIn profile. Every record is verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons.</p>
-                <h3>How accurate is the menopause clinics contact data?</h3>
-                <p>Our menopause clinics data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We continuously verify records to catch moves, closures, and contact changes.</p>
-                <h3>Can I filter menopause clinics data by geography?</h3>
-                <p>Yes. You can filter menopause clinics records by state, metro area, ZIP code, or custom radius. We can build targeted lists for specific regions or provide nationwide coverage.</p>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What menopause clinics data does Provyx provide?</summary>
+                    <div class="faq-item__answer"><p>We provide verified practice data for menopause clinics including owner contacts, NPI details, taxonomy codes, practice addresses, website, and LinkedIn profile. Every record is verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How accurate is the menopause clinics contact data?</summary>
+                    <div class="faq-item__answer"><p>Our menopause clinics data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We continuously verify records to catch moves, closures, and contact changes.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Can I filter menopause clinics data by geography?</summary>
+                    <div class="faq-item__answer"><p>Yes. You can filter menopause clinics records by state, metro area, ZIP code, or custom radius. We can build targeted lists for specific regions or provide nationwide coverage.</p></div>
+                </details>
             </div>
         </section>
 
@@ -284,6 +321,7 @@
                 </div>
                 
                 <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
             </div>
         </section>
 
@@ -295,7 +333,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
                         <span class="footer__logo-text">Provyx</span>
                     </a>
                     <p class="footer__tagline">Healthcare Provider Intelligence</p>
@@ -335,10 +373,22 @@
                 </ul>
             </div>
             <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
                 <h4 class="footer__heading">Company</h4>
                 <ul class="footer__links">
                     <li><a href="/about/">About Provyx</a></li>
 <li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
 <li><a href="/privacy/">Privacy Policy</a></li>
 <li><a href="/terms/">Terms of Service</a></li>
 
@@ -351,6 +401,25 @@
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

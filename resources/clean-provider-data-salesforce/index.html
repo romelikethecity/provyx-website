@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
     <title>How to Clean Healthcare Provider Data in Salesforce | Provyx</title>
     <meta name="description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
     <link rel="canonical" href="https://getprovyx.com/resources/clean-provider-data-salesforce/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://getprovyx.com/resources/clean-provider-data-salesforce/">
     <meta property="og:title" content="How to Clean Healthcare Provider Data in Salesforce | Provyx">
     <meta property="og:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
     <meta property="og:site_name" content="Provyx">
-    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Clean Healthcare Provider Data in Salesforce | Provyx">
     <meta name="twitter:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
-    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <script type="application/ld+json">
 {
@@ -47,32 +49,101 @@
   ]
 }
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Clean Healthcare Provider Data in Salesforce",
+  "description": "A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.",
+  "url": "https://getprovyx.com/resources/clean-provider-data-salesforce/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/og-resources.png",
+  "datePublished": "2026-02-01",
+  "dateModified": "2026-02-01",
+  "author": {
+    "@type": "Person",
+    "name": "Rome",
+    "url": "https://www.linkedin.com/in/romecaputo/",
+    "jobTitle": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://getprovyx.com/#organization",
+      "name": "Provyx"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://getprovyx.com/#organization",
+    "name": "Provyx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getprovyx.com/assets/images/og-providers.png"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero__title",
+      ".page-hero__subtitle"
+    ]
+  }
+}
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=7" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css?v=3">
+    <link rel="stylesheet" href="/css/styles.min.css?v=7">
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-QERDPYTQ9D');
     </script>
 </head>
 <body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
     <header class="header" role="banner">
         <div class="container header__inner">
             <a href="/" class="header__logo">
-                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
                 <span class="header__logo-text">Provyx</span>
             </a>
 
@@ -191,7 +262,7 @@
     })();
     </script>
 
-    <main>
+    <main id="main-content">
 
 
     <section class="page-hero">
@@ -201,6 +272,7 @@
         </nav>
         <h1>How to Clean Healthcare Provider Data in Salesforce</h1>
         <p class="subtitle">Dirty provider data in Salesforce costs you deals through bounced emails, wrong numbers, and wasted rep time. Here is how to audit, clean, and maintain your healthcare CRM data systematically.</p>
+        <p class="page-hero__date">Updated February 2026</p>
       </div>
     </section>
 
@@ -224,7 +296,7 @@
     <section class="content-section bg-light">
       <div class="container">
         <h2>The Audit: Quantifying Your Data Quality Problem</h2>
-        <p><strong>Before you clean anything, measure how bad the problem is.</strong> An audit gives you a baseline to measure improvement against and helps you prioritize which cleaning steps will have the most impact. Run these Salesforce reports as your starting point. Refer to <a href="https://help.salesforce.com/" target="_blank" rel="noopener">Salesforce Help</a> for report-building guidance if needed.</p>
+        <p><strong>Before you clean anything, measure how bad the problem is.</strong> An audit gives you a baseline to measure improvement against and helps you prioritize which cleaning steps will have the most impact. Run these Salesforce reports as your starting point. Refer to <a href="https://help.salesforce.com/" target="_blank" rel="noopener noreferrer">Salesforce Help</a> for report-building guidance if needed.</p>
 
 <p><strong>Completeness report: count records with missing critical fields.</strong> For each field you consider essential (email, phone, specialty, NPI, address, practice name), calculate the percentage of total provider records where that field is blank. This gives you the fill rate for each field. A fill rate below 80% for email or phone means your outreach capacity is severely limited. A fill rate below 90% for NPI means you cannot reliably deduplicate or match against external data sources.</p>
 
@@ -244,7 +316,7 @@
 
 <p><strong>For records without NPI numbers, deduplicate on name + address combinations.</strong> Match on last name + first name + practice city, then manually review matches to confirm they are true duplicates rather than different providers who share a name. Fuzzy matching algorithms can help catch variations like "Robert" vs "Bob" or "Smith Jr" vs "Smith," but always require human review before merging. Set a confidence threshold and route low-confidence matches to a manual review queue rather than auto-merging and potentially combining two different providers.</p>
 
-<p><strong>Standardize taxonomy codes to the NUCC Healthcare Provider Taxonomy.</strong> Specialty information in Salesforce often comes from multiple sources and is stored inconsistently: "Family Medicine," "Family Practice," "FP," "207Q00000X" might all refer to the same specialty. Map every specialty value in your CRM to a standardized taxonomy code from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> taxonomy system. This standardization enables accurate filtering, segmentation, and reporting by specialty.</p>
+<p><strong>Standardize taxonomy codes to the NUCC Healthcare Provider Taxonomy.</strong> Specialty information in Salesforce often comes from multiple sources and is stored inconsistently: "Family Medicine," "Family Practice," "FP," "207Q00000X" might all refer to the same specialty. Map every specialty value in your CRM to a standardized taxonomy code from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> taxonomy system. This standardization enables accurate filtering, segmentation, and reporting by specialty.</p>
 
 <p><strong>Validate addresses against USPS databases.</strong> Run every practice address through USPS Address Verification to confirm it is a deliverable address in the correct standardized format. USPS validation catches suite number errors, outdated street names, and completely invalid addresses. For healthcare provider data specifically, address validation also identifies providers who have moved to a new practice location. Flag invalid addresses for re-enrichment rather than keeping them in your active outreach lists.</p>
 
@@ -288,7 +360,7 @@
           <h3>About the Author</h3>
           <p><strong>Rome</strong></p>
           <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
-          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         </div>
       </div>
     </section>
@@ -298,23 +370,31 @@
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 
-                <h3>How often should healthcare provider data in Salesforce be refreshed?</h3>
-                <p>At minimum, refresh quarterly. Healthcare provider data decays at 15-25% annually due to practice moves, retirements, acquisitions, and role changes. A quarterly refresh cycle catches most decay before it impacts campaign performance. High-volume outbound teams should verify email addresses monthly and refresh phone data quarterly. Re-run your data quality audit reports monthly to detect decay trends early and trigger refresh cycles before quality degrades to the point where it impacts deliverability or connect rates.</p>
-                <h3>What is the best way to deduplicate healthcare provider records in Salesforce?</h3>
-                <p>Start by deduplicating on NPI number, which is a unique identifier that definitively identifies each provider. Records sharing an NPI are the same provider. This resolves 30-50% of duplicates immediately. For records without NPI, match on last name + first name + practice city and manually review matches before merging. Use Salesforce duplicate rules or a third-party dedup tool to automate detection. Always keep the record with the most complete data and the most recent activity when merging.</p>
-                <h3>Should I delete bad records or try to re-enrich them?</h3>
-                <p>It depends on the record value and the nature of the problem. Records with bounced emails or disconnected phones should be flagged and sent for re-enrichment, not deleted, because the provider may still be a valid prospect at a new contact point. Records for providers who have retired, had their NPI deactivated, or left your target market should be archived or deleted. Records with no usable contact information and no strategic value should be removed to keep your database lean and your metrics accurate.</p>
-                <h3>What Salesforce validation rules help prevent healthcare provider data quality issues?</h3>
-                <p>Implement these rules: require NPI field on provider records with format validation (10 digits, passes the Luhn check digit algorithm), use a controlled picklist for specialty/taxonomy rather than free text, require state abbreviation standardization on address fields, validate email format on entry, and set a required field policy for at least name, NPI, specialty, and one contact method (email or phone). These rules prevent the most common data entry errors and ensure a baseline level of data completeness on every new record.</p>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How often should healthcare provider data in Salesforce be refreshed?</summary>
+                    <div class="faq-item__answer"><p>At minimum, refresh quarterly. Healthcare provider data decays at 15-25% annually due to practice moves, retirements, acquisitions, and role changes. A quarterly refresh cycle catches most decay before it impacts campaign performance. High-volume outbound teams should verify email addresses monthly and refresh phone data quarterly. Re-run your data quality audit reports monthly to detect decay trends early and trigger refresh cycles before quality degrades to the point where it impacts deliverability or connect rates.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is the best way to deduplicate healthcare provider records in Salesforce?</summary>
+                    <div class="faq-item__answer"><p>Start by deduplicating on NPI number, which is a unique identifier that definitively identifies each provider. Records sharing an NPI are the same provider. This resolves 30-50% of duplicates immediately. For records without NPI, match on last name + first name + practice city and manually review matches before merging. Use Salesforce duplicate rules or a third-party dedup tool to automate detection. Always keep the record with the most complete data and the most recent activity when merging.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Should I delete bad records or try to re-enrich them?</summary>
+                    <div class="faq-item__answer"><p>It depends on the record value and the nature of the problem. Records with bounced emails or disconnected phones should be flagged and sent for re-enrichment, not deleted, because the provider may still be a valid prospect at a new contact point. Records for providers who have retired, had their NPI deactivated, or left your target market should be archived or deleted. Records with no usable contact information and no strategic value should be removed to keep your database lean and your metrics accurate.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What Salesforce validation rules help prevent healthcare provider data quality issues?</summary>
+                    <div class="faq-item__answer"><p>Implement these rules: require NPI field on provider records with format validation (10 digits, passes the Luhn check digit algorithm), use a controlled picklist for specialty/taxonomy rather than free text, require state abbreviation standardization on address fields, validate email format on entry, and set a required field policy for at least name, NPI, specialty, and one contact method (email or phone). These rules prevent the most common data entry errors and ensure a baseline level of data completeness on every new record.</p></div>
+                </details>
             </div>
         </section>
     
     <section class="content-section">
       <div class="container">
         <div class="outbound-references">
-          <h4>Sources and References</h4>
-          <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a></li>
-<li><a href="https://help.salesforce.com/" target="_blank" rel="noopener">Salesforce Help</a></li>
+          <h3>Sources and References</h3>
+          <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a></li>
+<li><a href="https://help.salesforce.com/" target="_blank" rel="noopener noreferrer">Salesforce Help</a></li>
 </ul>
         </div>
       </div>
@@ -339,6 +419,7 @@
                 </div>
                 
                 <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
             </div>
         </section>
     
@@ -351,7 +432,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
                         <span class="footer__logo-text">Provyx</span>
                     </a>
                     <p class="footer__tagline">Healthcare Provider Intelligence</p>
@@ -391,10 +472,22 @@
                 </ul>
             </div>
             <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
                 <h4 class="footer__heading">Company</h4>
                 <ul class="footer__links">
                     <li><a href="/about/">About Provyx</a></li>
 <li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
 <li><a href="/privacy/">Privacy Policy</a></li>
 <li><a href="/terms/">Terms of Service</a></li>
 
@@ -407,6 +500,25 @@
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

@@ -1,4 +1,24 @@
 User-agent: *
 Allow: /
 
+# Allow AI search crawlers (increases citations in AI answers)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Block bulk scrapers
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://getprovyx.com/sitemap.xml

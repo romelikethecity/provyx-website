@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
     <title>Women's Health Provider Data & Contact Lists | Provyx</title>
     <meta name="description" content="OB/GYN and women's health provider data including fertility clinics, midwife practices, and specialty care.">
     <link rel="canonical" href="https://getprovyx.com/providers/womens-health/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -13,13 +15,13 @@
     <meta property="og:title" content="Women's Health Provider Data & Contact Lists | Provyx">
     <meta property="og:description" content="OB/GYN and women's health provider data including fertility clinics, midwife practices, and specialty care.">
     <meta property="og:site_name" content="Provyx">
-    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-providers.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Women's Health Provider Data & Contact Lists | Provyx">
     <meta name="twitter:description" content="OB/GYN and women's health provider data including fertility clinics, midwife practices, and specialty care.">
-    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-providers.png">
 
     <script type="application/ld+json">
 {
@@ -30,7 +32,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://getprovyx.com"
+      "item": "https://getprovyx.com/"
     },
     {
       "@type": "ListItem",
@@ -50,29 +52,58 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=7" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css?v=3">
+    <link rel="stylesheet" href="/css/styles.min.css?v=7">
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-QERDPYTQ9D');
     </script>
 </head>
 <body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
     <header class="header" role="banner">
         <div class="container header__inner">
             <a href="/" class="header__logo">
-                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
                 <span class="header__logo-text">Provyx</span>
             </a>
 
@@ -191,13 +222,13 @@
     })();
     </script>
 
-    <main>
+    <main id="main-content">
 
 
         <section class="page-hero section">
             <div class="container">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="https://getprovyx.com">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/providers/">Providers</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">OB/GYN & Women's Health</span>
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/providers/">Providers</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">OB/GYN & Women's Health</span>
         </nav>
                 <h1 class="page-hero__title">Women's Health Provider Data & Contact Lists</h1>
                 <p class="page-hero__subtitle">OB/GYN and women's health provider data including fertility clinics, midwife practices, and specialty care.</p>
@@ -251,22 +282,42 @@
             </div>
         </section>
 
+        <section class="content-section">
+            <div class="container">
+                <div class="definition-block">
+            <h3>What is OB/GYN & Women's Health Provider Data?</h3>
+            <p><strong>OB/GYN & Women's Health Provider Data</strong> is verified contact and practice intelligence for women's health providers, including practice details, NPI numbers, taxonomy codes, owner contacts, and technology data, segmented by 8 specific provider subtypes.</p>
+            <p>Provyx segments women's health providers by subtype so you can target precisely the right practices for your campaign, rather than working with a generic list that lumps all women's health providers together.</p>
+        </div>
+            </div>
+        </section>
+
 
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What women's health provider data does Provyx offer?", "acceptedAnswer": {"@type": "Answer", "text": "We provide verified practice data and owner contacts for 8 types of women's health providers, including practice details, NPI numbers, taxonomy codes, website, and LinkedIn profile. All records are verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons."}}, {"@type": "Question", "name": "How is women's health data different from generic provider databases?", "acceptedAnswer": {"@type": "Answer", "text": "Generic databases lump all healthcare providers together without understanding women's health specialty distinctions. We segment by specific provider subtypes, making it easy to target exactly the right women's health providers for your campaign."}}, {"@type": "Question", "name": "How often is the women's health provider data updated?", "acceptedAnswer": {"@type": "Answer", "text": "Our women's health provider database is continuously verified against multiple sources. Provider contacts change frequently as staff turns over and practices relocate. Our verification process catches these changes to keep your outreach data current."}}, {"@type": "Question", "name": "Can I get a custom women's health provider list?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build custom lists filtered by specific women's health subtypes, geography, practice size, and other criteria. Contact us with your requirements and we'll put together a matched list."}}, {"@type": "Question", "name": "What data fields are included for women's health providers?", "acceptedAnswer": {"@type": "Answer", "text": "Every record includes practice name, address, business phone, website URL, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Growth plans add practice firmographics and technology detection. Direct email and mobile enrichment available as add-ons."}}]}</script>
         <section class="section faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 
-                <h3>What women's health provider data does Provyx offer?</h3>
-                <p>We provide verified practice data and owner contacts for 8 types of women's health providers, including practice details, NPI numbers, taxonomy codes, website, and LinkedIn profile. All records are verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons.</p>
-                <h3>How is women's health data different from generic provider databases?</h3>
-                <p>Generic databases lump all healthcare providers together without understanding women's health specialty distinctions. We segment by specific provider subtypes, making it easy to target exactly the right women's health providers for your campaign.</p>
-                <h3>How often is the women's health provider data updated?</h3>
-                <p>Our women's health provider database is continuously verified against multiple sources. Provider contacts change frequently as staff turns over and practices relocate. Our verification process catches these changes to keep your outreach data current.</p>
-                <h3>Can I get a custom women's health provider list?</h3>
-                <p>Yes. We build custom lists filtered by specific women's health subtypes, geography, practice size, and other criteria. Contact us with your requirements and we'll put together a matched list.</p>
-                <h3>What data fields are included for women's health providers?</h3>
-                <p>Every record includes practice name, address, business phone, website URL, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Growth plans add practice firmographics and technology detection. Direct email and mobile enrichment available as add-ons.</p>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What women's health provider data does Provyx offer?</summary>
+                    <div class="faq-item__answer"><p>We provide verified practice data and owner contacts for 8 types of women's health providers, including practice details, NPI numbers, taxonomy codes, website, and LinkedIn profile. All records are verified against the CMS NPI Registry. Direct email and mobile enrichment available as add-ons.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How is women's health data different from generic provider databases?</summary>
+                    <div class="faq-item__answer"><p>Generic databases lump all healthcare providers together without understanding women's health specialty distinctions. We segment by specific provider subtypes, making it easy to target exactly the right women's health providers for your campaign.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How often is the women's health provider data updated?</summary>
+                    <div class="faq-item__answer"><p>Our women's health provider database is continuously verified against multiple sources. Provider contacts change frequently as staff turns over and practices relocate. Our verification process catches these changes to keep your outreach data current.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Can I get a custom women's health provider list?</summary>
+                    <div class="faq-item__answer"><p>Yes. We build custom lists filtered by specific women's health subtypes, geography, practice size, and other criteria. Contact us with your requirements and we'll put together a matched list.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What data fields are included for women's health providers?</summary>
+                    <div class="faq-item__answer"><p>Every record includes practice name, address, business phone, website URL, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Growth plans add practice firmographics and technology detection. Direct email and mobile enrichment available as add-ons.</p></div>
+                </details>
             </div>
         </section>
 
@@ -291,6 +342,7 @@
                 </div>
                 
                 <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
             </div>
         </section>
 
@@ -302,7 +354,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
                         <span class="footer__logo-text">Provyx</span>
                     </a>
                     <p class="footer__tagline">Healthcare Provider Intelligence</p>
@@ -342,10 +394,22 @@
                 </ul>
             </div>
             <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
                 <h4 class="footer__heading">Company</h4>
                 <ul class="footer__links">
                     <li><a href="/about/">About Provyx</a></li>
 <li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
 <li><a href="/privacy/">Privacy Policy</a></li>
 <li><a href="/terms/">Terms of Service</a></li>
 
@@ -358,6 +422,25 @@
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

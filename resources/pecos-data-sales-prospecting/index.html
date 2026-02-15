@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
     <title>PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't | Provyx</title>
     <meta name="description" content="How to use PECOS Medicare enrollment data for B2B sales prospecting. Covers what PECOS contains beyond NPI, how to access bulk data, limitations, and how to combine it with commercial provider data.">
     <link rel="canonical" href="https://getprovyx.com/resources/pecos-data-sales-prospecting/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://getprovyx.com/resources/pecos-data-sales-prospecting/">
     <meta property="og:title" content="PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't | Provyx">
     <meta property="og:description" content="How to use PECOS Medicare enrollment data for B2B sales prospecting. Covers what PECOS contains beyond NPI, how to access bulk data, limitations, and how to combine it with commercial provider data.">
     <meta property="og:site_name" content="Provyx">
-    <meta property="og:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't | Provyx">
     <meta name="twitter:description" content="How to use PECOS Medicare enrollment data for B2B sales prospecting. Covers what PECOS contains beyond NPI, how to access bulk data, limitations, and how to combine it with commercial provider data.">
-    <meta name="twitter:image" content="https://getprovyx.com/assets/logos/logo-social-og.svg">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <script type="application/ld+json">
 {
@@ -47,32 +49,101 @@
   ]
 }
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't",
+  "description": "How to use PECOS Medicare enrollment data for B2B sales prospecting. Covers what PECOS contains beyond NPI, how to access bulk data, limitations, and how to combine it with commercial provider data.",
+  "url": "https://getprovyx.com/resources/pecos-data-sales-prospecting/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/og-resources.png",
+  "datePublished": "2026-02-01",
+  "dateModified": "2026-02-01",
+  "author": {
+    "@type": "Person",
+    "name": "Rome",
+    "url": "https://www.linkedin.com/in/romecaputo/",
+    "jobTitle": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://getprovyx.com/#organization",
+      "name": "Provyx"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://getprovyx.com/#organization",
+    "name": "Provyx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getprovyx.com/assets/images/og-providers.png"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero__title",
+      ".page-hero__subtitle"
+    ]
+  }
+}
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=7" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css?v=3">
+    <link rel="stylesheet" href="/css/styles.min.css?v=7">
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-QERDPYTQ9D');
     </script>
 </head>
 <body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
     <header class="header" role="banner">
         <div class="container header__inner">
             <a href="/" class="header__logo">
-                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
                 <span class="header__logo-text">Provyx</span>
             </a>
 
@@ -191,7 +262,7 @@
     })();
     </script>
 
-    <main>
+    <main id="main-content">
 
 
     <section class="page-hero">
@@ -201,6 +272,7 @@
         </nav>
         <h1>PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't</h1>
         <p class="subtitle">PECOS is the Medicare enrollment system. It contains provider data that NPI doesn't, and almost nobody in B2B sales is using it.</p>
+        <p class="page-hero__date">Updated February 2026</p>
       </div>
     </section>
 
@@ -208,13 +280,13 @@
     <section class="content-section">
       <div class="container">
         <h2>What PECOS Is and Why Sales Teams Should Care</h2>
-        <p>PECOS stands for the Provider Enrollment, Chain, and Ownership System. It is the system that <a href="https://www.cms.gov/" target="_blank" rel="noopener">CMS (Centers for Medicare & Medicaid Services)</a> uses to manage the enrollment of providers and suppliers in the Medicare program. Every provider who bills Medicare must be enrolled in PECOS. Every organization that employs providers who bill Medicare must be enrolled. Every supplier of durable medical equipment, prosthetics, and orthotics (DMEPOS) must be enrolled.</p>
+        <p>PECOS stands for the Provider Enrollment, Chain, and Ownership System. It is the system that <a href="https://www.cms.gov/" target="_blank" rel="noopener noreferrer">CMS (Centers for Medicare & Medicaid Services)</a> uses to manage the enrollment of providers and suppliers in the Medicare program. Every provider who bills Medicare must be enrolled in PECOS. Every organization that employs providers who bill Medicare must be enrolled. Every supplier of durable medical equipment, prosthetics, and orthotics (DMEPOS) must be enrolled.</p>
 
-<p><strong>PECOS is not the same as the NPI Registry.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry (NPPES)</a> assigns a unique identifier to every healthcare provider in the U.S. regardless of whether they participate in Medicare. PECOS tracks which of those providers are actively enrolled in Medicare and the details of their enrollment. A provider can have an NPI number without being enrolled in PECOS (if they do not bill Medicare). Conversely, every provider in PECOS has an NPI number, which makes PECOS data joinable to NPI data.</p>
+<p><strong>PECOS is not the same as the NPI Registry.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry (NPPES)</a> assigns a unique identifier to every healthcare provider in the U.S. regardless of whether they participate in Medicare. PECOS tracks which of those providers are actively enrolled in Medicare and the details of their enrollment. A provider can have an NPI number without being enrolled in PECOS (if they do not bill Medicare). Conversely, every provider in PECOS has an NPI number, which makes PECOS data joinable to NPI data.</p>
 
 <p><strong>Why this matters for sales.</strong> PECOS contains data fields that the NPI Registry does not. These fields tell you about a provider's practice arrangements, organizational affiliations, and Medicare billing relationships in ways that are directly useful for B2B sales targeting. Most B2B healthcare sales teams know about the NPI Registry. Almost none are using PECOS data. This creates an information advantage for those who do.</p>
 
-<p><strong>What PECOS data is available publicly.</strong> CMS publishes several PECOS-derived datasets on the <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS data portal</a>, including the Medicare Provider and Supplier Enrollment dataset, the Opt-Out Affidavits file, and the Order and Referring Supplier dataset. The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener">National Bureau of Economic Research (NBER)</a> hosts formatted extracts that are easier to work with. All of this data is free. The challenge is knowing what to do with it.</p>
+<p><strong>What PECOS data is available publicly.</strong> CMS publishes several PECOS-derived datasets on the <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS data portal</a>, including the Medicare Provider and Supplier Enrollment dataset, the Opt-Out Affidavits file, and the Order and Referring Supplier dataset. The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener noreferrer">National Bureau of Economic Research (NBER)</a> hosts formatted extracts that are easier to work with. All of this data is free. The challenge is knowing what to do with it.</p>
 
 <p><strong>Important caveat.</strong> PECOS is a Medicare-specific view. Providers who do not participate in Medicare (cash-only practices, concierge providers) will not appear. For most B2B use cases, this gap is manageable because the vast majority of providers participate in Medicare.</p>
       </div>
@@ -242,11 +314,11 @@
         <h2>How to Access and Work With PECOS Data</h2>
         <p>PECOS data is publicly available, but it is not user-friendly. Accessing it requires downloading bulk files, understanding the file formats, and joining tables to extract useful information.</p>
 
-<p><strong>CMS data.cms.gov downloads.</strong> The primary source is the <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS data portal</a>. Search for "Medicare Provider and Supplier" datasets. The enrollment file contains individual and organizational provider records with enrollment status, specialty, and practice location. The file is a CSV download, typically several hundred megabytes. You can preview it in the portal's browser interface, but for real analysis you will need to download and process it locally.</p>
+<p><strong>CMS data.cms.gov downloads.</strong> The primary source is the <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS data portal</a>. Search for "Medicare Provider and Supplier" datasets. The enrollment file contains individual and organizational provider records with enrollment status, specialty, and practice location. The file is a CSV download, typically several hundred megabytes. You can preview it in the portal's browser interface, but for real analysis you will need to download and process it locally.</p>
 
-<p><strong>NBER formatted files.</strong> The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener">National Bureau of Economic Research</a> hosts PECOS extracts in Stata and CSV formats with better documentation than the raw CMS files. These include the base enrollment file, the reassignment file (linking individuals to organizations), and the practice location file. The NBER files are the most practical starting point because they are already structured and documented.</p>
+<p><strong>NBER formatted files.</strong> The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener noreferrer">National Bureau of Economic Research</a> hosts PECOS extracts in Stata and CSV formats with better documentation than the raw CMS files. These include the base enrollment file, the reassignment file (linking individuals to organizations), and the practice location file. The NBER files are the most practical starting point because they are already structured and documented.</p>
 
-<p><strong>Medicare Opt-Out file.</strong> CMS publishes a separate file listing providers who have opted out of Medicare. This is a small file (tens of thousands of records) useful for filtering your target lists. Available directly from the <a href="https://www.cms.gov/medicare/enrollment-renewal/providers-suppliers/opt-out-affidavits" target="_blank" rel="noopener">CMS Opt-Out page</a>.</p>
+<p><strong>Medicare Opt-Out file.</strong> CMS publishes a separate file listing providers who have opted out of Medicare. This is a small file (tens of thousands of records) useful for filtering your target lists. Available directly from the <a href="https://www.cms.gov/medicare/enrollment-renewal/providers-suppliers/opt-out-affidavits" target="_blank" rel="noopener noreferrer">CMS Opt-Out page</a>.</p>
 
 <p><strong>Working with the data.</strong> PECOS files are large but manageable with pandas or SQLite. The key join field is the NPI number. A typical workflow: load the individual enrollment file, join to the reassignment file to map individuals to organizations, then join to the practice location file for addresses. Filter by specialty, state, or enrollment status to narrow to your target universe.</p>
 
@@ -266,7 +338,7 @@
 
 <p><strong>Update lag.</strong> PECOS public files are not updated in real-time. A provider who enrolled last month may not appear for weeks. A retired provider may remain with an active status for some time. Do not treat PECOS as a real-time source of truth.</p>
 
-<p><strong>Bulk data requires processing skills.</strong> Unlike the NPI Registry's web lookup tool, PECOS data is only available in bulk. The <a href="https://pecos.cms.hhs.gov/pecos/login.do" target="_blank" rel="noopener">PECOS online portal</a> is designed for providers managing their own enrollment, not for data consumers. For single-provider lookups, the Medicare Care Compare tool on medicare.gov is more practical.</p>
+<p><strong>Bulk data requires processing skills.</strong> Unlike the NPI Registry's web lookup tool, PECOS data is only available in bulk. The <a href="https://pecos.cms.hhs.gov/pecos/login.do" target="_blank" rel="noopener noreferrer">PECOS online portal</a> is designed for providers managing their own enrollment, not for data consumers. For single-provider lookups, the Medicare Care Compare tool on medicare.gov is more practical.</p>
 
 <p><strong>Reassignment data can be stale.</strong> Relationships in the reassignment file may lag actual employment changes by months. Cross-reference with other sources to validate organizational affiliations.</p>
 
@@ -316,7 +388,7 @@
           <h3>About the Author</h3>
           <p><strong>Rome</strong></p>
           <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
-          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+          <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         </div>
       </div>
     </section>
@@ -326,25 +398,33 @@
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 
-                <h3>Is PECOS data free to access?</h3>
-                <p>Yes. CMS publishes PECOS-derived datasets on data.cms.gov at no cost. The NBER also hosts formatted PECOS extracts for free. There is no registration or licensing requirement. The data is public. The challenge is that it is only available in bulk file format, which requires data processing skills to use effectively.</p>
-                <h3>What is the difference between PECOS and NPPES?</h3>
-                <p>NPPES (National Plan and Provider Enumeration System) assigns NPI numbers and maintains a registry of all healthcare providers. PECOS manages Medicare enrollment specifically. A provider can have an NPI without being in PECOS (if they do not bill Medicare). PECOS includes data that NPPES does not: Medicare enrollment status, billing reassignment relationships, and organizational affiliation details. Both use NPI as the key identifier, making them joinable.</p>
-                <h3>How often is PECOS data updated?</h3>
-                <p>CMS updates PECOS public files periodically, but the schedule varies by dataset. Some files are updated monthly, others quarterly. The data can lag real-world changes by weeks to months. For comparison, NPPES is updated weekly. If you need the most current enrollment status for a specific provider, the Medicare Care Compare tool on medicare.gov may be more current than the bulk files.</p>
-                <h3>Can I look up a single provider in PECOS?</h3>
-                <p>Not directly through a public PECOS portal. The PECOS online system is designed for providers managing their own enrollment. For individual provider lookups, use Medicare Care Compare on medicare.gov or the NPI Registry lookup tool (which covers NPI data but not PECOS-specific fields). For bulk analysis, download the PECOS files from data.cms.gov or NBER.</p>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Is PECOS data free to access?</summary>
+                    <div class="faq-item__answer"><p>Yes. CMS publishes PECOS-derived datasets on data.cms.gov at no cost. The NBER also hosts formatted PECOS extracts for free. There is no registration or licensing requirement. The data is public. The challenge is that it is only available in bulk file format, which requires data processing skills to use effectively.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is the difference between PECOS and NPPES?</summary>
+                    <div class="faq-item__answer"><p>NPPES (National Plan and Provider Enumeration System) assigns NPI numbers and maintains a registry of all healthcare providers. PECOS manages Medicare enrollment specifically. A provider can have an NPI without being in PECOS (if they do not bill Medicare). PECOS includes data that NPPES does not: Medicare enrollment status, billing reassignment relationships, and organizational affiliation details. Both use NPI as the key identifier, making them joinable.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How often is PECOS data updated?</summary>
+                    <div class="faq-item__answer"><p>CMS updates PECOS public files periodically, but the schedule varies by dataset. Some files are updated monthly, others quarterly. The data can lag real-world changes by weeks to months. For comparison, NPPES is updated weekly. If you need the most current enrollment status for a specific provider, the Medicare Care Compare tool on medicare.gov may be more current than the bulk files.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Can I look up a single provider in PECOS?</summary>
+                    <div class="faq-item__answer"><p>Not directly through a public PECOS portal. The PECOS online system is designed for providers managing their own enrollment. For individual provider lookups, use Medicare Care Compare on medicare.gov or the NPI Registry lookup tool (which covers NPI data but not PECOS-specific fields). For bulk analysis, download the PECOS files from data.cms.gov or NBER.</p></div>
+                </details>
             </div>
         </section>
     
     <section class="content-section">
       <div class="container">
         <div class="outbound-references">
-          <h4>Sources and References</h4>
-          <ul><li><a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS Data Portal</a></li>
-<li><a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener">NBER PECOS Data</a></li>
-<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry (NPPES)</a></li>
-<li><a href="https://www.cms.gov/medicare/enrollment-renewal/providers-suppliers/opt-out-affidavits" target="_blank" rel="noopener">CMS Medicare Opt-Out Affidavits</a></li>
+          <h3>Sources and References</h3>
+          <ul><li><a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS Data Portal</a></li>
+<li><a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener noreferrer">NBER PECOS Data</a></li>
+<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry (NPPES)</a></li>
+<li><a href="https://www.cms.gov/medicare/enrollment-renewal/providers-suppliers/opt-out-affidavits" target="_blank" rel="noopener noreferrer">CMS Medicare Opt-Out Affidavits</a></li>
 </ul>
         </div>
       </div>
@@ -369,6 +449,7 @@
                 </div>
                 
                 <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
             </div>
         </section>
     
@@ -381,7 +462,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
                         <span class="footer__logo-text">Provyx</span>
                     </a>
                     <p class="footer__tagline">Healthcare Provider Intelligence</p>
@@ -421,10 +502,22 @@
                 </ul>
             </div>
             <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
                 <h4 class="footer__heading">Company</h4>
                 <ul class="footer__links">
                     <li><a href="/about/">About Provyx</a></li>
 <li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
 <li><a href="/privacy/">Privacy Policy</a></li>
 <li><a href="/terms/">Terms of Service</a></li>
 
@@ -437,6 +530,25 @@
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

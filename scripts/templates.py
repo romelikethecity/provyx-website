@@ -41,14 +41,35 @@ from nav_config import (
 # =============================================================================
 
 BASE_URL = "https://getprovyx.com"
-CSS_VERSION = "3"
+CSS_VERSION = "7"
 
 
 # =============================================================================
 # HTML HEAD
 # =============================================================================
 
-def get_html_head(title, description, canonical_path, extra_schema=""):
+OG_IMAGE_MAP = {
+    "/providers/": "og-providers.png",
+    "/services/": "og-services.png",
+    "/compare/": "og-compare.png",
+    "/alternatives/": "og-alternatives.png",
+    "/resources/": "og-resources.png",
+    "/use-cases/": "og-resources.png",
+    "/for/": "og-providers.png",
+}
+DEFAULT_OG_IMAGE = "og-providers.png"
+
+
+def _get_og_image_url(canonical_path):
+    """Return the correct OG image URL (PNG) based on the page section."""
+    for prefix, image in OG_IMAGE_MAP.items():
+        if canonical_path.startswith(prefix):
+            return f"{BASE_URL}/assets/images/{image}"
+    return f"{BASE_URL}/assets/images/{DEFAULT_OG_IMAGE}"
+
+
+def get_html_head(title, description, canonical_path, extra_schema="",
+                  noindex=False, og_type="website"):
     """Generate complete <head> section with meta, OG, fonts, favicon, GA4, CSS.
 
     Args:
@@ -56,50 +77,86 @@ def get_html_head(title, description, canonical_path, extra_schema=""):
         description: Meta description. 120-158 chars target.
         canonical_path: Path for canonical URL, e.g. "/providers/dental/"
         extra_schema: Optional additional JSON-LD schema script tags
+        noindex: If True, add robots noindex and omit canonical tag
+        og_type: Open Graph type, e.g. "website" or "article"
     """
     canonical = f"{BASE_URL}{canonical_path}"
     full_title = f"{title} | {SITE_NAME}" if title != SITE_NAME else title
+    og_image = _get_og_image_url(canonical_path)
+    canonical_tag = "" if noindex else f'\n    <link rel="canonical" href="{canonical}">'
+    if noindex:
+        robots_tag = '\n    <meta name="robots" content="noindex">'
+    else:
+        robots_tag = '\n    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">'
 
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
     <title>{full_title}</title>
-    <meta name="description" content="{description}">
-    <link rel="canonical" href="{canonical}">
+    <meta name="description" content="{description}">{canonical_tag}{robots_tag}
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{og_type}">
     <meta property="og:url" content="{canonical}">
     <meta property="og:title" content="{full_title}">
     <meta property="og:description" content="{description}">
     <meta property="og:site_name" content="{SITE_NAME}">
-    <meta property="og:image" content="{BASE_URL}/assets/logos/logo-social-og.svg">
+    <meta property="og:image" content="{og_image}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{full_title}">
     <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{BASE_URL}/assets/logos/logo-social-og.svg">
+    <meta name="twitter:image" content="{og_image}">
 {extra_schema}
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="{SITE_NAME} Guides" href="{BASE_URL}/feed.xml">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v={CSS_VERSION}" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css?v={CSS_VERSION}">
+    <link rel="stylesheet" href="/css/styles.min.css?v={CSS_VERSION}">
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){{dataLayer.push(arguments);}}
+      gtag('consent', 'default', {{
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      }});
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {{
+        gtag('consent', 'update', {{
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        }});
+      }}
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-QERDPYTQ9D');
     </script>
@@ -131,8 +188,8 @@ def _build_desktop_nav_items(active_page=None):
                     </div>
                 </li>'''
         else:
-            active_class = ' class="nav__link--active"' if is_active else ''
-            items_html += f'<li><a href="{item["href"]}" class="nav__link"{active_class}>{item["label"]}</a></li>'
+            link_classes = "nav__link nav__link--active" if is_active else "nav__link"
+            items_html += f'<li><a href="{item["href"]}" class="{link_classes}">{item["label"]}</a></li>'
 
     return items_html
 
@@ -171,10 +228,11 @@ def get_nav_html(active_page=None):
     mobile_items = _build_mobile_nav_items()
 
     return f'''<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
     <header class="header" role="banner">
         <div class="container header__inner">
             <a href="/" class="header__logo">
-                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
                 <span class="header__logo-text">{SITE_NAME}</span>
             </a>
 
@@ -233,7 +291,7 @@ def get_nav_html(active_page=None):
     }})();
     </script>
 
-    <main>'''
+    <main id="main-content">'''
 
 
 # =============================================================================
@@ -267,7 +325,7 @@ def get_footer_html():
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
                         <span class="footer__logo-text">{SITE_NAME}</span>
                     </a>
                     <p class="footer__tagline">{SITE_TAGLINE}</p>
@@ -280,7 +338,26 @@ def get_footer_html():
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){{
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){{
+        gtag('consent','update',{{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'}});
+      }}
+      document.getElementById('consent-banner').style.display='none';
+    }}
+    if(!localStorage.getItem('provyx-consent')){{
+      document.getElementById('consent-banner').style.display='';
+    }}
+    </script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>'''
 
@@ -363,12 +440,14 @@ def generate_faq_html(faqs, heading="Frequently Asked Questions"):
     if not faqs:
         return ""
 
-    # Build FAQ items HTML
+    # Build FAQ items HTML (accordion pattern)
     faq_items_html = ""
     for faq in faqs:
         faq_items_html += f'''
-                <h3>{faq["question"]}</h3>
-                <p>{faq["answer"]}</p>'''
+                <details class="faq-item">
+                    <summary class="faq-item__question">{faq["question"]}</summary>
+                    <div class="faq-item__answer"><p>{faq["answer"]}</p></div>
+                </details>'''
 
     # Build FAQPage schema
     faq_schema = {
@@ -396,6 +475,185 @@ def generate_faq_html(faqs, heading="Frequently Asked Questions"):
                 {faq_items_html}
             </div>
         </section>'''
+
+
+# =============================================================================
+# AEO/GEO CONTENT BLOCKS (Answer Engine & Generative Engine Optimization)
+# =============================================================================
+
+def generate_definition_block(term, definition, expanded=""):
+    """Generate a definition block optimized for featured snippets.
+
+    Targets 'What is [X]?' queries. Structured for extraction by Google
+    and AI systems.
+
+    Args:
+        term: The term being defined
+        definition: 1-sentence concise definition
+        expanded: 1-2 sentence expanded explanation (optional)
+    """
+    expanded_html = f"<p>{expanded}</p>" if expanded else ""
+    return f'''<div class="definition-block">
+            <h3>What is {term}?</h3>
+            <p><strong>{term}</strong> {definition}</p>
+            {expanded_html}
+        </div>'''
+
+
+def generate_stat_block(stats):
+    """Generate a statistic block optimized for AI citation.
+
+    Stats increase AI citation rates by 15-30%. Include source attribution.
+
+    Args:
+        stats: List of dicts with 'value', 'label', and optional 'source' keys
+    """
+    items = ""
+    for stat in stats:
+        source = f' <span class="stat-source">({stat["source"]})</span>' if stat.get("source") else ""
+        items += f'''<li><strong>{stat["value"]}</strong> {stat["label"]}{source}</li>'''
+    return f'''<ul class="stat-block">{items}</ul>'''
+
+
+def generate_step_block(title, steps):
+    """Generate a step-by-step block optimized for list snippet capture.
+
+    Targets 'How to [X]' queries.
+
+    Args:
+        title: Process title (e.g. 'How to Build a Provider Contact List')
+        steps: List of dicts with 'name' and 'description' keys
+    """
+    items = ""
+    for i, step in enumerate(steps, 1):
+        items += f'''<li><strong>{step["name"]}:</strong> {step["description"]}</li>'''
+    return f'''<div class="step-block">
+            <h3>{title}</h3>
+            <ol>{items}</ol>
+        </div>'''
+
+
+def generate_howto_schema(title, steps):
+    """Generate HowTo JSON-LD schema for step blocks.
+
+    Args:
+        title: Process title (e.g. 'How to Build a Provider Contact List')
+        steps: List of dicts with 'name' and 'description' keys
+    """
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": title,
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": i,
+                "name": step["name"],
+                "text": step["description"],
+            }
+            for i, step in enumerate(steps, 1)
+        ],
+    }
+    return f'\n    <script type="application/ld+json">\n{json.dumps(schema, indent=2)}\n    </script>'
+
+
+# =============================================================================
+# ARTICLE SCHEMA
+# =============================================================================
+
+def generate_article_schema(title, description, canonical_path, date_published="2026-02-01",
+                            date_modified=None, speakable_selectors=None,
+                            author_person=None):
+    """Generate Article JSON-LD schema for content pages.
+
+    Args:
+        title: Article headline
+        description: Article description
+        canonical_path: Path e.g. "/compare/provyx-vs-zoominfo/"
+        date_published: ISO date string (YYYY-MM-DD)
+        date_modified: ISO date string, defaults to date_published
+        speakable_selectors: List of CSS selectors for SpeakableSpecification
+        author_person: Optional dict with 'name', 'url', 'credentials' for Person author
+    """
+    url = f"{BASE_URL}{canonical_path}"
+    og_image = _get_og_image_url(canonical_path)
+    if not date_modified:
+        date_modified = date_published
+
+    if author_person:
+        author_obj = {
+            "@type": "Person",
+            "name": author_person["name"],
+            "url": author_person.get("url", ""),
+            "jobTitle": author_person.get("credentials", ""),
+            "worksFor": {
+                "@type": "Organization",
+                "@id": f"{BASE_URL}/#organization",
+                "name": SITE_NAME,
+            },
+        }
+    else:
+        author_obj = {
+            "@type": "Organization",
+            "@id": f"{BASE_URL}/#organization",
+            "name": SITE_NAME,
+        }
+
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": description,
+        "url": url,
+        "inLanguage": "en-US",
+        "image": og_image,
+        "datePublished": date_published,
+        "dateModified": date_modified,
+        "author": author_obj,
+        "publisher": {
+            "@type": "Organization",
+            "@id": f"{BASE_URL}/#organization",
+            "name": SITE_NAME,
+            "logo": {
+                "@type": "ImageObject",
+                "url": f"{BASE_URL}/assets/images/og-providers.png",
+            },
+        },
+    }
+
+    if speakable_selectors:
+        schema["speakable"] = {
+            "@type": "SpeakableSpecification",
+            "cssSelector": speakable_selectors,
+        }
+
+    return f'''
+    <script type="application/ld+json">
+{json.dumps(schema, indent=2)}
+    </script>'''
+
+
+# =============================================================================
+# TESTIMONIAL / EXPERT QUOTE BLOCKS
+# =============================================================================
+
+def generate_testimonial_block(quote, name, title, org):
+    """Generate an expert testimonial block with named attribution.
+
+    Named attribution with title/org increases AI citation rates 15-30%.
+
+    Args:
+        quote: Direct quote text (no surrounding quotes needed)
+        name: Person's full name
+        title: Job title/role
+        org: Organization/company name
+    """
+    return f'''<blockquote class="testimonial-block">
+            <p class="testimonial-block__text">"{quote}"</p>
+            <footer class="testimonial-block__attribution">
+                <strong>{name}</strong>, {title} at {org}
+            </footer>
+        </blockquote>'''
 
 
 # =============================================================================
@@ -456,6 +714,7 @@ def generate_cta_section(title="Get the Provider Data You Need",
                     <p class="cta-section__text">{text}</p>
                 </div>
                 {inner}
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
             </div>
         </section>'''
 
@@ -465,7 +724,8 @@ def generate_cta_section(title="Get the Provider Data You Need",
 # =============================================================================
 
 def get_page_wrapper(title, description, canonical_path, body_content,
-                     active_page=None, extra_schema=""):
+                     active_page=None, extra_schema="", noindex=False,
+                     og_type="website"):
     """Generate a complete HTML page by combining head, nav, content, footer.
 
     Args:
@@ -475,11 +735,14 @@ def get_page_wrapper(title, description, canonical_path, body_content,
         body_content: Inner HTML content (sections, etc.)
         active_page: Nav item to highlight, e.g. "/providers/"
         extra_schema: Additional JSON-LD schema script tags
+        noindex: If True, add robots noindex and omit canonical tag
+        og_type: Open Graph type, e.g. "website" or "article"
 
     Returns:
         Complete HTML page as string
     """
-    head = get_html_head(title, description, canonical_path, extra_schema)
+    head = get_html_head(title, description, canonical_path, extra_schema,
+                         noindex=noindex, og_type=og_type)
     nav = get_nav_html(active_page)
     footer = get_footer_html()
 

@@ -79,6 +79,13 @@ FOOTER_COLUMNS = {
         {"href": "/alternatives/", "label": "Alternatives"},
         {"href": "/for/", "label": "By Industry"},
     ],
+    "Compare": [
+        {"href": "/compare/provyx-vs-zoominfo/", "label": "Provyx vs ZoomInfo"},
+        {"href": "/compare/provyx-vs-definitive-healthcare/", "label": "Provyx vs Definitive"},
+        {"href": "/compare/provyx-vs-apollo/", "label": "Provyx vs Apollo"},
+        {"href": "/alternatives/zoominfo-alternative/", "label": "ZoomInfo Alternative"},
+        {"href": "/compare/", "label": "View All Comparisons"},
+    ],
     "Company": [
         {"href": "/about/", "label": "About Provyx"},
         {"href": "/pricing/", "label": "Pricing"},

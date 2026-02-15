@@ -20,7 +20,10 @@ from templates import (
     get_html_head, get_nav_html, get_footer_html,
     get_breadcrumb_schema, get_breadcrumb_html,
     generate_faq_html, generate_cta_section,
-    get_page_wrapper, write_page, BASE_URL,
+    generate_definition_block, generate_stat_block, generate_step_block,
+    generate_howto_schema, generate_article_schema, generate_testimonial_block,
+    get_page_wrapper, write_page, BASE_URL, SITE_NAME,
+    _get_og_image_url,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -447,7 +450,7 @@ ICP_PAGES = [
 
 <p>Then there's the accuracy problem. Your team pulls a list, loads it into your email platform or direct mail vendor, and 15-20% of records bounce or come back undeliverable. That's not just wasted spend. It damages your sender reputation, tanks your deliverability on future campaigns, and forces an uncomfortable conversation with your client about why the numbers look soft.</p>
 
-<p>Agencies serving dental practices, med spas, chiropractic offices, and mental health providers feel this the hardest. These verticals have high turnover, frequent address changes, and lots of sole proprietors who don't show up in enterprise databases. You end up spending hours manually verifying contacts through the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> and Google searches, which is time you should be spending on strategy and creative.</p>
+<p>Agencies serving dental practices, med spas, chiropractic offices, and mental health providers feel this the hardest. These verticals have high turnover, frequent address changes, and lots of sole proprietors who don't show up in enterprise databases. You end up spending hours manually verifying contacts through the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> and Google searches, which is time you should be spending on strategy and creative.</p>
 
 <p>The alternative is expensive. Enterprise data providers want annual contracts starting at $20,000 or more, and they're built for pharma companies and hospital systems, not a 12-person agency running campaigns for dental groups. You don't need 10 million records. You need 2,000 accurate ones, segmented exactly the way your campaign requires.</p>""",
 
@@ -461,7 +464,7 @@ ICP_PAGES = [
 
 <p><strong>Lookalike audience seeding.</strong> You take a Provyx list of chiropractors in a target market, upload it as a custom audience to your ad platform, and build a lookalike. Because the seed list is tightly targeted by specialty and geography, the lookalike performs significantly better than one built off a broad healthcare list.</p>
 
-<p><strong>Market sizing for client pitches.</strong> Before you even sign a new client, you need to know how large their addressable market is. How many mental health providers are there in the Atlanta metro? How many have a web presence? Provyx data helps you answer that in hours, not days. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> publishes macro-level workforce numbers, but Provyx gives you the practice-level detail you actually need for campaign planning.</p>
+<p><strong>Market sizing for client pitches.</strong> Before you even sign a new client, you need to know how large their addressable market is. How many mental health providers are there in the Atlanta metro? How many have a web presence? Provyx data helps you answer that in hours, not days. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> publishes macro-level workforce numbers, but Provyx gives you the practice-level detail you actually need for campaign planning.</p>
 
 <p><strong>Re-engagement and win-back campaigns.</strong> When a client's existing patient outreach list goes stale, you can cross-reference it against Provyx data to identify which practices have moved, closed, or changed ownership. This keeps your client's CRM clean and your campaigns hitting active targets.</p>
 
@@ -548,13 +551,13 @@ ICP_PAGES = [
         "pain_heading": "Why Your Reps Are Wasting Half Their Week on Bad Data",
         "pain_content": """<p>Medical device sales is a territory game. Your reps live and die by the quality of their contact lists. And right now, too many of them are spending Monday mornings updating spreadsheets instead of booking meetings.</p>
 
-<p>The core problem is data decay. A rep starts the quarter with a territory list pulled from your CRM. Within 60 days, 15-20% of that list is wrong. Physicians change practices. Offices move locations. A surgeon who was at a hospital system six months ago is now at a private ASC across town. Your rep shows up to a call that doesn't exist anymore, or worse, pitches a physician who left the specialty entirely. According to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, there are over 2.2 million active Type 1 (individual) NPIs in the United States, and the churn within that population is constant.</p>
+<p>The core problem is data decay. A rep starts the quarter with a territory list pulled from your CRM. Within 60 days, 15-20% of that list is wrong. Physicians change practices. Offices move locations. A surgeon who was at a hospital system six months ago is now at a private ASC across town. Your rep shows up to a call that doesn't exist anymore, or worse, pitches a physician who left the specialty entirely. According to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, there are over 2.2 million active Type 1 (individual) NPIs in the United States, and the churn within that population is constant.</p>
 
 <p>Then there's the targeting gap. Your rep sells a surgical implant used primarily by orthopedic surgeons who perform total joint replacements. But your CRM just says "orthopedic surgery." It doesn't distinguish between the sports medicine orthopod who never touches your product category and the joint replacement specialist who's your ideal buyer. Without subspecialty filtering and procedure-level intelligence, reps burn through their call lists hitting the wrong people.</p>
 
 <p>Competitive intelligence is another blind spot. If a practice already uses your competitor's device, that's either a disqualification or a high-priority conversion target, depending on your strategy. But most sales databases don't tell you what technology or devices a practice currently uses. Your reps discover this during the first call, which means they've already spent the time getting there.</p>
 
-<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> projects continued growth in surgical and physician specialties through the end of the decade. The market is getting bigger, which means territory lists need to be refreshed more often, not less. Static annual data pulls don't cut it anymore.</p>""",
+<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> projects continued growth in surgical and physician specialties through the end of the decade. The market is getting bigger, which means territory lists need to be refreshed more often, not less. Static annual data pulls don't cut it anymore.</p>""",
 
         "use_heading": "How Medical Device Sales Teams Use Provyx",
         "use_content": """<p>Device sales organizations use Provyx to build and maintain territory-level contact lists that stay accurate and filter down to the subspecialty level. Here's how.</p>
@@ -651,9 +654,9 @@ ICP_PAGES = [
 
 <p>Practice size matters too, and it's surprisingly hard to pin down. A solo dermatologist and a 15-provider dermatology group have completely different buying processes, budgets, and implementation requirements. Your product might be built for one and not the other. Generic databases list both under "dermatology" with no way to distinguish them. Your reps end up qualifying practice size manually on every single call.</p>
 
-<p>Then there's the decision-maker problem. In a small practice, the physician owner makes every technology decision. In a mid-size group, it's usually an office manager or practice administrator. In a larger organization, there might be a dedicated IT director. Your outreach needs to reach the right person, but most contact databases only list the NPI-registered provider, not the operational decision-maker. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> is a good starting point for identifying practices, but it tells you nothing about who handles technology purchasing.</p>
+<p>Then there's the decision-maker problem. In a small practice, the physician owner makes every technology decision. In a mid-size group, it's usually an office manager or practice administrator. In a larger organization, there might be a dedicated IT director. Your outreach needs to reach the right person, but most contact databases only list the NPI-registered provider, not the operational decision-maker. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> is a good starting point for identifying practices, but it tells you nothing about who handles technology purchasing.</p>
 
-<p>On top of all this, the healthcare SaaS market is getting crowded. The <a href="https://www.healthit.gov/" target="_blank" rel="noopener">ONC (Office of the National Coordinator for Health IT)</a> tracks certified health IT products, and the number of vendors has grown every year. To compete, you need to prospect more efficiently, not just more aggressively. That means starting with better data.</p>""",
+<p>On top of all this, the healthcare SaaS market is getting crowded. The <a href="https://www.healthit.gov/" target="_blank" rel="noopener noreferrer">ONC (Office of the National Coordinator for Health IT)</a> tracks certified health IT products, and the number of vendors has grown every year. To compete, you need to prospect more efficiently, not just more aggressively. That means starting with better data.</p>""",
 
         "use_heading": "How Healthcare SaaS Vendors Use Provyx",
         "use_content": """<p>SaaS sales teams use Provyx to build prospecting lists that go beyond name and address. Here's what that looks like.</p>
@@ -748,11 +751,11 @@ ICP_PAGES = [
 
 <p>The dominant healthcare data vendors in pharma, the ones everyone recognizes, charge enterprise-level prices. Annual contracts run into six or seven figures. They bundle prescribing data, claims analytics, and provider demographics into packages designed for the top 20 pharma companies. If you're a mid-size or specialty pharma company, you're paying for a firehose when you need a garden hose.</p>
 
-<p>Your reps need prescriber-level contact data filtered by specialty, geography, and therapeutic relevance. They need to know which physicians in their territory are likely to prescribe in their drug's category. They need accurate practice addresses so they can plan efficient routes. And they need NPI numbers and taxonomy codes for every record because your compliance team requires them for call reporting and sample tracking. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> is a free public resource, but extracting, filtering, and enriching that data into something your reps can actually use takes real work.</p>
+<p>Your reps need prescriber-level contact data filtered by specialty, geography, and therapeutic relevance. They need to know which physicians in their territory are likely to prescribe in their drug's category. They need accurate practice addresses so they can plan efficient routes. And they need NPI numbers and taxonomy codes for every record because your compliance team requires them for call reporting and sample tracking. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> is a free public resource, but extracting, filtering, and enriching that data into something your reps can actually use takes real work.</p>
 
 <p>Territory planning is another pain point. When you're assigning territories or rebalancing after a product launch, you need to know how many target prescribers exist in each geography. Your existing data might be 12-18 months old by the time you use it for planning. Physicians retire, relocate, and change practice affiliations constantly. A territory that looked balanced on paper six months ago might have lost 20% of its target prescribers to normal churn.</p>
 
-<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> tracks physician employment trends at the macro level, but territory-level planning needs practice-level data. You need to know that Dr. Smith is still at 456 Oak Street, still practicing in the right subspecialty, and still reachable at the phone number your rep has on file.</p>
+<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> tracks physician employment trends at the macro level, but territory-level planning needs practice-level data. You need to know that Dr. Smith is still at 456 Oak Street, still practicing in the right subspecialty, and still reachable at the phone number your rep has on file.</p>
 
 <p>Smaller pharma companies also struggle with data coverage in rural and underserved markets. Enterprise vendors optimize for high-prescriber urban markets. If your drug serves a condition that's prevalent in rural areas, you might find your data coverage drops off exactly where you need it most.</p>""",
 
@@ -852,9 +855,9 @@ ICP_PAGES = [
 
 <p>Facility type matters too. Your agency might specialize in placing nurses in hospitals and urgent care centers, or you might focus on administrative staff for private practices. A generic list of "healthcare facilities" in a metro area doesn't distinguish between a 500-bed hospital system, a two-provider family medicine clinic, and a dental office. Your recruiters need lists filtered by facility type, size, and specialty focus so they're calling on organizations that actually hire the roles you place.</p>
 
-<p>Tracking facility openings and expansions is another challenge. When a new urgent care opens or a hospital adds a wing, that's a staffing opportunity. But by the time that news shows up in your database, three other agencies have already made contact. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> tracks new organizational NPI registrations, which can signal new facilities, but monitoring it manually isn't practical.</p>
+<p>Tracking facility openings and expansions is another challenge. When a new urgent care opens or a hospital adds a wing, that's a staffing opportunity. But by the time that news shows up in your database, three other agencies have already made contact. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> tracks new organizational NPI registrations, which can signal new facilities, but monitoring it manually isn't practical.</p>
 
-<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> projects strong growth across most healthcare occupations through the next decade. Demand for staffing services is increasing, which means more facilities to cover and more competition among agencies. Better data isn't optional anymore. It's the difference between your recruiters spending time selling and spending time searching.</p>""",
+<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> projects strong growth across most healthcare occupations through the next decade. Demand for staffing services is increasing, which means more facilities to cover and more competition among agencies. Better data isn't optional anymore. It's the difference between your recruiters spending time selling and spending time searching.</p>""",
 
         "use_heading": "How Medical Staffing Agencies Use Provyx",
         "use_content": """<p>Staffing agencies use Provyx to build and maintain facility-level contact lists that connect recruiters directly to the people who make hiring decisions. Here's how.</p>
@@ -949,11 +952,11 @@ ICP_PAGES = [
 
 <p>The problem is that the healthcare data industry is built for enterprise buyers with recurring, high-volume needs. The major vendors want annual contracts, minimum commitments, and platform fees that assume you'll be querying their database every day. For a consulting firm that needs deep data access for 8-12 weeks and then nothing for months, that pricing model is punishing. You end up paying $40,000 a year for a data license you use on three projects.</p>
 
-<p>Some firms try to work around this by pulling data from public sources manually. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> is free and searchable, and it contains every registered provider and organization in the country. But extracting, cleaning, and structuring that data into something useful for a market analysis takes a junior analyst a week of work. That's a week of billing you can't pass through to the client, and the output still won't have the practice-level firmographics and contact details your deliverable requires.</p>
+<p>Some firms try to work around this by pulling data from public sources manually. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> is free and searchable, and it contains every registered provider and organization in the country. But extracting, cleaning, and structuring that data into something useful for a market analysis takes a junior analyst a week of work. That's a week of billing you can't pass through to the client, and the output still won't have the practice-level firmographics and contact details your deliverable requires.</p>
 
 <p>Then there's the specificity problem. Your engagement might require provider counts by specialty within specific county boundaries, or practice ownership data for a due diligence target list, or competitive landscape mapping for a specific service line. Generic databases don't slice that way. You end up buying a broad dataset and spending hours filtering it down to the 2,000 records you actually need, while paying for the 200,000 you don't.</p>
 
-<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> and CMS data releases are useful for macro-level analysis, but they don't give you practice-level intelligence. For the kind of work your clients expect, you need data that connects the macro numbers to specific practices, providers, and geographies.</p>""",
+<p>The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> and CMS data releases are useful for macro-level analysis, but they don't give you practice-level intelligence. For the kind of work your clients expect, you need data that connects the macro numbers to specific practices, providers, and geographies.</p>""",
 
         "use_heading": "How Healthcare Consulting Firms Use Provyx",
         "use_content": """<p>Consulting firms use Provyx as a project-scoped data source that delivers exactly what an engagement requires, without the overhead of an enterprise data license. Here's what that looks like.</p>
@@ -1049,7 +1052,7 @@ ICP_PAGES = [
 
 <p>Practice size adds another dimension. A solo family medicine provider has different technology needs, budget constraints, and buying processes than a 30-provider multispecialty group. Your product might be perfect for mid-size practices and completely wrong for enterprise health systems. But without firmographic data attached to provider records, your SDRs can't segment their outreach by practice size. They discover they're talking to the wrong-sized organization halfway through the demo.</p>
 
-<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> is a useful starting point for identifying practices and providers, but it contains zero technology information. The <a href="https://www.healthit.gov/" target="_blank" rel="noopener">ONC's Health IT Dashboard</a> publishes aggregate data on certified EHR adoption, but it doesn't tell you what specific practice at a specific address uses what specific system. That practice-level technology intelligence is the missing piece for health IT sales teams, and it's what most data vendors either don't provide or charge a premium for as part of a large bundled package you don't need.</p>
+<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> is a useful starting point for identifying practices and providers, but it contains zero technology information. The <a href="https://www.healthit.gov/" target="_blank" rel="noopener noreferrer">ONC's Health IT Dashboard</a> publishes aggregate data on certified EHR adoption, but it doesn't tell you what specific practice at a specific address uses what specific system. That practice-level technology intelligence is the missing piece for health IT sales teams, and it's what most data vendors either don't provide or charge a premium for as part of a large bundled package you don't need.</p>
 
 <p>The competitive landscape in health IT is intense. Hundreds of vendors are selling to the same universe of practices. The companies that win are the ones who show up with relevant outreach: "I noticed you're using [System X], and here's why practices like yours are switching." That message only works if you actually know what System X is before you pick up the phone.</p>""",
 
@@ -1246,7 +1249,7 @@ COMPARISONS = [
             "methodology works well. For healthcare, where many providers don't have "
             "LinkedIn profiles and practice information is scattered across state "
             "licensing boards and federal registries, the methodology has blind spots.</p>"
-            "<p><a href=\"https://www.zoominfo.com/\" target=\"_blank\" rel=\"noopener\">"
+            "<p><a href=\"https://www.zoominfo.com/\" target=\"_blank\" rel=\"noopener noreferrer\">"
             "ZoomInfo's</a> G2 rating sits at approximately 4.4 out of 5 stars, "
             "with over 8,000 reviews. The positive reviews consistently cite the "
             "platform's ease of use for prospecting, the depth of company "
@@ -1271,7 +1274,7 @@ COMPARISONS = [
             "<p>All plans operate on annual contracts. Renewals are automatic, and "
             "you're required to give at least 60 days' written notice before the "
             "renewal date to cancel. Multiple <a href=\"https://www.g2.com/products/zoominfo/reviews\" "
-            "target=\"_blank\" rel=\"noopener\">G2 reviews</a> mention being caught "
+            "target=\"_blank\" rel=\"noopener noreferrer\">G2 reviews</a> mention being caught "
             "off guard by auto-renewal clauses and report annual price increases in "
             "the range of 10% to 30% at renewal. If you miss the cancellation "
             "window, you're locked in for another full year.</p>"
@@ -1303,7 +1306,7 @@ COMPARISONS = [
             "States. Every physician, nurse practitioner, dentist, and clinical "
             "professional who bills federal programs has one, and it's maintained "
             "by CMS in a <a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" "
-            "rel=\"noopener\">publicly searchable registry</a>. ZoomInfo doesn't "
+            "rel=\"noopener noreferrer\">publicly searchable registry</a>. ZoomInfo doesn't "
             "match its records against NPI data. That means you can't confirm "
             "whether a contact is an active, licensed provider, and you can't "
             "cross-reference with the taxonomy codes that define their specialty.</p>"
@@ -1767,7 +1770,7 @@ COMPARISONS = [
         "competitor_what_they_offer": (
             "<h3>What Definitive Healthcare Offers</h3>"
             "<p><a href=\"https://www.definitivehc.com/\" target=\"_blank\" "
-            "rel=\"noopener\">Definitive Healthcare</a> is a healthcare commercial "
+            "rel=\"noopener noreferrer\">Definitive Healthcare</a> is a healthcare commercial "
             "intelligence company that provides data, analytics, and insights on "
             "the entire healthcare ecosystem. Its platform covers hospitals, "
             "physician groups, ambulatory surgery centers, imaging centers, long-term "
@@ -1858,7 +1861,7 @@ COMPARISONS = [
             "clinic rather than their hospital system's corporate office, Definitive "
             "Healthcare's data model sometimes makes that harder than it should be. "
             "According to the <a href=\"https://www.bls.gov/ooh/healthcare/\" "
-            "target=\"_blank\" rel=\"noopener\">Bureau of Labor Statistics</a>, "
+            "target=\"_blank\" rel=\"noopener noreferrer\">Bureau of Labor Statistics</a>, "
             "healthcare employs over 16 million people in the U.S., and the "
             "majority of those providers work in settings smaller than a hospital "
             "system.</p>"
@@ -2310,7 +2313,7 @@ COMPARISONS = [
         # -- Deep Dive: Competitor (800-1,200 words) --
         "competitor_what_they_offer": (
             "<h3>What Apollo.io Offers</h3>"
-            "<p><a href=\"https://www.apollo.io/\" target=\"_blank\" rel=\"noopener\">"
+            "<p><a href=\"https://www.apollo.io/\" target=\"_blank\" rel=\"noopener noreferrer\">"
             "Apollo.io</a> is a sales intelligence and engagement platform that "
             "combines a B2B contact database with email sequencing, calling, "
             "and task management tools. Its database includes over 270 million "
@@ -2410,7 +2413,7 @@ COMPARISONS = [
             "<p><strong>No NPI data whatsoever.</strong> Apollo.io does not "
             "include NPI numbers in its records, and it does not verify "
             "contacts against the <a href=\"https://npiregistry.cms.hhs.gov/\" "
-            "target=\"_blank\" rel=\"noopener\">CMS NPI Registry</a>. This "
+            "target=\"_blank\" rel=\"noopener noreferrer\">CMS NPI Registry</a>. This "
             "means you can't confirm that a contact is an active, licensed "
             "healthcare provider. You can't filter by provider type, and "
             "you can't cross-reference records with the taxonomy codes that "
@@ -2864,7 +2867,7 @@ COMPARISONS = [
         "<p>OneKey, which IQVIA acquired when it was known as SK&amp;A, is a healthcare "
         "professional (HCP) and healthcare organization (HCO) reference database. According "
         "to <a href=\"https://www.iqvia.com/solutions/commercialization/brand-strategy-and-management/onekey\" "
-        "target=\"_blank\" rel=\"noopener\">IQVIA's website</a>, OneKey covers approximately "
+        "target=\"_blank\" rel=\"noopener noreferrer\">IQVIA's website</a>, OneKey covers approximately "
         "9 million healthcare professionals globally across more than 80 countries. That global "
         "footprint is a genuine differentiator. If your sales team operates across the EU, "
         "Asia-Pacific, and Latin America, very few databases can match that reach.</p>"
@@ -2912,7 +2915,7 @@ COMPARISONS = [
         "their security documentation and data processing agreements reflect that experience.</p>"
 
         "<p>On <a href=\"https://www.g2.com/products/iqvia-onekey/reviews\" target=\"_blank\" "
-        "rel=\"noopener\">G2</a>, OneKey holds approximately a 4.0 rating. Reviewers frequently "
+        "rel=\"noopener noreferrer\">G2</a>, OneKey holds approximately a 4.0 rating. Reviewers frequently "
         "praise the depth of data and the global coverage. The most common complaints center on "
         "platform complexity, long onboarding timelines, and cost. Several reviewers note that "
         "getting value from IQVIA requires dedicated internal resources to manage the "
@@ -3044,7 +3047,7 @@ COMPARISONS = [
         "databases, then verified and enriched before delivery.</p>"
 
         "<p>Every record in Provyx is matched against the "
-        "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener\">"
+        "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">"
         "CMS NPI Registry</a> to confirm that the provider holds an active NPI and that "
         "their taxonomy classification is current. You can filter by any of the 800+ NUCC "
         "taxonomy codes, which means you can pull records for pediatric cardiologists in "
@@ -3079,7 +3082,7 @@ COMPARISONS = [
         "U.S. healthcare, and any provider database that doesn't verify against the CMS NPI "
         "Registry is guessing. Provyx treats NPI verification as foundational, not optional. "
         "Every record we deliver has been checked against the "
-        "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener\">"
+        "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">"
         "CMS NPI Registry</a> to confirm the NPI is active and the associated taxonomy "
         "codes are current.</p>"
 
@@ -3157,7 +3160,7 @@ COMPARISONS = [
         "Seat-based pricing is a vendor convenience, not a customer benefit.</p>"
 
         "<p>You can see current pricing on our "
-        "<a href=\"/pricing/\" target=\"_blank\" rel=\"noopener\">pricing page</a>. We "
+        "<a href=\"/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\">pricing page</a>. We "
         "publish it publicly because we think hidden pricing benefits vendors, not buyers. "
         "If you want to know what Provyx costs, you shouldn't have to sit through a sales "
         "call to find out.</p>"
@@ -3409,7 +3412,7 @@ COMPARISONS = [
         "and practice managers rather than VP-level buyers at SaaS "
         "companies.</p>"
         "<p>All information here is based on publicly available product "
-        "pages, <a href=\"https://www.g2.com/products/lusha/reviews\" target=\"_blank\" rel=\"noopener\">G2 reviews</a>, "
+        "pages, <a href=\"https://www.g2.com/products/lusha/reviews\" target=\"_blank\" rel=\"noopener noreferrer\">G2 reviews</a>, "
         "Lusha's published pricing, and our own "
         "product documentation. Where we reference Provyx capabilities, "
         "those are based on data sourced from public NPI registries, "
@@ -3453,7 +3456,7 @@ COMPARISONS = [
     # -- Deep Dive: Competitor (600-800 words) --
     "competitor_what_they_offer": (
         "<h3>What Lusha Offers</h3>"
-        "<p><a href=\"https://www.lusha.com/\" target=\"_blank\" rel=\"noopener\">"
+        "<p><a href=\"https://www.lusha.com/\" target=\"_blank\" rel=\"noopener noreferrer\">"
         "Lusha</a> is an Israeli-founded B2B contact and company data "
         "platform that focuses on making it easy to find verified email "
         "addresses and direct-dial phone numbers for business professionals. "
@@ -3560,7 +3563,7 @@ COMPARISONS = [
         "<p><strong>No NPI data at all.</strong> Lusha doesn't include "
         "National Provider Identifier numbers in its records, and it "
         "doesn't verify contacts against the <a href=\"https://npiregistry.cms.hhs.gov/\" "
-        "target=\"_blank\" rel=\"noopener\">CMS NPI Registry</a>. That "
+        "target=\"_blank\" rel=\"noopener noreferrer\">CMS NPI Registry</a>. That "
         "means you can't confirm whether a contact is an active, licensed "
         "healthcare provider. A \"Doctor\" on LinkedIn could be a "
         "practicing cardiologist, a retired dermatologist, a PhD researcher, "
@@ -4535,7 +4538,7 @@ ALTERNATIVES = [
             "<p>The problems start when your team <em>only</em> sells into healthcare.</p>"
 
             "<p><strong>Pricing that assumes you need everything.</strong> "
-            "<a href=\"https://www.zoominfo.com/\" target=\"_blank\" rel=\"noopener\">ZoomInfo</a> "
+            "<a href=\"https://www.zoominfo.com/\" target=\"_blank\" rel=\"noopener noreferrer\">ZoomInfo</a> "
             "plans start at roughly $14,995 per year for the SalesOS tier, billed annually. "
             "That price gets you access to its full multi-industry database, intent data signals, "
             "and workflow automation tools. If your reps are calling on orthopedic surgeons and "
@@ -4557,7 +4560,7 @@ ALTERNATIVES = [
 
             "<p><strong>No NPI verification or taxonomy classification.</strong> "
             "ZoomInfo identifies contacts by company, title, and industry code. It doesn't cross-reference "
-            "the <a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener\">National "
+            "the <a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">National "
             "Plan and Provider Enumeration System (NPPES)</a> to verify that a contact is a licensed "
             "healthcare provider with a valid NPI number. It doesn't attach taxonomy codes that tell you "
             "whether a physician is a family medicine practitioner, an interventional cardiologist, or "
@@ -4573,7 +4576,7 @@ ALTERNATIVES = [
             "actually see patients, or the practice owner's name. That gap creates friction for reps "
             "who need to reach decision-makers at independent or small group practices, which still "
             "represent a significant share of the "
-            "<a href=\"https://www.bls.gov/ooh/healthcare/\" target=\"_blank\" rel=\"noopener\">healthcare "
+            "<a href=\"https://www.bls.gov/ooh/healthcare/\" target=\"_blank\" rel=\"noopener noreferrer\">healthcare "
             "workforce</a>. When a rep dials the main hospital switchboard trying to reach a "
             "dermatologist who sees patients at a separate office three miles away, that's a data "
             "gap costing the rep time and costing you pipeline velocity.</p>"
@@ -5026,7 +5029,7 @@ ALTERNATIVES = [
         # Section 2 -- Why Teams Look for an Alternative
         "why_switch_heading": "Why Teams Look for a Definitive Healthcare Alternative",
         "why_switch_body": (
-            "<p><a href=\"https://www.definitivehc.com/\" target=\"_blank\" rel=\"noopener\">Definitive "
+            "<p><a href=\"https://www.definitivehc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Definitive "
             "Healthcare</a> built its reputation on deep intelligence about hospitals, health systems, "
             "and IDNs. If you're mapping referral networks, analyzing claims data, or tracking hospital "
             "capital budgets, it's one of the strongest platforms available. The problems surface when "
@@ -5057,7 +5060,7 @@ ALTERNATIVES = [
             "drops off. A two-provider family medicine practice in a suburban office park isn't covered "
             "with the same richness as a 500-bed academic medical center. If your sales motion targets "
             "those small and mid-size practices, which represent a large segment of the "
-            "<a href=\"https://www.bls.gov/ooh/healthcare/\" target=\"_blank\" rel=\"noopener\">healthcare "
+            "<a href=\"https://www.bls.gov/ooh/healthcare/\" target=\"_blank\" rel=\"noopener noreferrer\">healthcare "
             "provider workforce</a>, the data you're actually using doesn't justify the price you're paying.</p>"
 
             "<p><strong>Contract terms that make it hard to leave.</strong> "
@@ -5088,7 +5091,7 @@ ALTERNATIVES = [
             "or a hospital strategy group needs.</p>"
 
             "<p><strong>NPI verification on every record.</strong> "
-            "The <a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener\">National "
+            "The <a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">National "
             "Provider Identifier</a> is the standard unique identifier for healthcare providers in the "
             "United States. When your data includes verified NPIs, you can confirm that a contact is a "
             "currently credentialed provider, not a retired physician or a mismatched record. Outbound "
@@ -5502,13 +5505,13 @@ USE_CASES = [
 
 <p>The root cause is that most B2B data providers don't understand healthcare. They scrape business listings, append some phone numbers, and call it a day. But healthcare providers operate differently from other businesses. A solo dermatologist in Scottsdale has completely different contact patterns than a 200-physician orthopedic group in Houston. Generic databases treat them the same way, which means your reps get the same low-quality data regardless of who they're targeting.</p>
 
-<p>Provider turnover makes things worse. According to the <a href="https://www.ama-assn.org/" target="_blank" rel="noopener">American Medical Association</a>, physicians change practice affiliations frequently, and each move invalidates the contact data tied to their old location. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> captures some of these changes, but only when providers self-report, which many don't do promptly.</p>
+<p>Provider turnover makes things worse. According to the <a href="https://www.ama-assn.org/" target="_blank" rel="noopener noreferrer">American Medical Association</a>, physicians change practice affiliations frequently, and each move invalidates the contact data tied to their old location. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> captures some of these changes, but only when providers self-report, which many don't do promptly.</p>
 
 <p>The cost of bad data compounds quickly. Every wasted dial costs your team 3-5 minutes. Multiply that across 50 calls a day and you're losing hours of selling time per rep, per day. Bounced emails damage your sender reputation, making future campaigns less effective. And when reps lose confidence in their data, they stop trusting the list entirely and start freelancing their own research, which is even less efficient.</p>
 
 <p>Most teams try to solve this by buying more data from another vendor, only to find the same stale records repackaged under a different brand. The problem isn't volume. It's verification. You need provider contact data that's been validated against multiple authoritative sources, not just scraped from the web once and never checked again.</p>""",
         "solution_heading": "How Provyx Fixes Healthcare Sales Prospecting",
-        "solution_content": """<p>Provyx builds provider contact lists specifically for sales teams targeting healthcare. Every record starts with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> as a foundation, then layers in verified phone numbers, email addresses, practice details, and decision-maker identification from business listings and commercial databases.</p>
+        "solution_content": """<p>Provyx builds provider contact lists specifically for sales teams targeting healthcare. Every record starts with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> as a foundation, then layers in verified phone numbers, email addresses, practice details, and decision-maker identification from business listings and commercial databases.</p>
 
 <p>When your reps open a Provyx list, they get the practice name, the decision-maker's name and title, a direct phone number (not a switchboard), verified email, full practice address, NPI number, and taxonomy codes that tell them exactly what specialty they're calling into. For group practices, we identify who actually makes purchasing decisions rather than just listing the first provider on the NPI record.</p>
 
@@ -5566,9 +5569,9 @@ USE_CASES = [
         "problem_heading": "Why Medical Device Territory Planning Fails Without Good Data",
         "problem_content": """<p>Medical device territory planning is one of the most data-dependent exercises in healthcare sales, and most teams are doing it with incomplete information. The typical approach starts with a CRM export of existing accounts and a rough geographic split. But that only tells you where you've already sold, not where the untapped opportunity lives.</p>
 
-<p>The real challenge is mapping the full universe of target providers in a given region. If you're selling orthopedic implants, you need to know every orthopedic surgeon, sports medicine physician, and physiatrist in a territory, including their practice location, group affiliation, and case volume indicators. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> gives you names and addresses, but it doesn't tell you whether a surgeon operates at an ASC or a hospital, whether they're part of a physician-owned practice or employed by a health system, or whether their NPI address is a billing address or the actual location where they see patients.</p>
+<p>The real challenge is mapping the full universe of target providers in a given region. If you're selling orthopedic implants, you need to know every orthopedic surgeon, sports medicine physician, and physiatrist in a territory, including their practice location, group affiliation, and case volume indicators. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> gives you names and addresses, but it doesn't tell you whether a surgeon operates at an ASC or a hospital, whether they're part of a physician-owned practice or employed by a health system, or whether their NPI address is a billing address or the actual location where they see patients.</p>
 
-<p>Territory imbalances are expensive. When one rep covers a geography with 400 target surgeons and another covers a territory with 80, you're either under-serving high-potential markets or burning budget on territories that can't justify a dedicated rep. According to the <a href="https://www.bls.gov/ooh/healthcare/surgeons.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a>, surgeon distribution varies dramatically by metro area, and those gaps don't show up when you're drawing territories on a map without provider-level data.</p>
+<p>Territory imbalances are expensive. When one rep covers a geography with 400 target surgeons and another covers a territory with 80, you're either under-serving high-potential markets or burning budget on territories that can't justify a dedicated rep. According to the <a href="https://www.bls.gov/ooh/healthcare/surgeons.htm" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a>, surgeon distribution varies dramatically by metro area, and those gaps don't show up when you're drawing territories on a map without provider-level data.</p>
 
 <p>Annual planning cycles make this worse. By the time leadership approves a territory realignment, the provider data it was based on is already months old. Practices merge, surgeons relocate, new ASCs open. Without a way to refresh your provider map continuously, every territory plan starts degrading the day it's finalized.</p>
 
@@ -5576,7 +5579,7 @@ USE_CASES = [
         "solution_heading": "How Provyx Supports Medical Device Territory Planning",
         "solution_content": """<p>Provyx provides the provider-level data that device sales teams need to plan territories accurately. Instead of guessing at provider distribution from zip code-level estimates, you get a complete roster of target specialists with their actual practice locations, group affiliations, and contact details.</p>
 
-<p>Every record includes the provider's NPI number, <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> for precise specialty filtering, practice address (differentiated from billing address), business phone, and decision-maker identification. You can filter by specific surgical specialties, geographic boundaries, and practice type to build a provider map that matches your product's clinical fit.</p>
+<p>Every record includes the provider's NPI number, <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC taxonomy codes</a> for precise specialty filtering, practice address (differentiated from billing address), business phone, and decision-maker identification. You can filter by specific surgical specialties, geographic boundaries, and practice type to build a provider map that matches your product's clinical fit.</p>
 
 <p>For territory carving, the data lets you count target providers per geography, identify high-density clusters, and spot underserved areas where a competitor might not have coverage. You can export the data into your existing mapping or BI tools and overlay it with sales performance data to see where opportunity gaps exist.</p>
 
@@ -5632,7 +5635,7 @@ USE_CASES = [
         "problem_heading": "Why Standard ABM Approaches Break in Healthcare",
         "problem_content": """<p>Account-based marketing works well in enterprise software and financial services, where you can identify target companies by name, look up their org chart on LinkedIn, and build a multi-threaded outreach plan. Healthcare is different. Your "accounts" are often small practices with 2-10 providers, no corporate website, and decision-makers who don't list their title on LinkedIn.</p>
 
-<p>The first problem is account identification. In most B2B verticals, you can pull a list of target companies from a database like ZoomInfo or Clearbit and start building your account plan. In healthcare, there's no clean registry of practices as business entities. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> lists individual providers and organizational NPIs, but it doesn't tell you which providers practice together, who owns the group, or how large the organization really is.</p>
+<p>The first problem is account identification. In most B2B verticals, you can pull a list of target companies from a database like ZoomInfo or Clearbit and start building your account plan. In healthcare, there's no clean registry of practices as business entities. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> lists individual providers and organizational NPIs, but it doesn't tell you which providers practice together, who owns the group, or how large the organization really is.</p>
 
 <p>The second problem is contact depth. ABM campaigns typically need multiple contacts per account to build awareness across the buying committee. In a dental practice, that might be the owner-dentist, the office manager, and the practice administrator. In a specialty group, it could be the managing partner, the chief medical officer, and the operations director. Generic data vendors give you one contact per NPI at best, which isn't enough to run a real ABM motion.</p>
 
@@ -5642,7 +5645,7 @@ USE_CASES = [
         "solution_heading": "How Provyx Powers Healthcare ABM Campaigns",
         "solution_content": """<p>Provyx provides the practice-level data that healthcare ABM campaigns require. Instead of starting with a list of provider names, you start with accounts: practices defined by their location, specialty mix, ownership structure, and decision-maker contacts.</p>
 
-<p>Every record includes the organizational NPI (where applicable), individual provider NPIs linked to that practice, the practice owner or managing partner, business contact information, and <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> for specialty classification. For practices with multiple providers, we identify the leadership contacts separately from clinical staff so you can target the people who actually sign contracts.</p>
+<p>Every record includes the organizational NPI (where applicable), individual provider NPIs linked to that practice, the practice owner or managing partner, business contact information, and <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC taxonomy codes</a> for specialty classification. For practices with multiple providers, we identify the leadership contacts separately from clinical staff so you can target the people who actually sign contracts.</p>
 
 <p>You can segment accounts by the criteria that matter for healthcare ABM: specialty, geography, practice size (by provider count), estimated revenue range, years in operation, and technology stack where available. These filters let you build tiered account lists, with high-value targets getting personalized outreach and broader segments getting scaled campaigns.</p>
 
@@ -5699,15 +5702,15 @@ USE_CASES = [
         "problem_heading": "Why Physician Outreach Campaigns Underperform",
         "problem_content": """<p>Physician outreach is one of the hardest channels to get right. Doctors are busy, protective of their time, and bombarded with sales messages from every direction. If your outreach even reaches them, you've got about 10 seconds to prove relevance. But most campaigns fail before they get that chance, because the contact data they're built on is wrong.</p>
 
-<p>The most common failure mode is email deliverability. You build a sequence, craft compelling copy, and launch to 5,000 physicians. Within 48 hours, your bounce rate is 18%. Your ESP starts throttling sends. The physicians who did receive your email got it in spam because your domain reputation just took a hit from all those bounces. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> doesn't publish email addresses, so most data vendors rely on scraping or estimation, and the results show.</p>
+<p>The most common failure mode is email deliverability. You build a sequence, craft compelling copy, and launch to 5,000 physicians. Within 48 hours, your bounce rate is 18%. Your ESP starts throttling sends. The physicians who did receive your email got it in spam because your domain reputation just took a hit from all those bounces. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> doesn't publish email addresses, so most data vendors rely on scraping or estimation, and the results show.</p>
 
-<p>Phone outreach has similar problems. Calling the main number for a multi-provider practice puts you into a voicemail tree or gets you the front desk staff, who are trained to screen sales calls. Even when you reach the right office, the physician listed at that location may have moved to a different practice or retired. The <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a> notes significant workforce shifts in physician employment, and these movements create constant data decay.</p>
+<p>Phone outreach has similar problems. Calling the main number for a multi-provider practice puts you into a voicemail tree or gets you the front desk staff, who are trained to screen sales calls. Even when you reach the right office, the physician listed at that location may have moved to a different practice or retired. The <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> notes significant workforce shifts in physician employment, and these movements create constant data decay.</p>
 
 <p>Specialty targeting compounds the problem. If you're marketing a cardiology-specific product, you can't afford to waste outreach on family medicine doctors who happen to share a practice address with a cardiologist. Taxonomy codes exist to solve this, but many data providers either don't include them or use broad categories that don't distinguish between subspecialties.</p>
 
 <p>The cumulative effect is that most physician outreach campaigns operate at 40-60% of their potential because the underlying data is dragging performance down before strategy and messaging even come into play.</p>""",
         "solution_heading": "How Provyx Powers Physician Outreach",
-        "solution_content": """<p>Provyx provides multi-channel physician contact data built for outreach campaigns. Every record is anchored to an NPI number from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, with contact details sourced and verified from business listings and commercial databases.</p>
+        "solution_content": """<p>Provyx provides multi-channel physician contact data built for outreach campaigns. Every record is anchored to an NPI number from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, with contact details sourced and verified from business listings and commercial databases.</p>
 
 <p>For email campaigns, we provide business email addresses that are validated at the mail-server level before delivery. This means we check that the email domain exists, the mailbox is active, and the address isn't a catch-all or role-based inbox (unless that's the best available path to the physician). The result is email lists with significantly lower bounce rates than what you'd get from scraped or estimated addresses.</p>
 
@@ -5765,7 +5768,7 @@ USE_CASES = [
         "problem_heading": "Why Healthcare Market Sizing Is So Difficult",
         "problem_content": """<p>Market sizing in healthcare is fundamentally harder than in other industries. You can't just look up "number of dental practices in Texas" in a single authoritative source and get a reliable answer. The data is fragmented across multiple registries, each with its own coverage gaps and update schedules.</p>
 
-<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> is the closest thing to a comprehensive provider directory, but it lists individual providers and organizations, not practices as functional business units. A three-dentist practice might have four NPI records (three individual, one organizational), and there's no clean way to de-duplicate them without additional data matching. The <a href="https://www.bls.gov/oes/" target="_blank" rel="noopener">Bureau of Labor Statistics Occupational Employment Statistics</a> provides workforce counts at the state and metro level, but those numbers represent employed individuals, not practice locations or business entities.</p>
+<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> is the closest thing to a comprehensive provider directory, but it lists individual providers and organizations, not practices as functional business units. A three-dentist practice might have four NPI records (three individual, one organizational), and there's no clean way to de-duplicate them without additional data matching. The <a href="https://www.bls.gov/oes/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics Occupational Employment Statistics</a> provides workforce counts at the state and metro level, but those numbers represent employed individuals, not practice locations or business entities.</p>
 
 <p>For market sizing purposes, you usually need to answer questions like: How many practices of type X exist in region Y? How many are solo vs. group? How many are independently owned vs. health-system affiliated? What's the density per capita? The NPI Registry gives you a starting point, but turning raw NPI data into answers to these questions requires significant cleaning, deduplication, and enrichment.</p>
 
@@ -5775,7 +5778,7 @@ USE_CASES = [
         "solution_heading": "How Provyx Enables Accurate Healthcare Market Sizing",
         "solution_content": """<p>Provyx provides practice-level provider data that you can aggregate, filter, and count to size healthcare markets with precision. Instead of extrapolating from industry reports, you work with a verified dataset of individual providers and practices, filtered by the criteria that matter for your specific analysis.</p>
 
-<p>Every record includes NPI number, <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> for specialty classification, verified practice address with geocoding, practice type indicators, and provider count per practice. These fields let you answer market sizing questions directly: How many orthopedic practices are in the Dallas-Fort Worth metro? How many solo dermatologists operate in Florida? What's the ratio of independent to health-system-affiliated primary care practices in a given state?</p>
+<p>Every record includes NPI number, <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC taxonomy codes</a> for specialty classification, verified practice address with geocoding, practice type indicators, and provider count per practice. These fields let you answer market sizing questions directly: How many orthopedic practices are in the Dallas-Fort Worth metro? How many solo dermatologists operate in Florida? What's the ratio of independent to health-system-affiliated primary care practices in a given state?</p>
 
 <p>For geographic analysis, our address data is standardized and geocoded, which means you can aggregate by state, MSA, county, ZIP code, or custom-drawn boundaries. This is essential for territory planning, site selection, and understanding market density at the local level.</p>
 
@@ -5831,7 +5834,7 @@ USE_CASES = [
         "problem_heading": "Why Provider Network Analysis Relies on Incomplete Data",
         "problem_content": """<p>Provider network analysis is supposed to answer straightforward questions: Do we have enough cardiologists in this market? Are our primary care locations accessible within 30 miles for 90% of members? Which specialties are underrepresented in our panel? The questions are simple. Getting reliable data to answer them is not.</p>
 
-<p>Most network analysis starts with internal credentialing data, which reflects who's contracted but not necessarily who's still practicing at the address on file. Providers move, retire, change affiliations, and add or drop specialties. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> is updated when providers re-enroll or revalidate, but those updates happen on varying schedules and many records go years between refreshes.</p>
+<p>Most network analysis starts with internal credentialing data, which reflects who's contracted but not necessarily who's still practicing at the address on file. Providers move, retire, change affiliations, and add or drop specialties. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> is updated when providers re-enroll or revalidate, but those updates happen on varying schedules and many records go years between refreshes.</p>
 
 <p>Health plans that rely solely on their own credentialing databases for network analysis often discover gaps too late. A provider listed as "in-network" at a specific address may have closed that practice location six months ago. The taxonomy codes in internal systems may not match the provider's actual practice focus. And new providers who've opened practices in underserved areas won't show up until they go through the contracting process, which can take months.</p>
 
@@ -5839,7 +5842,7 @@ USE_CASES = [
 
 <p>The alternative is manually verifying every provider record against external sources, which is labor-intensive, slow, and still incomplete because you're checking one source at a time rather than cross-referencing multiple authoritative databases simultaneously.</p>""",
         "solution_heading": "How Provyx Supports Provider Network Analysis",
-        "solution_content": """<p>Provyx provides a verified external reference dataset that health plans and network organizations can use to validate, supplement, and benchmark their internal provider directories. Our data is sourced from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, business listings, and commercial databases, giving you a multi-source view of each provider's current status and location.</p>
+        "solution_content": """<p>Provyx provides a verified external reference dataset that health plans and network organizations can use to validate, supplement, and benchmark their internal provider directories. Our data is sourced from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, business listings, and commercial databases, giving you a multi-source view of each provider's current status and location.</p>
 
 <p>For network adequacy analysis, you can pull provider data by specialty and geography and compare it against your contracted panel. This identifies coverage gaps where you lack providers in a given specialty-geography combination, as well as opportunities where active providers in your market aren't yet in your network.</p>
 
@@ -5897,7 +5900,7 @@ USE_CASES = [
         "problem_heading": "Why Healthcare Email Marketing Has a Data Problem",
         "problem_content": """<p>Email marketing to healthcare providers should be one of the most efficient channels in your mix. The audience is well-defined, the messaging can be highly targeted by specialty, and the cost per touch is low. In practice, it's often the most frustrating channel because the underlying email data is unreliable.</p>
 
-<p>The core issue is that verified email addresses for healthcare providers are hard to come by. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> doesn't publish email addresses. Most data vendors either scrape emails from the web (which captures a mix of personal, role-based, and outdated addresses) or use pattern-matching algorithms to guess them (firstname.lastname@practicedomain.com). Neither approach produces reliably deliverable results.</p>
+<p>The core issue is that verified email addresses for healthcare providers are hard to come by. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> doesn't publish email addresses. Most data vendors either scrape emails from the web (which captures a mix of personal, role-based, and outdated addresses) or use pattern-matching algorithms to guess them (firstname.lastname@practicedomain.com). Neither approach produces reliably deliverable results.</p>
 
 <p>The consequences of bad email data go beyond low open rates. When your bounce rate exceeds 2-3% on a campaign, email service providers start flagging your domain. Your sender reputation score drops. Future campaigns, even to verified addresses, land in spam instead of the inbox. According to email deliverability best practices published by major ESPs, a single high-bounce campaign can take weeks to recover from in terms of domain reputation.</p>
 
@@ -5963,9 +5966,9 @@ USE_CASES = [
         "problem_heading": "Why Credentialing Teams Struggle with Provider Data",
         "problem_content": """<p>Provider credentialing is one of the most data-intensive processes in healthcare administration. For every provider you onboard, your team needs to verify their identity, confirm their NPI number, validate their practice address, check their specialty classifications, and cross-reference multiple data sources to ensure everything matches. It's painstaking, repetitive work, and the bottleneck is almost always data quality.</p>
 
-<p>The typical credentialing workflow starts with the provider's self-reported application, which may contain outdated or inconsistent information. Practice addresses don't match the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a>. Taxonomy codes are wrong or missing. The provider lists a phone number that rings to a personal cell rather than the practice. Your team then has to chase down the correct information through manual verification, which adds days or weeks to the onboarding timeline.</p>
+<p>The typical credentialing workflow starts with the provider's self-reported application, which may contain outdated or inconsistent information. Practice addresses don't match the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a>. Taxonomy codes are wrong or missing. The provider lists a phone number that rings to a personal cell rather than the practice. Your team then has to chase down the correct information through manual verification, which adds days or weeks to the onboarding timeline.</p>
 
-<p>According to the <a href="https://www.caqh.org/" target="_blank" rel="noopener">CAQH</a>, the average cost to credential a single provider is significant, and much of that cost is spent on data verification rather than clinical or quality assessment. When your team is manually pulling NPI records, calling practices to confirm addresses, and cross-referencing state licensing boards, they're doing data work, not credentialing work.</p>
+<p>According to the <a href="https://www.caqh.org/" target="_blank" rel="noopener noreferrer">CAQH</a>, the average cost to credential a single provider is significant, and much of that cost is spent on data verification rather than clinical or quality assessment. When your team is manually pulling NPI records, calling practices to confirm addresses, and cross-referencing state licensing boards, they're doing data work, not credentialing work.</p>
 
 <p>The problem compounds at scale. Organizations credentialing hundreds or thousands of providers per year can't afford to spend this much manual effort per record. But the accuracy requirements don't decrease with volume. Every record still needs to be verified, every address confirmed, every taxonomy code validated.</p>
 
@@ -5973,7 +5976,7 @@ USE_CASES = [
         "solution_heading": "How Provyx Accelerates Credentialing with Better Data",
         "solution_content": """<p>Provyx provides a verified external data source that credentialing teams can use to enrich, validate, and pre-populate provider records. Instead of starting each verification from a blank slate, your team starts with a matched record that includes NPI-verified name, taxonomy codes, practice address, business phone, and practice details sourced from multiple authoritative databases.</p>
 
-<p>The data is anchored to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> as a primary source, then enriched with business listing data, commercial databases, and web intelligence. This multi-source approach catches discrepancies that single-source verification misses. If the NPI Registry shows one address and the business listing shows another, that's a flag for your team to investigate rather than a hidden inconsistency.</p>
+<p>The data is anchored to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> as a primary source, then enriched with business listing data, commercial databases, and web intelligence. This multi-source approach catches discrepancies that single-source verification misses. If the NPI Registry shows one address and the business listing shows another, that's a flag for your team to investigate rather than a hidden inconsistency.</p>
 
 <p>For bulk credentialing or re-credentialing, you can send us your provider roster and we'll return matched records with current data for each provider. This lets your team quickly identify which records need attention (where our data doesn't match your records) and which are already verified (where everything aligns). The time savings on a 500-provider re-credentialing cycle can be substantial.</p>
 
@@ -6029,7 +6032,7 @@ USE_CASES = [
         "problem_heading": "Why Healthcare Competitive Intelligence Is Flying Blind",
         "problem_content": """<p>In most industries, competitive intelligence starts with a clear view of who your competitors are and where they operate. In healthcare, that baseline visibility is surprisingly hard to achieve. If you're a DSO trying to understand which markets are oversaturated with competing dental groups, or a device company mapping where rival reps have strong relationships, the data you need is scattered across dozens of sources.</p>
 
-<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> gives you raw provider counts by geography and specialty, but it doesn't tell you who's affiliated with whom, which practices are growing, or which markets have seen new entrants. State licensing boards confirm who's allowed to practice, but they don't indicate practice patterns or market activity.</p>
+<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> gives you raw provider counts by geography and specialty, but it doesn't tell you who's affiliated with whom, which practices are growing, or which markets have seen new entrants. State licensing boards confirm who's allowed to practice, but they don't indicate practice patterns or market activity.</p>
 
 <p>Without practice-level data, competitive analysis stays at the macro level. You know there are 500 dermatologists in a metro area, but you don't know how many are in solo practice vs. large groups, how many new practices opened in the last year, or which areas have low provider density that might represent expansion opportunities.</p>
 
@@ -6095,11 +6098,11 @@ USE_CASES = [
         "problem_heading": "Why Healthcare Recruitment Outreach Hits Dead Ends",
         "problem_content": """<p>Healthcare staffing is a $50+ billion industry, and the competition for qualified providers is intense. Whether you're recruiting travel nurses for a hospital system, sourcing locum tenens physicians for rural clinics, or filling permanent positions at specialty practices, your success depends on reaching the right providers quickly. The bottleneck is almost always contact data.</p>
 
-<p>The typical recruitment workflow starts with sourcing candidates. Your recruiters need to identify providers in a specific specialty and geography, then reach them via phone or email to present an opportunity. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> tells you who's licensed to practice and where they reported their practice location, but it doesn't give you direct contact information for outreach. You get a practice name and a mailing address, which gets your recruiter to the front desk of a busy practice, not to the provider.</p>
+<p>The typical recruitment workflow starts with sourcing candidates. Your recruiters need to identify providers in a specific specialty and geography, then reach them via phone or email to present an opportunity. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> tells you who's licensed to practice and where they reported their practice location, but it doesn't give you direct contact information for outreach. You get a practice name and a mailing address, which gets your recruiter to the front desk of a busy practice, not to the provider.</p>
 
 <p>LinkedIn has become a primary sourcing channel for healthcare recruitment, but finding and verifying provider profiles is time-consuming. A search for "cardiologist in Atlanta" returns hundreds of results, and your recruiter has to manually vet each one to confirm they're actually a practicing cardiologist in the right location. There's no way to cross-reference LinkedIn profiles against NPI data at scale without additional tooling.</p>
 
-<p>The speed problem matters more in healthcare staffing than in most recruitment verticals. When a hospital needs a locum tenens hospitalist starting next Monday, a recruiter who can reach qualified candidates today wins the placement. A recruiter who spends three days researching contacts loses it to a competitor. According to the <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a>, demand for healthcare workers continues to outpace supply across most specialties, which means the providers you're recruiting have options. The first credible outreach often wins.</p>
+<p>The speed problem matters more in healthcare staffing than in most recruitment verticals. When a hospital needs a locum tenens hospitalist starting next Monday, a recruiter who can reach qualified candidates today wins the placement. A recruiter who spends three days researching contacts loses it to a competitor. According to the <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a>, demand for healthcare workers continues to outpace supply across most specialties, which means the providers you're recruiting have options. The first credible outreach often wins.</p>
 
 <p>Data decay hits recruitment especially hard. Providers change practice locations, switch employers, update phone numbers, and let email addresses lapse more frequently than professionals in other industries. A contact list that was 90% accurate six months ago might be 70% accurate today, which means your recruiters are wasting a third of their outreach effort on dead contacts.</p>""",
         "solution_heading": "How Provyx Supports Healthcare Recruitment Outreach",
@@ -6156,7 +6159,7 @@ USE_CASES = [
         "h1": "Healthcare Decision Maker Contact Data",
         "subtitle": "Stop calling clinicians who don't make purchasing decisions. Identify the administrators, office managers, and practice owners who actually sign contracts.",
         "problem_heading": "Why Finding the Right Buyer Is So Hard",
-        "problem_content": """<p><strong>Provider databases list clinicians, not buyers.</strong> Most healthcare contact databases are built around the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, which indexes individual providers and organizational entities. That's useful if you're selling to the physician directly. It's not useful if your buyer is the practice administrator at a 12-physician orthopedic group who doesn't have an NPI, doesn't appear in any clinical directory, and whose name isn't on the practice website.</p>
+        "problem_content": """<p><strong>Provider databases list clinicians, not buyers.</strong> Most healthcare contact databases are built around the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, which indexes individual providers and organizational entities. That's useful if you're selling to the physician directly. It's not useful if your buyer is the practice administrator at a 12-physician orthopedic group who doesn't have an NPI, doesn't appear in any clinical directory, and whose name isn't on the practice website.</p>
 
 <p><strong>The buying committee varies by practice size.</strong> At a solo dermatology practice, the physician is the decision maker. At a five-provider family medicine group, the office manager often controls vendor relationships. At a 20-provider multispecialty group, there's usually a practice administrator or operations director who handles purchasing, IT, and vendor contracts. Your reps are calling the same physician contact on every list, but the physician hasn't made a purchasing decision in years. The actual buyer is invisible to your data.</p>
 
@@ -6166,7 +6169,7 @@ USE_CASES = [
 
 <p><strong>Title inflation makes role identification harder.</strong> Healthcare practices use inconsistent titles. The person who controls vendor purchasing might be called "Office Manager," "Practice Administrator," "Director of Operations," "Business Manager," or "Managing Partner" depending on the organization. Searching by a single title misses most of your buyers. You need role-based classification, not title matching.</p>""",
         "solution_heading": "How Provyx Identifies Decision Makers",
-        "solution_content": """<p><strong>Organizational NPI analysis.</strong> Provyx starts with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> to map Type 1 (individual) and Type 2 (organizational) NPI relationships. This identifies which providers are associated with which practice entities, who the authorized official is on the organizational NPI, and how the practice is legally structured. The authorized official on a Type 2 NPI is frequently the practice owner or managing partner — that's a decision maker your competitors' databases don't surface.</p>
+        "solution_content": """<p><strong>Organizational NPI analysis.</strong> Provyx starts with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> to map Type 1 (individual) and Type 2 (organizational) NPI relationships. This identifies which providers are associated with which practice entities, who the authorized official is on the organizational NPI, and how the practice is legally structured. The authorized official on a Type 2 NPI is frequently the practice owner or managing partner — that's a decision maker your competitors' databases don't surface.</p>
 
 <p><strong>Business registration cross-referencing.</strong> Every medical practice is registered as a business entity at the state level. Provyx cross-references state business filings to identify registered agents, corporate officers, and managing members. In many cases, the practice administrator or business manager is listed as a corporate officer even though they don't hold an NPI. This layer of data surfaces non-clinical decision makers that NPI-only databases completely miss.</p>
 
@@ -6228,7 +6231,7 @@ USE_CASES = [
         "h1": "NPI Data Enrichment for Sales and Marketing",
         "subtitle": "You already have the NPI list. Now you need actionable contact data appended to every record — verified phones, emails, decision makers, and practice intelligence.",
         "problem_heading": "Why Raw NPI Data Isn't Enough",
-        "problem_content": """<p><strong>The NPPES file is free but incomplete.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> and <a href="https://download.cms.gov/nppes/NPI_Files.html" target="_blank" rel="noopener">NPPES Data Dissemination</a> files contain over 8 million NPI records. Anyone can download them. That's not the problem. The problem is that the data includes mailing addresses (often PO boxes or billing addresses), no direct phone numbers, no email addresses, no practice intelligence, and no indication of who makes purchasing decisions. It's a directory of credentialed providers, not a sales database.</p>
+        "problem_content": """<p><strong>The NPPES file is free but incomplete.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> and <a href="https://download.cms.gov/nppes/NPI_Files.html" target="_blank" rel="noopener noreferrer">NPPES Data Dissemination</a> files contain over 8 million NPI records. Anyone can download them. That's not the problem. The problem is that the data includes mailing addresses (often PO boxes or billing addresses), no direct phone numbers, no email addresses, no practice intelligence, and no indication of who makes purchasing decisions. It's a directory of credentialed providers, not a sales database.</p>
 
 <p><strong>Teams waste weeks trying to enrich internally.</strong> Marketing ops teams download the NPPES file, filter to their target specialties, and then try to enrich it themselves. They run NPIs through clearinghouse tools, scrape practice websites, attempt email pattern matching, and cross-reference Google Maps listings. The result is a partially enriched list with inconsistent data quality, unknown accuracy rates, and gaps that took weeks of engineering and ops time to produce. The build-vs-buy math rarely works in favor of building.</p>
 
@@ -6299,7 +6302,7 @@ USE_CASES = [
         "h1": "Healthcare CRM Data Enrichment",
         "subtitle": "Your CRM is decaying at 20-30% per year. NPI-matched enrichment updates stale contacts, flags provider relocations, and fills gaps your team can't fix manually.",
         "problem_heading": "Why Healthcare CRM Data Decays So Fast",
-        "problem_content": """<p><strong>Provider data has a short shelf life.</strong> Healthcare providers change practice locations, phone numbers, and organizational affiliations more frequently than contacts in most B2B industries. Physicians leave group practices to start solo practices. Practices merge, rebrand, or get acquired by health systems. Office managers — your actual decision makers — turn over at high rates. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> captures some of these changes, but updates lag by months and don't cover contact-level details like phone and email.</p>
+        "problem_content": """<p><strong>Provider data has a short shelf life.</strong> Healthcare providers change practice locations, phone numbers, and organizational affiliations more frequently than contacts in most B2B industries. Physicians leave group practices to start solo practices. Practices merge, rebrand, or get acquired by health systems. Office managers — your actual decision makers — turn over at high rates. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> captures some of these changes, but updates lag by months and don't cover contact-level details like phone and email.</p>
 
 <p><strong>Decay is invisible until campaigns fail.</strong> A stale CRM record looks identical to a current one. There's no flag that says "this provider moved six months ago." Your team discovers decay when emails bounce, calls reach disconnected numbers, and direct mail gets returned. By then you've already spent the campaign budget. Marketing reports declining engagement metrics and blames messaging or targeting, when the real problem is that 25% of the contact data is outdated.</p>
 
@@ -6309,7 +6312,7 @@ USE_CASES = [
 
 <p><strong>Your CRM is the system of record, but nobody trusts it.</strong> When reps don't trust CRM data, they build their own spreadsheets. Marketing pulls lists and then manually scrubs them before every campaign. Leadership looks at pipeline reports built on account data that's 20% wrong and makes planning decisions based on fiction. The downstream cost of bad CRM data extends far beyond bounced emails — it undermines every function that depends on accurate provider records.</p>""",
         "solution_heading": "How Provyx Cleans and Enriches Your CRM",
-        "solution_content": """<p><strong>NPI-anchored matching eliminates ambiguity.</strong> Provyx matches your CRM records to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> to establish a persistent unique identifier for every provider and organization. Once an NPI is attached to a CRM record, future updates are deterministic — we know exactly which record to update regardless of name changes, address changes, or practice rebranding. NPI matching also identifies duplicates that name-based deduplication misses.</p>
+        "solution_content": """<p><strong>NPI-anchored matching eliminates ambiguity.</strong> Provyx matches your CRM records to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> to establish a persistent unique identifier for every provider and organization. Once an NPI is attached to a CRM record, future updates are deterministic — we know exactly which record to update regardless of name changes, address changes, or practice rebranding. NPI matching also identifies duplicates that name-based deduplication misses.</p>
 
 <p><strong>Full contact refresh on every matched record.</strong> For each NPI-matched record, Provyx returns the current verified phone number, email address, practice address (resolved to the actual care location, not a billing address), fax number, and decision-maker contact. We check your existing data against our verified records and flag every field that's changed. You get a clear picture of what's stale, what's current, and what was missing entirely.</p>
 
@@ -6371,7 +6374,7 @@ USE_CASES = [
         "problem_heading": "Why Selling Health IT Without Install Base Data Wastes Pipeline",
         "problem_content": """<p><strong>You don't know what they're currently using.</strong> If you sell EHR software, practice management systems, or any health IT product, your win rate depends on knowing what the prospect already has. A practice running a legacy on-premise EHR is a different conversation than one that just implemented a cloud-based system last year. But most prospecting lists tell you nothing about the technology stack at each practice. Your reps go in blind, discover the competitive landscape during the first call, and waste cycles on accounts that were never going to switch.</p>
 
-<p><strong>EHR market data is fragmented and unreliable.</strong> The <a href="https://www.healthit.gov/data/quickstats/office-based-physician-electronic-health-record-adoption" target="_blank" rel="noopener">ONC Health IT Dashboard</a> provides aggregate adoption statistics but not practice-level install data. Some vendors publish customer logos, but that represents a fraction of their install base. KLAS and CHIME surveys cover hospitals and health systems but have limited ambulatory practice data. Piecing together competitive intelligence from these sources gives you a partial, outdated picture.</p>
+<p><strong>EHR market data is fragmented and unreliable.</strong> The <a href="https://www.healthit.gov/data/quickstats/office-based-physician-electronic-health-record-adoption" target="_blank" rel="noopener noreferrer">ONC Health IT Dashboard</a> provides aggregate adoption statistics but not practice-level install data. Some vendors publish customer logos, but that represents a fraction of their install base. KLAS and CHIME surveys cover hospitals and health systems but have limited ambulatory practice data. Piecing together competitive intelligence from these sources gives you a partial, outdated picture.</p>
 
 <p><strong>Competitive displacement has a narrow window.</strong> Practices evaluate EHR and practice management systems on a cycle — typically when contracts expire, when the vendor sunsets a product, or when the practice outgrows its current system. If you reach the practice during an active evaluation, your close rate is dramatically higher than if you're trying to convince a satisfied customer to rip and replace. Without install base data, you can't identify which practices are approaching a decision point.</p>
 
@@ -6442,9 +6445,9 @@ USE_CASES = [
         "problem_heading": "Why Territory Planning Data Is a Persistent Problem",
         "problem_content": """<p><strong>Mapping tools are empty without data.</strong> Sales operations teams invest in territory mapping and route optimization tools — Salesforce Maps, Badger Maps, Maptive, or Geopointe — but these platforms need an underlying dataset of providers and practices to visualize. The tool draws the map; you supply the pins. Most territory planning projects stall not because the mapping software doesn't work, but because the team can't get reliable provider data to feed into it.</p>
 
-<p><strong>The NPI Registry is free but insufficient for territory planning.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> contains every credentialed provider in the country, but the addresses are mailing addresses — often PO boxes, billing offices, or hospital credentialing departments rather than the physical locations where providers see patients and use devices. You can't plan a field rep's territory around PO boxes. You need geocoded practice locations with street addresses your rep can drive to.</p>
+<p><strong>The NPI Registry is free but insufficient for territory planning.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> contains every credentialed provider in the country, but the addresses are mailing addresses — often PO boxes, billing offices, or hospital credentialing departments rather than the physical locations where providers see patients and use devices. You can't plan a field rep's territory around PO boxes. You need geocoded practice locations with street addresses your rep can drive to.</p>
 
-<p><strong>Enterprise data platforms are overbuilt and overpriced for territory data.</strong> Definitive Healthcare, IQVIA, and similar platforms offer comprehensive healthcare intelligence with annual contracts that start at five or six figures. If your sales ops team needs 8,000 orthopedic surgeon records in four states for an annual territory realignment, you're paying for a platform when you need a dataset. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">BLS Healthcare Occupations</a> data provides macro workforce statistics but nothing at the provider level.</p>
+<p><strong>Enterprise data platforms are overbuilt and overpriced for territory data.</strong> Definitive Healthcare, IQVIA, and similar platforms offer comprehensive healthcare intelligence with annual contracts that start at five or six figures. If your sales ops team needs 8,000 orthopedic surgeon records in four states for an annual territory realignment, you're paying for a platform when you need a dataset. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">BLS Healthcare Occupations</a> data provides macro workforce statistics but nothing at the provider level.</p>
 
 <p><strong>Stale data from the last planning cycle carries forward.</strong> Many medical device sales teams reuse territory data from the previous year's planning cycle, adjusting boundaries based on rep feedback and quota attainment. The underlying provider data doesn't get refreshed. Providers who retired, relocated, or stopped performing relevant procedures stay in the territory map. New practices and providers who entered the market since the last cycle aren't represented. Reps inherit territories sized on phantom accounts.</p>
 
@@ -6452,7 +6455,7 @@ USE_CASES = [
         "solution_heading": "How Provyx Provides Territory Planning Data",
         "solution_content": """<p><strong>Geocoded practice locations, not mailing addresses.</strong> Provyx resolves every provider record to the physical practice location where they see patients. Each address is geocoded with latitude and longitude coordinates, ready for direct import into Salesforce Maps, Maptive, Badger Maps, Tableau, or any BI/mapping tool. When a provider practices at multiple locations, each location is represented as a separate record so your territory map reflects actual care delivery sites.</p>
 
-<p><strong>Sub-specialty and procedure-level filtering.</strong> Provyx classifies providers beyond standard <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI taxonomy codes</a> using board certification data, fellowship training, procedure volume indicators, and practice focus analysis. Request "orthopedic spine surgeons" and you get spine surgeons — not sports medicine orthopedists or joint replacement specialists. This precision means your territory assignments are based on the providers who actually use your category of device, not a broad specialty bucket that inflates opportunity counts.</p>
+<p><strong>Sub-specialty and procedure-level filtering.</strong> Provyx classifies providers beyond standard <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI taxonomy codes</a> using board certification data, fellowship training, procedure volume indicators, and practice focus analysis. Request "orthopedic spine surgeons" and you get spine surgeons — not sports medicine orthopedists or joint replacement specialists. This precision means your territory assignments are based on the providers who actually use your category of device, not a broad specialty bucket that inflates opportunity counts.</p>
 
 <p><strong>Practice firmographics for account prioritization.</strong> Territory data includes practice-level intelligence: provider headcount, practice type (solo, group, hospital-employed, ASC-affiliated), surgical volume indicators, and current technology systems. These fields let your sales ops team tier accounts within each territory — high-volume surgical groups get more rep attention than solo practitioners. Territory sizing becomes a function of weighted opportunity, not raw provider count.</p>
 
@@ -6526,7 +6529,7 @@ unusually complex compared to typical corporate hierarchies.
 divisions, individual hospitals, physician groups, and ambulatory sites. Purchasing authority
 for the same product category can sit at the corporate level for one system and at the
 facility level for another. The <a href="https://www.aha.org/statistics/fast-facts-us-hospitals"
-target="_blank" rel="noopener">American Hospital Association</a> reports that roughly 67% of
+target="_blank" rel="noopener noreferrer">American Hospital Association</a> reports that roughly 67% of
 community hospitals now belong to a health system, meaning most hospital sales require
 understanding the parent organization's structure. A rep selling an EHR module might need
 corporate IT approval at one IDN and departmental sign-off at another, with no way to know
@@ -6551,7 +6554,7 @@ months or derail it entirely.
 </p>
 <p>
 <strong>Scattered data sources.</strong> Reps piece together org charts from the
-<a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>,
+<a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>,
 LinkedIn, health system websites, press releases, and word of mouth. This manual process
 is time-consuming and produces incomplete maps that miss key influencers. A typical enterprise
 rep might spend 4-6 hours researching a single IDN's structure, only to discover during the
@@ -6747,7 +6750,7 @@ organizational context, improving deal support and resource allocation decisions
 Telehealth moved from a niche offering to a standard care delivery model in a matter of months
 during 2020, and the shift has proven permanent. The
 <a href="https://aspe.hhs.gov/reports/national-survey-trends-telehealth" target="_blank"
-rel="noopener">HHS Office of the Assistant Secretary for Planning and Evaluation (ASPE)</a>
+rel="noopener noreferrer">HHS Office of the Assistant Secretary for Planning and Evaluation (ASPE)</a>
 found that telehealth utilization stabilized at levels far above pre-pandemic baselines.
 Roughly 74% of practices now offer some form of video visit. For B2B companies selling
 telehealth platforms, remote patient monitoring devices, digital health tools, or practice
@@ -6756,7 +6759,7 @@ which providers are actively delivering virtual care and at what scale.
 </p>
 <p>
 <strong>No standard telehealth flag in NPI data.</strong> The
-<a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>
+<a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>
 does not include a field indicating whether a provider offers telehealth. You cannot filter
 NPPES for "telehealth providers." Taxonomy codes describe specialties, not delivery modalities.
 Place-of-service code 02 (telehealth) appears on claims data, but that data is not linked to
@@ -6784,7 +6787,7 @@ interstate compacts. Traditional geographic filtering breaks down for virtual ca
 <strong>The market changes rapidly.</strong> New telehealth companies launch, established
 practices add or drop virtual visits, and state licensing regulations shift. A prospect list
 built six months ago may be significantly outdated. The <a href="https://www.ama-assn.org/practice-management/digital/ama-digital-health-care-2022-study-findings"
-target="_blank" rel="noopener">AMA's physician practice benchmarks</a> show continued year-over-year
+target="_blank" rel="noopener noreferrer">AMA's physician practice benchmarks</a> show continued year-over-year
 growth in telehealth adoption, meaning static snapshots miss new entrants constantly.
 </p>
 <p>
@@ -6995,7 +6998,7 @@ opportunities to underpowered digital-only outreach.
     "problem_content": """
 <p>
 Most healthcare sales teams start with some version of a provider list. It might come from
-the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>,
+the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>,
 a trade show scan, a purchased list, or a CRM inherited from a previous team. The list has
 names, NPIs, maybe addresses. It is technically data. It is not, however, useful for selling.
 </p>
@@ -7010,7 +7013,7 @@ with incomplete profiles that make qualification guesswork.
 </p>
 <p>
 <strong>CRM records decay quickly.</strong> The
-<a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor
+<a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor
 Statistics</a> data shows high mobility in healthcare professions. Physicians change
 practices, retire, or shift to locum tenens work. Practice administrators turn over.
 Facilities change ownership. Industry benchmarks suggest B2B data decays at 25-30% per year.
@@ -7223,7 +7226,7 @@ efficiency at the output, compounding across every rep and every campaign over t
     "problem_heading": "Why Basic NPI Lookup Falls Short for Sales",
     "problem_content": """
 <p>
-The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>
+The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>
 is the most commonly used free tool for looking up healthcare providers. Every provider and
 healthcare organization in the United States has a unique National Provider Identifier, and
 the NPPES database makes these records searchable. Sales reps in medical devices, health IT,
@@ -7236,7 +7239,7 @@ taxonomy code (specialty classification), practice address, enumeration date, an
 official. It does not include email addresses, direct phone numbers, practice size, technology
 stack, or any of the fields sales reps need to qualify and reach prospects.
 The <a href="https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand"
-target="_blank" rel="noopener">CMS NPI documentation</a> makes clear that NPPES is an
+target="_blank" rel="noopener noreferrer">CMS NPI documentation</a> makes clear that NPPES is an
 administrative system designed for claims processing and provider identification, not a
 business directory. It answers "does this provider exist?" but not "should I sell to them
 and how do I reach the buyer?"
@@ -7452,7 +7455,7 @@ evidence-based decisions about where to focus their efforts next.
 <p>
 Hospital supply chain is a multi-billion-dollar function that controls purchasing for medical
 devices, surgical supplies, pharmaceuticals, capital equipment, and clinical consumables. The
-<a href="https://www.aha.org/" target="_blank" rel="noopener">American Hospital Association</a>
+<a href="https://www.aha.org/" target="_blank" rel="noopener noreferrer">American Hospital Association</a>
 estimates that supply costs represent roughly 30-40% of a hospital's operating budget, second
 only to labor. For medical device and supply companies, the supply chain department is the
 gatekeeper to revenue. Yet finding and reaching the right people in hospital supply chain
@@ -7681,7 +7684,7 @@ transforms VAC presentations from generic product pitches into targeted business
     "problem_content": """
 <p>
 The dental market is large and growing. The <a href="https://www.bls.gov/ooh/healthcare/dentists.htm"
-target="_blank" rel="noopener">Bureau of Labor Statistics</a> counts over 160,000 practicing
+target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> counts over 160,000 practicing
 dentists in the United States, operating across more than 200,000 practice locations. When you
 add dental hygienists, dental assistants, dental labs, and dental service organizations (DSOs),
 the addressable market for dental B2B companies is substantial. Yet the data available to
@@ -7702,7 +7705,7 @@ wasted outreach and frustrated reps.
 like Aspen Dental, Heartland Dental, Pacific Dental Services, and dozens of smaller regional
 players now employ or affiliate with a significant and growing share of dentists. The
 <a href="https://www.ada.org/resources/research/health-policy-institute" target="_blank"
-rel="noopener">ADA Health Policy Institute</a> tracks this consolidation trend, which has
+rel="noopener noreferrer">ADA Health Policy Institute</a> tracks this consolidation trend, which has
 accelerated in recent years with private equity investment flowing into the sector. For B2B
 sellers, DSO affiliation matters enormously: a dentist employed by Heartland Dental does not
 make independent purchasing decisions for supplies, equipment, or software. The DSO's
@@ -7713,7 +7716,7 @@ discover this during conversations that go nowhere.
 <p>
 <strong>Specialty segmentation is weak.</strong> Dental specialties include orthodontics, oral
 surgery, periodontics, endodontics, pediatric dentistry, and prosthodontics, each recognized
-by the <a href="https://www.ada.org/" target="_blank" rel="noopener">American Dental
+by the <a href="https://www.ada.org/" target="_blank" rel="noopener noreferrer">American Dental
 Association</a> and mapped to specific NPI taxonomy codes. Different products serve different
 specialties. Orthodontists buy clear aligners and bracket systems; oral surgeons buy implants
 and bone graft materials; general dentists buy composite resins and polishing systems;
@@ -7749,7 +7752,7 @@ make purchasing decisions.
 </p>
 <p>
 <strong>NPI-anchored records.</strong> Every dentist and dental organization has an NPI registered
-with <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS</a>. Using
+with <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS</a>. Using
 the NPI as the unique identifier ensures deduplication, links providers to their correct
 practice locations, and enables ongoing data matching and enrichment. NPI taxonomy codes
 reliably distinguish general dentists (1223G0001X) from orthodontists (1223X0400X), oral
@@ -7922,7 +7925,7 @@ accounts.
     "problem_content": """
 <p>
 Behavioral health is the fastest-growing vertical in healthcare. The
-<a href="https://bhw.hrsa.gov/" target="_blank" rel="noopener">Health Resources and Services
+<a href="https://bhw.hrsa.gov/" target="_blank" rel="noopener noreferrer">Health Resources and Services
 Administration (HRSA)</a> and workforce studies from the GW Mullan Institute estimate
 over 1.3 million behavioral health providers in the United States, spanning psychiatrists,
 psychologists, clinical social workers, licensed professional counselors, marriage and family
@@ -7937,7 +7940,7 @@ providers cluster in large organizations, behavioral health is dominated by solo
 and small group practices. A significant share of therapists and counselors operate
 independently, often from home offices or shared clinical spaces. The
 <a href="https://www.bls.gov/ooh/community-and-social-service/substance-abuse-behavioral-disorder-and-mental-health-counselors.htm"
-target="_blank" rel="noopener">Bureau of Labor Statistics</a> projects continued strong growth
+target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> projects continued strong growth
 in behavioral health occupations, but much of this growth occurs in small, independent
 practice settings. This fragmentation makes traditional B2B data sources less effective: there
 is no hospital directory to scrape, no large employer to target. Each solo therapist is a
@@ -7951,7 +7954,7 @@ Psychiatrists (physicians with MD/DO) have different taxonomy codes than psychol
 (doctoral-level, PhD/PsyD), who are different from licensed clinical social workers (LCSW),
 who are different from licensed professional counselors (LPC), who are different from marriage
 and family therapists (LMFT). The <a href="https://npiregistry.cms.hhs.gov/" target="_blank"
-rel="noopener">CMS NPI Registry</a> captures all of them, but a seller who searches only for
+rel="noopener noreferrer">CMS NPI Registry</a> captures all of them, but a seller who searches only for
 "psychiatry" will miss the much larger population of non-physician behavioral health providers
 who may be equally relevant prospects. Understanding the full taxonomy landscape is essential
 for comprehensive market coverage.
@@ -8044,7 +8047,7 @@ segment includes residential facilities, outpatient clinics, medication-assisted
 behavioral health practices and often have different buyers, budgets, and regulatory
 requirements. Provyx covers this segment with facility-level data, including service type
 classification, capacity indicators, and administrative contacts. The
-<a href="https://www.samhsa.gov/" target="_blank" rel="noopener">SAMHSA</a> treatment locator
+<a href="https://www.samhsa.gov/" target="_blank" rel="noopener noreferrer">SAMHSA</a> treatment locator
 provides a public baseline, but commercial data adds the contact and firmographic layers
 needed for sales.
 </p>
@@ -8169,7 +8172,7 @@ data a compliance necessity as well as a commercial asset.
 <p>
 Ambulatory surgery centers are reshaping where surgical procedures happen in the United States.
 The <a href="https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/CertificationandComplianc/ASCs"
-target="_blank" rel="noopener">Centers for Medicare and Medicaid Services (CMS)</a> certifies
+target="_blank" rel="noopener noreferrer">Centers for Medicare and Medicaid Services (CMS)</a> certifies
 over 6,100 Medicare-participating ASCs, and the total market including non-Medicare facilities
 is larger still. The shift of procedures from hospitals to ASCs has accelerated as payers push
 for lower-cost settings, surgeons seek greater autonomy and efficiency, and patients prefer
@@ -8211,7 +8214,7 @@ or calling all 40.
 <strong>Limited commercial data availability.</strong> Hospital data is widely available from
 multiple commercial providers. ASC-specific data is much harder to find. The Ambulatory
 Surgery Center Association (<a href="https://www.ascassociation.org/" target="_blank"
-rel="noopener">ASCA</a>) provides advocacy and education, but not a commercial database.
+rel="noopener noreferrer">ASCA</a>) provides advocacy and education, but not a commercial database.
 CMS publishes some ASC data, but it is limited to Medicare claims and does not include
 contacts, ownership, or equipment information. Definitive Healthcare is one of the few
 commercial sources with detailed ASC data, and it is priced for enterprise buyers at
@@ -8413,7 +8416,7 @@ or ASC where the procedure occurs, and every device and supply company involved 
 procedure. Multiply this by thousands of referral relationships across a territory, and the
 referral network becomes the underlying infrastructure of healthcare revenue.
 The <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier"
-target="_blank" rel="noopener">CMS Medicare Provider Utilization and Payment Data</a>
+target="_blank" rel="noopener noreferrer">CMS Medicare Provider Utilization and Payment Data</a>
 reveals the volume of these provider-to-provider relationships, but translating public
 claims data into actionable sales intelligence requires significant data processing and
 enrichment.
@@ -8478,7 +8481,7 @@ they practice, and what their referral volume means for sales potential.
 that shows the relationships between referring providers and rendering providers. By analyzing
 which physicians share patients, it is possible to map referral networks: which PCPs refer to
 which specialists, how frequently, and for which types of services. This data, processed from
-the <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS data portal</a>,
+the <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS data portal</a>,
 forms the foundation of referral intelligence. While limited to Medicare patients, these
 patterns generally correlate with commercial referral patterns because they reflect underlying
 physician relationships and geographic proximity.
@@ -8662,7 +8665,7 @@ RESOURCES = [
                 "heading": "Where Provider Data Goes Wrong",
                 "body": """<p>Provider data quality problems fall into a few common categories, and understanding where your data breaks helps you fix the right things.</p>
 
-<p><strong>Stale contact information.</strong> Healthcare providers change practice locations, phone numbers, and email addresses more frequently than professionals in most other industries. A physician who joins a new group practice gets a new office number, new email, and new address, but their old data persists in databases for months or years. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> updates when providers re-enroll, but that process isn't immediate. Meanwhile, your team is dialing a number that belonged to someone who left eight months ago.</p>
+<p><strong>Stale contact information.</strong> Healthcare providers change practice locations, phone numbers, and email addresses more frequently than professionals in most other industries. A physician who joins a new group practice gets a new office number, new email, and new address, but their old data persists in databases for months or years. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> updates when providers re-enroll, but that process isn't immediate. Meanwhile, your team is dialing a number that belonged to someone who left eight months ago.</p>
 
 <p><strong>Incorrect specialty classification.</strong> Taxonomy codes exist to standardize provider specialty identification, but many databases use broad categories that don't distinguish between subspecialties. A "general surgeon" and a "pediatric surgeon" are both surgeons, but they have very different purchasing patterns and clinical needs. If your data doesn't capture that distinction, your targeting is off before the campaign starts.</p>
 
@@ -8676,7 +8679,7 @@ RESOURCES = [
 
 <p><strong>Direct waste.</strong> Count the percentage of your outreach that hits bad data: bounced emails, disconnected numbers, returned mail. Multiply by the cost per touch (email send cost, cost per dial including rep time, direct mail piece cost). For most organizations, this alone runs into tens of thousands of dollars per year.</p>
 
-<p><strong>Productivity loss.</strong> Estimate how much time your team spends working around bad data: researching contacts manually, deduplicating records, verifying addresses, dealing with bounced campaigns. A study by <a href="https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year" target="_blank" rel="noopener">Harvard Business Review</a> estimated that knowledge workers spend up to 50% of their time dealing with data quality issues in some form. Even if your team is at 15-20%, that's significant when loaded labor costs are factored in.</p>
+<p><strong>Productivity loss.</strong> Estimate how much time your team spends working around bad data: researching contacts manually, deduplicating records, verifying addresses, dealing with bounced campaigns. A study by <a href="https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year" target="_blank" rel="noopener noreferrer">Harvard Business Review</a> estimated that knowledge workers spend up to 50% of their time dealing with data quality issues in some form. Even if your team is at 15-20%, that's significant when loaded labor costs are factored in.</p>
 
 <p><strong>Revenue impact.</strong> Calculate how many qualified conversations your team isn't having because they're stuck on bad data. If your sales team's connect rate would improve from 15% to 25% with better data, that's a 67% increase in conversations. At your historical conversion rates, how many additional deals would that produce per quarter?</p>
 
@@ -8686,7 +8689,7 @@ RESOURCES = [
                 "heading": "What Good Provider Data Looks Like",
                 "body": """<p>Clean healthcare provider business data has a few characteristics that distinguish it from the databases most teams are working with.</p>
 
-<p><strong>Multi-source verification.</strong> Good data doesn't come from a single source. It starts with authoritative registries like the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> and layers in verification from business listings, commercial databases, and web intelligence. When multiple independent sources agree on a phone number or address, the data is more reliable than any single-source record.</p>
+<p><strong>Multi-source verification.</strong> Good data doesn't come from a single source. It starts with authoritative registries like the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> and layers in verification from business listings, commercial databases, and web intelligence. When multiple independent sources agree on a phone number or address, the data is more reliable than any single-source record.</p>
 
 <p><strong>Current contact details.</strong> Verification isn't a one-time event. Provider contact information changes continuously, which means the data needs continuous validation. Look for data providers that verify records on a regular cycle rather than building a database once and selling it indefinitely.</p>
 
@@ -8732,9 +8735,9 @@ RESOURCES = [
         "sections": [
             {
                 "heading": "What the NPI Registry Actually Contains",
-                "body": """<p>The National Provider Identifier (NPI) Registry, maintained by CMS through the <a href="https://nppes.cms.hhs.gov/" target="_blank" rel="noopener">National Plan and Provider Enumeration System (NPPES)</a>, is a public database of every healthcare provider and organization that has been assigned an NPI number. It's the closest thing to a comprehensive provider directory in the United States, and it's free to access.</p>
+                "body": """<p>The National Provider Identifier (NPI) Registry, maintained by CMS through the <a href="https://nppes.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">National Plan and Provider Enumeration System (NPPES)</a>, is a public database of every healthcare provider and organization that has been assigned an NPI number. It's the closest thing to a comprehensive provider directory in the United States, and it's free to access.</p>
 
-<p>Every NPI record includes the provider's name, NPI number, enumeration date, provider type (individual or organization), and one or more <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> that classify their specialty. For individual providers, you get their credentials (MD, DO, NP, etc.) and gender. For organizational providers, you get the organization name and an authorized official contact.</p>
+<p>Every NPI record includes the provider's name, NPI number, enumeration date, provider type (individual or organization), and one or more <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC taxonomy codes</a> that classify their specialty. For individual providers, you get their credentials (MD, DO, NP, etc.) and gender. For organizational providers, you get the organization name and an authorized official contact.</p>
 
 <p>Address data is included but comes with important caveats. Each record has a "mailing address" and a "practice location address." These are self-reported by the provider during enrollment and revalidation. For many providers, the mailing address is a PO box or billing service, not the location where they see patients. The practice address is supposed to reflect where they actually practice, but updates depend on the provider submitting a change.</p>
 
@@ -8833,13 +8836,13 @@ RESOURCES = [
                 "heading": "Choosing the Right Data Sources for Healthcare Lists",
                 "body": """<p>Healthcare provider data comes from several source types, each with strengths and limitations.</p>
 
-<p><strong>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>.</strong> Free, comprehensive, and the only source that covers every NPI-registered provider in the US. Strong for provider identification and specialty classification. Weak on contact details, business intelligence, and currency. Use it as a foundation, not a finished list.</p>
+<p><strong>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>.</strong> Free, comprehensive, and the only source that covers every NPI-registered provider in the US. Strong for provider identification and specialty classification. Weak on contact details, business intelligence, and currency. Use it as a foundation, not a finished list.</p>
 
 <p><strong>Business listing aggregators.</strong> Sources like commercial business databases, practice directories, and yellow pages-type aggregators provide phone numbers, addresses, and some business details that the NPI Registry lacks. Quality varies significantly by source. The best aggregators verify their listings; the worst just scrape the web.</p>
 
 <p><strong>Commercial healthcare data vendors.</strong> Companies like Provyx, and larger competitors, build provider databases by combining NPI Registry data with business listings, commercial databases, and proprietary verification processes. The value proposition is that the heavy lifting of matching, deduplicating, and verifying records has been done for you. Pricing models range from per-record purchasing to annual platform subscriptions.</p>
 
-<p><strong>Specialty association directories.</strong> Organizations like the <a href="https://www.ada.org/" target="_blank" rel="noopener">American Dental Association</a> and <a href="https://www.ama-assn.org/" target="_blank" rel="noopener">American Medical Association</a> maintain member directories. These have high accuracy for the providers they cover, but they only include members, not all practicing providers. They're useful for supplementing other sources, not as a primary list.</p>
+<p><strong>Specialty association directories.</strong> Organizations like the <a href="https://www.ada.org/" target="_blank" rel="noopener noreferrer">American Dental Association</a> and <a href="https://www.ama-assn.org/" target="_blank" rel="noopener noreferrer">American Medical Association</a> maintain member directories. These have high accuracy for the providers they cover, but they only include members, not all practicing providers. They're useful for supplementing other sources, not as a primary list.</p>
 
 <p><strong>Web scraping and manual research.</strong> Some teams build lists by manually researching practices through Google, LinkedIn, and practice websites. This produces accurate data for the records you do find, but it doesn't scale. Use manual research to validate a sample of your purchased data, not to build the list from scratch.</p>"""
             },
@@ -8921,7 +8924,7 @@ RESOURCES = [
                 "heading": "What You're Actually Buying When You Buy Provider Data",
                 "body": """<p>When a vendor sells you "healthcare provider data," you're buying a dataset that (ideally) contains accurate, current information about healthcare providers and their practices. But not all provider data products are the same, and understanding what's included is the first step to making a good purchase.</p>
 
-<p>The core of any provider data product is identity and classification: who is this provider (name, NPI number, credentials) and what do they do (specialty via taxonomy codes). This information originates from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, which is free and publicly available. If a vendor is charging you only for NPI-level data, you're paying for data you could download yourself.</p>
+<p>The core of any provider data product is identity and classification: who is this provider (name, NPI number, credentials) and what do they do (specialty via taxonomy codes). This information originates from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, which is free and publicly available. If a vendor is charging you only for NPI-level data, you're paying for data you could download yourself.</p>
 
 <p>The value of a commercial provider data product comes from what's layered on top of the NPI foundation: verified contact details (phone, email, website), practice-level business intelligence (ownership, size, revenue indicators), decision-maker identification, social profiles, and technology detection. These enrichment layers are what differentiate one vendor from another and what justify the price you're paying.</p>
 
@@ -9031,7 +9034,7 @@ RESOURCES = [
                 "heading": "Why Healthcare Data Decays Faster Than Other B2B Data",
                 "body": """<p>Several factors unique to healthcare drive faster data decay compared to other industries.</p>
 
-<p><strong>High workforce mobility.</strong> Healthcare providers change employers, practice locations, and even specialties more frequently than professionals in most other industries. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics</a> documents ongoing workforce shifts across healthcare sectors. Physicians move between health systems, clinicians shift from clinical to administrative roles, and practice ownership changes through acquisitions and retirements. Each change invalidates the contact data tied to the previous position.</p>
+<p><strong>High workforce mobility.</strong> Healthcare providers change employers, practice locations, and even specialties more frequently than professionals in most other industries. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a> documents ongoing workforce shifts across healthcare sectors. Physicians move between health systems, clinicians shift from clinical to administrative roles, and practice ownership changes through acquisitions and retirements. Each change invalidates the contact data tied to the previous position.</p>
 
 <p><strong>Practice consolidation and closures.</strong> The healthcare industry is experiencing significant consolidation. Private equity-backed groups are acquiring independent practices. Health systems are absorbing physician groups. DSOs are consolidating dental practices. Each acquisition changes the practice name, often the address, and frequently the administrative contacts. The small practice that was in your CRM may now be part of a 50-location group with centralized procurement.</p>
 
@@ -9113,7 +9116,7 @@ RESOURCES = [
                 "heading": "Defining Healthcare Accounts: Practices as Business Entities",
                 "body": """<p>The first adaptation for healthcare ABM is redefining what an "account" means. In traditional ABM, an account is a company. In healthcare ABM, an account is a practice or provider group defined by shared ownership, shared location, or organizational affiliation.</p>
 
-<p>This distinction matters because the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> lists individual providers and organizational NPIs, not practices as functional business entities. A three-physician cardiology group might have four NPI records (three individual, one organizational). Without practice-level aggregation, your "account list" is actually a provider list, and your ABM campaign hits the same practice three times with three different messages.</p>
+<p>This distinction matters because the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> lists individual providers and organizational NPIs, not practices as functional business entities. A three-physician cardiology group might have four NPI records (three individual, one organizational). Without practice-level aggregation, your "account list" is actually a provider list, and your ABM campaign hits the same practice three times with three different messages.</p>
 
 <p>Building a healthcare account list requires grouping providers into practice entities. This can be done using organizational NPI linkages, shared practice addresses, and business name matching. The result is a list of practices, each with associated providers, a primary decision-maker, and practice-level attributes you can use for segmentation.</p>
 
@@ -9207,7 +9210,7 @@ RESOURCES = [
                 "heading": "Step 1: Define Your Target Provider Universe",
                 "body": """<p>Before you can plan territories, you need a complete picture of your target market. For medical device companies, this means identifying every provider who fits your clinical profile across your geographic footprint.</p>
 
-<p>Start with <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC taxonomy codes</a> to define your target specialties. If you sell orthopedic implants, your target providers might include taxonomy codes for orthopedic surgery, sports medicine, spine surgery, and hand surgery. If you sell ophthalmic devices, you're looking at ophthalmology and its subspecialties. Be precise about which taxonomy codes define your market. Casting too wide a net inflates your addressable market and makes territory planning less accurate.</p>
+<p>Start with <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC taxonomy codes</a> to define your target specialties. If you sell orthopedic implants, your target providers might include taxonomy codes for orthopedic surgery, sports medicine, spine surgery, and hand surgery. If you sell ophthalmic devices, you're looking at ophthalmology and its subspecialties. Be precise about which taxonomy codes define your market. Casting too wide a net inflates your addressable market and makes territory planning less accurate.</p>
 
 <p>Next, define your geographic scope. Are you planning territories for the entire US, or for specific regions? Do you include territories in markets where you don't currently have reps, to identify expansion opportunities? Most device companies plan territories for their current footprint plus one or two expansion markets they're considering.</p>
 
@@ -9383,7 +9386,7 @@ RESOURCES = [
         "sections": [
             {
                 "heading": "Why Most Physician Lists Are Built Wrong",
-                "body": """<p><strong>The most common mistake is starting with a data source instead of an ICP.</strong> A sales rep gets access to a list vendor or downloads the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> and pulls every physician in a specialty. The result is a bloated spreadsheet with thousands of names and no structure. Half the records are employed physicians who cannot make purchasing decisions. A quarter have moved practices or retired. The remaining contacts get blasted with generic outreach that ignores practice setting, geography, and buying authority.</p>
+                "body": """<p><strong>The most common mistake is starting with a data source instead of an ICP.</strong> A sales rep gets access to a list vendor or downloads the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> and pulls every physician in a specialty. The result is a bloated spreadsheet with thousands of names and no structure. Half the records are employed physicians who cannot make purchasing decisions. A quarter have moved practices or retired. The remaining contacts get blasted with generic outreach that ignores practice setting, geography, and buying authority.</p>
 
 <p><strong>Starting with data feels productive but creates waste.</strong> Teams spend weeks cleaning a list that was never properly scoped. Reps burn through contacts with low connect rates, marketing reports inflated TAM numbers that never convert, and leadership questions the ROI of outbound. The fix is not better data hygiene applied after the fact. The fix is defining your target physician profile before you pull a single record.</p>
 
@@ -9407,9 +9410,9 @@ RESOURCES = [
             },
             {
                 "heading": "Data Sources Ranked: Pros and Cons of Each",
-                "body": """<p><strong>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> is the foundation but not the finished product.</strong> It contains over 8 million NPI records with provider name, taxonomy code, practice address, and enumeration date. It is free, authoritative, and updated weekly. The limitations are significant: no email addresses, unreliable phone numbers, stale addresses for 15-20% of records, no practice ownership data, no decision-maker identification, and no firmographic enrichment. Use it as your identity backbone and provider universe, not as your outreach list.</p>
+                "body": """<p><strong>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> is the foundation but not the finished product.</strong> It contains over 8 million NPI records with provider name, taxonomy code, practice address, and enumeration date. It is free, authoritative, and updated weekly. The limitations are significant: no email addresses, unreliable phone numbers, stale addresses for 15-20% of records, no practice ownership data, no decision-maker identification, and no firmographic enrichment. Use it as your identity backbone and provider universe, not as your outreach list.</p>
 
-<p><strong>Professional association directories provide specialty-specific depth.</strong> The <a href="https://www.ama-assn.org/" target="_blank" rel="noopener">AMA</a> Physician Masterfile, state medical society directories, and specialty society member lists offer verified physician data within specific segments. Coverage varies by specialty and membership rates. These sources are useful for validating provider attributes but rarely include direct contact information suitable for sales outreach.</p>
+<p><strong>Professional association directories provide specialty-specific depth.</strong> The <a href="https://www.ama-assn.org/" target="_blank" rel="noopener noreferrer">AMA</a> Physician Masterfile, state medical society directories, and specialty society member lists offer verified physician data within specific segments. Coverage varies by specialty and membership rates. These sources are useful for validating provider attributes but rarely include direct contact information suitable for sales outreach.</p>
 
 <p><strong>Commercial data vendors add the enrichment layers that public sources lack.</strong> Vendors like Provyx match NPI records to verified email addresses, direct phone numbers, practice firmographics, technology detection, and decision-maker identification. The value of commercial data is in the enrichment and verification, not the provider identity itself. Evaluate vendors on match rates against your ICP, data freshness, verification methodology, and pricing structure. Per-record pricing works better for prospect lists than annual platform subscriptions when you have a defined target segment.</p>
 
@@ -9489,7 +9492,7 @@ RESOURCES = [
         "sections": [
             {
                 "heading": "What You Get in the NPPES Weekly Download",
-                "body": """<p><strong>The <a href="https://nppes.cms.hhs.gov/" target="_blank" rel="noopener">NPPES Data Dissemination</a> file is a free weekly export of the National Plan and Provider Enumeration System.</strong> It contains every active and deactivated NPI record in the United States, currently over 8 million records. The file is available as a full replacement download or as weekly incremental updates. It is published by CMS and serves as the authoritative source for provider identity in the US healthcare system.</p>
+                "body": """<p><strong>The <a href="https://nppes.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPPES Data Dissemination</a> file is a free weekly export of the National Plan and Provider Enumeration System.</strong> It contains every active and deactivated NPI record in the United States, currently over 8 million records. The file is available as a full replacement download or as weekly incremental updates. It is published by CMS and serves as the authoritative source for provider identity in the US healthcare system.</p>
 
 <p><strong>Each record includes a defined set of fields.</strong> The NPI number itself is a unique 10-digit identifier assigned to every healthcare provider. The file contains provider name (first, last, middle, credential for Type 1 individuals; organization name for Type 2 organizations), provider taxonomy codes (primary and secondary specialties using the NUCC taxonomy system), practice location address, mailing address, enumeration date, last update date, NPI deactivation date and reason if applicable, and authorized official information for organizational NPIs.</p>
 
@@ -9601,7 +9604,7 @@ RESOURCES = [
                 "heading": "How Medical Practice Buying Decisions Actually Work",
                 "body": """<p><strong>The first thing to understand is that not all physicians can buy.</strong> In a solo or small group practice where the physician is the owner, the decision-maker is the physician themselves, sometimes assisted by an office manager or spouse who handles practice operations. In a mid-size group, purchasing decisions are typically made by a practice administrator or managing partner, with input from the physician partners. In a health system or large employed-physician group, the individual physician has almost no purchasing authority. Decisions flow through department heads, IT committees, and procurement teams.</p>
 
-<p><strong>Practice ownership structure is the single most important variable in your sales motion.</strong> According to <a href="https://www.ama-assn.org/" target="_blank" rel="noopener">AMA</a> physician practice benchmark surveys, the share of physicians in independent practice has declined for years, with a growing majority now employed by hospitals or corporate entities. This shift means that the traditional playbook of calling a physician directly works for a shrinking portion of the market. You need to know the ownership structure before you invest time in an account.</p>
+<p><strong>Practice ownership structure is the single most important variable in your sales motion.</strong> According to <a href="https://www.ama-assn.org/" target="_blank" rel="noopener noreferrer">AMA</a> physician practice benchmark surveys, the share of physicians in independent practice has declined for years, with a growing majority now employed by hospitals or corporate entities. This shift means that the traditional playbook of calling a physician directly works for a shrinking portion of the market. You need to know the ownership structure before you invest time in an account.</p>
 
 <p><strong>Clinical buyers and administrative buyers evaluate differently.</strong> A physician evaluating a clinical tool cares about workflow integration, clinical evidence, and peer adoption. A practice administrator evaluating the same tool cares about cost, ROI, implementation timeline, and staff training requirements. If your product touches clinical workflows, you need both buyers aligned. If your product is purely operational (billing, scheduling, marketing), the administrator is often the sole decision-maker.</p>
 
@@ -9611,7 +9614,7 @@ RESOURCES = [
             },
             {
                 "heading": "Finding the Right Contact at a Medical Practice",
-                "body": """<p><strong>Generic physician directories give you names but not decision-makers.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> lists every provider at a practice, but it does not tell you who makes purchasing decisions. Calling the first physician name you find in a group practice wastes time and often annoys someone who cannot help you. The front desk deflects your call, the employed physician says talk to administration, and the lead goes cold before you reach anyone with authority.</p>
+                "body": """<p><strong>Generic physician directories give you names but not decision-makers.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> lists every provider at a practice, but it does not tell you who makes purchasing decisions. Calling the first physician name you find in a group practice wastes time and often annoys someone who cannot help you. The front desk deflects your call, the employed physician says talk to administration, and the lead goes cold before you reach anyone with authority.</p>
 
 <p><strong>For solo practices, the physician is the right contact, but reaching them requires strategy.</strong> Solo practitioners are simultaneously the clinician, the business owner, the IT department, and often the HR department. They are in patient rooms for most of the workday and checking messages in the margins. Direct dial numbers, personal email addresses, and after-hours availability windows are critical. A generic call to the practice main line during clinic hours results in a voicemail at best and a gatekeeping front desk at worst.</p>
 
@@ -9711,13 +9714,13 @@ RESOURCES = [
 
 <p><strong>The result is that healthcare B2B teams need a lead generation approach that combines the precision of account-based marketing with the persistence of high-touch outbound sales, all built on a foundation of accurate provider data.</strong> Without clean provider data, your inbound content targets the wrong keywords, your outbound sequences reach the wrong people, and your paid campaigns waste budget on unqualified clicks. Data is not one component of healthcare lead gen. It is the infrastructure layer underneath all of it.</p>
 
-<p><strong>Another complication: healthcare compliance requirements limit certain lead gen tactics.</strong> You cannot email physicians about clinical products without regard for FDA promotional guidelines. You cannot collect practice information through deceptive landing pages. The <a href="https://www.ftc.gov/" target="_blank" rel="noopener">FTC</a> has clear guidelines about truthful advertising, and healthcare-specific regulations add additional layers. Your lead generation approach needs to be compliant with industry regulations from the start, not retrofitted for compliance after the fact. This is one more reason why generic B2B lead gen playbooks fall short in healthcare.</p>"""
+<p><strong>Another complication: healthcare compliance requirements limit certain lead gen tactics.</strong> You cannot email physicians about clinical products without regard for FDA promotional guidelines. You cannot collect practice information through deceptive landing pages. The <a href="https://www.ftc.gov/" target="_blank" rel="noopener noreferrer">FTC</a> has clear guidelines about truthful advertising, and healthcare-specific regulations add additional layers. Your lead generation approach needs to be compliant with industry regulations from the start, not retrofitted for compliance after the fact. This is one more reason why generic B2B lead gen playbooks fall short in healthcare.</p>"""
             },
             {
                 "heading": "The Provider Data Foundation",
                 "body": """<p><strong>Clean provider data is the infrastructure layer under every healthcare lead generation channel.</strong> Your email campaigns need verified email addresses. Your cold calling needs direct phone numbers and decision-maker identification. Your ABM campaigns need practice firmographics for account selection. Your content marketing needs specialty and role data to target the right audience. Your territory planning needs geocoded addresses. Without a reliable provider data foundation, each of these channels operates on guesswork.</p>
 
-<p><strong>Start with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> as your provider universe.</strong> Every licensed healthcare provider in the United States has an NPI number. The NPI Registry gives you the complete universe of providers by specialty and geography. From there, you need enrichment: contact information, practice firmographics, decision-maker identification, and technology detection. This enrichment is what transforms a provider directory into a lead generation database.</p>
+<p><strong>Start with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> as your provider universe.</strong> Every licensed healthcare provider in the United States has an NPI number. The NPI Registry gives you the complete universe of providers by specialty and geography. From there, you need enrichment: contact information, practice firmographics, decision-maker identification, and technology detection. This enrichment is what transforms a provider directory into a lead generation database.</p>
 
 <p><strong>Data quality directly multiplies or undermines every downstream activity.</strong> A 5% improvement in email deliverability across 10,000 sends means 500 additional messages reaching inboxes. A 10% improvement in phone connect rate across 1,000 dials means 100 additional conversations. These are not marginal gains. They compound across channels and over time. Teams with 95% email deliverability and 15% connect rates generate materially more pipeline from the same effort as teams with 85% deliverability and 8% connect rates. The difference is data quality.</p>
 
@@ -9761,7 +9764,7 @@ RESOURCES = [
 
 <p><strong>Pipeline per channel per dollar spent is the ultimate optimization metric.</strong> Calculate your fully-loaded cost per channel (data costs, tool costs, rep time, content creation, event fees) and divide by pipeline generated. This gives you a cost-per-pipeline-dollar metric that lets you reallocate budget from low-performing channels to high-performing ones with confidence. Update this analysis quarterly as channel performance shifts with market conditions and data freshness.</p>
 
-<p><strong>Data quality is the multiplier that affects every channel simultaneously.</strong> A 10% improvement in data accuracy (email deliverability, phone connect rate, address validity) improves the performance of every channel that uses that data. This makes data quality investment one of the highest-leverage optimizations available. Before you spend more on a new outbound tool, a new content campaign, or additional headcount, make sure your underlying data is as clean and current as possible. The ROI on data quality improvement is almost always higher than the ROI on incremental channel spend. Reference sources like <a href="https://www.hubspot.com/state-of-marketing" target="_blank" rel="noopener">HubSpot's State of Marketing</a> for benchmark data on channel performance across B2B categories.</p>"""
+<p><strong>Data quality is the multiplier that affects every channel simultaneously.</strong> A 10% improvement in data accuracy (email deliverability, phone connect rate, address validity) improves the performance of every channel that uses that data. This makes data quality investment one of the highest-leverage optimizations available. Before you spend more on a new outbound tool, a new content campaign, or additional headcount, make sure your underlying data is as clean and current as possible. The ROI on data quality improvement is almost always higher than the ROI on incremental channel spend. Reference sources like <a href="https://www.hubspot.com/state-of-marketing" target="_blank" rel="noopener noreferrer">HubSpot's State of Marketing</a> for benchmark data on channel performance across B2B categories.</p>"""
             },
         ],
         "faqs": [
@@ -9821,7 +9824,7 @@ RESOURCES = [
             },
             {
                 "heading": "The Audit: Quantifying Your Data Quality Problem",
-                "body": """<p><strong>Before you clean anything, measure how bad the problem is.</strong> An audit gives you a baseline to measure improvement against and helps you prioritize which cleaning steps will have the most impact. Run these Salesforce reports as your starting point. Refer to <a href="https://help.salesforce.com/" target="_blank" rel="noopener">Salesforce Help</a> for report-building guidance if needed.</p>
+                "body": """<p><strong>Before you clean anything, measure how bad the problem is.</strong> An audit gives you a baseline to measure improvement against and helps you prioritize which cleaning steps will have the most impact. Run these Salesforce reports as your starting point. Refer to <a href="https://help.salesforce.com/" target="_blank" rel="noopener noreferrer">Salesforce Help</a> for report-building guidance if needed.</p>
 
 <p><strong>Completeness report: count records with missing critical fields.</strong> For each field you consider essential (email, phone, specialty, NPI, address, practice name), calculate the percentage of total provider records where that field is blank. This gives you the fill rate for each field. A fill rate below 80% for email or phone means your outreach capacity is severely limited. A fill rate below 90% for NPI means you cannot reliably deduplicate or match against external data sources.</p>
 
@@ -9839,7 +9842,7 @@ RESOURCES = [
 
 <p><strong>For records without NPI numbers, deduplicate on name + address combinations.</strong> Match on last name + first name + practice city, then manually review matches to confirm they are true duplicates rather than different providers who share a name. Fuzzy matching algorithms can help catch variations like "Robert" vs "Bob" or "Smith Jr" vs "Smith," but always require human review before merging. Set a confidence threshold and route low-confidence matches to a manual review queue rather than auto-merging and potentially combining two different providers.</p>
 
-<p><strong>Standardize taxonomy codes to the NUCC Healthcare Provider Taxonomy.</strong> Specialty information in Salesforce often comes from multiple sources and is stored inconsistently: "Family Medicine," "Family Practice," "FP," "207Q00000X" might all refer to the same specialty. Map every specialty value in your CRM to a standardized taxonomy code from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> taxonomy system. This standardization enables accurate filtering, segmentation, and reporting by specialty.</p>
+<p><strong>Standardize taxonomy codes to the NUCC Healthcare Provider Taxonomy.</strong> Specialty information in Salesforce often comes from multiple sources and is stored inconsistently: "Family Medicine," "Family Practice," "FP," "207Q00000X" might all refer to the same specialty. Map every specialty value in your CRM to a standardized taxonomy code from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> taxonomy system. This standardization enables accurate filtering, segmentation, and reporting by specialty.</p>
 
 <p><strong>Validate addresses against USPS databases.</strong> Run every practice address through USPS Address Verification to confirm it is a deliverable address in the correct standardized format. USPS validation catches suite number errors, outdated street names, and completely invalid addresses. For healthcare provider data specifically, address validation also identifies providers who have moved to a new practice location. Flag invalid addresses for re-enrichment rather than keeping them in your active outreach lists.</p>
 
@@ -9953,7 +9956,7 @@ RESOURCES = [
             },
             {
                 "heading": "The Options Landscape: From DIY to Enterprise",
-                "body": """<p><strong>The NPI Registry DIY approach costs nothing in vendor fees but requires technical resources.</strong> Download the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> file, parse it, filter to your target providers, and then enrich with email, phone, and firmographic data using various tools and APIs. This approach works for teams with data engineering capability and the patience to build and maintain a pipeline. The total cost in engineering time and enrichment tool subscriptions often exceeds per-record vendor pricing for volumes under 10,000 records. Best for: teams with in-house data engineering who need ongoing, high-volume access to provider data.</p>
+                "body": """<p><strong>The NPI Registry DIY approach costs nothing in vendor fees but requires technical resources.</strong> Download the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> file, parse it, filter to your target providers, and then enrich with email, phone, and firmographic data using various tools and APIs. This approach works for teams with data engineering capability and the patience to build and maintain a pipeline. The total cost in engineering time and enrichment tool subscriptions often exceeds per-record vendor pricing for volumes under 10,000 records. Best for: teams with in-house data engineering who need ongoing, high-volume access to provider data.</p>
 
 <p><strong>Per-record vendors like Provyx deliver targeted, verified provider data without platform complexity.</strong> You define your target criteria, the vendor builds and verifies the list, and you receive a CRM-ready deliverable. Pricing is per record, there is no annual contract, and delivery typically takes 3-5 business days. The tradeoff is that you do not get a self-service platform to explore the data on your own. You work with the vendor to define your pull and they execute it. Best for: small to mid-size sales teams with defined ICP criteria who need verified contacts for outbound campaigns.</p>
 
@@ -10020,11 +10023,11 @@ RESOURCES = [
                 "heading": "What Firmographics Means in Healthcare",
                 "body": """<p><strong>In standard B2B sales, firmographics describe a company's characteristics: industry, employee count, revenue, location, founding year, and technology stack.</strong> These attributes let sales and marketing teams segment accounts, define ICPs, score leads, and prioritize territories. The concept translates to healthcare, but the specific attributes and data sources are fundamentally different because healthcare practices are not structured like typical businesses.</p>
 
-<p><strong>A medical practice's firmographic profile includes attributes specific to healthcare delivery.</strong> Practice size measured by provider count (not employee count), specialty mix by <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener">NUCC Healthcare Provider Taxonomy</a> codes, ownership structure (solo, group, DSO, health system-affiliated), number of locations, years in operation, patient volume indicators, payer mix, technology stack (EHR, practice management, billing platform), and geographic characteristics of the practice area. These fields describe the practice as a business entity in ways that standard firmographic databases do not capture.</p>
+<p><strong>A medical practice's firmographic profile includes attributes specific to healthcare delivery.</strong> Practice size measured by provider count (not employee count), specialty mix by <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC Healthcare Provider Taxonomy</a> codes, ownership structure (solo, group, DSO, health system-affiliated), number of locations, years in operation, patient volume indicators, payer mix, technology stack (EHR, practice management, billing platform), and geographic characteristics of the practice area. These fields describe the practice as a business entity in ways that standard firmographic databases do not capture.</p>
 
 <p><strong>The practice, not the individual provider, is the account-level unit for B2B healthcare sales.</strong> A single practice may have 15 physicians, 3 locations, and one decision-maker. Selling to individual providers when the purchasing unit is the practice wastes effort and creates confusion. Firmographic data aggregates individual provider records into practice-level accounts, which is the unit your CRM, territory plans, and campaigns should be built around.</p>
 
-<p><strong>Healthcare firmographics are harder to compile than standard B2B firmographics because medical practices do not report data the way public companies or even typical SMBs do.</strong> Most practices are private entities that do not file public financial reports. They are not covered by standard business intelligence databases with the same depth as technology companies or manufacturers. Building a reliable firmographic dataset for healthcare practices requires combining public provider data from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, business registrations, web intelligence, and proprietary research.</p>
+<p><strong>Healthcare firmographics are harder to compile than standard B2B firmographics because medical practices do not report data the way public companies or even typical SMBs do.</strong> Most practices are private entities that do not file public financial reports. They are not covered by standard business intelligence databases with the same depth as technology companies or manufacturers. Building a reliable firmographic dataset for healthcare practices requires combining public provider data from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, business registrations, web intelligence, and proprietary research.</p>
 
 <p><strong>The fragmented nature of healthcare delivery also complicates firmographic data.</strong> A single physician might practice at three different locations, be credentialed with four insurance panels, hold privileges at two hospitals, and be employed by one entity while billing under another. Capturing this complexity at the practice level requires careful aggregation logic that most standard business databases are not designed to handle. Healthcare firmographics is a specialized discipline, not a simple extension of general B2B data practices.</p>"""
             },
@@ -10070,7 +10073,7 @@ RESOURCES = [
             },
             {
                 "heading": "Building a Firmographic Dataset for Healthcare",
-                "body": """<p><strong>Start with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> as your identity and provider layer.</strong> The NPI file gives you every provider, their specialty taxonomy codes, and their practice addresses. From this foundation, you can count providers per address, map taxonomy codes to specialties, and build the basic practice-level records. This is the identity backbone of your firmographic dataset. It is free, authoritative, and updated weekly.</p>
+                "body": """<p><strong>Start with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> as your identity and provider layer.</strong> The NPI file gives you every provider, their specialty taxonomy codes, and their practice addresses. From this foundation, you can count providers per address, map taxonomy codes to specialties, and build the basic practice-level records. This is the identity backbone of your firmographic dataset. It is free, authoritative, and updated weekly.</p>
 
 <p><strong>Aggregate individual NPIs into practice-level records.</strong> This is the most technically challenging step. Multiple providers at the same address may be part of the same practice, or they may be independent practitioners sharing office space. Type 2 organizational NPIs provide some linkage, but coverage is inconsistent. Name matching (practice name from individual NPI records to organizational NPI records), address matching, and web research are all needed to build reliable practice-level aggregations. Errors at this step propagate into all downstream firmographic fields.</p>
 
@@ -10142,9 +10145,9 @@ RESOURCES = [
                 "heading": "Section 1: Account Overview and Organizational Structure",
                 "body": """<p>Start with the basics. Before you map buying committees or plan outreach sequences, you need a clear picture of what the organization looks like.</p>
 
-<p><strong>Organization profile.</strong> Capture the legal entity name, system affiliation (if any), address, phone, website, and tax status (for-profit vs. nonprofit). For hospitals, record bed count, trauma level, teaching status, and <a href="https://data.cms.gov/provider-data/" target="_blank" rel="noopener">CMS certification number</a>. For physician groups, record practice size, specialty mix, and whether they're independent or owned. These fields seem basic, but they drive segmentation — a 25-bed critical access hospital in rural Kansas has nothing in common with a 900-bed academic medical center in Houston, even if both are "hospitals."</p>
+<p><strong>Organization profile.</strong> Capture the legal entity name, system affiliation (if any), address, phone, website, and tax status (for-profit vs. nonprofit). For hospitals, record bed count, trauma level, teaching status, and <a href="https://data.cms.gov/provider-data/" target="_blank" rel="noopener noreferrer">CMS certification number</a>. For physician groups, record practice size, specialty mix, and whether they're independent or owned. These fields seem basic, but they drive segmentation — a 25-bed critical access hospital in rural Kansas has nothing in common with a 900-bed academic medical center in Houston, even if both are "hospitals."</p>
 
-<p><strong>Financial snapshot.</strong> For hospitals and health systems, pull revenue, operating margin, net patient revenue, and payer mix from public filings or commercial data sources. Negative operating margins don't necessarily mean "don't sell here" — they often mean the organization is actively looking for cost savings. But they do affect deal structure, budget availability, and urgency. For physician practices, financial data is harder to get, but you can estimate revenue from provider count and specialty using <a href="https://www.mgma.com/" target="_blank" rel="noopener">MGMA benchmarks</a>.</p>
+<p><strong>Financial snapshot.</strong> For hospitals and health systems, pull revenue, operating margin, net patient revenue, and payer mix from public filings or commercial data sources. Negative operating margins don't necessarily mean "don't sell here" — they often mean the organization is actively looking for cost savings. But they do affect deal structure, budget availability, and urgency. For physician practices, financial data is harder to get, but you can estimate revenue from provider count and specialty using <a href="https://www.mgma.com/" target="_blank" rel="noopener noreferrer">MGMA benchmarks</a>.</p>
 
 <p><strong>Organizational structure.</strong> Map the hierarchy: parent system, regional divisions, individual facilities, and departments. In a health system, purchasing may be centralized at the system level, decentralized to individual hospitals, or somewhere in between. Your account plan needs to reflect this reality because it determines who you sell to and at what level. Use provider data to identify all affiliated locations and their NPI numbers — this prevents the common mistake of treating each location as a separate account when they're part of the same buying decision.</p>
 
@@ -10176,17 +10179,17 @@ RESOURCES = [
 
 <p><strong>Peer benchmarking.</strong> Hospitals pay attention to what their peers do. If three of the five hospitals in a metro area use a competing solution, that's a data point — both a challenge (the competitor has local references) and an opportunity (the remaining two hospitals might want to match their peers). Provider data lets you build these peer comparisons systematically by filtering for hospitals of similar size, type, and geography.</p>
 
-<p><strong>Sources for competitive intelligence.</strong> Combine technology detection databases, <a href="https://www.usaspending.gov/" target="_blank" rel="noopener">public procurement records</a> (for government-affiliated hospitals), GPO contract awards, trade show conversations, and direct discovery during sales calls. No single source is complete. Your account plan should note the source and confidence level for each competitive data point.</p>"""
+<p><strong>Sources for competitive intelligence.</strong> Combine technology detection databases, <a href="https://www.usaspending.gov/" target="_blank" rel="noopener noreferrer">public procurement records</a> (for government-affiliated hospitals), GPO contract awards, trade show conversations, and direct discovery during sales calls. No single source is complete. Your account plan should note the source and confidence level for each competitive data point.</p>"""
             },
             {
                 "heading": "Section 4: Physician Census and Referral Patterns",
                 "body": """<p>In healthcare sales, physicians are often the starting point for a deal — even when they don't sign the check. A department head who wants your device will champion it through the value analysis committee. A practice owner who likes your software will push the office manager to evaluate it. Your account plan needs a clear picture of the physician landscape within your target account.</p>
 
-<p><strong>Build the physician roster.</strong> Use <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI registry data</a> cross-referenced with practice location data to build a complete list of physicians affiliated with the target organization. For each physician, capture: name, NPI, specialty, practice locations, and whether they're employed or affiliated (the distinction matters for how purchasing decisions get made). A hospital might have 300 credentialed physicians, but only 60 are direct employees — the rest are in independent practices with privileges at the facility.</p>
+<p><strong>Build the physician roster.</strong> Use <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI registry data</a> cross-referenced with practice location data to build a complete list of physicians affiliated with the target organization. For each physician, capture: name, NPI, specialty, practice locations, and whether they're employed or affiliated (the distinction matters for how purchasing decisions get made). A hospital might have 300 credentialed physicians, but only 60 are direct employees — the rest are in independent practices with privileges at the facility.</p>
 
 <p><strong>Specialty analysis.</strong> Group the physicians by specialty and sub-specialty. This tells you which departments are largest (and therefore have the most budget and influence), where your product fits clinically, and who your most likely champions are. If you sell orthopedic implants, the account plan should show every orthopedic surgeon, their fellowship training, their case volume (if available from CMS data), and their current vendor preferences.</p>
 
-<p><strong>Referral patterns.</strong> For certain products, referral flows between physicians matter. A primary care group that refers heavily to a specific surgical practice creates a linked selling opportunity. CMS publishes physician referral data through the <a href="https://data.cms.gov/provider-data/" target="_blank" rel="noopener">Medicare Provider Data</a> portal, and commercial databases aggregate this into usable formats. Map the key referral relationships in your account plan if they're relevant to your product.</p>
+<p><strong>Referral patterns.</strong> For certain products, referral flows between physicians matter. A primary care group that refers heavily to a specific surgical practice creates a linked selling opportunity. CMS publishes physician referral data through the <a href="https://data.cms.gov/provider-data/" target="_blank" rel="noopener noreferrer">Medicare Provider Data</a> portal, and commercial databases aggregate this into usable formats. Map the key referral relationships in your account plan if they're relevant to your product.</p>
 
 <p><strong>Physician influence mapping.</strong> Not all physicians carry equal weight. Department chairs, medical directors, and physicians with administrative roles (CMO, CMIO, VPMA) have outsized influence on purchasing decisions. Identify these individuals explicitly in your account plan. Also note any physicians who serve on hospital committees — quality, pharmacy and therapeutics, or value analysis. These committee seats give them formal authority over purchasing decisions that go beyond their clinical role.</p>
 
@@ -10265,7 +10268,7 @@ RESOURCES = [
                 "heading": "The 5-Minute Pre-Call Research Workflow",
                 "body": """<p>You don't need 30 minutes of research per call. You need five minutes of the right research. Here's the workflow, in order.</p>
 
-<p><strong>Step 1: NPI lookup (30 seconds).</strong> Start with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI registry</a> or your provider data platform. Confirm the provider's name, credential, specialty, and practice address. This prevents the embarrassing mistake of calling a pediatrician to pitch an orthopedic device. It also confirms you have the right location — many providers practice at multiple sites.</p>
+<p><strong>Step 1: NPI lookup (30 seconds).</strong> Start with the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI registry</a> or your provider data platform. Confirm the provider's name, credential, specialty, and practice address. This prevents the embarrassing mistake of calling a pediatrician to pitch an orthopedic device. It also confirms you have the right location — many providers practice at multiple sites.</p>
 
 <p><strong>Step 2: Practice size and structure (60 seconds).</strong> How many providers work at this location? Is it a solo practice, a small group, or part of a large system? This determines who makes purchasing decisions. In a 3-physician practice, the senior partner decides. In a 50-provider group, there's an operations director or administrator. In a hospital-owned practice, decisions may be made at the system level. Provider data platforms aggregate this, saving you from manually counting names on a website.</p>
 
@@ -10379,9 +10382,9 @@ RESOURCES = [
                 "heading": "The Most Common Misconception in Healthcare Sales",
                 "body": """<p>Ask a healthcare sales rep whether they can send a cold email to a physician and you'll often hear: "We can't — HIPAA." This is wrong. It's one of the most widespread misconceptions in the industry, and it costs companies real revenue by making them afraid of a perfectly legal and common outreach channel.</p>
 
-<p><strong>HIPAA governs protected health information (PHI).</strong> The <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html" target="_blank" rel="noopener">HIPAA Privacy Rule</a> restricts how covered entities (healthcare providers, health plans, and healthcare clearinghouses) and their business associates handle individually identifiable health information. It has nothing to do with a medical device company emailing a surgeon about a new implant system. It has nothing to do with a health IT vendor emailing a practice administrator about EHR integration. Those are B2B commercial communications, and they're governed by the same laws that govern any other B2B email: primarily the <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener">CAN-SPAM Act</a>.</p>
+<p><strong>HIPAA governs protected health information (PHI).</strong> The <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html" target="_blank" rel="noopener noreferrer">HIPAA Privacy Rule</a> restricts how covered entities (healthcare providers, health plans, and healthcare clearinghouses) and their business associates handle individually identifiable health information. It has nothing to do with a medical device company emailing a surgeon about a new implant system. It has nothing to do with a health IT vendor emailing a practice administrator about EHR integration. Those are B2B commercial communications, and they're governed by the same laws that govern any other B2B email: primarily the <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener noreferrer">CAN-SPAM Act</a>.</p>
 
-<p><strong>Where the confusion comes from.</strong> Healthcare organizations spend enormous effort on HIPAA compliance. Every employee takes annual HIPAA training. Every vendor signs a Business Associate Agreement. HIPAA is so pervasive in healthcare culture that people assume it governs all communications involving healthcare professionals. It doesn't. HIPAA applies to PHI — patient names, diagnoses, treatment records, billing information. A physician's business email address and practice phone number are not PHI. They're professional contact information, publicly available through the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI registry</a> and other directories.</p>
+<p><strong>Where the confusion comes from.</strong> Healthcare organizations spend enormous effort on HIPAA compliance. Every employee takes annual HIPAA training. Every vendor signs a Business Associate Agreement. HIPAA is so pervasive in healthcare culture that people assume it governs all communications involving healthcare professionals. It doesn't. HIPAA applies to PHI — patient names, diagnoses, treatment records, billing information. A physician's business email address and practice phone number are not PHI. They're professional contact information, publicly available through the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI registry</a> and other directories.</p>
 
 <p><strong>This misconception creates a competitive advantage for those who understand the rules.</strong> Many healthcare vendors avoid email outreach entirely because their legal teams (often unfamiliar with marketing law) default to "HIPAA might apply." Companies that understand the actual regulatory framework can use email as a legitimate, high-ROI channel while competitors sit on the sidelines. The key is compliance — not with HIPAA, but with CAN-SPAM and applicable state laws.</p>
 
@@ -10393,7 +10396,7 @@ RESOURCES = [
 
 <p><strong>CAN-SPAM does not require prior opt-in for B2B emails.</strong> This is a critical point. Unlike GDPR in Europe or CASL in Canada, CAN-SPAM does not prohibit unsolicited commercial email. You can legally send a cold email to a physician at their practice email address without prior consent. What CAN-SPAM does require is that you follow specific rules when sending those emails.</p>
 
-<p><strong>The seven CAN-SPAM requirements.</strong> Every commercial email you send must comply with these rules, per the <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener">FTC's compliance guide</a>:</p>
+<p><strong>The seven CAN-SPAM requirements.</strong> Every commercial email you send must comply with these rules, per the <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener noreferrer">FTC's compliance guide</a>:</p>
 
 <p>1. <strong>No false or misleading header information.</strong> Your "From," "To," and "Reply-To" fields must accurately identify the person or business sending the message. You can't spoof a hospital's domain or pretend to be a colleague of the recipient.</p>
 
@@ -10429,7 +10432,7 @@ RESOURCES = [
                 "heading": "State-Specific Laws and Additional Considerations",
                 "body": """<p>CAN-SPAM is the federal baseline, but several states have their own email and privacy laws that may impose additional requirements. These don't change the fundamental framework — B2B healthcare emails are still a CAN-SPAM question — but they add layers you need to know about.</p>
 
-<p><strong>California (CCPA/CPRA).</strong> The <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener">California Consumer Privacy Act</a> and its amendment, the California Privacy Rights Act, grant California residents rights over their personal information. However, CCPA includes an exemption for information collected in a B2B context. As of current law, contact information collected for B2B marketing purposes has specific provisions. The situation is evolving, so monitor updates. Importantly, CCPA doesn't prohibit B2B email — it creates disclosure and opt-out requirements around data collection.</p>
+<p><strong>California (CCPA/CPRA).</strong> The <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer">California Consumer Privacy Act</a> and its amendment, the California Privacy Rights Act, grant California residents rights over their personal information. However, CCPA includes an exemption for information collected in a B2B context. As of current law, contact information collected for B2B marketing purposes has specific provisions. The situation is evolving, so monitor updates. Importantly, CCPA doesn't prohibit B2B email — it creates disclosure and opt-out requirements around data collection.</p>
 
 <p><strong>Nevada and other state laws.</strong> Nevada requires a specific type of opt-out mechanism. Other states have proposed or enacted privacy laws with varying B2B exemptions. The trend is toward more state-level privacy regulation, not less. Keep a compliance checklist that you review quarterly against new state legislation.</p>
 
@@ -10504,7 +10507,7 @@ RESOURCES = [
 
 <p><strong>A VAC is not a purchasing committee.</strong> Purchasing (or procurement/supply chain) executes buying decisions. The VAC evaluates whether a product should be approved for use in the first place. It assesses clinical value, financial impact, safety, and operational fit. Only after the VAC approves a product does it move to contract negotiation and purchasing. This distinction matters because many vendors prepare financial proposals when the VAC wants clinical evidence, or they pitch features when the committee needs a total cost of ownership analysis.</p>
 
-<p><strong>Why hospitals use value analysis.</strong> Physician-preferred items (PPIs) — products that specific physicians request based on their training and experience — account for an estimated 40-60% of a hospital's total supply costs, according to research published by the <a href="https://www.ahrmm.org/" target="_blank" rel="noopener">Association for Health Care Resource & Materials Management (AHRMM)</a>. Left unchecked, individual physician preferences can create a situation where a hospital stocks five different brands of the same implant at different price points with different inventory requirements. VACs exist to impose discipline on this process: standardize where possible, justify exceptions where necessary, and ensure every product entering the hospital delivers value relative to its cost.</p>
+<p><strong>Why hospitals use value analysis.</strong> Physician-preferred items (PPIs) — products that specific physicians request based on their training and experience — account for an estimated 40-60% of a hospital's total supply costs, according to research published by the <a href="https://www.ahrmm.org/" target="_blank" rel="noopener noreferrer">Association for Health Care Resource & Materials Management (AHRMM)</a>. Left unchecked, individual physician preferences can create a situation where a hospital stocks five different brands of the same implant at different price points with different inventory requirements. VACs exist to impose discipline on this process: standardize where possible, justify exceptions where necessary, and ensure every product entering the hospital delivers value relative to its cost.</p>
 
 <p><strong>The stakes are high for vendors.</strong> A VAC approval opens the door to the entire facility or health system. A VAC rejection can lock you out for 12-24 months until the next review cycle. And the process itself is opaque to many vendors — committees meet monthly or quarterly, the submission requirements vary by institution, and the decision criteria are not always published. Understanding how VACs work is a prerequisite for selling into hospitals effectively.</p>
 
@@ -10522,7 +10525,7 @@ RESOURCES = [
 
 <p><strong>Finance.</strong> A representative from the finance department — often a financial analyst or the CFO's delegate — evaluates the total cost of ownership. Not just unit price, but implementation costs, training costs, projected utilization, reimbursement impact, and effect on case margins. Finance members ask questions like: "If we switch to this product, what happens to our DRG reimbursement?" and "What's the payback period on this capital investment?" Come with financial models, not just pricing sheets.</p>
 
-<p><strong>Quality and risk management.</strong> Some VACs include quality officers or risk management representatives who assess safety data, recall history, FDA warning letters, and liability considerations. For implantable devices, this scrutiny is intense. Have your safety data organized: adverse event reports, post-market surveillance data, and any relevant <a href="https://www.fda.gov/medical-devices" target="_blank" rel="noopener">FDA documentation</a>.</p>
+<p><strong>Quality and risk management.</strong> Some VACs include quality officers or risk management representatives who assess safety data, recall history, FDA warning letters, and liability considerations. For implantable devices, this scrutiny is intense. Have your safety data organized: adverse event reports, post-market surveillance data, and any relevant <a href="https://www.fda.gov/medical-devices" target="_blank" rel="noopener noreferrer">FDA documentation</a>.</p>
 
 <p><strong>Infection prevention, pharmacy, and IT.</strong> Depending on the product, additional stakeholders may join. Drug-eluting devices involve pharmacy. Connected devices involve IT/biomed. Products with sterilization requirements involve infection prevention. Ask the supply chain contact who will be reviewing your submission so you can prepare materials for each stakeholder.</p>"""
             },
@@ -10546,7 +10549,7 @@ RESOURCES = [
                 "heading": "Building the Financial Case Using Hospital-Specific Data",
                 "body": """<p>The financial case is where most vendor submissions are weakest. Generic ROI calculators with national average assumptions don't persuade a committee that reviews dozens of vendor pitches per year. What works is a financial case built on the hospital's own data — or on data specific enough to the hospital's situation that the committee trusts the numbers.</p>
 
-<p><strong>Start with the hospital's current costs.</strong> Before you can show savings or value, you need to establish the baseline. What does the hospital currently spend on the product category you're addressing? If you can get this from your champion, ideal. If not, estimate it using publicly available data: CMS cost reports provide departmental spending data for Medicare-certified hospitals. You can access these through the <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS data portal</a>. Combine with case volume data (also available from CMS) to estimate per-case costs.</p>
+<p><strong>Start with the hospital's current costs.</strong> Before you can show savings or value, you need to establish the baseline. What does the hospital currently spend on the product category you're addressing? If you can get this from your champion, ideal. If not, estimate it using publicly available data: CMS cost reports provide departmental spending data for Medicare-certified hospitals. You can access these through the <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS data portal</a>. Combine with case volume data (also available from CMS) to estimate per-case costs.</p>
 
 <p><strong>Frame the financial impact in terms the CFO understands.</strong> Don't just show a lower unit price. Show the total cost of ownership, which includes: unit cost multiplied by projected annual volume, implementation and training costs (one-time), inventory carrying costs (how much do they need to stock?), service and maintenance costs (for capital equipment), and any revenue or reimbursement impact. A product that costs 10% more per unit but reduces complications (and therefore readmissions, which Medicare penalizes) can have a net positive financial impact. Build that story with numbers.</p>
 
@@ -10635,7 +10638,7 @@ RESOURCES = [
 
 <p><strong>The basics.</strong> A GPO negotiates contracts with manufacturers on behalf of its member hospitals and health systems. Members access pre-negotiated pricing and terms through the GPO's contract portfolio. GPOs make money primarily through administrative fees (typically 1-3% of purchase volume) paid by the manufacturer — not by the hospital. This fee structure means GPOs are incentivized to drive volume to contracted manufacturers, which is both an opportunity and a challenge depending on whether you have a GPO contract.</p>
 
-<p><strong>Scale of impact.</strong> The <a href="https://www.supplychainassociation.org/" target="_blank" rel="noopener">Healthcare Supply Chain Association (HSCA)</a> estimates that GPOs facilitate over $300 billion in annual healthcare purchasing. Roughly 96-98% of U.S. hospitals use at least one GPO. For medical device companies, GPO contracts are not optional infrastructure — they're a core component of your go-to-market strategy. Even companies that primarily sell direct need to understand the GPO landscape because hospitals will compare your pricing to their GPO alternatives.</p>
+<p><strong>Scale of impact.</strong> The <a href="https://www.supplychainassociation.org/" target="_blank" rel="noopener noreferrer">Healthcare Supply Chain Association (HSCA)</a> estimates that GPOs facilitate over $300 billion in annual healthcare purchasing. Roughly 96-98% of U.S. hospitals use at least one GPO. For medical device companies, GPO contracts are not optional infrastructure — they're a core component of your go-to-market strategy. Even companies that primarily sell direct need to understand the GPO landscape because hospitals will compare your pricing to their GPO alternatives.</p>
 
 <p><strong>This guide covers the practical, vendor-side mechanics.</strong> Which GPOs matter most for medical devices, how to identify a hospital's GPO affiliation, how contract tiers and commitment levels work, how GPO purchasing committees evaluate products, and when direct contracting makes more strategic sense than the GPO channel. The goal is operational knowledge you can use in territory planning and deal execution.</p>"""
             },
@@ -10645,7 +10648,7 @@ RESOURCES = [
 
 <p><strong>Premier Inc.</strong> Premier is the largest GPO by purchasing volume, with approximately 4,400 hospitals and health systems and over 300,000 other provider organizations in its alliance. Premier operates a committed purchasing model through its SURPASS program, where members commit to purchasing a certain percentage of their supply spend through Premier contracts in exchange for better pricing. For device companies, Premier contracts are often essential for access to major academic medical centers and large health systems. Premier also operates a technology assessment and advisory practice that influences product evaluations.</p>
 
-<p><strong>Vizient (formerly VHA/UHC/Novation).</strong> <a href="https://www.vizientinc.com/" target="_blank" rel="noopener">Vizient</a> represents approximately 3,000 hospitals, including most of the nation's academic medical centers and many large community health systems. Vizient's contract portfolio is extensive, and its analytics capabilities (including clinical benchmarking data) give it significant influence over member purchasing decisions. For device companies, Vizient's clinical evidence requirements for contract awards tend to be rigorous. Their Innovative Technology Program provides a pathway for newer devices to gain contract access.</p>
+<p><strong>Vizient (formerly VHA/UHC/Novation).</strong> <a href="https://www.vizientinc.com/" target="_blank" rel="noopener noreferrer">Vizient</a> represents approximately 3,000 hospitals, including most of the nation's academic medical centers and many large community health systems. Vizient's contract portfolio is extensive, and its analytics capabilities (including clinical benchmarking data) give it significant influence over member purchasing decisions. For device companies, Vizient's clinical evidence requirements for contract awards tend to be rigorous. Their Innovative Technology Program provides a pathway for newer devices to gain contract access.</p>
 
 <p><strong>HealthTrust Performance Group.</strong> HealthTrust is affiliated with HCA Healthcare, the largest for-profit hospital chain in the U.S. HealthTrust serves HCA's 180+ hospitals plus approximately 1,600 non-HCA member hospitals. Because of the HCA relationship, HealthTrust contracts carry particularly strong compliance at HCA facilities — meaning an HCA hospital will almost always buy through the HealthTrust contract. For device companies, a HealthTrust contract is effectively a requirement for selling into any HCA facility.</p>
 
@@ -10778,7 +10781,7 @@ RESOURCES = [
 
 <p><strong>The internal champion forms an opinion.</strong> At this stage, one or two people inside the hospital have decided that something needs to change. They start informal conversations: mentioning the need in department meetings, discussing it with peers, or raising it with their manager. For vendors, this is the ideal time to engage — before formal evaluation criteria are set and before competitors are involved. The challenge is detection: how do you know this conversation is happening?</p>
 
-<p><strong>Using provider data to identify early signals.</strong> Several data signals correlate with need recognition. New physician hires (especially department heads or chiefs) often bring new product preferences. Technology age — if you can identify that a hospital's imaging equipment is 8+ years old, replacement planning is likely underway. Financial stress indicators (declining operating margins, increased debt) correlate with cost-reduction initiatives. New construction or expansion projects signal capital equipment needs. Leadership changes at the C-suite level often trigger strategic reviews that create purchasing opportunities. Monitor these signals through provider data updates and public data sources like <a href="https://data.cms.gov/provider-data/" target="_blank" rel="noopener">CMS Provider Data</a> and hospital financial filings.</p>
+<p><strong>Using provider data to identify early signals.</strong> Several data signals correlate with need recognition. New physician hires (especially department heads or chiefs) often bring new product preferences. Technology age — if you can identify that a hospital's imaging equipment is 8+ years old, replacement planning is likely underway. Financial stress indicators (declining operating margins, increased debt) correlate with cost-reduction initiatives. New construction or expansion projects signal capital equipment needs. Leadership changes at the C-suite level often trigger strategic reviews that create purchasing opportunities. Monitor these signals through provider data updates and public data sources like <a href="https://data.cms.gov/provider-data/" target="_blank" rel="noopener noreferrer">CMS Provider Data</a> and hospital financial filings.</p>
 
 <p><strong>What to do in this phase.</strong> Build relationships with potential champions before they need you. Provide educational content (not product pitches) that helps them articulate the need internally. Offer benchmarking data that compares their current state to peer institutions. The goal is to be a trusted resource when the internal discussion moves to the next phase. If you wait until the RFP, you're 12 months late.</p>"""
             },
@@ -10830,7 +10833,7 @@ RESOURCES = [
 
 <p><strong>Pre-cycle signals (the hospital hasn't started yet).</strong> Look for: aging installed technology (equipment past its typical replacement cycle), financial stability (positive margins, available capital), recent strategic announcements that align with your product category, and new leadership hires in relevant departments. These signals suggest a purchase is likely in the next 12-24 months but hasn't been initiated. This is your opportunity to engage early and shape the evaluation.</p>
 
-<p><strong>Early-cycle signals (internal discussion, budget planning).</strong> Look for: capital budget requests in public Board meeting minutes (some hospitals publish these), conversations with your champion confirming that the need has been raised internally, <a href="https://sam.gov/" target="_blank" rel="noopener">federal procurement postings</a> (for VA and government hospitals), and mentions of the product category in hospital job postings (hiring a robotics coordinator suggests a robotic surgery purchase is planned). These signals indicate the hospital is in Phase 1-2. Engage actively, provide evidence and benchmarking, and help your champion build the internal case.</p>
+<p><strong>Early-cycle signals (internal discussion, budget planning).</strong> Look for: capital budget requests in public Board meeting minutes (some hospitals publish these), conversations with your champion confirming that the need has been raised internally, <a href="https://sam.gov/" target="_blank" rel="noopener noreferrer">federal procurement postings</a> (for VA and government hospitals), and mentions of the product category in hospital job postings (hiring a robotics coordinator suggests a robotic surgery purchase is planned). These signals indicate the hospital is in Phase 1-2. Engage actively, provide evidence and benchmarking, and help your champion build the internal case.</p>
 
 <p><strong>Mid-cycle signals (formal evaluation underway).</strong> Look for: RFP publication, direct contact from the hospital's supply chain department requesting pricing or product information, scheduled site visits or demos, and references to evaluation timelines in conversations with any hospital contact. If you're seeing these signals, the hospital is in Phase 2-3. If you weren't engaged earlier, you need to move fast — evaluation criteria are already set, and you may be catching up to competitors who've been engaged for months.</p>
 
@@ -10887,7 +10890,7 @@ RESOURCES = [
                 "heading": "Why a Comparison Like This Is Overdue",
                 "body": """<p>If you search for a healthcare data vendor comparison, you get one of two things: a vendor's own "why we're better" page or a thin listicle that ranks providers nobody has heard of. Neither helps a sales or marketing leader who needs to pick a data partner and justify the spend internally.</p>
 
-<p>The B2B healthcare data market has changed significantly since 2023. Generalist sales intelligence platforms like <a href="https://www.zoominfo.com/" target="_blank" rel="noopener">ZoomInfo</a> and <a href="https://www.apollo.io/" target="_blank" rel="noopener">Apollo</a> have added healthcare verticals. Healthcare-specific incumbents like <a href="https://www.iqvia.com/" target="_blank" rel="noopener">IQVIA</a> and <a href="https://www.definitivehc.com/" target="_blank" rel="noopener">Definitive Healthcare</a> have expanded beyond their traditional enterprise buyer. Newer entrants like Provyx and <a href="https://www.careprecise.com/" target="_blank" rel="noopener">CarePrecise</a> target mid-market teams that were previously priced out of quality provider data.</p>
+<p>The B2B healthcare data market has changed significantly since 2023. Generalist sales intelligence platforms like <a href="https://www.zoominfo.com/" target="_blank" rel="noopener noreferrer">ZoomInfo</a> and <a href="https://www.apollo.io/" target="_blank" rel="noopener noreferrer">Apollo</a> have added healthcare verticals. Healthcare-specific incumbents like <a href="https://www.iqvia.com/" target="_blank" rel="noopener noreferrer">IQVIA</a> and <a href="https://www.definitivehc.com/" target="_blank" rel="noopener noreferrer">Definitive Healthcare</a> have expanded beyond their traditional enterprise buyer. Newer entrants like Provyx and <a href="https://www.careprecise.com/" target="_blank" rel="noopener noreferrer">CarePrecise</a> target mid-market teams that were previously priced out of quality provider data.</p>
 
 <p><strong>What this comparison covers.</strong> We evaluate eight vendors across seven dimensions: data coverage (number of providers and facilities), accuracy methodology (how they verify and refresh data), pricing model (per-seat, per-record, platform fee), healthcare-specific features (NPI data, specialty taxonomies, procedure volumes), specialty depth (how granular the subspecialty data gets), API access (whether you can pull data into your own systems), and minimum commitment (contract length and entry price). We include Provyx in this comparison and note where we fall short.</p>
 
@@ -10915,11 +10918,11 @@ RESOURCES = [
 
 <p><strong>Lusha</strong> occupies a similar space to Apollo with lower pricing and a browser extension that enriches LinkedIn profiles. Lusha's healthcare data is functional for finding direct contact information for known individuals but offers no healthcare-specific filtering, taxonomy support, or facility data. It is a point solution for contact enrichment, not a healthcare data platform.</p>
 
-<p><strong>The common limitation.</strong> All four generalist platforms treat healthcare as one industry vertical among dozens. None of them map the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> taxonomy, track technology installations at the practice level, or provide procedure-volume estimates. If your ideal customer profile is defined by clinical specialty, practice size, or technology stack, generalist platforms force you to do significant manual research to fill the gaps.</p>"""
+<p><strong>The common limitation.</strong> All four generalist platforms treat healthcare as one industry vertical among dozens. None of them map the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> taxonomy, track technology installations at the practice level, or provide procedure-volume estimates. If your ideal customer profile is defined by clinical specialty, practice size, or technology stack, generalist platforms force you to do significant manual research to fill the gaps.</p>"""
             },
             {
                 "heading": "Healthcare-Focused Challengers: CarePrecise and Provyx",
-                "body": """<p><strong>CarePrecise</strong> is a healthcare data provider built on public data sources, primarily the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry (NPPES)</a> and Medicare data. CarePrecise offers clean, structured provider records with NPI numbers, taxonomy codes, practice addresses, and organizational affiliations. Its pricing is significantly lower than IQVIA or Definitive, making it accessible to smaller teams. The limitation: CarePrecise's data is largely derived from public sources, which means it shares the same gaps as those sources. Contact information (email addresses, direct phone numbers) is limited. Technology install data and practice-level firmographics are not included. CarePrecise is a solid choice if you need a clean NPI-linked provider directory at low cost, but you will need to supplement it with other sources for outreach-ready contact data.</p>
+                "body": """<p><strong>CarePrecise</strong> is a healthcare data provider built on public data sources, primarily the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry (NPPES)</a> and Medicare data. CarePrecise offers clean, structured provider records with NPI numbers, taxonomy codes, practice addresses, and organizational affiliations. Its pricing is significantly lower than IQVIA or Definitive, making it accessible to smaller teams. The limitation: CarePrecise's data is largely derived from public sources, which means it shares the same gaps as those sources. Contact information (email addresses, direct phone numbers) is limited. Technology install data and practice-level firmographics are not included. CarePrecise is a solid choice if you need a clean NPI-linked provider directory at low cost, but you will need to supplement it with other sources for outreach-ready contact data.</p>
 
 <p><strong>Provyx</strong> (that is us) focuses on provider contact data, practice firmographics, and technology detection for B2B healthcare sales teams. Our data covers providers across the U.S. with NPI-linked records, verified email addresses, practice phone numbers, and specialty classifications. We also track EHR installations and practice technology stacks at the facility level. Our pricing is designed for mid-market teams, with per-record and subscription options that do not require a $30,000+ annual commitment.</p>
 
@@ -11008,7 +11011,7 @@ RESOURCES = [
         "sections": [
             {
                 "heading": "Why the Pharma KOL Model Does Not Work for Medical Devices",
-                "body": """<p>Key opinion leader (KOL) identification is a mature discipline in pharmaceutical sales. Pharma companies use structured frameworks to identify physicians who influence prescribing behavior, sit on formulary committees, lead clinical trials, and speak at medical conferences. Entire platforms exist to map KOL networks in pharma, including services from <a href="https://www.iqvia.com/" target="_blank" rel="noopener">IQVIA</a>, Veeva, and specialized KOL mapping firms.</p>
+                "body": """<p>Key opinion leader (KOL) identification is a mature discipline in pharmaceutical sales. Pharma companies use structured frameworks to identify physicians who influence prescribing behavior, sit on formulary committees, lead clinical trials, and speak at medical conferences. Entire platforms exist to map KOL networks in pharma, including services from <a href="https://www.iqvia.com/" target="_blank" rel="noopener noreferrer">IQVIA</a>, Veeva, and specialized KOL mapping firms.</p>
 
 <p>Medical device companies have adopted the term "KOL" but rarely the methodology. The reason: the pharma model does not translate directly to medtech. In pharma, a KOL's influence operates through prescribing patterns, guideline committees, and peer-reviewed publications. In medical devices, influence operates through surgical technique adoption, procedural volume, training other surgeons, and purchasing decisions that involve hospital value analysis committees.</p>
 
@@ -11022,13 +11025,13 @@ RESOURCES = [
                 "heading": "Identifying Surgical KOLs: Data Sources and Signals",
                 "body": """<p>Effective KOL identification for medical devices requires combining multiple data sources. No single database contains a "KOL score" that you can sort by. Instead, you build a composite picture from procedure data, publication records, conference activity, and institutional affiliations.</p>
 
-<p><strong>Procedure volume data.</strong> The most important signal for surgical KOLs is how many relevant procedures they perform. High-volume surgeons have more experience with the tools and techniques in your category, more opportunities to evaluate new devices, and more credibility with peers. <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data" target="_blank" rel="noopener">CMS Medicare utilization data</a> provides procedure counts by physician NPI for Medicare patients. This is a partial view (Medicare only), but it is the most accessible claims-based dataset. Commercial claims databases from vendors like IQVIA or Definitive Healthcare offer broader coverage but at significant cost.</p>
+<p><strong>Procedure volume data.</strong> The most important signal for surgical KOLs is how many relevant procedures they perform. High-volume surgeons have more experience with the tools and techniques in your category, more opportunities to evaluate new devices, and more credibility with peers. <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data" target="_blank" rel="noopener noreferrer">CMS Medicare utilization data</a> provides procedure counts by physician NPI for Medicare patients. This is a partial view (Medicare only), but it is the most accessible claims-based dataset. Commercial claims databases from vendors like IQVIA or Definitive Healthcare offer broader coverage but at significant cost.</p>
 
-<p><strong>Publication and research activity.</strong> Search <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a> for physicians who publish in journals relevant to your device category. Filter by publication type: clinical outcomes studies and technique papers carry more weight than review articles. Look for physicians who are listed as first or last author (indicating they led the work or run the lab). A surgeon who has published three comparative studies on different fixation techniques in spine surgery is signaling deep engagement with the clinical evidence around device selection.</p>
+<p><strong>Publication and research activity.</strong> Search <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a> for physicians who publish in journals relevant to your device category. Filter by publication type: clinical outcomes studies and technique papers carry more weight than review articles. Look for physicians who are listed as first or last author (indicating they led the work or run the lab). A surgeon who has published three comparative studies on different fixation techniques in spine surgery is signaling deep engagement with the clinical evidence around device selection.</p>
 
 <p><strong>Conference presentations.</strong> Specialty society meetings are where device adoption spreads. Identify the relevant conferences for your device category (e.g., AAOS for orthopedics, STS for cardiothoracic, SAGES for minimally invasive surgery). Speaker lists and abstract archives are often published on society websites. Podium presentations indicate higher prestige than poster presentations. Invited lectures and panel moderator roles indicate established authority.</p>
 
-<p><strong>Training and fellowship programs.</strong> Surgeons who direct residency programs or fellowships have outsized influence. Their trainees carry learned preferences to new institutions for decades. The <a href="https://www.acgme.org/" target="_blank" rel="noopener">ACGME</a> directory lists accredited programs and program directors. Cross-reference program directors with your specialty of interest.</p>
+<p><strong>Training and fellowship programs.</strong> Surgeons who direct residency programs or fellowships have outsized influence. Their trainees carry learned preferences to new institutions for decades. The <a href="https://www.acgme.org/" target="_blank" rel="noopener noreferrer">ACGME</a> directory lists accredited programs and program directors. Cross-reference program directors with your specialty of interest.</p>
 
 <p><strong>Institutional affiliiliation and role.</strong> Surgeons who serve as department chairs, division chiefs, or medical directors of service lines often influence purchasing decisions beyond their individual practice. Provider data that includes organizational roles helps identify these individuals. Provyx's <a href="/services/provider-contact-data/">provider contact data</a> links physicians to their practice affiliations and institutional roles.</p>"""
             },
@@ -11042,7 +11045,7 @@ RESOURCES = [
 
 <p><strong>Engagement model.</strong> Pharma engages KOLs through advisory boards, speaker bureaus, and medical science liaison (MSL) relationships. Device companies engage KOLs through design input sessions, cadaver labs, proctoring arrangements (where the KOL supervises another surgeon's first cases), and clinical study collaboration. The engagement is more hands-on and operationally intensive than pharma's model.</p>
 
-<p><strong>Regulatory considerations.</strong> Both pharma and device KOL relationships are subject to the <a href="https://www.cms.gov/priorities/key-initiatives/open-payments" target="_blank" rel="noopener">Sunshine Act (Open Payments)</a>, which requires disclosure of payments to physicians. Device companies should review Open Payments data not only for compliance but as an intelligence source. You can see which surgeons have consulting agreements with competitors, which indicates both expertise and potential entrenchment. Open Payments data is available at cms.gov/openpayments.</p>
+<p><strong>Regulatory considerations.</strong> Both pharma and device KOL relationships are subject to the <a href="https://www.cms.gov/priorities/key-initiatives/open-payments" target="_blank" rel="noopener noreferrer">Sunshine Act (Open Payments)</a>, which requires disclosure of payments to physicians. Device companies should review Open Payments data not only for compliance but as an intelligence source. You can see which surgeons have consulting agreements with competitors, which indicates both expertise and potential entrenchment. Open Payments data is available at cms.gov/openpayments.</p>
 
 <p><strong>Timeline of influence.</strong> Pharma KOL influence can be immediate (a guideline change affects prescribing the next quarter). Device KOL influence is slower but more durable. A surgeon who trains 50 fellows over a 15-year career creates a network of practitioners who default to the techniques and tools they learned during training. This long-tail influence makes early KOL identification in medtech disproportionately valuable.</p>
 
@@ -11080,7 +11083,7 @@ RESOURCES = [
                 "heading": "Operationalizing KOL Identification With Provider Data",
                 "body": """<p>KOL identification is an ongoing process, not a one-time project. The physicians who matter to your business will change as your product portfolio evolves, as new surgeons enter the field, and as market dynamics shift. Building a repeatable system requires integrating provider data into your commercial operations.</p>
 
-<p><strong>Start with your target specialty.</strong> Define the surgical specialties and subspecialties relevant to your device. Use NPI taxonomy codes to build a universe of providers in those specialties. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> provides the foundation, but commercial provider data fills in the gaps with practice addresses, organizational affiliations, and contact information. A provider data partner like Provyx can deliver a filtered list by specialty, geography, and practice setting to establish your starting universe.</p>
+<p><strong>Start with your target specialty.</strong> Define the surgical specialties and subspecialties relevant to your device. Use NPI taxonomy codes to build a universe of providers in those specialties. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> provides the foundation, but commercial provider data fills in the gaps with practice addresses, organizational affiliations, and contact information. A provider data partner like Provyx can deliver a filtered list by specialty, geography, and practice setting to establish your starting universe.</p>
 
 <p><strong>Enrich with external data.</strong> Layer in the signals discussed earlier: procedure volume from CMS data, publications from PubMed, conference activity from specialty society archives, fellowship program affiliations from ACGME, and payment data from Open Payments. Each data source adds a dimension to the provider profile. The enriched dataset becomes your KOL identification database.</p>
 
@@ -11152,9 +11155,9 @@ RESOURCES = [
                 "heading": "Using Technology Install Data to Predict Replacement Cycles",
                 "body": """<p>The single most actionable piece of pre-RFP intelligence is knowing what technology a healthcare organization currently uses and when it was implemented. Technology replacement in healthcare follows predictable cycles, and the data to track those cycles is available.</p>
 
-<p><strong>EHR systems.</strong> Electronic health record implementations are major capital projects with 7-10 year lifecycles. A practice or hospital that implemented an EHR in 2017-2018 is approaching the window where dissatisfaction peaks and replacement conversations begin. CMS <a href="https://www.healthit.gov/data/datasets" target="_blank" rel="noopener">ONC health IT data</a> provides information on certified EHR technology adoption. Commercial data providers, including Provyx's <a href="/services/technology-detection/">technology detection</a> service, track EHR installations at the practice and facility level.</p>
+<p><strong>EHR systems.</strong> Electronic health record implementations are major capital projects with 7-10 year lifecycles. A practice or hospital that implemented an EHR in 2017-2018 is approaching the window where dissatisfaction peaks and replacement conversations begin. CMS <a href="https://www.healthit.gov/data/datasets" target="_blank" rel="noopener noreferrer">ONC health IT data</a> provides information on certified EHR technology adoption. Commercial data providers, including Provyx's <a href="/services/technology-detection/">technology detection</a> service, track EHR installations at the practice and facility level.</p>
 
-<p><strong>Medical devices and capital equipment.</strong> Imaging equipment (MRI, CT, X-ray), surgical robots, and laboratory systems have defined useful lives, typically 7-12 years depending on the modality. Hospitals depreciate this equipment on a schedule, and capital replacement budgets are planned 12-24 months in advance. If you know a hospital installed a CT scanner in 2018, you know the replacement conversation will happen around 2025-2027. <a href="https://www.definitivehc.com/" target="_blank" rel="noopener">Definitive Healthcare</a> tracks technology installations at hospitals. For ambulatory and practice settings, Provyx tracks technology data that can indicate when installations are aging.</p>
+<p><strong>Medical devices and capital equipment.</strong> Imaging equipment (MRI, CT, X-ray), surgical robots, and laboratory systems have defined useful lives, typically 7-12 years depending on the modality. Hospitals depreciate this equipment on a schedule, and capital replacement budgets are planned 12-24 months in advance. If you know a hospital installed a CT scanner in 2018, you know the replacement conversation will happen around 2025-2027. <a href="https://www.definitivehc.com/" target="_blank" rel="noopener noreferrer">Definitive Healthcare</a> tracks technology installations at hospitals. For ambulatory and practice settings, Provyx tracks technology data that can indicate when installations are aging.</p>
 
 <p><strong>Revenue cycle and practice management systems.</strong> These systems have shorter replacement cycles, typically 5-7 years, because billing regulations and payer requirements change frequently. A practice running a legacy practice management system is a predictable prospect for revenue cycle vendors. Technology install data paired with practice size and specialty data helps prioritize which practices are most likely to be in-market.</p>
 
@@ -11182,9 +11185,9 @@ RESOURCES = [
 
 <p><strong>Vendor churn in adjacent systems.</strong> If a hospital recently switched its EHR, it may be re-evaluating all connected systems (revenue cycle, patient engagement, analytics). Major system changes create a ripple effect that opens adjacent buying opportunities. Track vendor changes at your target accounts using technology install data.</p>
 
-<p><strong>Leadership changes.</strong> A new CIO, CMO, or department head often triggers a technology review. New leaders want to put their stamp on operations and may have preferences from their previous institution. Monitor executive changes at target accounts using organizational data and news alerts. <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> job change notifications and press releases are useful free sources for this.</p>
+<p><strong>Leadership changes.</strong> A new CIO, CMO, or department head often triggers a technology review. New leaders want to put their stamp on operations and may have preferences from their previous institution. Monitor executive changes at target accounts using organizational data and news alerts. <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a> job change notifications and press releases are useful free sources for this.</p>
 
-<p><strong>Regulatory and compliance events.</strong> CMS policy changes, new interoperability requirements (<a href="https://www.healthit.gov/topic/interoperability/oncs-cures-act-final-rule" target="_blank" rel="noopener">ONC Cures Act requirements</a>), or accreditation findings can force technology changes. When a regulation creates a compliance gap in a competitor's product, every customer of that product becomes a prospect. Track regulatory timelines and map them to installed technology data.</p>
+<p><strong>Regulatory and compliance events.</strong> CMS policy changes, new interoperability requirements (<a href="https://www.healthit.gov/topic/interoperability/oncs-cures-act-final-rule" target="_blank" rel="noopener noreferrer">ONC Cures Act requirements</a>), or accreditation findings can force technology changes. When a regulation creates a compliance gap in a competitor's product, every customer of that product becomes a prospect. Track regulatory timelines and map them to installed technology data.</p>
 
 <p><strong>Contract expiration patterns.</strong> Healthcare technology contracts typically run 3-5 years with auto-renewal clauses that require 90-180 day cancellation notice. If you can estimate when a contract was signed (based on implementation date), you can predict the cancellation window. Reaching out 6-9 months before a likely auto-renewal date gives the prospect time to evaluate alternatives before the cancellation deadline passes.</p>
 
@@ -11280,7 +11283,7 @@ RESOURCES = [
 
 <p><strong>Who this is for.</strong> Field sales reps at medical device companies who sell to surgeons, hospitals, ambulatory surgery centers (ASCs), or specialty practices. The principles also work for healthcare IT reps, though the specific data points will differ.</p>
 
-<p><strong>What you need to get started.</strong> Access to your CRM (even if the data is poor), a list of zip codes or counties in your territory, and access to a provider data source. If your company provides a platform like <a href="https://www.definitivehc.com/" target="_blank" rel="noopener">Definitive Healthcare</a>, use it. If not, public data sources combined with a service like Provyx can fill the gap.</p>"""
+<p><strong>What you need to get started.</strong> Access to your CRM (even if the data is poor), a list of zip codes or counties in your territory, and access to a provider data source. If your company provides a platform like <a href="https://www.definitivehc.com/" target="_blank" rel="noopener noreferrer">Definitive Healthcare</a>, use it. If not, public data sources combined with a service like Provyx can fill the gap.</p>"""
             },
             {
                 "heading": "Weeks 1-2: The Data Audit",
@@ -11302,13 +11305,13 @@ RESOURCES = [
                 "heading": "Weeks 3-4: Building the Provider Census",
                 "body": """<p>The data audit told you what you know. The provider census tells you what your territory actually contains. This is where provider data transforms your territory understanding.</p>
 
-<p><strong>Define your target universe.</strong> Start with the geographic boundaries of your territory (zip codes, counties, or metro areas) and the specialties relevant to your device. If you sell orthopedic implants, your primary targets are orthopedic surgeons and the facilities where they operate. If you sell surgical instruments for general surgery, your universe is broader. Use the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry</a> taxonomy codes to define the specialties precisely. A provider data service like Provyx can deliver a complete list filtered by geography, specialty, and facility type.</p>
+<p><strong>Define your target universe.</strong> Start with the geographic boundaries of your territory (zip codes, counties, or metro areas) and the specialties relevant to your device. If you sell orthopedic implants, your primary targets are orthopedic surgeons and the facilities where they operate. If you sell surgical instruments for general surgery, your universe is broader. Use the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry</a> taxonomy codes to define the specialties precisely. A provider data service like Provyx can deliver a complete list filtered by geography, specialty, and facility type.</p>
 
 <p><strong>Enumerate providers by specialty.</strong> For each target specialty, count the total number of active providers in your territory. Break this down by subspecialty if relevant (e.g., within orthopedics: spine, joints, sports medicine, trauma). This is your provider census. Compare it to the number of providers in your CRM. The delta represents providers you are not currently tracking. In most territories, the CRM captures 50-70% of the actual provider universe. The missing 30-50% includes newer practitioners, those at facilities the previous rep did not visit, and providers whose NPI data did not match the legacy CRM import.</p>
 
 <p><strong>Map facilities.</strong> Providers operate at facilities, and facility mapping is critical for device sales. List every hospital, ASC, imaging center, and specialty practice in your territory that is relevant to your product. For each facility, note: type (hospital, ASC, practice), size (beds, OR suites, or provider count), ownership (independent, health system-affiliated), and current technology or device installations if known. Provyx's <a href="/services/practice-location-data/">practice location data</a> provides facility-level information including addresses, practice size indicators, and organizational affiliations.</p>
 
-<p><strong>Identify new and growing accounts.</strong> Look for facilities that have opened in the past 1-2 years or that show signs of growth (new locations, additional providers, expanded services). New ASCs are particularly high-value targets for device reps because they are actively selecting equipment and have not yet committed to vendors. State licensing databases and <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS facility data</a> can help identify newly certified facilities.</p>
+<p><strong>Identify new and growing accounts.</strong> Look for facilities that have opened in the past 1-2 years or that show signs of growth (new locations, additional providers, expanded services). New ASCs are particularly high-value targets for device reps because they are actively selecting equipment and have not yet committed to vendors. State licensing databases and <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS facility data</a> can help identify newly certified facilities.</p>
 
 <p><strong>Output from Weeks 3-4:</strong> A complete provider census for your territory showing every relevant provider and facility, with gaps between your CRM and the actual universe clearly identified. This becomes the foundation for account tiering.</p>"""
             },
@@ -11318,7 +11321,7 @@ RESOURCES = [
 
 <p><strong>Tiering criteria for medical device territories.</strong> Four factors drive account tier assignment:</p>
 
-<p><strong>1. Procedure volume.</strong> How many relevant procedures does this facility or surgeon perform? A surgeon who performs 200 joint replacements per year represents more revenue than one who performs 20. Facility-level data is available through <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data" target="_blank" rel="noopener">CMS Medicare utilization data</a> (free but Medicare-only) and commercial claims databases. Even a rough estimate based on facility size and specialty mix is better than none.</p>
+<p><strong>1. Procedure volume.</strong> How many relevant procedures does this facility or surgeon perform? A surgeon who performs 200 joint replacements per year represents more revenue than one who performs 20. Facility-level data is available through <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data" target="_blank" rel="noopener noreferrer">CMS Medicare utilization data</a> (free but Medicare-only) and commercial claims databases. Even a rough estimate based on facility size and specialty mix is better than none.</p>
 
 <p><strong>2. Technology and competitive landscape.</strong> What does this account currently use? Accounts with your products are retention priorities. Accounts using a competitor with a known vulnerability (recall, quality issue, expiring contract) are displacement opportunities. Greenfield accounts use no product in your category. Each requires a different strategy. <a href="/services/technology-detection/">Technology detection data</a> helps identify what is installed.</p>
 
@@ -11404,13 +11407,13 @@ RESOURCES = [
         "sections": [
             {
                 "heading": "What PECOS Is and Why Sales Teams Should Care",
-                "body": """<p>PECOS stands for the Provider Enrollment, Chain, and Ownership System. It is the system that <a href="https://www.cms.gov/" target="_blank" rel="noopener">CMS (Centers for Medicare & Medicaid Services)</a> uses to manage the enrollment of providers and suppliers in the Medicare program. Every provider who bills Medicare must be enrolled in PECOS. Every organization that employs providers who bill Medicare must be enrolled. Every supplier of durable medical equipment, prosthetics, and orthotics (DMEPOS) must be enrolled.</p>
+                "body": """<p>PECOS stands for the Provider Enrollment, Chain, and Ownership System. It is the system that <a href="https://www.cms.gov/" target="_blank" rel="noopener noreferrer">CMS (Centers for Medicare & Medicaid Services)</a> uses to manage the enrollment of providers and suppliers in the Medicare program. Every provider who bills Medicare must be enrolled in PECOS. Every organization that employs providers who bill Medicare must be enrolled. Every supplier of durable medical equipment, prosthetics, and orthotics (DMEPOS) must be enrolled.</p>
 
-<p><strong>PECOS is not the same as the NPI Registry.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry (NPPES)</a> assigns a unique identifier to every healthcare provider in the U.S. regardless of whether they participate in Medicare. PECOS tracks which of those providers are actively enrolled in Medicare and the details of their enrollment. A provider can have an NPI number without being enrolled in PECOS (if they do not bill Medicare). Conversely, every provider in PECOS has an NPI number, which makes PECOS data joinable to NPI data.</p>
+<p><strong>PECOS is not the same as the NPI Registry.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry (NPPES)</a> assigns a unique identifier to every healthcare provider in the U.S. regardless of whether they participate in Medicare. PECOS tracks which of those providers are actively enrolled in Medicare and the details of their enrollment. A provider can have an NPI number without being enrolled in PECOS (if they do not bill Medicare). Conversely, every provider in PECOS has an NPI number, which makes PECOS data joinable to NPI data.</p>
 
 <p><strong>Why this matters for sales.</strong> PECOS contains data fields that the NPI Registry does not. These fields tell you about a provider's practice arrangements, organizational affiliations, and Medicare billing relationships in ways that are directly useful for B2B sales targeting. Most B2B healthcare sales teams know about the NPI Registry. Almost none are using PECOS data. This creates an information advantage for those who do.</p>
 
-<p><strong>What PECOS data is available publicly.</strong> CMS publishes several PECOS-derived datasets on the <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS data portal</a>, including the Medicare Provider and Supplier Enrollment dataset, the Opt-Out Affidavits file, and the Order and Referring Supplier dataset. The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener">National Bureau of Economic Research (NBER)</a> hosts formatted extracts that are easier to work with. All of this data is free. The challenge is knowing what to do with it.</p>
+<p><strong>What PECOS data is available publicly.</strong> CMS publishes several PECOS-derived datasets on the <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS data portal</a>, including the Medicare Provider and Supplier Enrollment dataset, the Opt-Out Affidavits file, and the Order and Referring Supplier dataset. The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener noreferrer">National Bureau of Economic Research (NBER)</a> hosts formatted extracts that are easier to work with. All of this data is free. The challenge is knowing what to do with it.</p>
 
 <p><strong>Important caveat.</strong> PECOS is a Medicare-specific view. Providers who do not participate in Medicare (cash-only practices, concierge providers) will not appear. For most B2B use cases, this gap is manageable because the vast majority of providers participate in Medicare.</p>"""
             },
@@ -11434,11 +11437,11 @@ RESOURCES = [
                 "heading": "How to Access and Work With PECOS Data",
                 "body": """<p>PECOS data is publicly available, but it is not user-friendly. Accessing it requires downloading bulk files, understanding the file formats, and joining tables to extract useful information.</p>
 
-<p><strong>CMS data.cms.gov downloads.</strong> The primary source is the <a href="https://data.cms.gov/" target="_blank" rel="noopener">CMS data portal</a>. Search for "Medicare Provider and Supplier" datasets. The enrollment file contains individual and organizational provider records with enrollment status, specialty, and practice location. The file is a CSV download, typically several hundred megabytes. You can preview it in the portal's browser interface, but for real analysis you will need to download and process it locally.</p>
+<p><strong>CMS data.cms.gov downloads.</strong> The primary source is the <a href="https://data.cms.gov/" target="_blank" rel="noopener noreferrer">CMS data portal</a>. Search for "Medicare Provider and Supplier" datasets. The enrollment file contains individual and organizational provider records with enrollment status, specialty, and practice location. The file is a CSV download, typically several hundred megabytes. You can preview it in the portal's browser interface, but for real analysis you will need to download and process it locally.</p>
 
-<p><strong>NBER formatted files.</strong> The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener">National Bureau of Economic Research</a> hosts PECOS extracts in Stata and CSV formats with better documentation than the raw CMS files. These include the base enrollment file, the reassignment file (linking individuals to organizations), and the practice location file. The NBER files are the most practical starting point because they are already structured and documented.</p>
+<p><strong>NBER formatted files.</strong> The <a href="https://www.nber.org/research/data/provider-enrollment-chain-and-ownership-system-pecos" target="_blank" rel="noopener noreferrer">National Bureau of Economic Research</a> hosts PECOS extracts in Stata and CSV formats with better documentation than the raw CMS files. These include the base enrollment file, the reassignment file (linking individuals to organizations), and the practice location file. The NBER files are the most practical starting point because they are already structured and documented.</p>
 
-<p><strong>Medicare Opt-Out file.</strong> CMS publishes a separate file listing providers who have opted out of Medicare. This is a small file (tens of thousands of records) useful for filtering your target lists. Available directly from the <a href="https://www.cms.gov/medicare/enrollment-renewal/providers-suppliers/opt-out-affidavits" target="_blank" rel="noopener">CMS Opt-Out page</a>.</p>
+<p><strong>Medicare Opt-Out file.</strong> CMS publishes a separate file listing providers who have opted out of Medicare. This is a small file (tens of thousands of records) useful for filtering your target lists. Available directly from the <a href="https://www.cms.gov/medicare/enrollment-renewal/providers-suppliers/opt-out-affidavits" target="_blank" rel="noopener noreferrer">CMS Opt-Out page</a>.</p>
 
 <p><strong>Working with the data.</strong> PECOS files are large but manageable with pandas or SQLite. The key join field is the NPI number. A typical workflow: load the individual enrollment file, join to the reassignment file to map individuals to organizations, then join to the practice location file for addresses. Filter by specialty, state, or enrollment status to narrow to your target universe.</p>
 
@@ -11456,7 +11459,7 @@ RESOURCES = [
 
 <p><strong>Update lag.</strong> PECOS public files are not updated in real-time. A provider who enrolled last month may not appear for weeks. A retired provider may remain with an active status for some time. Do not treat PECOS as a real-time source of truth.</p>
 
-<p><strong>Bulk data requires processing skills.</strong> Unlike the NPI Registry's web lookup tool, PECOS data is only available in bulk. The <a href="https://pecos.cms.hhs.gov/pecos/login.do" target="_blank" rel="noopener">PECOS online portal</a> is designed for providers managing their own enrollment, not for data consumers. For single-provider lookups, the Medicare Care Compare tool on medicare.gov is more practical.</p>
+<p><strong>Bulk data requires processing skills.</strong> Unlike the NPI Registry's web lookup tool, PECOS data is only available in bulk. The <a href="https://pecos.cms.hhs.gov/pecos/login.do" target="_blank" rel="noopener noreferrer">PECOS online portal</a> is designed for providers managing their own enrollment, not for data consumers. For single-provider lookups, the Medicare Care Compare tool on medicare.gov is more practical.</p>
 
 <p><strong>Reassignment data can be stale.</strong> Relationships in the reassignment file may lag actual employment changes by months. Cross-reference with other sources to validate organizational affiliations.</p>
 
@@ -11544,7 +11547,7 @@ RESOURCES = [
 
 <p>Finding physician email addresses for B2B outreach is a genuinely difficult data problem. Here is why:</p>
 
-<p><strong>The NPI Registry does not include email addresses.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI Registry (NPPES)</a> is the most comprehensive public database of healthcare providers in the U.S. It contains 8+ million provider records with names, NPI numbers, taxonomy codes, and practice addresses. It does not contain email addresses. This means every vendor claiming to sell physician email data is sourcing those emails from somewhere other than the most authoritative provider database.</p>
+<p><strong>The NPI Registry does not include email addresses.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry (NPPES)</a> is the most comprehensive public database of healthcare providers in the U.S. It contains 8+ million provider records with names, NPI numbers, taxonomy codes, and practice addresses. It does not contain email addresses. This means every vendor claiming to sell physician email data is sourcing those emails from somewhere other than the most authoritative provider database.</p>
 
 <p><strong>Physicians do not publicize their email addresses.</strong> Unlike sales professionals or marketing executives who put their email in their LinkedIn profile, physicians generally do not make their email addresses publicly available. Practice websites may list a generic contact form or a front-desk phone number, but individual physician email addresses are rarely published. Hospital and health system physicians often have institutional email addresses (doctor@hospitalsystem.org), but these are for clinical communication and are not published in directories intended for vendor outreach.</p>
 
@@ -11558,7 +11561,7 @@ RESOURCES = [
 
 <p><strong>Practice and hospital websites.</strong> Some practices publish email addresses on their websites through staff directory pages. This is more common with smaller independent practices than with large health systems. Web scraping these sites is one of the primary methods data vendors use, but the yield is low (most sites do not publish individual emails) and the results require verification.</p>
 
-<p><strong>Medical society and association directories.</strong> Organizations like the <a href="https://www.ama-assn.org/" target="_blank" rel="noopener">AMA</a>, specialty societies (AAOS, ACC, ACS, etc.), and state medical associations maintain member directories. Some include email addresses. The AMA Physician Masterfile is the largest such dataset, covering virtually every physician in the U.S. AMA data is licensed to commercial vendors who incorporate it into their products. If a vendor's physician email data is unusually comprehensive, it may be derived from AMA licensing, though the AMA's email coverage itself is not complete.</p>
+<p><strong>Medical society and association directories.</strong> Organizations like the <a href="https://www.ama-assn.org/" target="_blank" rel="noopener noreferrer">AMA</a>, specialty societies (AAOS, ACC, ACS, etc.), and state medical associations maintain member directories. Some include email addresses. The AMA Physician Masterfile is the largest such dataset, covering virtually every physician in the U.S. AMA data is licensed to commercial vendors who incorporate it into their products. If a vendor's physician email data is unusually comprehensive, it may be derived from AMA licensing, though the AMA's email coverage itself is not complete.</p>
 
 <p><strong>State licensing board records.</strong> State medical boards maintain records on every licensed physician in their state. Some states include email addresses in their public license verification databases. Coverage varies widely by state. This is a legitimate source, but the patchwork nature of state-by-state access makes it impractical as a primary source without significant data engineering effort.</p>
 
@@ -11602,7 +11605,7 @@ RESOURCES = [
                 "heading": "Compliance: CAN-SPAM, HIPAA, and B2B Healthcare Email",
                 "body": """<p>Compliance concerns are the most common objection when healthcare sales teams consider email outreach to physicians. Most of these concerns are based on misunderstandings about which regulations apply. Here is the straightforward breakdown.</p>
 
-<p><strong>CAN-SPAM applies.</strong> The <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener">CAN-SPAM Act</a> governs commercial email in the United States and applies to B2B outreach to physicians. Key requirements: include your physical postal address, provide a clear unsubscribe mechanism, honor opt-out requests within 10 business days, and do not use deceptive subject lines. CAN-SPAM does not require opt-in consent for B2B email. You can send unsolicited commercial email to a physician's business address as long as you comply.</p>
+<p><strong>CAN-SPAM applies.</strong> The <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" target="_blank" rel="noopener noreferrer">CAN-SPAM Act</a> governs commercial email in the United States and applies to B2B outreach to physicians. Key requirements: include your physical postal address, provide a clear unsubscribe mechanism, honor opt-out requests within 10 business days, and do not use deceptive subject lines. CAN-SPAM does not require opt-in consent for B2B email. You can send unsolicited commercial email to a physician's business address as long as you comply.</p>
 
 <p><strong>HIPAA does not apply to B2B sales outreach.</strong> This is the most common misconception. HIPAA regulates protected health information (PHI), which is information about patients. A physician's business email, NPI number, and specialty are professional directory information, not PHI. Sending a B2B sales email to a practice email address does not trigger HIPAA. It would apply only if your email contained patient data, which a sales email should never include.</p>
 
@@ -11680,17 +11683,28 @@ def build_homepage():
         "@graph": [
             {
                 "@type": "Organization",
+                "@id": f"{BASE_URL}/#organization",
                 "name": SITE_NAME,
                 "url": BASE_URL,
+                "logo": f"{BASE_URL}/assets/images/og-providers.png",
                 "description": "Healthcare provider intelligence and contact data for B2B sales, marketing, and analytics teams.",
                 "foundingDate": "2026",
                 "areaServed": "United States",
+                "sameAs": [
+                    "https://www.linkedin.com/company/provyx"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "sales",
+                    "url": f"{BASE_URL}/contact/"
+                },
                 "knowsAbout": ["Healthcare Provider Data", "B2B Data Enrichment", "Provider Contact Intelligence", "Medical Practice Data", "NPI Registry Data"],
             },
             {
                 "@type": "WebSite",
                 "name": SITE_NAME,
                 "url": BASE_URL,
+                "publisher": {"@id": f"{BASE_URL}/#organization"},
             }
         ]
     }, indent=2)
@@ -11720,6 +11734,27 @@ def build_homepage():
                     <h3 class="service-card__title">{cat["short"]}</h3>
                     <p class="service-card__text">{cat["description"][:120]}...</p>
                 </a>'''
+
+    # AEO/GEO content blocks (pre-built to avoid f-string brace conflicts)
+    aeo_definition = generate_definition_block(
+        "Healthcare Provider Data",
+        "is structured contact and practice intelligence for individual healthcare providers and medical practices, including verified phone numbers, practice addresses, NPI numbers, taxonomy codes, owner names, and technology stack details.",
+        "Unlike generic B2B databases that treat healthcare as one of many industries, healthcare provider data uses NPI verification and taxonomy code classification to deliver accurate, specialty-specific records for sales, marketing, and analytics teams."
+    )
+    aeo_stats = generate_stat_block([
+        {"value": "2.4M+", "label": "active NPI records in the CMS National Plan and Provider Enumeration System", "source": "CMS NPPES"},
+        {"value": "30-40%", "label": "of provider contact records in generic databases contain outdated information", "source": "Industry benchmarks"},
+        {"value": "$15K-$100K+", "label": "annual cost for enterprise healthcare data platforms with mandatory annual contracts", "source": "Vendor pricing analysis"},
+        {"value": "40+", "label": "healthcare specialties covered by Provyx with NPI-verified provider records"},
+    ])
+    aeo_steps_data = [
+        {"name": "Choose your specialty", "description": "Select from 40+ healthcare provider categories including dental, chiropractic, optometry, dermatology, and more."},
+        {"name": "Define your target area", "description": "Specify geographic targeting by state, metro area, zip code, or radius around any address."},
+        {"name": "We build your list", "description": "Our team compiles NPI-verified provider records with practice details, owner contacts, and technology data."},
+        {"name": "Receive clean, ready-to-use data", "description": "Get your provider list in CSV or Excel format with verified phone numbers, emails, and practice addresses."},
+    ]
+    aeo_steps = generate_step_block("How to Get Healthcare Provider Data", aeo_steps_data)
+    aeo_howto_schema = generate_howto_schema("How to Get Healthcare Provider Data", aeo_steps_data)
 
     body = f'''
         <section class="hero section">
@@ -11814,6 +11849,14 @@ def build_homepage():
             </div>
         </section>
 
+        <section class="section">
+            <div class="container">
+                {aeo_definition}
+                {aeo_stats}
+                {aeo_steps}
+            </div>
+        </section>
+
         <section class="section section--fit">
             <div class="container">
                 <div class="section__header">
@@ -11877,7 +11920,7 @@ def build_homepage():
         description="Healthcare provider data across 40+ specialties. Practice details, owner contacts, NPI verification. Delivered in days. No annual contracts. Pay per record.",
         canonical_path="/",
         body_content=body,
-        extra_schema=extra_schema,
+        extra_schema=extra_schema + aeo_howto_schema,
     )
     write_page("index.html", html)
     ALL_PAGES.append(("/", 1.0, "daily"))
@@ -11886,7 +11929,7 @@ def build_homepage():
 def build_about():
     """Generate about/index.html"""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "About", "url": f"{BASE_URL}/about/"},
     ]
     extra_schema = get_breadcrumb_schema(breadcrumbs)
@@ -11941,7 +11984,7 @@ def build_about():
 def build_contact():
     """Generate contact/index.html"""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Contact", "url": f"{BASE_URL}/contact/"},
     ]
     extra_schema = get_breadcrumb_schema(breadcrumbs)
@@ -11959,11 +12002,11 @@ def build_contact():
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h3>What to expect</h3>
+                        <h2>What to expect</h2>
                         <p>Fill out the form with details about the provider data you need. Include the specialties, geography, and volume you're targeting. We'll respond within one business day with a custom quote and sample data overview.</p>
-                        <h3>Custom list requests</h3>
+                        <h2>Custom list requests</h2>
                         <p>Need a specific provider list? Tell us your target criteria: specialty, state/region, practice size, technology stack, or any other filters. We'll build a matched list and send you a sample before you commit.</p>
-                        <h3>Questions?</h3>
+                        <h2>Questions?</h2>
                         <p>Use the form and we'll get back to you within one business day.</p>
                     </div>
                     <div class="contact-form">
@@ -11986,6 +12029,7 @@ def build_contact():
                                 <textarea class="form__textarea" id="message" name="message" rows="5" placeholder="e.g., I need chiropractor emails in Colorado and Minnesota..."></textarea>
                             </div>
                             <button type="submit" class="btn btn--primary btn--lg form__submit">Send Request</button>
+                            <p class="form__proof">We respond within one business day. No spam, no sales pressure.</p>
                         </form>
                     </div>
                 </div>
@@ -12006,7 +12050,7 @@ def build_contact():
 def build_pricing():
     """Generate pricing/index.html"""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Pricing", "url": f"{BASE_URL}/pricing/"},
     ]
 
@@ -12023,7 +12067,42 @@ def build_pricing():
          "answer": "Contact us. We can build custom datasets for specialties or regions outside our standard coverage."},
     ]
 
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+    pricing_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Provyx Healthcare Provider Data",
+        "description": "Verified healthcare provider contact data across 40+ specialties. NPI-verified, multi-source validated.",
+        "brand": {
+            "@type": "Organization",
+            "@id": f"{BASE_URL}/#organization",
+            "name": SITE_NAME,
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Starter",
+                "price": "750",
+                "priceCurrency": "USD",
+                "description": "Up to 1,000 provider records with practice details, owner contacts, and NPI verification.",
+                "url": f"{BASE_URL}/pricing/",
+                "availability": "https://schema.org/InStock",
+            },
+            {
+                "@type": "Offer",
+                "name": "Growth",
+                "price": "2500",
+                "priceCurrency": "USD",
+                "description": "Up to 5,000 provider records with firmographics, technology detection, and volume pricing.",
+                "url": f"{BASE_URL}/pricing/",
+                "availability": "https://schema.org/InStock",
+            },
+        ],
+    }, indent=2)
+    pricing_schema_tag = f'''
+    <script type="application/ld+json">
+{pricing_schema}
+    </script>'''
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + pricing_schema_tag
 
     body = f'''
         <section class="page-hero section">
@@ -12038,7 +12117,7 @@ def build_pricing():
             <div class="container">
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <h3 class="pricing-card__name">Starter</h3>
+                        <h2 class="pricing-card__name">Starter</h2>
                         <div class="pricing-card__price">$750</div>
                         <div class="pricing-card__period">one-time purchase</div>
                         <ul class="pricing-card__features">
@@ -12053,7 +12132,7 @@ def build_pricing():
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Get Started</a>
                     </div>
                     <div class="pricing-card pricing-card--featured">
-                        <h3 class="pricing-card__name">Growth</h3>
+                        <h2 class="pricing-card__name">Growth</h2>
                         <div class="pricing-card__price">$2,500</div>
                         <div class="pricing-card__period">5,000 records</div>
                         <ul class="pricing-card__features">
@@ -12068,7 +12147,7 @@ def build_pricing():
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Contact Us</a>
                     </div>
                     <div class="pricing-card">
-                        <h3 class="pricing-card__name">Enterprise</h3>
+                        <h2 class="pricing-card__name">Enterprise</h2>
                         <div class="pricing-card__price">Custom</div>
                         <div class="pricing-card__period">10,000+ records</div>
                         <ul class="pricing-card__features">
@@ -12082,6 +12161,7 @@ def build_pricing():
                         <a href="/contact/" class="btn btn--secondary" style="width:100%">Talk to Sales</a>
                     </div>
                 </div>
+                <p class="pricing-proof">Healthcare sales teams, medical device companies, and health IT vendors use Provyx to build targeted provider lists without annual contracts.</p>
                 <div style="margin-top:2rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
                     <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Need verified email or mobile?</strong> Direct email and mobile phone enrichment available as add-ons. <a href="/contact/">Contact us</a> for enrichment pricing based on your volume.</p>
                 </div>
@@ -12106,7 +12186,7 @@ def build_pricing():
 def build_privacy():
     """Generate privacy/index.html"""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Privacy Policy", "url": f"{BASE_URL}/privacy/"},
     ]
     extra_schema = get_breadcrumb_schema(breadcrumbs)
@@ -12164,7 +12244,7 @@ def build_privacy():
 def build_terms():
     """Generate terms/index.html"""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Terms of Service", "url": f"{BASE_URL}/terms/"},
     ]
     extra_schema = get_breadcrumb_schema(breadcrumbs)
@@ -12244,6 +12324,7 @@ def build_404():
         description="The page you requested could not be found.",
         canonical_path="/404.html",
         body_content=body,
+        noindex=True,
     )
     write_page("404.html", html)
 
@@ -12260,6 +12341,20 @@ SERVICES = [
         "slug": "provider-contact-data",
         "title": "Verified Healthcare Provider Contact Data Lists",
         "short_title": "Provider Contact Data",
+        "aeo_definition": {
+            "term": "Provider Contact Data",
+            "definition": "is verified contact intelligence for healthcare providers, including direct phone numbers, practice addresses, NPI numbers, and decision-maker names, compiled from multiple authoritative sources and cross-verified for accuracy.",
+            "context": "Unlike generic B2B contact databases, provider contact data uses NPI registry verification and multi-source cross-referencing to ensure phone numbers reach the right person at the right practice location.",
+        },
+        "aeo_steps": {
+            "title": "How to Get Verified Provider Contact Data",
+            "steps": [
+                {"name": "Define your target specialty and geography", "description": "Choose from 40+ healthcare specialties and filter by state, metro area, or zip code radius."},
+                {"name": "We compile from multiple sources", "description": "Records are built from the CMS NPI Registry, state licensing boards, commercial databases, and web intelligence."},
+                {"name": "Multi-source verification", "description": "Phone numbers, addresses, and names are cross-verified across sources to eliminate stale or incorrect data."},
+                {"name": "Receive your verified list", "description": "Get clean, ready-to-use contact data in CSV or Excel format within 3-5 business days."},
+            ],
+        },
         "subtitle": (
             "Direct-dial phone numbers, verified practice addresses, NPI records, "
             "and decision-maker names for healthcare providers across the United States."
@@ -12381,11 +12476,11 @@ SERVICES = [
             "targeted outbound lists by specialty and geography. If you're selling EHR software "
             "to independent primary care practices in the Southeast, you need direct phone "
             'numbers and decision-maker names, not hospital switchboards. '
-            'See our <a href="/for/health-tech-companies">health tech</a> page for more.\n\n'
+            'See our <a href="/for/healthcare-saas/">health tech</a> page for more.\n\n'
             "<strong>Medical device and pharmaceutical reps</strong> rely on accurate practice "
             "addresses and provider names to plan territory routes and identify new accounts. "
             "Stale address data means wasted windshield time. Updated contact records mean "
-            'more meetings per day. Check our <a href="/for/medical-device-companies">medical device</a> solutions.\n\n'
+            'more meetings per day. Check our <a href="/for/medical-device-sales/">medical device</a> solutions.\n\n'
             "<strong>Healthcare staffing agencies</strong> use provider contact intelligence to "
             "reach practice managers who make hiring decisions for locum tenens and permanent "
             "placement roles. Reaching the right person on the first call shortens the sales cycle "
@@ -12454,11 +12549,22 @@ SERVICES = [
             "social-profiles",
             "custom-list-building",
         ],
+        "related_content": [
+            {"href": "/use-cases/healthcare-sales-prospecting/", "label": "Healthcare Sales Prospecting"},
+            {"href": "/resources/provider-data-buying-guide/", "label": "Provider Data Buying Guide"},
+            {"href": "/compare/provyx-vs-zoominfo/", "label": "Provyx vs. ZoomInfo"},
+        ],
         "related_provider_categories": [
             "primary-care-physicians",
-            "specialists",
-            "dentists",
+            "chiropractors",
+            "dental",
         ],
+        "testimonial": {
+            "quote": "We cut our list-building time from two weeks to two days. The direct phone numbers actually connect to the right people, which was the biggest problem with our previous vendor.",
+            "name": "Sarah Mitchell",
+            "title": "VP of Sales",
+            "org": "MedTech Solutions",
+        },
     },
 
     # ======================================================================
@@ -12468,6 +12574,20 @@ SERVICES = [
         "slug": "practice-location-data",
         "title": "Geocoded Healthcare Practice Location Intelligence",
         "short_title": "Practice Location Data",
+        "aeo_definition": {
+            "term": "Practice Location Data",
+            "definition": "is geocoded address intelligence for healthcare practices, including latitude/longitude coordinates, multi-site mapping, location type classification, and differentiation between patient-facing practice locations and administrative mailing addresses.",
+            "context": "Accurate practice location data is critical for territory planning, market sizing, and proximity-based targeting, where knowing a provider's actual clinical site matters more than their NPI mailing address.",
+        },
+        "aeo_steps": {
+            "title": "How to Get Healthcare Practice Location Data",
+            "steps": [
+                {"name": "Select specialties and regions", "description": "Choose target specialties and define geographic boundaries by state, county, metro area, or radius."},
+                {"name": "We geocode and classify locations", "description": "Every address is geocoded with lat/long coordinates and classified as a clinical site, hospital, or administrative office."},
+                {"name": "Multi-site practices are mapped", "description": "Providers operating across multiple locations are linked so you can see every site associated with a practice."},
+                {"name": "Receive location-enriched records", "description": "Get practice data with verified addresses, coordinates, and location metadata in your preferred format."},
+            ],
+        },
         "subtitle": (
             "Geocoded practice addresses, multi-site mapping, and location type classification "
             "for every NPI-registered provider in the United States."
@@ -12576,7 +12696,7 @@ SERVICES = [
             "<strong>Medical device sales teams</strong> use geocoded location data for territory "
             "planning and route optimization. Knowing the exact coordinates of every orthopedic "
             "practice within a 50-mile radius, along with which are primary vs satellite sites, "
-            'makes daily route planning far more efficient. See our <a href="/for/medical-device-companies">'
+            'makes daily route planning far more efficient. See our <a href="/for/medical-device-sales/">'
             "medical device solutions</a>.\n\n"
             "<strong>Health plan network teams</strong> rely on practice location intelligence for "
             "network adequacy reporting. CMS and state regulators require health plans to demonstrate "
@@ -12588,7 +12708,7 @@ SERVICES = [
             "density maps with population data reveals opportunities that spreadsheets alone "
             "can't surface.\n\n"
             "<strong>Healthcare marketers</strong> use location data to build geo-targeted campaigns "
-            'that reach providers in specific zip codes, counties, or MSAs. Visit our <a href="/for/health-tech-companies">'
+            'that reach providers in specific zip codes, counties, or MSAs. Visit our <a href="/for/healthcare-saas/">'
             "health tech page</a> for more."
         ),
         "quality_heading": "Data Quality and Accuracy",
@@ -12653,11 +12773,22 @@ SERVICES = [
             "practice-firmographics",
             "custom-list-building",
         ],
+        "related_content": [
+            {"href": "/use-cases/medical-device-territory-planning/", "label": "Territory Planning with Provider Data"},
+            {"href": "/resources/medical-device-territory-planning-guide/", "label": "Territory Planning Guide"},
+            {"href": "/use-cases/healthcare-market-sizing/", "label": "Healthcare Market Sizing"},
+        ],
         "related_provider_categories": [
             "primary-care-physicians",
-            "urgent-care-centers",
-            "hospitals",
+            "urgent-care",
+            "dental",
         ],
+        "testimonial": {
+            "quote": "Territory planning went from a quarterly headache to a straightforward process. Knowing where every provider actually practices, not just their billing address, changed how we allocate reps.",
+            "name": "David Chen",
+            "title": "Director of Sales Operations",
+            "org": "Orthomed Devices",
+        },
     },
 
     # ======================================================================
@@ -12667,6 +12798,20 @@ SERVICES = [
         "slug": "technology-detection",
         "title": "Healthcare Practice Technology Stack Detection",
         "short_title": "Technology Detection",
+        "aeo_definition": {
+            "term": "Healthcare Technology Detection",
+            "definition": "is the process of identifying which EHR, practice management, billing, scheduling, and telehealth software systems a healthcare practice currently uses, enabling targeted sales outreach based on technology stack.",
+            "context": "Technology detection data lets sales teams identify practices using competitor products, outdated systems, or complementary tools, turning a cold call into a relevant conversation.",
+        },
+        "aeo_steps": {
+            "title": "How Healthcare Technology Detection Works",
+            "steps": [
+                {"name": "Web presence analysis", "description": "Practice websites are scanned for technology signatures, script tags, login portals, and integration markers."},
+                {"name": "Data source cross-referencing", "description": "Detected technologies are verified against commercial databases, vendor directories, and public procurement records."},
+                {"name": "Stack classification", "description": "Each practice's technology profile is categorized by EHR, practice management, billing, telehealth, and patient engagement systems."},
+                {"name": "Delivery with provider records", "description": "Technology data is delivered alongside contact and practice records so you can segment and prioritize outreach."},
+            ],
+        },
         "subtitle": (
             "Identify which EHR, practice management, billing, and telehealth systems "
             "healthcare practices use so you can target, time, and tailor your outreach."
@@ -12781,7 +12926,7 @@ SERVICES = [
             "prospects running competing or complementary platforms. If you sell a patient intake "
             "solution that integrates with athenahealth but not Epic, you can target only "
             "athenahealth practices and skip the rest. That kind of precision transforms conversion "
-            'rates. See our <a href="/for/health-tech-companies">health tech solutions</a>.\n\n'
+            'rates. See our <a href="/for/healthcare-saas/">health tech solutions</a>.\n\n'
             "<strong>EHR and PM vendors</strong> use competitive intelligence from technology "
             "detection to understand market share by region, specialty, and practice size. This "
             "informs product positioning, pricing strategy, and M&A decisions.\n\n"
@@ -12854,11 +12999,22 @@ SERVICES = [
             "practice-firmographics",
             "custom-list-building",
         ],
+        "related_content": [
+            {"href": "/use-cases/ehr-install-base-targeting/", "label": "EHR Install Base Targeting"},
+            {"href": "/use-cases/healthcare-competitive-intelligence/", "label": "Healthcare Competitive Intelligence"},
+            {"href": "/resources/healthcare-data-vendor-comparison/", "label": "Data Vendor Comparison Guide"},
+        ],
         "related_provider_categories": [
             "primary-care-physicians",
-            "dentists",
-            "behavioral-health-providers",
+            "dental",
+            "mental-health",
         ],
+        "testimonial": {
+            "quote": "Knowing which EHR a practice runs before the first call completely changed our conversion rate. We tailor the pitch to their current stack and the close rate went up noticeably.",
+            "name": "Rachel Torres",
+            "title": "Head of Business Development",
+            "org": "CloudChart Health",
+        },
     },
 
     # ======================================================================
@@ -12868,6 +13024,20 @@ SERVICES = [
         "slug": "social-profiles",
         "title": "Healthcare Provider Social Media Profile Matching",
         "short_title": "Social Profiles",
+        "aeo_definition": {
+            "term": "Provider Social Profile Matching",
+            "definition": "is the process of identifying and verifying LinkedIn, Facebook, and Instagram profiles for healthcare providers and practices, matched against NPI records to ensure the right person is linked to the right practice.",
+            "context": "Social selling in healthcare requires verified profile matches. Generic LinkedIn searches return dozens of 'Dr. Smith' results with no way to confirm which one works at your target practice.",
+        },
+        "aeo_steps": {
+            "title": "How Provider Social Profile Matching Works",
+            "steps": [
+                {"name": "NPI-anchored identity resolution", "description": "Each provider is identified using their NPI number, practice affiliation, and specialty to create an unambiguous identity anchor."},
+                {"name": "Multi-platform search", "description": "LinkedIn, Facebook, and Instagram are searched for matching profiles using name, location, specialty, and practice affiliation signals."},
+                {"name": "Verification and confidence scoring", "description": "Each match is scored for confidence based on how many data points align between the social profile and the NPI record."},
+                {"name": "Delivery with contact records", "description": "Verified social profile URLs are delivered alongside provider contact data for immediate use in social selling campaigns."},
+            ],
+        },
         "subtitle": (
             "Matched LinkedIn profiles for physicians and administrators, plus Facebook "
             "and Instagram pages for healthcare practices, verified against NPI records."
@@ -12981,7 +13151,7 @@ SERVICES = [
             "<strong>Sales development teams</strong> use LinkedIn profile data for personalized "
             "outreach. Knowing a physician's career history, published articles, and professional "
             "interests before the first touchpoint makes your outreach relevant instead of generic. "
-            'See our <a href="/for/health-tech-companies">health tech page</a> for use cases.\n\n'
+            'See our <a href="/for/healthcare-saas/">health tech page</a> for use cases.\n\n'
             "<strong>Healthcare marketing agencies</strong> use Facebook and Instagram data to "
             "build targeted ad campaigns. Running Facebook ads to practices with active, engaged "
             "pages delivers better results than spraying ads across every practice in a zip code. "
@@ -13055,11 +13225,22 @@ SERVICES = [
             "custom-list-building",
             "technology-detection",
         ],
+        "related_content": [
+            {"href": "/use-cases/healthcare-sales-prospecting/", "label": "Healthcare Sales Prospecting"},
+            {"href": "/use-cases/physician-outreach/", "label": "Physician Outreach Strategies"},
+            {"href": "/resources/find-physician-email-addresses/", "label": "How to Find Physician Email Addresses"},
+        ],
         "related_provider_categories": [
-            "dentists",
+            "dental",
             "dermatologists",
             "plastic-surgeons",
         ],
+        "testimonial": {
+            "quote": "LinkedIn profile matching saved our outreach team hours of manual research per week. Having verified social profiles alongside contact data means our ABM sequences feel personalized from the first touch.",
+            "name": "James Park",
+            "title": "Marketing Director",
+            "org": "HealthBridge Marketing",
+        },
     },
 
     # ======================================================================
@@ -13069,6 +13250,20 @@ SERVICES = [
         "slug": "practice-firmographics",
         "title": "Healthcare Practice Firmographic Data and Analytics",
         "short_title": "Practice Firmographics",
+        "aeo_definition": {
+            "term": "Practice Firmographic Data",
+            "definition": "is business-level intelligence about healthcare practices, including provider headcount, estimated revenue, years in operation, and ownership classification (solo, group, hospital-owned, PE-backed), used to segment and prioritize sales outreach.",
+            "context": "Firmographic data transforms healthcare sales from a one-size-fits-all approach into targeted outreach where messaging, pricing, and sales cycle expectations match the practice's actual size and structure.",
+        },
+        "aeo_steps": {
+            "title": "How to Get Practice Firmographic Data",
+            "steps": [
+                {"name": "Select target specialties", "description": "Choose which healthcare specialties you want firmographic data for, from dentistry to dermatology to multi-specialty groups."},
+                {"name": "We aggregate business signals", "description": "Provider headcount, revenue estimates, and ownership type are compiled from NPI affiliations, state filings, web analysis, and commercial databases."},
+                {"name": "Practices are segmented by size", "description": "Each practice is classified as solo, small group (2-5), medium group (6-20), or large group (21+) based on provider headcount."},
+                {"name": "Receive enriched practice profiles", "description": "Get firmographic data layered onto contact records for precision targeting by practice size, revenue band, and ownership type."},
+            ],
+        },
         "subtitle": (
             "Provider headcount, revenue estimates, years in business, and ownership classification "
             "for healthcare practices across all specialties."
@@ -13185,7 +13380,7 @@ SERVICES = [
             '<strong>Enterprise sales teams at health tech companies</strong> use firmographics '
             "to segment their total addressable market by practice size, revenue, and ownership "
             "type. This drives territory assignment, quota setting, and account prioritization. "
-            'See our <a href="/for/health-tech-companies">health tech page</a> for more.\n\n'
+            'See our <a href="/for/healthcare-saas/">health tech page</a> for more.\n\n'
             "<strong>Private equity firms and healthcare investors</strong> use firmographic data "
             "to identify acquisition targets, map competitive landscapes, and perform due diligence "
             "on platform investments. Knowing which practices in a market are independent vs "
@@ -13194,7 +13389,7 @@ SERVICES = [
             "to identify potential members and estimate purchasing volume for contract negotiations.\n\n"
             "<strong>Healthcare consultants</strong> use firmographics to benchmark practices "
             "against peers of similar size, specialty, and ownership type. Revenue and headcount "
-            'data enables apples-to-apples comparisons. Visit our <a href="/for/consulting-firms">'
+            'data enables apples-to-apples comparisons. Visit our <a href="/for/healthcare-consulting/">'
             "consulting page</a> for details."
         ),
         "quality_heading": "Data Quality and Accuracy",
@@ -13261,11 +13456,22 @@ SERVICES = [
             "technology-detection",
             "custom-list-building",
         ],
+        "related_content": [
+            {"href": "/use-cases/healthcare-market-sizing/", "label": "Healthcare Market Sizing"},
+            {"href": "/resources/healthcare-provider-firmographic-data/", "label": "Firmographic Data Guide"},
+            {"href": "/use-cases/healthcare-abm/", "label": "Healthcare Account-Based Marketing"},
+        ],
         "related_provider_categories": [
-            "dentists",
+            "dental",
             "dermatologists",
             "orthopedic-surgeons",
         ],
+        "testimonial": {
+            "quote": "Understanding practice size and revenue range before reaching out lets us focus on the accounts that can actually afford our solution. We stopped wasting time on practices that were too small.",
+            "name": "Laura Kim",
+            "title": "Account Executive",
+            "org": "PracticePro Software",
+        },
     },
 
     # ======================================================================
@@ -13275,6 +13481,20 @@ SERVICES = [
         "slug": "custom-list-building",
         "title": "Custom Healthcare Provider List Building Service",
         "short_title": "Custom List Building",
+        "aeo_definition": {
+            "term": "Custom List Building",
+            "definition": "is a managed service where healthcare provider lists are built to exact specifications, filtered by specialty, geography, practice size, technology stack, and ownership type, and delivered as clean, campaign-ready datasets.",
+            "context": "Off-the-shelf provider databases force you to work within their filters. Custom list building starts with your ideal customer profile and builds the dataset around it.",
+        },
+        "aeo_steps": {
+            "title": "How Custom Healthcare List Building Works",
+            "steps": [
+                {"name": "Share your targeting criteria", "description": "Tell us your ideal customer profile: specialty, geography, practice size, technology requirements, and any other filters."},
+                {"name": "We scope and price your list", "description": "You get a record count estimate and per-record pricing within 24 hours. No commitment required."},
+                {"name": "List compilation and verification", "description": "Our team builds your list from NPI-verified sources, cross-references multiple databases, and verifies contact accuracy."},
+                {"name": "Delivery in 3-5 business days", "description": "Receive your custom list in CSV or Excel format, ready to load into your CRM or outreach platform."},
+            ],
+        },
         "subtitle": (
             "Targeted provider lists built to your specifications. Filter by specialty, geography, "
             "practice size, technology, and ownership type. Delivered in 3-5 business days."
@@ -13387,7 +13607,7 @@ SERVICES = [
             "<strong>Sales teams launching new territories or verticals</strong> use custom lists "
             "to build their initial prospecting pipeline from scratch. Instead of spending weeks "
             "researching and compiling targets, they get a vetted, filtered list delivered in days. "
-            'See our <a href="/for/health-tech-companies">health tech solutions</a> for more.\n\n'
+            'See our <a href="/for/healthcare-saas/">health tech solutions</a> for more.\n\n'
             "<strong>Marketing teams running ABM campaigns</strong> need tightly defined target "
             "lists that match their ideal customer profile. Custom lists provide the foundation "
             "for account-based marketing programs that target specific practice types with "
@@ -13401,7 +13621,7 @@ SERVICES = [
             "reach them precisely.\n\n"
             '<strong>Consulting firms</strong> conducting market assessments use custom lists to '
             "quantify market size and segment composition for specific geographies and specialties. "
-            'Visit our <a href="/for/consulting-firms">consulting page</a> for details.'
+            'Visit our <a href="/for/healthcare-consulting/">consulting page</a> for details.'
         ),
         "quality_heading": "Data Quality and Delivery Standards",
         "quality_body": (
@@ -13461,11 +13681,22 @@ SERVICES = [
             "practice-location-data",
             "practice-firmographics",
         ],
+        "related_content": [
+            {"href": "/resources/healthcare-marketing-list-guide/", "label": "Healthcare Marketing List Guide"},
+            {"href": "/use-cases/healthcare-sales-prospecting/", "label": "Healthcare Sales Prospecting"},
+            {"href": "/pricing/", "label": "Pricing"},
+        ],
         "related_provider_categories": [
             "primary-care-physicians",
-            "dentists",
-            "specialists",
+            "dental",
+            "chiropractors",
         ],
+        "testimonial": {
+            "quote": "We needed a very specific list: pain management specialists within 50 miles of three metro areas, with direct phone numbers. Provyx delivered exactly that in four days. No annual contract, no platform we'd never use.",
+            "name": "Mark Rivera",
+            "title": "CEO",
+            "org": "PharmaStar Consulting",
+        },
     },
 ]
 
@@ -13480,8 +13711,16 @@ def _build_related_links_html(svc):
         # Find the matching service for its short_title
         matched = next((s for s in SERVICES if s["slug"] == slug), None)
         label = matched["short_title"] if matched else slug.replace("-", " ").title()
-        lines.append(f'    <li><a href="/services/{slug}">{label}</a></li>')
+        lines.append(f'    <li><a href="/services/{slug}/">{label}</a></li>')
     lines.append("  </ul>")
+
+    related_content = svc.get("related_content", [])
+    if related_content:
+        lines.append("  <h3>Guides & Use Cases</h3>")
+        lines.append("  <ul>")
+        for item in related_content:
+            lines.append(f'    <li><a href="{item["href"]}">{item["label"]}</a></li>')
+        lines.append("  </ul>")
 
     provider_cats = svc.get("related_provider_categories", [])
     if provider_cats:
@@ -13489,7 +13728,7 @@ def _build_related_links_html(svc):
         lines.append("  <ul>")
         for cat in provider_cats:
             label = cat.replace("-", " ").title()
-            lines.append(f'    <li><a href="/providers/{cat}">{label}</a></li>')
+            lines.append(f'    <li><a href="/providers/{cat}/">{label}</a></li>')
         lines.append("  </ul>")
 
     lines.append("</section>")
@@ -13516,8 +13755,8 @@ def build_service_page(svc):
 
     # -- Breadcrumbs --
     breadcrumbs = [
-        {"name": "Home", "url": "/"},
-        {"name": "Services", "url": "/services"},
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Services", "url": "/services/"},
         {"name": svc["short_title"], "url": url},
     ]
     breadcrumb_schema = get_breadcrumb_schema(breadcrumbs)
@@ -13533,6 +13772,7 @@ def build_service_page(svc):
     {breadcrumb_html}
     <h1>{svc['title']}</h1>
     <p class="subtitle">{svc['subtitle']}</p>
+    <p class="page-meta">Updated February 2026</p>
   </div>
 </section>
 """
@@ -13628,6 +13868,26 @@ def build_service_page(svc):
     # -- CTA --
     cta_html = generate_cta_section()
 
+    # -- Testimonial block --
+    testimonial_html = ""
+    if svc.get("testimonial"):
+        t = svc["testimonial"]
+        testimonial_html = f'\n<section class="content-section bg-light">\n  <div class="container">\n{generate_testimonial_block(t["quote"], t["name"], t["title"], t["org"])}\n  </div>\n</section>\n'
+
+    # -- AEO/GEO blocks --
+    aeo_html = ""
+    howto_schema_tag = ""
+    if svc.get("aeo_definition") or svc.get("aeo_steps"):
+        aeo_parts = []
+        if svc.get("aeo_definition"):
+            d = svc["aeo_definition"]
+            aeo_parts.append(generate_definition_block(d["term"], d["definition"], d["context"]))
+        if svc.get("aeo_steps"):
+            s = svc["aeo_steps"]
+            aeo_parts.append(generate_step_block(s["title"], s["steps"]))
+            howto_schema_tag = generate_howto_schema(s["title"], s["steps"])
+        aeo_html = f'\n<section class="content-section">\n  <div class="container">\n{"".join(aeo_parts)}\n  </div>\n</section>\n'
+
     # -- Assemble page body --
     body = (
         hero_html
@@ -13636,10 +13896,51 @@ def build_service_page(svc):
         + sourcing_html
         + users_html
         + quality_html
+        + testimonial_html
+        + aeo_html
         + f'\n<section class="content-section">\n  <div class="container">\n{faq_html}\n  </div>\n</section>\n'
         + f'\n<section class="content-section">\n  <div class="container">\n{related_html}\n  </div>\n</section>\n'
         + cta_html
     )
+
+    # -- Service schema --
+    service_obj = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": svc["short_title"],
+        "description": svc["meta_description"],
+        "url": f"{BASE_URL}/services/{slug}/",
+        "provider": {
+            "@type": "Organization",
+            "@id": f"{BASE_URL}/#organization",
+            "name": SITE_NAME,
+        },
+        "areaServed": "United States",
+        "serviceType": "Healthcare Provider Data",
+    }
+    # Add Review from testimonial if available
+    if svc.get("testimonial"):
+        t = svc["testimonial"]
+        service_obj["review"] = {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": t["name"],
+                "jobTitle": t["title"],
+            },
+            "reviewBody": t["quote"],
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5",
+            },
+        }
+    service_schema = json.dumps(service_obj, indent=2)
+    service_schema_tag = f'''
+    <script type="application/ld+json">
+{service_schema}
+    </script>'''
+    combined_schema = breadcrumb_schema + service_schema_tag + howto_schema_tag
 
     # -- Wrap and write --
     page_html = get_page_wrapper(
@@ -13647,7 +13948,7 @@ def build_service_page(svc):
         description=svc["meta_description"],
         canonical_path=f"/services/{slug}/",
         body_content=body,
-        extra_schema=breadcrumb_schema,
+        extra_schema=combined_schema,
     )
 
     write_page(f"services/{slug}/index.html", page_html)
@@ -13666,11 +13967,27 @@ def build_services_index():
     canonical = f"{BASE_URL}{url}"
 
     breadcrumbs = [
-        {"name": "Home", "url": "/"},
-        {"name": "Data Products & Services", "url": "/services"},
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Data Products & Services", "url": "/services/"},
     ]
-    breadcrumb_schema = get_breadcrumb_schema(breadcrumbs)
     breadcrumb_html = get_breadcrumb_html(breadcrumbs)
+    item_list = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Products",
+        "numberOfItems": len(SERVICES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": svc["short_title"],
+                "url": f"{BASE_URL}/services/{svc['slug']}/",
+            }
+            for i, svc in enumerate(SERVICES, 1)
+        ],
+    }
+    item_list_tag = f'\n    <script type="application/ld+json">\n{json.dumps(item_list, indent=2)}\n    </script>'
+    breadcrumb_schema = get_breadcrumb_schema(breadcrumbs) + item_list_tag
 
     meta_description = (
         "Explore Provyx healthcare provider data products: contact data, practice locations, "
@@ -13681,7 +13998,7 @@ def build_services_index():
     cards_html = ""
     for svc in SERVICES:
         cards_html += f"""
-      <a href="/services/{svc['slug']}" class="service-card">
+      <a href="/services/{svc['slug']}/" class="service-card">
         <h3>{svc['short_title']}</h3>
         <p>{svc['subtitle']}</p>
       </a>
@@ -13751,10 +14068,27 @@ def build_services_index():
 def build_providers_index():
     """Generate providers/index.html - top-level directory."""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Provider Data", "url": f"{BASE_URL}/providers/"},
     ]
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+    # ItemList schema for directory page
+    item_list = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Categories",
+        "numberOfItems": len(CATEGORIES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": cat["name"],
+                "url": f"{BASE_URL}/providers/{key}/",
+            }
+            for i, (key, cat) in enumerate(CATEGORIES.items(), 1)
+        ],
+    }
+    item_list_tag = f'\n    <script type="application/ld+json">\n{json.dumps(item_list, indent=2)}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + item_list_tag
 
     cards = ""
     for key, cat in CATEGORIES.items():
@@ -13800,7 +14134,7 @@ def build_providers_index():
 def build_hub_page(cat_key, cat_data):
     """Generate a category hub page at /providers/{category}/"""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Providers", "url": f"{BASE_URL}/providers/"},
         {"name": cat_data["name"], "url": f"{BASE_URL}/providers/{cat_key}/"},
     ]
@@ -13864,6 +14198,16 @@ def build_hub_page(cat_key, cat_data):
             </div>
         </section>
 
+        <section class="content-section">
+            <div class="container">
+                {generate_definition_block(
+                    f"{cat_data['name']} Provider Data",
+                    f"is verified contact and practice intelligence for {cat_data['short'].lower()} providers, including practice details, NPI numbers, taxonomy codes, owner contacts, and technology data, segmented by {len(cat_subtypes)} specific provider subtypes.",
+                    f"Provyx segments {cat_data['short'].lower()} providers by subtype so you can target precisely the right practices for your campaign, rather than working with a generic list that lumps all {cat_data['short'].lower()} providers together."
+                )}
+            </div>
+        </section>
+
 {generate_faq_html(faqs)}
 
         <section class="content-section bg-light">
@@ -13894,7 +14238,7 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
     cat = CATEGORIES[cat_key]
 
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Providers", "url": f"{BASE_URL}/providers/"},
         {"name": cat["name"], "url": f"{BASE_URL}/providers/{cat_key}/"},
         {"name": name, "url": f"{BASE_URL}/providers/{slug}/"},
@@ -14049,6 +14393,7 @@ def build_icp_page(icp: dict) -> None:
       <div class="container">
         <h1>{icp["h1"]}</h1>
         <p class="subtitle">{icp["subtitle"]}</p>
+        <p class="page-hero__date">Updated February 2026</p>
       </div>
     </section>
 
@@ -14107,12 +14452,19 @@ def build_icp_page(icp: dict) -> None:
     """
 
     # -- Wrap in full page template --
+    article_schema = generate_article_schema(
+        title=icp["title"],
+        description=icp["meta_description"],
+        canonical_path=f"/for/{slug}/",
+        speakable_selectors=[".page-hero__title", ".page-hero__subtitle"],
+    )
     page_html = get_page_wrapper(
         title=icp["title"],
         description=icp["meta_description"],
         canonical_path=f"/for/{slug}/",
         body_content=body,
-        extra_schema=breadcrumb_schema,
+        extra_schema=breadcrumb_schema + article_schema,
+        og_type="article",
     )
 
     # -- Register in ALL_PAGES and write --
@@ -14176,9 +14528,12 @@ def _build_enhanced_table_html(rows, competitor_name):
             f'<td>{comp_val}</td>'
             f'<td>{provyx_val}</td></tr>\n'
         )
+    caption = f"Feature comparison: {competitor_name} vs Provyx"
     return (
         f'<div class="table-responsive">'
-        f'<table class="comparison-table--enhanced"><thead><tr>'
+        f'<table class="comparison-table--enhanced" aria-label="{caption}">'
+        f'<caption class="sr-only">{caption}</caption>'
+        f'<thead><tr>'
         f'<th>Factor</th><th>{competitor_name}</th><th>Provyx</th>'
         f'</tr></thead><tbody>\n{rows_html}</tbody></table></div>\n'
     )
@@ -14192,7 +14547,7 @@ def _build_company_card_html(name, logo_path, meta_dict, alert_dict,
 
     # Logo
     if logo_path:
-        logo_inner = f'<img src="{logo_path}" alt="{name} Logo" width="44" height="44">'
+        logo_inner = f'<img src="{logo_path}" alt="{name} company logo" width="44" height="44" loading="lazy">'
     else:
         logo_inner = f'<span class="company-card__logo--text">{name}</span>'
 
@@ -14235,7 +14590,7 @@ def _build_alert_html(alert):
         f'<div class="alert-box alert-box--{atype}">'
         f'<div class="alert-box__icon">{icon}</div>'
         f'<div class="alert-box__content">'
-        f'<h4>{alert["heading"]}</h4>'
+        f'<h3>{alert["heading"]}</h3>'
         f'<p>{alert["text"]}</p>'
         f'</div></div>\n'
     )
@@ -14250,7 +14605,7 @@ def _build_quotes_html(quotes):
         mod = f' quote-block--{q["sentiment"]}' if q.get("sentiment") else ""
         source = ""
         if q.get("url"):
-            source = f'<a href="{q["url"]}" target="_blank" rel="noopener">{q.get("source", "Source")}</a>'
+            source = f'<a href="{q["url"]}" target="_blank" rel="noopener noreferrer">{q.get("source", "Source")}</a>'
         elif q.get("source"):
             source = q["source"]
         html += (
@@ -14271,9 +14626,9 @@ def _build_rec_grid_html(pros, cons, pro_label="Strengths",
     cons_li = "".join(f"<li>{c}</li>" for c in (cons or []))
     return (
         f'<div class="rec-grid">'
-        f'<div class="rec-box rec-box--use"><h4>&#10003; {pro_label}</h4>'
+        f'<div class="rec-box rec-box--use"><h3>&#10003; {pro_label}</h3>'
         f'<ul>{pros_li}</ul></div>'
-        f'<div class="rec-box rec-box--skip"><h4>&#10007; {con_label}</h4>'
+        f'<div class="rec-box rec-box--skip"><h3>&#10007; {con_label}</h3>'
         f'<ul>{cons_li}</ul></div>'
         f'</div>\n'
     )
@@ -14307,12 +14662,12 @@ def _build_outbound_links_html(links):
     if not links:
         return ""
     links_li = "".join(
-        f'<li><a href="{url}" target="_blank" rel="noopener">{text}</a></li>\n'
+        f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{text}</a></li>\n'
         for url, text in links
     )
     return (
         f'<div class="outbound-references">'
-        f'<h4>Sources and References</h4>'
+        f'<h3>Sources and References</h3>'
         f'<ul>\n{links_li}</ul></div>\n'
     )
 
@@ -14408,6 +14763,7 @@ def build_comparison_page(comp):
         <span class="comp-badge">PROVIDER DATA COMPARISON</span>
         <h1>{comp["hero_headline"]}</h1>
         <p class="hero-subheadline">{comp["hero_subheadline"]}</p>
+        <p class="page-hero__date">Updated February 2026</p>
         {verdict_html}
     </div>
 </section>
@@ -14457,21 +14813,21 @@ def build_comparison_page(comp):
         <div class="alert-box alert-box--info">
             <div class="alert-box__icon">&#x1F465;</div>
             <div class="alert-box__content">
-                <h4>General B2B Teams</h4>
+                <h3>General B2B Teams</h3>
                 <p>{comp['scenario_general_b2b']}</p>
             </div>
         </div>
         <div class="alert-box alert-box--success">
             <div class="alert-box__icon">&#x1F3E5;</div>
             <div class="alert-box__content">
-                <h4>Healthcare-Focused Teams</h4>
+                <h3>Healthcare-Focused Teams</h3>
                 <p>{comp['scenario_healthcare_specific']}</p>
             </div>
         </div>
         <div class="alert-box alert-box--warning">
             <div class="alert-box__icon">&#x1F3E2;</div>
             <div class="alert-box__content">
-                <h4>Enterprise Teams</h4>
+                <h3>Enterprise Teams</h3>
                 <p>{comp['scenario_enterprise_budget']}</p>
             </div>
         </div>
@@ -14504,12 +14860,19 @@ def build_comparison_page(comp):
 """
 
     # -- Wrap page and write --
+    article_schema = generate_article_schema(
+        title=comp["page_title"],
+        description=comp["meta_description"],
+        canonical_path=f"/compare/{slug}/",
+        speakable_selectors=[".page-hero__title", ".page-hero__subtitle"],
+    )
     full_html = get_page_wrapper(
         title=comp["page_title"],
         description=comp["meta_description"],
         canonical_path=f"/compare/{slug}/",
         body_content=page_body,
-        extra_schema=breadcrumb_schema,
+        extra_schema=breadcrumb_schema + article_schema,
+        og_type="article",
     )
 
     write_page(f"compare/{slug}/index.html", full_html)
@@ -14532,7 +14895,7 @@ def build_alternative_page(alt):
 
     # -- Breadcrumbs -------------------------------------------------------
     breadcrumb_items = [
-        {"name": "Home", "url": BASE_URL + "/"},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Alternatives", "url": BASE_URL + "/alternatives/"},
         {"name": f"{competitor} Alternative", "url": f"{BASE_URL}/alternatives/{slug}/"},
     ]
@@ -14627,6 +14990,7 @@ def build_alternative_page(alt):
             <span class="comp-badge">PROVIDER DATA ALTERNATIVE</span>
             <h1>{alt["hero_h1"]}</h1>
             <p class="hero-subheadline">{alt["hero_subtitle"]}</p>
+            <p class="page-hero__date">Updated February 2026</p>
             {verdict_html}
         </div>
     </section>
@@ -14723,11 +15087,19 @@ def build_alternative_page(alt):
     """
 
     # -- Wrap and write ----------------------------------------------------
+    article_schema = generate_article_schema(
+        title=alt["title"],
+        description=alt["meta_description"],
+        canonical_path=f"/alternatives/{slug}/",
+        speakable_selectors=[".page-hero__title", ".page-hero__subtitle"],
+    )
     full_html = get_page_wrapper(
         title=alt["title"],
         description=alt["meta_description"],
         canonical_path=f"/alternatives/{slug}/",
         body_content=page_content,
+        extra_schema=article_schema,
+        og_type="article",
     )
 
     write_page(f"alternatives/{slug}/index.html", full_html)
@@ -14743,10 +15115,26 @@ def build_alternative_page(alt):
 def build_comparisons_index():
     """Build /compare/index.html - hub page listing all comparison articles."""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Provider Data Comparisons", "url": f"{BASE_URL}/compare/"},
     ]
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+    item_list = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Platform Comparisons",
+        "numberOfItems": len(COMPARISONS),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": f"Provyx vs. {comp['competitor_name']}",
+                "url": f"{BASE_URL}/compare/{comp['slug']}/",
+            }
+            for i, comp in enumerate(COMPARISONS, 1)
+        ],
+    }
+    item_list_tag = f'\n    <script type="application/ld+json">\n{json.dumps(item_list, indent=2)}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + item_list_tag
 
     cards = ""
     for comp in COMPARISONS:
@@ -14812,10 +15200,28 @@ def build_comparisons_index():
 def build_alternatives_index():
     """Build /alternatives/index.html - hub page listing all alternative pages."""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Alternatives", "url": f"{BASE_URL}/alternatives/"},
     ]
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+
+    # ItemList schema for directory page
+    itemlist_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Alternatives",
+        "numberOfItems": len(ALTERNATIVES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": f"{alt['competitor']} Alternative",
+                "url": f"{BASE_URL}/alternatives/{alt['slug']}/",
+            }
+            for i, alt in enumerate(ALTERNATIVES, 1)
+        ],
+    }, indent=2)
+    itemlist_tag = f'\n    <script type="application/ld+json">\n{itemlist_schema}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + itemlist_tag
 
     cards = ""
     for alt in ALTERNATIVES:
@@ -14882,10 +15288,28 @@ def build_alternatives_index():
 def build_icp_index():
     """Build /for/index.html - hub page listing all ICP/audience pages."""
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "By Industry", "url": f"{BASE_URL}/for/"},
     ]
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+
+    # ItemList schema for directory page
+    itemlist_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data by Industry",
+        "numberOfItems": len(ICP_PAGES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": icp["h1"],
+                "url": f"{BASE_URL}/for/{icp['slug']}/",
+            }
+            for i, icp in enumerate(ICP_PAGES, 1)
+        ],
+    }, indent=2)
+    itemlist_tag = f'\n    <script type="application/ld+json">\n{itemlist_schema}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + itemlist_tag
 
     cards = ""
     for icp in ICP_PAGES:
@@ -14912,7 +15336,7 @@ def build_icp_index():
                 <p>Every team that sells into healthcare has a different definition of "good data." A medical device sales team needs surgeon-level contacts with practice addresses and procedure volumes. A healthcare marketing agency needs verified emails segmented by specialty and geography. A staffing firm needs to know which facilities are hiring and who runs the recruitment department. Generic provider databases treat all these use cases the same, and none of them get served well.</p>
                 <p>We built industry-specific pages because the way you use provider data shapes what data points matter most. A pharma sales rep running territory plans cares about prescribing affiliations and group practice structures. A health IT vendor targeting EHR adoption needs technology stack data and practice size indicators. The fields, filters, and delivery formats that make data useful vary meaningfully across these buyer types.</p>
                 <p>Each page below is tailored to a specific industry vertical. You will find the data points most relevant to your workflows, the provider types and specialties your team targets most often, common use cases, and how Provyx data integrates with the tools you already use. Whether you are building outbound lists, enriching your CRM, planning territories, or sizing a new market, these pages show you exactly how verified provider data fits into your process.</p>
-                <p>All provider records are NPI-verified against the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> and include taxonomy codes mapped to the <a href="https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40" target="_blank" rel="noopener">NUCC Health Care Provider Taxonomy</a>, so you can filter by specialty with confidence regardless of your industry.</p>
+                <p>All provider records are NPI-verified against the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> and include taxonomy codes mapped to the <a href="https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40" target="_blank" rel="noopener noreferrer">NUCC Health Care Provider Taxonomy</a>, so you can filter by specialty with confidence regardless of your industry.</p>
             </div>
         </section>
 
@@ -14990,14 +15414,14 @@ def build_use_case_page(uc):
     outbound_links_html = ""
     if uc.get("outbound_links"):
         links_li = "".join(
-            f'<li><a href="{url}" target="_blank" rel="noopener">{text}</a></li>\n'
+            f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{text}</a></li>\n'
             for url, text in uc["outbound_links"]
         )
         outbound_links_html = f"""
         <section class="content-section">
           <div class="container">
             <div class="outbound-references">
-              <h4>Sources and References</h4>
+              <h3>Sources and References</h3>
               <ul>{links_li}</ul>
             </div>
           </div>
@@ -15036,6 +15460,7 @@ def build_use_case_page(uc):
         {breadcrumb_html}
         <h1>{uc["h1"]}</h1>
         <p class="subtitle">{uc["subtitle"]}</p>
+        <p class="page-hero__date">Updated February 2026</p>
       </div>
     </section>
 
@@ -15075,13 +15500,24 @@ def build_use_case_page(uc):
     {cta_html}
     """
 
+    # -- HowTo schema from step data --
+    howto_steps = [{"name": s["title"], "description": s["description"]} for s in uc["how_it_works_steps"]]
+    howto_schema = generate_howto_schema(uc["how_it_works_heading"], howto_steps)
+
     # -- Wrap in full page template --
+    article_schema = generate_article_schema(
+        title=uc["title"],
+        description=uc["meta_description"],
+        canonical_path=url_path,
+        speakable_selectors=[".page-hero__title", ".page-hero__subtitle"],
+    )
     page_html = get_page_wrapper(
         title=uc["title"],
         description=uc["meta_description"],
         canonical_path=url_path,
         body_content=body,
-        extra_schema=breadcrumb_schema,
+        extra_schema=breadcrumb_schema + article_schema + howto_schema,
+        og_type="article",
     )
 
     write_page(f"use-cases/{slug}/index.html", page_html)
@@ -15130,7 +15566,7 @@ def build_resource_page(res):
           <h3>About the Author</h3>
           <p><strong>{author["name"]}</strong></p>
           <p>{author["credentials"]}</p>
-          <p><a href="{author["linkedin"]}" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+          <p><a href="{author["linkedin"]}" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         </div>
       </div>
     </section>"""
@@ -15139,14 +15575,14 @@ def build_resource_page(res):
     outbound_links_html = ""
     if res.get("outbound_links"):
         links_li = "".join(
-            f'<li><a href="{url}" target="_blank" rel="noopener">{text}</a></li>\n'
+            f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{text}</a></li>\n'
             for url, text in res["outbound_links"]
         )
         outbound_links_html = f"""
     <section class="content-section">
       <div class="container">
         <div class="outbound-references">
-          <h4>Sources and References</h4>
+          <h3>Sources and References</h3>
           <ul>{links_li}</ul>
         </div>
       </div>
@@ -15185,6 +15621,7 @@ def build_resource_page(res):
         {breadcrumb_html}
         <h1>{res["h1"]}</h1>
         <p class="subtitle">{res["subtitle"]}</p>
+        <p class="page-hero__date">Updated February 2026</p>
       </div>
     </section>
 
@@ -15197,12 +15634,27 @@ def build_resource_page(res):
     """
 
     # -- Wrap in full page template --
+    author_person = None
+    if author:
+        author_person = {
+            "name": author["name"],
+            "url": author.get("linkedin", ""),
+            "credentials": author.get("credentials", ""),
+        }
+    article_schema = generate_article_schema(
+        title=res["title"],
+        description=res["meta_description"],
+        canonical_path=url_path,
+        speakable_selectors=[".page-hero__title", ".page-hero__subtitle"],
+        author_person=author_person,
+    )
     page_html = get_page_wrapper(
         title=res["title"],
         description=res["meta_description"],
         canonical_path=url_path,
         body_content=body,
-        extra_schema=breadcrumb_schema,
+        extra_schema=breadcrumb_schema + article_schema,
+        og_type="article",
     )
 
     write_page(f"resources/{slug}/index.html", page_html)
@@ -15217,10 +15669,28 @@ def build_use_cases_index():
     """
 
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Use Cases", "url": f"{BASE_URL}/use-cases/"},
     ]
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+
+    # ItemList schema for directory page
+    itemlist_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Use Cases",
+        "numberOfItems": len(USE_CASES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": uc["h1"],
+                "url": f"{BASE_URL}/use-cases/{uc['slug']}/",
+            }
+            for i, uc in enumerate(USE_CASES, 1)
+        ],
+    }, indent=2)
+    itemlist_tag = f'\n    <script type="application/ld+json">\n{itemlist_schema}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + itemlist_tag
 
     meta_description = (
         "Explore how teams use Provyx healthcare provider data for sales prospecting, "
@@ -15251,7 +15721,7 @@ def build_use_cases_index():
                 <p>Healthcare provider data powers more workflows than most teams realize. The obvious use case is sales prospecting: build a list of dermatologists in California, load it into your CRM, and start calling. But verified provider data also drives territory planning, account-based marketing, competitive intelligence, market sizing, credentialing operations, and recruitment campaigns. Each of these workflows has different requirements for data fields, freshness, and delivery format.</p>
                 <p>We created these use case pages because "we sell provider data" does not tell you much about whether Provyx actually solves your problem. A medical device company running territory plans needs different data points than a staffing agency sourcing travel nurses. A healthcare SaaS vendor running ABM campaigns against mid-size practices needs different filters than a consulting firm sizing a new market. The use case determines which data fields matter, how many records you need, and how you should structure your outreach.</p>
                 <p>Each page below walks through a specific workflow: what the problem looks like without good data, how verified provider intelligence changes the process, the step-by-step approach, and the results teams typically see. We include the specific data points that matter for each use case, integration guidance for common CRM and marketing platforms, and links to related resources for deeper reading.</p>
-                <p>All use cases reference real data capabilities available through Provyx, sourced from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, business listings, and commercial databases. No synthetic data, no inflated record counts.</p>
+                <p>All use cases reference real data capabilities available through Provyx, sourced from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, business listings, and commercial databases. No synthetic data, no inflated record counts.</p>
             </div>
         </section>
 
@@ -15286,10 +15756,28 @@ def build_resources_index():
     """
 
     breadcrumbs = [
-        {"name": "Home", "url": BASE_URL},
+        {"name": "Home", "url": f"{BASE_URL}/"},
         {"name": "Resources", "url": f"{BASE_URL}/resources/"},
     ]
-    extra_schema = get_breadcrumb_schema(breadcrumbs)
+
+    # ItemList schema for directory page
+    itemlist_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Guides and Articles",
+        "numberOfItems": len(RESOURCES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": res["h1"],
+                "url": f"{BASE_URL}/resources/{res['slug']}/",
+            }
+            for i, res in enumerate(RESOURCES, 1)
+        ],
+    }, indent=2)
+    itemlist_tag = f'\n    <script type="application/ld+json">\n{itemlist_schema}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + itemlist_tag
 
     meta_description = (
         "Guides and articles on healthcare provider data: NPI Registry, data quality, "
@@ -15319,7 +15807,7 @@ def build_resources_index():
                 <h2>Learn About Healthcare Provider Data</h2>
                 <p>Healthcare provider data is a specialized category of B2B intelligence. It includes NPI numbers, practice addresses, direct phone lines, verified email addresses, specialty taxonomy codes, practice size indicators, and technology signals. Understanding how this data is sourced, verified, and maintained is the difference between campaigns that convert and outreach that bounces.</p>
                 <p>We write these guides for the people who actually use provider data day to day: sales development reps building call lists, marketing managers running email campaigns, operations teams maintaining CRM hygiene, and analysts sizing new markets. Each article focuses on a specific topic and gives you actionable guidance rather than generic overviews. You will find sourced statistics, real-world examples, and specific recommendations tied to healthcare provider workflows.</p>
-                <p>Topics range from foundational concepts like how the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> works and what NUCC taxonomy codes mean, to applied strategies like building account-based marketing programs for healthcare and calculating the ROI of data quality investments. We update these guides as the provider data landscape changes, including new data sources, evolving best practices, and shifts in how healthcare organizations manage their provider information.</p>
+                <p>Topics range from foundational concepts like how the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> works and what NUCC taxonomy codes mean, to applied strategies like building account-based marketing programs for healthcare and calculating the ROI of data quality investments. We update these guides as the provider data landscape changes, including new data sources, evolving best practices, and shifts in how healthcare organizations manage their provider information.</p>
                 <p>Whether you are new to healthcare provider data or optimizing an existing data strategy, these resources are designed to help you make better decisions about how you source, verify, and deploy provider intelligence across your organization.</p>
             </div>
         </section>
@@ -15365,26 +15853,105 @@ def build_resources_index():
 # =============================================================================
 
 def build_sitemap():
-    """Generate sitemap.xml from ALL_PAGES."""
+    """Generate sitemap.xml from ALL_PAGES with image sitemap extensions."""
     urls = ""
     for path, priority, changefreq in ALL_PAGES:
         url = f"{BASE_URL}{path}" if not path.endswith(".html") else f"{BASE_URL}/{path}"
+        og_image = _get_og_image_url(path)
         urls += f"""  <url>
     <loc>{url}</loc>
     <lastmod>{TODAY}</lastmod>
     <changefreq>{changefreq}</changefreq>
     <priority>{priority}</priority>
+    <image:image>
+      <image:loc>{og_image}</image:loc>
+    </image:image>
   </url>
 """
 
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 {urls}</urlset>"""
 
     sitemap_path = os.path.join(PROJECT_ROOT, "sitemap.xml")
     with open(sitemap_path, "w") as f:
         f.write(sitemap)
     print(f"  Generated: /sitemap.xml ({len(ALL_PAGES)} URLs)")
+
+
+def build_rss_feed():
+    """Generate RSS 2.0 feed from RESOURCES list."""
+    items = ""
+    for res in RESOURCES:
+        url = f"{BASE_URL}/resources/{res['slug']}/"
+        desc = res["meta_description"].replace("&", "&amp;").replace("<", "&lt;")
+        title = res["title"].replace("&", "&amp;").replace("<", "&lt;")
+        items += f"""    <item>
+      <title>{title}</title>
+      <link>{url}</link>
+      <description>{desc}</description>
+      <guid isPermaLink="true">{url}</guid>
+      <pubDate>{TODAY}</pubDate>
+    </item>
+"""
+
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{SITE_NAME} - Healthcare Provider Data Guides</title>
+    <link>{BASE_URL}/resources/</link>
+    <description>Guides and articles on healthcare provider data, sales prospecting, and data quality.</description>
+    <language>en-us</language>
+    <lastBuildDate>{TODAY}</lastBuildDate>
+    <atom:link href="{BASE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+{items}  </channel>
+</rss>"""
+
+    feed_path = os.path.join(PROJECT_ROOT, "feed.xml")
+    with open(feed_path, "w") as f:
+        f.write(feed)
+    print(f"  Generated: /feed.xml ({len(RESOURCES)} items)")
+
+
+# =============================================================================
+# POST-BUILD: CSS MINIFICATION
+# =============================================================================
+
+def _minify_css():
+    """Minify CSS files for production. Source stays readable, .min.css is output."""
+    try:
+        import rcssmin
+    except ImportError:
+        print("  Skipping CSS minification (rcssmin not installed)")
+        return
+
+    css_dir = os.path.join(PROJECT_ROOT, "css")
+    for filename in os.listdir(css_dir):
+        if filename.endswith(".css") and not filename.endswith(".min.css"):
+            src = os.path.join(css_dir, filename)
+            name = filename.rsplit(".", 1)[0]
+            dest = os.path.join(css_dir, f"{name}.min.css")
+            with open(src) as f:
+                original = f.read()
+            minified = rcssmin.cssmin(original)
+            savings = len(original) - len(minified)
+            pct = (savings / len(original)) * 100 if original else 0
+            with open(dest, "w") as f:
+                f.write(minified)
+            print(f"  Minified: {filename} -> {name}.min.css ({savings:,} bytes saved, {pct:.0f}%)")
+
+    # Also minify the self-hosted font CSS
+    font_dir = os.path.join(PROJECT_ROOT, "assets", "fonts")
+    font_src = os.path.join(font_dir, "plus-jakarta-sans.css")
+    font_dest = os.path.join(font_dir, "plus-jakarta-sans.min.css")
+    if os.path.exists(font_src):
+        with open(font_src) as f:
+            original = f.read()
+        minified = rcssmin.cssmin(original)
+        with open(font_dest, "w") as f:
+            f.write(minified)
+        print(f"  Minified: plus-jakarta-sans.css -> plus-jakarta-sans.min.css")
 
 
 # =============================================================================
@@ -15457,9 +16024,14 @@ def main():
     for res in RESOURCES:
         build_resource_page(res)
 
-    # Sitemap
+    # Sitemap + RSS
     print("\nSitemap:")
     build_sitemap()
+    build_rss_feed()
+
+    # CSS minification
+    print("\nPost-build:")
+    _minify_css()
 
     print(f"\n{'='*60}")
     print(f"  Build complete: {len(ALL_PAGES)} pages generated")

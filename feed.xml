@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Provyx - Healthcare Provider Data Guides</title>
+    <link>https://getprovyx.com/resources/</link>
+    <description>Guides and articles on healthcare provider data, sales prospecting, and data quality.</description>
+    <language>en-us</language>
+    <lastBuildDate>2026-02-15</lastBuildDate>
+    <atom:link href="https://getprovyx.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The Hidden Cost of Bad Healthcare Provider Data</title>
+      <link>https://getprovyx.com/resources/cost-of-bad-provider-data/</link>
+      <description>Bad provider data costs healthcare vendors millions in wasted outreach, lost deals, and damaged sender reputation. Learn where the costs hide and fix them.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/cost-of-bad-provider-data/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>NPI Registry: What It Gives You and What It Doesn't</title>
+      <link>https://getprovyx.com/resources/npi-registry-guide/</link>
+      <description>Understand what's in the CMS NPI Registry and what's missing. A practical guide to NPI data fields, limitations, and how to fill gaps for outreach.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/npi-registry-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Build a Healthcare Marketing List That Converts</title>
+      <link>https://getprovyx.com/resources/healthcare-marketing-list-guide/</link>
+      <description>Step-by-step guide to building healthcare marketing lists that drive results. Data sources, verification, and segmentation for provider outreach.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-marketing-list-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Healthcare Provider Data Buying Guide for 2026</title>
+      <link>https://getprovyx.com/resources/provider-data-buying-guide/</link>
+      <description>What to evaluate when buying healthcare provider data. Sourcing, verification, pricing models, and red flags to watch for when comparing data vendors.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/provider-data-buying-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>CRM Data Decay: How Fast Provider Records Go Stale</title>
+      <link>https://getprovyx.com/resources/crm-data-decay-healthcare/</link>
+      <description>Healthcare provider data decays faster than most B2B data. Learn the decay rates, causes, and practical strategies to keep your CRM provider records accurate.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/crm-data-decay-healthcare/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Healthcare ABM Strategy: Target Practices First</title>
+      <link>https://getprovyx.com/resources/healthcare-abm-strategy/</link>
+      <description>Build a healthcare ABM strategy that targets practices as accounts. Account identification, multi-threading, and data requirements for ABM campaigns.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-abm-strategy/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Medical Device Territory Planning with Provider Data</title>
+      <link>https://getprovyx.com/resources/medical-device-territory-planning-guide/</link>
+      <description>Plan medical device sales territories using verified provider data. Step-by-step guide to mapping surgeons, balancing workloads, and optimizing coverage.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/medical-device-territory-planning-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>ROI of Clean Provider Data for Healthcare Marketing</title>
+      <link>https://getprovyx.com/resources/roi-clean-provider-data/</link>
+      <description>Calculate the ROI of investing in clean healthcare provider data. Framework for measuring revenue impact of better contacts and deliverability.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/roi-clean-provider-data/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>How to Build a Physician Prospect List for B2B Sales</title>
+      <link>https://getprovyx.com/resources/physician-prospect-list-guide/</link>
+      <description>Step-by-step guide to building a physician prospect list that converts. Covers ICP definition, data sources, verification, and list-to-pipeline workflow.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/physician-prospect-list-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>NPPES Data Download vs Commercial Provider Data: A Practical Comparison</title>
+      <link>https://getprovyx.com/resources/nppes-vs-commercial-provider-data/</link>
+      <description>Compare the free NPPES data download to commercial provider databases. Field-by-field breakdown of what you get, what is missing, and when each option makes sense.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/nppes-vs-commercial-provider-data/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>How to Sell to Medical Practices: A B2B Sales Playbook</title>
+      <link>https://getprovyx.com/resources/sell-to-medical-practices/</link>
+      <description>A practical B2B sales playbook for selling to medical practices. Covers buying dynamics, decision-maker identification, outreach channels, and common mistakes.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/sell-to-medical-practices/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>B2B Healthcare Lead Generation with Provider Data</title>
+      <link>https://getprovyx.com/resources/b2b-healthcare-lead-generation/</link>
+      <description>How to generate B2B healthcare leads using provider data. Covers inbound and outbound strategies, data foundations, and measurement frameworks for healthcare sales teams.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/b2b-healthcare-lead-generation/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>How to Clean Healthcare Provider Data in Salesforce</title>
+      <link>https://getprovyx.com/resources/clean-provider-data-salesforce/</link>
+      <description>A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/clean-provider-data-salesforce/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Best Healthcare Data Providers for Small Sales Teams</title>
+      <link>https://getprovyx.com/resources/healthcare-data-providers-small-teams/</link>
+      <description>An honest comparison of healthcare data providers for small sales teams. Covers pricing models, what to evaluate, and how to pick a vendor that fits a 2-15 person team.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-data-providers-small-teams/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Healthcare Provider Firmographic Data: What It Is and Why It Matters</title>
+      <link>https://getprovyx.com/resources/healthcare-provider-firmographic-data/</link>
+      <description>What healthcare provider firmographic data includes and how it differs from standard B2B firmographics. Covers key fields, use cases, and how to build a firmographic dataset.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-provider-firmographic-data/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Healthcare Account Planning: A Data-Driven Template</title>
+      <link>https://getprovyx.com/resources/healthcare-account-planning-template/</link>
+      <description>A practical healthcare account planning template for sales reps. Covers org structure, buying committees, installed technology, physician census, and action planning with provider data.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-account-planning-template/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Data-Driven Cold Calling for Healthcare Sales</title>
+      <link>https://getprovyx.com/resources/healthcare-cold-calling-provider-data/</link>
+      <description>How to use provider data for pre-call research in healthcare sales. Covers the 5-minute research workflow, call timing, data-informed openers, and gatekeeper navigation.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-cold-calling-provider-data/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>B2B Healthcare Email Compliance: CAN-SPAM, Not HIPAA</title>
+      <link>https://getprovyx.com/resources/b2b-healthcare-email-compliance/</link>
+      <description>B2B emails to physicians and practice administrators are governed by CAN-SPAM, not HIPAA. This guide explains the rules, common misconceptions, and compliance requirements.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/b2b-healthcare-email-compliance/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Winning the Value Analysis Committee: A Vendor Guide</title>
+      <link>https://getprovyx.com/resources/healthcare-value-analysis-committee-guide/</link>
+      <description>A practical guide for vendors preparing submissions to hospital value analysis committees. Covers VAC composition, the review process, building a financial case, and identifying a champion.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-value-analysis-committee-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>GPO Navigation for Medical Device Companies</title>
+      <link>https://getprovyx.com/resources/gpo-navigation-medical-device/</link>
+      <description>A vendor-side guide to navigating group purchasing organizations (GPOs) in medical device sales. Covers major GPOs, contract tiers, purchasing commitments, and when to go direct.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/gpo-navigation-medical-device/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>The Hospital Buying Cycle: A Data-Mapped Guide for Vendors</title>
+      <link>https://getprovyx.com/resources/hospital-buying-cycle-guide/</link>
+      <description>A practical guide to the hospital buying cycle for vendors. Covers the 19+ month timeline, buying committee roles, budget cycles, fiscal year timing, and how to use provider data to identify where a hospital is in the cycle.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/hospital-buying-cycle-guide/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Healthcare Data Vendor Comparison 2026</title>
+      <link>https://getprovyx.com/resources/healthcare-data-vendor-comparison/</link>
+      <description>Side-by-side healthcare data vendor comparison for 2026. Coverage, accuracy, pricing, and healthcare-specific features for IQVIA, Definitive Healthcare, ZoomInfo, Apollo, Cognism, Lusha, CarePrecise, and Provyx.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/healthcare-data-vendor-comparison/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>KOL Identification for Medical Device Companies</title>
+      <link>https://getprovyx.com/resources/kol-identification-medical-devices/</link>
+      <description>How medical device companies identify key opinion leaders (KOLs). Covers surgical KOL identification, procedure volume analysis, tiered engagement strategies, and data sources for finding emerging KOLs.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/kol-identification-medical-devices/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Pre-RFP Intelligence: Win Healthcare Deals Before the RFP Drops</title>
+      <link>https://getprovyx.com/resources/pre-rfp-intelligence-healthcare/</link>
+      <description>How healthcare sales teams use pre-RFP intelligence to win deals before the formal procurement process begins. Technology install data, budget timing, and relationship strategies.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/pre-rfp-intelligence-healthcare/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>Medical Device Territory Assessment: Your First 90 Days</title>
+      <link>https://getprovyx.com/resources/medical-device-territory-assessment/</link>
+      <description>A practitioner-level playbook for new medical device reps inheriting a territory. Week-by-week guide covering data audit, provider census, account tiering, and execution planning.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/medical-device-territory-assessment/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>PECOS Data for Sales Prospecting: What It Tells You That NPI Doesn't</title>
+      <link>https://getprovyx.com/resources/pecos-data-sales-prospecting/</link>
+      <description>How to use PECOS Medicare enrollment data for B2B sales prospecting. Covers what PECOS contains beyond NPI, how to access bulk data, limitations, and how to combine it with commercial provider data.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/pecos-data-sales-prospecting/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+    <item>
+      <title>How to Find Physician Email Addresses for B2B Outreach</title>
+      <link>https://getprovyx.com/resources/find-physician-email-addresses/</link>
+      <description>Practical guide to finding physician email addresses for B2B sales outreach. Covers legitimate sources, the problem with scraped lists, verification methods, compliance basics, and how to evaluate email data vendors.</description>
+      <guid isPermaLink="true">https://getprovyx.com/resources/find-physician-email-addresses/</guid>
+      <pubDate>2026-02-15</pubDate>
+    </item>
+  </channel>
+</rss>
