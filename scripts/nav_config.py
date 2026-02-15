@@ -47,6 +47,7 @@ NAV_ITEMS = [
         "children": [
             {"href": "/use-cases/", "label": "Use Cases"},
             {"href": "/resources/", "label": "Guides & Articles"},
+            {"href": "/glossary/", "label": "Glossary"},
             {"href": "/compare/", "label": "Comparisons"},
             {"href": "/alternatives/", "label": "Alternatives"},
             {"href": "/for/", "label": "By Industry"},
@@ -75,6 +76,7 @@ FOOTER_COLUMNS = {
     "Resources": [
         {"href": "/use-cases/", "label": "Use Cases"},
         {"href": "/resources/", "label": "Guides & Articles"},
+        {"href": "/glossary/", "label": "Glossary"},
         {"href": "/compare/", "label": "Comparisons"},
         {"href": "/alternatives/", "label": "Alternatives"},
         {"href": "/for/", "label": "By Industry"},

@@ -25,6 +25,8 @@ from templates import (
     get_page_wrapper, write_page, BASE_URL, SITE_NAME,
     _get_og_image_url,
 )
+from glossary_data import GLOSSARY_TERMS
+from alternatives_new import NEW_ALTERNATIVES
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FORMSPREE_ID = "mrekgwqk"
@@ -5486,7 +5488,7 @@ ALTERNATIVES = [
             "Enterprise analytics require dedicated analyst resources.",
         ],
     },
-]
+] + NEW_ALTERNATIVES
 
 
 # Use case pages
@@ -15849,6 +15851,293 @@ def build_resources_index():
 
 
 # =============================================================================
+# PAGE GENERATORS - GLOSSARY PAGES
+# =============================================================================
+
+def build_glossary_page(term_data):
+    """Build a single glossary term page from its data dict."""
+
+    slug = term_data["slug"]
+    term = term_data["term"]
+    url_path = f"/glossary/{slug}/"
+    canonical = f"{BASE_URL}{url_path}"
+
+    # -- Breadcrumbs --
+    breadcrumbs = [
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Glossary", "url": f"{BASE_URL}/glossary/"},
+        {"name": term, "url": canonical},
+    ]
+    breadcrumb_schema = get_breadcrumb_schema(breadcrumbs)
+    breadcrumb_html = get_breadcrumb_html(breadcrumbs)
+
+    # -- DefinedTerm schema --
+    defined_term_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": term,
+        "description": term_data["short_definition"],
+        "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "Healthcare Provider Data Glossary",
+            "url": f"{BASE_URL}/glossary/",
+        },
+    }, indent=2)
+    defined_term_tag = f'\n    <script type="application/ld+json">\n{defined_term_schema}\n    </script>'
+
+    # -- Article schema --
+    article_schema = generate_article_schema(
+        title=f"What is {term}? Healthcare Data Definition",
+        description=term_data["short_definition"][:160],
+        canonical_path=url_path,
+        speakable_selectors=[".definition-block", ".page-hero h1"],
+        author_person={
+            "name": AUTHOR_ROME["name"],
+            "url": AUTHOR_ROME.get("linkedin", ""),
+            "credentials": AUTHOR_ROME.get("credentials", ""),
+        },
+    )
+
+    # -- Related terms HTML --
+    related_terms_html = ""
+    if term_data.get("related_terms"):
+        term_links = ""
+        for rt_slug in term_data["related_terms"]:
+            # Find the display name for this term
+            rt_name = rt_slug.replace("-", " ").title()
+            for t in GLOSSARY_TERMS:
+                if t["slug"] == rt_slug:
+                    rt_name = t["term"]
+                    break
+            term_links += f'<a href="/glossary/{rt_slug}/" class="glossary-tag">{rt_name}</a>\n'
+        related_terms_html = f"""
+        <div class="glossary-related-terms">
+            <h3>Related Terms</h3>
+            <div class="glossary-tag-list">
+                {term_links}
+            </div>
+        </div>"""
+
+    # -- Related pages HTML --
+    related_pages_html = ""
+    if term_data.get("related_pages"):
+        links_li = "".join(
+            f'<li><a href="{link["url"]}">{link["text"]}</a></li>\n'
+            for link in term_data["related_pages"]
+        )
+        related_pages_html = f"""
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links">{links_li}</ul>
+        </div>
+    </section>"""
+
+    # -- Outbound links HTML --
+    outbound_html = ""
+    if term_data.get("outbound_links"):
+        links_li = "".join(
+            f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{text}</a></li>\n'
+            for url, text in term_data["outbound_links"]
+        )
+        outbound_html = f"""
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul>{links_li}</ul>
+            </div>
+        </div>
+    </section>"""
+
+    # -- Why it matters HTML --
+    why_html = ""
+    if term_data.get("why_it_matters"):
+        why_html = f"""
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Why {term} Matters for Healthcare Data</h2>
+            <p>{term_data["why_it_matters"]}</p>
+        </div>
+    </section>"""
+
+    # -- Example HTML --
+    example_html = ""
+    if term_data.get("example"):
+        example_html = f"""
+    <section class="content-section">
+        <div class="container">
+            <h2>Real-World Example</h2>
+            <div class="alert-box alert-box--info">
+                <div class="alert-box__icon">&#x1F4CB;</div>
+                <div class="alert-box__content">
+                    <p>{term_data["example"]}</p>
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+    # -- FAQ HTML --
+    faq_html = generate_faq_html(term_data["faqs"])
+
+    # -- CTA --
+    cta_html = generate_cta_section(
+        title="Get the Provider Data You Need",
+        text="Tell us what you're looking for. We'll build a custom list matched to your target market.",
+        button_text="Get Provider Data",
+        button_href="/contact/",
+    )
+
+    # -- Author bio --
+    author_html = f"""
+    <section class="content-section">
+        <div class="container">
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>{AUTHOR_ROME["name"]}</strong></p>
+                <p>{AUTHOR_ROME["credentials"]}</p>
+                <p><a href="{AUTHOR_ROME["linkedin"]}" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </section>"""
+
+    # -- Assemble page body --
+    body = f"""
+    <section class="page-hero">
+        <div class="container">
+            {breadcrumb_html}
+            <span class="comp-badge">HEALTHCARE DATA GLOSSARY</span>
+            <h1>What is {term}?</h1>
+            <p class="subtitle">{term_data["short_definition"]}</p>
+            <p class="page-hero__date">Updated February 2026</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="definition-block">
+                <h2>{term} Explained</h2>
+                {term_data["full_definition"]}
+            </div>
+            {related_terms_html}
+        </div>
+    </section>
+
+    {why_html}
+    {example_html}
+
+    {faq_html}
+
+    {author_html}
+    {outbound_html}
+    {related_pages_html}
+    {cta_html}
+    """
+
+    # -- Wrap in full page template --
+    extra_schema = breadcrumb_schema + defined_term_tag + article_schema
+    page_html = get_page_wrapper(
+        title=f"What is {term}? Definition and Guide",
+        description=term_data["short_definition"][:158],
+        canonical_path=url_path,
+        body_content=body,
+        extra_schema=extra_schema,
+        og_type="article",
+    )
+
+    write_page(f"glossary/{slug}/index.html", page_html)
+    ALL_PAGES.append((url_path, 0.6, "monthly"))
+
+
+def build_glossary_index():
+    """Build /glossary/index.html - hub page with cards linking to each glossary term."""
+
+    breadcrumbs = [
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Glossary", "url": f"{BASE_URL}/glossary/"},
+    ]
+
+    # ItemList schema
+    itemlist_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data Glossary",
+        "numberOfItems": len(GLOSSARY_TERMS),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": t["term"],
+                "url": f"{BASE_URL}/glossary/{t['slug']}/",
+            }
+            for i, t in enumerate(GLOSSARY_TERMS, 1)
+        ],
+    }, indent=2)
+    itemlist_tag = f'\n    <script type="application/ld+json">\n{itemlist_schema}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + itemlist_tag
+
+    meta_description = (
+        "Healthcare provider data glossary. Clear definitions of NPI, NPPES, PECOS, "
+        "taxonomy codes, credentialing, data enrichment, and other industry terms."
+    )
+
+    # Group terms by category for display
+    # We'll display all terms alphabetically by term name
+    sorted_terms = sorted(GLOSSARY_TERMS, key=lambda t: t["term"].lower())
+
+    cards = ""
+    for t in sorted_terms:
+        short_def = t["short_definition"][:150]
+        if len(t["short_definition"]) > 150:
+            short_def = short_def.rsplit(" ", 1)[0] + "..."
+        cards += f"""
+                <a href="/glossary/{t['slug']}/" class="provider-card">
+                    <h3 class="provider-card__title">{t['term']}</h3>
+                    <p class="provider-card__text">{short_def}</p>
+                </a>"""
+
+    body = f"""
+        <section class="page-hero section">
+            <div class="container">
+                {get_breadcrumb_html(breadcrumbs)}
+                <h1 class="page-hero__title">Healthcare Provider Data Glossary</h1>
+                <p class="page-hero__subtitle">Clear definitions of the terms, acronyms, and systems that matter when buying or working with healthcare provider data. Each entry explains what the term means, why it matters for B2B sales and marketing, and how it connects to your data operations.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Why This Glossary Exists</h2>
+                <p>Healthcare provider data has its own vocabulary. NPI numbers, taxonomy codes, PECOS enrollment, credentialing verification, data append rates. If you sell software, devices, or services to healthcare providers, you encounter these terms constantly. Misunderstanding them leads to buying the wrong data, targeting the wrong providers, and wasting sales cycles on bad-fit accounts.</p>
+                <p>This glossary covers the terms that matter most for B2B teams working with healthcare provider data. Each definition includes practical context for sales and marketing use, real-world examples, and links to deeper resources. No academic fluff, just the information you need to make better data decisions.</p>
+                <p>All definitions reference public data sources including the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a>, <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics</a>, and official healthcare industry standards.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>All Terms ({len(GLOSSARY_TERMS)})</h2>
+                <div class="provider-grid">
+                    {cards}
+                </div>
+            </div>
+        </section>
+
+{generate_cta_section()}"""
+
+    html = get_page_wrapper(
+        title="Healthcare Provider Data Glossary - Key Terms Defined",
+        description=meta_description,
+        canonical_path="/glossary/",
+        body_content=body,
+        extra_schema=extra_schema,
+    )
+
+    write_page("glossary/index.html", html)
+    ALL_PAGES.append(("/glossary/", 0.8, "monthly"))
+
+
+# =============================================================================
 # SITEMAP GENERATOR
 # =============================================================================
 
@@ -16023,6 +16312,12 @@ def main():
     build_resources_index()
     for res in RESOURCES:
         build_resource_page(res)
+
+    # Glossary pages
+    print("\nGlossary pages:")
+    build_glossary_index()
+    for term in GLOSSARY_TERMS:
+        build_glossary_page(term)
 
     # Sitemap + RSS
     print("\nSitemap:")

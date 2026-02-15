@@ -1,7 +1,7 @@
 # Provyx Website Keyword Map
 
-> **Last updated:** 2026-02-02
-> **Total pages:** 226
+> **Last updated:** 2026-02-15
+> **Total pages:** 264
 > **Update this file whenever new content is published or existing pages are modified.**
 
 ---
@@ -42,12 +42,16 @@
 
 ---
 
-## 3. Alternative Pages (2)
+## 3. Alternative Pages (6)
 
 | # | Primary Keyword | Secondary Keywords | URL | Title Tag | Status |
 |---|----------------|-------------------|-----|-----------|--------|
 | 1 | zoominfo alternative healthcare | best zoominfo alternative, healthcare data zoominfo replacement, NPI-verified alternative | `/alternatives/zoominfo-alternative/` | Best ZoomInfo Alternative for Healthcare Data | live |
 | 2 | definitive healthcare alternative | definitive healthcare replacement, provider contact data alternative, cheaper than definitive healthcare | `/alternatives/definitive-healthcare-alternative/` | Best Definitive Healthcare Alternative for Data | live |
+| 3 | apollo alternative healthcare | apollo.io alternative healthcare, healthcare provider data apollo replacement | `/alternatives/apollo-alternative/` | Best Apollo.io Alternative for Healthcare Data | live |
+| 4 | iqvia alternative healthcare | iqvia onekey alternative, healthcare provider data iqvia replacement, cheaper than iqvia | `/alternatives/iqvia-alternative/` | Best IQVIA Alternative for Healthcare Provider Data | live |
+| 5 | lusha alternative healthcare | lusha alternative healthcare data, provider contact data lusha replacement | `/alternatives/lusha-alternative/` | Best Lusha Alternative for Healthcare Provider Data | live |
+| 6 | cognism alternative healthcare | cognism alternative healthcare data, provider contact intelligence cognism replacement | `/alternatives/cognism-alternative/` | Best Cognism Alternative for Healthcare Provider Data | live |
 
 ---
 
@@ -380,6 +384,47 @@
 
 ---
 
+## 10. Glossary Pages (34: 1 hub + 33 terms)
+
+| # | Primary Keyword | Secondary Keywords | URL | Title Tag | Status |
+|---|----------------|-------------------|-----|-----------|--------|
+| 1 | healthcare data glossary | provider data terminology, healthcare data terms | `/glossary/` | Healthcare Data Glossary | live |
+| 2 | what is NPI number | national provider identifier, NPI lookup, NPI meaning | `/glossary/npi-number/` | What Is an NPI Number? | live |
+| 3 | what is NPPES | national plan and provider enumeration system, NPI registry | `/glossary/nppes/` | What Is NPPES? | live |
+| 4 | what is taxonomy code | healthcare taxonomy, provider classification, NUCC taxonomy | `/glossary/taxonomy-code/` | What Is a Healthcare Taxonomy Code? | live |
+| 5 | type 1 vs type 2 NPI | individual NPI, organizational NPI, NPI types | `/glossary/type-1-vs-type-2-npi/` | Type 1 vs Type 2 NPI: What's the Difference? | live |
+| 6 | what is provider enumeration | enumeration date, NPI assignment, provider registration | `/glossary/provider-enumeration/` | What Is Provider Enumeration? | live |
+| 7 | what is provider credentialing | credentialing process, payer enrollment, provider verification | `/glossary/provider-credentialing/` | What Is Provider Credentialing? | live |
+| 8 | what is PECOS | Medicare enrollment, provider enrollment chain, CMS PECOS | `/glossary/pecos/` | What Is PECOS? | live |
+| 9 | what is CAQH | credentialing database, CAQH ProView, universal credentialing | `/glossary/caqh/` | What Is CAQH? | live |
+| 10 | what is provider enrollment | payer enrollment, insurance participation, panel enrollment | `/glossary/provider-enrollment/` | What Is Provider Enrollment? | live |
+| 11 | what is provider data enrichment | data enrichment healthcare, contact append, record enhancement | `/glossary/provider-data-enrichment/` | What Is Provider Data Enrichment? | live |
+| 12 | what is data hygiene | data cleaning, data quality, record maintenance | `/glossary/data-hygiene/` | What Is Data Hygiene? | live |
+| 13 | what is match rate | data matching, record matching, identity resolution | `/glossary/match-rate/` | What Is Match Rate? | live |
+| 14 | what is data append | data appending, contact append, record enrichment | `/glossary/data-append/` | What Is Data Append? | live |
+| 15 | what is a healthcare provider | provider definition, healthcare practitioner, clinical provider | `/glossary/healthcare-provider/` | What Is a Healthcare Provider? | live |
+| 16 | what is CMS | Centers for Medicare and Medicaid Services, CMS healthcare | `/glossary/cms/` | What Is CMS (Centers for Medicare & Medicaid Services)? | live |
+| 17 | what is practice firmographics | practice data, practice demographics, healthcare firmographics | `/glossary/practice-firmographics/` | What Are Practice Firmographics? | live |
+| 18 | what is technology detection healthcare | tech stack detection, EHR detection, healthcare technology data | `/glossary/technology-detection/` | What Is Technology Detection in Healthcare? | live |
+| 19 | what is EHR | electronic health records, EMR vs EHR, health IT | `/glossary/ehr/` | What Is an EHR (Electronic Health Record)? | live |
+| 20 | what is healthcare sales prospecting | provider prospecting, healthcare lead gen, sales pipeline | `/glossary/healthcare-sales-prospecting/` | What Is Healthcare Sales Prospecting? | live |
+| 21 | what is ideal customer profile healthcare | ICP healthcare, target account profile, ideal buyer | `/glossary/ideal-customer-profile-healthcare/` | What Is an ICP in Healthcare Sales? | live |
+| 22 | what is provider contact data | physician contacts, provider phone email, decision-maker data | `/glossary/provider-contact-data/` | What Is Provider Contact Data? | live |
+| 23 | what is healthcare ABM | account-based marketing healthcare, ABM healthcare strategy | `/glossary/healthcare-abm/` | What Is Healthcare ABM? | live |
+| 24 | what is territory planning healthcare | sales territory mapping, territory design, coverage planning | `/glossary/territory-planning-healthcare/` | What Is Territory Planning in Healthcare Sales? | live |
+| 25 | what is a DSO | dental service organization, dental support organization, DSO dental | `/glossary/dso/` | What Is a DSO (Dental Service Organization)? | live |
+| 26 | what is an IDN | integrated delivery network, health system, hospital network | `/glossary/idn/` | What Is an IDN (Integrated Delivery Network)? | live |
+| 27 | what is HIPAA | health insurance portability, HIPAA compliance, patient data privacy | `/glossary/hipaa/` | What Is HIPAA? | live |
+| 28 | what is NUCC | National Uniform Claim Committee, taxonomy maintenance, code sets | `/glossary/nucc/` | What Is the NUCC? | live |
+| 29 | what is provider specialty | medical specialty, specialty classification, provider type | `/glossary/provider-specialty/` | What Is Provider Specialty? | live |
+| 30 | what is pay per record pricing | per-record data pricing, usage-based data pricing | `/glossary/pay-per-record/` | What Is Pay-Per-Record Pricing? | live |
+| 31 | what is custom list building | custom data lists, targeted list building, filtered provider lists | `/glossary/custom-list-building/` | What Is Custom List Building? | live |
+| 32 | what is a provider directory | healthcare directory, physician directory, NPI directory | `/glossary/provider-directory/` | What Is a Provider Directory? | live |
+| 33 | what is open payments | sunshine act, physician payments database, CMS open payments | `/glossary/open-payments/` | What Is Open Payments? | live |
+| 34 | what is email bounce rate | bounce rate email, hard bounce soft bounce, email deliverability | `/glossary/bounce-rate-email/` | What Is Email Bounce Rate? | live |
+
+---
+
 ## Keyword Gap Notes
 
 > Use this section to track keyword opportunities not yet covered.
@@ -403,6 +448,7 @@
 
 | Date | Change | Pages Affected |
 |------|--------|----------------|
+| 2026-02-15 | Added 38 new pages: 33 glossary terms + 1 glossary hub (NPI, NPPES, PECOS, CAQH, taxonomy codes, credentialing, data quality, healthcare industry, B2B sales, data operations terms) + 4 new alternative pages (Apollo, IQVIA, Lusha, Cognism). Total: 226→264 pages | 38 new pages, KEYWORD_MAP + SEO_IMPROVEMENT_PLAN updated |
 | 2026-02-02 | Added 21 new pages (9 use cases + 12 resources) targeting sales-execution keywords with open SERPs: account planning, cold calling, email compliance, VAC prep, GPO navigation, hospital buying cycle, data vendor comparison, KOL identification, pre-RFP intel, territory assessment, PECOS data, physician emails, org chart mapping, telehealth targeting, data enrichment, NPI for sales, supply chain decision makers, dental data, behavioral health, ASC data, referral data | 21 new pages, KEYWORD_MAP updated |
 | 2026-02-01 | Added 12 new long-tail keyword pages (5 use cases + 7 resources) targeting low-competition searches | 12 new pages, KEYWORD_MAP updated |
 | 2026-01-31 | Initial keyword map created from all 187 live pages | All |

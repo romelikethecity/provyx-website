@@ -41,7 +41,7 @@ from nav_config import (
 # =============================================================================
 
 BASE_URL = "https://getprovyx.com"
-CSS_VERSION = "7"
+CSS_VERSION = "8"
 
 
 # =============================================================================
@@ -56,6 +56,7 @@ OG_IMAGE_MAP = {
     "/resources/": "og-resources.png",
     "/use-cases/": "og-resources.png",
     "/for/": "og-providers.png",
+    "/glossary/": "og-resources.png",
 }
 DEFAULT_OG_IMAGE = "og-providers.png"
 

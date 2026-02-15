@@ -107,18 +107,7 @@ All Tier 2 items DONE:
 
 ### TIER 3: Programmatic SEO Scaling
 
-#### 11. Glossary / Learn Pages
-**Source:** programmatic-seo/references/playbooks.md (Glossary playbook)
-**Gap:** No glossary targeting "what is [term]" queries. Healthcare has dozens of high-volume definitional queries (NPI, PECOS, credentialing, taxonomy codes, etc.)
-**Fix:**
-- New data structure in build.py: GLOSSARY_TERMS
-- URL: `/glossary/[term]/`
-- Template: definition + expanded explanation + related terms sidebar + link to relevant service/resource pages
-- FAQPage + DefinedTerm schema per page
-- Hub page at `/glossary/`
-**Impact:** Captures informational traffic, builds topical authority
-**Effort:** High — content creation + new template
-**Potential:** 30-50 terms = 30-50 new pages
+- ~~#11 Glossary / Learn Pages~~ ✅ Round 6 (33 terms at `/glossary/[term]/`, hub at `/glossary/`, DefinedTerm + FAQPage + Article + BreadcrumbList schema, related terms cross-linking, author bio, outbound authority links. Data in `scripts/glossary_data.py`)
 
 #### 12. Location/State Pages
 **Source:** programmatic-seo/references/playbooks.md (Locations playbook)
