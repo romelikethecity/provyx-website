@@ -1568,4 +1568,678 @@ NEW_ALTERNATIVES = [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
         ],
     },
+
+    # ===================================================================
+    # 11. AcuityMD Alternative
+    # ===================================================================
+    {
+        "slug": "acuitymd-alternative",
+        "competitor": "AcuityMD",
+        "competitor_url": "https://www.acuitymd.com/",
+        "title": "Best AcuityMD Alternative for Healthcare Provider Data",
+        "meta_description": (
+            "Looking for an AcuityMD alternative? Provyx delivers NPI-verified provider "
+            "data across all healthcare specialties with pay-per-record pricing and no "
+            "annual contract."
+        ),
+        "hero_h1": "Best AcuityMD Alternative for Healthcare Provider Data",
+        "hero_subtitle": (
+            "AcuityMD is a commercial intelligence platform built for medical device and "
+            "surgical companies. It maps procedure volumes to surgeons and hospitals using "
+            "claims data. But if your team sells beyond MedTech, or you need provider contact "
+            "data without a six-figure analytics contract, AcuityMD's narrow focus becomes a "
+            "limitation. Provyx delivers NPI-verified provider contact intelligence across every "
+            "healthcare specialty, not just surgical ones."
+        ),
+
+        "why_switch_heading": "Why Teams Look for an AcuityMD Alternative",
+        "why_switch_body": (
+            "<p><a href=\"https://www.acuitymd.com/\" target=\"_blank\" rel=\"noopener noreferrer\">AcuityMD</a> "
+            "has built a well-regarded product for one specific use case: helping medical device sales teams "
+            "identify which surgeons perform the most procedures relevant to their product. If you sell orthopedic "
+            "implants, cardiac devices, or surgical robotics, AcuityMD's procedure volume data is genuinely useful "
+            "for territory planning.</p>"
+
+            "<p>The problems emerge when your needs extend beyond that narrow lane.</p>"
+
+            "<p><strong>Surgical and MedTech focus excludes most specialties.</strong> "
+            "AcuityMD's data model centers on procedure volumes derived from claims data. That works for surgical "
+            "specialties where procedure counts drive targeting decisions. It doesn't work if you sell to primary care "
+            "physicians, mental health providers, dentists, chiropractors, dermatologists, or the dozens of other "
+            "non-surgical specialties that make up the majority of healthcare providers. If your prospect list isn't "
+            "dominated by surgeons, AcuityMD's core value proposition doesn't apply to your business.</p>"
+
+            "<p><strong>Analytics-first, contact data second.</strong> "
+            "AcuityMD's primary output is commercial intelligence: which hospitals have the highest procedure volumes, "
+            "which surgeons are early adopters, how market share shifts over time. The contact data layer (emails, "
+            "direct phone numbers, practice addresses) isn't the product's focus. Teams that need provider contact "
+            "lists for outbound campaigns often find that AcuityMD's contact depth doesn't match what dedicated "
+            "provider data platforms deliver.</p>"
+
+            "<p><strong>Enterprise pricing for a vertical product.</strong> "
+            "AcuityMD doesn't publish pricing, but based on "
+            "<a href=\"https://www.g2.com/products/acuitymd/reviews\" target=\"_blank\" rel=\"noopener noreferrer\">G2 reviews</a> "
+            "and industry feedback, contracts start in the mid-five-figures annually and scale from there depending "
+            "on the number of users and data modules. For a 10-person device sales team, that investment makes sense "
+            "when procedure volume data drives your territory strategy. For healthcare SaaS companies, staffing "
+            "agencies, marketing firms, or pharma teams with non-surgical targets, the cost-to-value ratio breaks down.</p>"
+
+            "<p><strong>Claims data lag affects timeliness.</strong> "
+            "Procedure volume data derived from medical claims runs 30 to 90 days behind reality. A surgeon who "
+            "moved to a new hospital system last month still shows under the old affiliation in claims-derived "
+            "databases. For field reps who need current practice locations and phone numbers, claims lag creates "
+            "wasted visits and outdated outreach.</p>"
+
+            "<p><strong>Limited value outside MedTech sales.</strong> "
+            "AcuityMD was purpose-built for device companies. Its workflow tools (territory mapping, opportunity "
+            "scoring, competitive tracking) are designed around the MedTech commercial motion. If you're a healthcare "
+            "SaaS company selling practice management software, or a staffing agency recruiting nurses, those "
+            "workflows don't translate. You're paying for a platform optimized for a sales motion that isn't yours.</p>"
+
+            "<p>AcuityMD is the right tool for what it was designed for: MedTech commercial intelligence. "
+            "For teams that sell to a broader range of healthcare providers, or that primarily need contact "
+            "data rather than procedure analytics, the platform's specialization becomes a constraint.</p>"
+        ),
+
+        "what_teams_need_heading": "What Teams Need Beyond Surgical Intelligence",
+        "what_teams_need_body": (
+            "<p>Most healthcare B2B companies sell to providers across multiple specialties, not just surgeons. "
+            "The data requirements for broad healthcare sales are different from MedTech territory planning.</p>"
+
+            "<p><strong>Coverage across all specialties.</strong> "
+            "If you sell to dentists, mental health providers, chiropractors, primary care physicians, and specialists "
+            "alike, you need a data source that covers the full spectrum of healthcare taxonomy codes. The "
+            "<a href=\"https://nucc.org/\" target=\"_blank\" rel=\"noopener noreferrer\">NUCC taxonomy system</a> "
+            "includes over 800 provider classifications. Procedure-volume platforms cover a fraction of those.</p>"
+
+            "<p><strong>Contact data depth for outbound sales.</strong> "
+            "Email addresses, direct phone numbers, fax numbers, and office manager names. These are the fields "
+            "that drive outbound campaigns. Analytics platforms surface insights about providers but don't always "
+            "deliver the contact details reps need to actually reach those providers.</p>"
+
+            "<p><strong>NPI-verified provider records.</strong> "
+            "Every record should be anchored to an NPI number verified against the "
+            "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">CMS NPI Registry</a>. "
+            "This confirms the contact is a real, licensed, active provider. For compliance-conscious sales "
+            "operations, NPI verification is the baseline, not a bonus feature.</p>"
+
+            "<p><strong>Flexible pricing for variable data needs.</strong> "
+            "Healthcare sales campaigns are cyclical. Some quarters you need 10,000 records for a territory "
+            "expansion. Other quarters you need 500 for a focused ABM campaign. Pay-per-record pricing matches "
+            "your data spend to your actual usage, without annual platform fees running during slow months.</p>"
+
+            "<p><strong>Practice-level detail.</strong> "
+            "Where the provider sees patients, what the direct line is, who owns the practice. For companies "
+            "selling into independent practices and small groups (not just large hospital systems), practice-level "
+            "data is more actionable than institutional affiliation data.</p>"
+        ),
+
+        "comparison_heading": "AcuityMD vs. Provyx: Quick Comparison",
+        "comparison_rows": [
+            ("Starting Price",
+             'Not public, ~$50K+/year <span class="tag tag--red">Enterprise</span>',
+             'Pay per record <span class="tag tag--green">No Minimum</span>'),
+            ("Specialty Coverage",
+             'Surgical/MedTech focus <span class="tag tag--amber">Narrow</span>',
+             'All 800+ NUCC specialties <span class="tag tag--green">Complete</span>'),
+            ("Primary Output",
+             'Procedure analytics + targeting <span class="tag tag--green">Intelligence</span>',
+             'Contact lists + practice data <span class="tag tag--green">Sales-Ready</span>'),
+            ("NPI Verification",
+             'Yes (claims-linked) <span class="tag tag--green">NPI-Linked</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("Contact Depth",
+             'Basic contact data <span class="tag tag--amber">Limited</span>',
+             'Email, phone, fax, owner, practice <span class="tag tag--green">Full Contact</span>'),
+            ("Contract Terms",
+             'Annual contract <span class="tag tag--red">Long-Term</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Claims/Procedure Data",
+             'Yes, core feature <span class="tag tag--green">Deep Analytics</span>',
+             'Not included <span class="tag tag--red">No Claims</span>'),
+            ("Best For",
+             "MedTech/device sales territory planning",
+             "Teams selling to any healthcare specialty"),
+        ],
+
+        "how_it_works_heading": "How Provyx Works as an AcuityMD Alternative",
+        "how_it_works_body": (
+            "<p>Provyx delivers NPI-verified healthcare provider contact data across every specialty. "
+            "Where AcuityMD goes deep on surgical procedure analytics, Provyx goes wide on provider "
+            "contact intelligence.</p>"
+
+            "<h3>Full-Spectrum Specialty Coverage</h3>"
+            "<p>Every Provyx record includes NUCC taxonomy codes, covering all 800+ healthcare specialties "
+            "and sub-specialties. Whether you sell to oral surgeons, psychiatrists, pediatric dentists, or "
+            "nurse practitioners, the data covers your target market. You're not limited to the surgical "
+            "specialties that claims-based platforms prioritize.</p>"
+
+            "<h3>Sales-Ready Contact Data</h3>"
+            "<p>Provyx records include the contact fields outbound teams use daily: verified email addresses, "
+            "direct phone numbers, fax numbers, practice addresses, practice websites, and where available, "
+            "practice owner and office manager names. Data is sourced from "
+            "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">public NPI registries</a>, "
+            "business listings, and commercial databases.</p>"
+
+            "<h3>No Platform Lock-In</h3>"
+            "<p>Provyx delivers data as CSV files, Excel exports, or through an API. Import into Salesforce, "
+            "HubSpot, Outreach, or whatever tools your team already uses. No proprietary platform to learn, "
+            "no per-seat licensing, no multi-month implementation.</p>"
+
+            "<h3>What Provyx Doesn't Include</h3>"
+            "<p>Provyx doesn't provide procedure volume data, claims-derived analytics, or MedTech-specific "
+            "territory mapping tools. If your sales strategy depends on knowing which surgeons perform the "
+            "highest volume of a specific procedure at a specific facility, AcuityMD's data depth is "
+            "necessary. Provyx covers the contact data layer, not the procedural analytics layer.</p>"
+        ),
+
+        "limitations_heading": "What Provyx Doesn't Do",
+        "limitations_body": (
+            "<p>Provyx doesn't include procedure volume data, claims analytics, competitive share tracking, "
+            "or the MedTech-specific workflow tools that AcuityMD provides. If your device sales team's "
+            "territory planning depends on understanding which surgeons perform the most relevant procedures "
+            "at which facilities, you need AcuityMD's claims-based intelligence. Provyx covers the contact "
+            "data layer across all specialties, not the procedural analytics layer for surgical specialties.</p>"
+        ),
+
+        "who_switches_heading": "Who Switches from AcuityMD to Provyx",
+        "who_switches_body": (
+            "<p><strong>Healthcare SaaS companies</strong> that evaluated AcuityMD and realized its MedTech focus "
+            "doesn't match their ICP. If you sell EHR software to primary care practices or patient engagement "
+            "tools to dental offices, AcuityMD's surgical intelligence isn't relevant. You need broad provider "
+            "contact data across all specialties.</p>"
+            "<p><strong>Marketing agencies with diverse healthcare clients.</strong> One client needs dermatologists, "
+            "the next needs mental health providers, another needs chiropractors. AcuityMD covers a narrow band of "
+            "surgical specialties. Agencies need a data source that covers every specialty their clients target.</p>"
+            "<p><strong>Medical staffing agencies</strong> recruiting across multiple provider types. Staffing companies "
+            "recruit nurses, therapists, physician assistants, and physicians across dozens of specialties. "
+            "Procedure-volume data doesn't help find the next travel nurse or locum tenens psychiatrist.</p>"
+            "<p><strong>Device companies that also need non-surgical contacts.</strong> Even MedTech companies have "
+            "marketing and education programs that target referring physicians, not just the surgeons who use their "
+            "devices. AcuityMD covers the surgical targets; Provyx fills the gap for the broader provider network "
+            "around those surgeons.</p>"
+        ),
+
+        "migration_heading": "How to Switch from AcuityMD to Provyx",
+        "migration_body": (
+            "<p><strong>Step 1: Identify which of your targets are outside AcuityMD's coverage.</strong> "
+            "List the specialties and provider types you sell to. If more than half are non-surgical, Provyx "
+            "likely covers a larger share of your addressable market.</p>"
+            "<p><strong>Step 2: Request a Provyx sample for your primary non-surgical specialty.</strong> "
+            "Start with the specialty AcuityMD doesn't cover well. Compare record count, contact depth, "
+            "and data quality against whatever you've been using as a workaround.</p>"
+            "<p><strong>Step 3: Test contact accuracy.</strong> "
+            "Import the sample into your CRM. Have reps work the list for 2 weeks. Track email deliverability, "
+            "phone connect rates, and lead quality. This gives you real performance data, not just record counts.</p>"
+            "<p><strong>Step 4: Decide on a hybrid or full switch.</strong> "
+            "Some teams keep AcuityMD for surgical procedure intelligence while using Provyx for contact data "
+            "across all specialties. Others find that Provyx's contact data plus their existing market knowledge "
+            "is sufficient without claims analytics. Let your outreach results guide the decision.</p>"
+        ),
+
+        "faqs": [
+            {"question": "Does AcuityMD cover non-surgical specialties?",
+             "answer": "AcuityMD's core value is procedure volume data derived from claims, which centers on surgical and interventional specialties. Non-surgical providers like primary care physicians, mental health providers, dentists, and chiropractors aren't well-served by a procedure-volume data model. Provyx covers all 800+ NUCC taxonomy codes across every healthcare specialty."},
+            {"question": "Is Provyx cheaper than AcuityMD?",
+             "answer": "For provider contact data, significantly. AcuityMD contracts reportedly start at $50,000+ annually. Provyx charges per record with no minimum and no annual commitment. If you need contact data rather than procedure analytics, the cost difference is substantial."},
+            {"question": "Can I use AcuityMD and Provyx together?",
+             "answer": "Yes. Some device companies use AcuityMD for surgical procedure intelligence and territory planning, then source broader provider contact lists from Provyx for marketing campaigns, referring physician outreach, and non-surgical targets. The tools cover different data layers."},
+            {"question": "Does Provyx have procedure volume data?",
+             "answer": "No. Provyx provides NPI-verified provider contact data with taxonomy codes, practice details, emails, and phone numbers. It doesn't include claims-derived procedure volumes or prescribing data. If procedure volumes drive your targeting, you need a claims analytics platform."},
+            {"question": "What if I sell medical devices and also need non-surgical provider data?",
+             "answer": "Use AcuityMD for your core surgical targets where procedure volume data drives territory decisions. Use Provyx for the broader provider network: referring physicians, non-surgical specialists, practice managers, and any specialty outside AcuityMD's coverage."},
+        ],
+
+        "related_links": [
+            {"url": "/compare/provyx-vs-acuitymd/", "label": "Provyx vs. AcuityMD Detailed Comparison"},
+            {"url": "/alternatives/definitive-healthcare-alternative/", "label": "Definitive Healthcare Alternative"},
+            {"url": "/for/medical-device-sales/", "label": "Provider Data for Medical Device Sales"},
+            {"url": "/pricing/", "label": "Provyx Pricing"},
+        ],
+        "outbound_links": [
+            ("https://www.acuitymd.com/", "AcuityMD official website"),
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.g2.com/products/acuitymd/reviews", "AcuityMD G2 Reviews"),
+        ],
+    },
+
+    # ===================================================================
+    # 12. Salesforce Health Cloud Alternative
+    # ===================================================================
+    {
+        "slug": "salesforce-health-cloud-alternative",
+        "competitor": "Salesforce Health Cloud",
+        "competitor_url": "https://www.salesforce.com/health/health-cloud/",
+        "title": "Best Salesforce Health Cloud Alternative for Provider Data",
+        "meta_description": (
+            "Need provider data without CRM lock-in? Provyx delivers NPI-verified "
+            "contact lists to any CRM. Pay per record, no platform fees, no Salesforce "
+            "dependency."
+        ),
+        "hero_h1": "Best Salesforce Health Cloud Alternative for Provider Data",
+        "hero_subtitle": (
+            "Salesforce Health Cloud is a CRM platform for healthcare organizations. It manages "
+            "relationships, but it doesn't come with provider data. Teams that adopt Health Cloud "
+            "expecting a provider database discover they still need a separate data source, "
+            "plus they've committed to Salesforce's pricing. Provyx delivers NPI-verified provider "
+            "contact data to any CRM without platform lock-in or per-seat fees."
+        ),
+
+        "why_switch_heading": "Why Teams Look for a Salesforce Health Cloud Alternative",
+        "why_switch_body": (
+            "<p><a href=\"https://www.salesforce.com/health/health-cloud/\" target=\"_blank\" rel=\"noopener noreferrer\">Salesforce Health Cloud</a> "
+            "is Salesforce's healthcare-specific CRM edition. It adds patient/provider data models, care coordination "
+            "tools, and HIPAA-eligible infrastructure on top of the standard Salesforce platform. For health systems "
+            "managing patient relationships or payer organizations coordinating care, it has legitimate use cases.</p>"
+
+            "<p>The confusion happens when healthcare B2B sales teams adopt Health Cloud thinking it solves their "
+            "provider data problem. It doesn't.</p>"
+
+            "<p><strong>Health Cloud is a CRM, not a data source.</strong> "
+            "Salesforce Health Cloud doesn't include provider contact data. It provides the data model and tools to "
+            "manage healthcare relationships, but you bring your own data. Teams that sign a Health Cloud contract "
+            "expecting to find NPI-verified provider records in the platform discover an empty database that they "
+            "need to populate from somewhere else. The CRM and the data are separate purchases.</p>"
+
+            "<p><strong>Per-seat pricing adds up fast.</strong> "
+            "Health Cloud pricing starts at $325/user/month for the Enterprise edition, based on "
+            "<a href=\"https://www.salesforce.com/editions-pricing/health-cloud/\" target=\"_blank\" rel=\"noopener noreferrer\">Salesforce's published pricing</a>. "
+            "A 10-person commercial team pays $39,000/year just for CRM access, before you buy any provider data "
+            "to put in it. Add Data Cloud, integration middleware, implementation consulting, and ongoing admin, "
+            "and the total cost of ownership for a mid-market team can reach $80,000-150,000+ in the first year.</p>"
+
+            "<p><strong>Implementation complexity.</strong> "
+            "Health Cloud implementations typically involve a Salesforce consulting partner, custom object configuration, "
+            "data migration, integration work, and user training. Timelines of 3 to 6 months are common. For sales teams "
+            "that need provider data to start campaigns next month, this timeline is a mismatch.</p>"
+
+            "<p><strong>Ecosystem lock-in is real.</strong> "
+            "Once your team builds workflows, reports, automations, and integrations on Health Cloud, switching CRMs "
+            "becomes a multi-quarter project. Salesforce knows this. It's why their enterprise contracts include annual "
+            "price increases that are difficult to negotiate down. The switching cost compounds over time.</p>"
+
+            "<p><strong>Over-engineered for many B2B use cases.</strong> "
+            "Health Cloud's care coordination features, patient timeline views, and clinical data models are designed "
+            "for health systems and payers. If your use case is straightforward B2B sales to healthcare providers, "
+            "standard Salesforce (or HubSpot, or any CRM) plus a provider data source is simpler and cheaper.</p>"
+        ),
+
+        "what_teams_need_heading": "What Healthcare Sales Teams Actually Need",
+        "what_teams_need_body": (
+            "<p>The real need that drives teams to evaluate Health Cloud is usually provider data, not CRM features. "
+            "Separating those two needs saves significant budget and complexity.</p>"
+
+            "<p><strong>Provider contact data they can use immediately.</strong> "
+            "NPI-verified records with email addresses, phone numbers, practice addresses, and taxonomy codes. "
+            "Data that imports into any CRM in 15 minutes, not data that requires a 4-month implementation to access.</p>"
+
+            "<p><strong>A CRM they already have.</strong> "
+            "Most healthcare sales teams already use Salesforce (standard edition), HubSpot, Pipedrive, or another CRM. "
+            "They don't need a new CRM. They need better data inside the CRM they have. Adopting Health Cloud to get "
+            "healthcare data models is like buying a new house because you need a bookshelf.</p>"
+
+            "<p><strong>Taxonomy-based specialty filtering.</strong> "
+            "The ability to pull lists of providers by NUCC taxonomy code, not just by job title or account name. "
+            "Taxonomy codes provide the specialty-level precision that healthcare sales targeting requires.</p>"
+
+            "<p><strong>Predictable data costs separate from CRM costs.</strong> "
+            "Pay for data based on what you need (pay-per-record) and pay for CRM based on your team size. "
+            "Bundling data and CRM into one contract reduces transparency and flexibility.</p>"
+        ),
+
+        "comparison_heading": "Salesforce Health Cloud vs. Provyx: Quick Comparison",
+        "comparison_rows": [
+            ("Product Type",
+             'Healthcare CRM platform <span class="tag tag--amber">CRM</span>',
+             'Provider contact data <span class="tag tag--green">Data Product</span>'),
+            ("Starting Price",
+             '$325/user/mo (Enterprise) <span class="tag tag--red">Per Seat</span>',
+             'Pay per record <span class="tag tag--green">No Minimum</span>'),
+            ("Provider Data Included",
+             'No, bring your own <span class="tag tag--red">Empty Database</span>',
+             'Yes, NPI-verified records <span class="tag tag--green">Data Included</span>'),
+            ("Implementation",
+             '3-6 months typical <span class="tag tag--red">Consulting Required</span>',
+             'Days <span class="tag tag--green">Same-Week Delivery</span>'),
+            ("NPI Verification",
+             'Supports NPI fields <span class="tag tag--amber">Bring Your Own</span>',
+             'Every record <span class="tag tag--green">NPI-Verified</span>'),
+            ("CRM Lock-In",
+             'Full Salesforce dependency <span class="tag tag--red">Locked In</span>',
+             'Works with any CRM <span class="tag tag--green">CRM-Agnostic</span>'),
+            ("Best For",
+             "Health systems managing patient/provider relationships",
+             "Sales teams that need provider data in their existing CRM"),
+        ],
+
+        "how_it_works_heading": "How Provyx Works Without CRM Lock-In",
+        "how_it_works_body": (
+            "<p>Provyx delivers provider data as a standalone product. Use it with Salesforce, HubSpot, "
+            "Pipedrive, or any other CRM. The data doesn't care which platform you run.</p>"
+
+            "<h3>Data Delivery Without Platform Dependency</h3>"
+            "<p>Provyx delivers NPI-verified provider records as CSV files, Excel exports, or through an API. "
+            "Import into your existing CRM in minutes. No implementation project, no consulting partner, "
+            "no custom object configuration. Your CRM already has contact and account objects. Map the "
+            "NPI and taxonomy fields to custom fields, and you're operational.</p>"
+
+            "<h3>Healthcare-Specific Data Fields</h3>"
+            "<p>Every Provyx record includes NPI number, NUCC taxonomy code(s), practice name and address, "
+            "phone number, fax, email, and where available, practice owner and website. These fields give your "
+            "existing CRM the healthcare context it needs without requiring a healthcare-specific CRM edition.</p>"
+
+            "<h3>Decoupled Data and CRM Costs</h3>"
+            "<p>When data and CRM are separate purchases, you control both. Switch CRMs without losing your data. "
+            "Scale your data purchases without adding CRM seats. Negotiate each vendor independently. "
+            "Bundled platforms reduce this flexibility by design.</p>"
+
+            "<h3>What This Means in Practice</h3>"
+            "<p>A 10-person sales team using HubSpot (free or $45/seat/mo) plus Provyx provider data spends "
+            "a fraction of what the same team pays for Health Cloud licenses plus a separate data source "
+            "plus implementation consulting. The team gets the same provider data working inside a CRM "
+            "they already know how to use.</p>"
+        ),
+
+        "limitations_heading": "What Provyx Doesn't Do",
+        "limitations_body": (
+            "<p>Provyx is not a CRM. It doesn't manage contacts, track interactions, run workflows, or "
+            "coordinate care plans. If your organization needs HIPAA-eligible CRM infrastructure for managing "
+            "patient relationships, care coordination, or clinical data, Salesforce Health Cloud serves those "
+            "needs. Provyx delivers provider data that feeds into whatever CRM you choose. It doesn't replace "
+            "the CRM itself.</p>"
+        ),
+
+        "who_switches_heading": "Who Chooses Provyx Over Salesforce Health Cloud",
+        "who_switches_body": (
+            "<p><strong>Healthcare B2B sales teams on standard Salesforce.</strong> They already have Salesforce. "
+            "They don't need Health Cloud's patient data models. They need provider contact data imported into "
+            "the CRM they already use and know. Provyx data imports into standard Salesforce without an upgrade.</p>"
+            "<p><strong>HubSpot teams that were told they need to switch.</strong> Teams using HubSpot for healthcare "
+            "sales sometimes get told they need Health Cloud for healthcare data models. In most cases, they need "
+            "healthcare data, not a healthcare CRM. Provyx data imports into HubSpot just as easily.</p>"
+            "<p><strong>Startups and mid-market companies watching their budget.</strong> Health Cloud's $325/user/month "
+            "plus data plus implementation is a six-figure commitment. A team buying Provyx data and using their "
+            "existing CRM spends a fraction of that while getting the same provider data quality.</p>"
+        ),
+
+        "migration_heading": "How to Get Provider Data Without Health Cloud",
+        "migration_body": (
+            "<p><strong>Step 1: Audit what you actually need.</strong> "
+            "Write down your requirements. If the list is \"NPI-verified provider records with emails and phones "
+            "that I can import into my CRM,\" you need a data product, not a new CRM platform.</p>"
+            "<p><strong>Step 2: Add healthcare fields to your existing CRM.</strong> "
+            "Create custom fields in your current CRM for NPI number, taxonomy code, and practice type. This takes "
+            "30 minutes in Salesforce or HubSpot. You don't need Health Cloud's pre-built data model for B2B sales.</p>"
+            "<p><strong>Step 3: Request a Provyx sample for your target specialty.</strong> "
+            "Get a sample list for your primary specialty and geography. Import it into your CRM. Verify that the "
+            "data works in your existing workflows: list views, reports, email sequences, territory assignments.</p>"
+            "<p><strong>Step 4: Scale with your actual needs.</strong> "
+            "Buy provider records as you need them. Refresh territory data quarterly. Add new specialties when you "
+            "expand into new markets. Your data spend scales with your business, not with your headcount.</p>"
+        ),
+
+        "faqs": [
+            {"question": "Does Salesforce Health Cloud come with provider data?",
+             "answer": "No. Health Cloud is a CRM platform with healthcare-specific data models and tools. It doesn't include provider contact data. You need a separate data source to populate it. This is a common misconception that leads teams to budget for Health Cloud without budgeting for data."},
+            {"question": "Can I use Provyx data in standard Salesforce?",
+             "answer": "Yes. Provyx delivers CSV files that import into any Salesforce edition. Add custom fields for NPI number and taxonomy code, import the file, and your reps have NPI-verified provider records in their existing Salesforce org. No Health Cloud upgrade needed."},
+            {"question": "Is Salesforce Health Cloud worth it for B2B sales to providers?",
+             "answer": "For most B2B healthcare sales teams, no. Health Cloud's value is in patient relationship management, care coordination, and clinical data models. If your use case is outbound sales to healthcare providers, standard Salesforce (or any CRM) plus a provider data source like Provyx is simpler and significantly cheaper."},
+            {"question": "How much does Provyx save compared to Health Cloud?",
+             "answer": "A 10-person team on Health Cloud Enterprise pays $39,000/year in CRM fees alone, before data, implementation, or consulting. The same team using their existing CRM plus Provyx data typically saves 60-80% while getting the same provider contact data quality."},
+            {"question": "What if my team already has Salesforce Health Cloud?",
+             "answer": "You can still use Provyx. Import Provyx data into Health Cloud to populate your provider records. Many teams with Health Cloud use external data sources because Health Cloud doesn't include data. Provyx records map cleanly to Health Cloud's provider data model."},
+        ],
+
+        "related_links": [
+            {"url": "/compare/provyx-vs-salesforce-health-cloud/", "label": "Provyx vs. Salesforce Health Cloud Comparison"},
+            {"url": "/alternatives/veeva-opendata-alternative/", "label": "Veeva OpenData Alternative"},
+            {"url": "/services/provider-contact-data/", "label": "Provider Contact Data"},
+            {"url": "/pricing/", "label": "Provyx Pricing"},
+        ],
+        "outbound_links": [
+            ("https://www.salesforce.com/health/health-cloud/", "Salesforce Health Cloud product page"),
+            ("https://www.salesforce.com/editions-pricing/health-cloud/", "Health Cloud pricing"),
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+        ],
+    },
+
+    # ===================================================================
+    # 13. D&B Hoovers Alternative
+    # ===================================================================
+    {
+        "slug": "dnb-hoovers-alternative",
+        "competitor": "D&B Hoovers",
+        "competitor_url": "https://www.dnb.com/products/marketing-sales/dnb-hoovers.html",
+        "title": "Best D&B Hoovers Alternative for Healthcare Provider Data",
+        "meta_description": (
+            "D&B Hoovers covers every industry but none deeply. Need accurate healthcare "
+            "provider data? Provyx delivers NPI-verified contacts with taxonomy filtering "
+            "and pay-per-record pricing."
+        ),
+        "hero_h1": "Best D&B Hoovers Alternative for Healthcare Provider Data",
+        "hero_subtitle": (
+            "D&B Hoovers is a general B2B database with 500M+ business profiles. For healthcare "
+            "teams, that breadth creates a specific problem: the data treats a dermatology practice "
+            "the same as a landscaping company. No NPI numbers, no taxonomy codes, no provider-level "
+            "detail. Provyx delivers healthcare provider data built from NPI registries with the "
+            "specialty-level precision that healthcare sales teams require."
+        ),
+
+        "why_switch_heading": "Why Healthcare Teams Outgrow D&B Hoovers",
+        "why_switch_body": (
+            "<p><a href=\"https://www.dnb.com/products/marketing-sales/dnb-hoovers.html\" target=\"_blank\" rel=\"noopener noreferrer\">D&B Hoovers</a> "
+            "is backed by Dun & Bradstreet's massive commercial database. It covers 500M+ business profiles "
+            "across every industry worldwide. For general B2B sales teams prospecting into manufacturing, "
+            "financial services, or technology companies, the breadth of coverage is a real asset. D-U-N-S numbers "
+            "provide a reliable corporate identity layer, and the firmographic data (revenue, employee count, "
+            "industry codes) is useful for account scoring and territory planning.</p>"
+
+            "<p>Healthcare teams hit a wall because D&B Hoovers treats healthcare providers like any other business.</p>"
+
+            "<p><strong>No NPI verification.</strong> "
+            "D&B Hoovers identifies businesses by D-U-N-S number, not by NPI. A dental practice shows up "
+            "the same way a dental supply company does: as a business entity with an address and a revenue estimate. "
+            "There's no verification that the contacts associated with a healthcare business are licensed, active "
+            "providers. For sales teams that need to reach practicing physicians, dentists, or therapists, this is "
+            "a fundamental data gap.</p>"
+
+            "<p><strong>No taxonomy code filtering.</strong> "
+            "D&B uses SIC and NAICS codes for industry classification. These codes are designed for economic "
+            "categorization, not healthcare specialty identification. NAICS code 621111 (\"Offices of Physicians\") "
+            "lumps every physician specialty together. You can't distinguish orthopedic surgeons from family medicine "
+            "doctors, or oral surgeons from general dentists. Healthcare sales teams need NUCC taxonomy code "
+            "filtering to build specialty-specific prospect lists, and D&B doesn't support it.</p>"
+
+            "<p><strong>Business-level records, not provider-level records.</strong> "
+            "D&B Hoovers maps contacts to businesses. In healthcare, sales teams often need provider-level "
+            "data: individual physicians and practitioners with their specific specialties, NPI numbers, "
+            "and practice locations. A single medical group might have 15 providers across 3 specialties. "
+            "D&B gives you the practice as one business record. Provider data platforms give you each "
+            "provider individually with their taxonomy classification.</p>"
+
+            "<p><strong>Contact data quality issues in healthcare.</strong> "
+            "Multiple "
+            "<a href=\"https://www.g2.com/products/d-b-hoovers/reviews\" target=\"_blank\" rel=\"noopener noreferrer\">G2 reviews</a> "
+            "cite data freshness concerns with D&B Hoovers across all industries. Healthcare is particularly "
+            "affected because providers change practices more frequently than executives change companies. "
+            "A physician who moved from one practice to another 6 months ago may still show under the old "
+            "practice in D&B's database. Stale records mean bounced emails, wrong phone numbers, and wasted "
+            "rep time.</p>"
+
+            "<p><strong>Pricing doesn't match healthcare team budgets.</strong> "
+            "D&B Hoovers pricing starts at approximately $10,000-25,000/year depending on the package, with "
+            "additional costs for data enrichment credits and API access. For that investment, healthcare "
+            "teams get a general B2B database that lacks the healthcare-specific fields they need. The value "
+            "equation doesn't work when the data requires extensive manual cleanup before it's useful for "
+            "provider outreach.</p>"
+
+            "<p>D&B Hoovers is a strong product for companies that need broad B2B data across all industries. "
+            "For healthcare-specific prospecting, its general approach produces data that requires too much "
+            "manual work to make actionable.</p>"
+        ),
+
+        "what_teams_need_heading": "What Healthcare Sales Teams Need That D&B Can't Provide",
+        "what_teams_need_body": (
+            "<p>The gap between D&B Hoovers and healthcare data requirements comes down to provider identity, "
+            "specialty classification, and record granularity.</p>"
+
+            "<p><strong>Provider-level records with NPI numbers.</strong> "
+            "Each record should represent an individual healthcare provider verified against the "
+            "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">CMS NPI Registry</a>. "
+            "NPI verification confirms the person is a licensed, active provider. It also links them to their "
+            "taxonomy code, practice address, and enumeration date. D-U-N-S numbers identify businesses; "
+            "NPI numbers identify providers. Healthcare sales teams need both, but the provider identity "
+            "layer is what D&B doesn't offer.</p>"
+
+            "<p><strong>NUCC taxonomy codes for specialty filtering.</strong> "
+            "800+ taxonomy codes let you build lists by exact specialty and sub-specialty. \"Dermatology\" "
+            "is different from \"Mohs Surgery.\" \"Family Medicine\" is different from \"Sports Medicine.\" "
+            "NAICS codes can't make these distinctions. For healthcare sales teams running specialty-specific "
+            "campaigns, taxonomy filtering isn't optional.</p>"
+
+            "<p><strong>Practice-level detail for independent practices.</strong> "
+            "Over 60% of US physicians work in practices with fewer than 10 providers. These independent "
+            "and small group practices are poorly covered by enterprise B2B databases that prioritize large "
+            "organizations. Practice-level data (direct phone, fax, practice owner, office website) is what "
+            "reps use to reach decision-makers at these smaller organizations.</p>"
+
+            "<p><strong>Data freshness tied to registry updates.</strong> "
+            "The NPI registry is updated weekly by CMS. Provider data platforms that sync with NPPES maintain "
+            "current records. General B2B databases update on longer cycles, and healthcare records often "
+            "aren't prioritized for refresh because they're a small slice of the total database.</p>"
+        ),
+
+        "comparison_heading": "D&B Hoovers vs. Provyx: Quick Comparison",
+        "comparison_rows": [
+            ("Database Scope",
+             '500M+ businesses, all industries <span class="tag tag--green">Broad</span>',
+             'US healthcare providers <span class="tag tag--green">Deep Vertical</span>'),
+            ("Identity System",
+             'D-U-N-S numbers <span class="tag tag--amber">Business ID</span>',
+             'NPI numbers <span class="tag tag--green">Provider ID</span>'),
+            ("Specialty Filtering",
+             'SIC/NAICS codes <span class="tag tag--red">Broad Industry</span>',
+             '800+ NUCC taxonomy codes <span class="tag tag--green">Exact Specialty</span>'),
+            ("Record Granularity",
+             'Business-level <span class="tag tag--amber">Company Records</span>',
+             'Provider-level <span class="tag tag--green">Individual Providers</span>'),
+            ("Starting Price",
+             '~$10K-25K/year <span class="tag tag--amber">Annual Contract</span>',
+             'Pay per record <span class="tag tag--green">No Minimum</span>'),
+            ("Contract Terms",
+             'Annual <span class="tag tag--amber">12-Month</span>',
+             'Month-to-month <span class="tag tag--green">Cancel Anytime</span>'),
+            ("Healthcare Data Freshness",
+             'General refresh cycle <span class="tag tag--amber">Variable</span>',
+             'Synced with NPI registry <span class="tag tag--green">Registry-Current</span>'),
+            ("Best For",
+             "General B2B prospecting across all industries",
+             "Teams selling exclusively to healthcare providers"),
+        ],
+
+        "how_it_works_heading": "How Provyx Works as a D&B Hoovers Alternative for Healthcare",
+        "how_it_works_body": (
+            "<p>Provyx is a healthcare-only provider data platform. Every record is built from the NPI registry "
+            "and enriched with contact data from business listings and commercial databases. The result is "
+            "provider-level records with the specialty precision and contact depth that healthcare teams need.</p>"
+
+            "<h3>Provider Identity, Not Just Business Identity</h3>"
+            "<p>Where D&B Hoovers identifies businesses by D-U-N-S number, Provyx identifies providers by NPI. "
+            "Each record represents an individual healthcare provider with a verified, active NPI, their NUCC "
+            "taxonomy code(s), and their current practice address. You get provider-level granularity, not "
+            "business-level approximation.</p>"
+
+            "<h3>Specialty Precision</h3>"
+            "<p>Filter by any of 800+ NUCC taxonomy codes. Build a list of oral and maxillofacial surgeons in "
+            "the Midwest. Pull every psychiatric nurse practitioner within 50 miles of Atlanta. Target "
+            "pediatric ophthalmologists in California. The taxonomy system gives you sub-specialty precision "
+            "that SIC and NAICS codes simply can't provide.</p>"
+
+            "<h3>Contact Data Built for Outreach</h3>"
+            "<p>Every record includes the contact fields sales teams use: verified email address, direct phone "
+            "number, fax number, practice address, practice website, and where available, practice owner and "
+            "office manager names. Data is sourced from "
+            "<a href=\"https://npiregistry.cms.hhs.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">public NPI registries</a>, "
+            "state licensing boards, business directories, and commercial databases.</p>"
+
+            "<h3>No Annual Commitment</h3>"
+            "<p>Provyx charges per record. No annual contract, no seat-based pricing, no credit system. "
+            "Buy 500 records for a focused campaign or 50,000 for a national rollout. Your data spend "
+            "matches your actual usage.</p>"
+        ),
+
+        "limitations_heading": "What Provyx Doesn't Do",
+        "limitations_body": (
+            "<p>Provyx covers US healthcare providers only. It doesn't include non-healthcare businesses, "
+            "international records, or the firmographic data (revenue estimates, employee counts, corporate "
+            "hierarchy) that D&B provides for general businesses. If your team sells to both healthcare and "
+            "non-healthcare organizations, you'll need Provyx for provider data and D&B Hoovers (or another "
+            "general B2B source) for non-healthcare prospects. Provyx also doesn't provide D-U-N-S numbers "
+            "or corporate family tree data.</p>"
+        ),
+
+        "who_switches_heading": "Who Switches from D&B Hoovers to Provyx",
+        "who_switches_body": (
+            "<p><strong>Healthcare SaaS companies</strong> that started with D&B because it was their existing data vendor "
+            "and discovered that healthcare provider data requires provider-level identity (NPI) and specialty "
+            "classification (taxonomy codes) that D&B doesn't offer. They're spending hours cleaning and verifying "
+            "D&B records before reps can use them.</p>"
+            "<p><strong>Medical device sales teams</strong> frustrated with D&B's business-level records. When a rep needs "
+            "to know which surgeons operate at a specific facility and how to reach them directly, D&B's company "
+            "record for the hospital isn't sufficient. Provider-level data with direct contact information "
+            "changes the workflow.</p>"
+            "<p><strong>Healthcare marketing agencies</strong> building specialty-specific campaigns. Agencies that pull "
+            "\"dermatologists in Florida\" from D&B get a list of businesses classified under a broad NAICS code. "
+            "The list includes corporate offices, medical supply companies, and practices that may have closed. "
+            "Taxonomy-filtered, NPI-verified records produce cleaner lists on the first pull.</p>"
+            "<p><strong>Teams tired of data cleanup.</strong> The hidden cost of general B2B data for healthcare is the "
+            "hours spent verifying, deduplicating, and enriching records before they're usable for provider "
+            "outreach. Teams that quantify that cleanup time often find that pay-per-record pricing for "
+            "pre-verified provider data is cheaper than \"affordable\" general data that requires heavy post-processing.</p>"
+        ),
+
+        "migration_heading": "How to Switch from D&B Hoovers to Provyx for Healthcare",
+        "migration_body": (
+            "<p><strong>Step 1: Separate your healthcare and non-healthcare data needs.</strong> "
+            "If 80% of your outreach targets healthcare providers, Provyx covers your primary use case. "
+            "Keep D&B for non-healthcare prospects if you sell across industries.</p>"
+            "<p><strong>Step 2: Request a Provyx sample for your top healthcare specialty.</strong> "
+            "Compare it against your D&B data for the same segment. Check: Does every record have an NPI? "
+            "Are taxonomy codes included? Are practice addresses current? Are email and phone records more "
+            "accurate than what D&B provided?</p>"
+            "<p><strong>Step 3: Quantify your current cleanup cost.</strong> "
+            "Track how many hours your team spends verifying and enriching D&B healthcare records before "
+            "outreach. Multiply by your team's hourly rate. This is the hidden cost of using general B2B "
+            "data for healthcare targeting.</p>"
+            "<p><strong>Step 4: Run a head-to-head campaign test.</strong> "
+            "Send the same email sequence to 500 D&B-sourced healthcare contacts and 500 Provyx-sourced "
+            "contacts. Compare bounce rates, reply rates, and meetings booked. Let the results make the case.</p>"
+        ),
+
+        "faqs": [
+            {"question": "Does D&B Hoovers have healthcare provider data?",
+             "answer": "D&B Hoovers includes healthcare businesses in its general database, but records are business-level (not provider-level) and classified by NAICS codes (not NUCC taxonomy codes). There's no NPI verification, no specialty sub-classification, and no provider-level granularity. For healthcare sales targeting, these gaps create significant data quality issues."},
+            {"question": "Is Provyx more accurate than D&B Hoovers for healthcare?",
+             "answer": "For healthcare provider data specifically, yes. Provyx records are anchored to NPI numbers verified against the CMS registry, classified by NUCC taxonomy codes, and enriched with practice-level contact data from healthcare-specific sources. D&B's healthcare records come from general business databases that don't include these provider-specific verification layers."},
+            {"question": "Can I use D&B Hoovers and Provyx together?",
+             "answer": "Yes. Many teams use Provyx for healthcare provider data and D&B for non-healthcare B2B prospecting. If you sell to both healthcare organizations and general businesses, this combination gives you vertical depth for healthcare and horizontal breadth for everything else."},
+            {"question": "How does pricing compare between D&B Hoovers and Provyx?",
+             "answer": "D&B Hoovers packages start around $10,000-25,000 annually. Provyx charges per record with no annual commitment. For teams focused on healthcare, Provyx delivers more relevant, higher-quality data at a lower total cost because you're paying for provider-specific records, not a general business database."},
+            {"question": "What about D&B's firmographic data like revenue and employee count?",
+             "answer": "D&B provides estimated revenue and employee counts for businesses, which Provyx doesn't include for individual providers. If firmographic data is critical to your qualification process, you can enrich Provyx records with D&B firmographic data or use both sources. Most healthcare sales teams find that specialty, location, and practice type are more useful qualification criteria than revenue estimates."},
+        ],
+
+        "related_links": [
+            {"url": "/compare/provyx-vs-dnb-hoovers/", "label": "Provyx vs. D&B Hoovers Detailed Comparison"},
+            {"url": "/alternatives/apollo-alternative/", "label": "Apollo.io Alternative"},
+            {"url": "/services/provider-contact-data/", "label": "Provider Contact Data"},
+            {"url": "/pricing/", "label": "Provyx Pricing"},
+        ],
+        "outbound_links": [
+            ("https://www.dnb.com/products/marketing-sales/dnb-hoovers.html", "D&B Hoovers product page"),
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.g2.com/products/d-b-hoovers/reviews", "D&B Hoovers G2 Reviews"),
+        ],
+    },
 ]

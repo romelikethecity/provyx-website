@@ -57,6 +57,7 @@ OG_IMAGE_MAP = {
     "/use-cases/": "og-resources.png",
     "/for/": "og-providers.png",
     "/glossary/": "og-resources.png",
+    "/blog/": "og-resources.png",
 }
 DEFAULT_OG_IMAGE = "og-providers.png"
 

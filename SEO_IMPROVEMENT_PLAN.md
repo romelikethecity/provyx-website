@@ -110,32 +110,29 @@ All Tier 2 items DONE:
 - ~~#11 Glossary / Learn Pages~~ ✅ Round 6 (33 terms at `/glossary/[term]/`, hub at `/glossary/`, DefinedTerm + FAQPage + Article + BreadcrumbList schema, related terms cross-linking, author bio, outbound authority links. Data in `scripts/glossary_data.py`)
 
 #### 11b. Comparison & Alternative Page Expansion
-**Status:** ✅ Round 7 (Feb 15, 2026)
-**Added:** 4 new comparison pages (Veeva OpenData, Ribbon Health, Doximity, Komodo Health) + 4 matching alternative pages
-**Total comparisons:** 6 → 10 | **Total alternatives:** 6 → 10 | **Pages added:** 8
-**Data files:** `scripts/comparisons_new.py` (new), `scripts/alternatives_new.py` (expanded)
-**Competitors covered:** ZoomInfo, Definitive Healthcare, Apollo, IQVIA, Lusha, Cognism, Veeva OpenData, Ribbon Health, Doximity, Komodo Health
+**Status:** ✅ Round 7+8 (Feb 15, 2026)
+**Round 7:** 4 new comparison pages (Veeva OpenData, Ribbon Health, Doximity, Komodo Health) + 4 matching alternative pages
+**Round 8:** 3 more comparison pages (AcuityMD, Salesforce Health Cloud, D&B Hoovers) + 3 matching alternative pages
+**Total comparisons:** 6 → 13 | **Total alternatives:** 6 → 11 | **Pages added:** 14
+**Data files:** `scripts/comparisons_new.py`, `scripts/alternatives_new.py`
+**Competitors covered:** ZoomInfo, Definitive Healthcare, Apollo, IQVIA, Lusha, Cognism, Veeva OpenData, Ribbon Health, Doximity, Komodo Health, AcuityMD, Salesforce Health Cloud, D&B Hoovers
 
 #### 12. Location/State Pages
-**Source:** programmatic-seo/references/playbooks.md (Locations playbook)
-**Gap:** Zero location-specific content. "Healthcare provider data in [state]" queries have commercial intent.
-**Fix:**
-- New template: state-level pages at `/providers/[state]/` or `/locations/[state]/`
-- Content: state provider counts by specialty, regional compliance notes, state licensing info
-- Must include real data to avoid thin content penalty
-**Impact:** Long-tail local search traffic
-**Effort:** High — needs actual per-state data
-**Potential:** 50 state pages + top metro areas
+**Status:** ✅ Round 8 (Feb 15, 2026)
+**Added:** 50 state pages at `/providers/states/[state]/` + hub page at `/providers/states/`
+**Content per page:** Provider stats (total, physicians, dental, mental health), top 5 specialties, top metros, regulatory notes, market insights, 3 FAQs, related states, category links
+**Schema:** Article + BreadcrumbList + FAQPage
+**Data file:** `scripts/state_pages.py`
+**Pages added:** 51 (50 states + index)
 
 #### 13. Blog / Content Publishing
-**Source:** content-strategy/SKILL.md, launch-strategy/SKILL.md
-**Gap:** No blog. Google favors sites with regular content updates. The 27 resource guides are evergreen but don't signal freshness.
-**Fix:**
-- Add `/blog/` section with Article schema, author attribution, dates
-- 2-4 posts/month targeting awareness-stage keywords
-- Each post links to relevant resource guides and service pages
-**Impact:** Organic traffic growth, topical authority, internal linking
-**Effort:** High — ongoing content production
+**Status:** ✅ Round 8 (Feb 15, 2026) — Initial launch
+**Added:** 5 blog posts at `/blog/[slug]/` + index page at `/blog/`
+**Posts:** healthcare-provider-data-trends-2026, how-to-build-healthcare-provider-contact-list, npi-database-vs-commercial-provider-data, healthcare-sales-prospecting-mistakes, medical-practice-data-quality-checklist
+**Content:** ~10,500 words total (avg 2,100/post), Article schema with author Person, FAQPage, BreadcrumbList, tags, outbound authority links, related internal links
+**Data file:** `scripts/blog_posts.py`
+**Pages added:** 6 (5 posts + index)
+**Next:** Add 2-4 posts/month targeting awareness-stage keywords
 
 #### 14. Free Tool Strategy
 **Source:** free-tool-strategy/SKILL.md, references/tool-types.md
@@ -184,7 +181,7 @@ All Tier 2 items DONE:
 |------|--------|-----------------|
 | **1** | ✅ ALL DONE | #1-5 (Article schema, GA4 events, robots.txt, dates, defer) |
 | **2** | ✅ ALL DONE | #6-10 (Speakable, HowTo, comparison table pending, AEO expansion, testimonials) |
-| **3** | In progress | #11 Glossary ✅, #11b Comparisons expanded ✅, #12-14 remaining (locations, blog, free tools) |
+| **3** | Mostly done | #11 Glossary ✅, #11b Comparisons 13+Alternatives 11 ✅, #12 States 50 ✅, #13 Blog 5 posts ✅, #14 Free tools remaining |
 | **4** | ✅ ALL DONE | #15-18 (Sticky header, scroll CTA, social proof, pricing) |
 | **5** | Mostly done | #19 done, #20-21 are ongoing process items |
 
@@ -192,9 +189,18 @@ All Tier 2 items DONE:
 
 1. **Comparison Table Schema** (#8) — Medium effort, low-med impact
 2. ~~**Glossary Pages** (#11)~~ ✅ Done (33 terms)
-3. ~~**Comparison & Alternative Expansion** (#11b)~~ ✅ Done (10 comparisons, 10 alternatives)
-4. **Location/State Pages** (#12) — 50 pages, requires per-state data
-5. **Blog** (#13) — Ongoing content production
+3. ~~**Comparison & Alternative Expansion** (#11b)~~ ✅ Done (13 comparisons, 11 alternatives)
+4. ~~**Location/State Pages** (#12)~~ ✅ Done (50 states + index)
+5. **Blog** (#13) — Initial 5 posts launched ✅, ongoing content production needed
 6. **Free Tools** (#14) — NPI lookup, provider estimator, etc.
 7. **UTM Standards** (#20) — Documentation task
 8. **GSC Monitoring** (#21) — Ongoing process
+
+## Page Count History
+
+| Round | Pages | Delta | What was added |
+|-------|-------|-------|----------------|
+| Initial | 226 | — | Core site (providers, services, use-cases, resources, compare, alternatives, ICP) |
+| Round 6 | 260 | +34 | Glossary (33 terms + index) |
+| Round 7 | 272 | +12 | 4 comparisons, 4 alternatives, spoke pages, CSS v8 |
+| Round 8 | 335 | +63 | 50 state pages, 5 blog posts, 3 comparisons, 3 alternatives |

@@ -28,6 +28,8 @@ from templates import (
 from glossary_data import GLOSSARY_TERMS
 from alternatives_new import NEW_ALTERNATIVES
 from comparisons_new import NEW_COMPARISONS
+from state_pages import STATE_PAGES
+from blog_posts import BLOG_POSTS
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FORMSPREE_ID = "mrekgwqk"
@@ -16142,6 +16144,428 @@ def build_glossary_index():
 # SITEMAP GENERATOR
 # =============================================================================
 
+# =============================================================================
+# PAGE GENERATORS - STATE PAGES
+# =============================================================================
+
+def build_state_page(state):
+    """Build a single state location page at /providers/states/{slug}/"""
+
+    slug = state["slug"]
+    name = state["name"]
+    abbr = state["abbreviation"]
+    url_path = f"/providers/states/{slug}/"
+    canonical = f"{BASE_URL}{url_path}"
+
+    breadcrumbs = [
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Providers", "url": f"{BASE_URL}/providers/"},
+        {"name": "By State", "url": f"{BASE_URL}/providers/states/"},
+        {"name": name, "url": canonical},
+    ]
+    breadcrumb_schema = get_breadcrumb_schema(breadcrumbs)
+    breadcrumb_html = get_breadcrumb_html(breadcrumbs)
+
+    # -- Stats grid --
+    stats = state["provider_stats"]
+    stats_html = f'''
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="stats-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;text-align:center;">
+                <div class="stat-card">
+                    <div class="stat-card__value">{stats["total_providers"]}</div>
+                    <div class="stat-card__label">Total Providers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">{stats["active_physicians"]}</div>
+                    <div class="stat-card__label">Active Physicians</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">{stats["dental_practices"]}</div>
+                    <div class="stat-card__label">Dental Practices</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">{stats["mental_health"]}</div>
+                    <div class="stat-card__label">Mental Health Providers</div>
+                </div>
+            </div>
+        </div>
+    </section>'''
+
+    # -- Top specialties --
+    specialties_li = "".join(f"<li>{s}</li>" for s in state["top_specialties"])
+
+    # -- Top metros --
+    metros_li = "".join(f"<li>{m['name']}</li>" for m in state["top_metros"])
+
+    # -- Related states --
+    related_html = ""
+    related_links = []
+    for rs_slug in state["related_states"]:
+        rs_name = rs_slug.replace("-", " ").title()
+        for sp in STATE_PAGES:
+            if sp["slug"] == rs_slug:
+                rs_name = sp["name"]
+                break
+        related_links.append(f'<a href="/providers/states/{rs_slug}/">{rs_name}</a>')
+    if related_links:
+        related_html = f'''
+    <section class="section">
+        <div class="container">
+            <div class="related-links">
+                <p class="related-links__title">Nearby States</p>
+                <div class="related-links__list">{" ".join(related_links)}</div>
+            </div>
+        </div>
+    </section>'''
+
+    # -- Category links --
+    cat_links_li = "".join(
+        f'<li><a href="{cl["url"]}">{cl["name"]}</a></li>'
+        for cl in state["category_links"]
+    )
+    cat_links_html = f'''
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Browse {name} Provider Data by Specialty</h2>
+            <ul class="related-links">{cat_links_li}</ul>
+        </div>
+    </section>'''
+
+    # -- FAQ --
+    faq_html = generate_faq_html(state["faqs"])
+
+    # -- CTA --
+    cta_html = generate_cta_section(
+        title=f"Get {name} Provider Data",
+        text=f"Tell us what providers you need in {name}. We'll build a verified contact list for your target specialties and regions.",
+    )
+
+    # -- Article schema --
+    article_schema = generate_article_schema(
+        title=state["hero_title"],
+        description=state["meta_description"],
+        canonical_path=url_path,
+        speakable_selectors=[".page-hero h1", ".page-hero .subtitle"],
+    )
+
+    # -- Assemble body --
+    body = f"""
+    <section class="page-hero">
+        <div class="container">
+            {breadcrumb_html}
+            <span class="comp-badge">{abbr} PROVIDER DATA</span>
+            <h1>{state["hero_title"]}</h1>
+            <p class="subtitle">{state["hero_subtitle"]}</p>
+            <p class="page-hero__date">Updated February 2026</p>
+        </div>
+    </section>
+
+    {stats_html}
+
+    <section class="content-section">
+        <div class="container" style="max-width:800px">
+            <h2>Top Healthcare Specialties in {name}</h2>
+            <ul class="data-points">{specialties_li}</ul>
+
+            <h2>Major Healthcare Markets in {name}</h2>
+            <ul class="data-points">{metros_li}</ul>
+
+            <h2>Regulatory Environment</h2>
+            <p>{state["regulatory_note"]}</p>
+
+            <h2>Market Overview</h2>
+            <p>{state["market_insight"]}</p>
+        </div>
+    </section>
+
+    {faq_html}
+    {cat_links_html}
+    {related_html}
+    {cta_html}
+    """
+
+    extra_schema = breadcrumb_schema + article_schema
+    page_html = get_page_wrapper(
+        title=state["hero_title"],
+        description=state["meta_description"],
+        canonical_path=url_path,
+        body_content=body,
+        active_page="/providers/",
+        extra_schema=extra_schema,
+        og_type="article",
+    )
+
+    write_page(f"providers/states/{slug}/index.html", page_html)
+    ALL_PAGES.append((url_path, 0.6, "monthly"))
+
+
+def build_states_index():
+    """Build /providers/states/index.html - hub page listing all 50 states."""
+
+    breadcrumbs = [
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Providers", "url": f"{BASE_URL}/providers/"},
+        {"name": "By State", "url": f"{BASE_URL}/providers/states/"},
+    ]
+
+    item_list = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Healthcare Provider Data by State",
+        "numberOfItems": len(STATE_PAGES),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": s["name"],
+                "url": f"{BASE_URL}/providers/states/{s['slug']}/",
+            }
+            for i, s in enumerate(STATE_PAGES, 1)
+        ],
+    }
+    item_list_tag = f'\n    <script type="application/ld+json">\n{json.dumps(item_list, indent=2)}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + item_list_tag
+
+    cards = ""
+    for s in STATE_PAGES:
+        cards += f'''
+                <a href="/providers/states/{s["slug"]}/" class="provider-card">
+                    <h3 class="provider-card__title">{s["name"]}</h3>
+                    <p class="provider-card__count">{s["provider_stats"]["total_providers"]} providers</p>
+                    <p class="provider-card__text">{s["abbreviation"]}</p>
+                </a>'''
+
+    body = f'''
+        <section class="page-hero section">
+            <div class="container">
+                {get_breadcrumb_html(breadcrumbs)}
+                <h1 class="page-hero__title">Healthcare Provider Data by State</h1>
+                <p class="page-hero__subtitle">Browse verified provider contact data across all 50 US states.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="provider-grid">
+                    {cards}
+                </div>
+            </div>
+        </section>
+
+{generate_cta_section()}'''
+
+    html = get_page_wrapper(
+        title="Healthcare Provider Data by State",
+        description="Browse verified healthcare provider contact data across all 50 US states. NPI-verified records with taxonomy codes, practice details, and direct contacts.",
+        canonical_path="/providers/states/",
+        body_content=body,
+        active_page="/providers/",
+        extra_schema=extra_schema,
+    )
+    write_page("providers/states/index.html", html)
+    ALL_PAGES.append(("/providers/states/", 0.8, "monthly"))
+
+
+# =============================================================================
+# PAGE GENERATORS - BLOG
+# =============================================================================
+
+def build_blog_post(post):
+    """Build a single blog post page at /blog/{slug}/"""
+
+    slug = post["slug"]
+    url_path = f"/blog/{slug}/"
+    canonical = f"{BASE_URL}{url_path}"
+
+    breadcrumbs = [
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Blog", "url": f"{BASE_URL}/blog/"},
+        {"name": post["title"], "url": canonical},
+    ]
+    breadcrumb_schema = get_breadcrumb_schema(breadcrumbs)
+    breadcrumb_html = get_breadcrumb_html(breadcrumbs)
+
+    # -- Author bio --
+    author = post["author"]
+    author_html = f"""
+    <section class="content-section">
+        <div class="container">
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>{author["name"]}</strong></p>
+                <p>{author["credentials"]}</p>
+                <p><a href="{author["linkedin"]}" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </section>"""
+
+    # -- Outbound links --
+    outbound_html = ""
+    if post.get("outbound_links"):
+        links_li = "".join(
+            f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{text}</a></li>\n'
+            for url, text in post["outbound_links"]
+        )
+        outbound_html = f"""
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul>{links_li}</ul>
+            </div>
+        </div>
+    </section>"""
+
+    # -- Related links --
+    related_html = ""
+    if post.get("related_links"):
+        links_li = "".join(
+            f'<li><a href="{link["url"]}">{link["text"]}</a></li>\n'
+            for link in post["related_links"]
+        )
+        related_html = f"""
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links">{links_li}</ul>
+        </div>
+    </section>"""
+
+    # -- FAQ --
+    faq_html = generate_faq_html(post["faqs"])
+
+    # -- CTA --
+    cta_html = generate_cta_section()
+
+    # -- Article schema --
+    article_schema = generate_article_schema(
+        title=post["title"],
+        description=post["meta_description"],
+        canonical_path=url_path,
+        date_published=post["date_published"],
+        date_modified=post["date_modified"],
+        speakable_selectors=[".page-hero h1", ".page-hero .subtitle"],
+        author_person={
+            "name": author["name"],
+            "url": author.get("linkedin", ""),
+            "credentials": author.get("credentials", ""),
+        },
+    )
+
+    # -- Tags --
+    tags_html = ""
+    if post.get("tags"):
+        tag_spans = " ".join(f'<span class="glossary-tag">{t}</span>' for t in post["tags"])
+        tags_html = f'<div class="glossary-tag-list" style="margin-top:1rem;">{tag_spans}</div>'
+
+    # -- Assemble body --
+    body = f"""
+    <section class="page-hero">
+        <div class="container">
+            {breadcrumb_html}
+            <span class="comp-badge">BLOG</span>
+            <h1>{post["title"]}</h1>
+            <p class="subtitle">{post["hero_subtitle"]}</p>
+            <p class="page-hero__date">{post["date_published"]}</p>
+            {tags_html}
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container" style="max-width:800px">
+            {post["content_html"]}
+        </div>
+    </section>
+
+    {author_html}
+    {faq_html}
+    {outbound_html}
+    {related_html}
+    {cta_html}
+    """
+
+    extra_schema = breadcrumb_schema + article_schema
+    page_html = get_page_wrapper(
+        title=post["title"],
+        description=post["meta_description"],
+        canonical_path=url_path,
+        body_content=body,
+        active_page="/blog/",
+        extra_schema=extra_schema,
+        og_type="article",
+    )
+
+    write_page(f"blog/{slug}/index.html", page_html)
+    ALL_PAGES.append((url_path, 0.7, "monthly"))
+
+
+def build_blog_index():
+    """Build /blog/index.html - blog listing page."""
+
+    breadcrumbs = [
+        {"name": "Home", "url": f"{BASE_URL}/"},
+        {"name": "Blog", "url": f"{BASE_URL}/blog/"},
+    ]
+
+    item_list = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Provyx Blog",
+        "numberOfItems": len(BLOG_POSTS),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "name": p["title"],
+                "url": f"{BASE_URL}/blog/{p['slug']}/",
+            }
+            for i, p in enumerate(BLOG_POSTS, 1)
+        ],
+    }
+    item_list_tag = f'\n    <script type="application/ld+json">\n{json.dumps(item_list, indent=2)}\n    </script>'
+    extra_schema = get_breadcrumb_schema(breadcrumbs) + item_list_tag
+
+    cards = ""
+    for p in BLOG_POSTS:
+        cards += f'''
+                <a href="/blog/{p["slug"]}/" class="provider-card">
+                    <h3 class="provider-card__title">{p["title"]}</h3>
+                    <p class="provider-card__text">{p["hero_subtitle"][:120]}...</p>
+                    <p class="provider-card__count">{p["date_published"]}</p>
+                </a>'''
+
+    body = f'''
+        <section class="page-hero section">
+            <div class="container">
+                {get_breadcrumb_html(breadcrumbs)}
+                <h1 class="page-hero__title">Blog</h1>
+                <p class="page-hero__subtitle">Insights on healthcare provider data, sales prospecting, and data quality.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="provider-grid">
+                    {cards}
+                </div>
+            </div>
+        </section>
+
+{generate_cta_section()}'''
+
+    html = get_page_wrapper(
+        title="Healthcare Provider Data Blog",
+        description="Insights on healthcare provider data, sales prospecting, and data quality from the Provyx team.",
+        canonical_path="/blog/",
+        body_content=body,
+        active_page="/blog/",
+        extra_schema=extra_schema,
+    )
+    write_page("blog/index.html", html)
+    ALL_PAGES.append(("/blog/", 0.8, "weekly"))
+
+
 def build_sitemap():
     """Generate sitemap.xml from ALL_PAGES with image sitemap extensions."""
     urls = ""
@@ -16319,6 +16743,18 @@ def main():
     build_glossary_index()
     for term in GLOSSARY_TERMS:
         build_glossary_page(term)
+
+    # State pages
+    print("\nState pages:")
+    build_states_index()
+    for state in STATE_PAGES:
+        build_state_page(state)
+
+    # Blog pages
+    print("\nBlog pages:")
+    build_blog_index()
+    for post in BLOG_POSTS:
+        build_blog_post(post)
 
     # Sitemap + RSS
     print("\nSitemap:")
