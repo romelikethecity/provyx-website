@@ -11808,7 +11808,7 @@ def build_homepage():
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">What We Deliver</h2>
-                    <p class="section__subtitle">Three core data products that cover the full provider intelligence stack.</p>
+                    <p class="section__subtitle">Core data products that cover the full provider intelligence stack.</p>
                 </div>
                 <div class="services__grid">
                     <a href="/services/provider-contact-data/" class="service-card">
@@ -11820,6 +11820,11 @@ def build_homepage():
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg></div>
                         <h3 class="service-card__title">Practice Intelligence</h3>
                         <p class="service-card__text">Practice locations, NPI taxonomy codes, provider counts, technology stack, and firmographic details.</p>
+                    </a>
+                    <a href="/providers/senior-care/" class="service-card">
+                        <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2m-16 0H3"/><path d="M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 4v4h4v-4"/></svg></div>
+                        <h3 class="service-card__title">Facility Intelligence</h3>
+                        <p class="service-card__text">CMS star ratings, staffing levels, bed counts, inspection scores, and ownership data for nursing homes and senior care facilities. Free government data that generic databases don't include.</p>
                     </a>
                     <a href="/services/custom-list-building/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/></svg></div>
@@ -11845,10 +11850,11 @@ def build_homepage():
                     <tbody>
                         <tr><td>Healthcare is one of 50+ industries</td><td>Built exclusively for healthcare</td></tr>
                         <tr><td>No NPI verification</td><td>Every record verified against NPI registry</td></tr>
+                        <tr><td>No CMS facility data</td><td>Star ratings, staffing levels, bed counts, inspection scores from CMS</td></tr>
                         <tr><td>Can't filter by taxonomy code</td><td>Full taxonomy code segmentation</td></tr>
+                        <tr><td>Contacts go stale within months</td><td>Verified against current public records before delivery</td></tr>
                         <tr><td>Annual contracts starting at $15,000</td><td>Pay per record. Cancel anytime.</td></tr>
                         <tr><td>60-day cancellation windows</td><td>No lock-in. No auto-renewal traps.</td></tr>
-                        <tr><td>$22K+ for CRM integration add-ons</td><td>CSV, Excel, or API. No hidden fees.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -11887,6 +11893,11 @@ def build_homepage():
                         <div class="fit-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2m-16 0H3m5-10h.01M12 11h.01M8 15h.01M12 15h.01M16 11h.01M16 15h.01"/></svg></div>
                         <h3 class="fit-card__title">Pharmaceutical Sales</h3>
                         <p class="fit-card__text">Reps who need prescriber data by specialty and territory, without paying $15K+ for a platform they barely use.</p>
+                    </div>
+                    <div class="fit-card fit-card--for">
+                        <div class="fit-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 0 0-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 0 1 9.288 0M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg></div>
+                        <h3 class="fit-card__title">Healthcare Recruiting &amp; Staffing</h3>
+                        <p class="fit-card__text">Recruiting firms placing administrators, directors of nursing, and clinical leadership at healthcare facilities. Verified decision-maker contacts with CMS facility intelligence.</p>
                     </div>
                 </div>
                 <div class="fit-not">
@@ -12169,6 +12180,12 @@ def build_pricing():
                 <p class="pricing-proof">Healthcare sales teams, medical device companies, and health IT vendors use Provyx to build targeted provider lists without annual contracts.</p>
                 <div style="margin-top:2rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
                     <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Need verified email or mobile?</strong> Direct email and mobile phone enrichment available as add-ons. <a href="/contact/">Contact us</a> for enrichment pricing based on your volume.</p>
+                </div>
+
+                <div style="margin-top:1.5rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
+                    <p style="margin:0 0 0.75rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Intelligence Add-Ons</strong></p>
+                    <p style="margin:0 0 0.5rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong>Ownership Change Alerts</strong> — Monthly reports flagging facilities that changed ownership or management, signaling likely leadership turnover and new decision-makers. Available for senior care and other regulated facility types.</p>
+                    <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong>Job Posting Leads</strong> — Weekly feed of healthcare facilities actively posting for your target titles on major job boards. Know which facilities are hiring before your competitors do. <a href="/contact/">Contact us</a> for add-on pricing.</p>
                 </div>
             </div>
         </section>
