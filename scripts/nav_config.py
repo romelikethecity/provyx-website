@@ -29,6 +29,7 @@ NAV_ITEMS = [
             {"href": "/providers/medical-spas/", "label": "Medical Spas"},
             {"href": "/providers/primary-care/", "label": "Primary Care"},
             {"href": "/providers/chiropractic/", "label": "Chiropractic"},
+            {"href": "/providers/senior-care/", "label": "Senior Care"},
         ],
     },
     {
