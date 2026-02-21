@@ -4914,12 +4914,12 @@ ALTERNATIVES = [
 
         # Section 10 -- Related Links
         "related_links": [
-            {"label": "Compare Provyx vs. ZoomInfo in Detail", "url": "/compare/zoominfo/"},
-            {"label": "Compare Provyx vs. Definitive Healthcare", "url": "/compare/definitive-healthcare/"},
+            {"label": "Compare Provyx vs. ZoomInfo in Detail", "url": "/compare/provyx-vs-zoominfo/"},
+            {"label": "Compare Provyx vs. Definitive Healthcare", "url": "/compare/provyx-vs-definitive-healthcare/"},
             {"label": "Provyx Pricing", "url": "/pricing/"},
             {"label": "Provyx for Medical Device Sales Teams", "url": "/for/medical-device-sales/"},
             {"label": "Provyx for Healthcare Marketing Agencies", "url": "/for/healthcare-marketing-agencies/"},
-            {"label": "Provyx for Health IT Companies", "url": "/for/health-it-companies/"},
+            {"label": "Provyx for Health IT Companies", "url": "/for/health-it/"},
         ],
 
         # Outbound reference links for schema / context
@@ -5408,12 +5408,12 @@ ALTERNATIVES = [
 
         # Section 10 -- Related Links
         "related_links": [
-            {"label": "Compare Provyx vs. Definitive Healthcare in Detail", "url": "/compare/definitive-healthcare/"},
-            {"label": "Compare Provyx vs. ZoomInfo", "url": "/compare/zoominfo/"},
+            {"label": "Compare Provyx vs. Definitive Healthcare in Detail", "url": "/compare/provyx-vs-definitive-healthcare/"},
+            {"label": "Compare Provyx vs. ZoomInfo", "url": "/compare/provyx-vs-zoominfo/"},
             {"label": "Provyx Pricing", "url": "/pricing/"},
             {"label": "Provyx for Medical Device Sales Teams", "url": "/for/medical-device-sales/"},
-            {"label": "Provyx for Pharma Commercial Teams", "url": "/for/pharma-commercial-teams/"},
-            {"label": "Provyx for Health IT Companies", "url": "/for/health-it-companies/"},
+            {"label": "Provyx for Pharma Sales Teams", "url": "/for/pharma-sales/"},
+            {"label": "Provyx for Health IT Companies", "url": "/for/health-it/"},
         ],
 
         # Outbound reference links for schema / context
@@ -5884,7 +5884,6 @@ USE_CASES = [
         "related_links": [
             {"url": "/services/practice-location-data/", "text": "Practice Location Data Product Details"},
             {"url": "/use-cases/healthcare-market-sizing/", "text": "Healthcare Market Sizing by Specialty"},
-            {"url": "/for/health-plans/", "text": "Provider Data for Health Plans"},
             {"url": "/resources/npi-registry-guide/", "text": "NPI Registry: What It Gives You and What It Doesn't"},
         ],
         "outbound_links": [
@@ -6016,7 +6015,6 @@ USE_CASES = [
         "related_links": [
             {"url": "/services/provider-contact-data/", "text": "Provider Contact Data Product Details"},
             {"url": "/use-cases/provider-network-analysis/", "text": "Provider Network Analysis"},
-            {"url": "/for/health-plans/", "text": "Provider Data for Health Plans"},
             {"url": "/resources/npi-registry-guide/", "text": "NPI Registry: What It Gives You and What It Doesn't"},
         ],
         "outbound_links": [
@@ -6217,7 +6215,7 @@ USE_CASES = [
             },
         ],
         "related_links": [
-            {"url": "/use-cases/provider-contact-data/", "text": "Provider Contact Data"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
             {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
             {"url": "/use-cases/healthcare-abm/", "text": "Healthcare Account-Based Marketing"},
         ],
@@ -6288,7 +6286,7 @@ USE_CASES = [
         ],
         "related_links": [
             {"url": "/resources/npi-registry-guide/", "text": "NPI Registry Guide"},
-            {"url": "/use-cases/provider-contact-data/", "text": "Provider Contact Data"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
             {"url": "/use-cases/provider-credentialing/", "text": "Provider Credentialing Data"},
         ],
         "outbound_links": [
@@ -6358,9 +6356,9 @@ USE_CASES = [
             },
         ],
         "related_links": [
-            {"url": "/resources/crm-data-decay/", "text": "CRM Data Decay in Healthcare"},
+            {"url": "/resources/crm-data-decay-healthcare/", "text": "CRM Data Decay in Healthcare"},
             {"url": "/resources/cost-of-bad-provider-data/", "text": "The Cost of Bad Provider Data"},
-            {"url": "/use-cases/provider-contact-data/", "text": "Provider Contact Data"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
@@ -9473,8 +9471,8 @@ RESOURCES = [
             },
         ],
         "related_links": [
-            {"url": "/resources/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting Guide"},
-            {"url": "/services/provider-contacts/", "text": "Provider Contact Data"},
+            {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting Guide"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
             {"url": "/resources/healthcare-marketing-list-guide/", "text": "Healthcare Marketing List Guide"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
         ],
@@ -9687,9 +9685,9 @@ RESOURCES = [
             },
         ],
         "related_links": [
-            {"url": "/resources/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting Guide"},
+            {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting Guide"},
             {"url": "/use-cases/healthcare-decision-maker-data/", "text": "Healthcare Decision Maker Data"},
-            {"url": "/services/provider-contacts/", "text": "Provider Contact Data"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
         ],
         "outbound_links": [
@@ -9791,10 +9789,10 @@ RESOURCES = [
             },
         ],
         "related_links": [
-            {"url": "/resources/healthcare-email-marketing/", "text": "Healthcare Email Marketing Guide"},
-            {"url": "/resources/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
-            {"url": "/resources/healthcare-abm/", "text": "Healthcare Account-Based Marketing"},
-            {"url": "/resources/physician-outreach/", "text": "Physician Outreach Guide"},
+            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing Guide"},
+            {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
+            {"url": "/resources/healthcare-abm-strategy/", "text": "Healthcare Account-Based Marketing"},
+            {"url": "/use-cases/physician-outreach/", "text": "Physician Outreach Guide"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
@@ -9899,7 +9897,7 @@ RESOURCES = [
             },
         ],
         "related_links": [
-            {"url": "/resources/crm-data-decay/", "text": "CRM Data Decay Guide"},
+            {"url": "/resources/crm-data-decay-healthcare/", "text": "CRM Data Decay Guide"},
             {"url": "/use-cases/healthcare-crm-enrichment/", "text": "Healthcare CRM Enrichment"},
             {"url": "/resources/cost-of-bad-provider-data/", "text": "The Cost of Bad Provider Data"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
@@ -10005,7 +10003,7 @@ RESOURCES = [
         "related_links": [
             {"url": "/resources/provider-data-buying-guide/", "text": "Provider Data Buying Guide"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
-            {"url": "/resources/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
+            {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
             {"url": "/contact/", "text": "Request a Free Sample"},
         ],
         "outbound_links": [
@@ -10109,9 +10107,9 @@ RESOURCES = [
         ],
         "related_links": [
             {"url": "/services/practice-firmographics/", "text": "Practice Firmographics Data"},
-            {"url": "/resources/healthcare-abm/", "text": "Healthcare Account-Based Marketing"},
-            {"url": "/resources/healthcare-market-sizing/", "text": "Healthcare Market Sizing Guide"},
-            {"url": "/resources/healthcare-consulting-icp/", "text": "Healthcare Consulting ICP Guide"},
+            {"url": "/resources/healthcare-abm-strategy/", "text": "Healthcare Account-Based Marketing"},
+            {"url": "/use-cases/healthcare-market-sizing/", "text": "Healthcare Market Sizing Guide"},
+            {"url": "/for/healthcare-consulting/", "text": "Provider Data for Healthcare Consulting"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
@@ -14792,23 +14790,8 @@ def build_service_page(svc):
         "areaServed": "United States",
         "serviceType": "Healthcare Provider Data",
     }
-    # Add Review from testimonial if available
-    if svc.get("testimonial"):
-        t = svc["testimonial"]
-        service_obj["review"] = {
-            "@type": "Review",
-            "author": {
-                "@type": "Person",
-                "name": t["name"],
-                "jobTitle": t["title"],
-            },
-            "reviewBody": t["quote"],
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5",
-            },
-        }
+    # Note: Review schema removed from Service type — Google doesn't support
+    # review rich results for Service. Testimonials still render in page HTML.
     service_schema = json.dumps(service_obj, indent=2)
     service_schema_tag = f'''
     <script type="application/ld+json">
@@ -15130,6 +15113,10 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
          "answer": f"Our {name_lower} data is verified against multiple sources including the CMS NPI Registry, state licensing boards, and commercial databases. We continuously verify records to catch moves, closures, and contact changes."},
         {"question": f"Can I filter {name_lower} data by geography?",
          "answer": f"Yes. You can filter {name_lower} records by state, metro area, ZIP code, or custom radius. We can build targeted lists for specific regions or provide nationwide coverage."},
+        {"question": f"How often is {name} data updated?",
+         "answer": f"We verify {name_lower} records on a continuous basis. Our system cross-checks the CMS NPI Registry for status changes, monitors practice websites for updated contact info, and flags records when providers move, retire, or change practice groups. You won't get a static list that goes stale after a month."},
+        {"question": f"What format does the {name} data come in?",
+         "answer": f"We deliver {name_lower} data in CSV, Excel, or CRM-ready formats. If you need custom field mapping to match your CRM or marketing platform, we'll handle that before delivery so you can import and start outreach immediately."},
     ]
 
     synonym_text = ""
@@ -15178,7 +15165,8 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
             <div class="container" style="max-width:800px">
                 <h2>Why Bad {name} Data Costs You Money</h2>
                 <p>Every bounced email to a {name_lower.rstrip('s')} is wasted time and wasted budget. Every wrong phone number is a missed opportunity. If you're running outreach campaigns targeting {name_lower}, you need data that's verified and current, not scraped from a directory six months ago.</p>
-                <p>{description}</p>
+                <p>{description} {name} practices open, close, merge, and relocate constantly. Providers change roles, retire, or shift to new practice groups. Generic databases can't keep up with this churn, which means your team is working off stale records from day one.</p>
+                <p>The cost of bad data adds up fast. Bounced emails damage your sender reputation and tank deliverability across your entire domain. Wrong phone numbers waste your reps' time on dead-end calls. Outdated records mean you're missing opportunities to reach {name_lower} who've moved to new practices or opened their own. Clean, verified data isn't a nice-to-have. It's the foundation of every successful outreach campaign.</p>
 
                 <h2>Data Available for {name}</h2>
                 <ul class="data-points">
@@ -15194,6 +15182,15 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
                 <h2>Who Buys {name} Data</h2>
                 <p>Teams that purchase {name_lower} contact data from Provyx include healthcare marketing agencies building outreach campaigns, medical device and supply companies targeting this specialty, SaaS vendors selling practice management or EHR solutions, pharmaceutical sales teams, and staffing agencies recruiting {name_lower}.</p>
 
+                <h2>Common Use Cases for {name} Data</h2>
+                <ul>
+                    <li>Healthcare marketing agencies running email campaigns to {name_lower}</li>
+                    <li>Medical device reps building territory lists of {name_lower}</li>
+                    <li>SaaS companies targeting {name_lower} practices with practice management software</li>
+                    <li>Pharmaceutical companies identifying high-prescribing {name_lower}</li>
+                    <li>Staffing agencies recruiting {name_lower} for locum tenens positions</li>
+                </ul>
+
                 <h2>How It Works</h2>
                 <ol>
                     <li><strong>Tell us what you need.</strong> Specify the {name_lower} subtypes, geography, and any other filters for your target list.</li>
@@ -15201,11 +15198,26 @@ def build_spoke_page(slug, name, cat_key, synonyms, description):
                     <li><strong>Start your outreach.</strong> Use the data for email campaigns, direct mail, phone outreach, or CRM enrichment.</li>
                 </ol>
             </div>
-        </section>
+        </section>'''
 
+    outbound_html = '''
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul>
+                    <li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a></li>
+                    <li><a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics - Healthcare Occupations</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>'''
+
+    body += f'''
 {generate_faq_html(faqs)}
 {related_html}
 {cross_links_html}
+{outbound_html}
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
@@ -17067,6 +17079,17 @@ def build_state_page(state):
     # -- Top metros --
     metros_li = "".join(f"<li>{m['name']}</li>" for m in state["top_metros"])
 
+    # -- Outbound authority links --
+    outbound_links_html = ""
+    if state.get("outbound_links"):
+        ol_items = "".join(
+            f'<li><a href="{lnk["href"]}" target="_blank" rel="noopener">{lnk["label"]}</a></li>'
+            for lnk in state["outbound_links"]
+        )
+        outbound_links_html = f'''
+            <h2>Official Resources</h2>
+            <ul class="data-points">{ol_items}</ul>'''
+
     # -- Related states --
     related_html = ""
     related_links = []
@@ -17141,10 +17164,12 @@ def build_state_page(state):
             <ul class="data-points">{metros_li}</ul>
 
             <h2>Regulatory Environment</h2>
-            <p>{state["regulatory_note"]}</p>
+            {state["regulatory_details"]}
 
             <h2>Market Overview</h2>
-            <p>{state["market_insight"]}</p>
+            {state["market_details"]}
+
+            {outbound_links_html}
         </div>
     </section>
 
@@ -17211,6 +17236,13 @@ def build_states_index():
                 {get_breadcrumb_html(breadcrumbs)}
                 <h1 class="page-hero__title">Healthcare Provider Data by State</h1>
                 <p class="page-hero__subtitle">Browse verified provider contact data across all 50 US states.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container" style="max-width:800px">
+                <p>Healthcare markets vary dramatically from state to state. Licensing requirements, Medicaid expansion status, telehealth regulations, and payer mix all shape who practices where and how they can be reached. A contact list that works in Texas won't match the regulatory landscape in Massachusetts.</p>
+                <p>Each state page below includes provider counts, top specialties, major metro areas, regulatory context, and market dynamics. Use these pages to understand the healthcare landscape before building your outreach lists, or jump straight to requesting data for your target state.</p>
             </div>
         </section>
 
@@ -17410,6 +17442,13 @@ def build_blog_index():
                 {get_breadcrumb_html(breadcrumbs)}
                 <h1 class="page-hero__title">Blog</h1>
                 <p class="page-hero__subtitle">Insights on healthcare provider data, sales prospecting, and data quality.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container" style="max-width:800px">
+                <p>Bad data costs healthcare sales teams more than they realize. Bounced emails tank sender reputation. Wrong phone numbers waste hours of rep time. Outdated records mean you're pitching providers who've already moved on. We write about these problems because we see them every day in the data we clean and verify.</p>
+                <p>The Provyx blog covers practical topics for anyone who buys or uses healthcare provider data: how to evaluate data quality, what the NPI registry actually tells you (and what it doesn't), common prospecting mistakes, and trends shaping the provider data market. No fluff, no sales pitches disguised as articles.</p>
             </div>
         </section>
 

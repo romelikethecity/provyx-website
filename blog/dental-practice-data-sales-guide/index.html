@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
+    <title>Dental Practice Data for Sales Teams: What You Need and Where to Get It | Provyx</title>
+    <meta name="description" content="Guide to dental practice data for B2B sales. Covers 200K+ US dental practices, DSO vs independent, key data fields, sourcing strategies, and common pitfalls.">
+    <link rel="canonical" href="https://getprovyx.com/blog/dental-practice-data-sales-guide/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getprovyx.com/blog/dental-practice-data-sales-guide/">
+    <meta property="og:title" content="Dental Practice Data for Sales Teams: What You Need and Where to Get It | Provyx">
+    <meta property="og:description" content="Guide to dental practice data for B2B sales. Covers 200K+ US dental practices, DSO vs independent, key data fields, sourcing strategies, and common pitfalls.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dental Practice Data for Sales Teams: What You Need and Where to Get It | Provyx">
+    <meta name="twitter:description" content="Guide to dental practice data for B2B sales. Covers 200K+ US dental practices, DSO vs independent, key data fields, sourcing strategies, and common pitfalls.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getprovyx.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dental Practice Data for Sales Teams: What You Need and Where to Get It",
+      "item": "https://getprovyx.com/blog/dental-practice-data-sales-guide/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Dental Practice Data for Sales Teams: What You Need and Where to Get It",
+  "description": "Guide to dental practice data for B2B sales. Covers 200K+ US dental practices, DSO vs independent, key data fields, sourcing strategies, and common pitfalls.",
+  "url": "https://getprovyx.com/blog/dental-practice-data-sales-guide/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/og-resources.png",
+  "datePublished": "2026-02-20",
+  "dateModified": "2026-02-20",
+  "author": {
+    "@type": "Person",
+    "name": "Rome",
+    "url": "https://www.linkedin.com/in/romecaputo/",
+    "jobTitle": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://getprovyx.com/#organization",
+      "name": "Provyx"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://getprovyx.com/#organization",
+    "name": "Provyx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getprovyx.com/assets/images/og-providers.png"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero h1",
+      ".page-hero .subtitle"
+    ]
+  }
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
+
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=8" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.min.css?v=8">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main id="main-content">
+
+
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/blog/">Blog</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Dental Practice Data for Sales Teams: What You Need and Where to Get It</span>
+        </nav>
+            <span class="comp-badge">BLOG</span>
+            <h1>Dental Practice Data for Sales Teams: What You Need and Where to Get It</h1>
+            <p class="subtitle">Dental is one of the biggest and most fragmented healthcare verticals. Here's what your sales team needs to know about dental practice data.</p>
+            <p class="page-hero__date">2026-02-20</p>
+            <div class="glossary-tag-list" style="margin-top:1rem;"><span class="glossary-tag">dental data</span> <span class="glossary-tag">provider data</span> <span class="glossary-tag">sales prospecting</span></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container" style="max-width:800px">
+            
+<h2>The Dental Market: Bigger Than You Think</h2>
+
+<p>There are over 200,000 dental practices in the United States. That number comes from the <a href="https://www.ada.org/resources/research/health-policy-institute" target="_blank" rel="noopener">American Dental Association's Health Policy Institute</a>, and it makes dental one of the largest provider categories by practice count. For comparison, there are roughly 140,000 primary care practices and 90,000 mental health practices.</p>
+
+<p>The dental market generates over $165 billion in annual revenue. The average general dentistry practice brings in $800,000-$1.2 million per year. Specialty practices (orthodontics, oral surgery, periodontics, endodontics) typically generate more: $1.5-3 million annually, depending on the specialty and location.</p>
+
+<p>For B2B sales teams, this means dental is a massive addressable market. But it's also a market with unique characteristics that make generic provider data nearly useless. The ownership landscape, specialty mix, technology adoption, and purchasing behavior of dental practices are all different from medical practices. If you're selling into dental with the same data and the same approach you use for physician practices, you're leaving revenue on the table.</p>
+
+<h2>What Makes Dental Different from Medical</h2>
+
+<p>Selling into dental practices requires understanding several structural differences from the broader healthcare market.</p>
+
+<h3>Ownership Is Shifting Fast</h3>
+
+<p>The dental market is in the middle of a massive ownership transition. Historically, most dental practices were owned by the practicing dentist. Solo practitioner, one or two locations, full control over purchasing decisions. That's changing rapidly.</p>
+
+<p>Dental Service Organizations (DSOs) now account for approximately 10-15% of all dental practices and growing. The largest DSOs (Heartland Dental, Aspen Dental, Pacific Dental Services) each operate hundreds of locations. Private equity firms have poured billions into dental acquisitions over the past five years, and the pace isn't slowing.</p>
+
+<p>Why does this matter for sales? Because the buying process is completely different. At an independent practice, the dentist-owner makes purchasing decisions. They're the CTO, CFO, and procurement department rolled into one person. You pitch them directly, they decide, and you close.</p>
+
+<p>At a DSO-affiliated practice, the dentist doesn't choose the technology, supplies, or services. Those decisions are made at the corporate level by a VP of Operations, a Director of Procurement, or a dedicated technology committee. The practice-level dentist can champion your product, but they can't sign a check.</p>
+
+<p>Your data needs to tell you which practices are independent and which are DSO-affiliated. Without that field, you're wasting reps' time pitching dentists who have no purchasing authority.</p>
+
+<h3>The Specialty Mix Is Varied</h3>
+
+<p>Not all dental practices are the same. The major dental specialties, each with distinct buying needs and budgets:</p>
+
+<ul>
+<li><strong>General Dentistry</strong> - The largest category. Over 150,000 practices. Broad needs: practice management software, patient communication, imaging, supplies, billing services.</li>
+<li><strong>Orthodontics</strong> - Roughly 11,000 practices. Higher revenue per practice. Big spenders on technology (3D scanning, clear aligners, digital treatment planning).</li>
+<li><strong>Oral and Maxillofacial Surgery</strong> - About 5,500 practices. Highest revenue per practice in dental. Complex technology needs (CBCT imaging, surgical navigation, implant planning).</li>
+<li><strong>Periodontics</strong> - Around 5,000 practices. Growing fast due to implant demand. Technology-forward specialty.</li>
+<li><strong>Endodontics</strong> - About 4,500 practices. Smaller teams, but high technology adoption (operating microscopes, CBCT, rotary endodontic systems).</li>
+<li><strong>Pediatric Dentistry</strong> - Roughly 8,000 practices. Unique needs around patient experience, sedation capabilities, and family-friendly technology.</li>
+<li><strong>Prosthodontics</strong> - About 3,500 practices. High-end restorative work. Significant spending on CAD/CAM and digital lab integration.</li>
+</ul>
+
+<p>Generic "dental practice" data that doesn't distinguish between these specialties is like selling to "technology companies" without knowing if your prospect is a 5-person SaaS startup or Microsoft. The needs, budgets, and decision-making processes are different for each specialty.</p>
+
+<p>Provyx breaks dental data down by specialty, not just "dental." Check our <a href="/providers/dental/">dental provider data page</a> for the full specialty breakdown.</p>
+
+<h3>Technology Adoption Varies Widely</h3>
+
+<p>Dental practices range from fully digital (cloud-based practice management, digital impressions, AI-assisted diagnostics, paperless workflows) to practices still running server-based software from 2010 and using film X-rays.</p>
+
+<p>The dominant practice management systems in dental are Dentrix (by Henry Schein), Eaglesoft (by Patterson), and Open Dental (open-source). Cloud-based systems like Curve Dental, Dentrix Ascend, and tab32 are gaining share among newer practices and DSOs. Knowing which PMS a practice uses tells you a lot about their technology sophistication and their willingness to adopt new tools.</p>
+
+<p>For technology detection in dental practices, see our <a href="/services/technology-detection/">technology detection service</a>.</p>
+
+<h2>Key Data Points for Dental Sales</h2>
+
+<p>Here are the specific data fields that matter most when selling into dental practices. This isn't a generic list. These are the fields that separate productive outreach from wasted effort.</p>
+
+<h3>Practice-Level Fields</h3>
+
+<ul>
+<li><strong>Practice name and DBA</strong> - The legal name and the name patients see. Important because DSO-affiliated practices often keep their original name even after acquisition.</li>
+<li><strong>Practice type</strong> - Solo, group (2-5 providers), large group (6+), multi-location. Determines deal size, sales cycle, and who you need to talk to.</li>
+<li><strong>Specialty</strong> - General, ortho, oral surgery, perio, endo, pedo, prostho. Not just "dental." Sub-specialty focus matters for targeting.</li>
+<li><strong>Ownership structure</strong> - Independent, DSO-affiliated (and which DSO), hospital-affiliated. The single most important field for routing your sales approach.</li>
+<li><strong>Number of providers</strong> - How many dentists and hygienists work at the practice. Directly correlates with practice revenue and product capacity needs.</li>
+<li><strong>Number of locations</strong> - Multi-location practices buy differently. They need solutions that scale. Single-location practices prioritize simplicity.</li>
+<li><strong>Physical address</strong> - Verified and current. Not the NPI mailing address. The actual location where patients are seen.</li>
+<li><strong>Year established</strong> - New practices (under 3 years) are in active buying mode for almost everything. Mature practices (10+ years) are replacement buyers with established vendor relationships.</li>
+</ul>
+
+<h3>Technology Fields</h3>
+
+<ul>
+<li><strong>Practice management system</strong> - Dentrix, Eaglesoft, Open Dental, Curve, or something else. This is the technology backbone of the practice. If your product integrates with or replaces PMS functionality, this field is mandatory.</li>
+<li><strong>Imaging system</strong> - Digital vs. film. If digital, which brand (Dexis, Schick, Carestream). Practices still on film are candidates for digital imaging upgrades. Practices already digital are candidates for AI-assisted diagnostic tools.</li>
+<li><strong>Intraoral scanner</strong> - iTero, 3Shape TRIOS, Medit, Primescan. Presence or absence of a scanner tells you about the practice's digital dentistry adoption level.</li>
+<li><strong>Patient communication platform</strong> - RevenueWell, Weave, Solutionreach, Lighthouse 360. These tools have high switching costs, so knowing what's installed helps you position displacement or integration.</li>
+<li><strong>Website platform</strong> - Wordpress, custom, template-based dental website services (ProSites, PBHS, Sesame Communications). Indicates marketing sophistication.</li>
+</ul>
+
+<h3>Contact Fields</h3>
+
+<ul>
+<li><strong>Decision-maker name and role</strong> - At independent practices, this is usually the owner-dentist. At larger groups, it might be an office manager or practice administrator. At DSOs, it's a corporate role. You need the right person, not just any person.</li>
+<li><strong>Verified email address</strong> - A working email for the decision-maker. Not a generic info@ or a patient-facing appointment email. A direct email that reaches the person who can say yes.</li>
+<li><strong>Direct phone number</strong> - The decision-maker's direct line or cell. The main office number at a dental practice routes to the front desk, and front desk staff at dental offices are exceptionally good at screening sales calls. A direct number bypasses that entirely.</li>
+<li><strong>NPI number</strong> - For the practice (Type 2) and for individual providers (Type 1). Essential for matching, deduplication, and cross-referencing against other datasets.</li>
+</ul>
+
+<h2>Where to Source Dental Practice Data</h2>
+
+<p>There are several options for building a dental practice database. Each has tradeoffs in cost, coverage, and quality.</p>
+
+<h3>Source 1: The NPI Registry</h3>
+
+<p>The NPPES database from CMS contains every dentist and dental practice with an NPI. It's free, it's public, and it's the most complete source by count. Filter by dental taxonomy codes (starting with "122" for general dentistry and "126" for dental specialties) to build your initial universe.</p>
+
+<p>Strengths: Full market coverage, free, includes both individual dentists and practice entities.</p>
+
+<p>Weaknesses: No email addresses, no decision-maker information, no practice size or technology data, no ownership structure. Addresses are frequently outdated. Phone numbers are generic office lines. You'll need to enrich heavily before this data is usable for sales.</p>
+
+<p>For a complete walkthrough of NPI data and its limitations, see our <a href="/blog/what-is-npi-number-guide/">guide to NPI numbers</a>.</p>
+
+<h3>Source 2: State Dental Board Records</h3>
+
+<p>Every state has a dental board that licenses dentists. Most boards publish a searchable directory or downloadable file of licensed dentists. This data is independent of NPI and can catch dentists who haven't updated their NPI records.</p>
+
+<p>Strengths: Often more current than NPI for license status and practice address. Some states include additional fields like license type, disciplinary actions, and education.</p>
+
+<p>Weaknesses: Each state has a different format, different data fields, and different access methods. Building a national database from 50 state boards is a significant data engineering project. No email, technology, or ownership data.</p>
+
+<h3>Source 3: The ADA Masterfile</h3>
+
+<p>The American Dental Association maintains the most complete database of US dentists. The <a href="https://www.ada.org/resources/practice/manage-your-practice" target="_blank" rel="noopener">ADA Masterfile</a> includes over 200,000 dentists with detailed demographic and practice information. Some of this data is available through ADA-licensed vendors.</p>
+
+<p>Strengths: High accuracy for dentist demographics, specialty, and practice affiliation. Includes information that NPI doesn't (dental school, graduation year, ADA membership status).</p>
+
+<p>Weaknesses: Licensed access is expensive. The data is dentist-centric (individual providers), not practice-centric (business entities). Doesn't include technology data or verified email addresses for decision-makers.</p>
+
+<h3>Source 4: Commercial Provider Data Vendors</h3>
+
+<p>Companies like Provyx, along with larger data vendors, sell enriched dental practice databases. The best vendors combine NPI data, state board data, web scraping, technology detection, and proprietary verification to build practice-level records with contact information and intelligence fields.</p>
+
+<p>Strengths: One-stop shop. Verified emails, direct phones, practice size, technology data, ownership structure. All in a CRM-ready format. Ongoing refresh cycles so data stays current.</p>
+
+<p>Weaknesses: Cost. Good dental data typically runs $0.15-0.75 per record depending on the fields included and the verification depth. Some vendors lock you into annual contracts with 10,000+ record minimums.</p>
+
+<p>Provyx offers dental practice data with <a href="/pricing/">transparent pricing</a> and no long-term contracts. Check our <a href="/providers/dental/">dental provider data</a> to see what's available.</p>
+
+<h3>Source 5: Dental Industry Events and Associations</h3>
+
+<p>Dental trade shows (ADA SmileCon, Greater New York Dental Meeting, Chicago Dental Society Midwinter Meeting) produce attendee lists. Dental study clubs and local dental societies maintain member directories. These are warm leads because attendees self-select into being interested in new products and technology.</p>
+
+<p>Strengths: High-intent contacts. Conference attendees are often the decision-makers and early adopters in their practices.</p>
+
+<p>Weaknesses: Limited scale. A major dental conference has 10,000-30,000 attendees. That's a good prospecting pool, but it's a fraction of the total market. Attendee data is often restricted by the event organizer and can't be freely used for outbound sales.</p>
+
+<h2>The DSO Data Challenge</h2>
+
+<p>DSOs deserve their own section because they're the biggest data challenge in dental sales.</p>
+
+<p>When a DSO acquires a practice, several things can happen to the data:</p>
+
+<ul>
+<li>The practice name stays the same, but the ownership entity changes. Your CRM still shows "Bright Smile Dental" as an independent practice when it's now a Heartland Dental location.</li>
+<li>The NPI record may or may not update. Some DSOs update the authorized official and practice information. Many don't, at least not quickly.</li>
+<li>The original owner-dentist may stay as a practicing dentist, leave entirely, or stay in a non-owner clinical role. Your contact record might list someone who's still there but no longer has purchasing authority.</li>
+<li>New contacts (regional managers, operations directors, procurement leads) aren't discoverable through public registries. They work at the DSO corporate level, not at the practice level.</li>
+</ul>
+
+<p>To sell effectively into DSO-affiliated practices, your data needs three things:</p>
+
+<ol>
+<li><strong>DSO identification</strong> - Which practices are affiliated with which DSOs. This requires monitoring acquisition announcements, corporate filings, and practice website changes.</li>
+<li><strong>Corporate contact data</strong> - Decision-maker names, titles, emails, and phone numbers at the DSO corporate office. These people control purchasing for hundreds of locations.</li>
+<li><strong>Practice-level operational contacts</strong> - The office manager or regional manager who can champion your product internally. They can't sign, but they can get you to the person who can.</li>
+</ol>
+
+<p>Most data vendors handle DSO identification poorly. They either ignore it entirely (listing every practice as independent) or lag 6-12 months behind actual acquisitions. At Provyx, we track DSO affiliations as a priority field because the ownership question determines the entire sales approach.</p>
+
+<h2>Common Pitfalls When Buying Dental Data</h2>
+
+<p>We've seen sales teams waste thousands of dollars on dental data that didn't produce results. Here are the most common mistakes.</p>
+
+<h3>Pitfall 1: Buying a "Dentist List" Instead of a "Dental Practice Database"</h3>
+
+<p>There's a critical difference. A dentist list gives you individual provider records. Dr. Smith, NPI 1234567890, General Dentistry, 123 Main St. A dental practice database gives you business entities with practice-level intelligence: Bright Smile Dental, 4 providers, 2 locations, independent, uses Dentrix, office manager is Janet Rodriguez.</p>
+
+<p>Sales teams target practices, not individual dentists (unless you're selling something purely clinical that a single dentist decides on). If your data is provider-centric without practice-level aggregation, you'll have duplicate records for practices with multiple dentists and no way to see the practice as a business entity.</p>
+
+<h3>Pitfall 2: No Specialty Segmentation</h3>
+
+<p>A vendor sells you "50,000 dental practice records." You load them into your CRM and realize 35,000 are general dentistry, 8,000 are orthodontics, and the rest are scattered across other specialties. If you're selling orthodontic-specific technology, 70% of your data is useless. But you paid for all 50,000 records.</p>
+
+<p>Always ask for specialty-level filtering before purchase. Don't pay for records outside your target specialty unless you plan to sell into multiple specialty segments.</p>
+
+<h3>Pitfall 3: Ignoring Practice Size</h3>
+
+<p>A solo dentist with one operatory and a 15-provider group practice with 3 locations have nothing in common from a sales perspective. Their budgets are different by 10x. Their decision-making processes are different. Their technology needs are different. Their willingness to take a sales meeting is different.</p>
+
+<p>If your data doesn't include practice size indicators (provider count, location count, or estimated revenue), you can't tier your outreach. Your best reps end up spending equal time on a $5,000 potential deal and a $50,000 potential deal because the data doesn't distinguish between them.</p>
+
+<h3>Pitfall 4: Stale Ownership Data</h3>
+
+<p>The dental acquisition market moves fast. A practice that was independent when your data was compiled in January might be DSO-affiliated by March. Your rep calls the "owner" and discovers they sold the practice six months ago. The decision-maker is now someone at the DSO corporate office in a different state.</p>
+
+<p>Ask your data vendor how frequently they update ownership information. If the answer is "annually" or "we rely on NPI updates," their ownership data is likely 6-12 months behind reality. You need a vendor that actively monitors acquisition announcements and corporate filings.</p>
+
+<h3>Pitfall 5: Paying for Volume Over Quality</h3>
+
+<p>Some vendors advertise "complete databases" of 200,000+ dental practices at low per-record prices. The price is low because the data is bulk NPI records with minimal enrichment. You're paying $0.02 per record for data that's available free from CMS with some basic cleaning.</p>
+
+<p>Compare that to a vendor charging $0.30-0.50 per record for verified email addresses, direct phone numbers, practice size, technology data, and ownership information. The expensive data produces meetings. The cheap data produces bounced emails and frustrated reps.</p>
+
+<p>We've written a full guide on evaluating data sources: <a href="/resources/provider-data-buying-guide/">provider data buying guide</a>.</p>
+
+<h2>Building a Dental Prospecting Workflow</h2>
+
+<p>Here's a practical workflow for sales teams targeting dental practices.</p>
+
+<h3>Step 1: Define Your Dental ICP</h3>
+
+<p>Get specific. "Dental practices" is not an ICP. "Independently owned general dentistry practices with 3-8 providers in the Southeast that use Dentrix or Eaglesoft and haven't adopted an intraoral scanner" is an ICP. The more specific your profile, the more targeted your data purchase and the higher your conversion rates.</p>
+
+<p>Key ICP criteria for dental:</p>
+
+<ul>
+<li>Specialty (general, ortho, oral surgery, perio, etc.)</li>
+<li>Ownership (independent, DSO, hospital-affiliated)</li>
+<li>Practice size (solo, small group, large group)</li>
+<li>Geography (state, metro, urban/suburban/rural)</li>
+<li>Technology indicators (specific PMS, imaging system, presence/absence of key tools)</li>
+<li>Practice age (new practices under 3 years vs. established 10+ years)</li>
+</ul>
+
+<h3>Step 2: Source and Enrich</h3>
+
+<p>Start with a qualified data source that provides dental-specific fields. Don't try to build this yourself from raw NPI data unless you have a data engineering team. The enrichment required (ownership, technology, practice size, verified contacts) is months of work to build from scratch.</p>
+
+<p>Purchase or subscribe to a dental practice database that matches your ICP filters. Expect to pay $0.20-0.75 per record for quality data with verified contacts and practice intelligence. For a target list of 5,000 practices, budget $1,000-3,750.</p>
+
+<h3>Step 3: Segment and Tier</h3>
+
+<p>Don't treat all dental practices equally. Tier your list by deal potential:</p>
+
+<ul>
+<li><strong>Tier 1 (high touch)</strong> - Multi-provider, multi-location practices with the technology profile that matches your ideal customer. These get personalized outreach from your best reps.</li>
+<li><strong>Tier 2 (medium touch)</strong> - Strong ICP fit on most criteria but smaller deal size or longer sales cycle. Automated email sequences with phone follow-up for engaged prospects.</li>
+<li><strong>Tier 3 (low touch)</strong> - In your addressable market but not ideal fit. Marketing nurture only. Don't waste rep time here.</li>
+</ul>
+
+<h3>Step 4: Launch and Measure</h3>
+
+<p>Track the metrics that matter for dental outreach: email open rate, reply rate, phone connect rate, meetings booked, and pipeline generated. Benchmark against these dental-specific numbers:</p>
+
+<ul>
+<li>Email open rate: 25-35% (dental decision-makers open B2B email at higher rates than many specialties)</li>
+<li>Email reply rate: 2-4%</li>
+<li>Phone connect rate with direct dials: 18-25%</li>
+<li>Meetings booked per 100 contacts touched: 3-6</li>
+</ul>
+
+<p>If your numbers are below these benchmarks, check your data quality first. Then check your messaging. Data is the more common problem.</p>
+
+<h3>Step 5: Maintain and Refresh</h3>
+
+<p>Dental data decays like all healthcare data: 4-6% per month. Set up a quarterly refresh cycle. Re-verify emails, update ownership changes, and add newly opened practices. The dental market adds roughly 5,000-6,000 new practice locations per year, so there's always fresh inventory to target.</p>
+
+<h2>Get Started with Dental Practice Data</h2>
+
+<p>The dental market is big enough to support dedicated prospecting programs and fragmented enough to reward teams with better data. Whether you're selling practice management software, imaging equipment, patient engagement platforms, dental supplies, or financial services, the practices you're targeting are in our database.</p>
+
+<p>Provyx provides <a href="/providers/dental/">dental practice data</a> segmented by specialty, ownership, size, geography, and technology stack. Every record includes verified contact information for the decision-maker, not just a name and phone number pulled from the NPI registry.</p>
+
+<p>If you're building a dental sales program or trying to improve an existing one, <a href="/contact/">let's talk</a>. We'll show you exactly what our dental data looks like for your target market, with a free sample so you can validate quality before committing.</p>
+
+        </div>
+    </section>
+
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>Rome</strong></p>
+                <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+                <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many dental practices are there in the US?", "acceptedAnswer": {"@type": "Answer", "text": "There are over 200,000 dental practice locations in the United States, according to the American Dental Association. General dentistry accounts for roughly 150,000 of those, with the remainder split across specialties like orthodontics (11,000), oral surgery (5,500), periodontics (5,000), endodontics (4,500), and pediatric dentistry (8,000)."}}, {"@type": "Question", "name": "How do I tell if a dental practice is DSO-affiliated?", "acceptedAnswer": {"@type": "Answer", "text": "NPI data doesn't include ownership structure. To identify DSO affiliations, you need to monitor dental acquisition announcements, check state corporate filings, and analyze practice website changes. Commercial data vendors like Provyx track DSO affiliations as a core data field and update it more frequently than annual refreshes."}}, {"@type": "Question", "name": "What data fields do I need for dental sales prospecting?", "acceptedAnswer": {"@type": "Answer", "text": "The most important fields are: specialty (general vs. orthodontics vs. oral surgery, etc.), ownership structure (independent vs. DSO), practice size (provider count and location count), decision-maker name and verified contact info (email and direct phone), and technology stack (practice management system and imaging). Without these fields, you can't segment or prioritize your outreach effectively."}}, {"@type": "Question", "name": "How much does dental practice data cost?", "acceptedAnswer": {"@type": "Answer", "text": "Basic NPI-derived dental data is free from CMS but requires significant enrichment. Quality commercial dental data with verified contacts, practice intelligence, and technology detection typically costs $0.20-0.75 per record. For a target list of 5,000 practices, budget $1,000-3,750. Avoid vendors selling bulk NPI records at $0.01-0.05 per record, as that data lacks the enrichment needed for effective sales outreach."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details class="faq-item">
+                    <summary class="faq-item__question">How many dental practices are there in the US?</summary>
+                    <div class="faq-item__answer"><p>There are over 200,000 dental practice locations in the United States, according to the American Dental Association. General dentistry accounts for roughly 150,000 of those, with the remainder split across specialties like orthodontics (11,000), oral surgery (5,500), periodontics (5,000), endodontics (4,500), and pediatric dentistry (8,000).</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How do I tell if a dental practice is DSO-affiliated?</summary>
+                    <div class="faq-item__answer"><p>NPI data doesn't include ownership structure. To identify DSO affiliations, you need to monitor dental acquisition announcements, check state corporate filings, and analyze practice website changes. Commercial data vendors like Provyx track DSO affiliations as a core data field and update it more frequently than annual refreshes.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What data fields do I need for dental sales prospecting?</summary>
+                    <div class="faq-item__answer"><p>The most important fields are: specialty (general vs. orthodontics vs. oral surgery, etc.), ownership structure (independent vs. DSO), practice size (provider count and location count), decision-maker name and verified contact info (email and direct phone), and technology stack (practice management system and imaging). Without these fields, you can't segment or prioritize your outreach effectively.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How much does dental practice data cost?</summary>
+                    <div class="faq-item__answer"><p>Basic NPI-derived dental data is free from CMS but requires significant enrichment. Quality commercial dental data with verified contacts, practice intelligence, and technology detection typically costs $0.20-0.75 per record. For a target list of 5,000 practices, budget $1,000-3,750. Avoid vendors selling bulk NPI records at $0.01-0.05 per record, as that data lacks the enrichment needed for effective sales outreach.</p></div>
+                </details>
+            </div>
+        </section>
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul><li><a href="https://www.ada.org/resources/research/health-policy-institute" target="_blank" rel="noopener noreferrer">ADA Health Policy Institute</a></li>
+<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a></li>
+<li><a href="https://www.bls.gov/ooh/healthcare/dentists.htm" target="_blank" rel="noopener noreferrer">Bureau of Labor Statistics: Dentists</a></li>
+</ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/providers/dental/">Dental Provider Data from Provyx</a></li>
+<li><a href="/blog/what-is-npi-number-guide/">What Is an NPI Number?</a></li>
+<li><a href="/services/provider-contact-data/">Provider Contact Data Services</a></li>
+<li><a href="/blog/healthcare-crm-data-enrichment/">Healthcare CRM Data Enrichment</a></li>
+</ul>
+        </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/glossary/">Glossary</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

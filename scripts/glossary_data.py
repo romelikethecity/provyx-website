@@ -1008,7 +1008,7 @@ GLOSSARY_TERMS = [
         ),
         "why_it_matters": "Open Payments data reveals which physicians already have relationships with your competitors. Before a sales rep calls a surgeon, they can check whether that surgeon receives consulting fees from a competing device company. This intelligence helps reps prioritize unaffiliated physicians and prepare for competitive conversations.",
         "example": "A medical device company analyzes Open Payments data for orthopedic surgeons in their target territory. They find that 180 of their 500 target surgeons received payments from their two largest competitors last year. They prioritize the 320 surgeons without competitor payments for initial outreach and develop specific competitive messaging for the 180 with existing relationships.",
-        "related_terms": ["cms", "npi-number", "healthcare-competitive-intelligence"],
+        "related_terms": ["cms", "npi-number"],
         "related_pages": [
             {"url": "/use-cases/healthcare-competitive-intelligence/", "text": "Healthcare Competitive Intelligence"},
             {"url": "/for/pharma-sales/", "text": "Data for Pharma Sales"},
