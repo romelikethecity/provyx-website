@@ -21,12 +21,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Apollo.io Alternative for Healthcare Provider Data",
         "hero_subtitle": (
-            "Apollo.io is a popular sales engagement platform with a built-in B2B contact database. "
-            "It works well for general sales teams prospecting across industries. But if your team "
-            "sells exclusively to healthcare providers, Apollo's generic contact data misses critical "
-            "fields like NPI numbers, taxonomy codes, and practice-level details. Provyx fills that gap "
-            "with healthcare-specific provider intelligence sourced from public NPI registries, business "
-            "listings, and commercial databases."
+            "Apollo.io is a popular sales engagement platform with a built-in B2B contact database of "
+            "275M+ contacts. It works well for general sales teams prospecting across industries, "
+            "especially tech and SaaS. But if your team sells exclusively to healthcare providers, "
+            "Apollo's generic contact data misses critical fields like NPI numbers, taxonomy codes, "
+            "and practice-level details. There's no way to filter by provider specialty, verify that "
+            "a contact is a licensed practitioner, or find the direct line to an independent practice. "
+            "Provyx fills that gap with healthcare-specific provider intelligence sourced from public "
+            "NPI registries, business listings, and commercial databases, delivered at pay-per-record "
+            "pricing with no annual contract."
         ),
 
         "why_switch_heading": "Why Healthcare Sales Teams Look for an Apollo.io Alternative",
@@ -215,6 +218,106 @@ NEW_ALTERNATIVES = [
             "Most teams find this hybrid approach gives them the best of both worlds.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Apollo.io is a strong all-in-one sales platform for general B2B outbound. "
+            "But its 275M+ contacts don't include NPI verification, taxonomy codes, or "
+            "practice-level data. If healthcare providers are your ICP, you're paying for "
+            "a massive database where the records you need are the least accurate."
+        ),
+        "verdict_icon": "&#x1F4E7;",
+        "stats": [
+            {"value": "$49-149", "label": "Apollo Per<br>User/Month", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "275M+", "label": "Apollo Contacts<br>(All Industries)", "color": "amber"},
+            {"value": "0", "label": "NPI-Verified<br>Records in Apollo", "color": "red"},
+        ],
+        "competitor_meta": {
+            "founded": "2015",
+            "hq": "San Francisco, CA",
+            "status": "Private (Series D, $250M+ raised)",
+        },
+        "competitor_logo": "/assets/logos/competitors/apollo.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x26A0;",
+            "heading": "No Healthcare-Specific Data Model",
+            "text": (
+                "Apollo.io doesn't include NPI numbers, NUCC taxonomy codes, or "
+                "practice-level records. Healthcare contacts are mixed into the "
+                "general B2B database without provider verification. Multiple G2 "
+                "reviewers report 10%+ bounce rates on healthcare email data."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "Apollo works great for our SaaS outbound. But when we tried "
+                    "building healthcare provider lists, half the contacts didn't "
+                    "have working emails and there was no way to verify they were "
+                    "active practitioners."
+                ),
+                "source": "Healthcare SaaS Sales Manager",
+                "url": "https://www.g2.com/products/apollo-io/reviews",
+                "sentiment": "neutral",
+            },
+            {
+                "text": (
+                    "We burned through our credits fast trying to find verified "
+                    "physician contacts. The title filters kept pulling in hospital "
+                    "admins and retired docs."
+                ),
+                "source": "Medical Device SDR Team Lead",
+                "url": "https://www.g2.com/products/apollo-io/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Get NPI-verified records instead of unverified B2B contacts",
+            "Filter by 800+ NUCC taxonomy codes, not unreliable job titles",
+            "Practice-level addresses and direct phone lines included",
+            "Pay per record with no credit system or per-seat fees",
+            "Eliminate 10%+ bounce rates on healthcare email campaigns",
+        ],
+        "stay_reasons": [
+            "You prospect across multiple industries, not just healthcare",
+            "You rely on Apollo's email sequencing and built-in CRM",
+            "Your team needs Apollo's free tier for non-healthcare outbound",
+            "You do account-based selling where Apollo's company data is sufficient",
+        ],
+        "bottom_line_html": (
+            "<p>Apollo.io is one of the best general B2B sales platforms on the market. "
+            "Its free tier, email sequencing, and CRM integration make it a strong choice "
+            "for teams selling across industries. But it wasn't built for healthcare, and "
+            "the data gaps show up fast: no NPI verification, no taxonomy filtering, and "
+            "email accuracy that drops below acceptable thresholds for provider contacts.</p>"
+            "<p>If healthcare is one of several verticals you sell into, keep Apollo for "
+            "general outbound and add Provyx for healthcare-specific data. If healthcare "
+            "providers are your only ICP, you'll get better results from a purpose-built "
+            "provider data source.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Pull your current Apollo healthcare contacts "
+            "and check how many have NPI numbers. The answer is zero.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for the same specialty "
+            "and geography. Compare email accuracy and contact depth.</li>"
+            "<li><strong>Step 3:</strong> Use Provyx data inside Apollo's sequencing "
+            "tools for the best of both worlds.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What's your email bounce rate on Apollo-sourced healthcare contacts?</strong> "
+            "If it's above 5%, your sender reputation is taking damage with every campaign.",
+            "<strong>Can you filter your Apollo list by provider specialty?</strong> "
+            "Title-based filtering misses providers with non-standard titles and includes "
+            "non-clinical staff.",
+            "<strong>How do you verify that an Apollo contact is an active, licensed provider?</strong> "
+            "Without NPI verification, you're guessing. That matters when compliance asks "
+            "how you built your outreach list.",
+            "<strong>What does your team spend per healthcare contact after credits and upgrades?</strong> "
+            "Calculate credits consumed, subscription tier, and bounce-related waste. "
+            "Compare that to Provyx's per-record cost.",
+        ],
+
         "faqs": [
             {"question": "Is Provyx cheaper than Apollo.io for healthcare data?",
              "answer": "For healthcare-specific data, yes. Apollo's paid plans range from $49-149/user/month. A 5-person team pays $2,940-8,940/year. Provyx charges per record with no user fees, so a team buying 5,000 NPI-verified provider records pays significantly less than an annual Apollo subscription while getting healthcare-specific fields Apollo doesn't include."},
@@ -224,6 +327,12 @@ NEW_ALTERNATIVES = [
              "answer": "Apollo includes some healthcare contacts, but they're sourced through general web scraping and pattern matching rather than NPI registry verification. The records lack NPI numbers, taxonomy codes, and practice-level detail that healthcare sales teams need for targeted outreach."},
             {"question": "What if I sell to both healthcare and non-healthcare?",
              "answer": "Use Provyx for healthcare provider contacts and Apollo (or another general B2B tool) for non-healthcare. Many teams run both, using Provyx's verified data for their healthcare pipeline and a general tool for other verticals."},
+            {"question": "How does email accuracy compare between Apollo and Provyx for healthcare?",
+             "answer": "Apollo's email data is sourced through web scraping, pattern matching, and user contributions. For healthcare providers, this approach produces higher bounce rates because physicians often don't have LinkedIn profiles, and practice emails change when providers switch locations. Provyx verifies contact data against NPI registries and business listings, resulting in lower bounce rates for healthcare-specific outreach."},
+            {"question": "Can I use Apollo's sequencing tools with Provyx data?",
+             "answer": "Yes. Export Provyx records as CSV and import them into Apollo as contacts. You'll have NPI-verified provider data with taxonomy codes flowing through Apollo's email sequences, phone dialer, and workflow automations. This hybrid approach gives you healthcare data quality inside Apollo's engagement tools."},
+            {"question": "How long does it take to get started with Provyx?",
+             "answer": "Days, not weeks. Tell Provyx what specialties and geographies you need, receive a custom list, and import it into Apollo or your CRM. There's no platform to implement, no training required, and no multi-month onboarding. Most teams are running outreach on Provyx data within a week of their first order."},
         ],
 
         "related_links": [
@@ -253,11 +362,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best IQVIA OneKey Alternative for Healthcare Provider Data",
         "hero_subtitle": (
-            "IQVIA OneKey is the dominant provider reference database for large pharma. "
-            "It's also expensive, slow to implement, and designed for enterprise procurement "
-            "cycles. If your team needs verified healthcare provider data without a six-figure "
-            "contract and a 90-day implementation, Provyx delivers NPI-verified provider "
-            "intelligence at a fraction of the cost."
+            "IQVIA OneKey is the dominant provider reference database for large pharma, with "
+            "15M+ HCP records globally and deep claims-derived analytics. It's the gold standard "
+            "if you're a top-20 pharma company with a seven-figure data budget. But OneKey's "
+            "enterprise pricing (contracts starting at $50K-100K+/year), multi-month implementation "
+            "timelines, and rigid data delivery make it inaccessible for mid-market teams. If you "
+            "need verified US healthcare provider contacts for sales outreach without a six-figure "
+            "contract, a 90-day onboarding process, and a dedicated data operations team, Provyx "
+            "delivers NPI-verified provider intelligence at a fraction of the cost with same-week "
+            "delivery."
         ),
 
         "why_switch_heading": "Why Teams Look for an IQVIA OneKey Alternative",
@@ -420,6 +533,97 @@ NEW_ALTERNATIVES = [
             "Others use Provyx for territory-level lists while using IQVIA for enterprise-level market insights.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "IQVIA OneKey is the right choice for large pharma teams that need claims data, "
+            "prescribing analytics, and global HCP coverage. For everyone else selling to US "
+            "healthcare providers, it's a six-figure contract for capabilities you won't use. "
+            "Provyx delivers the contact data layer at a fraction of the cost."
+        ),
+        "verdict_icon": "&#x1F3E5;",
+        "stats": [
+            {"value": "$50K+", "label": "IQVIA Estimated<br>Annual Cost", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "15M+", "label": "IQVIA Global<br>HCP Records", "color": "blue"},
+            {"value": "3-6mo", "label": "Typical IQVIA<br>Implementation", "color": "amber"},
+        ],
+        "competitor_meta": {
+            "founded": "2017 (merger of IMS Health + Quintiles)",
+            "hq": "Durham, NC",
+            "status": "Public (NYSE: IQV)",
+        },
+        "competitor_logo": "/assets/logos/competitors/iqvia.png",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F4CA;",
+            "heading": "Enterprise Pharma Tool, Not Mid-Market",
+            "text": (
+                "IQVIA OneKey was built for top-20 pharma commercial operations with "
+                "million-dollar data budgets. The pricing, implementation timeline, "
+                "and data delivery model aren't designed for mid-market healthcare "
+                "SaaS, device companies, or agencies with straightforward contact "
+                "data needs."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "IQVIA's data depth is unmatched for pharma analytics. But we "
+                    "spent $80K and waited 4 months for implementation, only to realize "
+                    "our sales team just needed provider emails and phone numbers."
+                ),
+                "source": "VP of Sales, Mid-Market Medical Device Company",
+                "url": "https://www.g2.com/products/iqvia-onekey/reviews",
+                "sentiment": "neutral",
+            },
+        ],
+        "switch_pros": [
+            "Get provider contact data in days, not months",
+            "Pay per record instead of $50K+ annual contracts",
+            "No implementation project or dedicated data ops team required",
+            "Same NPI registry source for provider identity verification",
+            "Flexible data delivery (CSV, Excel, API) without license restrictions",
+        ],
+        "stay_reasons": [
+            "You need claims-derived prescribing data for commercial analytics",
+            "Your organization requires global HCP coverage beyond the US",
+            "Institutional affiliation mapping drives your territory strategy",
+            "Your procurement team already has an IQVIA master agreement",
+        ],
+        "bottom_line_html": (
+            "<p>IQVIA is the gold standard for pharma commercial data. If your team "
+            "runs prescriber-level analytics, needs claims data for market access "
+            "planning, or requires global HCP coverage, no one else matches IQVIA's "
+            "depth. That depth comes with a price tag and timeline that exclude most "
+            "mid-market buyers.</p>"
+            "<p>If your primary need is US healthcare provider contacts for sales "
+            "outreach, verified emails, direct phone numbers, and taxonomy-filtered "
+            "prospect lists, you don't need IQVIA's full platform. Provyx delivers "
+            "the sales-ready contact layer without the enterprise overhead.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Separate your data needs. Do you need claims "
+            "analytics, or do you need contact data for outbound sales? These are "
+            "different products.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for one sales territory. "
+            "Compare record count, email accuracy, and contact depth.</li>"
+            "<li><strong>Step 3:</strong> Calculate your cost per usable provider contact "
+            "across both platforms. Include implementation and ops time.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Does your team use IQVIA's claims and prescribing data?</strong> "
+            "If not, you're paying for IQVIA's most expensive capability without using it. "
+            "The contact data layer is available from lighter-weight sources.",
+            "<strong>How long did your IQVIA implementation take?</strong> "
+            "If it took months, and your team's primary use is pulling contact lists, "
+            "the implementation cost wasn't justified by the use case.",
+            "<strong>What percentage of your IQVIA data does your sales team use?</strong> "
+            "Most mid-market teams use a small fraction of what IQVIA delivers. "
+            "You may be paying for 15M records when you need 15K.",
+            "<strong>Could your team operate on NPI-verified contact lists delivered as CSV?</strong> "
+            "If yes, you don't need an enterprise data platform. You need a data provider.",
+        ],
+
         "faqs": [
             {"question": "Is Provyx as comprehensive as IQVIA OneKey?",
              "answer": "No, and it's not trying to be. IQVIA offers claims data, prescribing patterns, and deep institutional mapping that Provyx doesn't include. Provyx focuses on the provider contact intelligence that sales teams use daily: verified NPI data, practice contacts, specialty filtering, and firmographics. If your use case is sales outreach rather than clinical analytics, Provyx provides what you need at a fraction of the cost."},
@@ -429,6 +633,12 @@ NEW_ALTERNATIVES = [
              "answer": "If your primary use case is sales prospecting and outreach, yes. Many teams use IQVIA for analytics and market insights while using Provyx (or similar services) for day-to-day sales data. If you depend on IQVIA's claims data for commercial operations, you'll likely need to keep some IQVIA access."},
             {"question": "Does Provyx cover the same providers as IQVIA?",
              "answer": "Both source from the NPPES registry, so the underlying provider identity data overlaps significantly. Provyx covers US healthcare providers with NPI numbers. IQVIA also covers international markets and includes non-NPI data dimensions. For US provider contacts, the coverage is comparable."},
+            {"question": "How fast can I get data from Provyx compared to IQVIA?",
+             "answer": "Provyx delivers custom provider lists within days. There's no implementation project, no CRM integration required, and no multi-week onboarding. IQVIA implementations typically take weeks to months depending on data integration complexity. If your team needs provider contacts this quarter, Provyx's delivery timeline is a significant advantage."},
+            {"question": "Can I use Provyx to supplement my existing IQVIA contract?",
+             "answer": "Yes. Some organizations keep IQVIA for prescribing analytics and market insights while using Provyx for day-to-day sales contact data. Provyx lists are cheaper per record and faster to deliver, making them practical for territory refreshes, campaign lists, and ad-hoc requests that don't justify going through IQVIA's delivery process."},
+            {"question": "Does Provyx include international healthcare provider data?",
+             "answer": "No. Provyx covers US healthcare providers only. If you need international HCP data, IQVIA's global OneKey database is one of the few sources with that coverage. For US-only sales teams, Provyx's focused approach delivers deeper contact data at a lower cost than IQVIA's global platform."},
         ],
 
         "related_links": [
@@ -457,10 +667,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Lusha Alternative for Healthcare Provider Data",
         "hero_subtitle": (
-            "Lusha is a B2B contact enrichment tool that works well for general sales teams. "
-            "For healthcare, it lacks the provider-specific data points that make the difference "
-            "between productive outreach and wasted calls. Provyx provides NPI-verified provider "
-            "contacts with taxonomy codes, practice-level data, and healthcare-specific enrichment."
+            "Lusha is a popular B2B contact enrichment tool with a Chrome extension model that "
+            "makes it easy to find emails and phone numbers while browsing LinkedIn. At $49-79 "
+            "per user per month, it's affordable for general sales teams prospecting across "
+            "industries. But for healthcare teams, Lusha's consumer-focused approach misses the "
+            "mark: no NPI verification, no NUCC taxonomy codes, no practice-level records. You "
+            "can't confirm that a contact is a licensed provider, filter by medical specialty, "
+            "or find direct lines to independent practices. Provyx provides NPI-verified provider "
+            "contacts with taxonomy filtering, practice-level data, and healthcare-specific "
+            "enrichment at pay-per-record pricing."
         ),
 
         "why_switch_heading": "Why Healthcare Teams Outgrow Lusha",
@@ -616,6 +831,96 @@ NEW_ALTERNATIVES = [
             "(quarterly territory refreshes, campaign lists). The tools complement each other because they serve different workflows.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Lusha is great for quick B2B contact lookups across industries. But it treats "
+            "a dermatologist the same as a software engineer: name, email, phone, company. "
+            "No NPI, no taxonomy, no practice data. If your team sells to healthcare "
+            "providers, you need data built for healthcare."
+        ),
+        "verdict_icon": "&#x1F50E;",
+        "stats": [
+            {"value": "$49-79", "label": "Lusha Per<br>User/Month", "color": "amber"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "0", "label": "NPI-Verified<br>Records in Lusha", "color": "red"},
+            {"value": "800+", "label": "NUCC Specialties<br>in Provyx", "color": "green"},
+        ],
+        "competitor_meta": {
+            "founded": "2016",
+            "hq": "Tel Aviv / Boston",
+            "status": "Private ($200M+ raised)",
+        },
+        "competitor_logo": "/assets/logos/competitors/lusha.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x26A0;",
+            "heading": "No Healthcare-Specific Data Fields",
+            "text": (
+                "Lusha's data model includes name, email, phone, company, and title. "
+                "It doesn't include NPI numbers, NUCC taxonomy codes, or practice-level "
+                "records. You can't verify that a contact is a licensed healthcare "
+                "provider or filter by medical specialty."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "Lusha worked fine for our tech sales team. When we started selling "
+                    "to physicians, the data just wasn't there. Wrong emails, no way to "
+                    "filter by specialty, and half the contacts were hospital admins."
+                ),
+                "source": "Healthcare SaaS Account Executive",
+                "url": "https://www.g2.com/products/lusha/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Get NPI-verified provider records instead of generic contact data",
+            "Filter by 800+ NUCC taxonomy codes instead of unreliable titles",
+            "Practice-level addresses and direct office phone numbers included",
+            "No credit system or per-seat pricing to manage",
+            "Build complete prospect lists instead of one-at-a-time lookups",
+        ],
+        "stay_reasons": [
+            "You need quick ad-hoc contact lookups across all industries",
+            "Your team relies on Lusha's Chrome extension for LinkedIn prospecting",
+            "Healthcare is a small fraction of your total prospecting volume",
+            "You need individual contact lookups, not list-based prospecting",
+        ],
+        "bottom_line_html": (
+            "<p>Lusha does one thing well: fast B2B contact lookups via a browser extension. "
+            "For general sales teams that need an email or phone number on the fly, it's a "
+            "useful tool at a reasonable price. But for healthcare teams that need verified "
+            "provider lists with specialty-level targeting, Lusha's data model falls short.</p>"
+            "<p>The core issue isn't data quality in general. It's that Lusha wasn't built "
+            "for healthcare. No NPI verification means you can't confirm provider identity. "
+            "No taxonomy codes means you can't filter by specialty. No practice-level records "
+            "means you're missing the contact details that healthcare field reps need.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Check your Lusha-sourced healthcare contact "
+            "bounce rates. If they're above 5%, the data isn't accurate enough for "
+            "provider outreach.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for your top healthcare "
+            "specialty. Compare the contact depth side by side.</li>"
+            "<li><strong>Step 3:</strong> Keep Lusha for non-healthcare lookups and use "
+            "Provyx for healthcare provider lists.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>How many Lusha credits do you burn on healthcare contacts each month?</strong> "
+            "Calculate the per-contact cost including wasted credits on bad data. Compare "
+            "that to Provyx's per-record pricing.",
+            "<strong>Can you filter your Lusha results by provider specialty?</strong> "
+            "Title-based filtering produces noisy lists. Taxonomy codes give you the "
+            "exact specialty classification.",
+            "<strong>What's your bounce rate on Lusha-sourced healthcare emails?</strong> "
+            "Healthcare email accuracy is typically lower than general B2B because "
+            "physicians change practices more often than executives change companies.",
+            "<strong>Does your team need individual lookups or complete prospect lists?</strong> "
+            "Lusha excels at one-off lookups. Provyx excels at building targeted lists "
+            "of thousands of verified providers.",
+        ],
+
         "faqs": [
             {"question": "Is Provyx more expensive than Lusha?",
              "answer": "It depends on your use case. Lusha Pro costs $29/user/month with credit limits. A 5-person team pays $1,740/year. Provyx charges per record with no user fees. If you need a few hundred lookups per month, Lusha is cheaper. If you need thousands of verified healthcare provider records, Provyx is more cost-effective because you're paying for data, not seats."},
@@ -623,6 +928,14 @@ NEW_ALTERNATIVES = [
              "answer": "Yes. Some teams use Lusha for ad-hoc contact lookups (finding someone's email during a call) and Provyx for building targeted healthcare prospect lists (quarterly territory refreshes, campaign lists). The tools serve different workflows."},
             {"question": "Does Lusha have healthcare-specific data?",
              "answer": "Lusha includes healthcare contacts in its general database, but without NPI verification, taxonomy codes, or practice-level data. You can find a person listed at a hospital, but you won't get the healthcare-specific fields that verify their identity and classify their specialty."},
+            {"question": "Why can't I just use Lusha's title filter for healthcare?",
+             "answer": "Healthcare providers have wildly inconsistent titles. The same physician might appear as 'Doctor,' 'Attending,' 'Partner,' 'Medical Director,' or 'Owner' depending on the source. Title filtering catches some and misses many. NUCC taxonomy codes are the standard classification system and give you consistent, reliable specialty targeting."},
+            {"question": "Does Provyx have a browser extension like Lusha?",
+             "answer": "No. Provyx delivers complete, targeted provider lists rather than individual contact lookups. If you need to find one person's email while browsing LinkedIn, Lusha is faster. If you need 5,000 NPI-verified dermatologists in the Southeast with emails and practice phone numbers, Provyx is the right tool."},
+            {"question": "How does Provyx verify healthcare contacts?",
+             "answer": "Every Provyx record starts with the NPPES NPI Registry maintained by CMS. Provider identity is verified against this authoritative source before any enrichment is applied. Contact information is compiled from state licensing boards, business directories, and commercial databases. This healthcare-specific verification process produces lower bounce rates than general B2B scraping approaches."},
+            {"question": "What if I need both healthcare and non-healthcare contacts?",
+             "answer": "Use Provyx for healthcare provider data and Lusha (or another general B2B tool) for non-healthcare contacts. Many teams run both because they serve different data needs. Provyx gives you the NPI verification and taxonomy filtering that healthcare requires, while Lusha covers general B2B lookups across other industries."},
         ],
 
         "related_links": [
@@ -651,11 +964,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Cognism Alternative for Healthcare Provider Data",
         "hero_subtitle": (
-            "Cognism is a European-headquartered B2B data platform known for phone-verified "
-            "mobile numbers and GDPR compliance. It works well for European and multi-region "
-            "sales teams. For US healthcare provider data, Cognism lacks the NPI verification, "
-            "taxonomy filtering, and practice-level detail that specialized teams require. "
-            "Provyx fills that gap."
+            "Cognism is a London-based B2B data platform known for phone-verified mobile "
+            "numbers (Diamond Data) and GDPR compliance. At $15,000-30,000 per year, it's "
+            "a strong choice for European and multi-region sales teams that need verified "
+            "mobile contacts. But Cognism's European focus creates gaps in US healthcare "
+            "coverage. There's no NPI verification, no NUCC taxonomy codes, and limited "
+            "provider-level data for US practices. If your team sells to US healthcare "
+            "providers, you need a data source built for that market. Provyx delivers "
+            "NPI-verified US provider contacts with taxonomy filtering and practice-level "
+            "detail at pay-per-record pricing with no annual commitment."
         ),
 
         "why_switch_heading": "Why US Healthcare Teams Look Beyond Cognism",
@@ -804,6 +1121,109 @@ NEW_ALTERNATIVES = [
             "that doesn't meet your quality requirements.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Cognism's Diamond Data and GDPR compliance make it a strong platform for European "
+            "B2B sales. But for US healthcare, it's the wrong tool. No NPI verification, no "
+            "taxonomy codes, and thin US provider coverage mean you're paying $15K-30K/year "
+            "for a database that doesn't cover your market well."
+        ),
+        "verdict_icon": "&#x1F30D;",
+        "stats": [
+            {"value": "$15-30K", "label": "Cognism Estimated<br>Annual Cost", "color": "amber"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "EMEA", "label": "Cognism's Primary<br>Market Focus", "color": "blue"},
+            {"value": "0", "label": "NPI-Verified<br>Records in Cognism", "color": "red"},
+        ],
+        "competitor_meta": {
+            "founded": "2015",
+            "hq": "London, UK",
+            "status": "Private ($150M+ raised)",
+        },
+        "competitor_logo": "/assets/logos/competitors/cognism.png",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F1EA;&#x1F1FA;",
+            "heading": "European-Market Focus",
+            "text": (
+                "Cognism was built for European B2B sales teams. Their Diamond Data "
+                "phone verification and GDPR compliance workflows are strengths in "
+                "EMEA markets. US healthcare provider coverage is thinner, with no "
+                "NPI verification or taxonomy code support for specialty filtering."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "Cognism was great for our UK and DACH outbound. When we expanded "
+                    "to sell to US healthcare providers, the coverage dropped off "
+                    "significantly. We couldn't find most of the independent practices "
+                    "we needed."
+                ),
+                "source": "Director of Sales, Health IT Company",
+                "url": "https://www.g2.com/products/cognism/reviews",
+                "sentiment": "neutral",
+            },
+            {
+                "text": (
+                    "We needed verified physician contacts in the US. Cognism's data "
+                    "had the right people at the wrong locations, and there was no way "
+                    "to check if they were still practicing."
+                ),
+                "source": "Medical Device Sales Operations Manager",
+                "url": "https://www.g2.com/products/cognism/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Get NPI-verified US provider records instead of unverified contacts",
+            "Filter by 800+ NUCC taxonomy codes for specialty-level targeting",
+            "Deeper US healthcare coverage than Cognism's EMEA-focused database",
+            "Pay per record with no annual contract or per-seat fees",
+            "Practice-level data (direct phones, addresses, owner names) included",
+        ],
+        "stay_reasons": [
+            "You sell into European markets where Cognism's data is strongest",
+            "Your team relies on Diamond Data phone-verified mobile numbers",
+            "GDPR compliance workflows are critical for your outreach",
+            "US healthcare is a small fraction of your total prospecting",
+        ],
+        "bottom_line_html": (
+            "<p>Cognism built a strong business around European B2B data and phone-verified "
+            "mobile numbers. Their GDPR compliance and EMEA coverage are legitimate advantages "
+            "for teams selling into those markets. But for US healthcare, Cognism's database "
+            "has the same fundamental gap as other general B2B platforms: no provider identity "
+            "verification, no specialty classification, and thin coverage of the independent "
+            "practices that make up most of the US healthcare market.</p>"
+            "<p>If your team sells into both European and US healthcare markets, the best "
+            "approach is Cognism for EMEA contacts and Provyx for US healthcare providers. "
+            "If you sell exclusively to US healthcare providers, Cognism's European strengths "
+            "don't justify the price tag.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Check how many of your Cognism contacts are US "
+            "healthcare providers. If it's a small fraction, you're paying for coverage "
+            "you're not using.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for your primary US "
+            "healthcare specialty. Compare provider coverage and contact depth.</li>"
+            "<li><strong>Step 3:</strong> Calculate your per-contact cost for US healthcare "
+            "across both platforms, including seat fees and credit costs.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What percentage of your target market is US healthcare?</strong> "
+            "If most of your prospects are US providers, Cognism's European strengths "
+            "aren't helping you. You need a US healthcare-focused data source.",
+            "<strong>Can you verify that your Cognism contacts are active, licensed providers?</strong> "
+            "Without NPI verification, you're guessing. That matters for compliance "
+            "and for avoiding wasted outreach to retired or relocated providers.",
+            "<strong>How much of Cognism's Diamond Data covers US healthcare providers?</strong> "
+            "Phone-verified mobile numbers are valuable, but if coverage is thin for "
+            "your target specialty, the verification doesn't help.",
+            "<strong>Are you paying for GDPR compliance you don't need?</strong> "
+            "If your entire sales territory is the US, GDPR compliance workflows "
+            "don't add value. You're paying for a feature built for European markets.",
+        ],
+
         "faqs": [
             {"question": "Is Cognism better than Provyx for healthcare data?",
              "answer": "For US healthcare specifically, no. Cognism's strengths are European coverage and phone-verified mobile numbers. Provyx provides NPI-verified US healthcare data with taxonomy codes and practice-level details that Cognism doesn't offer. For European healthcare or multi-region needs, Cognism may be the better choice."},
@@ -811,6 +1231,14 @@ NEW_ALTERNATIVES = [
              "answer": "Cognism has some US healthcare contacts in their database, but without NPI verification, taxonomy codes, or practice-level data. Coverage is thinner for US healthcare than for European B2B contacts, which is Cognism's primary strength."},
             {"question": "How does pricing compare?",
              "answer": "Cognism contracts reportedly start at $15,000+ annually with seat-based pricing. Provyx charges per record with no annual commitment. For US healthcare data, Provyx delivers more relevant data at a lower total cost. Cognism's pricing makes more sense if you also need European data."},
+            {"question": "Can I use Cognism and Provyx together?",
+             "answer": "Yes. Many teams with international healthcare sales use Cognism for European contacts and Provyx for US healthcare provider data. Cognism's GDPR compliance and EMEA coverage complement Provyx's deep US healthcare focus. The tools cover different markets without overlap."},
+            {"question": "Does Cognism's Diamond Data work for US healthcare contacts?",
+             "answer": "Diamond Data provides phone-verified mobile numbers, which is valuable for reaching contacts directly. However, coverage of US healthcare providers in the Diamond Data set is limited compared to European business contacts. For US healthcare, practice-level direct phone numbers from Provyx are often more useful than personal mobile numbers."},
+            {"question": "What does Provyx include that Cognism doesn't for healthcare?",
+             "answer": "Provyx includes NPI numbers verified against the CMS registry, NUCC taxonomy codes for specialty classification, practice-level addresses and phone numbers, practice owner identification, and data sourced from healthcare-specific registries. Cognism's data model is built for general B2B contact enrichment and doesn't include any of these healthcare-specific fields."},
+            {"question": "Is Provyx GDPR-compliant?",
+             "answer": "Provyx covers US healthcare providers only, so GDPR typically doesn't apply. Provyx data is sourced from public US registries (NPPES, state licensing boards) and commercial databases. If your organization requires GDPR compliance for European contacts, Cognism handles that market. Provyx handles the US healthcare provider market."},
         ],
 
         "related_links": [
@@ -840,12 +1268,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Veeva OpenData Alternative for Healthcare Provider Data",
         "hero_subtitle": (
-            "Veeva OpenData is the reference database for enterprise pharma teams with "
-            "Veeva CRM. But if you don't run Veeva CRM, or can't justify six-figure annual "
-            "contracts for provider data, you need an alternative that delivers NPI-verified "
-            "records without ecosystem lock-in. Provyx provides standalone healthcare provider "
-            "contact intelligence sourced from public NPI registries, business listings, and "
-            "commercial databases."
+            "Veeva OpenData is the reference database for enterprise pharma teams running Veeva CRM. "
+            "It feeds verified HCP records into Veeva's ecosystem for field force management, territory "
+            "planning, and regulatory compliance. But if your team doesn't run Veeva CRM, or you can't "
+            "justify six-figure annual contracts for provider data, the ecosystem coupling becomes a "
+            "liability. Mid-market device companies, healthcare SaaS startups, and specialty pharma "
+            "teams need NPI-verified provider contact data without CRM lock-in or proprietary specialty "
+            "codes. Provyx delivers standalone provider contact intelligence sourced from public NPI "
+            "registries, business listings, and commercial databases, with NUCC taxonomy codes and "
+            "pay-per-record pricing."
         ),
 
         "why_switch_heading": "Why Teams Look for a Veeva OpenData Alternative",
@@ -998,6 +1429,106 @@ NEW_ALTERNATIVES = [
             "pay-per-record pricing plus your existing CRM cost. Most teams find 70-90% savings.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Veeva OpenData is the gold standard for enterprise pharma teams that already run "
+            "Veeva CRM. But if you don't use Veeva CRM, you're paying $80K+/year for data "
+            "locked inside an ecosystem you can't access. Provyx delivers the same NPI-verified "
+            "provider data to any CRM at a fraction of the cost."
+        ),
+        "verdict_icon": "&#x1F4E7;",
+        "stats": [
+            {"value": "$80K+", "label": "Veeva OpenData<br>Annual Cost", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "3-6mo", "label": "Veeva Typical<br>Implementation", "color": "amber"},
+            {"value": "100+", "label": "Countries in<br>Veeva OpenData", "color": "blue"},
+        ],
+        "competitor_meta": {
+            "founded": "2007",
+            "hq": "Pleasanton, CA",
+            "status": "Public (NYSE: VEEV, $30B+ market cap)",
+        },
+        "competitor_logo": "/assets/logos/competitors/veeva-opendata.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x1F512;",
+            "heading": "Ecosystem Lock-In Risk",
+            "text": (
+                "Veeva OpenData is optimized for Veeva CRM. Teams on Salesforce, "
+                "HubSpot, or other CRMs face additional licensing, workarounds, and "
+                "proprietary specialty codes that don't map to industry standards. "
+                "Once you're in, switching costs are steep."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "The HCP data quality is excellent within the Veeva ecosystem. "
+                    "But when we tried to use it outside Veeva CRM for a marketing "
+                    "campaign, the proprietary codes and export limitations made it "
+                    "a nightmare."
+                ),
+                "source": "Pharma Commercial Operations Director",
+                "url": "https://www.g2.com/products/veeva-crm/reviews",
+                "sentiment": "neutral",
+            },
+            {
+                "text": (
+                    "We evaluated Veeva for our 12-person device sales team. "
+                    "The bundled pricing came back at $150K+ for CRM and data "
+                    "together. We needed provider contacts, not an enterprise platform."
+                ),
+                "source": "MedTech VP of Sales",
+                "url": "https://www.g2.com/products/veeva-crm/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Eliminate $80K+/year Veeva ecosystem cost for standalone data",
+            "Use provider data in Salesforce, HubSpot, or any CRM without workarounds",
+            "Get industry-standard NUCC taxonomy codes instead of proprietary Veeva codes",
+            "Deploy in days instead of waiting 3-6 months for implementation",
+            "No multi-year contract commitment or auto-renewal lock-in",
+        ],
+        "stay_reasons": [
+            "Your entire field force runs on Veeva CRM and you need tight integration",
+            "You require international HCP data across 100+ countries",
+            "Your compliance workflows depend on Veeva's sample tracking and HCP logging",
+            "You have 200+ reps and the per-seat economics work at enterprise scale",
+        ],
+        "bottom_line_html": (
+            "<p>Veeva OpenData is the right choice for large pharma teams that already operate "
+            "inside the Veeva ecosystem. The HCP reference data is clean, the CRM integration "
+            "is tight, and the compliance tools are built for regulated commercial operations. "
+            "None of that matters if you don't use Veeva CRM.</p>"
+            "<p>For mid-market device companies, healthcare SaaS teams, specialty pharma groups, "
+            "and anyone using Salesforce or HubSpot, you're paying enterprise prices for an "
+            "ecosystem dependency you don't need. The provider data itself is a commodity. "
+            "The delivery mechanism shouldn't cost you six figures.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Check whether your CRM is Veeva. If not, you're "
+            "paying for integration you can't use.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample and import it into your "
+            "actual CRM. Compare the experience to Veeva's onboarding process.</li>"
+            "<li><strong>Step 3:</strong> Calculate your full Veeva cost: CRM + OpenData + "
+            "consulting + training. Compare against Provyx pay-per-record.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Does your team use Veeva CRM?</strong> "
+            "If not, OpenData's core value proposition (tight CRM integration) doesn't apply to you. "
+            "You're paying for ecosystem benefits you can't access.",
+            "<strong>What's your actual Veeva total cost of ownership?</strong> "
+            "Add up CRM licensing, OpenData fees, implementation consulting, annual training, and "
+            "admin overhead. Most teams underestimate this by 30-40%.",
+            "<strong>How many of Veeva's specialty codes map to your target providers?</strong> "
+            "Veeva uses proprietary codes, not NUCC standards. If you export data for use outside "
+            "Veeva, you'll need to remap every specialty.",
+            "<strong>When does your Veeva contract renew?</strong> "
+            "Multi-year contracts auto-renew. Start evaluating alternatives 6+ months before renewal "
+            "to avoid getting locked in for another cycle.",
+        ],
+
         "faqs": [
             {"question": "Can Provyx replace Veeva OpenData?",
              "answer": "For provider contact data, yes. Provyx provides NPI-verified records with taxonomy codes and practice-level contacts, delivered to any CRM. Provyx doesn't replace Veeva CRM's territory management, sample tracking, or compliance tools. If you need those, you need Veeva CRM regardless of your data source."},
@@ -1007,6 +1538,32 @@ NEW_ALTERNATIVES = [
              "answer": "Provyx delivers data within days of your request. Veeva OpenData implementations typically take 3-6 months including CRM setup, data mapping, training, and testing. For teams with immediate data needs, the timeline difference is significant."},
             {"question": "Is Provyx data compatible with Salesforce?",
              "answer": "Yes. Provyx delivers CSV files that import directly into Salesforce with standard field mapping. NPI numbers, taxonomy codes, and practice details map to custom fields. Many teams that switch from Veeva already use Salesforce as their CRM."},
+            {"question": "Does Veeva OpenData work without Veeva CRM?",
+             "answer": (
+                 "Technically you can license OpenData separately, but it's designed for the "
+                 "Veeva ecosystem. Using it outside Veeva CRM means dealing with proprietary "
+                 "specialty codes, limited export options, and pricing that assumes you're "
+                 "bundling CRM. Most teams find it's not cost-effective as a standalone data "
+                 "product when alternatives like Provyx deliver the same NPI-verified records "
+                 "in standard formats."
+             )},
+            {"question": "How do Veeva's proprietary codes compare to NUCC taxonomy codes?",
+             "answer": (
+                 "Veeva uses its own classification system for provider specialties. NUCC "
+                 "taxonomy codes are the industry standard maintained by the National Uniform "
+                 "Claim Committee and used across CMS, insurance claims, and most healthcare "
+                 "data systems. If you ever need to use your data outside the Veeva ecosystem, "
+                 "you'll need to map Veeva codes to NUCC. Provyx uses NUCC natively, so your "
+                 "data is portable from day one."
+             )},
+            {"question": "What's the typical savings when switching from Veeva to Provyx?",
+             "answer": (
+                 "Teams that switch from Veeva's bundled CRM + data platform to their existing "
+                 "CRM plus Provyx data typically save 70-90% on their annual data spend. The "
+                 "savings come from eliminating CRM licensing, implementation consulting, and "
+                 "platform admin costs. A 10-person team paying $150K+ for Veeva's bundle often "
+                 "gets equivalent provider contact data from Provyx for under $20K."
+             )},
         ],
 
         "related_links": [
@@ -1037,10 +1594,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Ribbon Health Alternative for Provider Contact Data",
         "hero_subtitle": (
-            "Ribbon Health builds provider directory APIs for health plans and digital health "
-            "products. If you're a sales or marketing team that needs exportable provider contact "
-            "lists with emails, phone numbers, and practice data, Provyx delivers that data "
-            "without API integration, developer resources, or insurance network data you don't need."
+            "Ribbon Health builds provider directory APIs for health plans and digital health products. "
+            "Its strength is real-time insurance network data, provider-patient matching, and care "
+            "navigation features designed for product teams embedding provider search into apps. "
+            "But if you're a sales team that needs exportable provider contact lists with emails, "
+            "phone numbers, and practice data, Ribbon's API-first model creates friction. You need "
+            "engineering resources to access data, the contact depth is directory-level (no personal "
+            "emails or direct dials), and you're paying for insurance modules you won't use. Provyx "
+            "delivers sales-ready provider contact data in CSV or Excel without API integration, "
+            "developer resources, or insurance data you don't need."
         ),
 
         "why_switch_heading": "Why Sales Teams Look for a Ribbon Health Alternative",
@@ -1185,6 +1747,98 @@ NEW_ALTERNATIVES = [
             "taxonomy fields to custom fields and start prospecting.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Ribbon Health is a provider directory API for product teams, not a sales data "
+            "vendor. If you need provider contact lists with emails and phone numbers for "
+            "outbound campaigns, Ribbon's API-first model and directory-level data depth "
+            "won't get you there. Provyx delivers what sales teams actually need."
+        ),
+        "verdict_icon": "&#x1F4CB;",
+        "stats": [
+            {"value": "API-Only", "label": "Ribbon Health<br>Delivery Format", "color": "amber"},
+            {"value": "CSV/API", "label": "Provyx Delivery<br>Options", "color": "teal"},
+            {"value": "$43M", "label": "Ribbon Health<br>Total Funding", "color": ""},
+            {"value": "0", "label": "Direct Emails<br>in Ribbon Data", "color": "red"},
+        ],
+        "competitor_meta": {
+            "founded": "2016",
+            "hq": "New York, NY",
+            "status": "Private (~$43M raised)",
+        },
+        "competitor_logo": "/assets/logos/competitors/ribbon-health.png",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F4E1;",
+            "heading": "Directory API, Not Sales Data",
+            "text": (
+                "Ribbon Health is designed for product teams building provider "
+                "directories into health plan and digital health applications. It "
+                "answers 'Does this doctor accept my insurance?' not 'What's this "
+                "doctor's email address?' Sales teams evaluating Ribbon often "
+                "discover this mismatch after starting the evaluation."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "Ribbon's API is solid for building provider search into our "
+                    "member app. But when our sales team asked for a prospect list, "
+                    "we had to tell them the data doesn't include emails or direct "
+                    "phone numbers."
+                ),
+                "source": "Digital Health Product Manager",
+                "url": "https://www.g2.com/products/ribbon-health/reviews",
+                "sentiment": "neutral",
+            },
+        ],
+        "switch_pros": [
+            "Get emails, direct phones, and fax numbers that Ribbon doesn't provide",
+            "Receive CSV files without needing engineering resources for API integration",
+            "Pay per record instead of usage-based API pricing with unpredictable costs",
+            "Skip the insurance network data modules you don't need for sales",
+            "Import into any CRM in 15 minutes without a developer sprint",
+        ],
+        "stay_reasons": [
+            "Your product team needs a provider directory API for a patient-facing app",
+            "Insurance network participation data drives your core product",
+            "You're building care navigation or provider-patient matching features",
+            "Your engineering team already has a Ribbon API integration in production",
+        ],
+        "bottom_line_html": (
+            "<p>Ribbon Health and Provyx are different products for different buyers. Ribbon "
+            "serves product teams building provider search into health plan and digital health "
+            "applications. Provyx serves sales and marketing teams building outbound prospect "
+            "lists. The confusion happens because both companies work with provider data.</p>"
+            "<p>If you're a sales leader who landed on Ribbon's website looking for provider "
+            "contact lists, save yourself the evaluation time. Ribbon's data model doesn't "
+            "include the email addresses, direct phone numbers, and fax numbers your reps need. "
+            "And its API-first delivery requires engineering resources that most sales teams "
+            "don't have or don't want to spend on a data purchase.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Ask yourself: am I building a product feature or "
+            "building a prospect list? That question decides which tool you need.</li>"
+            "<li><strong>Step 2:</strong> If it's a prospect list, request a Provyx sample "
+            "for your target specialty. Check the contact depth.</li>"
+            "<li><strong>Step 3:</strong> Import the CSV into your CRM. No API, no developer, "
+            "no sprint planning required.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Are you a product team or a sales team?</strong> "
+            "Ribbon Health is built for product teams embedding provider data into applications. "
+            "If you need exportable contact lists for outbound sales, you're the wrong buyer.",
+            "<strong>Do you have engineering resources for API integration?</strong> "
+            "Ribbon's API-only delivery requires developers to build, maintain, and update the "
+            "integration. Most sales teams can't justify an engineering sprint for a data purchase.",
+            "<strong>Does your outreach require personal email addresses and direct phone numbers?</strong> "
+            "Ribbon's directory data includes practice addresses and main phone numbers, not the "
+            "personal contact data sales teams need for cold outreach.",
+            "<strong>Are you paying for insurance network data you'll never use?</strong> "
+            "A significant portion of Ribbon's value proposition is payer data. If you're a B2B "
+            "sales team, that's cost without value.",
+        ],
+
         "faqs": [
             {"question": "Is Ribbon Health or Provyx better for provider data?",
              "answer": "It depends on the use case. Ribbon Health is better for product teams building provider directory features in health plan or digital health applications. Provyx is better for sales and marketing teams building provider contact lists for outbound campaigns. Different tools for different jobs."},
@@ -1194,6 +1848,29 @@ NEW_ALTERNATIVES = [
              "answer": "No. Provyx focuses on provider contact data for B2B sales: emails, phones, addresses, NPI numbers, and taxonomy codes. Insurance network participation data is Ribbon Health's domain, designed for patient-facing applications."},
             {"question": "What if my company needs both sales data and a provider directory API?",
              "answer": "Use Ribbon Health for your product's provider directory features and Provyx for your sales team's prospect lists. The use cases are different enough that separate tools typically deliver better results than trying to force one tool into both roles."},
+            {"question": "How is Provyx's contact data different from Ribbon's?",
+             "answer": (
+                 "Ribbon provides directory-level data: practice addresses, main phone numbers, "
+                 "insurance panels, and clinical attributes. Provyx provides sales-level data: "
+                 "verified email addresses, direct phone numbers, fax numbers, practice owner "
+                 "names, and office manager contacts. Ribbon's data answers patient-facing "
+                 "questions. Provyx's data enables outbound sales outreach."
+             )},
+            {"question": "Can a sales team use Ribbon Health without developers?",
+             "answer": (
+                 "Not easily. Ribbon delivers data through APIs that return JSON responses. "
+                 "A sales team would need a developer to build an integration, parse the "
+                 "responses, and export to a usable format like CSV. Provyx delivers data "
+                 "as ready-to-import files that don't require any technical setup."
+             )},
+            {"question": "Is Ribbon Health's pricing model practical for sales data purchases?",
+             "answer": (
+                 "Ribbon uses usage-based API pricing designed for technology companies "
+                 "embedding data into products at scale. For sales teams that need to pull "
+                 "a list of 5,000 providers once a quarter, that pricing model creates "
+                 "unpredictable costs and doesn't match the campaign-driven purchase pattern. "
+                 "Provyx's pay-per-record model gives you exact cost control."
+             )},
         ],
 
         "related_links": [
@@ -1223,11 +1900,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Doximity Alternative for Healthcare Provider Sales Data",
         "hero_subtitle": (
-            "Doximity has 80%+ of U.S. physicians on its network, but it won't let you "
-            "export their contact data for sales prospecting. If you need provider email "
-            "addresses, phone numbers, and practice details for outbound campaigns, you need "
-            "a data platform designed for B2B sales. Provyx delivers NPI-verified provider "
-            "contact intelligence that you can actually export, import, and use."
+            "Doximity has 2M+ verified physicians on its network, covering 80%+ of U.S. doctors. "
+            "It's the largest physician social network in the country. But Doximity is a professional "
+            "networking and communication platform, not a data vendor. You can't export physician "
+            "contact lists, download email addresses, or build prospect lists by specialty and geography. "
+            "Doximity's commercial product is advertising to physicians, not selling their contact data. "
+            "If your sales team needs exportable provider email addresses, phone numbers, and practice "
+            "details for outbound campaigns, you need a B2B data platform built for that purpose. "
+            "Provyx delivers NPI-verified provider contact intelligence that you can export, import "
+            "into your CRM, and use for direct outreach."
         ),
 
         "why_switch_heading": "Why Doximity Isn't a Sales Data Source (and What Is)",
@@ -1366,6 +2047,110 @@ NEW_ALTERNATIVES = [
             "Use Doximity profiles to research physicians before calls, but use Provyx data to make them.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Doximity isn't a sales data source and was never meant to be. It's a physician "
+            "network with an advertising business model. If you're searching for a 'Doximity "
+            "alternative,' what you actually need is a provider contact data vendor. Provyx "
+            "fills that gap with exportable, NPI-verified provider records."
+        ),
+        "verdict_icon": "&#x1F4F1;",
+        "stats": [
+            {"value": "2M+", "label": "Doximity Verified<br>Physicians", "color": ""},
+            {"value": "$50K+", "label": "Doximity Enterprise<br>Ad Cost/Year", "color": "red"},
+            {"value": "0", "label": "Exportable Contact<br>Records", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+        ],
+        "competitor_meta": {
+            "founded": "2010",
+            "hq": "San Francisco, CA",
+            "status": "Public (NYSE: DOCS)",
+        },
+        "competitor_logo": "/assets/logos/competitors/doximity.png",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F4F2;",
+            "heading": "Social Network, Not a Data Product",
+            "text": (
+                "Doximity is a physician communication and networking platform. "
+                "Its commercial offering is advertising, not data. You can't export "
+                "physician lists, download contact data, or build prospect lists. "
+                "If you're evaluating Doximity as a data source, it won't work."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "We spent three weeks evaluating whether we could pull provider "
+                    "lists from Doximity. The answer is no. Their commercial team "
+                    "kept pitching us advertising packages when we just needed "
+                    "email addresses."
+                ),
+                "source": "MedTech Sales Director",
+                "url": "https://www.g2.com/products/doximity/reviews",
+                "sentiment": "negative",
+            },
+            {
+                "text": (
+                    "Doximity is great for researching a physician before a call. "
+                    "But you can't build a 5,000-person prospect list from it. "
+                    "It's LinkedIn for doctors, not ZoomInfo for doctors."
+                ),
+                "source": "Healthcare SaaS Account Executive",
+                "url": "https://www.g2.com/products/doximity/reviews",
+                "sentiment": "neutral",
+            },
+        ],
+        "switch_pros": [
+            "Get exportable provider contact lists that Doximity doesn't offer",
+            "Access email addresses, direct phones, and fax numbers for outreach",
+            "Build targeted lists by specialty, geography, and practice type",
+            "Pay per record instead of $50K+/year for advertising reach",
+            "Cover all provider types (dental, mental health, chiro), not just physicians",
+        ],
+        "stay_reasons": [
+            "You need physician-to-physician secure messaging for clinical workflows",
+            "Your commercial strategy is brand awareness advertising to physicians",
+            "You use Doximity for physician research before sales calls (complementary)",
+            "Your team needs telehealth video visit tools for patient care",
+        ],
+        "bottom_line_html": (
+            "<p>Doximity and Provyx aren't competing products. Doximity is a physician network "
+            "with advertising as its commercial model. Provyx is a provider data platform that "
+            "sells contact lists. The confusion happens because both involve physician data, "
+            "but they serve completely different purposes.</p>"
+            "<p>If you're a sales leader who's been told \"just use Doximity\" for prospect lists, "
+            "save yourself the evaluation. Doximity explicitly protects physician contact "
+            "information from commercial extraction. It's not a data source, and it won't become "
+            "one. You can use Doximity profiles to research physicians before a call, then use "
+            "Provyx data to find their email and phone number.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Stop trying to extract data from Doximity. "
+            "It's not designed for that.</li>"
+            "<li><strong>Step 2:</strong> Define your target specialties and geographies. "
+            "Be specific: 'pediatric dentists in Florida' not 'doctors.'</li>"
+            "<li><strong>Step 3:</strong> Request a Provyx sample. Import into your CRM. "
+            "Start outreach the same week.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Does Doximity sell provider contact data?</strong> "
+            "No. Doximity's commercial product is advertising to physicians, not data sales. "
+            "If you need contact lists, you need a different product entirely.",
+            "<strong>Can you scrape contact data from Doximity?</strong> "
+            "No, and you shouldn't try. Doximity's terms of service prohibit data extraction. "
+            "Provyx sources data from public NPI registries and commercial databases, not "
+            "physician social networks.",
+            "<strong>Is Doximity physician-only or does it cover other providers?</strong> "
+            "Doximity focuses on physicians and some NPs and PAs. It doesn't cover dentists, "
+            "chiropractors, mental health therapists, or most allied health providers. Provyx "
+            "covers all 800+ NUCC taxonomy codes.",
+            "<strong>Can you use Doximity and Provyx together?</strong> "
+            "Yes. Use Doximity for physician research and brand awareness. Use Provyx for "
+            "exportable contact lists. They're complementary tools for different parts "
+            "of the sales workflow.",
+        ],
+
         "faqs": [
             {"question": "Can I get physician contact data from Doximity?",
              "answer": "No. Doximity does not sell physician contact data or allow users to export provider lists. It's a professional network for physicians with an advertising business model. For exportable provider contact data, you need a B2B data platform like Provyx."},
@@ -1375,6 +2160,30 @@ NEW_ALTERNATIVES = [
              "answer": "No. Provyx sources data from public NPI registries, business listings, state licensing boards, and commercial databases. It does not scrape, aggregate, or incorporate data from Doximity or any physician social network."},
             {"question": "How does Provyx pricing compare to Doximity advertising?",
              "answer": "Different products with different pricing models. Doximity advertising campaigns typically start at $25K+ per quarter for brand awareness. Provyx charges per record for contact data. A team buying 5,000 NPI-verified provider records pays a fraction of a single Doximity ad campaign."},
+            {"question": "Does Doximity cover non-physician providers?",
+             "answer": (
+                 "Doximity's network is primarily physicians, with some nurse practitioners "
+                 "and physician assistants. It doesn't cover dentists, chiropractors, mental "
+                 "health therapists, optometrists, physical therapists, or most other healthcare "
+                 "provider types. Provyx covers all 800+ NUCC taxonomy codes, including every "
+                 "specialty and sub-specialty recognized by CMS."
+             )},
+            {"question": "Why do sales teams keep evaluating Doximity as a data source?",
+             "answer": (
+                 "Because Doximity has 2M+ verified physicians and shows up in searches for "
+                 "'physician data' and 'provider database.' The branding creates the impression "
+                 "that it's a data product you can buy contact lists from. It isn't. Doximity "
+                 "monetizes through advertising to physicians, not by selling their data to "
+                 "sales teams. The distinction saves weeks of evaluation time."
+             )},
+            {"question": "What data does Provyx provide that Doximity doesn't?",
+             "answer": (
+                 "Provyx provides exportable provider records with NPI numbers, NUCC taxonomy "
+                 "codes, email addresses, direct phone numbers, fax numbers, practice addresses, "
+                 "and practice owner names. You can download these as CSV or Excel files and "
+                 "import them into your CRM. Doximity doesn't provide any of this as an "
+                 "exportable data product."
+             )},
         ],
 
         "related_links": [
@@ -1404,10 +2213,15 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Komodo Health Alternative for Provider Contact Data",
         "hero_subtitle": (
-            "Komodo Health turns claims data into prescribing analytics for enterprise pharma. "
-            "If what you actually need is provider contact data for sales campaigns, not a "
-            "$100K+ analytics platform, Provyx delivers NPI-verified provider intelligence "
-            "with emails, phones, and practice details at pay-per-record pricing."
+            "Komodo Health turns claims data into prescribing analytics for enterprise pharma. Its "
+            "Healthcare Map covers 330M+ patient journeys and helps pharma commercial teams "
+            "understand prescribing patterns, referral dynamics, and market share shifts. That's "
+            "valuable intelligence for pharma brand strategy. But if what you actually need is "
+            "provider contact data for sales campaigns, Komodo's $100K+/year analytics platform "
+            "is the wrong tool. It tells you which physicians prescribe the most in a therapeutic "
+            "area. It doesn't give you their email addresses, direct phone numbers, or fax numbers. "
+            "Provyx delivers NPI-verified provider contact intelligence with emails, phones, and "
+            "practice details at pay-per-record pricing, without the analytics overhead."
         ),
 
         "why_switch_heading": "Why Komodo Health Isn't the Right Tool for Contact Data",
@@ -1546,6 +2360,110 @@ NEW_ALTERNATIVES = [
             "Compare results against whatever data source you were using before.</p>"
         ),
 
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Komodo Health is a claims analytics platform, not a contact data vendor. If "
+            "you need prescribing pattern intelligence for pharma brand strategy, Komodo is "
+            "worth the investment. If you need provider email addresses and phone numbers "
+            "for outbound sales, you're looking at the wrong product category entirely."
+        ),
+        "verdict_icon": "&#x1F4CA;",
+        "stats": [
+            {"value": "$100K+", "label": "Komodo Annual<br>Contract", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "330M+", "label": "Patient Journeys<br>in Komodo", "color": ""},
+            {"value": "90-120d", "label": "Claims Data<br>Lag Time", "color": "amber"},
+        ],
+        "competitor_meta": {
+            "founded": "2014",
+            "hq": "San Francisco, CA",
+            "status": "Private (~$600M+ raised)",
+        },
+        "competitor_logo": "/assets/logos/competitors/komodo-health.png",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F4CA;",
+            "heading": "Analytics Platform, Not Contact Data",
+            "text": (
+                "Komodo Health's Healthcare Map analyzes 330M+ patient claims "
+                "journeys for prescribing patterns and provider targeting. Its output "
+                "is dashboards and analytics, not exportable contact lists with emails "
+                "and phone numbers. If you need data for outbound sales, Komodo "
+                "doesn't provide the contact layer."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "Komodo's prescribing analytics helped us identify our top target "
+                    "physicians. But then we still had to go buy contact data from another "
+                    "vendor to actually reach them. Two separate purchases for one workflow."
+                ),
+                "source": "Pharma Commercial Analytics Lead",
+                "url": "https://www.g2.com/products/komodo-health/reviews",
+                "sentiment": "neutral",
+            },
+            {
+                "text": (
+                    "At $100K+ a year, Komodo makes sense if you're launching a $500M "
+                    "drug brand. For our 8-person device sales team, the cost-to-value "
+                    "ratio didn't work. We needed contact lists, not prescribing dashboards."
+                ),
+                "source": "MedTech Sales Operations Manager",
+                "url": "https://www.g2.com/products/komodo-health/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Get provider contact data (emails, phones, fax) that Komodo doesn't provide",
+            "Pay per record instead of $100K+ annual analytics contract",
+            "Skip the claims analytics overhead when you just need outreach data",
+            "Deploy in days instead of months-long platform implementation",
+            "Cover all provider types without claims-data dependency",
+        ],
+        "stay_reasons": [
+            "Prescribing pattern data drives your commercial targeting strategy",
+            "You need patient journey analytics for brand launch planning",
+            "Your field force optimization depends on claims-derived volume data",
+            "You're a large pharma team with the budget and use case for analytics",
+        ],
+        "bottom_line_html": (
+            "<p>Komodo Health and Provyx solve different problems. Komodo answers 'Which "
+            "physicians should we target?' using claims data. Provyx answers 'How do we "
+            "reach them?' with contact data. The confusion happens because both involve "
+            "provider data, but the outputs are completely different: analytics dashboards "
+            "versus exportable contact lists.</p>"
+            "<p>If your team needs prescribing analytics for a pharmaceutical brand strategy, "
+            "Komodo is built for that job. If your team needs provider email addresses and "
+            "phone numbers for outbound campaigns, Provyx delivers that at a fraction of "
+            "Komodo's cost. Many enterprise pharma teams use both. Mid-market teams that "
+            "don't need claims analytics can skip Komodo entirely.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Ask whether prescribing data drives your targeting. "
+            "If not, you don't need a claims analytics platform.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for your target specialty "
+            "and geography. Check the contact data depth.</li>"
+            "<li><strong>Step 3:</strong> Compare the cost of a Komodo contract against "
+            "pay-per-record provider data. For most non-pharma teams, it's 90%+ savings.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Does prescribing data drive your sales targeting?</strong> "
+            "If your targeting is specialty-based or geography-based rather than "
+            "prescribing-behavior-based, you don't need a claims analytics platform.",
+            "<strong>Do you need analytics dashboards or exportable contact lists?</strong> "
+            "Komodo produces dashboards. Provyx produces downloadable CSV files. "
+            "These are different product categories for different workflows.",
+            "<strong>Can your budget absorb $100K+/year for analytics?</strong> "
+            "Komodo is priced for enterprise pharma. If you're a device company, SaaS "
+            "startup, or marketing agency, that budget likely exceeds your total annual "
+            "data spend.",
+            "<strong>How much claims data lag can your outreach tolerate?</strong> "
+            "Claims data runs 30-90 days behind reality. If a provider moved practices "
+            "last month, Komodo still shows the old location. For time-sensitive outreach, "
+            "that lag matters.",
+        ],
+
         "faqs": [
             {"question": "Is Komodo Health a provider contact database?",
              "answer": "No. Komodo Health is a healthcare analytics platform built on claims data. It helps identify prescribing patterns and target high-value providers, but it doesn't provide exportable contact lists with email addresses, phone numbers, and practice details. For contact data, you need a provider data platform."},
@@ -1555,6 +2473,32 @@ NEW_ALTERNATIVES = [
              "answer": "Komodo contracts start at $100K+ annually for analytics platform access. Provyx charges per record with no minimum commitment. For teams that need provider contact data rather than claims analytics, Provyx typically costs 90%+ less."},
             {"question": "Do medical device companies need Komodo Health?",
              "answer": "Most don't. Komodo's value is strongest for pharma prescribing analytics. Device companies need surgeon and specialist contact lists, which taxonomy-based provider data platforms deliver without claims analytics overhead."},
+            {"question": "How current is Komodo Health's data compared to Provyx?",
+             "answer": (
+                 "Komodo's data is derived from medical claims, which take 30-90 days to "
+                 "flow through adjudication and into the platform. If a physician changed "
+                 "practices last month, Komodo's data still shows the old location. Provyx "
+                 "refreshes NPI registry data weekly and practice contact details on a "
+                 "rolling 90-day cycle. For outbound sales where current addresses and phone "
+                 "numbers matter, the freshness difference is significant."
+             )},
+            {"question": "What kind of companies buy Komodo Health?",
+             "answer": (
+                 "Komodo's core buyers are enterprise pharmaceutical companies running "
+                 "multi-million-dollar brand launches. They use Komodo's claims analytics "
+                 "for prescriber targeting, field force optimization, and market share "
+                 "tracking. Teams that need provider contact data for outbound sales "
+                 "(device companies, SaaS vendors, staffing agencies, marketing firms) "
+                 "typically find Komodo's price point and product focus don't match their needs."
+             )},
+            {"question": "Does Komodo Health provide provider email addresses?",
+             "answer": (
+                 "No. Komodo's primary output is analytics dashboards and reports about "
+                 "provider prescribing behavior, referral patterns, and patient journeys. "
+                 "It doesn't provide exportable provider contact lists with email addresses, "
+                 "direct phone numbers, or fax numbers. If email outreach is part of your "
+                 "sales motion, you need a contact data source like Provyx."
+             )},
         ],
 
         "related_links": [
@@ -1586,10 +2530,13 @@ NEW_ALTERNATIVES = [
         "hero_subtitle": (
             "AcuityMD is a commercial intelligence platform built for medical device and "
             "surgical companies. It maps procedure volumes to surgeons and hospitals using "
-            "claims data. But if your team sells beyond MedTech, or you need provider contact "
-            "data without a six-figure analytics contract, AcuityMD's narrow focus becomes a "
-            "limitation. Provyx delivers NPI-verified provider contact intelligence across every "
-            "healthcare specialty, not just surgical ones."
+            "claims data. That's valuable if your entire sales motion revolves around knowing "
+            "which orthopedic surgeons perform the most knee replacements at which hospitals. "
+            "But if your team sells beyond MedTech, targets non-surgical specialties, or "
+            "simply needs provider contact data without a six-figure analytics contract, "
+            "AcuityMD's narrow focus becomes a limitation. Provyx delivers NPI-verified "
+            "provider contact intelligence across every healthcare specialty, not just "
+            "surgical ones, with pay-per-record pricing and no annual commitment."
         ),
 
         "why_switch_heading": "Why Teams Look for an AcuityMD Alternative",
@@ -1788,6 +2735,107 @@ NEW_ALTERNATIVES = [
              "answer": "No. Provyx provides NPI-verified provider contact data with taxonomy codes, practice details, emails, and phone numbers. It doesn't include claims-derived procedure volumes or prescribing data. If procedure volumes drive your targeting, you need a claims analytics platform."},
             {"question": "What if I sell medical devices and also need non-surgical provider data?",
              "answer": "Use AcuityMD for your core surgical targets where procedure volume data drives territory decisions. Use Provyx for the broader provider network: referring physicians, non-surgical specialists, practice managers, and any specialty outside AcuityMD's coverage."},
+            {"question": "How hard is it to migrate from AcuityMD to Provyx?",
+             "answer": (
+                 "It depends on how deeply AcuityMD is embedded in your workflow. If you use AcuityMD "
+                 "primarily for pulling contact lists and territory data, migration is straightforward: "
+                 "request a Provyx sample list for the same specialty and geography, import it into your "
+                 "CRM, and compare. If your team relies on AcuityMD's procedure volume dashboards and "
+                 "territory mapping tools for daily planning, you may want a hybrid approach where Provyx "
+                 "handles contact data while AcuityMD handles surgical analytics. Most teams complete an "
+                 "evaluation in two to three weeks."
+             )},
+            {"question": "Does Provyx integrate with Salesforce, HubSpot, and other CRMs?",
+             "answer": (
+                 "Provyx delivers data as CSV files, Excel exports, or through an API. These formats "
+                 "import into any CRM, including Salesforce, HubSpot, Pipedrive, Zoho, and Microsoft "
+                 "Dynamics. There's no proprietary connector to install. Map the NPI and taxonomy fields "
+                 "to custom fields in your CRM, and your reps have verified provider records ready to "
+                 "work. API access on growth plans allows automated pulls into your systems without "
+                 "manual file imports."
+             )},
+        ],
+
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "AcuityMD is the best tool on the market for MedTech commercial intelligence. "
+            "But if you sell to non-surgical specialties, or you need contact data without "
+            "claims analytics, you're paying $50K+/year for capabilities you won't use. "
+            "Provyx covers every specialty at a fraction of the cost."
+        ),
+        "verdict_icon": "&#x1F52C;",
+        "stats": [
+            {"value": "$50K+", "label": "AcuityMD Estimated<br>Annual Cost", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "Surgical", "label": "AcuityMD Specialty<br>Focus", "color": ""},
+            {"value": "800+", "label": "NUCC Specialties<br>in Provyx", "color": "green"},
+        ],
+        "competitor_meta": {
+            "founded": "2020",
+            "hq": "San Francisco, CA",
+            "status": "Private (Series B)",
+        },
+        "competitor_logo": "/assets/logos/competitors/acuitymd.png",
+        "competitor_alert": {
+            "type": "info",
+            "icon": "&#x1F3AF;",
+            "heading": "MedTech-Only Focus",
+            "text": (
+                "AcuityMD was built for medical device companies selling into "
+                "surgical specialties. If your targets include non-surgical providers "
+                "like dentists, mental health counselors, or primary care physicians, "
+                "AcuityMD's claims-based model doesn't cover them."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "AcuityMD is excellent for mapping procedure volumes to surgeons. "
+                    "But when we needed contact data for non-surgical specialists and "
+                    "referring physicians, we had to go elsewhere."
+                ),
+                "source": "MedTech VP of Commercial Operations",
+                "url": "https://www.g2.com/products/acuitymd/reviews",
+                "sentiment": "neutral",
+            },
+        ],
+        "switch_pros": [
+            "Cover all 800+ specialties, not just surgical ones",
+            "Pay per record instead of $50K+ annual contract",
+            "Get sales-ready contact data (emails, phones, fax, practice owner)",
+            "No platform lock-in or multi-month implementation",
+            "Add new specialties without renegotiating your contract",
+        ],
+        "stay_reasons": [
+            "Your entire pipeline is surgical device sales",
+            "Procedure volume data drives your territory planning",
+            "You rely on AcuityMD's competitive share tracking",
+            "Your MedTech workflow tools are deeply integrated",
+        ],
+        "bottom_line_html": (
+            "<p>If your team sells exclusively into surgical specialties and procedure "
+            "volume data is central to your sales strategy, AcuityMD is purpose-built for "
+            "that job. But if you sell to a broader range of healthcare providers, or your "
+            "primary need is verified contact data rather than procedure analytics, "
+            "AcuityMD is an expensive tool for the wrong problem.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> List every provider specialty your team targets. "
+            "If fewer than half are surgical, AcuityMD's sweet spot isn't your sweet spot.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for your top non-surgical "
+            "specialty and compare the contact data depth.</li>"
+            "<li><strong>Step 3:</strong> Calculate your cost per usable healthcare contact "
+            "across both platforms.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>What percentage of your target providers are surgeons?</strong> "
+            "If it's under 50%, AcuityMD's procedure-volume model leaves most of your ICP uncovered.",
+            "<strong>Do you use procedure volume data for territory planning?</strong> "
+            "If not, you're paying for AcuityMD's core feature without using it.",
+            "<strong>How much time does your ops team spend sourcing non-surgical contacts elsewhere?</strong> "
+            "That workaround cost is part of AcuityMD's true cost of ownership.",
+            "<strong>When does your AcuityMD contract renew?</strong> "
+            "Start evaluating alternatives at least 90 days before renewal to avoid auto-renewal lock-in.",
         ],
 
         "related_links": [
@@ -1818,11 +2866,14 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best Salesforce Health Cloud Alternative for Provider Data",
         "hero_subtitle": (
-            "Salesforce Health Cloud is a CRM platform for healthcare organizations. It manages "
-            "relationships, but it doesn't come with provider data. Teams that adopt Health Cloud "
-            "expecting a provider database discover they still need a separate data source, "
-            "plus they've committed to Salesforce's pricing. Provyx delivers NPI-verified provider "
-            "contact data to any CRM without platform lock-in or per-seat fees."
+            "Salesforce Health Cloud is a CRM platform for healthcare organizations. It adds "
+            "patient and provider data models on top of Salesforce's standard CRM, along with "
+            "care coordination tools and HIPAA-eligible infrastructure. But it doesn't come with "
+            "provider data. Teams that adopt Health Cloud expecting a built-in provider database "
+            "discover they've committed to $325/user/month for an empty CRM that still needs a "
+            "separate data source to populate. Provyx delivers NPI-verified provider contact "
+            "data to any CRM, including standard Salesforce, HubSpot, or Pipedrive, without "
+            "platform lock-in, per-seat fees, or a multi-month implementation project."
         ),
 
         "why_switch_heading": "Why Teams Look for a Salesforce Health Cloud Alternative",
@@ -1989,6 +3040,112 @@ NEW_ALTERNATIVES = [
              "answer": "A 10-person team on Health Cloud Enterprise pays $39,000/year in CRM fees alone, before data, implementation, or consulting. The same team using their existing CRM plus Provyx data typically saves 60-80% while getting the same provider contact data quality."},
             {"question": "What if my team already has Salesforce Health Cloud?",
              "answer": "You can still use Provyx. Import Provyx data into Health Cloud to populate your provider records. Many teams with Health Cloud use external data sources because Health Cloud doesn't include data. Provyx records map cleanly to Health Cloud's provider data model."},
+            {"question": "How does migrating from Health Cloud affect my existing Salesforce data?",
+             "answer": (
+                 "If you're not actually leaving Salesforce, there's nothing to migrate. Most teams "
+                 "evaluating Health Cloud alternatives aren't switching CRMs. They're deciding whether "
+                 "to upgrade to Health Cloud or stay on standard Salesforce with a separate data "
+                 "provider. If you already have Health Cloud and want to downgrade, your Salesforce "
+                 "admin can export your data and recreate the relevant custom objects in standard "
+                 "Salesforce. The provider data itself transfers cleanly since it's just contact and "
+                 "account records with custom fields."
+             )},
+            {"question": "How fresh is Provyx data compared to what I'd put in Health Cloud?",
+             "answer": (
+                 "Provyx refreshes its NPI registry data in sync with the NPPES weekly update cycle. "
+                 "Practice contact details from business listings and commercial databases are updated "
+                 "on a rolling basis, with most records refreshed within a 90-day window. Since Health "
+                 "Cloud doesn't come with data, it's only as fresh as whatever source you use to "
+                 "populate it. Teams using Provyx as that source get records timestamped with their "
+                 "last verification date."
+             )},
+        ],
+
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "Salesforce Health Cloud is a CRM, not a data product. If your team needs "
+            "provider contact data for outbound sales, buying Health Cloud is like buying "
+            "a filing cabinet when you need the files. Provyx delivers the data to whatever "
+            "CRM you already use."
+        ),
+        "verdict_icon": "&#x1F4CB;",
+        "stats": [
+            {"value": "$325", "label": "Health Cloud<br>Per User/Month", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "0", "label": "Provider Records<br>Included in HC", "color": "red"},
+            {"value": "3-6mo", "label": "Typical HC<br>Implementation", "color": ""},
+        ],
+        "competitor_meta": {
+            "founded": "2016 (Health Cloud product)",
+            "hq": "San Francisco, CA",
+            "status": "Public (NYSE: CRM)",
+        },
+        "competitor_logo": "/assets/logos/competitors/salesforce-health-cloud.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x1F4B0;",
+            "heading": "CRM Platform, Not a Data Source",
+            "text": (
+                "Health Cloud is a CRM with healthcare data models. It doesn't include "
+                "provider contact data. You'll pay $325/user/month for the platform, "
+                "then still need to buy data separately to populate it. Budget for "
+                "$39,000+/year in CRM fees before data costs."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "We adopted Health Cloud thinking it came with healthcare data. "
+                    "Six months and $80K in implementation costs later, we still "
+                    "needed a separate provider data source."
+                ),
+                "source": "Healthcare SaaS Director of Revenue Operations",
+                "url": "https://www.g2.com/products/salesforce-health-cloud/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Get provider data without a new CRM platform",
+            "Save $39K+/year in Health Cloud licensing fees",
+            "Import into any CRM in minutes, not months",
+            "No implementation consulting or custom configuration required",
+            "Decouple data costs from CRM costs for budget flexibility",
+        ],
+        "stay_reasons": [
+            "You manage patient relationships or care coordination (not B2B sales)",
+            "You need HIPAA-eligible CRM infrastructure for clinical data",
+            "Your organization already invested in Health Cloud and uses its care models",
+            "Your use case is payer or health system operations, not outbound sales",
+        ],
+        "bottom_line_html": (
+            "<p>Health Cloud solves a real problem for health systems and payers that "
+            "manage patient relationships. It doesn't solve the provider data problem "
+            "for B2B healthcare sales teams. If your team's primary need is NPI-verified "
+            "contact data for outbound campaigns, you don't need a $325/user/month CRM "
+            "upgrade. You need better data in the CRM you already have.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Write down your actual requirements. If the "
+            "answer is 'provider contacts I can import and call,' you need data, not "
+            "a new CRM.</li>"
+            "<li><strong>Step 2:</strong> Add NPI and taxonomy custom fields to your "
+            "existing CRM (30 minutes of admin work).</li>"
+            "<li><strong>Step 3:</strong> Request a Provyx sample and import it. "
+            "Compare the experience to a 4-month Health Cloud implementation.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>Do you need a healthcare CRM or healthcare data?</strong> "
+            "These are different products that solve different problems. Most B2B sales "
+            "teams need data, not a new CRM platform.",
+            "<strong>What does your team actually use their CRM for?</strong> "
+            "If it's managing contacts, running sequences, and tracking deals, standard "
+            "Salesforce or HubSpot does that. Health Cloud's care coordination features "
+            "are overkill.",
+            "<strong>Have you calculated the full cost of Health Cloud?</strong> "
+            "Licensing + implementation + admin + data source + training. For a 10-person "
+            "team, first-year costs often exceed $100K.",
+            "<strong>Could you solve the problem by adding 3 custom fields to your existing CRM?</strong> "
+            "NPI, taxonomy code, and practice type. That's often all that's missing.",
         ],
 
         "related_links": [
@@ -2019,11 +3176,16 @@ NEW_ALTERNATIVES = [
         ),
         "hero_h1": "Best D&B Hoovers Alternative for Healthcare Provider Data",
         "hero_subtitle": (
-            "D&B Hoovers is a general B2B database with 500M+ business profiles. For healthcare "
-            "teams, that breadth creates a specific problem: the data treats a dermatology practice "
-            "the same as a landscaping company. No NPI numbers, no taxonomy codes, no provider-level "
-            "detail. Provyx delivers healthcare provider data built from NPI registries with the "
-            "specialty-level precision that healthcare sales teams require."
+            "D&B Hoovers is a general B2B database backed by Dun & Bradstreet's 500M+ business "
+            "profiles. It's a solid choice for sales teams that prospect across manufacturing, "
+            "financial services, technology, and other industries. But for healthcare teams, "
+            "that breadth creates a specific problem: the data treats a dermatology practice "
+            "the same as a landscaping company. No NPI numbers, no NUCC taxonomy codes, no "
+            "provider-level detail. You're paying $10,000-25,000/year for business records that "
+            "require hours of manual cleanup before a healthcare rep can use them. Provyx "
+            "delivers healthcare provider data built from NPI registries with the specialty-level "
+            "precision and contact depth that healthcare sales teams require, at a lower cost "
+            "with no annual commitment."
         ),
 
         "why_switch_heading": "Why Healthcare Teams Outgrow D&B Hoovers",
@@ -2228,6 +3390,110 @@ NEW_ALTERNATIVES = [
              "answer": "D&B Hoovers packages start around $10,000-25,000 annually. Provyx charges per record with no annual commitment. For teams focused on healthcare, Provyx delivers more relevant, higher-quality data at a lower total cost because you're paying for provider-specific records, not a general business database."},
             {"question": "What about D&B's firmographic data like revenue and employee count?",
              "answer": "D&B provides estimated revenue and employee counts for businesses, which Provyx doesn't include for individual providers. If firmographic data is critical to your qualification process, you can enrich Provyx records with D&B firmographic data or use both sources. Most healthcare sales teams find that specialty, location, and practice type are more useful qualification criteria than revenue estimates."},
+            {"question": "How do I migrate my healthcare contacts from D&B Hoovers to Provyx?",
+             "answer": (
+                 "Export your current healthcare contacts from D&B Hoovers. Request a Provyx list "
+                 "for the same specialties and geographies. Import the Provyx records into your CRM "
+                 "alongside or in place of the D&B records. Most teams use the NPI number as the "
+                 "deduplication key since D&B records don't have NPIs, this effectively creates a "
+                 "clean separation between old and new data. The entire process takes one to two "
+                 "days of admin work, not weeks."
+             )},
+            {"question": "How often does Provyx update its provider records compared to D&B?",
+             "answer": (
+                 "Provyx refreshes its NPI registry data in sync with the NPPES weekly update "
+                 "cycle from CMS. Practice contact details from business listings and commercial "
+                 "databases are updated on a rolling basis, with most records refreshed within 90 "
+                 "days. D&B Hoovers updates its general business database on its own cycle, but "
+                 "healthcare records aren't prioritized for refresh because they're a small slice "
+                 "of D&B's 500M+ record database. For healthcare teams, the difference in data "
+                 "freshness shows up in fewer bounced emails and more accurate phone numbers."
+             )},
+        ],
+
+        # -- CROReport-style visual fields --
+        "verdict": (
+            "D&B Hoovers is a solid general B2B database. But for healthcare teams, it's "
+            "the wrong tool. No NPI verification, no taxonomy codes, and business-level "
+            "records that require hours of manual cleanup. Provyx gives you provider-level "
+            "data that's ready to use on delivery."
+        ),
+        "verdict_icon": "&#x1F50D;",
+        "stats": [
+            {"value": "$10-25K", "label": "D&B Hoovers<br>Annual Cost", "color": "red"},
+            {"value": "Per-Record", "label": "Provyx Pricing<br>Model", "color": "teal"},
+            {"value": "500M+", "label": "D&B Total<br>Business Profiles", "color": ""},
+            {"value": "0", "label": "NPI-Verified<br>Records in D&B", "color": "red"},
+        ],
+        "competitor_meta": {
+            "founded": "1841 (Dun & Bradstreet)",
+            "hq": "Jacksonville, FL",
+            "status": "Public (NYSE: DNB)",
+        },
+        "competitor_logo": "/assets/logos/competitors/dnb-hoovers.png",
+        "competitor_alert": {
+            "type": "warning",
+            "icon": "&#x26A0;",
+            "heading": "General Database, Not Healthcare-Specific",
+            "text": (
+                "D&B Hoovers classifies healthcare businesses by NAICS code, not by "
+                "provider specialty. NAICS 621111 ('Offices of Physicians') puts every "
+                "physician specialty in one bucket. No NPI verification, no taxonomy codes, "
+                "no provider-level granularity. Budget for significant data cleanup time."
+            ),
+        },
+        "competitor_quotes": [
+            {
+                "text": (
+                    "We pulled a list of 'healthcare providers' from D&B and got "
+                    "a mix of clinics, medical supply companies, billing services, and "
+                    "practices that had closed. We spent more time cleaning the list "
+                    "than working it."
+                ),
+                "source": "Healthcare SaaS Sales Operations Manager",
+                "url": "https://www.g2.com/products/d-b-hoovers/reviews",
+                "sentiment": "negative",
+            },
+        ],
+        "switch_pros": [
+            "Get NPI-verified provider records instead of generic business listings",
+            "Filter by 800+ NUCC taxonomy codes, not broad NAICS categories",
+            "Provider-level data instead of business-level records",
+            "Eliminate hours of manual data cleanup before outreach",
+            "No annual contract or credit-based usage limits",
+        ],
+        "stay_reasons": [
+            "You prospect across multiple industries beyond healthcare",
+            "You rely on D-U-N-S numbers for corporate hierarchy and linkage data",
+            "Firmographic data (revenue, employee count) drives your qualification process",
+            "Your existing integrations depend on D&B's data model",
+        ],
+        "bottom_line_html": (
+            "<p>D&B Hoovers works well for general B2B prospecting. It doesn't work well "
+            "for healthcare provider targeting. The data lacks NPI verification, taxonomy "
+            "classification, and provider-level granularity. If your team sells exclusively "
+            "to healthcare providers, the hidden cost of cleaning and verifying D&B data "
+            "often exceeds what you'd spend on pre-verified provider records from Provyx.</p>"
+            "<ul>"
+            "<li><strong>Step 1:</strong> Pull your current D&B healthcare contact list and "
+            "check how many records have verified NPI numbers. If the answer is zero, "
+            "that's the gap.</li>"
+            "<li><strong>Step 2:</strong> Request a Provyx sample for the same specialty "
+            "and geography. Compare the contact data depth side by side.</li>"
+            "<li><strong>Step 3:</strong> Track how many hours your team spends cleaning "
+            "D&B healthcare records each month. That's the hidden cost you're paying.</li>"
+            "</ul>"
+        ),
+        "questions": [
+            "<strong>How many hours does your team spend cleaning D&B healthcare data each month?</strong> "
+            "Multiply that by your team's hourly rate. That's the real cost of general B2B data "
+            "for healthcare targeting.",
+            "<strong>Do your reps know the NPI and specialty of the providers they're calling?</strong> "
+            "If not, they're guessing whether the contact is a relevant, active provider.",
+            "<strong>What's your bounce rate on D&B-sourced healthcare contacts?</strong> "
+            "If it's above 5%, the data freshness isn't keeping up with provider movement.",
+            "<strong>Does your team sell only to healthcare, or across industries?</strong> "
+            "If healthcare is your only vertical, you're paying for 499M+ records you'll never use.",
         ],
 
         "related_links": [

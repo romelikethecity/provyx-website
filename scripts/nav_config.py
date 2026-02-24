@@ -98,4 +98,8 @@ FOOTER_COLUMNS = {
         {"href": "/privacy/", "label": "Privacy Policy"},
         {"href": "/terms/", "label": "Terms of Service"},
     ],
+    "Publications": [
+        {"href": "https://thecroreport.com", "label": "The CRO Report"},
+        {"href": "https://theaimarketpulse.com", "label": "AI Market Pulse"},
+    ],
 }

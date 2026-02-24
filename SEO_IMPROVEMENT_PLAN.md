@@ -74,6 +74,15 @@ All items below are DONE and verified in the current build:
 - [x] RSS feed: /feed.xml with 27 resource articles (RSS 2.0 + Atom self-link)
 - [x] RSS discovery: rel="alternate" type="application/rss+xml" link in all page heads
 
+### Round 9 (Feb 15, 2026) — Content Quality Audit:
+- [x] Fixed 7 broken internal links across blog, comparison, and alternative data files
+- [x] State pages expanded: ~280 words → ~1,066 avg (regulatory_details, market_details, outbound_links, 5 FAQs, geographic related_states, diversified meta descriptions)
+- [x] Provider spoke pages expanded: ~380 words → ~958 avg (Common Use Cases section, 2 more FAQs, outbound authority links, expanded "Why Bad Data" section)
+- [x] 3 new alternative pages expanded with CROReport-style fields: verdict, stats, competitor_meta, competitor_alert, competitor_quotes, switch_pros/stay_reasons, bottom_line_html, questions (AcuityMD ~3,578, Salesforce HC ~3,579, D&B Hoovers ~3,889 words)
+- [x] Blog index and states index pages: added intro paragraphs (314 and 357 words respectively)
+- [x] Zero pages below 500 words (135 spoke pages minimum 698, 50 state pages minimum 1,012)
+- [x] All content validated: no banned words, no em dashes, meta descriptions 120-158 chars
+
 ---
 
 ## Remaining Gaps (Prioritized)
@@ -204,3 +213,4 @@ All Tier 2 items DONE:
 | Round 6 | 260 | +34 | Glossary (33 terms + index) |
 | Round 7 | 272 | +12 | 4 comparisons, 4 alternatives, spoke pages, CSS v8 |
 | Round 8 | 335 | +63 | 50 state pages, 5 blog posts, 3 comparisons, 3 alternatives |
+| Round 9 | 346 | +11 | Content quality audit + thin page fixes (see below) |

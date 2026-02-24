@@ -2132,7 +2132,7 @@ NEW_COMPARISONS = [
         "related_links": [
             {"url": "/compare/provyx-vs-veeva-opendata/", "text": "Provyx vs. Veeva OpenData"},
             {"url": "/compare/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
-            {"url": "/services/crm-data-enrichment/", "text": "CRM Data Enrichment"},
+            {"url": "/use-cases/healthcare-crm-enrichment/", "text": "CRM Data Enrichment"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
         ],
 
@@ -2540,7 +2540,7 @@ NEW_COMPARISONS = [
 
         "related_links": [
             {"url": "/compare/provyx-vs-zoominfo/", "text": "Provyx vs. ZoomInfo"},
-            {"url": "/alternatives/zoominfo-alternatives-healthcare/", "text": "ZoomInfo Alternatives for Healthcare"},
+            {"url": "/alternatives/zoominfo-alternative/", "text": "ZoomInfo Alternatives for Healthcare"},
             {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
             {"url": "/pricing/", "text": "Provyx Pricing"},
         ],
