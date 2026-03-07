@@ -1,0 +1,49 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B2A4A"/>
+      <stop offset="100%" style="stop-color:#0f1a30"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent line -->
+  <rect x="80" y="140" width="60" height="4" rx="2" fill="#0EA5E9"/>
+
+  <!-- Title -->
+  <text x="80" y="200" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    <tspan x="80" dy="0">How a Medical Device Manufacturer</tspan>
+    <tspan x="80" dy="56">Replaced Eventbrite with a</tspan>
+    <tspan x="80" dy="56">High-Conversion Registration Site</tspan>
+  </text>
+
+  <!-- Stat boxes -->
+  <!-- Box 1 -->
+  <rect x="80" y="400" width="230" height="110" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="195" y="450" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="#0EA5E9">47</text>
+  <text x="195" y="485" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="1">REGISTRATIONS</text>
+
+  <!-- Box 2 -->
+  <rect x="340" y="400" width="230" height="110" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="455" y="450" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="#0EA5E9">8</text>
+  <text x="455" y="485" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="1">SPECIALTY PAGES</text>
+
+  <!-- Box 3 -->
+  <rect x="600" y="400" width="230" height="110" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="715" y="450" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="#0EA5E9">17,268</text>
+  <text x="715" y="485" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="1">PERSONALIZED LINKS</text>
+
+  <!-- Box 4 -->
+  <rect x="860" y="400" width="230" height="110" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="975" y="450" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="#0EA5E9">$0/mo</text>
+  <text x="975" y="485" text-anchor="middle" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" letter-spacing="1">HOSTING COST</text>
+
+  <!-- Provyx branding -->
+  <text x="80" y="580" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="rgba(255,255,255,0.5)">PROVYX</text>
+  <text x="175" y="580" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.35)">Case Study</text>
+
+  <!-- URL -->
+  <text x="1120" y="580" text-anchor="end" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.35)">getprovyx.com</text>
+</svg>

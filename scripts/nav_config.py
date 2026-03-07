@@ -40,6 +40,7 @@ NAV_ITEMS = [
             {"href": "/services/practice-location-data/", "label": "Practice Locations"},
             {"href": "/services/technology-detection/", "label": "Technology Detection"},
             {"href": "/services/custom-list-building/", "label": "Custom Lists"},
+            {"href": "/services/event-marketing/", "label": "Event Marketing"},
         ],
     },
     {
@@ -53,6 +54,7 @@ NAV_ITEMS = [
             {"href": "/compare/", "label": "Comparisons"},
             {"href": "/alternatives/", "label": "Alternatives"},
             {"href": "/for/", "label": "By Industry"},
+            {"href": "/case-studies/", "label": "Case Studies"},
         ],
     },
     {"href": "/pricing/", "label": "Pricing"},
@@ -72,6 +74,7 @@ FOOTER_COLUMNS = {
     "Services": [
         {"href": "/services/", "label": "All Services"},
         {"href": "/services/custom-list-building/", "label": "Custom List Building"},
+        {"href": "/services/event-marketing/", "label": "Event Marketing"},
         {"href": "/pricing/", "label": "Pricing"},
         {"href": "/contact/", "label": "Contact Us"},
     ],
@@ -83,6 +86,7 @@ FOOTER_COLUMNS = {
         {"href": "/compare/", "label": "Comparisons"},
         {"href": "/alternatives/", "label": "Alternatives"},
         {"href": "/for/", "label": "By Industry"},
+        {"href": "/case-studies/", "label": "Case Studies"},
     ],
     "Compare": [
         {"href": "/compare/provyx-vs-zoominfo/", "label": "Provyx vs ZoomInfo"},

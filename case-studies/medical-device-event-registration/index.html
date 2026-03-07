@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
+    <title>Medical Device Manufacturer Replaces Eventbrite with High-Conversion Event Site | Provyx</title>
+    <meta name="description" content="How a medical device manufacturer built specialty-targeted event registration with 8 landing pages and 17,268 personalized links from verified provider data. 47 registrations, 63% fill rate, $0 hosting.">
+    <link rel="canonical" href="https://getprovyx.com/case-studies/medical-device-event-registration/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getprovyx.com/case-studies/medical-device-event-registration/">
+    <meta property="og:title" content="Medical Device Manufacturer Replaces Eventbrite with High-Conversion Event Site | Provyx">
+    <meta property="og:description" content="8 specialty landing pages, 17,268 personalized registration links, 47 physician registrations. Config-driven event registration built on verified provider data.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/case-studies/event-marketing/og-case-study-event.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Medical Device Manufacturer Replaces Eventbrite with High-Conversion Event Site | Provyx">
+    <meta name="twitter:description" content="8 specialty landing pages, 17,268 personalized registration links, 47 physician registrations. Config-driven event registration built on verified provider data.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/case-studies/event-marketing/og-case-study-event.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://getprovyx.com/case-studies/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Medical Device Event Registration",
+      "item": "https://getprovyx.com/case-studies/medical-device-event-registration/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How a Medical Device Manufacturer Replaced Eventbrite with a High-Conversion Registration Site",
+  "description": "How a medical device manufacturer built specialty-targeted event registration with 8 landing pages and 17,268 personalized links from verified provider data.",
+  "url": "https://getprovyx.com/case-studies/medical-device-event-registration/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/case-studies/event-marketing/og-case-study-event.png",
+  "datePublished": "2026-03-06",
+  "dateModified": "2026-03-06",
+  "publisher": {
+    "@id": "https://getprovyx.com/#organization"
+  },
+  "author": {
+    "@id": "https://getprovyx.com/#organization"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can this event registration system work for other medical device companies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The architecture is config-driven, meaning the entire event site is controlled by a single JSON configuration file. Change the company name, event date, venue, specialties, products, and testimonials in the config, and the site regenerates. We built this for a body contouring and functional wellness device manufacturer, but the same system works for any company running specialty-targeted physician education events."}}, {"@type": "Question", "name": "How are the specialty landing pages different from each other?", "acceptedAnswer": {"@type": "Answer", "text": "Each specialty page has a unique headline, subheadline, product recommendations, physician testimonial, and talking points tailored to that specialty's clinical use cases. A chiropractor's page highlights pelvic floor rehabilitation and cash-pay revenue. A dermatologist's page focuses on skin tightening and competing with injectables. Same event, completely different value propositions."}}, {"@type": "Question", "name": "What does config-driven mean in practice?", "acceptedAnswer": {"@type": "Answer", "text": "One JSON file controls every text element on the site: event name, date, time, venue, capacity, specialties, products, speakers, FAQ, agenda, and testimonials. To launch the same event in a new city, you update the venue, date, and city-specific details in the config file. The entire site regenerates in approximately two hours with no code changes required."}}, {"@type": "Question", "name": "How are the 17,268 personalized links generated?", "acceptedAnswer": {"@type": "Answer", "text": "We pull verified provider contacts from our database, filtered by state and practice type. Each contact gets a unique registration URL with pre-filled parameters: first name, last name, email, and practice name. The links are delivered in a multi-sheet Excel file organized by practice type (22 sheets). When a provider clicks their personalized link, the registration form is already populated — they just confirm and submit."}}, {"@type": "Question", "name": "What is included in the event registration confirmation flow?", "acceptedAnswer": {"@type": "Answer", "text": "After registration, the confirmation page includes a personalized greeting, event details summary, Google Calendar integration with timezone-aware event creation, downloadable .ics calendar file with two built-in reminders, a referral sharing system (email, SMS, and native device share), and Google Maps directions to the venue. Every element is personalized with the registrant's name."}}, {"@type": "Question", "name": "How much does the event registration platform cost to host?", "acceptedAnswer": {"@type": "Answer", "text": "Zero dollars per month. The site is a static HTML application hosted on GitHub Pages with Cloudflare DNS. There are no server costs, no platform fees, and no per-registrant charges. The site loads in under one second because there is no server-side rendering or database queries — it is pure static HTML and JavaScript."}}]}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
+
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=8" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.min.css?v=8">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+
+    <style>
+    .case-study-diagram {
+        max-width: 100%;
+        height: auto;
+        margin: 2rem 0;
+        display: block;
+    }
+    .specialty-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    @media (max-width: 768px) {
+        .specialty-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .specialty-card {
+        background: #fff;
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        padding: 1.25rem;
+        text-align: center;
+        border-top: 3px solid #0EA5E9;
+    }
+    .specialty-card__count {
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: #0EA5E9;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+    .specialty-card__name {
+        font-size: 0.875rem;
+        color: #64748B;
+        font-weight: 600;
+    }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main id="main-content">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a>
+            <span class="breadcrumb__separator">/</span>
+            <a href="https://getprovyx.com/case-studies/">Case Studies</a>
+            <span class="breadcrumb__separator">/</span>
+            <span class="breadcrumb__current">Medical Device Event Registration</span>
+        </nav>
+
+        <section class="page-hero">
+            <div class="container">
+                <h1>How a Medical Device Manufacturer Replaced Eventbrite with a High-Conversion Registration Site</h1>
+                <p class="subtitle">Generic event platforms show one page to every physician. We built 8 specialty-specific landing pages, generated 17,268 personalized registration links from verified provider data, and filled 63% of a 75-seat event with two weeks remaining.</p>
+                <p class="page-hero__date">Published March 2026</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 1: THE CLIENT                                        -->
+        <!-- ============================================================ -->
+        <section class="content-section">
+            <div class="container">
+                <h2>The Client: A Global Medical Device Manufacturer</h2>
+
+                <p>The client is a medical device company with a 30-year track record in clinical aesthetics and functional wellness. Their platform includes FDA-cleared devices for body contouring, pelvic floor rehabilitation, facial muscle stimulation, skin resurfacing, pain management, and treatment-resistant depression. The devices are used in 80+ countries and backed by 50+ peer-reviewed publications.</p>
+
+                <p>The company sells to eight distinct physician specialties, each with different clinical use cases, different buying motivations, and different revenue models:</p>
+
+                <ul>
+                    <li><strong>Chiropractors</strong> — pelvic floor rehabilitation and body contouring as cash-pay revenue streams</li>
+                    <li><strong>Medical Spas</strong> — head-to-toe aesthetics coverage from a single vendor platform</li>
+                    <li><strong>Dermatologists</strong> — skin tightening and facial rejuvenation as alternatives to injectables</li>
+                    <li><strong>Plastic Surgeons</strong> — pre-surgical body optimization and post-operative recovery</li>
+                    <li><strong>Family Practitioners</strong> — practice diversification beyond insurance-reimbursed services</li>
+                    <li><strong>Orthopedic Surgeons</strong> — non-pharmacological pain management for chronic joint and spine patients</li>
+                    <li><strong>Cosmetic Dentists</strong> — TMJ treatment and facial aesthetics as extensions of dental practice</li>
+                    <li><strong>Neurologists and Psychiatrists</strong> — FDA-cleared TMS for treatment-resistant depression</li>
+                </ul>
+
+                <p>The company runs regional physician education events — full-day clinical sessions with Harvard faculty keynotes, hands-on device demonstrations, custom financial modeling, and evening networking. The first event was a 75-seat day at the Westin Book Cadillac in Detroit, with clinical education from 9 AM through dinner and a DJ party at 10 PM.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 2: THE PROBLEM                                       -->
+        <!-- ============================================================ -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>The Problem: Generic Event Platforms Can't Segment by Specialty</h2>
+
+                <h3>Eventbrite and Splash Treat Every Registrant the Same</h3>
+
+                <p>Standard event platforms offer one registration page per event. Every physician — regardless of specialty — sees the same headline, the same description, and the same value proposition. A chiropractor evaluating pelvic floor rehabilitation devices sees exactly the same page as a dermatologist interested in skin tightening. The conversion copy can't speak to both.</p>
+
+                <p>This matters because the buying motivation is completely different across specialties. A chiropractor is looking for a new cash-pay revenue stream that doesn't require insurance billing. A cosmetic dentist wants to extend their practice into TMJ treatment and facial aesthetics. A psychiatrist needs an FDA-cleared TMS device for treatment-resistant patients who haven't responded to medication. One landing page can't address all of these — and generic platforms don't let you create specialty-specific pages tied to a single event.</p>
+
+                <h3>No Integration with Provider Contact Data</h3>
+
+                <p>The client had 17,268 verified provider contacts across Michigan — names, emails, practice names, and practice types — from Provyx's database. These contacts were split across 22 practice types. The goal was to send each provider a personalized registration link that pre-filled their name and practice in the registration form. One click, no typing, just confirm.</p>
+
+                <p>No major event platform supports pre-filled registration from an external contact database. Eventbrite has no concept of URL parameters that auto-populate form fields. Splash has limited personalization but nothing that integrates with a verified provider database at scale. The alternative — manually entering 17,268 contacts — was not viable.</p>
+
+                <h3>Platform Costs Compound Across Events</h3>
+
+                <p>Eventbrite charges per-ticket fees or monthly platform costs ranging from $99 to $999/month depending on features. Splash starts at similar price points for branded event pages. For a company planning to run this event in multiple cities throughout the year, platform fees alone would run thousands of dollars annually — for what amounts to a registration form and a confirmation email. The client needed zero-cost hosting that could scale to any number of cities without incremental cost.</p>
+
+                <!-- Comparison Table -->
+                <div style="overflow-x: auto; margin-top: 2rem;">
+                    <table class="comparison-table--enhanced" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Generic Platform</th>
+                                <th>What We Built</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-factor">Specialty landing pages</td>
+                                <td>One page for everyone</td>
+                                <td>8 pages with tailored copy, testimonials, product data</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Pre-filled registration from CRM</td>
+                                <td>Not supported</td>
+                                <td>17,268 personalized links from verified contact DB</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Scarcity mechanics</td>
+                                <td>Basic countdown timer</td>
+                                <td>Live capacity meter + countdown, configurable thresholds</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Calendar integration</td>
+                                <td>Basic invite</td>
+                                <td>Timezone-aware Google Cal + .ics with 2 reminders</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Referral system</td>
+                                <td>Not included</td>
+                                <td>Built into confirmation flow (email, SMS, native share)</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Per-registrant analytics</td>
+                                <td>Extra cost</td>
+                                <td>Built-in (GA4 ready)</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Hosting cost</td>
+                                <td>$99-999/mo</td>
+                                <td>$0 (GitHub Pages)</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Page load time</td>
+                                <td>2-4 seconds</td>
+                                <td>Under 1 second</td>
+                            </tr>
+                            <tr>
+                                <td class="td-factor">Template reuse for new cities</td>
+                                <td>Rebuild each time</td>
+                                <td>Change config.json, deploy in ~2 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 3: WHY MEDICAL DEVICE EVENTS ARE UNIQUE              -->
+        <!-- ============================================================ -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Why Medical Device Event Registration Is a Specialty Problem</h2>
+
+                <h3>Specialty-Specific Messaging Drives Conversion</h3>
+
+                <p>A chiropractor considering a pelvic floor rehabilitation device has entirely different concerns than a plastic surgeon evaluating body contouring for pre-surgical optimization. The chiropractor wants to know about cash-pay revenue, patient demographics (women 35-65), and how the device fits into a practice with no surgical suite. The plastic surgeon wants clinical outcomes data, before-and-after patient documentation, and how the device complements their existing surgical workflow.</p>
+
+                <p>When both see the same landing page, neither gets the specific answer they need to register. Specialty-targeted pages let each physician see the products, testimonials, and talking points that match their practice. A chiropractor's page quotes a practicing chiropractor in their metro area. A cosmetic dentist's page leads with TMJ treatment and facial aesthetics. The registration form is the same — the path to it is different.</p>
+
+                <h3>Pre-Filled Registration Reduces Friction to Zero</h3>
+
+                <p>When you already know the provider's name, email, and practice name from a verified contact database, the registration form should be pre-populated. The provider clicks a personalized link, sees their information already filled in, and hits submit. The registration experience becomes a confirmation step instead of a data entry task.</p>
+
+                <h3>Real Scarcity in Small-Capacity Events</h3>
+
+                <p>A 75-seat event creates genuine scarcity. Showing how many spots remain — in real time — creates urgency that matters because seats actually run out. A generic countdown timer ("Event in 14 days!") communicates time pressure but nothing about availability. A live capacity meter ("28 spots remaining of 75") communicates that this is a limited resource worth securing now.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 4: THE SOLUTION                                      -->
+        <!-- ============================================================ -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>The Solution: Config-Driven Event Registration Powered by Provider Data</h2>
+
+                <!-- Architecture Diagram (Inline SVG) -->
+                <svg class="case-study-diagram" viewBox="0 0 880 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture flow: config.json to specialty pages to personalized links to registration">
+                    <!-- Node 1: Config -->
+                    <rect x="0" y="20" width="180" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="2"/>
+                    <text x="90" y="58" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="800" fill="#1B2A4A">config.json</text>
+                    <text x="90" y="78" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">Event, venue, specialties,</text>
+                    <text x="90" y="93" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">products, FAQ, agenda</text>
+                    <!-- Arrow 1 -->
+                    <line x1="185" y1="70" x2="220" y2="70" stroke="#0EA5E9" stroke-width="2.5"/>
+                    <polygon points="218,64 230,70 218,76" fill="#0EA5E9"/>
+                    <!-- Node 2: Specialty Pages -->
+                    <rect x="233" y="20" width="180" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="2"/>
+                    <text x="323" y="58" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="800" fill="#1B2A4A">8 Specialty Pages</text>
+                    <text x="323" y="78" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">Tailored headlines, copy,</text>
+                    <text x="323" y="93" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">testimonials, products</text>
+                    <!-- Arrow 2 -->
+                    <line x1="418" y1="70" x2="453" y2="70" stroke="#0EA5E9" stroke-width="2.5"/>
+                    <polygon points="451,64 463,70 451,76" fill="#0EA5E9"/>
+                    <!-- Node 3: Personalized Links -->
+                    <rect x="466" y="20" width="180" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="2"/>
+                    <text x="556" y="58" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="800" fill="#1B2A4A">17,268 Links</text>
+                    <text x="556" y="78" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">Pre-filled name, email,</text>
+                    <text x="556" y="93" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">practice from verified DB</text>
+                    <!-- Arrow 3 -->
+                    <line x1="651" y1="70" x2="686" y2="70" stroke="#0EA5E9" stroke-width="2.5"/>
+                    <polygon points="684,64 696,70 684,76" fill="#0EA5E9"/>
+                    <!-- Node 4: Registration -->
+                    <rect x="699" y="20" width="180" height="100" rx="12" fill="#fff" stroke="#0EA5E9" stroke-width="2.5"/>
+                    <text x="789" y="58" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="800" fill="#1B2A4A">Registration</text>
+                    <text x="789" y="78" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">Capacity meter, calendar,</text>
+                    <text x="789" y="93" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#64748B">referral sharing, confirm</text>
+                </svg>
+
+                <h3>Step 1: Define the Event in One Config File</h3>
+
+                <p>A single JSON configuration file controls every element of the event site: event name, date, time, venue address, seating capacity, specialties, products, speakers, testimonials, agenda, and FAQ. Every text element on every page traces back to this file. To launch the same event in a new city, you change the city-specific fields in the config — venue, date, local testimonials — and the entire site regenerates. No code changes. Approximately two hours of config editing and QA.</p>
+
+                <h3>Step 2: Generate Specialty-Specific Landing Pages</h3>
+
+                <p>The config defines which specialties to target and what products, testimonials, and talking points to show each one. The build system generates eight specialty landing pages, each with a unique headline, subheadline, product grid, physician testimonial from a local practitioner, and a set of talking points matched to that specialty's clinical use cases. A chiropractor's page leads with "Add a new revenue stream to your chiropractic practice" and quotes a chiropractor in Troy, Michigan. A cosmetic dentist's page leads with "TMJ treatment and facial aesthetics — a natural extension of your dental practice" and quotes a dentist in Rochester Hills.</p>
+
+                <h3>Step 3: Create 17,268 Personalized Registration Links</h3>
+
+                <p>We pulled verified provider contacts from Provyx's Michigan database — 17,268 contacts across 22 practice types. Each contact received a unique registration URL with pre-filled parameters: first name, last name, email, and practice name. The links were delivered in a multi-sheet Excel file, one sheet per practice type, so the client's marketing team could target campaigns by specialty. When a provider clicks their personalized link, the registration form is already populated. They confirm and submit.</p>
+
+                <h3>Step 4: Build Scarcity and Conversion Mechanics</h3>
+
+                <p>The registration page includes a live capacity meter that reads the current count from the config and displays spots remaining. When the event is within seven days of close, a countdown timer activates. The confirmation page — triggered after successful registration — shows a personalized greeting, event details, Google Calendar integration (timezone-aware), a downloadable .ics file with two built-in reminders, and a referral sharing system. The referral system generates a personalized link the registrant can share via email, SMS, or native device share, turning every registrant into a channel.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 5: WHAT WE BUILT                                     -->
+        <!-- ============================================================ -->
+        <section class="content-section">
+            <div class="container">
+                <h2>What We Built: Architecture and Components</h2>
+
+                <!-- Specialty Grid -->
+                <div class="specialty-grid">
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">14</span>
+                        <span class="specialty-card__name">Chiropractors</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">8</span>
+                        <span class="specialty-card__name">Cosmetic Dentists</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">7</span>
+                        <span class="specialty-card__name">Family Practice</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">5</span>
+                        <span class="specialty-card__name">Dermatologists</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">5</span>
+                        <span class="specialty-card__name">Psychiatry / Neuro</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">4</span>
+                        <span class="specialty-card__name">Orthopedic Surgeons</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">3</span>
+                        <span class="specialty-card__name">Medical Spas</span>
+                    </div>
+                    <div class="specialty-card">
+                        <span class="specialty-card__count">1</span>
+                        <span class="specialty-card__name">Plastic Surgeons</span>
+                    </div>
+                </div>
+                <p style="text-align: center; color: #64748B; font-size: 0.875rem; margin-top: -0.5rem;">Registrations by specialty — each specialty has its own tailored landing page</p>
+
+                <h3>8 Specialty Landing Pages</h3>
+
+                <p>Each specialty page matches the provider's clinical focus to specific products with published outcomes data, testimonials from practicing physicians in the local metro area, and specialty-relevant talking points. A chiropractor sees Emsella (68% improvement in urinary incontinence) and Emsculpt Neo (25% more muscle, 30% less fat) positioned as new cash-pay revenue streams. A dermatologist sees Emface (20-minute facial rejuvenation) and Exion (4-modality skin platform) positioned against injectables. The registration form at the bottom of every page is identical — the path to it is entirely different.</p>
+
+                <h3>Config-Driven Architecture</h3>
+
+                <p>One JSON file controls every text element, product reference, speaker bio, FAQ, and agenda item across the entire site. The config defines the specialties to target, which products to show each specialty, which testimonials to use, and what talking points to highlight. Deploy a new city's event by editing the config — change the venue, date, local testimonials, and city photos. No HTML changes. No developer required for routine event launches.</p>
+
+                <h3>Conversion Infrastructure</h3>
+
+                <ul>
+                    <li><strong>Live capacity meter:</strong> reads registration count from config, displays spots remaining</li>
+                    <li><strong>Countdown timer:</strong> activates when the event is within 7 days of registration close</li>
+                    <li><strong>Exit-intent capture:</strong> overlay for visitors navigating away before registering</li>
+                    <li><strong>Confirmation page:</strong> personalized greeting, calendar downloads, referral sharing</li>
+                    <li><strong>Referral system:</strong> every registrant gets a shareable personalized link (email, SMS, native share)</li>
+                    <li><strong>Anti-spam:</strong> honeypot fields and client-side validation</li>
+                    <li><strong>Static hosting:</strong> GitHub Pages with Cloudflare DNS — $0/month, sub-second load times</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 6: RESULTS                                           -->
+        <!-- ============================================================ -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Results: 63% Fill Rate with Two Weeks Remaining</h2>
+
+                <!-- Stat Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-card__number" style="color: #0EA5E9;">47</span>
+                        <span class="stat-card__label">Registrations</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__number" style="color: #0EA5E9;">63%</span>
+                        <span class="stat-card__label">Fill rate (of 75 seats)</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__number" style="color: #0EA5E9;">8</span>
+                        <span class="stat-card__label">Specialty landing pages</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__number" style="color: #0EA5E9;">$0/mo</span>
+                        <span class="stat-card__label">Hosting cost</span>
+                    </div>
+                </div>
+
+                <p>The Detroit event hit 47 registrations with two weeks remaining before the event date. Registrations came from all eight specialties, confirming that specialty-specific pages drive engagement across the full spectrum of target physicians. Chiropractors led with 14 registrations (30%), followed by cosmetic dentists at 8 (17%) and family practice at 7 (15%).</p>
+
+                <p>The strongest signal: specialties with highly specific clinical messaging — chiropractors seeing pelvic floor rehab revenue data, cosmetic dentists seeing TMJ treatment outcomes — registered at higher rates than specialties where the value proposition was broader. Tailored copy converted better than general copy.</p>
+
+                <h3>Reusability</h3>
+
+                <p>The template shipped as a reusable system. The next city is a config change: update the venue, date, local testimonials, and city-specific photos. The entire site regenerates in approximately two hours with no code changes. For a company planning to run this event monthly across different metro areas, the first build is the only build. Every subsequent launch is a config edit.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 7: WHAT MED DEVICE COMPANIES SHOULD REQUIRE          -->
+        <!-- ============================================================ -->
+        <section class="content-section">
+            <div class="container">
+                <h2>What Medical Device Companies Should Require from Event Registration</h2>
+
+                <p>This build highlighted several requirements that any medical device company running physician education events should demand from their event registration platform — or from whoever builds it for them.</p>
+
+                <h3>1. Specialty-Specific Landing Pages</h3>
+
+                <p>If you sell to multiple specialties, each specialty needs its own page with tailored messaging, relevant product data, and a testimonial from a physician in that specialty. A single landing page that tries to speak to chiropractors and dermatologists simultaneously will underperform both.</p>
+
+                <h3>2. Integration with Your Provider Contact Data</h3>
+
+                <p>You already have provider contacts in your CRM, sales databases, or third-party data sources. Your event registration platform should generate personalized links from that data automatically. If generating 17,000+ personalized URLs requires manual entry, the platform is wrong.</p>
+
+                <h3>3. Pre-Filled Registration Links</h3>
+
+                <p>Every friction point between receiving an invitation and completing registration costs you registrants. Pre-filled links — where the provider's name, email, and practice are already populated — reduce registration to a single confirmation click. The form becomes a verification step, not a data entry task.</p>
+
+                <h3>4. Real Scarcity Mechanics</h3>
+
+                <p>Small-capacity events (25-100 seats) have genuine scarcity. Show it. A live capacity meter ("28 of 75 spots remaining") creates urgency that a countdown timer alone cannot. The scarcity is real — communicate it.</p>
+
+                <h3>5. Config-Driven Reusability</h3>
+
+                <p>If launching your event in a new city requires rebuilding the site from scratch, your architecture is wrong. A config-driven system — where city, venue, date, and testimonials are parameters, not hardcoded content — turns a multi-week build into a two-hour config edit. The first event is the investment. Every subsequent city is marginal cost.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 8: FAQs                                              -->
+        <!-- ============================================================ -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+
+                <section class="section faq-section" style="padding:0">
+                    <div class="container" style="padding:0">
+                        <details class="faq-item">
+                            <summary class="faq-item__question">Can this event registration system work for other medical device companies?</summary>
+                            <div class="faq-item__answer"><p>Yes. The architecture is config-driven, meaning the entire event site is controlled by a single JSON configuration file. Change the company name, event date, venue, specialties, products, and testimonials in the config, and the site regenerates. We built this for a body contouring and functional wellness device manufacturer, but the same system works for any company running specialty-targeted physician education events.</p></div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__question">How are the specialty landing pages different from each other?</summary>
+                            <div class="faq-item__answer"><p>Each specialty page has a unique headline, subheadline, product recommendations, physician testimonial, and talking points tailored to that specialty's clinical use cases. A chiropractor's page highlights pelvic floor rehabilitation and cash-pay revenue. A dermatologist's page focuses on skin tightening and competing with injectables. Same event, completely different value propositions.</p></div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__question">What does "config-driven" mean in practice?</summary>
+                            <div class="faq-item__answer"><p>One JSON file controls every text element on the site: event name, date, time, venue, capacity, specialties, products, speakers, FAQ, agenda, and testimonials. To launch the same event in a new city, you update the venue, date, and city-specific details in the config file. The entire site regenerates in approximately two hours with no code changes required.</p></div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__question">How are the 17,268 personalized links generated?</summary>
+                            <div class="faq-item__answer"><p>We pull verified provider contacts from our database, filtered by state and practice type. Each contact gets a unique registration URL with pre-filled parameters: first name, last name, email, and practice name. The links are delivered in a multi-sheet Excel file organized by practice type (22 sheets). When a provider clicks their personalized link, the registration form is already populated — they just confirm and submit.</p></div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__question">What is included in the event registration confirmation flow?</summary>
+                            <div class="faq-item__answer"><p>After registration, the confirmation page includes a personalized greeting, event details summary, Google Calendar integration with timezone-aware event creation, a downloadable .ics calendar file with two built-in reminders, a referral sharing system (email, SMS, and native device share), and Google Maps directions to the venue. Every element is personalized with the registrant's name.</p></div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-item__question">How much does the event registration platform cost to host?</summary>
+                            <div class="faq-item__answer"><p>Zero dollars per month. The site is a static HTML application hosted on GitHub Pages with Cloudflare DNS. There are no server costs, no platform fees, and no per-registrant charges. The site loads in under one second because there is no server-side rendering or database queries — it is pure static HTML and JavaScript.</p></div>
+                        </details>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 9: RELATED RESOURCES                                 -->
+        <!-- ============================================================ -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Related Resources</h2>
+                <ul class="related-links">
+                    <li><a href="/services/event-marketing/">Event Marketing for Healthcare Companies</a></li>
+                    <li><a href="/services/provider-contact-data/">Provider Contact Data</a></li>
+                    <li><a href="/services/custom-list-building/">Custom List Building</a></li>
+                    <li><a href="/for/medical-device-sales/">Medical Device Sales</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 10: CTA                                              -->
+        <!-- ============================================================ -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Need Event Registration Powered by Provider Data?</h2>
+                    <p class="cta-section__text">Tell us about your event. We'll build specialty-targeted registration pages with personalized links from our verified contact database.</p>
+                </div>
+                <a href="/contact/" class="btn btn--white btn--lg">Get Started</a>
+                <p class="cta-section__proof">Config-driven event sites built on verified provider data. No platform fees. Delivered in days.</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/services/event-marketing/">Event Marketing</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/glossary/">Glossary</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+<li><a href="/case-studies/">Case Studies</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
