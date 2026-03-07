@@ -2048,6 +2048,7 @@ img {
   font-size: 1.125rem;
   color: var(--color-text-secondary);
   max-width: 700px;
+  margin: 0 auto;
   line-height: 1.7;
 }
 
