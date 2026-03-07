@@ -14829,7 +14829,35 @@ SERVICES = [
         ),
         "outbound_links": [
             {"url": "https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand", "text": "CMS NPI Registry"},
+            {"url": "https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/", "text": "Statista Mobile Traffic"},
+            {"url": "https://wpforms.com/online-form-statistics-facts/", "text": "WPForms Form Statistics"},
         ],
+        # --- Section: Pain stats below hero ---
+        "custom_hero_stats_html": """
+<style>
+  .hero-pain-stats { grid-template-columns: repeat(4, 1fr); max-width: 900px; }
+  @media (max-width: 768px) { .hero-pain-stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .hero-pain-stats { grid-template-columns: 1fr; } }
+</style>
+<div class="pain-stats hero-pain-stats">
+  <div class="pain-stat">
+    <span class="pain-stat__number">64%</span>
+    <span class="pain-stat__label">of web traffic is mobile</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">67%</span>
+    <span class="pain-stat__label">average form abandonment rate</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">53%</span>
+    <span class="pain-stat__label">leave if page takes over 3 seconds</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">84%</span>
+    <span class="pain-stat__label">won't fill out forms on mobile</span>
+  </div>
+</div>
+""",
         # --- Section: The Problem ---
         "problem_heading": "Why Generic Event Platforms Fail for Medical Device Events",
         "problem_body": (
@@ -15462,12 +15490,14 @@ def build_service_page(svc):
     outbound_links = svc.get("outbound_links", [])
 
     # -- Hero --
+    hero_stats = svc.get("custom_hero_stats_html", "")
     hero_html = f"""
 <section class="page-hero">
   <div class="container">
     {breadcrumb_html}
     <h1>{svc['title']}</h1>
     <p class="subtitle">{svc['subtitle']}</p>
+    {hero_stats}
     <p class="page-meta">Updated February 2026</p>
   </div>
 </section>
