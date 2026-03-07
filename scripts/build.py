@@ -14872,10 +14872,12 @@ SERVICES = [
             "want to send each one a personalized registration link that auto-populates their "
             "name, email, and practice, you cannot do this on Eventbrite or Splash. The "
             "alternative — manual data entry or individual invitation tools — does not scale.\n\n"
-            "Platform costs compound across events. Eventbrite charges per-ticket fees or "
-            "monthly rates from $99 to $999. For a company running physician education events "
-            "monthly across multiple metro areas, platform fees alone run thousands annually. "
-            "And you still get one generic registration page per event."
+            "The alternative most companies fall back on is worse: a marketing coordinator, "
+            "an agency, and a stack of tools — Squarespace, Mailchimp, manual spreadsheets. "
+            "That combination runs $15,000-25,000 per event, takes weeks to produce, and "
+            "still delivers a single generic registration page. Eventbrite is cheaper ($99-999/mo) "
+            "but equally one-size-fits-all. Neither path gives you specialty-targeted pages "
+            "or pre-filled registration at scale."
         ),
         # --- Section: Data Bridge (why a data company does events) ---
         "custom_bridge_html": """
@@ -14915,7 +14917,7 @@ SERVICES = [
                     "subheadline, product recommendations matched to that specialty's clinical use "
                     "cases, a physician testimonial from a local practitioner, and talking points "
                     "that speak to that specialty's buying motivation. A chiropractor's page leads "
-                    "with cash-pay revenue. A cosmetic dentist's page leads with TMJ treatment and "
+                    "with new procedure revenue. A cosmetic dentist's page leads with TMJ treatment and "
                     "facial aesthetics. Same event, different conversion paths."
                 ),
             },
@@ -15376,7 +15378,7 @@ SERVICES = [
             "conferences, and customer advisory boards use reusable templates to launch "
             "events in multiple cities without rebuilding the site each time.\n\n"
             "<strong>Medical specialty associations</strong> hosting regional chapter meetings "
-            "and educational seminars use the template system to standardize event registration "
+            "and educational seminars use standardized event registration "
             "across chapters while maintaining local customization."
         ),
         # --- Section: Delivery ---
@@ -15386,12 +15388,12 @@ SERVICES = [
             '<div class="pricing-card pricing-card--featured">'
             '<div class="pricing-card__price">$3,500–5,000</div>'
             '<div class="pricing-card__label">First Event Site</div>'
-            '<div class="pricing-card__desc">Config architecture, specialty pages, personalized link generation, deployment. 5–7 business days.</div>'
+            '<div class="pricing-card__desc">Specialty pages, personalized link generation, full deployment. 5–7 business days.</div>'
             '</div>'
             '<div class="pricing-card">'
             '<div class="pricing-card__price">$1,500–2,500</div>'
             '<div class="pricing-card__label">Additional Cities</div>'
-            '<div class="pricing-card__desc">Same template, new config. Venue, date, local testimonials. ~2 hours turnaround.</div>'
+            '<div class="pricing-card__desc">New venue, date, and local testimonials. Same conversion system. ~2 hours turnaround.</div>'
             '</div>'
             '<div class="pricing-card">'
             '<div class="pricing-card__price">$1,000–2,000</div>'
@@ -15413,7 +15415,7 @@ SERVICES = [
             {
                 "question": "How long does it take to build the first event registration site?",
                 "answer": (
-                    "A first-time build — including config architecture, specialty landing pages, "
+                    "A first-time build — including specialty landing pages, "
                     "personalized link generation, and deployment — typically takes 5-7 business "
                     "days. Subsequent events using the same template take approximately two hours."
                 ),
@@ -15421,7 +15423,7 @@ SERVICES = [
             {
                 "question": "Can I reuse the event site for events in other cities?",
                 "answer": (
-                    "Yes. The template system is built for reuse. To launch the same event in a "
+                    "Yes. The site is built for reuse. To launch the same event in a "
                     "new city, we update the venue, date, and city-specific details. The entire "
                     "site regenerates in about two hours. Build once, deploy everywhere."
                 ),
@@ -15461,7 +15463,7 @@ SERVICES = [
         "related_content": [
             {"href": "/case-studies/medical-device-event-registration/", "label": "Case Study: Medical Device Event Registration"},
             {"href": "/for/medical-device-sales/", "label": "Medical Device Sales"},
-            {"href": "/use-cases/physician-outreach-campaigns/", "label": "Physician Outreach Campaigns"},
+            {"href": "/use-cases/physician-outreach/", "label": "Physician Outreach"},
         ],
         "related_provider_categories": [
             "dermatology",
