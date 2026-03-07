@@ -604,6 +604,9 @@
         border-radius: 3px;
         background: linear-gradient(90deg, #0EA5E9, #1B2A4A);
       }
+      .analytics-bar__fill--industry {
+        background: #CBD5E1;
+      }
       .analytics-bar__pct {
         font-size: 11px;
         font-weight: 700;
@@ -611,38 +614,69 @@
         width: 36px;
         flex-shrink: 0;
       }
-      .analytics-funnel {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        justify-content: center;
-        padding: 20px 24px;
+      .analytics-bar__pct--industry {
+        color: var(--color-text-muted);
+        font-weight: 500;
       }
-      .funnel-step {
-        text-align: center;
-        flex: 1;
-        max-width: 120px;
+      .compare-row {
+        margin-bottom: 14px;
       }
-      .funnel-step__value {
-        font-size: 16px;
-        font-weight: 800;
+      .compare-row__label {
+        font-size: 11px;
+        font-weight: 600;
         color: var(--color-text-primary);
+        margin-bottom: 4px;
       }
-      .funnel-step__label {
+      .compare-row .analytics-bar { margin-bottom: 3px; }
+      .compare-legend {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 14px;
         font-size: 10px;
         color: var(--color-text-secondary);
-        margin-top: 2px;
       }
-      .funnel-arrow {
-        color: #CBD5E1;
-        font-size: 14px;
-        flex-shrink: 0;
+      .compare-legend__dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin-right: 4px;
+        vertical-align: middle;
+      }
+      .compare-legend__dot--provyx { background: linear-gradient(90deg, #0EA5E9, #1B2A4A); }
+      .compare-legend__dot--industry { background: #CBD5E1; }
+      .highlight-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        padding: 16px 24px;
+        border-top: 1px solid #E2E8F0;
+      }
+      .highlight-strip__item {
+        text-align: center;
+        padding: 0 8px;
+      }
+      .highlight-strip__item + .highlight-strip__item {
+        border-left: 1px solid #E2E8F0;
+      }
+      .highlight-strip__value {
+        font-size: 18px;
+        font-weight: 800;
+        color: #0EA5E9;
+      }
+      .highlight-strip__label {
+        font-size: 9px;
+        color: var(--color-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        margin-top: 2px;
       }
       @media (max-width: 768px) {
         .analytics-mockup__grid { grid-template-columns: 1fr; }
         .analytics-bar__label { width: 70px; }
-        .analytics-funnel { flex-wrap: wrap; gap: 8px; }
-        .funnel-arrow { display: none; }
+        .highlight-strip { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .highlight-strip__item + .highlight-strip__item { border-left: none; }
+        .highlight-strip__item:nth-child(2n+1) { border-right: 1px solid #E2E8F0; }
       }
     </style>
 
@@ -681,6 +715,33 @@
         <div class="browser-frame__body">
           <div class="analytics-mockup__grid">
             <div class="analytics-panel">
+              <div class="analytics-panel__title">Performance vs Industry Average</div>
+              <div class="compare-legend">
+                <span><span class="compare-legend__dot compare-legend__dot--provyx"></span>Provyx</span>
+                <span><span class="compare-legend__dot compare-legend__dot--industry"></span>Industry Avg</span>
+              </div>
+              <div class="compare-row">
+                <div class="compare-row__label">Page &rarr; Registration</div>
+                <div class="analytics-bar"><span class="analytics-bar__label" style="width:50px">Provyx</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:76%"></div></div><span class="analytics-bar__pct">38%</span></div>
+                <div class="analytics-bar"><span class="analytics-bar__label analytics-bar__pct--industry" style="width:50px">Avg</span><div class="analytics-bar__track"><div class="analytics-bar__fill analytics-bar__fill--industry" style="width:36%"></div></div><span class="analytics-bar__pct analytics-bar__pct--industry">18%</span></div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-row__label">Form Completion Rate</div>
+                <div class="analytics-bar"><span class="analytics-bar__label" style="width:50px">Provyx</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:86%"></div></div><span class="analytics-bar__pct">86%</span></div>
+                <div class="analytics-bar"><span class="analytics-bar__label analytics-bar__pct--industry" style="width:50px">Avg</span><div class="analytics-bar__track"><div class="analytics-bar__fill analytics-bar__fill--industry" style="width:33%"></div></div><span class="analytics-bar__pct analytics-bar__pct--industry">33%</span></div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-row__label">Mobile Registration Rate</div>
+                <div class="analytics-bar"><span class="analytics-bar__label" style="width:50px">Provyx</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:71%"></div></div><span class="analytics-bar__pct">71%</span></div>
+                <div class="analytics-bar"><span class="analytics-bar__label analytics-bar__pct--industry" style="width:50px">Avg</span><div class="analytics-bar__track"><div class="analytics-bar__fill analytics-bar__fill--industry" style="width:35%"></div></div><span class="analytics-bar__pct analytics-bar__pct--industry">35%</span></div>
+              </div>
+              <div class="compare-row" style="margin-bottom:0">
+                <div class="compare-row__label">Registration &rarr; Attended</div>
+                <div class="analytics-bar"><span class="analytics-bar__label" style="width:50px">Provyx</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:91%"></div></div><span class="analytics-bar__pct">91%</span></div>
+                <div class="analytics-bar"><span class="analytics-bar__label analytics-bar__pct--industry" style="width:50px">Avg</span><div class="analytics-bar__track"><div class="analytics-bar__fill analytics-bar__fill--industry" style="width:57%"></div></div><span class="analytics-bar__pct analytics-bar__pct--industry">57%</span></div>
+              </div>
+            </div>
+            <div class="analytics-panel">
               <div class="analytics-panel__title">Registrations by Specialty</div>
               <div class="analytics-bar"><span class="analytics-bar__label">Chiropractic</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:78%"></div></div><span class="analytics-bar__pct">31%</span></div>
               <div class="analytics-bar"><span class="analytics-bar__label">Med Spa</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:58%"></div></div><span class="analytics-bar__pct">23%</span></div>
@@ -688,26 +749,12 @@
               <div class="analytics-bar"><span class="analytics-bar__label">Cosmetic Dent.</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:30%"></div></div><span class="analytics-bar__pct">12%</span></div>
               <div class="analytics-bar"><span class="analytics-bar__label">Other</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:22%"></div></div><span class="analytics-bar__pct">18%</span></div>
             </div>
-            <div class="analytics-panel">
-              <div class="analytics-panel__title">Response Rate by Channel</div>
-              <div class="analytics-bar"><span class="analytics-bar__label">Referral</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:88%"></div></div><span class="analytics-bar__pct">22.1%</span></div>
-              <div class="analytics-bar"><span class="analytics-bar__label">Email</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:50%"></div></div><span class="analytics-bar__pct">12.4%</span></div>
-              <div class="analytics-bar"><span class="analytics-bar__label">LinkedIn</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:33%"></div></div><span class="analytics-bar__pct">8.2%</span></div>
-              <div class="analytics-bar"><span class="analytics-bar__label">SMS</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:28%"></div></div><span class="analytics-bar__pct">6.9%</span></div>
-              <div class="analytics-bar"><span class="analytics-bar__label">Direct Mail</span><div class="analytics-bar__track"><div class="analytics-bar__fill" style="width:15%"></div></div><span class="analytics-bar__pct">3.8%</span></div>
-            </div>
           </div>
-          <div style="padding: 0 24px 4px;"><div class="analytics-panel__title" style="text-align:center;">Registration Funnel</div></div>
-          <div class="analytics-funnel">
-            <div class="funnel-step"><div class="funnel-step__value">17,240</div><div class="funnel-step__label">Links Sent</div></div>
-            <div class="funnel-arrow">&#9654;</div>
-            <div class="funnel-step"><div class="funnel-step__value">4,310</div><div class="funnel-step__label">Page Views</div></div>
-            <div class="funnel-arrow">&#9654;</div>
-            <div class="funnel-step"><div class="funnel-step__value">1,890</div><div class="funnel-step__label">Started Reg.</div></div>
-            <div class="funnel-arrow">&#9654;</div>
-            <div class="funnel-step"><div class="funnel-step__value">68</div><div class="funnel-step__label">Registered</div></div>
-            <div class="funnel-arrow">&#9654;</div>
-            <div class="funnel-step"><div class="funnel-step__value">62</div><div class="funnel-step__label">Attended</div></div>
+          <div class="highlight-strip">
+            <div class="highlight-strip__item"><div class="highlight-strip__value">2.1x</div><div class="highlight-strip__label">Page Conversion vs Avg</div></div>
+            <div class="highlight-strip__item"><div class="highlight-strip__value">2.6x</div><div class="highlight-strip__label">Form Completion vs Avg</div></div>
+            <div class="highlight-strip__item"><div class="highlight-strip__value">12sec</div><div class="highlight-strip__label">Avg Registration Time</div></div>
+            <div class="highlight-strip__item"><div class="highlight-strip__value">91%</div><div class="highlight-strip__label">Attendance Rate</div></div>
           </div>
         </div>
       </div>
