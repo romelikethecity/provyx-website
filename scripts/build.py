@@ -12623,7 +12623,7 @@ def build_homepage():
             }}
             @media (min-width: 1024px) {{
                 .hero__grid {{
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1.15fr 0.85fr;
                 }}
                 .hero .hero__content {{
                     text-align: left;
@@ -12634,6 +12634,7 @@ def build_homepage():
                 }}
                 .hero .pain-stats {{
                     justify-content: flex-start;
+                    max-width: 420px;
                 }}
             }}
             .hero__visual {{
