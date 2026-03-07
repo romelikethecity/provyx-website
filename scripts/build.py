@@ -12906,7 +12906,7 @@ def build_homepage():
                     <a href="/services/event-marketing/" class="service-card">
                         <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
                         <h3 class="service-card__title">Event Marketing</h3>
-                        <p class="service-card__text">Specialty-targeted event registration with personalized links from your provider database. Config-driven sites that deploy in hours, not weeks.</p>
+                        <p class="service-card__text">Specialty-targeted event registration with personalized links from your provider database. Reusable templates that launch new cities in hours.</p>
                     </a>
                 </div>
             </div>
@@ -14807,8 +14807,8 @@ SERVICES = [
         "short_title": "Event Marketing",
         "aeo_definition": {
             "term": "Healthcare Event Marketing",
-            "definition": "is specialty-targeted event registration built on verified provider data, enabling medical device companies and healthcare organizations to create personalized invitations, specialty-specific landing pages, and config-driven event sites that integrate directly with provider contact intelligence.",
-            "context": "Unlike generic event platforms (Eventbrite, Splash), healthcare event marketing uses provider data segmentation by specialty, practice type, and geography to deliver personalized registration experiences that drive higher attendance rates.",
+            "definition": "is specialty-targeted event registration built on verified provider data, enabling medical device companies and healthcare organizations to create personalized invitations, specialty-specific landing pages, and reusable event sites that integrate directly with provider contact intelligence.",
+            "context": "Unlike generic event platforms (Eventbrite, Splash), healthcare event marketing uses provider data segmentation by specialty, practice type, and geography to deliver personalized registration experiences that convert at higher rates.",
         },
         "aeo_steps": {
             "title": "How to Build a Healthcare Event Registration Site",
@@ -14816,20 +14816,20 @@ SERVICES = [
                 {"name": "Define your event and target specialties", "description": "Set venue, date, capacity, and which provider specialties to target. We build from your existing provider contact list or pull from our verified database."},
                 {"name": "We build specialty-specific landing pages", "description": "Each specialty gets its own page with targeted messaging, product-specific testimonials, and clinical data relevant to that provider type."},
                 {"name": "Generate personalized registration links", "description": "Every provider in your contact database gets a unique pre-filled registration URL. One-click registration reduces friction to zero."},
-                {"name": "Deploy and track registrations", "description": "Site launches on zero-cost hosting with live capacity tracking, countdown timers, and confirmation flows including calendar integration and referral sharing."},
+                {"name": "Deploy and track registrations", "description": "Site goes live with capacity tracking, countdown timers, and confirmation flows including calendar integration and referral sharing."},
             ],
         },
         "subtitle": (
             "Custom event registration sites with specialty-targeted landing pages, "
-            "personalized registration links from verified provider data, and config-driven "
+            "personalized registration links from verified provider data, and reusable "
             "templates that launch new cities in hours."
         ),
         "meta_description": (
             "Custom event registration for medical device companies. Specialty landing pages, "
-            "17K+ personalized links from verified provider data, config-driven reuse."
+            "17K+ personalized links from verified provider data. New cities in hours."
         ),
         "outbound_links": [
-            {"url": "https://pages.github.com/", "text": "GitHub Pages"},
+            {"url": "https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand", "text": "CMS NPI Registry"},
         ],
         # --- Section: The Problem ---
         "problem_heading": "Why Generic Event Platforms Fail for Medical Device Events",
@@ -14848,9 +14848,7 @@ SERVICES = [
             "Platform costs compound across events. Eventbrite charges per-ticket fees or "
             "monthly rates from $99 to $999. For a company running physician education events "
             "monthly across multiple metro areas, platform fees alone run thousands annually. "
-            "A static site on "
-            '<a href="https://pages.github.com/">GitHub Pages</a> '
-            "costs zero per month and loads in under one second."
+            "And you still get one generic registration page per event."
         ),
         # --- Section: What's Included ---
         "included_heading": "What's Included in a Provyx Event Registration Site",
@@ -14879,14 +14877,14 @@ SERVICES = [
                 ),
             },
             {
-                "name": "Config-Driven Architecture",
+                "name": "Launch New Cities in Hours",
                 "icon": "settings",
                 "description": (
-                    "A single JSON configuration file controls every element of the event site: "
-                    "event name, date, venue, capacity, specialties, products, speakers, "
-                    "testimonials, agenda, and FAQ. Launch the same event in a new city by editing "
-                    "the config — change the venue, date, and local testimonials. The entire site "
-                    "regenerates in approximately two hours. No code changes required."
+                    "Running the same event in Detroit, then Miami, then Dallas? We built the "
+                    "system so new cities launch in hours, not weeks. Change the venue, date, and "
+                    "local testimonials. Everything else carries over: specialty pages, products, "
+                    "conversion mechanics, registration flow. Your first event is the investment. "
+                    "Every city after that is fast and cheap."
                 ),
             },
             {
@@ -15039,25 +15037,22 @@ SERVICES = [
             "button_text": "Get Started",
         },
         # --- Section: How We Build ---
-        "sourcing_heading": "How We Build Healthcare Event Registration Sites",
+        "sourcing_heading": "How It Works",
         "sourcing_body": (
-            "We start with your event details — venue, date, capacity, target specialties, and "
-            "product portfolio — and define the site architecture in a single JSON configuration "
-            "file. This config is the source of truth for every text element on every page.\n\n"
-            "From there, we generate specialty-specific landing pages by mapping your products "
-            "and clinical data to each target specialty. Each page gets a unique headline, "
+            "We start with your event details: venue, date, capacity, target specialties, and "
+            "product portfolio. From there, we handle everything.\n\n"
+            "We build specialty-specific landing pages by mapping your products "
+            "and clinical data to each target audience. Each page gets a unique headline, "
             "product grid, physician testimonial (ideally from a local practitioner), and "
             "talking points matched to that specialty's clinical workflow. The registration form "
-            "is consistent across pages — the messaging above it is tailored.\n\n"
+            "is consistent across pages. The messaging above it is tailored.\n\n"
             "Personalized registration links are generated from your provider contact database "
-            "or from Provyx's verified provider data. Each link encodes the provider's name, "
-            "email, and practice as URL parameters. We deliver the links in a multi-sheet Excel "
-            "file organized by practice type so your marketing team can target campaigns by "
-            "specialty.\n\n"
-            "The site deploys to GitHub Pages (zero hosting cost) with Cloudflare DNS. The "
-            "entire process — from config definition to live site — typically takes 5-7 "
-            "business days for a first build. Subsequent cities using the same template take "
-            "approximately two hours."
+            "or from Provyx's verified provider data. Each provider gets a unique URL that "
+            "pre-fills their name, email, and practice. We deliver the links in a multi-sheet "
+            "Excel file organized by practice type so your marketing team can target campaigns "
+            "by specialty.\n\n"
+            "First build typically takes 5-7 business days. Subsequent cities using the same "
+            "template take approximately two hours."
         ),
         # --- Section: Who Uses This ---
         "users_heading": "Who Uses Healthcare Event Marketing",
@@ -15072,7 +15067,7 @@ SERVICES = [
             "generated from their HCP contact databases. Pre-filled registration reduces "
             "friction and increases attendance rates.\n\n"
             "<strong>Healthcare SaaS companies</strong> running product launch events, user "
-            "conferences, and customer advisory boards use config-driven templates to launch "
+            "conferences, and customer advisory boards use reusable templates to launch "
             "events in multiple cities without rebuilding the site each time.\n\n"
             "<strong>Medical specialty associations</strong> hosting regional chapter meetings "
             "and educational seminars use the template system to standardize event registration "
@@ -15103,10 +15098,9 @@ SERVICES = [
             '<div class="pricing-card__desc">Template management + link generation for companies running monthly events across cities.</div>'
             '</div>'
             '</div>\n\n'
-            "The first event is the investment. Every additional city is marginal cost — "
-            "a config edit and a two-hour turnaround. No platform fees, no per-registrant "
-            "charges, no annual contracts. The sites are static HTML hosted at zero cost, "
-            "loading in under one second."
+            "The first event is the investment. Every additional city is a fraction of the "
+            "cost and a two-hour turnaround. No platform fees, no per-registrant "
+            "charges, no annual contracts."
         ),
         # --- Section: FAQs ---
         "faqs": [
@@ -15121,10 +15115,9 @@ SERVICES = [
             {
                 "question": "Can I reuse the event site for events in other cities?",
                 "answer": (
-                    "Yes. The site is config-driven. To launch the same event in a new city, you "
-                    "update the venue, date, and city-specific details in the JSON config file. "
-                    "The entire site regenerates with no code changes. This is the core design "
-                    "principle: build once, deploy everywhere."
+                    "Yes. The template system is built for reuse. To launch the same event in a "
+                    "new city, we update the venue, date, and city-specific details. The entire "
+                    "site regenerates in about two hours. Build once, deploy everywhere."
                 ),
             },
             {
@@ -15139,10 +15132,9 @@ SERVICES = [
             {
                 "question": "Are there ongoing platform fees after the site launches?",
                 "answer": (
-                    "No ongoing platform fees. The event site is static HTML hosted on GitHub "
-                    "Pages with Cloudflare DNS — there are no monthly hosting charges, no "
+                    "No ongoing platform fees. There are no monthly charges, no "
                     "per-registrant fees, and no auto-renewal traps. You own the site. "
-                    "Provyx charges for the build and for contact link generation, not for hosting."
+                    "Provyx charges for the build and for contact link generation."
                 ),
             },
             {
