@@ -13314,8 +13314,7 @@ def build_privacy():
                 <ul>
                     <li><strong>Google Analytics 4</strong> for website analytics</li>
                     <li><strong>Formspree</strong> for form processing</li>
-                    <li><strong>GitHub Pages</strong> for website hosting</li>
-                    <li><strong>Cloudflare</strong> for DNS and SSL</li>
+                    <li><strong>Cloudflare</strong> for DNS, CDN, and SSL</li>
                 </ul>
 
                 <h2>Cookies</h2>
