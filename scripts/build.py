@@ -14598,13 +14598,13 @@ SERVICES = [
             ],
         },
         "subtitle": (
-            "Custom event sites with specialty-targeted landing pages, pre-filled registration "
-            "from your provider database, live capacity tracking, and $0/month hosting."
+            "Custom event registration sites with specialty-targeted landing pages, "
+            "personalized registration links from verified provider data, and config-driven "
+            "templates that launch new cities in hours."
         ),
         "meta_description": (
-            "Healthcare event registration with specialty-specific landing pages, personalized "
-            "registration links from verified provider data, and config-driven architecture. "
-            "$0/mo hosting."
+            "Custom event registration for medical device companies. Specialty landing pages, "
+            "17K+ personalized links from verified provider data, config-driven reuse."
         ),
         "outbound_links": [
             {"url": "https://pages.github.com/", "text": "GitHub Pages"},
@@ -14684,6 +14684,138 @@ SERVICES = [
             "analytics dashboards with per-specialty conversion tracking, and integration with "
             "your CRM for real-time registration sync."
         ),
+        # --- Custom visual mockups (injected after features) ---
+        "custom_visual_html": """
+<section class="content-section">
+  <div class="container">
+    <p class="mockup-label">Each specialty sees a different landing page</p>
+    <div class="specialty-showcase">
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">yourevent.com/specialty/chiro</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="mockup-hero">
+            <span class="mockup-hero__badge">Chiropractors</span>
+            <div class="mockup-hero__h1">Add a New Revenue Stream to Your Chiropractic Practice</div>
+            <div class="mockup-hero__sub">Harvard faculty, hands-on demos, and a financial model for your practice.</div>
+          </div>
+          <div class="mockup-products">
+            <div class="mockup-product"><div class="mockup-product__name">Emsella</div><div class="mockup-product__stat">Pelvic Floor Rehab</div></div>
+            <div class="mockup-product"><div class="mockup-product__name">Emsculpt Neo</div><div class="mockup-product__stat">Body Contouring</div></div>
+          </div>
+          <div class="mockup-cta"><span class="mockup-cta__btn">Claim My Seat</span></div>
+        </div>
+      </div>
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">yourevent.com/specialty/medspa</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="mockup-hero">
+            <span class="mockup-hero__badge">Medical Spas</span>
+            <div class="mockup-hero__h1">Head-to-Toe Aesthetics From a Single Platform</div>
+            <div class="mockup-hero__sub">Body, face, skin, and pelvic health — one vendor, one training day.</div>
+          </div>
+          <div class="mockup-products">
+            <div class="mockup-product"><div class="mockup-product__name">Emface</div><div class="mockup-product__stat">Facial Rejuvenation</div></div>
+            <div class="mockup-product"><div class="mockup-product__name">Exion</div><div class="mockup-product__stat">4-Modality Skin</div></div>
+          </div>
+          <div class="mockup-cta"><span class="mockup-cta__btn">Claim My Seat</span></div>
+        </div>
+      </div>
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">yourevent.com/specialty/derm</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="mockup-hero">
+            <span class="mockup-hero__badge">Dermatologists</span>
+            <div class="mockup-hero__h1">Non-Invasive Skin Tightening That Competes with Injectables</div>
+            <div class="mockup-hero__sub">FDA-cleared devices for skin resurfacing and facial rejuvenation.</div>
+          </div>
+          <div class="mockup-products">
+            <div class="mockup-product"><div class="mockup-product__name">Exion</div><div class="mockup-product__stat">Skin Resurfacing</div></div>
+            <div class="mockup-product"><div class="mockup-product__name">Emtone</div><div class="mockup-product__stat">Cellulite Treatment</div></div>
+          </div>
+          <div class="mockup-cta"><span class="mockup-cta__btn">Claim My Seat</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mockup-label" style="margin-top: 2.5rem;">Pre-filled registration and post-registration confirmation</p>
+    <div class="mockup-duo">
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">yourevent.com/?first=Sarah&amp;last=Mitchell&amp;email=s.mitchell@...</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="form-mockup">
+            <div class="form-mockup__header">
+              <div class="form-mockup__title">Register for the Event</div>
+              <div class="form-mockup__subtitle">Westin Book Cadillac — Detroit, March 21</div>
+            </div>
+            <div class="capacity-meter">
+              <div class="capacity-meter__bar"><div class="capacity-meter__fill"></div></div>
+              <span class="capacity-meter__text">28 spots remaining of 75</span>
+            </div>
+            <div class="form-mockup__field">
+              <label class="form-mockup__label">First Name <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+              <div class="form-mockup__input form-mockup__input--prefilled">Sarah</div>
+            </div>
+            <div class="form-mockup__field">
+              <label class="form-mockup__label">Last Name <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+              <div class="form-mockup__input form-mockup__input--prefilled">Mitchell</div>
+            </div>
+            <div class="form-mockup__field">
+              <label class="form-mockup__label">Email <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+              <div class="form-mockup__input form-mockup__input--prefilled">s.mitchell@brightonchiro.com</div>
+            </div>
+            <div class="form-mockup__field">
+              <label class="form-mockup__label">Practice <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+              <div class="form-mockup__input form-mockup__input--prefilled">Brighton Chiropractic &amp; Wellness</div>
+            </div>
+            <div style="text-align:center;margin-top:16px;"><span class="mockup-cta__btn">Claim My Seat</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">yourevent.com/confirmation</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="confirm-mockup">
+            <div class="confirm-mockup__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="confirm-mockup__title">You're registered, Sarah!</div>
+            <div class="confirm-mockup__sub">We'll see you at the Westin Book Cadillac on March 21.</div>
+            <div class="confirm-mockup__buttons">
+              <span class="confirm-mockup__btn confirm-mockup__btn--primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Google Calendar</span>
+              <span class="confirm-mockup__btn confirm-mockup__btn--secondary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download .ics</span>
+            </div>
+            <div class="confirm-mockup__share-label">Share with a colleague</div>
+            <div class="confirm-mockup__share-btns">
+              <span class="confirm-mockup__share-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+              <span class="confirm-mockup__share-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+              <span class="confirm-mockup__share-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+""",
+        # --- Custom CTA ---
+        "cta": {
+            "title": "Tell Us About Your Event",
+            "text": "Share your event details — venue, date, target specialties — and we'll scope a registration site with personalized links from verified provider data.",
+            "button_text": "Get Started",
+        },
         # --- Section: How We Build ---
         "sourcing_heading": "How We Build Healthcare Event Registration Sites",
         "sourcing_body": (
@@ -14725,19 +14857,34 @@ SERVICES = [
             "across chapters while maintaining local customization."
         ),
         # --- Section: Delivery ---
-        "quality_heading": "Delivery and Reusability",
+        "quality_heading": "Pricing and Delivery",
         "quality_body": (
-            "The first event site is a custom build: config architecture, specialty pages, "
-            "personalized link generation, and deployment. Typical turnaround is 5-7 business "
-            "days from kickoff to live site.\n\n"
-            "Every subsequent event using the same template is a config edit. Change the city, "
-            "venue, date, and local testimonials. Regenerate the site. Deploy. Approximately "
-            "two hours of work. This is the structural advantage of config-driven architecture: "
-            "the first event is the investment, every additional city is marginal cost.\n\n"
-            "Hosting is on GitHub Pages — zero monthly cost regardless of how many events you "
-            "run. The sites are static HTML and JavaScript with no server-side rendering, no "
-            "database, and no backend to maintain. Page load times are consistently under one "
-            "second."
+            '<div class="pricing-grid">'
+            '<div class="pricing-card pricing-card--featured">'
+            '<div class="pricing-card__price">$3,500–5,000</div>'
+            '<div class="pricing-card__label">First Event Site</div>'
+            '<div class="pricing-card__desc">Config architecture, specialty pages, personalized link generation, deployment. 5–7 business days.</div>'
+            '</div>'
+            '<div class="pricing-card">'
+            '<div class="pricing-card__price">$1,500–2,500</div>'
+            '<div class="pricing-card__label">Additional Cities</div>'
+            '<div class="pricing-card__desc">Same template, new config. Venue, date, local testimonials. ~2 hours turnaround.</div>'
+            '</div>'
+            '<div class="pricing-card">'
+            '<div class="pricing-card__price">$1,000–2,000</div>'
+            '<div class="pricing-card__label">Pre-Filled Contact Links</div>'
+            '<div class="pricing-card__desc">Personalized registration URLs from your CRM or Provyx\'s verified provider database, per event.</div>'
+            '</div>'
+            '<div class="pricing-card">'
+            '<div class="pricing-card__price">$2,000/mo</div>'
+            '<div class="pricing-card__label">Monthly Retainer</div>'
+            '<div class="pricing-card__desc">Template management + link generation for companies running monthly events across cities.</div>'
+            '</div>'
+            '</div>\n\n'
+            "The first event is the investment. Every additional city is marginal cost — "
+            "a config edit and a two-hour turnaround. No platform fees, no per-registrant "
+            "charges, no annual contracts. The sites are static HTML hosted at zero cost, "
+            "loading in under one second."
         ),
         # --- Section: FAQs ---
         "faqs": [
@@ -14768,11 +14915,12 @@ SERVICES = [
                 ),
             },
             {
-                "question": "What does the event site cost to host?",
+                "question": "Are there ongoing platform fees after the site launches?",
                 "answer": (
-                    "Zero dollars per month. The site is hosted on GitHub Pages with Cloudflare "
-                    "DNS. There are no server costs, no platform fees, and no per-registrant "
-                    "charges. The site loads in under one second."
+                    "No ongoing platform fees. The event site is static HTML hosted on GitHub "
+                    "Pages with Cloudflare DNS — there are no monthly hosting charges, no "
+                    "per-registrant fees, and no auto-renewal traps. You own the site. "
+                    "Provyx charges for the build and for contact link generation, not for hosting."
                 ),
             },
             {
@@ -14909,7 +15057,7 @@ def build_service_page(svc):
 <section class="content-section features-section">
   <div class="container">
     <h2>{svc['included_heading']}</h2>
-    <div class="features-grid">
+    <div class="feature-grid">
 {features_cards}
     </div>
     {addons_html}
@@ -14968,8 +15116,17 @@ def build_service_page(svc):
     # -- Related links --
     related_html = _build_related_links_html(svc)
 
+    # -- Custom visual mockups (optional) --
+    custom_visual_html = svc.get("custom_visual_html", "")
+
     # -- CTA --
-    cta_html = generate_cta_section()
+    cta_kwargs = {}
+    if svc.get("cta"):
+        c = svc["cta"]
+        if c.get("title"): cta_kwargs["title"] = c["title"]
+        if c.get("text"): cta_kwargs["text"] = c["text"]
+        if c.get("button_text"): cta_kwargs["button_text"] = c["button_text"]
+    cta_html = generate_cta_section(**cta_kwargs)
 
     # -- Testimonial block --
     testimonial_html = ""
@@ -14996,6 +15153,7 @@ def build_service_page(svc):
         hero_html
         + problem_html
         + included_html
+        + custom_visual_html
         + sourcing_html
         + users_html
         + quality_html
