@@ -111,13 +111,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=8" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=9" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=8">
+    <link rel="stylesheet" href="/css/styles.min.css?v=9">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -282,18 +282,239 @@
     <main id="main-content">
 
 
+        <style>
+            .hero__grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                align-items: center;
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            @media (min-width: 1024px) {
+                .hero__grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .hero .hero__content {
+                    text-align: left;
+                    max-width: none;
+                }
+                .hero .hero__buttons {
+                    justify-content: flex-start;
+                }
+                .hero .pain-stats {
+                    justify-content: flex-start;
+                }
+            }
+            .hero__visual {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .hero-card-wrapper {
+                width: 100%;
+                max-width: 380px;
+            }
+            .hero-card {
+                width: 100%;
+                background: #FFFFFF;
+                border: 1px solid #E2E8F0;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 20px 40px rgba(27, 42, 74, 0.08), 0 4px 12px rgba(27, 42, 74, 0.04);
+                opacity: 0;
+                transform: translateY(12px);
+                animation: hcAppear 0.6s ease forwards;
+                animation-delay: 0.2s;
+            }
+            .hero-card__header {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 1.25rem 1.5rem;
+            }
+            .hero-card__dot {
+                width: 10px;
+                height: 10px;
+                background: #0EA5E9;
+                border-radius: 50%;
+                flex-shrink: 0;
+                box-shadow: 0 0 8px rgba(14, 165, 233, 0.5);
+                animation: hcDotPulse 2s ease infinite;
+                animation-delay: 3.5s;
+            }
+            .hero-card__name {
+                font-weight: 700;
+                font-size: 0.9375rem;
+                color: #1B2A4A;
+            }
+            .hero-card__address {
+                font-size: 0.75rem;
+                color: #64748B;
+                margin-top: 0.15rem;
+            }
+            .hero-card__divider {
+                height: 1px;
+                background: #E2E8F0;
+                margin: 0;
+            }
+            .hero-card__rows {
+                padding: 0.5rem 0;
+            }
+            .hero-card__row {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0.45rem 1.5rem;
+                opacity: 0;
+                transform: translateX(-8px);
+                animation: hcSlide 0.45s ease forwards;
+            }
+            .hero-card__check {
+                width: 18px;
+                height: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(14, 165, 233, 0.1);
+                color: #0EA5E9;
+                border-radius: 50%;
+                font-size: 0.625rem;
+                font-weight: 700;
+                flex-shrink: 0;
+            }
+            .hero-card__label {
+                font-size: 0.75rem;
+                color: #64748B;
+                min-width: 56px;
+            }
+            .hero-card__value {
+                font-size: 0.8125rem;
+                color: #1B2A4A;
+                font-weight: 500;
+            }
+            .hero-card__footer {
+                padding: 0.6rem 1.5rem;
+                border-top: 1px solid #E2E8F0;
+                font-size: 0.6875rem;
+                color: #94A3B8;
+                opacity: 0;
+                animation: hcFade 0.4s ease forwards;
+                animation-delay: 3.4s;
+            }
+            .hero-card--flagged {
+                max-width: 340px;
+                margin: 0.75rem auto 0;
+                opacity: 0;
+                transform: translateY(8px) scale(0.97);
+                animation: hcFlagged 0.5s ease forwards;
+                animation-delay: 3.8s;
+                border-color: rgba(239, 68, 68, 0.3);
+            }
+            .hero-card--flagged .hero-card__header {
+                padding: 0.75rem 1.25rem;
+            }
+            .hero-card__dot--flagged {
+                background: #EF4444 !important;
+                box-shadow: 0 0 6px rgba(239, 68, 68, 0.4) !important;
+                animation: none !important;
+            }
+            .hero-card__name--flagged {
+                text-decoration: line-through;
+                color: #94A3B8 !important;
+                font-size: 0.8125rem !important;
+            }
+            .hero-card__address--flagged {
+                color: #EF4444;
+                font-size: 0.6875rem;
+            }
+            @keyframes hcAppear {
+                to { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes hcSlide {
+                to { opacity: 1; transform: translateX(0); }
+            }
+            @keyframes hcFade {
+                to { opacity: 1; }
+            }
+            @keyframes hcFlagged {
+                to { opacity: 0.7; transform: translateY(0) scale(0.97); }
+            }
+            @keyframes hcDotPulse {
+                0%, 100% { box-shadow: 0 0 8px rgba(14, 165, 233, 0.5); }
+                50% { box-shadow: 0 0 16px rgba(14, 165, 233, 0.8); }
+            }
+        </style>
+
         <section class="hero section">
-            <div class="container hero__content">
-                <h1 class="hero__title">Find Any Healthcare Provider. Get Their Data.</h1>
-                <p class="hero__subtitle">Practice data, owner contacts, and provider intelligence for 40+ healthcare specialties. NPI-verified. Delivered in days, not weeks. No annual contracts.</p>
-                <div class="hero__buttons">
-                    <a href="/contact/" class="btn btn--primary btn--lg">Get Provider Data</a>
-                    <a href="/providers/" class="btn btn--secondary btn--lg">Browse Specialties</a>
-                </div>
-                <div class="pain-stats">
-                    <div class="pain-stat"><span class="pain-stat__number">2.4M+</span><span class="pain-stat__label">Provider Records</span></div>
-                    <div class="pain-stat"><span class="pain-stat__number">40+</span><span class="pain-stat__label">Specialties</span></div>
-                    <div class="pain-stat"><span class="pain-stat__number">Days</span><span class="pain-stat__label">Not Weeks</span></div>
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Find Any Healthcare Provider. Get Their Data.</h1>
+                        <p class="hero__subtitle">Practice data, owner contacts, and provider intelligence for 40+ healthcare specialties. NPI-verified. Delivered in days, not weeks. No annual contracts.</p>
+                        <div class="hero__buttons">
+                            <a href="/contact/" class="btn btn--primary btn--lg">Get Provider Data</a>
+                            <a href="/providers/" class="btn btn--secondary btn--lg">Browse Specialties</a>
+                        </div>
+                        <div class="pain-stats">
+                            <div class="pain-stat"><span class="pain-stat__number">2.4M+</span><span class="pain-stat__label">Provider Records</span></div>
+                            <div class="pain-stat"><span class="pain-stat__number">40+</span><span class="pain-stat__label">Specialties</span></div>
+                            <div class="pain-stat"><span class="pain-stat__number">Days</span><span class="pain-stat__label">Not Weeks</span></div>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero-card-wrapper">
+                            <div class="hero-card">
+                                <div class="hero-card__header">
+                                    <div class="hero-card__dot"></div>
+                                    <div>
+                                        <div class="hero-card__name">Bright Smile Dental</div>
+                                        <div class="hero-card__address">4821 Congress Ave, Austin, TX 78745</div>
+                                    </div>
+                                </div>
+                                <div class="hero-card__divider"></div>
+                                <div class="hero-card__rows">
+                                    <div class="hero-card__row" style="animation-delay: 0.8s">
+                                        <span class="hero-card__check">&#10003;</span>
+                                        <span class="hero-card__label">NPI</span>
+                                        <span class="hero-card__value">1234567890 (Verified)</span>
+                                    </div>
+                                    <div class="hero-card__row" style="animation-delay: 1.3s">
+                                        <span class="hero-card__check">&#10003;</span>
+                                        <span class="hero-card__label">Owner</span>
+                                        <span class="hero-card__value">Dr. Sarah Chen, DDS</span>
+                                    </div>
+                                    <div class="hero-card__row" style="animation-delay: 1.8s">
+                                        <span class="hero-card__check">&#10003;</span>
+                                        <span class="hero-card__label">Email</span>
+                                        <span class="hero-card__value">s.chen@brightsmile...</span>
+                                    </div>
+                                    <div class="hero-card__row" style="animation-delay: 2.3s">
+                                        <span class="hero-card__check">&#10003;</span>
+                                        <span class="hero-card__label">Phone</span>
+                                        <span class="hero-card__value">(512) 555-0142</span>
+                                    </div>
+                                    <div class="hero-card__row" style="animation-delay: 2.8s">
+                                        <span class="hero-card__check">&#10003;</span>
+                                        <span class="hero-card__label">LinkedIn</span>
+                                        <span class="hero-card__value">Profile Matched</span>
+                                    </div>
+                                </div>
+                                <div class="hero-card__footer">
+                                    NPI verified 2 days ago &middot; Taxonomy: 1223G0001X
+                                </div>
+                            </div>
+                            <div class="hero-card hero-card--flagged">
+                                <div class="hero-card__header">
+                                    <div class="hero-card__dot hero-card__dot--flagged"></div>
+                                    <div>
+                                        <div class="hero-card__name hero-card__name--flagged">Valley Wellness Center</div>
+                                        <div class="hero-card__address hero-card__address--flagged">NPI Deactivated &middot; Removed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -554,7 +775,7 @@
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
+                        <img src="/assets/icons/icon-no-bg-white.svg" alt="" class="footer__logo-icon" width="32" height="40" loading="lazy">
                         <span class="footer__logo-text">Provyx</span>
                     </a>
                     <p class="footer__tagline">Healthcare Provider Intelligence</p>

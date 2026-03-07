@@ -41,7 +41,7 @@ from nav_config import (
 # =============================================================================
 
 BASE_URL = "https://getprovyx.com"
-CSS_VERSION = "8"
+CSS_VERSION = "9"
 
 
 # =============================================================================
@@ -327,7 +327,7 @@ def get_footer_html():
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/assets/favicons/favicon.svg" alt="" class="footer__logo-icon" width="32" height="32" loading="lazy">
+                        <img src="/assets/icons/icon-no-bg-white.svg" alt="" class="footer__logo-icon" width="32" height="40" loading="lazy">
                         <span class="footer__logo-text">{SITE_NAME}</span>
                     </a>
                     <p class="footer__tagline">{SITE_TAGLINE}</p>
