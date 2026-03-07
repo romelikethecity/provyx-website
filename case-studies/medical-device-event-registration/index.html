@@ -158,6 +158,309 @@
         color: #64748B;
         font-weight: 600;
     }
+
+    /* Browser frame mockup */
+    .browser-frame {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(27,42,74,0.10), 0 1px 4px rgba(0,0,0,0.05);
+        overflow: hidden;
+        border: 1px solid #E2E8F0;
+    }
+    .browser-frame__bar {
+        background: #1E293B;
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .browser-frame__dots {
+        display: flex;
+        gap: 5px;
+        flex-shrink: 0;
+    }
+    .browser-frame__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .browser-frame__dot--red { background: #FF5F56; }
+    .browser-frame__dot--yellow { background: #FFBD2E; }
+    .browser-frame__dot--green { background: #27C93F; }
+    .browser-frame__url {
+        flex: 1;
+        background: #334155;
+        border-radius: 5px;
+        padding: 4px 10px;
+        font-size: 10px;
+        color: #94A3B8;
+        font-family: 'SF Mono', Monaco, monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Specialty pages showcase */
+    .specialty-showcase {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        margin: 2rem 0;
+    }
+    @media (max-width: 768px) {
+        .specialty-showcase {
+            grid-template-columns: 1fr;
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /* Mockup page content */
+    .mockup-hero {
+        background: linear-gradient(135deg, #006498, #004d75);
+        padding: 20px 16px;
+        color: #fff;
+    }
+    .mockup-hero__badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.18);
+        border-radius: 4px;
+        padding: 2px 8px;
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+    .mockup-hero__h1 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 6px;
+    }
+    .mockup-hero__sub {
+        font-size: 10px;
+        opacity: 0.75;
+        line-height: 1.4;
+    }
+    .mockup-products {
+        padding: 12px 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .mockup-product {
+        background: #F7F6FB;
+        border-radius: 6px;
+        padding: 10px 8px;
+        text-align: center;
+    }
+    .mockup-product__name {
+        font-size: 10px;
+        font-weight: 700;
+        color: #1F2937;
+        margin-bottom: 2px;
+    }
+    .mockup-product__stat {
+        font-size: 9px;
+        color: #6B7280;
+    }
+    .mockup-cta {
+        padding: 4px 16px 14px;
+        text-align: center;
+    }
+    .mockup-cta__btn {
+        display: inline-block;
+        background: #006498;
+        color: #fff;
+        padding: 6px 16px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    /* Registration form mockup */
+    .form-mockup {
+        padding: 20px 24px;
+    }
+    .form-mockup__header {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .form-mockup__title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #1F2937;
+        margin-bottom: 4px;
+    }
+    .form-mockup__subtitle {
+        font-size: 11px;
+        color: #6B7280;
+    }
+    .form-mockup__field {
+        margin-bottom: 10px;
+    }
+    .form-mockup__label {
+        display: block;
+        font-size: 10px;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 3px;
+    }
+    .form-mockup__input {
+        width: 100%;
+        padding: 7px 10px;
+        border: 1.5px solid #E2E8F0;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #1F2937;
+        background: #fff;
+    }
+    .form-mockup__input--prefilled {
+        background: #EFF6FF;
+        border-color: #93C5FD;
+        color: #1E40AF;
+    }
+    .form-mockup__prefill-badge {
+        display: inline-block;
+        font-size: 8px;
+        background: #DBEAFE;
+        color: #1E40AF;
+        padding: 1px 5px;
+        border-radius: 3px;
+        margin-left: 4px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    .capacity-meter {
+        margin: 12px 0 16px;
+        text-align: center;
+    }
+    .capacity-meter__bar {
+        height: 6px;
+        background: #E2E8F0;
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 4px;
+    }
+    .capacity-meter__fill {
+        height: 100%;
+        background: linear-gradient(90deg, #006498, #0088CC);
+        border-radius: 3px;
+        width: 63%;
+    }
+    .capacity-meter__text {
+        font-size: 11px;
+        font-weight: 700;
+        color: #006498;
+    }
+
+    /* Confirmation mockup */
+    .confirm-mockup {
+        padding: 28px 24px;
+        text-align: center;
+    }
+    .confirm-mockup__icon {
+        width: 40px;
+        height: 40px;
+        background: #ECFDF5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+    }
+    .confirm-mockup__icon svg {
+        width: 20px;
+        height: 20px;
+        stroke: #059669;
+    }
+    .confirm-mockup__title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #1F2937;
+        margin-bottom: 4px;
+    }
+    .confirm-mockup__sub {
+        font-size: 11px;
+        color: #6B7280;
+        margin-bottom: 16px;
+    }
+    .confirm-mockup__buttons {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+    .confirm-mockup__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .confirm-mockup__btn--primary {
+        background: #006498;
+        color: #fff;
+    }
+    .confirm-mockup__btn--secondary {
+        background: #F3F4F6;
+        color: #374151;
+    }
+    .confirm-mockup__share-label {
+        font-size: 9px;
+        color: #9CA3AF;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+    .confirm-mockup__share-btns {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+    }
+    .confirm-mockup__share-btn {
+        width: 32px;
+        height: 32px;
+        background: #F3F4F6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Mockup label */
+    .mockup-label {
+        text-align: center;
+        font-size: 0.8125rem;
+        color: #64748B;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    /* Mockup duo (side by side) */
+    .mockup-duo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+    @media (max-width: 768px) {
+        .mockup-duo {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     </style>
 </head>
 <body>
@@ -511,6 +814,87 @@
             <div class="container">
                 <h2>What We Built: Architecture and Components</h2>
 
+                <p class="mockup-label">Each specialty sees a different landing page</p>
+                <div class="specialty-showcase">
+                    <!-- Chiro page -->
+                    <div class="browser-frame">
+                        <div class="browser-frame__bar">
+                            <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+                            <span class="browser-frame__url">btlmichigan.com/specialty/chiro</span>
+                        </div>
+                        <div class="browser-frame__body">
+                            <div class="mockup-hero">
+                                <span class="mockup-hero__badge">Chiropractors</span>
+                                <div class="mockup-hero__h1">Add a New Revenue Stream to Your Chiropractic Practice</div>
+                                <div class="mockup-hero__sub">Harvard faculty, hands-on demos, and a financial model for your practice.</div>
+                            </div>
+                            <div class="mockup-products">
+                                <div class="mockup-product">
+                                    <div class="mockup-product__name">Emsella</div>
+                                    <div class="mockup-product__stat">Pelvic Floor Rehab</div>
+                                </div>
+                                <div class="mockup-product">
+                                    <div class="mockup-product__name">Emsculpt Neo</div>
+                                    <div class="mockup-product__stat">Body Contouring</div>
+                                </div>
+                            </div>
+                            <div class="mockup-cta"><span class="mockup-cta__btn">Claim My Seat</span></div>
+                        </div>
+                    </div>
+
+                    <!-- MedSpa page -->
+                    <div class="browser-frame">
+                        <div class="browser-frame__bar">
+                            <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+                            <span class="browser-frame__url">btlmichigan.com/specialty/medspa</span>
+                        </div>
+                        <div class="browser-frame__body">
+                            <div class="mockup-hero">
+                                <span class="mockup-hero__badge">Medical Spas</span>
+                                <div class="mockup-hero__h1">Head-to-Toe Aesthetics From a Single Platform</div>
+                                <div class="mockup-hero__sub">Body, face, skin, and pelvic health — one vendor, one training day.</div>
+                            </div>
+                            <div class="mockup-products">
+                                <div class="mockup-product">
+                                    <div class="mockup-product__name">Emface</div>
+                                    <div class="mockup-product__stat">Facial Rejuvenation</div>
+                                </div>
+                                <div class="mockup-product">
+                                    <div class="mockup-product__name">Exion</div>
+                                    <div class="mockup-product__stat">4-Modality Skin</div>
+                                </div>
+                            </div>
+                            <div class="mockup-cta"><span class="mockup-cta__btn">Claim My Seat</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Derm page -->
+                    <div class="browser-frame">
+                        <div class="browser-frame__bar">
+                            <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+                            <span class="browser-frame__url">btlmichigan.com/specialty/derm</span>
+                        </div>
+                        <div class="browser-frame__body">
+                            <div class="mockup-hero">
+                                <span class="mockup-hero__badge">Dermatologists</span>
+                                <div class="mockup-hero__h1">Non-Invasive Skin Tightening That Competes with Injectables</div>
+                                <div class="mockup-hero__sub">FDA-cleared devices for skin resurfacing and facial rejuvenation.</div>
+                            </div>
+                            <div class="mockup-products">
+                                <div class="mockup-product">
+                                    <div class="mockup-product__name">Exion</div>
+                                    <div class="mockup-product__stat">Skin Resurfacing</div>
+                                </div>
+                                <div class="mockup-product">
+                                    <div class="mockup-product__name">Emtone</div>
+                                    <div class="mockup-product__stat">Cellulite Treatment</div>
+                                </div>
+                            </div>
+                            <div class="mockup-cta"><span class="mockup-cta__btn">Claim My Seat</span></div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Specialty Grid -->
                 <div class="specialty-grid">
                     <div class="specialty-card">
@@ -567,6 +951,79 @@
                     <li><strong>Anti-spam:</strong> honeypot fields and client-side validation</li>
                     <li><strong>Static hosting:</strong> GitHub Pages with Cloudflare DNS — $0/month, sub-second load times</li>
                 </ul>
+
+                <p class="mockup-label" style="margin-top: 2.5rem;">Pre-filled registration and post-registration confirmation</p>
+                <div class="mockup-duo">
+                    <!-- Registration form -->
+                    <div class="browser-frame">
+                        <div class="browser-frame__bar">
+                            <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+                            <span class="browser-frame__url">btlmichigan.com/?first=Sarah&amp;last=Mitchell&amp;email=s.mitchell@...</span>
+                        </div>
+                        <div class="browser-frame__body">
+                            <div class="form-mockup">
+                                <div class="form-mockup__header">
+                                    <div class="form-mockup__title">Register for the BTL Experience</div>
+                                    <div class="form-mockup__subtitle">Westin Book Cadillac — Detroit, March 21</div>
+                                </div>
+                                <div class="capacity-meter">
+                                    <div class="capacity-meter__bar"><div class="capacity-meter__fill"></div></div>
+                                    <span class="capacity-meter__text">28 spots remaining of 75</span>
+                                </div>
+                                <div class="form-mockup__field">
+                                    <label class="form-mockup__label">First Name <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+                                    <div class="form-mockup__input form-mockup__input--prefilled">Sarah</div>
+                                </div>
+                                <div class="form-mockup__field">
+                                    <label class="form-mockup__label">Last Name <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+                                    <div class="form-mockup__input form-mockup__input--prefilled">Mitchell</div>
+                                </div>
+                                <div class="form-mockup__field">
+                                    <label class="form-mockup__label">Email <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+                                    <div class="form-mockup__input form-mockup__input--prefilled">s.mitchell@brightonchiro.com</div>
+                                </div>
+                                <div class="form-mockup__field">
+                                    <label class="form-mockup__label">Practice Name <span class="form-mockup__prefill-badge">Pre-filled</span></label>
+                                    <div class="form-mockup__input form-mockup__input--prefilled">Brighton Chiropractic &amp; Wellness</div>
+                                </div>
+                                <div style="text-align: center; margin-top: 16px;">
+                                    <span class="mockup-cta__btn">Claim My Seat</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation page -->
+                    <div class="browser-frame">
+                        <div class="browser-frame__bar">
+                            <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+                            <span class="browser-frame__url">btlmichigan.com/confirmation</span>
+                        </div>
+                        <div class="browser-frame__body">
+                            <div class="confirm-mockup">
+                                <div class="confirm-mockup__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                <div class="confirm-mockup__title">You're registered, Sarah!</div>
+                                <div class="confirm-mockup__sub">We'll see you at the Westin Book Cadillac on March 21.</div>
+                                <div class="confirm-mockup__buttons">
+                                    <span class="confirm-mockup__btn confirm-mockup__btn--primary">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                        Google Calendar
+                                    </span>
+                                    <span class="confirm-mockup__btn confirm-mockup__btn--secondary">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                        Download .ics
+                                    </span>
+                                </div>
+                                <div class="confirm-mockup__share-label">Share with a colleague</div>
+                                <div class="confirm-mockup__share-btns">
+                                    <span class="confirm-mockup__share-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                                    <span class="confirm-mockup__share-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+                                    <span class="confirm-mockup__share-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
