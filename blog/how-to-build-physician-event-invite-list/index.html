@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
+    <title>How to Build a Physician Event Invite List (by Specialty and Metro) | Provyx</title>
+    <meta name="description" content="How to size and build a physician event invite list by specialty and metro. The 10x rule, NPI sourcing, segmentation, and the pre-fill link strategy.">
+    <link rel="canonical" href="https://getprovyx.com/blog/how-to-build-physician-event-invite-list/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getprovyx.com/blog/how-to-build-physician-event-invite-list/">
+    <meta property="og:title" content="How to Build a Physician Event Invite List (by Specialty and Metro) | Provyx">
+    <meta property="og:description" content="How to size and build a physician event invite list by specialty and metro. The 10x rule, NPI sourcing, segmentation, and the pre-fill link strategy.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Build a Physician Event Invite List (by Specialty and Metro) | Provyx">
+    <meta name="twitter:description" content="How to size and build a physician event invite list by specialty and metro. The 10x rule, NPI sourcing, segmentation, and the pre-fill link strategy.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getprovyx.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Build a Physician Event Invite List (by Specialty and Metro)",
+      "item": "https://getprovyx.com/blog/how-to-build-physician-event-invite-list/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Build a Physician Event Invite List (by Specialty and Metro)",
+  "description": "How to size and build a physician event invite list by specialty and metro. The 10x rule, NPI sourcing, segmentation, and the pre-fill link strategy.",
+  "url": "https://getprovyx.com/blog/how-to-build-physician-event-invite-list/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/og-resources.png",
+  "datePublished": "2026-03-07",
+  "dateModified": "2026-03-07",
+  "author": {
+    "@type": "Person",
+    "name": "Rome",
+    "url": "https://www.linkedin.com/in/romecaputo/",
+    "jobTitle": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://getprovyx.com/#organization",
+      "name": "Provyx"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://getprovyx.com/#organization",
+    "name": "Provyx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getprovyx.com/assets/images/og-providers.png"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero h1",
+      ".page-hero .subtitle"
+    ]
+  }
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
+
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=9" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.min.css?v=9">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main id="main-content">
+
+
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/blog/">Blog</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">How to Build a Physician Event Invite List (by Specialty and Metro)</span>
+        </nav>
+            <span class="comp-badge">BLOG</span>
+            <h1>How to Build a Physician Event Invite List (by Specialty and Metro)</h1>
+            <p class="subtitle">You have an event date and a venue. Now you need the right providers in the right specialties in the right metro to invite. Here's how to build that list.</p>
+            <p class="page-hero__date">2026-03-07</p>
+            <div class="glossary-tag-list" style="margin-top:1rem;"><span class="glossary-tag">event marketing</span> <span class="glossary-tag">invite list</span> <span class="glossary-tag">provider data</span></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container" style="max-width:800px">
+            
+<h2>The Invite List Is the Event</h2>
+
+<p>Your registration rate, attendance quality, and post-event pipeline all trace back to one thing: who you invited. A perfectly executed event with the wrong invite list is a waste of venue money. A mediocre event with a precisely targeted invite list still generates pipeline.</p>
+
+<p>Building a physician event invite list is different from building a sales prospecting list. You're targeting a specific metro, a specific set of specialties, and you need enough volume to fill a room. The math is different. The data sources overlap but the segmentation is tighter.</p>
+
+<h2>Step 1: Size the List (The 10x Rule)</h2>
+
+<p>Start with your target attendance. If you want 50 physicians in the room, you need roughly 500 on the invite list. That's the 10x rule for physician events.</p>
+
+<p>Here's why the ratio is so steep. Email open rates for healthcare industry campaigns average 20-25% according to <a href="https://mailchimp.com/resources/email-marketing-benchmarks/" target="_blank" rel="noopener">Mailchimp's industry benchmark data</a>. Of those who open, a well-targeted invitation converts 5-10% to registration. Of registrants, 70-90% attend (depending on your confirmation and reminder system). Run the math:</p>
+
+<ul>
+<li>500 invitations sent</li>
+<li>125 opens (25% open rate)</li>
+<li>12-13 registrations (10% click-to-register from opens)</li>
+<li>10-11 attendees (85% show rate)</li>
+</ul>
+
+<p>That's only 10-11 attendees from 500 invitations. To fill a 50-person event, you need 2,500 invitations at these baseline rates. Pre-filled registration and specialty targeting improve these ratios significantly (we see 2x registration rates with specialty-specific pages), but start with 10x as your planning floor.</p>
+
+<p>For events with 8 target specialties, that means roughly 300-400 contacts per specialty on the invite list.</p>
+
+<h2>Step 2: Define Your Specialty Mix</h2>
+
+<p>Which specialties are you targeting? This decision drives everything downstream. For a medical device education event, the specialty mix comes from which devices you're showcasing and which provider types use them.</p>
+
+<p>Common specialty mixes for medical device events:</p>
+
+<ul>
+<li><strong>Aesthetics-focused:</strong> Dermatologists, plastic surgeons, med spa owners, cosmetic dentists</li>
+<li><strong>Rehabilitation-focused:</strong> Chiropractors, physical therapists, physiatrists, sports medicine</li>
+<li><strong>Women's health:</strong> OB/GYNs, urogynecologists, pelvic floor therapists</li>
+<li><strong>Pain management:</strong> Pain management physicians, orthopedic surgeons, physiatrists, chiropractors</li>
+</ul>
+
+<p>Don't target every specialty your device could theoretically serve. Narrow to the 4-6 specialties most likely to purchase in this market. You can always expand the list for the second event in the same metro.</p>
+
+<h2>Step 3: Source the Provider Data</h2>
+
+<h3>Start with the NPI Registry</h3>
+
+<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> is your baseline. It's free, comprehensive, and updated monthly. Filter by taxonomy code (specialty) and state or metro area. You'll get provider names, practice addresses, and office phone numbers.</p>
+
+<p>What you won't get from NPI alone: email addresses, direct phone numbers, practice owner vs. employee status, or sub-specialty detail. A "chiropractor" taxonomy code doesn't tell you whether the practice offers rehabilitation services. An "internal medicine" code doesn't distinguish between a hospitalist and a primary care provider with an outpatient clinic.</p>
+
+<h3>Enrich with Commercial Data</h3>
+
+<p>Layer commercial provider data on top of NPI to fill the gaps. You need email addresses for invitation delivery, practice type classification for targeting, and ideally direct contact information for key decision-makers.</p>
+
+<p>Our <a href="/services/provider-contact-data/">provider contact data</a> covers 300,000+ verified healthcare provider contacts across all major specialties, with email, phone, practice details, and NPI verification. For building event invite lists specifically, our <a href="/services/custom-list-building/">custom list building service</a> can pull targeted lists by metro, specialty, and practice type.</p>
+
+<h3>Segment Your CRM</h3>
+
+<p>If you already have providers in your CRM from previous outreach, events, or purchases, start there. Your existing contacts are warmer than cold invitations. Segment your CRM by specialty, geography, and engagement status. Previous attendees who registered but didn't buy are high-priority for a second event.</p>
+
+<h2>Step 4: Segment by Practice Type</h2>
+
+<p>Specialty alone isn't enough. Within each specialty, practice type determines the messaging angle.</p>
+
+<ul>
+<li><strong>Solo practitioners:</strong> Decision-maker is the provider. Pitch revenue growth and practice differentiation.</li>
+<li><strong>Group practices (3-10 providers):</strong> Decision-maker may be a managing partner or practice administrator. Pitch volume and efficiency.</li>
+<li><strong>Hospital-employed:</strong> The physician may be interested but can't make purchasing decisions independently. Invite them for education, then work the hospital's procurement process separately.</li>
+<li><strong>PE-backed or DSO-owned:</strong> Decisions happen at the management company level. The local provider is an influencer, not a buyer. Still worth inviting for clinical education and peer influence.</li>
+</ul>
+
+<p>For more on practice ownership structures and how they affect targeting, see our <a href="/blog/healthcare-provider-data-trends-2026/">provider data trends guide</a>.</p>
+
+<h2>Step 5: Filter by Geography</h2>
+
+<p>For a regional event, draw a radius around your venue. The radius depends on event format:</p>
+
+<ul>
+<li><strong>Lunch and learn (midday, 2-3 hours):</strong> 30-minute drive radius. Physicians won't drive an hour for a lunch event.</li>
+<li><strong>Full-day education event:</strong> 60-90 minute drive radius. A full day justifies a longer commute.</li>
+<li><strong>Evening dinner:</strong> 30-45 minute radius. No one wants a long drive home after dinner.</li>
+</ul>
+
+<p>Use <a href="https://www.bls.gov/oes/current/oes_nat.htm" target="_blank" rel="noopener">BLS occupational employment data</a> to estimate provider density by metro. Some metros have deep provider pools in specific specialties (Miami for cosmetic dermatology, Nashville for orthopedics). Others are thinner. Know the density before you commit to a city.</p>
+
+<h2>Step 6: Generate Pre-Filled Registration Links</h2>
+
+<p>Once your invite list is finalized, generate personalized registration URLs for every provider. Each link encodes the provider's first name, last name, email, and practice name as URL parameters. When they click the link, the registration form loads pre-populated. One-click registration.</p>
+
+<p>Organize the links in a multi-sheet spreadsheet by specialty. Your marketing team sends each specialty segment a tailored invitation email with links pointing to the specialty-specific landing page. Chiropractors get links to the chiropractic page. Dermatologists get links to the dermatology page.</p>
+
+<p>For a full walkthrough of the pre-fill strategy and email templates by specialty, see our <a href="/blog/physician-event-invitation-template/">physician event invitation template guide</a>.</p>
+
+<h2>Common Mistakes</h2>
+
+<p><strong>Inviting too many specialties with too few contacts per specialty.</strong> If you target 10 specialties with 100 contacts each, you'll get 1-2 attendees per specialty. That's not enough to build specialty-specific landing pages or justify specialty-targeted messaging. Better to target 4-5 specialties with 500+ contacts each.</p>
+
+<p><strong>Using the NPI registry without enrichment.</strong> NPI gives you names and office addresses. Without emails, you're limited to direct mail or cold calling the front desk. Email is the primary channel for event invitations. Enriched data is worth the investment.</p>
+
+<p><strong>Not deduplicating across sources.</strong> If you merge your CRM, NPI data, and commercial data, you'll have duplicates. A provider who receives the same invitation twice from different email sends looks unprofessional. Deduplicate on NPI number before sending.</p>
+
+<p>Ready to build your invite list? Our <a href="/services/event-marketing/">event marketing service</a> handles invite list creation, specialty-specific landing pages, and pre-filled link generation as part of every event build.</p>
+
+        </div>
+    </section>
+
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>Rome</strong></p>
+                <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+                <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many physicians should be on an event invite list?", "acceptedAnswer": {"@type": "Answer", "text": "Use the 10x rule: invite 10 times your target attendance. For a 50-person event, build a list of 500. This accounts for typical email open rates (20-25%), registration conversion rates (5-10%), and show rates (70-90%). With specialty-targeted invitations and pre-filled registration, the ratio improves to roughly 5-7x, but plan conservatively."}}, {"@type": "Question", "name": "Where can I find physician contact data for event invitations?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the CMS NPI Registry (free, comprehensive, updated monthly) for provider names, specialties, and office addresses. Layer commercial provider data for email addresses, direct phone numbers, and practice type classification. Your CRM is also a key source for warm contacts from previous events or sales activity. Deduplicate across all sources on NPI number before sending invitations."}}, {"@type": "Question", "name": "How far will physicians travel for a lunch and learn?", "acceptedAnswer": {"@type": "Answer", "text": "For a midday lunch and learn (2-3 hours), physicians typically won't drive more than 30 minutes. For a full-day education event, 60-90 minutes is reasonable. For an evening dinner, 30-45 minutes. Size your geographic filter around the venue based on the event format. Check BLS occupational data for provider density in your metro before committing to a city."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details class="faq-item">
+                    <summary class="faq-item__question">How many physicians should be on an event invite list?</summary>
+                    <div class="faq-item__answer"><p>Use the 10x rule: invite 10 times your target attendance. For a 50-person event, build a list of 500. This accounts for typical email open rates (20-25%), registration conversion rates (5-10%), and show rates (70-90%). With specialty-targeted invitations and pre-filled registration, the ratio improves to roughly 5-7x, but plan conservatively.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Where can I find physician contact data for event invitations?</summary>
+                    <div class="faq-item__answer"><p>Start with the CMS NPI Registry (free, comprehensive, updated monthly) for provider names, specialties, and office addresses. Layer commercial provider data for email addresses, direct phone numbers, and practice type classification. Your CRM is also a key source for warm contacts from previous events or sales activity. Deduplicate across all sources on NPI number before sending invitations.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How far will physicians travel for a lunch and learn?</summary>
+                    <div class="faq-item__answer"><p>For a midday lunch and learn (2-3 hours), physicians typically won't drive more than 30 minutes. For a full-day education event, 60-90 minutes is reasonable. For an evening dinner, 30-45 minutes. Size your geographic filter around the venue based on the event format. Check BLS occupational data for provider density in your metro before committing to a city.</p></div>
+                </details>
+            </div>
+        </section>
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul><li><a href="https://mailchimp.com/resources/email-marketing-benchmarks/" target="_blank" rel="noopener noreferrer">Mailchimp Email Marketing Benchmarks</a></li>
+<li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a></li>
+<li><a href="https://www.bls.gov/oes/current/oes_nat.htm" target="_blank" rel="noopener noreferrer">BLS Occupational Employment Statistics</a></li>
+</ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/services/event-marketing/">Event Marketing Service</a></li>
+<li><a href="/services/provider-contact-data/">Provider Contact Data</a></li>
+<li><a href="/blog/physician-event-invitation-template/">Physician Event Invitation Template</a></li>
+<li><a href="/blog/how-to-build-healthcare-provider-contact-list/">How to Build a Healthcare Provider Contact List</a></li>
+</ul>
+        </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/icons/icon-no-bg-white.svg" alt="" class="footer__logo-icon" width="32" height="40" loading="lazy">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/services/event-marketing/">Event Marketing</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/glossary/">Glossary</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+<li><a href="/case-studies/">Case Studies</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Publications</h4>
+                <ul class="footer__links">
+                    <li><a href="https://thecroreport.com" target="_blank" rel="noopener noreferrer">The CRO Report</a></li>
+<li><a href="https://theaimarketpulse.com" target="_blank" rel="noopener noreferrer">AI Market Pulse</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
