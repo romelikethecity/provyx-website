@@ -4716,4 +4716,2163 @@ BLOG_POSTS = [
         ],
         "tags": ["event marketing", "mobile registration", "physician events"],
     },
+    # -------------------------------------------------------------------------
+    # Post 25: Medical Device Lunch and Learn Playbook
+    # -------------------------------------------------------------------------
+    {
+        "slug": "medical-device-lunch-and-learn-playbook",
+        "title": "Medical Device Lunch and Learn: The Field Marketing Playbook",
+        "meta_description": "Plan a medical device lunch and learn that fills the room. Territory selection, invite lists, specialty pages, and post-event follow-up in one playbook.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "The lunch and learn is still the highest-converting event format in medical device sales. Here's the step-by-step playbook from territory selection to post-event pipeline.",
+        "content_html": """
+<h2>Why the Lunch and Learn Still Works</h2>
+
+<p>Medical device companies spend billions on conferences, trade shows, and digital marketing every year. But the lunch and learn remains the workhorse of field marketing for one simple reason: it puts the device in the physician's hands during a protected hour in their day.</p>
+
+<p>Physicians don't buy devices from slide decks. They buy after they've held the device, asked questions, and seen a peer use it. A lunch and learn creates that environment in a controlled setting with 15-40 providers who match your target specialty.</p>
+
+<p>The problem is that most device companies run lunch and learns the same way they did in 2015. A rep picks a restaurant, sends some emails, and hopes people show up. The conversion from invitation to registration to attendance to pipeline is low because every step leaks.</p>
+
+<p>This playbook covers the entire process: picking the right territory, sizing your invite list, choosing a venue, building specialty-specific landing pages, filling the room, and converting attendees into pipeline. We'll reference real numbers from events we've supported, including a BTL Michigan campaign that generated 17,000+ personalized registration links across 8 specialties in 5 days.</p>
+
+<h2>Step 1: Territory Selection</h2>
+
+<p>Not every metro deserves a lunch and learn. You're investing $5,000-15,000 per event (venue, catering, speaker, registration infrastructure), and your field team's time is your scarcest resource. Pick territories where the math works.</p>
+
+<h3>Provider Density by Specialty</h3>
+
+<p>Start with raw provider counts. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener">Bureau of Labor Statistics healthcare occupation data</a> gives you national and state-level counts by specialty. But state-level data isn't granular enough. You need metro-level counts for the specific specialties your device serves.</p>
+
+<p>A territory with 200 target-specialty providers within a 30-minute drive radius is a strong candidate. Under 100, you're going to struggle to fill a room of 25+. Over 500, you might want to run multiple events in different parts of the metro rather than one large one.</p>
+
+<p>Pull NPI data filtered by taxonomy code and geography. Count active providers within your target radius. If you're targeting multiple specialties (common for devices with cross-specialty applications), count each specialty separately. A territory might have 300 dermatologists but only 40 pain management specialists. That changes your event format.</p>
+
+<h3>Competitive Landscape</h3>
+
+<p>How saturated is the territory? If three competitors ran lunch and learns in Dallas last quarter, provider fatigue is real. You'll need a stronger draw (better speaker, more relevant clinical content, a newer device) or you should pick a less contested metro.</p>
+
+<p>Your reps usually know this intuitively, but gut feel isn't a territory strategy. Track where competitors are active and identify metros where your device hasn't been demonstrated recently.</p>
+
+<h3>Rep Presence and Relationships</h3>
+
+<p>A lunch and learn works best when the hosting rep already has relationships in the territory. The invitation carries more weight coming from someone the physician's office has interacted with. If you're launching into a brand-new territory with zero existing relationships, the lunch and learn shouldn't be your first move. Start with 1:1 office visits, then invite those contacts to a group event once you have a base of warm relationships.</p>
+
+<h2>Step 2: Size Your Invite List</h2>
+
+<p>Here's where most device teams get the math wrong. They want 30 physicians in the room and send 30 invitations. That produces 5-8 registrations and 3-5 attendees.</p>
+
+<p>The conversion funnel for physician events typically looks like this:</p>
+
+<ul>
+<li><strong>Invitations sent:</strong> 100%</li>
+<li><strong>Email opened:</strong> 25-35% (physician email open rates are lower than most B2B benchmarks)</li>
+<li><strong>Registration page visited:</strong> 8-15% of opens</li>
+<li><strong>Registered:</strong> 30-50% of page visitors (highly dependent on registration friction)</li>
+<li><strong>Attended:</strong> 70-85% of registrations (with proper reminder sequences)</li>
+</ul>
+
+<p>Working backward from 30 attendees: you need 35-43 registrations, which means 70-143 page visitors, which means 200-570 email opens, which means 570-2,280 invitations sent. The range is wide because each conversion rate varies by specialty, geography, and how well-targeted your list is.</p>
+
+<p>For a realistic planning target: <strong>send 8-10x your desired attendance count</strong>. Want 30 in the room? Build an invite list of 240-300 providers. That gives you enough volume to absorb the natural funnel drop-off while keeping the list targeted enough that recipients are genuinely relevant.</p>
+
+<p>If you can't find 240 target-specialty providers within a reasonable drive radius of your venue, either lower your attendance target or broaden to adjacent specialties. For help building targeted invite lists by specialty and geography, see our <a href="/services/custom-list-building/">custom list building service</a>.</p>
+
+<h2>Step 3: Choose the Right Venue</h2>
+
+<p>The venue decision affects attendance more than most teams realize. Three factors matter:</p>
+
+<h3>Location Relative to Target Practices</h3>
+
+<p>Physicians won't drive 45 minutes for a lunch and learn. The venue needs to be within 15-20 minutes of the highest concentration of target practices. Map your invite list, find the geographic center, and look for venues in that area. A restaurant near a medical complex or hospital campus is ideal because providers are already nearby.</p>
+
+<h3>Parking and Access</h3>
+
+<p>If the physician has to circle a parking garage for 10 minutes or walk three blocks from street parking, you'll get cancellations the morning of. Dedicated parking, ideally a lot rather than a structure, with clear signage. Valet is a nice touch for higher-end KOL dinners but unnecessary for a lunch and learn.</p>
+
+<h3>Room Setup for Demos</h3>
+
+<p>You need a private or semi-private room where you can set up device stations. Open restaurant floor plans don't work. The room should accommodate your expected attendance plus demo equipment without feeling cramped. Ask the venue about AV capabilities if your speaker uses slides, power outlet access for devices, and whether they allow you to rearrange furniture.</p>
+
+<p>For mid-size events (30-60 attendees), hotel meeting rooms and dedicated event spaces at upscale restaurants work well. For smaller events (15-25), a private dining room at a quality restaurant keeps the atmosphere comfortable and the catering simple.</p>
+
+<h2>Step 4: Build Specialty-Specific Landing Pages</h2>
+
+<p>This is the step that separates high-converting events from average ones. If your device serves multiple specialties, every specialty should have its own registration page with messaging tailored to their clinical context.</p>
+
+<p>A chiropractor and a dermatologist attend the same lunch and learn for completely different reasons. The chiropractor cares about pelvic floor rehabilitation applications. The dermatologist cares about skin rejuvenation. If both land on a generic page that lists every possible application, neither sees the specific value proposition that's relevant to their practice.</p>
+
+<h3>What Goes on Each Specialty Page</h3>
+
+<ul>
+<li><strong>Specialty-specific headline:</strong> "New [Procedure] Technology for [Specialty] Practices" — not a generic "Join Our Lunch and Learn"</li>
+<li><strong>Clinical applications relevant to that specialty:</strong> 2-3 specific use cases the provider will see demonstrated</li>
+<li><strong>Speaker credentials relevant to that specialty:</strong> If your speaker is a board-certified dermatologist, lead with that on the derm page</li>
+<li><strong>Event details:</strong> Date, time, venue, parking, what's included (lunch, CME credits if applicable)</li>
+<li><strong>Pre-filled registration form:</strong> Name, email, and practice pre-populated from your provider database so the physician confirms with one click</li>
+</ul>
+
+<p>In the BTL Michigan campaign, we built separate landing pages for 8 specialties. Each page spoke directly to that specialty's clinical needs. The result: 17,000+ personalized registration links generated and deployed across all 8 specialties in 5 days. That's the scale you can achieve when your registration infrastructure is built for reuse rather than rebuilt from scratch each time.</p>
+
+<p>For more on how specialty-targeted registration pages improve conversion rates, see our <a href="/blog/how-to-get-doctors-to-attend-events/">guide on getting doctors to attend events</a>.</p>
+
+<h2>Step 5: The Invitation Sequence</h2>
+
+<p>A single email invitation produces a 2-4% registration rate. A structured sequence produces 8-15%. Here's the cadence that works:</p>
+
+<h3>3-4 Weeks Before the Event</h3>
+
+<p><strong>Email 1: The announcement.</strong> Specialty-specific subject line, 3-4 sentences about the clinical content, speaker name, date and location, and a link to the specialty landing page. Keep it short. The goal is a click, not a comprehensive event description.</p>
+
+<h3>2 Weeks Before</h3>
+
+<p><strong>Email 2: The clinical angle.</strong> Lead with a specific clinical outcome or case study. "Dr. [Name] treated 47 patients with [procedure] in Q4 and saw [result]." Link to the registration page. This email works because it's educational, not promotional.</p>
+
+<h3>1 Week Before</h3>
+
+<p><strong>Email 3: Social proof + urgency.</strong> "[X] of your colleagues have registered. [Y] seats remaining." If you have testimonials from past events, use them here. The deadline creates action.</p>
+
+<h3>2-3 Days Before</h3>
+
+<p><strong>Email 4: Final reminder.</strong> Only to non-registrants. Short, direct: "Last chance to join [Speaker Name] this [Day]. [Link]." Also send a confirmation reminder to registrants with venue details and parking instructions.</p>
+
+<p>Every email in this sequence should use a personalized link that pre-fills the registration form. When the physician finally decides to register (often on that third or fourth touch), the process should be one click. No form filling. No friction at the moment of decision.</p>
+
+<h2>Step 6: Day-of Execution</h2>
+
+<p>The event itself matters, obviously. But field reps already know how to run a lunch and learn. The pieces that get missed are usually logistical:</p>
+
+<ul>
+<li><strong>Check-in process:</strong> Have a tablet at the door with the attendee list pre-loaded. When a physician arrives, check them in with a tap. This gives you accurate attendance data and eliminates the paper sign-in sheet that never gets transcribed.</li>
+<li><strong>Name badges:</strong> Pre-printed with name, practice, and specialty. This helps the speaker address providers by name and helps attendees network with each other.</li>
+<li><strong>Device stations:</strong> Set up before attendees arrive, tested and ready. Nothing kills momentum like troubleshooting equipment while 30 physicians eat lunch.</li>
+<li><strong>Content timing:</strong> 15 minutes of eating and settling in, 20-25 minutes of presentation, 15-20 minutes of hands-on demo time. Don't pack 45 minutes of slides into a lunch hour. Physicians came to see the device, not watch a PowerPoint.</li>
+</ul>
+
+<h2>Step 7: Post-Event Follow-Up</h2>
+
+<p>The lunch and learn generates interest. The follow-up converts interest into pipeline. Most device teams wait too long and follow up too generically.</p>
+
+<h3>Within 24 Hours</h3>
+
+<p>Send a personalized email to every attendee. Thank them by name, reference the specific procedures they saw demonstrated (you know their specialty from the registration data), and include a clear next step: "Would you like to schedule a hands-on trial in your office next week?"</p>
+
+<h3>Within 48 Hours</h3>
+
+<p>The rep calls every attendee who expressed interest during the event. Not a generic "thanks for coming" call. A specific conversation: "You mentioned you're seeing 10-15 [condition] patients per week. Based on what you saw at the event, here's how [device] fits into that workflow."</p>
+
+<h3>Within 1 Week</h3>
+
+<p>Send clinical resources relevant to each specialty. The derm attendees get derm case studies. The chiro attendees get chiro case studies. This is where your specialty segmentation from the registration data pays off — you already know each attendee's specialty and can automate the right content to the right provider.</p>
+
+<h3>Non-Attendees</h3>
+
+<p>Don't forget the providers who registered but didn't attend, or who opened the invitation but never registered. They showed intent. Send a follow-up offering a 1:1 office visit or an invitation to the next event in the territory. The registration data tells you exactly who these people are and what specialty they practice.</p>
+
+<h2>Compliance Considerations</h2>
+
+<p>Medical device lunch and learns operate under industry codes that govern meals, gifts, and interactions with healthcare professionals. The <a href="https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/" target="_blank" rel="noopener">AdvaMed Code of Ethics</a> sets guidelines for device company interactions with HCPs, including meal limits, venue appropriateness, and educational content requirements.</p>
+
+<p>Key compliance points for lunch and learns:</p>
+
+<ul>
+<li><strong>Meals must be modest and conducive to education.</strong> A $25-35 per person lunch at a restaurant near the practice is appropriate. A $200 dinner at a five-star restaurant is not, unless there's a legitimate educational purpose and it meets your company's compliance thresholds.</li>
+<li><strong>Venue should be conducive to informational exchange.</strong> A conference room or private dining room works. Entertainment venues, sporting events, and resorts don't qualify.</li>
+<li><strong>Attendees should have a legitimate professional interest.</strong> Your invite list should be providers who would reasonably use the device, not a general "anyone who wants free lunch" list. Specialty targeting ensures compliance here.</li>
+<li><strong>Track everything.</strong> Meals provided, attendee names, business purposes. Your check-in system should capture this automatically. If it doesn't, you're creating compliance risk and extra work for your team.</li>
+</ul>
+
+<h2>Scaling Across Territories</h2>
+
+<p>The real payoff from this playbook comes when you run it across multiple cities. The first event requires the most setup: building specialty landing pages, creating the invitation sequence, establishing the check-in and follow-up processes. After that, each subsequent city reuses the same infrastructure with updated provider lists and venue details.</p>
+
+<p>A device company running 4 events per quarter across different territories can reuse the same specialty pages, email templates, and follow-up sequences. The variable cost drops with each additional city because you're only updating the provider list, venue, and date. The registration infrastructure, content, and processes carry over.</p>
+
+<p>For help building the registration infrastructure and provider lists that make this scalable, explore our <a href="/services/event-marketing/">event marketing service</a>. For territory-level event planning across multiple metros, see our guide on <a href="/blog/medical-device-territory-event-planning/">territory event planning for medical device sales teams</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "How many invitations should I send for a medical device lunch and learn?",
+                "answer": "Plan for 8-10x your desired attendance count. If you want 30 physicians in the room, build an invite list of 240-300 target-specialty providers. The typical conversion funnel runs: 25-35% email open rate, 8-15% click-through to registration page, 30-50% registration rate from page visitors, and 70-85% attendance from registrations. Each step compounds, so you need volume at the top to get the numbers you want in the room.",
+            },
+            {
+                "question": "What are the compliance rules for medical device lunch and learns?",
+                "answer": "The AdvaMed Code of Ethics governs device company interactions with healthcare professionals. Meals must be modest ($25-35 per person is typical) and conducive to education. Venues should support informational exchange, not entertainment. Attendees should have a legitimate professional interest in the device. Track all meals provided, attendee names, and business purposes. Your check-in and registration system should capture compliance data automatically.",
+            },
+            {
+                "question": "Should I build separate landing pages for each specialty at a multi-specialty event?",
+                "answer": "Yes. Specialty-specific landing pages consistently outperform generic event pages because each provider sees clinical applications relevant to their practice. A chiropractor and a dermatologist attend the same lunch and learn for different reasons. Separate pages let you speak to each specialty's use cases, reference relevant clinical data, and pre-fill registration from specialty-filtered provider lists. In a BTL Michigan campaign, we deployed 17,000+ personalized links across 8 specialty-specific pages in 5 days.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
+            {"text": "Territory Event Planning for Device Teams", "url": "/blog/medical-device-territory-event-planning/"},
+            {"text": "How to Get Doctors to Attend Events", "url": "/blog/how-to-get-doctors-to-attend-events/"},
+        ],
+        "outbound_links": [
+            ("https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/", "AdvaMed Code of Ethics"),
+            ("https://www.bls.gov/ooh/healthcare/", "BLS Healthcare Occupation Data"),
+        ],
+        "tags": ["event marketing", "medical device", "lunch and learn", "field marketing"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 26: Territory Event Planning for Medical Device Sales Teams
+    # -------------------------------------------------------------------------
+    {
+        "slug": "medical-device-territory-event-planning",
+        "title": "Territory Event Planning for Medical Device Sales Teams",
+        "meta_description": "Build a territory event calendar for medical device sales. Target the right metros, size invite lists by specialty, and reuse event sites across cities.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Running one event is logistics. Running a territory-wide event calendar is strategy. Here's how to plan events across metros, specialties, and quarters without burning out your field team.",
+        "content_html": """
+<h2>The Territory Event Problem</h2>
+
+<p>Most medical device field teams plan events one at a time. A rep in Dallas wants to run a lunch and learn. They pick a restaurant, pull some contacts, send invitations, and execute. Three weeks later, a rep in Houston does the same thing from scratch. Different venue research, different registration page, different invitation copy, different follow-up process.</p>
+
+<p>Each event is a standalone project. The work doesn't compound. The learnings don't transfer. And the cost per event stays flat because nothing is reused.</p>
+
+<p>Territory event planning is a different approach. You plan the full calendar upfront: which metros, which specialties, which quarters. You build the registration infrastructure once and deploy it across every city. The first event costs the most. Each subsequent event costs less and converts better because you're iterating on what works.</p>
+
+<h2>Picking Your Metros</h2>
+
+<p>You can't run events everywhere. A national device company might have 50+ viable metros, but budget and field team capacity limit you to 8-12 per quarter. The question is which 8-12.</p>
+
+<h3>Provider Density Scoring</h3>
+
+<p>Start with provider counts by metro and specialty. The <a href="https://www.bls.gov/oes/current/oes_nat.htm" target="_blank" rel="noopener">BLS Occupational Employment and Wage Statistics</a> gives you healthcare employment by metropolitan statistical area. Cross-reference with NPI registry data filtered by your target taxonomy codes to get provider-level counts.</p>
+
+<p>Build a simple scoring model:</p>
+
+<ul>
+<li><strong>Target-specialty providers within 30 minutes of metro center:</strong> This is your total addressable audience. Metros with fewer than 150 target providers are hard to fill for a 30-person event (you need 8-10x your attendance target in invitations).</li>
+<li><strong>Provider density per square mile:</strong> A metro with 300 providers spread across a 100-mile radius is worse than one with 200 providers in a 20-mile radius. Density means shorter drive times and higher attendance rates.</li>
+<li><strong>Multi-specialty potential:</strong> If your device serves 4+ specialties, metros where multiple target specialties are well-represented let you run one multi-specialty event instead of four single-specialty ones.</li>
+</ul>
+
+<h3>Market Opportunity</h3>
+
+<p>Provider counts tell you who's there. Market opportunity tells you who's buying. Layer in:</p>
+
+<ul>
+<li><strong>Existing customer density:</strong> Metros where you already have customers are easier to event-market because you have case studies, references, and reps with relationships.</li>
+<li><strong>Competitive presence:</strong> Where are your competitors running events? If they're saturating a metro, you either need a stronger draw or should pick a less contested market.</li>
+<li><strong>Rep capacity:</strong> Does your field team cover this metro? An event without a local rep for follow-up is a wasted event. If you're entering a new territory, hire or assign the rep before you plan the event.</li>
+</ul>
+
+<h3>The <a href="https://www.census.gov/programs-surveys/metro-micro.html" target="_blank" rel="noopener">Census Bureau metro area definitions</a> are useful here for standardizing how you define "Dallas" vs. "Dallas-Fort Worth-Arlington" vs. just "Fort Worth."</h3>
+
+<h2>Building a Quarterly Event Calendar</h2>
+
+<p>Once you've ranked your metros, map them to a quarterly calendar. Here's a sample structure for a device company targeting 4 specialties across 8 metros:</p>
+
+<h3>Q1 Example Calendar</h3>
+
+<ul>
+<li><strong>January Week 3:</strong> Dallas, TX (Multi-specialty: Derm + Med Spa) — 250 invitations, target 30 attendees</li>
+<li><strong>February Week 1:</strong> Phoenix, AZ (Orthopedics focus) — 200 invitations, target 25 attendees</li>
+<li><strong>February Week 3:</strong> Atlanta, GA (Multi-specialty: Chiro + Pain Mgmt) — 300 invitations, target 35 attendees</li>
+<li><strong>March Week 1:</strong> Chicago, IL (Dermatology focus) — 275 invitations, target 30 attendees</li>
+<li><strong>March Week 3:</strong> Miami, FL (Multi-specialty: Derm + Aesthetics) — 225 invitations, target 25 attendees</li>
+</ul>
+
+<p>Notice the spacing: 2-3 weeks between events. This gives your team time to execute the invitation sequence (which starts 3-4 weeks before each event), handle registrations, and run post-event follow-up from the previous city before launching the next one.</p>
+
+<h3>Seasonal Considerations</h3>
+
+<p>Physician event attendance varies by season. Avoid scheduling events during:</p>
+
+<ul>
+<li><strong>Late December through early January:</strong> Holiday schedules, PTO, reduced patient volumes</li>
+<li><strong>Late June through August:</strong> Vacation season, especially in specialties with discretionary procedures (derm, plastics, aesthetics)</li>
+<li><strong>Major specialty conference weeks:</strong> If your target dermatologists attend the AAD Annual Meeting in March, don't compete with it. Schedule before or after.</li>
+</ul>
+
+<p>The sweet spots are mid-January through May and September through mid-December. Twelve months, roughly 8 viable event months after you remove holidays and summer. With 2-3 weeks between events, that's 12-16 events per year for a single field marketing coordinator.</p>
+
+<h2>Sizing Invite Lists by Metro and Specialty</h2>
+
+<p>Each metro gets a custom invite list based on its provider composition. This isn't a one-size-fits-all national list sliced by zip code. It's a purpose-built list for each event.</p>
+
+<h3>The 8-10x Rule</h3>
+
+<p>As covered in our <a href="/blog/medical-device-lunch-and-learn-playbook/">lunch and learn playbook</a>, you need 8-10x your desired attendance in invitations. For a 30-person event, that's 240-300 invitations. But the ratio changes based on how warm the list is:</p>
+
+<ul>
+<li><strong>Cold list (no prior relationship):</strong> 12-15x attendance target. You'll see lower open rates and lower registration rates.</li>
+<li><strong>Warm list (rep has visited, prior event attendee, existing customer):</strong> 5-7x attendance target. Prior touchpoints mean higher engagement at every funnel stage.</li>
+<li><strong>Blended list (mix of cold and warm):</strong> 8-10x, which is why that's the default planning number.</li>
+</ul>
+
+<h3>Specialty Segmentation</h3>
+
+<p>For multi-specialty events, size each specialty segment separately. If you want 15 dermatologists and 15 chiropractors at a combined event, you need 120-150 derm invitations AND 120-150 chiro invitations. Don't pool them into one 240-count list and hope the specialty mix works out.</p>
+
+<p>Segment the list, build specialty-specific landing pages, and send specialty-specific invitations. The dermatologist gets a derm-focused email linking to the derm landing page. The chiropractor gets a chiro-focused email linking to the chiro landing page. Same event, different entry points.</p>
+
+<p>For building these specialty-segmented lists with verified contact data, see our <a href="/services/custom-list-building/">custom list building service</a>.</p>
+
+<h2>Reusing Event Sites Across Cities</h2>
+
+<p>This is where territory planning saves real money. If you build a new registration site for every event, you're paying $3,500-5,000 per city for custom builds, or $10,000-15,000+ per city through an agency. Multiply that by 12 events per year and the registration infrastructure alone costs $42,000-180,000.</p>
+
+<p>The alternative: build a reusable event template system. The first build creates the specialty pages, registration flow, confirmation emails, and reminder sequences. Each subsequent city gets a clone with updated details: new venue, new date, new provider list for pre-fill. The incremental cost per city drops to $1,500-2,500.</p>
+
+<h3>What Gets Reused</h3>
+
+<ul>
+<li><strong>Specialty landing page templates:</strong> The clinical messaging for dermatology doesn't change between Dallas and Chicago. The device applications, clinical data, and specialty-specific value proposition stay the same. You update the event date, venue, and speaker.</li>
+<li><strong>Registration flow:</strong> The pre-fill system, form fields, confirmation page, and calendar integration work identically across cities. No rebuild needed.</li>
+<li><strong>Email sequences:</strong> The 4-email invitation cadence (announcement, clinical angle, social proof, final reminder) has the same structure. You update the merge fields for city, venue, and date.</li>
+<li><strong>Follow-up templates:</strong> Post-event emails, attendee surveys, and rep notification workflows carry over.</li>
+</ul>
+
+<h3>What Changes Per City</h3>
+
+<ul>
+<li><strong>Provider invite list:</strong> New metro, new providers, new pre-fill links. This is the main variable cost.</li>
+<li><strong>Venue details:</strong> Address, parking, room layout, catering menu.</li>
+<li><strong>Date and time:</strong> Updated on landing pages, emails, and calendar files.</li>
+<li><strong>Speaker (sometimes):</strong> If you're using a national KOL, they travel. If you're using regional speakers, you update speaker info per city.</li>
+</ul>
+
+<h3>The Cost Comparison</h3>
+
+<p>Here's the math for 8 events across 4 quarters:</p>
+
+<ul>
+<li><strong>Agency approach (new build each time):</strong> 8 events x $15,000-25,000 = $120,000-200,000 in registration/marketing costs alone</li>
+<li><strong>Reusable template approach:</strong> $5,000 first build + 7 x $2,000 per city = $19,000</li>
+</ul>
+
+<p>The difference is $101,000-181,000 per year. That's not a rounding error. It's the difference between running 8 events and running 20. For more on event cost breakdowns, see our <a href="/blog/healthcare-event-marketing-roi/">healthcare event marketing ROI guide</a>.</p>
+
+<h2>Tracking Results Across Territories</h2>
+
+<p>When you're running events across multiple metros, you need consistent metrics to compare performance and identify what's working.</p>
+
+<h3>Metrics That Matter</h3>
+
+<ul>
+<li><strong>Invitation-to-registration rate:</strong> Track by metro AND by specialty. If your derm page converts at 12% in Dallas but 4% in Chicago, dig into why. Is it the list quality? The competitive landscape? The venue choice?</li>
+<li><strong>Registration-to-attendance rate:</strong> This tells you about your reminder sequence and venue convenience. Rates below 70% suggest logistics friction (bad parking, inconvenient location, insufficient reminders).</li>
+<li><strong>Attendee-to-pipeline rate:</strong> What percentage of attendees enter your sales pipeline within 30 days? This is the metric that connects events to revenue.</li>
+<li><strong>Cost per qualified lead:</strong> Total event cost divided by qualified leads generated. Compare across metros to find your most efficient territories.</li>
+<li><strong>Reuse savings:</strong> Track what you would have spent rebuilding from scratch vs. what you actually spent. This justifies the upfront investment in reusable infrastructure.</li>
+</ul>
+
+<h3>Building a Territory Scorecard</h3>
+
+<p>After 2-3 quarters of events, you'll have enough data to rank territories by ROI. Some metros will consistently outperform. Those become your "always-on" event cities where you run 3-4 events per year. Others will underperform, and you replace them with new metros from your ranked list.</p>
+
+<p>This iterative approach turns event marketing from a series of isolated bets into a compounding strategy. Each quarter's data improves next quarter's targeting.</p>
+
+<h2>Coordinating with Your Field Team</h2>
+
+<p>Territory event planning only works if the field team is aligned. Common coordination failures:</p>
+
+<ul>
+<li><strong>Reps not following up within 48 hours.</strong> Post-event follow-up is where pipeline happens. If the rep treats the event as the finish line instead of the starting gun, ROI suffers. Build follow-up into the event brief as a mandatory deliverable, not an optional task.</li>
+<li><strong>Reps choosing venues without data.</strong> Venue selection should be driven by provider density mapping, not "I know a great steakhouse." The steakhouse might be 30 minutes from your target practices.</li>
+<li><strong>No centralized calendar.</strong> If each rep plans independently, you get scheduling conflicts, overlapping territories, and inconsistent messaging. A centralized territory calendar prevents this.</li>
+</ul>
+
+<p>The field marketing coordinator should own the calendar, the registration infrastructure, and the invitation lists. The rep owns venue selection (with data support), day-of execution, and post-event follow-up. Clear ownership prevents gaps.</p>
+
+<p>For the complete event execution process from venue to follow-up, see our <a href="/blog/medical-device-lunch-and-learn-playbook/">lunch and learn playbook</a>. For the registration infrastructure that makes multi-city events affordable, explore our <a href="/services/event-marketing/">event marketing service</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "How many events per quarter should a medical device field team run?",
+                "answer": "Most field marketing coordinators can manage 3-5 events per quarter with 2-3 weeks between each event. That spacing allows for the 3-4 week invitation sequence, event execution, and post-event follow-up before launching the next city. Over 12 months with viable event windows (excluding holidays and summer), that's 12-16 events per year. More than that requires additional coordination resources or a simpler event format.",
+            },
+            {
+                "question": "How do you decide which metros to run medical device events in?",
+                "answer": "Rank metros by three factors: target-specialty provider density (at least 150 providers within a 30-minute drive for a 30-person event), market opportunity (existing customer base, competitive saturation, sales pipeline potential), and rep coverage (a local rep must be available for post-event follow-up). Use BLS healthcare employment data and NPI registry counts by taxonomy code to quantify provider density at the metro level.",
+            },
+            {
+                "question": "How much does it cost to run medical device events across multiple cities?",
+                "answer": "With an agency building new registration sites each time, 8 events per year costs $120,000-200,000 in registration and marketing costs alone. With a reusable template approach, the first city costs about $5,000 to build and each subsequent city costs $1,500-2,500 for updated provider lists and venue details. That brings 8 events down to roughly $19,000 — a savings of $101,000-181,000 per year. The venue, catering, and speaker costs are separate and typically run $2,500-5,000 per event.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Custom List Building", "url": "/services/custom-list-building/"},
+            {"text": "Medical Device Lunch and Learn Playbook", "url": "/blog/medical-device-lunch-and-learn-playbook/"},
+            {"text": "Healthcare Event Marketing ROI", "url": "/blog/healthcare-event-marketing-roi/"},
+        ],
+        "outbound_links": [
+            ("https://www.bls.gov/oes/current/oes_nat.htm", "BLS Occupational Employment and Wage Statistics"),
+            ("https://www.census.gov/programs-surveys/metro-micro.html", "Census Bureau Metropolitan Statistical Areas"),
+        ],
+        "tags": ["event marketing", "medical device", "territory planning", "field marketing"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 27: KOL Dinner Planning for Healthcare
+    # -------------------------------------------------------------------------
+    {
+        "slug": "kol-dinner-planning-healthcare",
+        "title": "KOL Dinner Planning for Pharma and Medical Device Teams",
+        "meta_description": "Plan KOL dinners that fill every seat. Data-driven targeting, personalized invitations, compliant venue selection, and post-event follow-up for pharma and device teams.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "KOL dinners produce the highest ROI per attendee of any physician event format. They're also the hardest to fill. Here's how to use data to solve the attendance problem.",
+        "content_html": """
+<h2>The KOL Dinner Attendance Problem</h2>
+
+<p>A key opinion leader dinner is a small, intimate event: 12-25 physicians at a quality restaurant, hearing a respected peer present clinical data and share their experience with a treatment or device. The format works because physicians trust peers more than sales reps, and the dinner setting creates space for candid clinical discussion.</p>
+
+<p>The ROI math is compelling. A 20-person KOL dinner might cost $8,000-12,000 all-in (venue, dinner, speaker honorarium, travel). If 3-4 attendees become prescribers or device adopters at an average deal value of $25,000+, one dinner generates $75,000-100,000+ in pipeline. That's a 6-10x return.</p>
+
+<p>But the format only works if you fill the seats. And KOL dinners are harder to fill than lunch and learns for three reasons:</p>
+
+<ul>
+<li><strong>Time commitment is higher.</strong> A lunch and learn fits into the workday. A dinner requires an evening away from family. Physicians are protective of their evenings.</li>
+<li><strong>Seat count is lower.</strong> You need 15-20 attendees, not 30-50. That sounds easier, but the margin for error is smaller. Three cancellations at a 50-person lunch and learn barely registers. Three cancellations at a 15-person dinner means the room feels empty.</li>
+<li><strong>The audience must be curated.</strong> KOL dinners work because the attendees are peers — similar specialty, similar case volume, similar practice profile. You can't fill empty seats with anyone who's available. The wrong attendee changes the dynamic of the entire room.</li>
+</ul>
+
+<h2>Data-Driven Targeting for KOL Dinners</h2>
+
+<p>The attendance problem is really a targeting problem. If you invite the right 60 providers, you'll fill 20 seats. If you invite 60 semi-relevant providers, you'll get 8 registrations and 5 attendees.</p>
+
+<h3>Specialty Match</h3>
+
+<p>Start with the speaker's specialty. If your KOL is a board-certified dermatologist presenting clinical data on a skin rejuvenation device, your invite list should be dermatologists and aesthetic medicine practitioners. Adjacent specialties (plastic surgeons, med spa owners) might be appropriate depending on the clinical content, but the core audience shares the speaker's specialty and credentialing.</p>
+
+<p>Filter your provider database by taxonomy code and sub-specialty. NPI taxonomy gets you to the specialty level. Practice website analysis, procedure data, and credentialing data help you identify providers who actively perform the relevant procedures. A dermatologist who only does Mohs surgery isn't the right audience for an aesthetics-focused dinner.</p>
+
+<h3>Geographic Radius</h3>
+
+<p>KOL dinners have a tighter geographic radius than lunch and learns. Providers will drive 15-20 minutes for lunch. For a dinner that starts at 6:30 PM and runs until 9:00 PM, with the commute home after, the practical radius shrinks to 20-25 minutes from practice or home. In dense metros, that's manageable. In sprawling metros like Dallas-Fort Worth or Los Angeles, you might need to position the dinner strategically between two high-density clusters.</p>
+
+<h3>Practice Profile</h3>
+
+<p>The best KOL dinners have attendees with similar practice profiles. Solo practitioners and small group owners think about purchasing decisions differently than employed physicians at large health systems. Mixing the two creates awkward dynamics because their decision-making authority and budget processes are fundamentally different.</p>
+
+<p>Where possible, target a cohort: independent practice owners with 2-5 providers, or medical directors at multi-location groups, or employed specialists at community hospitals. The more similar the attendees' practice contexts, the more relevant the peer discussion.</p>
+
+<h2>Personalized Invitations</h2>
+
+<p>Generic invitations don't work for KOL dinners. A physician receiving an invitation that says "You're invited to a dinner with Dr. Smith" treats it like marketing. A physician receiving an invitation that says "Dr. Mitchell, Dr. Smith will be presenting new clinical data on [procedure] outcomes in practices like yours — we'd like to include you in a small group discussion" treats it like a personal invitation.</p>
+
+<h3>What Personalization Requires</h3>
+
+<ul>
+<li><strong>Provider name and credentials:</strong> Address them correctly. Dr., not Mr. or Ms. Include their specialty if it's referenced in the invitation copy.</li>
+<li><strong>Practice name:</strong> Mentioning their practice shows you know who they are, not just that they're on a list.</li>
+<li><strong>Clinical relevance:</strong> Why this dinner is relevant to their specific practice. If they're a high-volume cosmetic derm practice, the invitation should reference cosmetic applications. If they're a general derm practice exploring aesthetics, the angle is different.</li>
+<li><strong>Pre-filled registration link:</strong> When the physician decides to RSVP, one click. Name, email, practice, specialty all pre-populated. No form to fill out. The invitation itself is the registration mechanism.</li>
+</ul>
+
+<p>This level of personalization requires accurate, verified provider data — not a stale list purchased six months ago. For building the curated invite lists that KOL dinners require, see our <a href="/services/provider-contact-data/">provider contact data service</a>.</p>
+
+<h2>Venue Selection for KOL Dinners</h2>
+
+<p>The venue matters more for a KOL dinner than for any other physician event format. The setting communicates respect for the physicians' time and creates the atmosphere for peer discussion.</p>
+
+<h3>What Works</h3>
+
+<ul>
+<li><strong>Private dining rooms at quality restaurants.</strong> Not the main dining floor. A private room with a door that closes, seating for 20-25, and space for a small presentation screen. The restaurant handles service, and the private setting allows for clinical discussion without background noise.</li>
+<li><strong>Upscale but not extravagant.</strong> A nice restaurant where a $60-80 per person dinner is appropriate. Not a casual chain. Not a three-Michelin-star destination. Somewhere that communicates "we value your time" without triggering compliance concerns about excessive hospitality.</li>
+<li><strong>AV-ready or AV-friendly.</strong> The speaker needs a screen for slides and clinical images. Some private dining rooms have built-in screens. Others can accommodate a portable setup. Check this before booking — wrestling with a projector while guests arrive undermines the professional atmosphere.</li>
+</ul>
+
+<h3>Compliance Guardrails</h3>
+
+<p>The <a href="https://www.phrma.org/en/Codes-and-guidelines/Code-on-Interactions-with-Health-Care-Professionals" target="_blank" rel="noopener">PhRMA Code on Interactions with Healthcare Professionals</a> and the <a href="https://oig.hhs.gov/compliance/compliance-guidance/" target="_blank" rel="noopener">OIG Compliance Guidance</a> set boundaries on what's permissible for meals with healthcare professionals. Key points for KOL dinners:</p>
+
+<ul>
+<li><strong>The meal must be modest and subordinate to the educational purpose.</strong> A dinner is appropriate when it accompanies a substantive clinical presentation. A dinner without educational content is a gift, not a program.</li>
+<li><strong>No entertainment.</strong> The venue should be a restaurant, not a sports bar with games on during dinner, not a venue with live entertainment, and not any location that could be construed as recreational.</li>
+<li><strong>Guest limitations.</strong> Spouses and other guests who aren't healthcare professionals generally shouldn't attend. The program is for HCPs with legitimate professional interest.</li>
+<li><strong>Documentation.</strong> Record attendee names, business purpose, meal cost, and program content. Your registration and check-in system should automate this.</li>
+</ul>
+
+<h2>The Invitation Sequence for KOL Dinners</h2>
+
+<p>KOL dinners require a different cadence than lunch and learns. The audience is smaller and more selective, so each touchpoint carries more weight.</p>
+
+<h3>6 Weeks Before: Personal Outreach</h3>
+
+<p>Start with the rep's top 10-15 targets. These are physicians the rep already knows and wants in the room. A personal email from the rep (not a mass send) or a phone call: "Dr. [Name], we're hosting a dinner with [KOL] on [date] to discuss [topic]. I'd like to include you. Can I send you the details?"</p>
+
+<p>This personal layer isn't scalable, and it doesn't need to be. You're filling 5-8 of your 20 seats with high-value targets the rep handpicks. The remaining seats come from the broader invite list.</p>
+
+<h3>4 Weeks Before: Targeted Email</h3>
+
+<p>Send a well-crafted invitation email to the broader list (40-60 providers). Personalized with name, practice, and clinical relevance. Pre-filled RSVP link. Emphasize the speaker's credentials and the intimate format: "Limited to 20 physicians."</p>
+
+<h3>2 Weeks Before: Follow-Up</h3>
+
+<p>To non-responders only. Include an updated seat count: "12 seats filled. 8 remaining." Social proof and scarcity are real motivators for an intimate dinner format.</p>
+
+<h3>1 Week Before: Final Confirmation</h3>
+
+<p>Email registrants to confirm attendance. Include venue details, parking, dress code. Ask for dietary restrictions (this shows care and reduces last-minute complications). For non-registrants, send one final "last seats" email if you have capacity remaining.</p>
+
+<h2>Post-Dinner Follow-Up</h2>
+
+<p>The dinner conversation opens doors that don't stay open long. Follow up fast.</p>
+
+<h3>Within 24 Hours</h3>
+
+<p>Email every attendee a brief thank-you with the speaker's presentation slides or a summary of key clinical data points discussed. This gives the physician something to reference when they're back in the office the next morning thinking about whether to adopt the treatment or device.</p>
+
+<h3>Within 48 Hours</h3>
+
+<p>The rep calls each attendee individually. The dinner conversation makes this call warm instead of cold. The rep references something specific from the dinner: "You mentioned you're seeing a lot of [condition] patients. Based on what Dr. [KOL] presented, here's how other practices in your situation are approaching it." Offer a 1:1 follow-up: office visit, trial, peer-to-peer call with the KOL.</p>
+
+<h3>Within 1 Week</h3>
+
+<p>Share relevant case studies or clinical papers that support the dinner discussion. Personalize by specialty and practice profile. The derm attendees get derm-specific follow-up. The attendee who asked about insurance reimbursement gets reimbursement resources.</p>
+
+<p>For the full spectrum of physician event formats — from KOL dinners to lunch and learns to multi-city speaker programs — our <a href="/services/event-marketing/">event marketing service</a> handles registration, provider targeting, and pre-filled invitations. For pharma-specific use cases, see our <a href="/for/pharma-sales/">pharma sales page</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "How many invitations should I send for a KOL dinner?",
+                "answer": "For a 20-seat KOL dinner, plan for 5-8 seats filled through personal rep outreach and 12-15 seats from a targeted email invite list of 40-60 providers. The total invite pool is smaller than a lunch and learn because the audience must be highly curated by specialty, geography, and practice profile. The 8-10x invitation-to-attendance ratio used for lunch and learns doesn't apply here — KOL dinners rely more on personalized outreach than volume.",
+            },
+            {
+                "question": "What are the compliance rules for KOL dinners?",
+                "answer": "The PhRMA Code and OIG Compliance Guidance require that meals be modest and subordinate to a legitimate educational purpose. Venues must be appropriate for informational exchange — no entertainment, no recreational settings. Attendees should be healthcare professionals with legitimate professional interest. Guest/spouse attendance is generally not appropriate. Document everything: attendee names, meal costs, business purpose, and program content. Your company's compliance team should review the program before invitations go out.",
+            },
+            {
+                "question": "What's the ROI of a KOL dinner compared to a lunch and learn?",
+                "answer": "KOL dinners cost more per event ($8,000-12,000 vs. $5,000-10,000 for a lunch and learn) but typically produce higher per-attendee ROI because the intimate format and peer credibility drive stronger conversion. If 3-4 of 20 attendees become adopters at $25,000+ average deal value, that's $75,000-100,000+ in pipeline from a $10,000 investment. Lunch and learns produce more total leads but typically lower per-lead value. The best programs run both: KOL dinners for high-value targets, lunch and learns for broader territory coverage.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Pharma Sales Data", "url": "/for/pharma-sales/"},
+            {"text": "Provider Contact Data", "url": "/services/provider-contact-data/"},
+            {"text": "Physician Speaker Program Planning", "url": "/blog/physician-speaker-program-planning/"},
+        ],
+        "outbound_links": [
+            ("https://www.phrma.org/en/Codes-and-guidelines/Code-on-Interactions-with-Health-Care-Professionals", "PhRMA Code on HCP Interactions"),
+            ("https://oig.hhs.gov/compliance/compliance-guidance/", "OIG Compliance Guidance"),
+        ],
+        "tags": ["event marketing", "KOL dinner", "pharma", "medical device"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 28: CME Event Registration Platform Guide
+    # -------------------------------------------------------------------------
+    {
+        "slug": "cme-event-registration-platform-guide",
+        "title": "CME Event Registration: Platforms, Compliance, and What Works",
+        "meta_description": "Compare CME event registration platforms. Eventbrite, Cvent, specialty CME tools, and custom builds for credit tracking, compliance, and physician targeting.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Most event platforms weren't built for CME. Credit tracking, specialty segmentation, compliance documentation — these aren't features you can bolt on. Here's what actually works.",
+        "content_html": """
+<h2>Why Generic Event Platforms Fail for CME</h2>
+
+<p>Continuing medical education events have requirements that standard event registration platforms don't handle. A marketing webinar and a CME dinner program look similar on the surface: both need a registration page, confirmation emails, and attendance tracking. But CME adds layers of complexity that break generic tools.</p>
+
+<p>The <a href="https://www.accme.org/accreditation-rules/policies/accreditation-policies" target="_blank" rel="noopener">Accreditation Council for Continuing Medical Education (ACCME)</a> sets the standards for CME accreditation. If your event offers CME credits, you need to comply with their requirements for documentation, disclosure, content independence, and credit reporting. Your registration platform is where most of that compliance data originates.</p>
+
+<p>The <a href="https://www.ama-assn.org/education/ama-pra-credit-system" target="_blank" rel="noopener">AMA PRA credit system</a> defines how credits are designated and reported. Physicians need accurate credit documentation for licensure renewal, hospital credentialing, and specialty board maintenance of certification. If your registration system can't generate proper credit certificates with the right designations, your attendees leave frustrated.</p>
+
+<p>Here's what CME registration needs that generic platforms don't provide:</p>
+
+<ul>
+<li><strong>Credit type tracking:</strong> AMA PRA Category 1, AAFP Prescribed, ANCC, pharmacy CE, and others. Different attendees earn different credit types based on their license and specialty. The system needs to know which credits each attendee is eligible for.</li>
+<li><strong>Disclosure management:</strong> Faculty financial disclosures, commercial support acknowledgments, and conflict of interest statements must be presented to attendees and documented. ACCME requires this before educational content begins.</li>
+<li><strong>Attendance verification:</strong> CME credits require verified attendance. The system needs to confirm who actually attended (not just who registered) and for how long. Partial credit for partial attendance is common.</li>
+<li><strong>Credit certificate generation:</strong> Post-event, each attendee needs a certificate with their name, the activity title, credit hours, credit type, accreditation statement, and date. Generating these manually for 50-200 attendees is an administrative nightmare.</li>
+<li><strong>Specialty segmentation:</strong> If your CME event covers multiple topics relevant to different specialties, you need specialty-specific registration paths so each physician sees content relevant to their practice.</li>
+</ul>
+
+<h2>Platform Comparison</h2>
+
+<h3>Eventbrite</h3>
+
+<p><strong>What it does well:</strong> Fast setup, low cost (free for free events, 3.7% + $1.79 per ticket for paid), familiar to attendees, decent mobile experience, good SEO for event discovery.</p>
+
+<p><strong>Where it breaks for CME:</strong> No credit tracking. No disclosure management. No credit certificate generation. No specialty segmentation. No pre-fill from provider databases. Eventbrite treats every registrant the same — there's no way to route a dermatologist to derm-specific content while sending an internist to primary care content. You'd need to create separate events for each specialty, which fragments your data and complicates reporting.</p>
+
+<p><strong>When it works:</strong> Free or low-cost educational events where CME credits aren't offered. Grand rounds, journal clubs, case conferences where the organizer just needs a headcount and a registration list. If you don't need credit tracking or compliance documentation, Eventbrite is fast and cheap.</p>
+
+<h3>Cvent</h3>
+
+<p><strong>What it does well:</strong> Enterprise-grade event management. Registration, housing, travel, session tracking, badging, mobile app, post-event surveys, and robust reporting. Cvent handles complex multi-day conferences with hundreds of sessions and thousands of attendees.</p>
+
+<p><strong>Where it breaks for CME:</strong> Cvent can be configured for CME but it's not built for it. Credit tracking requires custom fields and manual configuration. Certificate generation needs third-party integrations or custom development. The platform is designed for corporate events and association meetings, and CME requirements are an afterthought. Setup is complex, and the learning curve is steep. Pricing is enterprise-level: $15,000-50,000+ per year depending on volume.</p>
+
+<p><strong>When it works:</strong> Large medical associations running multi-day annual meetings with 1,000+ attendees, dozens of sessions, and dedicated event management staff. If you're running a 5-day national conference with CME tracks, Cvent's session management and badging justify the cost. For a single lunch and learn or dinner series, it's overkill.</p>
+
+<h3>Specialty CME Platforms</h3>
+
+<p>Platforms like EthosCE, CME Tracker, and similar tools are purpose-built for continuing education. They handle credit tracking, certificate generation, ACCME reporting, and learning management.</p>
+
+<p><strong>What they do well:</strong> Credit type management, learner transcripts, certificate generation, ACCME and specialty board reporting, assessment and evaluation tools, joint providership support.</p>
+
+<p><strong>Where they break:</strong> Most CME platforms are learning management systems (LMS), not event marketing tools. They track credits and education but don't handle event registration marketing — specialty-specific landing pages, personalized invitations, pre-filled registration from provider databases, invitation sequence automation, or attendee targeting by geography and practice type. You end up with two systems: a CME platform for credits and a separate tool for marketing and registration.</p>
+
+<p><strong>When they work:</strong> Organizations that run ongoing CME programs (hospitals, medical schools, CME providers) and need a persistent system for tracking physician credits across multiple activities over years. Less useful for device and pharma companies running periodic promotional education events.</p>
+
+<h3>Custom-Built Registration with Provider Data Integration</h3>
+
+<p>This approach builds the registration system around your provider database. Specialty-specific landing pages, pre-filled registration from verified NPI data, credit tracking, disclosure presentation, certificate generation, and post-event reporting — all integrated with the provider data that drives your invitation targeting.</p>
+
+<p><strong>What it does well:</strong> Everything is connected. The same provider database that generates your invite list also pre-fills registration, segments by specialty, tracks attendance for credit purposes, and feeds post-event follow-up. You don't have data in three different systems. You don't manually reconcile registration lists with credit rosters.</p>
+
+<p><strong>Where the tradeoffs are:</strong> Higher upfront cost than Eventbrite. More complex initial setup than a plug-and-play platform. Requires a data partner who understands both provider data and CME compliance requirements. Not the right choice if you're running one event per year.</p>
+
+<p><strong>When it works:</strong> Device and pharma companies running 4+ events per year across multiple markets. Teams that need specialty-targeted invitations and pre-filled registration because their target physicians won't fill out generic forms. Organizations where CME credits are part of the event value proposition and credit tracking can't be an afterthought.</p>
+
+<h2>CME Compliance Checklist for Registration</h2>
+
+<p>Regardless of which platform you use, your CME registration system needs to handle these compliance requirements:</p>
+
+<h3>Pre-Event</h3>
+
+<ul>
+<li><strong>Accreditation statement:</strong> Displayed on the registration page. States the accrediting body (ACCME, state medical society), the credit type (AMA PRA Category 1), and the number of credits designated.</li>
+<li><strong>Learning objectives:</strong> Listed on the registration page so physicians can assess relevance before registering.</li>
+<li><strong>Faculty disclosures:</strong> Financial relationships between speakers and commercial supporters must be disclosed. ACCME requires this before educational content is delivered, but best practice is to include it on the registration page so attendees know before they commit.</li>
+<li><strong>Commercial support acknowledgment:</strong> If a device or pharma company is providing financial support, this must be disclosed to learners.</li>
+</ul>
+
+<h3>During the Event</h3>
+
+<ul>
+<li><strong>Attendance verification:</strong> Sign-in and sign-out times for credit calculation. For multi-session events, per-session tracking.</li>
+<li><strong>Evaluation forms:</strong> ACCME requires activity evaluation data. Digital collection (tablet or phone-based) during the event produces much higher completion rates than paper forms or post-event email surveys.</li>
+</ul>
+
+<h3>Post-Event</h3>
+
+<ul>
+<li><strong>Credit certificates:</strong> Generated and delivered within 2-4 weeks. Each certificate includes learner name, activity title, date, location, credit type and hours, accreditation statement, and unique activity ID.</li>
+<li><strong>ACCME reporting:</strong> Activity completion data reported to ACCME within required timeframes. If you're a joint provider, your accredited partner handles this, but you need to supply the data.</li>
+<li><strong>Attendee transcripts:</strong> Physicians may request proof of attendance for credentialing or licensure. Your system should be able to produce individual learner records on demand.</li>
+</ul>
+
+<h2>Choosing the Right Approach</h2>
+
+<p>The decision framework is simpler than it looks:</p>
+
+<ul>
+<li><strong>Running 1-2 events per year, no CME credits:</strong> Eventbrite. It's free, fast, and good enough.</li>
+<li><strong>Running 1-2 CME events per year:</strong> Specialty CME platform for credit tracking + Eventbrite or a simple registration page for marketing. Accept that you'll have two systems and some manual reconciliation.</li>
+<li><strong>Running 4+ events per year across multiple markets with CME:</strong> Custom-built registration integrated with your provider database. The upfront investment pays back through lower per-event costs, better targeting, higher conversion, and automated compliance.</li>
+<li><strong>Running a multi-day annual conference with 500+ attendees:</strong> Cvent or a comparable enterprise platform, possibly integrated with a CME platform for credit management.</li>
+</ul>
+
+<p>Most device and pharma field marketing teams fall into the third category. They're running enough events to justify the investment, and the combination of specialty targeting, pre-filled registration, and compliance tracking produces measurably better results than stitching together generic tools.</p>
+
+<p>For a registration system built around provider data, specialty segmentation, and CME-ready compliance tracking, explore our <a href="/services/event-marketing/">event marketing service</a>. For the underlying provider data that powers specialty-targeted invitations, see our <a href="/blog/healthcare-conference-registration-best-practices/">conference registration best practices guide</a>. For cost analysis of different event approaches, read our <a href="/blog/healthcare-event-marketing-roi/">event marketing ROI guide</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "Can Eventbrite handle CME event registration?",
+                "answer": "Eventbrite works for basic event registration but lacks CME-specific features: no credit type tracking, no disclosure management, no certificate generation, no specialty segmentation, and no pre-fill from provider databases. It's fine for free educational events without CME credits. For accredited CME activities, you'll need either a specialty CME platform, a custom build, or you'll spend significant time on manual credit tracking and certificate creation.",
+            },
+            {
+                "question": "What does ACCME require for CME event registration?",
+                "answer": "ACCME requires that CME registration and delivery include: an accreditation statement identifying the accredited provider and credit type, learning objectives, faculty financial disclosure statements, commercial support acknowledgment (if applicable), verified attendance for credit calculation, learner evaluation collection, and timely credit certificate delivery. Your registration system needs to capture and display these elements at the appropriate points — disclosures before content, evaluation during or immediately after, certificates within 2-4 weeks.",
+            },
+            {
+                "question": "How much does a CME event registration platform cost?",
+                "answer": "Eventbrite is free for free events, 3.7% + $1.79 per paid registration. Specialty CME platforms (EthosCE, CME Tracker) typically run $5,000-20,000 per year depending on activity volume. Cvent starts at $15,000-50,000+ per year for enterprise plans. Custom-built registration integrated with provider data costs $5,000-8,000 for initial setup with $1,500-2,500 per additional city or event. For teams running 4+ events per year, the custom approach is typically cheaper per event than Cvent and more capable than Eventbrite.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Healthcare Conference Registration Best Practices", "url": "/blog/healthcare-conference-registration-best-practices/"},
+            {"text": "Healthcare Event Marketing ROI", "url": "/blog/healthcare-event-marketing-roi/"},
+            {"text": "Provider Contact Data", "url": "/services/provider-contact-data/"},
+        ],
+        "outbound_links": [
+            ("https://www.accme.org/accreditation-rules/policies/accreditation-policies", "ACCME Accreditation Standards"),
+            ("https://www.ama-assn.org/education/ama-pra-credit-system", "AMA PRA Credit System"),
+        ],
+        "tags": ["event marketing", "CME", "registration platforms", "compliance"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 29: Physician Speaker Program Planning
+    # -------------------------------------------------------------------------
+    {
+        "slug": "physician-speaker-program-planning",
+        "title": "How to Plan a Physician Speaker Program That Fills the Room",
+        "meta_description": "Plan a multi-city physician speaker program. Speaker selection, venue strategy, invitation lists by specialty, and reusable infrastructure that scales.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Speaker programs are the most scalable physician event format. Build the program once, run it in 10 cities, and keep the clinical message consistent while the audience and venue change.",
+        "content_html": """
+<h2>What Makes Speaker Programs Different</h2>
+
+<p>A speaker program is a recurring event format where a trained physician speaker presents clinical data and their experience with a treatment or device to peer audiences across multiple cities. Pharma and device companies use speaker programs as the backbone of their field marketing because the format scales in ways that other events don't.</p>
+
+<p>A lunch and learn is a one-off. A KOL dinner is a high-touch event for a single market. A speaker program is a system: same clinical content, same presentation structure, same compliance documentation, deployed across 5, 10, or 20 cities over a quarter. The speaker travels. The audience changes. The program stays consistent.</p>
+
+<p>The challenge is that most companies manage speaker programs with spreadsheets, one-off event pages, and disconnected tools. Each city gets a new registration page built from scratch. Invite lists are pulled manually. Compliance documentation is re-created for every event. The operational overhead makes it expensive to scale, even though the content is identical across cities.</p>
+
+<p>Here's how to plan a speaker program that fills rooms consistently across every city on the calendar.</p>
+
+<h2>Speaker Selection</h2>
+
+<p>The speaker is the program. A weak speaker with great logistics produces empty rooms. A strong speaker with adequate logistics fills them. Invest your time here first.</p>
+
+<h3>Clinical Credibility</h3>
+
+<p>The speaker should be a practicing physician in the target specialty with real clinical experience using the treatment or device. Peer audiences can tell within 5 minutes whether a speaker actually uses the product in their practice or is just reading slides. Board certification in the relevant specialty is table stakes. Published research, society presentations, or known clinical volume in the relevant procedures add credibility.</p>
+
+<h3>Presentation Ability</h3>
+
+<p>Clinical credibility and presentation ability are different skills. Some brilliant clinicians are terrible presenters. You need both. The speaker should be able to present clinical data clearly, tell patient stories that make the data tangible, and handle audience questions with confidence. If you're evaluating a potential speaker, watch them present before you commit. Have them do a dry run with your medical affairs team.</p>
+
+<h3>Geographic Flexibility</h3>
+
+<p>A national speaker program requires a speaker who can travel. Some physicians will commit to 2-3 events per quarter. Others will do 8-10. Build your calendar around their availability and travel willingness. Having 2-3 trained speakers on your roster provides scheduling flexibility and regional coverage — a Texas-based speaker for southern markets, a northeast-based speaker for the corridor from DC to Boston.</p>
+
+<h3>Compliance Training</h3>
+
+<p>Under the <a href="https://openpaymentsdata.cms.gov/" target="_blank" rel="noopener">Sunshine Act (CMS Open Payments)</a>, all payments to physician speakers — honoraria, travel, meals — must be reported. Your speaker needs to understand their reporting obligations and your company's compliance requirements. Speaker training should cover: on-label content boundaries, handling off-label questions, disclosure requirements, and documentation procedures.</p>
+
+<p>The <a href="https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/" target="_blank" rel="noopener">AdvaMed Code of Ethics</a> provides additional guidance specifically for medical device companies on HCP engagement, including speaker compensation guidelines that help ensure arrangements are fair market value and properly documented.</p>
+
+<h2>Building the Program Infrastructure</h2>
+
+<p>This is where the "build once, deploy everywhere" approach creates its biggest advantage. You're building a system, not planning individual events.</p>
+
+<h3>Presentation Deck</h3>
+
+<p>One master deck, approved by medical affairs and legal. The deck includes:</p>
+
+<ul>
+<li>Clinical data and outcomes (with proper citations)</li>
+<li>Case studies from the speaker's practice</li>
+<li>Mechanism of action or device functionality</li>
+<li>Patient selection criteria</li>
+<li>Practice integration workflow</li>
+<li>Required disclosures and accreditation statements (if CME)</li>
+</ul>
+
+<p>The deck doesn't change between cities. Minor customization is acceptable (adding a local case study, adjusting for audience specialty mix), but the core content and clinical claims stay consistent. This protects compliance and ensures every audience gets the same quality of information.</p>
+
+<h3>Registration Template System</h3>
+
+<p>Build the registration site once with these components:</p>
+
+<ul>
+<li><strong>Specialty-specific landing pages:</strong> If your speaker presents to dermatologists in one city and pain management specialists in another, each specialty has its own page template with relevant clinical messaging. The template stays the same; you swap in the city-specific details (date, venue, local speaker bio).</li>
+<li><strong>Pre-filled registration:</strong> Each city gets a fresh provider list with personalized registration links. The pre-fill system works identically across cities — you just feed it the new provider data.</li>
+<li><strong>Confirmation and reminder sequence:</strong> Same 4-email cadence for every city. Update the merge fields for venue and date. The clinical messaging in the invitation stays constant because the program content is consistent.</li>
+<li><strong>Post-event follow-up templates:</strong> Thank-you email, clinical resources, rep follow-up triggers. Same structure, new attendee list.</li>
+</ul>
+
+<h3>Compliance Documentation Package</h3>
+
+<p>Create a master compliance package that covers:</p>
+
+<ul>
+<li>Speaker agreement and fair market value compensation documentation</li>
+<li>Attendee meal and hospitality tracking forms</li>
+<li>Disclosure statements (speaker financial relationships, commercial support)</li>
+<li>Event summary template (attendee count, content delivered, business rationale)</li>
+</ul>
+
+<p>This package travels with the program. Each city gets a copy with local details filled in. Your compliance team reviews and approves the package once, not separately for every city.</p>
+
+<h2>City-by-City Execution</h2>
+
+<p>With the infrastructure built, here's what changes per city:</p>
+
+<h3>Provider Invite List</h3>
+
+<p>Pull a fresh list for each metro. Target-specialty providers within 20-25 minutes of the venue, filtered by practice type and sub-specialty as appropriate. For a 20-person dinner program, you need 40-60 targeted invitations. For a 30-person lunch program, 240-300 invitations. See our <a href="/blog/kol-dinner-planning-healthcare/">KOL dinner planning guide</a> for the dinner math and our lunch and learn playbook for the larger format.</p>
+
+<h3>Venue</h3>
+
+<p>Select a venue in each city that meets your format requirements (private dining room for dinners, meeting room for lunch and learns) and is centrally located relative to your target providers. Build a venue database as you execute — after your first year, you'll have vetted venues in each market that you can rebook without the research cycle.</p>
+
+<h3>Local Rep Coordination</h3>
+
+<p>The local rep handles venue logistics, day-of hosting, and post-event follow-up. The field marketing coordinator handles invitations, registration, and program administration. This division of labor keeps the rep focused on relationships while the coordinator handles systems.</p>
+
+<h2>The Cost Math</h2>
+
+<p>Here's where speaker programs outperform other event formats on a per-city basis:</p>
+
+<h3>First City Costs</h3>
+
+<ul>
+<li><strong>Speaker honorarium:</strong> $1,500-3,000 per event (fair market value varies by specialty and geography)</li>
+<li><strong>Speaker travel:</strong> $500-1,500 (flight, hotel, ground transport)</li>
+<li><strong>Venue and catering:</strong> $3,000-8,000 (depending on format — dinner vs. lunch — and attendance size)</li>
+<li><strong>Registration infrastructure:</strong> $5,000-8,000 (specialty pages, pre-fill system, email sequences, compliance docs — one-time build)</li>
+<li><strong>Provider invite list:</strong> $1,000-2,000 (verified contacts, pre-fill link generation)</li>
+<li><strong>Total first city: $11,000-22,500</strong></li>
+</ul>
+
+<h3>Subsequent City Costs</h3>
+
+<ul>
+<li><strong>Speaker honorarium:</strong> $1,500-3,000</li>
+<li><strong>Speaker travel:</strong> $500-1,500</li>
+<li><strong>Venue and catering:</strong> $3,000-8,000</li>
+<li><strong>Registration relaunch:</strong> $1,500-2,500 (new city details, updated provider list)</li>
+<li><strong>Total subsequent cities: $6,500-15,000</strong></li>
+</ul>
+
+<h3>10-City Program Comparison</h3>
+
+<ul>
+<li><strong>Agency approach (new build each city):</strong> 10 x $15,000-25,000 = $150,000-250,000</li>
+<li><strong>Reusable infrastructure:</strong> $11,000-22,500 (first city) + 9 x $6,500-15,000 = $69,500-157,500</li>
+<li><strong>Savings: $80,500-92,500</strong></li>
+</ul>
+
+<p>That's enough to fund 5-6 additional cities. The reusable approach doesn't just save money — it lets you run more events within the same budget.</p>
+
+<h2>Keeping the Program Fresh</h2>
+
+<p>A speaker program that runs the exact same content for 18 months goes stale. Even if the data is current, the reps get tired of selling the same event and the marketing team gets tired of the same copy. Plan for content refresh every 6-9 months:</p>
+
+<ul>
+<li><strong>Add new clinical data:</strong> When new studies publish or your speaker accumulates more clinical experience, update the deck.</li>
+<li><strong>Rotate case studies:</strong> Swap in new patient cases to keep the presentation feeling current.</li>
+<li><strong>Update landing page copy:</strong> Refresh the specialty pages with updated outcomes data and new testimonials from past attendees.</li>
+<li><strong>Consider adding a second speaker:</strong> A fresh voice reinvigorates the program and reaches physicians who might not have responded to the first speaker's profile.</li>
+</ul>
+
+<h2>Measuring Speaker Program Performance</h2>
+
+<p>Track these metrics across the full program, not just per event:</p>
+
+<ul>
+<li><strong>Average attendance rate:</strong> Registrations vs. actual attendance, tracked per city. Identify which cities consistently outperform and which underperform.</li>
+<li><strong>Invitation-to-registration rate by specialty:</strong> Which specialty pages convert best? If dermatologists register at 12% and chiropractors at 4%, your chiro messaging needs work.</li>
+<li><strong>Pipeline generated per event:</strong> Total pipeline attributed to attendees within 90 days. This is the number that justifies the program's existence.</li>
+<li><strong>Cost per qualified lead:</strong> Total program cost divided by qualified leads generated across all cities. Compare to your other demand generation channels.</li>
+<li><strong>Speaker effectiveness:</strong> If you have multiple speakers, compare their attendance and conversion rates. Some speakers consistently fill rooms and drive adoption. Others don't. The data should inform speaker roster decisions.</li>
+</ul>
+
+<p>For the event registration infrastructure that makes multi-city speaker programs scalable, explore our <a href="/services/event-marketing/">event marketing service</a>. For physician targeting and invite list building across markets, see our guide on <a href="/blog/how-to-get-doctors-to-attend-events/">getting doctors to attend events</a>. For the pharma-specific use case, visit our <a href="/for/pharma-sales/">pharma sales page</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "How much does a physician speaker program cost per city?",
+                "answer": "The first city costs $11,000-22,500 including speaker honorarium ($1,500-3,000), travel ($500-1,500), venue and catering ($3,000-8,000), registration infrastructure ($5,000-8,000 one-time build), and provider invite list ($1,000-2,000). Subsequent cities cost $6,500-15,000 because the registration infrastructure is reused. A 10-city program with reusable infrastructure costs $69,500-157,500 compared to $150,000-250,000 with an agency rebuilding for each city.",
+            },
+            {
+                "question": "What are the Sunshine Act requirements for physician speaker programs?",
+                "answer": "Under CMS Open Payments (the Sunshine Act), all payments to physician speakers must be reported: honoraria, travel reimbursement, meals, and any other transfers of value. Reports are published publicly on the Open Payments database. Speaker agreements should document fair market value compensation, and your compliance team should verify that payment amounts align with FMV assessments for the speaker's specialty and geographic market. Speakers should be trained on their disclosure obligations at each event.",
+            },
+            {
+                "question": "How do you keep a speaker program fresh across multiple cities?",
+                "answer": "Plan content refreshes every 6-9 months. Update the presentation deck with new clinical data and outcomes, rotate in new patient case studies, refresh landing page copy with updated results and testimonials, and consider adding a second speaker for variety. Track audience feedback and rep feedback to identify when content starts feeling stale. A program that runs identical content for more than 12 months will see declining registration rates in markets you've already covered.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "KOL Dinner Planning", "url": "/blog/kol-dinner-planning-healthcare/"},
+            {"text": "Pharma Sales Data", "url": "/for/pharma-sales/"},
+            {"text": "How to Get Doctors to Attend Events", "url": "/blog/how-to-get-doctors-to-attend-events/"},
+        ],
+        "outbound_links": [
+            ("https://openpaymentsdata.cms.gov/", "CMS Open Payments (Sunshine Act)"),
+            ("https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/", "AdvaMed Code of Ethics"),
+        ],
+        "tags": ["event marketing", "speaker program", "pharma", "multi-city events"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 30: Medical Device Demo Day Planning
+    # -------------------------------------------------------------------------
+    {
+        "slug": "medical-device-demo-day-planning",
+        "title": "How to Plan a Medical Device Demo Day (Step-by-Step)",
+        "meta_description": "Plan a medical device demo day that converts. Station layout, staffing, consent forms, and specialty-specific registration pages in one guide.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "A demo day is a different animal from a lunch and learn. More stations, more staff, more logistics. Here's how to plan one that fills the room and moves pipeline.",
+        "content_html": """
+<h2>Demo Days Are Not Lunch and Learns</h2>
+
+<p>If you've been running lunch and learns and someone on your team just suggested a "demo day," pump the brakes for a second. These are fundamentally different event formats, and treating a demo day like a bigger lunch and learn is the fastest way to waste $20,000 and a Saturday.</p>
+
+<p>A lunch and learn is a presentation. One speaker, one slide deck, food, and Q&A. Physicians sit, listen, and maybe handle a device at the end. A demo day is an experience. Multiple stations, multiple devices, hands-on time at each, rotating attendees, and clinical staff running demonstrations simultaneously. The logistics are 3-4x more complex, but the conversion rate from attendee to adopter can be dramatically higher because every physician gets hands-on time rather than watching from row six.</p>
+
+<p>According to the <a href="https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/" target="_blank" rel="noopener">AdvaMed Code of Ethics</a>, all device demonstrations must occur in settings and circumstances conducive to informing healthcare professionals about medical technologies. Demo days, when structured correctly, meet this standard by creating an educational environment focused on clinical application.</p>
+
+<p>This guide walks through the full planning process. Station layout, equipment logistics, staffing requirements, consent forms, specialty-specific landing pages, and a sample agenda you can adapt.</p>
+
+<h2>Who Should Run a Demo Day (and Who Shouldn't)</h2>
+
+<p>Demo days work best for devices that require hands-on experience to appreciate. Energy-based aesthetics devices, surgical instruments, diagnostic equipment, therapeutic modalities. If your device is primarily software or a pharmaceutical, the demo day format probably isn't right. Stick with a <a href="/blog/medical-device-lunch-and-learn-playbook/">lunch and learn</a> or a KOL dinner instead.</p>
+
+<p>You should also have enough product breadth or enough depth within a single product to fill 3-5 demo stations. A single-device company can still run a demo day, but you'll need to create multiple stations around different applications: one for the core procedure, one for a secondary indication, one for before/after case review, and one for business model and ROI discussion.</p>
+
+<p>Multi-device companies have a natural advantage. If you sell four body contouring modalities, each station can feature a different device with a different clinical application. Attendees rotate through all four and self-select which ones fit their practice.</p>
+
+<h2>Step 1: Define Your Station Layout</h2>
+
+<p>The station layout is the backbone of a demo day. Get this wrong and you'll have bottlenecks, idle physicians, and frustrated staff. Get it right and the event flows naturally with every attendee spending meaningful time at each station.</p>
+
+<h3>How Many Stations</h3>
+
+<p>Plan for 3-5 demo stations plus a registration/welcome station and a refreshment area. Fewer than three stations and you don't need a demo day format. More than six and you can't move attendees through all of them in a half-day event.</p>
+
+<p>Each demo station needs enough space for the device, the clinical demonstrator, 3-5 observers, and a small standing area for the next rotation group. That means roughly 150-200 square feet per station. For a five-station demo day, you need at least 1,000 square feet of demo floor space, plus another 500-800 for registration, refreshments, and circulation.</p>
+
+<h3>Station Types</h3>
+
+<p>Not every station should be a live device demonstration. Mix these station types for the best attendee experience:</p>
+
+<ul>
+<li><strong>Live device demo:</strong> The core of the event. A clinician operates the device on a model, a volunteer (with consent), or a simulation device. Attendees watch the procedure and ask questions in real time.</li>
+<li><strong>Hands-on practice:</strong> Attendees handle the device themselves under supervision. This is where adoption decisions get made. A physician who has operated a device for 10 minutes is 3-4x more likely to request a follow-up in-office demo than one who only watched.</li>
+<li><strong>Clinical results review:</strong> A station with before/after photos, case studies, and published data. Staff at this station should be clinical specialists who can answer detailed efficacy and safety questions.</li>
+<li><strong>Business model/ROI station:</strong> Pricing, financing, revenue-per-procedure estimates, and practice integration. This station should be staffed by someone comfortable with business conversations, not just clinical ones.</li>
+<li><strong>Technology overview:</strong> Deeper dive into the device's mechanism of action, regulatory clearances, and competitive differentiation. Best for physicians who want the science before the hands-on experience.</li>
+</ul>
+
+<h3>Traffic Flow</h3>
+
+<p>Decide whether attendees will rotate through stations on a schedule or self-direct. Both approaches work, but they require different planning.</p>
+
+<p>Scheduled rotation means you assign groups of 4-6 attendees to a starting station and rotate every 15-20 minutes. This ensures everyone hits every station but requires a visible timer or announcer and enough staff to manage transitions. It works best for events with 20+ attendees where you can fill multiple groups.</p>
+
+<p>Self-directed flow works for smaller events (under 20) where attendees can naturally move between stations. Post clear signage at each station and have a floor manager who gently steers anyone who seems stuck or lost. This feels more casual but risks some stations getting crowded while others sit empty.</p>
+
+<h2>Step 2: Equipment and Logistics</h2>
+
+<p>This is where demo days get complicated. You're not shipping a projector and a box of brochures. You're moving medical devices that may require specific electrical configurations, temperature control, or calibration.</p>
+
+<h3>Equipment Checklist Per Station</h3>
+
+<ul>
+<li><strong>The device itself:</strong> Confirm shipping timeline, insurance coverage during transit, and who is responsible for setup and calibration. Most manufacturers require a trained biomedical technician for initial setup.</li>
+<li><strong>Power requirements:</strong> Some devices need dedicated circuits. A body contouring device pulling 30 amps on a shared circuit with the hotel ballroom's lighting will trip breakers during a demo. Get the venue's electrical specifications in advance and bring power strips rated for medical equipment.</li>
+<li><strong>Consumables and disposables:</strong> Applicators, tips, gel, gloves, gauze, protective eyewear. Bring 2x what you think you'll need. Running out of disposables mid-demo kills the momentum.</li>
+<li><strong>Display materials:</strong> Tabletop retractable banners, specification sheets, clinical study summaries. Keep these clean and professional but secondary to the device itself.</li>
+<li><strong>Wi-Fi and A/V:</strong> If any station uses a screen for before/after photos or data presentation, test the venue's Wi-Fi and have a backup plan (offline presentation loaded on a tablet).</li>
+</ul>
+
+<h3>Shipping and Setup Timeline</h3>
+
+<p>For a Saturday demo day, equipment should arrive at the venue no later than Thursday afternoon. That gives you Friday for setup, calibration, and troubleshooting. Do not plan to set up the morning of the event. Something will go wrong with a device, an outlet, or a display, and you need buffer time to fix it without attendees watching.</p>
+
+<p>Assign one person as the equipment coordinator. This person owns the shipping tracking, confirms delivery, manages setup, and is the single point of contact for any equipment issues during the event. Having three reps each "partly" responsible for equipment is how devices end up in the wrong room or without the right consumables.</p>
+
+<h2>Step 3: Staffing Requirements</h2>
+
+<p>Demo days are staff-intensive. Here's the minimum staffing model for a five-station event with 30-40 expected attendees:</p>
+
+<ul>
+<li><strong>1 clinical demonstrator per live demo station (2-3 people):</strong> These are your KOLs, clinical trainers, or experienced practitioners. They run the actual demonstrations. They should be comfortable with public demonstration, able to narrate what they're doing, and ready to field clinical questions on the spot.</li>
+<li><strong>1 station attendant per non-demo station (2-3 people):</strong> Staff the results review, ROI, and technology stations with product specialists or experienced reps who can have informed conversations without reading from a script.</li>
+<li><strong>1 registration coordinator:</strong> Manages the welcome station, checks in attendees, distributes name badges and consent forms, and tracks actual attendance for your post-event reporting.</li>
+<li><strong>1 floor manager:</strong> Oversees traffic flow, manages rotation timing, handles any logistical issues, and keeps the event on schedule. This should be someone with event management experience, not a sales rep pulled into a side role.</li>
+<li><strong>1 event lead (you or your marketing manager):</strong> Owns the overall event, makes real-time decisions, manages the venue relationship, and handles anything unexpected.</li>
+</ul>
+
+<p>That's 7-10 staff for a five-station event. If you're running a smaller three-station event, you can compress to 5-7 staff. Do not go below this. Understaffing a demo day results in long wait times at popular stations, unsupervised attendees wandering, and a rushed, disorganized feel that undermines your brand.</p>
+
+<h2>Step 4: Consent Forms and Compliance</h2>
+
+<p>If any demo involves contact with a human subject, whether that's a volunteer, a model, or an attendee who wants to try the device themselves, you need consent documentation. This is non-negotiable and it's the step most first-time demo day organizers forget.</p>
+
+<p>The <a href="https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/medical-device-databases" target="_blank" rel="noopener">FDA's medical device guidance</a> requires that any demonstration involving human subjects follows informed consent protocols. Even for cleared devices being demonstrated within their approved indications, the person receiving the demonstration treatment must understand what's being done and consent to it.</p>
+
+<h3>What Your Consent Form Should Include</h3>
+
+<ul>
+<li>Description of the device and the demonstration procedure</li>
+<li>Duration of the demonstration</li>
+<li>Known risks and side effects, even minor ones like temporary redness or sensitivity</li>
+<li>Statement that participation is voluntary and can be stopped at any time</li>
+<li>Photo/video consent (separate checkbox) if you plan to capture demo footage for marketing</li>
+<li>HIPAA-related language if any health information is collected during the demo</li>
+<li>Signature, printed name, and date</li>
+</ul>
+
+<p>Have your legal team review the consent form before the event. Have printed copies at the registration station and at each demo station where live demonstrations occur. The registration coordinator should ensure every demo participant has signed before they sit in the chair.</p>
+
+<h2>Step 5: Specialty-Specific Landing Pages</h2>
+
+<p>A demo day typically attracts multiple specialties. Dermatologists, plastic surgeons, med spa owners, and pain management physicians might all be interested in the same body contouring device, but they're interested for different reasons.</p>
+
+<p>Sending all of them to the same generic registration page is a conversion killer. Dermatologists want to see dermatology-specific outcomes data and understand how the device fits into their existing treatment menu. Plastic surgeons want surgical vs. non-surgical comparison data and patient selection criteria. Med spa owners want revenue-per-treatment numbers and staff training requirements.</p>
+
+<p>Build specialty-specific landing pages that speak to each audience's priorities. The event details (date, time, location, agenda) stay the same, but the headline, subheadline, featured outcomes, and social proof change per specialty. For a detailed walkthrough of specialty page strategy, see our guide on <a href="/blog/increase-physician-event-attendance/">increasing physician event attendance</a>.</p>
+
+<p>This approach also gives you segmented registration data. When you know which page each registrant came through, you can tailor their welcome email, assign them to the most relevant demo station first, and personalize post-event follow-up based on their specialty.</p>
+
+<h2>Step 6: Sample Demo Day Agenda</h2>
+
+<p>Here's a proven agenda template for a half-day demo day with five stations and 30-40 attendees:</p>
+
+<table>
+<thead>
+<tr><th>Time</th><th>Activity</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>7:00 AM</td><td>Staff arrival and final setup</td><td>Equipment check, test all stations, confirm catering</td></tr>
+<tr><td>8:00 AM</td><td>Registration opens</td><td>Coffee and light breakfast available</td></tr>
+<tr><td>8:30 AM</td><td>Welcome and overview</td><td>10-minute introduction, agenda overview, group photo</td></tr>
+<tr><td>8:45 AM</td><td>Rotation 1</td><td>Groups assigned to starting stations, 20 min per station</td></tr>
+<tr><td>9:05 AM</td><td>Rotation 2</td><td>Transition signal, groups move to next station</td></tr>
+<tr><td>9:25 AM</td><td>Rotation 3</td><td></td></tr>
+<tr><td>9:45 AM</td><td>Break</td><td>15 min, refreshments, informal networking</td></tr>
+<tr><td>10:00 AM</td><td>Rotation 4</td><td></td></tr>
+<tr><td>10:20 AM</td><td>Rotation 5</td><td></td></tr>
+<tr><td>10:40 AM</td><td>Open floor</td><td>Attendees revisit any station, 1:1 conversations</td></tr>
+<tr><td>11:15 AM</td><td>Closing remarks and next steps</td><td>Follow-up process, in-office demo scheduling</td></tr>
+<tr><td>11:30 AM</td><td>Lunch and networking</td><td>Informal, stations remain accessible</td></tr>
+<tr><td>12:30 PM</td><td>Event ends</td><td>Staff begins breakdown</td></tr>
+</tbody>
+</table>
+
+<p>Adjust timing based on your station count. Three stations can run in a compact morning session (8:30-11:30 AM). Six stations need a full day or you'll rush each rotation below the 15-minute minimum that physicians need to engage meaningfully with a device.</p>
+
+<h2>Step 7: Post-Event Follow-Up</h2>
+
+<p>The demo day itself generates interest. The follow-up converts it. Within 24 hours of the event, every attendee should receive:</p>
+
+<ul>
+<li><strong>A personalized thank-you email</strong> referencing the stations they visited (if you tracked station-level attendance).</li>
+<li><strong>A summary of the devices they interacted with,</strong> including specification sheets and clinical data links for the specific devices they spent time with.</li>
+<li><strong>A clear next step:</strong> scheduling an in-office demo, requesting a quote, or connecting with their territory rep for a deeper conversation.</li>
+</ul>
+
+<p>For attendees who participated in hands-on demos, the follow-up should be more aggressive. They've already operated the device. The logical next step is an in-office trial where they can use it on their own patients under supervision. Offering to schedule this in the follow-up email dramatically shortens the sales cycle compared to a generic "thanks for attending" message.</p>
+
+<p>Track which attendees visited which stations and use that data to segment your follow-up. Someone who spent time at the ROI station is signaling buying intent. Someone who only visited the clinical results station might need more clinical evidence before they're ready for a business conversation.</p>
+
+<p>For the registration infrastructure and attendance tracking that makes segmented follow-up possible, explore our <a href="/services/event-marketing/">event marketing service</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "How much does a medical device demo day cost?",
+                "answer": "A five-station demo day typically costs $15,000-30,000 including venue rental ($3,000-8,000), catering ($2,000-5,000), equipment shipping and setup ($2,000-5,000), staffing ($3,000-7,000 for clinical demonstrators), consumables ($1,000-2,000), and registration infrastructure ($4,000-8,000). Multi-device companies can amortize equipment costs since they already own the devices, which brings the incremental cost closer to $10,000-18,000 per event.",
+            },
+            {
+                "question": "How many attendees should a demo day have?",
+                "answer": "Target 25-40 attendees for a five-station demo day. Below 20, you won't generate enough pipeline to justify the cost. Above 50, wait times at stations become frustrating and the hands-on experience degrades. If you have more than 50 interested physicians, run two separate events rather than cramming everyone into one day.",
+            },
+            {
+                "question": "Do I need consent forms for a medical device demo day?",
+                "answer": "Yes, if any demonstration involves contact with a human subject. Even for FDA-cleared devices demonstrated within approved indications, anyone receiving a demo treatment must provide informed consent. The form should describe the procedure, list known risks, note that participation is voluntary, and include a separate photo/video consent checkbox. Have your legal team review the form before the event.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Medical Device Lunch and Learn Playbook", "url": "/blog/medical-device-lunch-and-learn-playbook/"},
+            {"text": "Increase Physician Event Attendance", "url": "/blog/increase-physician-event-attendance/"},
+            {"text": "Healthcare Event Venue Selection", "url": "/blog/healthcare-event-venue-selection-guide/"},
+        ],
+        "outbound_links": [
+            ("https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/medical-device-databases", "FDA Medical Device Guidance"),
+            ("https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/", "AdvaMed Code of Ethics"),
+        ],
+        "tags": ["event marketing", "medical device", "demo day", "field marketing"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 31: Healthcare Event Venue Selection Guide
+    # -------------------------------------------------------------------------
+    {
+        "slug": "healthcare-event-venue-selection-guide",
+        "title": "Healthcare Event Venue: Hospital vs. Hotel vs. Restaurant",
+        "meta_description": "Compare hospital, hotel, restaurant, and office venues for healthcare events. Capacity, cost, compliance, and catering considerations for each.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "The venue you pick affects attendance, compliance, catering, and budget. Here's how to evaluate each option for your next healthcare provider event.",
+        "content_html": """
+<h2>Your Venue Choice Shapes Everything Else</h2>
+
+<p>Most event planners pick a venue first and build the event around it. In healthcare, that's backward. Your compliance requirements, target specialty, event format, and budget should narrow the venue options before you start calling hotels.</p>
+
+<p>A KOL dinner for 15 surgeons has completely different venue needs than a lunch and learn for 40 primary care physicians. A medical device demo day with five equipment stations can't happen in a restaurant private dining room. And a peer-to-peer education event with CME credit has compliance constraints that eliminate certain venues entirely.</p>
+
+<p>We've supported event registration for healthcare events across all four major venue types. Here's what actually matters for each, with real cost ranges, capacity limits, and the compliance considerations that most venue comparison guides ignore.</p>
+
+<h2>Option 1: Hospital Conference Rooms</h2>
+
+<h3>When It Works</h3>
+
+<p>Hospital conference rooms are the default choice for many device reps, and there are good reasons for that. They're free or low-cost (usually just a room reservation through the hospital's vendor relations office). Physicians are already on-site, which means no drive time and minimal friction to attend. The clinical setting adds credibility to a device demonstration because the audience is already in a professional mindset.</p>
+
+<p>Hospital venues work best for educational events, in-service trainings, and small lunch and learns (8-20 attendees). If your target audience is hospital-employed physicians in a specific department, the hospital conference room is the obvious choice. You're going to them rather than asking them to come to you.</p>
+
+<h3>Capacity and Setup</h3>
+
+<p>Most hospital conference rooms hold 15-30 people in a classroom or U-shape configuration. Larger hospitals may have auditoriums or education centers that seat 50-100, but these are harder to book and often reserved months in advance for internal programming.</p>
+
+<p>AV equipment varies wildly. Some hospital conference rooms have built-in projectors and screens. Others have a whiteboard and nothing else. Always confirm AV availability and bring your own backup (a portable projector and a presentation loaded on a laptop, not dependent on hospital Wi-Fi).</p>
+
+<h3>Cost</h3>
+
+<p>Room rental: typically free. Catering: $15-40 per person, but here's the catch. Many hospitals restrict outside catering and require you to use the hospital cafeteria or an approved vendor. Hospital cafeteria catering is functional but rarely impressive. If you're hosting a KOL dinner to recruit a speaker, the hospital cafeteria won't set the right tone.</p>
+
+<p>Under the <a href="https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/" target="_blank" rel="noopener">AdvaMed Code of Ethics</a>, meals provided in connection with informational presentations must be modest. Hospital settings naturally enforce this constraint because the catering options are inherently modest. That's a compliance advantage.</p>
+
+<h3>Compliance Considerations</h3>
+
+<p>Hospitals have their own vendor policies. You'll likely need to register as an approved vendor, schedule through the vendor relations or medical education department, and comply with the hospital's specific rules about promotional materials, device branding, and attendee sign-in procedures. Some hospital systems require 30-60 days advance notice for vendor-sponsored events.</p>
+
+<p>The upside: hospitals take compliance seriously and their policies often align with industry codes of ethics. Following their process puts you on solid compliance ground.</p>
+
+<p>The downside: you don't control the environment. The hospital may change your room last-minute, restrict your signage, or impose attendance limits you didn't plan for.</p>
+
+<h2>Option 2: Hotels</h2>
+
+<h3>When It Works</h3>
+
+<p>Hotels are the standard venue for larger healthcare events: regional dinners, multi-specialty demo days, speaker programs, and advisory board meetings. You get professional event space, built-in AV, dedicated catering, and a level of control that hospital venues don't provide.</p>
+
+<p>For events with 25+ attendees, hotels are almost always the right choice. The space is purpose-built for events, the staff is experienced with group functions, and you can configure the room to match your format (classroom, rounds, theater, demo stations).</p>
+
+<h3>Capacity and Setup</h3>
+
+<p>Hotel ballrooms and meeting rooms range from 500 to 10,000+ square feet. Most healthcare events use a room in the 1,000-3,000 square foot range, which comfortably seats 30-80 in various configurations. Hotels are also the best option for multi-room events where you need a main presentation room plus breakout rooms or demo areas.</p>
+
+<p>AV is typically included or available at an upcharge. Built-in screens, projectors, microphones, and lighting are standard. Test everything during setup, not during the event.</p>
+
+<h3>Cost</h3>
+
+<p>Room rental: $500-5,000 depending on the market, day of week, and room size. Many hotels will waive the room rental fee if you hit a food and beverage minimum, which for a dinner event is usually $3,000-8,000. Catering: $50-150 per person for plated dinner, $30-75 per person for buffet lunch. Per the <a href="https://www.gsa.gov/travel/plan-book/per-diem-rates" target="_blank" rel="noopener">GSA per diem rates</a>, which many compliance departments use as a benchmark for reasonable meal costs, the meals and incidental expenses (M&IE) rate varies by city but averages $59-79 per day for most U.S. metros.</p>
+
+<p>Add AV rental ($500-2,000), parking validation ($5-15 per attendee), and gratuity (18-22% on F&B) and a hotel event for 30 people can easily run $8,000-15,000 before you factor in speaker costs, registration infrastructure, or invite list building.</p>
+
+<h3>Compliance Considerations</h3>
+
+<p>Hotels are neutral territory, which simplifies some compliance dynamics. You're not operating under a hospital's vendor policy, so you have more control over the environment. But you also have more responsibility to self-enforce meal limits and documentation requirements.</p>
+
+<p>Under AdvaMed and the Sunshine Act, meals must be "modest as judged by local standards." A $150-per-person tasting menu at a luxury hotel raises compliance flags even if the event content is purely educational. Keep per-person meal costs under your compliance department's threshold (typically $100-125 depending on the city) and document the educational purpose of the event thoroughly.</p>
+
+<p>Hotels are also better than restaurants for documentation because you control the room layout, can set up a proper registration desk, and have space for sign-in sheets and badge printing. For a deeper look at why check-in logistics matter, see our guide on <a href="/blog/medical-device-lunch-and-learn-playbook/">medical device lunch and learn planning</a>.</p>
+
+<h2>Option 3: Restaurants</h2>
+
+<h3>When It Works</h3>
+
+<p>Restaurants are ideal for intimate events with 8-20 attendees. KOL dinners, advisory board meetings, small peer-to-peer educational programs, and thank-you dinners for existing customers. The environment is inherently social, which encourages candid conversation and relationship building in a way that hotel meeting rooms don't.</p>
+
+<p>Restaurant events also signal effort and intentionality. You're inviting a physician to dinner at a specific restaurant you chose, with a curated guest list. That feels different from a mass-invite hotel event, and physicians respond accordingly. Registration-to-attendance rates for restaurant events typically run 80-90%, well above the 70-80% average for hotel events, because the format feels more personal.</p>
+
+<p>For a full guide on structuring KOL dinners specifically, see our <a href="/blog/kol-dinner-planning-healthcare/">KOL dinner planning guide</a>.</p>
+
+<h3>Capacity and Setup</h3>
+
+<p>Private dining rooms typically seat 10-24 guests. Semi-private areas can accommodate up to 40 but lack the sound isolation needed for a formal presentation with slides. If your event involves a speaker presentation with a microphone and slides, a restaurant works only if the private dining room has a screen or blank wall suitable for projection, and the ambient noise from the main dining room is low enough.</p>
+
+<p>Most restaurant private dining rooms don't have built-in AV. Bring a portable projector, a screen (or confirm a suitable wall surface), and a wireless presenter remote. Test the room in advance. A site visit the week before the event takes 30 minutes and prevents surprises.</p>
+
+<h3>Cost</h3>
+
+<p>Restaurant events are priced per person or as a food and beverage minimum. Private dining rooms at upscale restaurants typically require $2,000-8,000 in F&B spend, which for a group of 12-20 translates to $100-400 per person including drinks. This is where compliance scrutiny gets real.</p>
+
+<p>The AdvaMed Code of Ethics specifies that meals must be "modest by local standards." A $200-per-person dinner at a high-end steakhouse in Manhattan might be defensible as modest by NYC standards, but the same spend in a mid-tier metro would raise red flags. Know your local standard and stay well within it.</p>
+
+<p>Many compliance departments set a hard cap at $125-150 per person for physician dinners. That includes food, beverage, tax, and gratuity. Choose a restaurant where a prix fixe menu for your group stays under that cap, and confirm the pricing in writing before the event.</p>
+
+<h3>Compliance Considerations</h3>
+
+<p>Restaurants present the highest compliance risk of any venue type because the meal itself is the primary experience. In a hotel, the meal accompanies an educational program. In a restaurant, the line between "educational dinner with a clinical presentation" and "expensive dinner for doctors" can blur.</p>
+
+<p>Protect yourself with documentation: a formal agenda showing the educational component, attendee sign-in sheet with NPI numbers, a record of the meal cost per person, and a clear business purpose statement. Every attendee's meal value must be reported under the Sunshine Act if it exceeds the reporting threshold ($12.49 for 2025, adjusted annually by CMS).</p>
+
+<h2>Option 4: Office or Showroom</h2>
+
+<h3>When It Works</h3>
+
+<p>If your company or distributor has a local office with a showroom or training room, it can be an excellent venue for device demos, training sessions, and small group events. You control the space entirely, the devices are already there, and you avoid venue rental costs.</p>
+
+<p>Showroom events work particularly well for second-visit prospects. A physician saw the device at a conference or lunch and learn and wants a more in-depth look. Inviting them to your showroom for a dedicated session with hands-on time in a controlled environment is a strong closing move.</p>
+
+<h3>Capacity and Setup</h3>
+
+<p>Office spaces vary too much for generalizations, but most device company showrooms or training rooms comfortably hold 8-15 people. Larger regional offices may have training centers that seat 30-50. The advantage is that the space is already configured for device demonstrations, with appropriate power, ventilation, and clinical setup.</p>
+
+<h3>Cost</h3>
+
+<p>Venue rental: free (it's your space). Catering: $15-50 per person via delivery or drop-off catering. This is the most cost-effective venue option and it keeps per-person costs well within compliance limits. A catered lunch from a local restaurant runs $20-35 per person. Modest, documented, no compliance headaches.</p>
+
+<h3>Compliance Considerations</h3>
+
+<p>Lower compliance risk than restaurants because the setting is clearly professional and the meal is incidental to the educational/demonstration purpose. Document the event the same way you would any venue: agenda, sign-in sheet, meal costs, business purpose. The informal setting doesn't exempt you from Sunshine Act reporting requirements.</p>
+
+<h2>Venue Comparison Summary</h2>
+
+<table>
+<thead>
+<tr><th>Factor</th><th>Hospital</th><th>Hotel</th><th>Restaurant</th><th>Office/Showroom</th></tr>
+</thead>
+<tbody>
+<tr><td>Best for</td><td>In-service, small L&L</td><td>Large events, demos</td><td>KOL dinners, advisory</td><td>Device demos, training</td></tr>
+<tr><td>Capacity</td><td>15-30 typical</td><td>30-100+</td><td>10-24 private</td><td>8-30</td></tr>
+<tr><td>Room cost</td><td>Free</td><td>$500-5,000</td><td>F&B minimum</td><td>Free</td></tr>
+<tr><td>Per-person F&B</td><td>$15-40</td><td>$30-150</td><td>$100-400</td><td>$15-50</td></tr>
+<tr><td>Compliance risk</td><td>Low</td><td>Medium</td><td>High</td><td>Low</td></tr>
+<tr><td>AV included</td><td>Sometimes</td><td>Usually</td><td>Rarely</td><td>Usually</td></tr>
+<tr><td>Control level</td><td>Low</td><td>High</td><td>Medium</td><td>Full</td></tr>
+</tbody>
+</table>
+
+<h2>Choosing the Right Venue for Your Event</h2>
+
+<p>Start with three questions:</p>
+
+<p><strong>1. How many attendees do you expect?</strong> Under 15, consider a restaurant or office. 15-30, hospital or hotel. Over 30, hotel is your best option.</p>
+
+<p><strong>2. Does the event involve device demonstrations?</strong> If yes, hotels or your own office/showroom are the only practical options. Restaurant private dining rooms don't have the space or power setup for device demos, and hospital conference rooms may restrict what equipment you can bring in.</p>
+
+<p><strong>3. What's your per-person meal budget cap?</strong> If your compliance team caps at $75 per person, restaurants in most metros are off the table for dinner events. Hotels with buffet lunch or your own office with catered lunch become the practical options.</p>
+
+<p>Match the venue to the event format, not the other way around. A beautifully planned KOL dinner in a hospital conference room feels cheap. A 40-person demo day in a restaurant private dining room feels cramped. Let the event's purpose drive the venue selection, and your budget and compliance thresholds will narrow the options from there.</p>
+
+<p>For help building targeted invite lists for any venue type and format, and for specialty-specific landing pages that drive registrations, explore our <a href="/services/event-marketing/">event marketing service</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "What are the AdvaMed meal limits for physician events?",
+                "answer": "The AdvaMed Code of Ethics requires meals to be 'modest as judged by local standards' without specifying a dollar amount. In practice, most compliance departments set internal caps at $100-150 per person depending on the city. The Sunshine Act (CMS Open Payments) requires reporting meals above $12.49 per physician (2025 threshold, adjusted annually). Many companies use the GSA per diem M&IE rate for each city as their benchmark for what qualifies as modest.",
+            },
+            {
+                "question": "Can I host a medical device demo at a restaurant?",
+                "answer": "It's technically possible but rarely practical. Restaurant private dining rooms lack the space, power configurations, and clinical setup that device demonstrations require. Hotels and office showrooms are better venues for demos. Restaurants are best reserved for KOL dinners, advisory boards, and small peer-to-peer educational events where the primary format is conversation, not demonstration.",
+            },
+            {
+                "question": "Do I need to report venue costs under the Sunshine Act?",
+                "answer": "Under CMS Open Payments (the Sunshine Act), you must report the value of meals, travel, and other transfers of value provided to covered recipients (physicians, teaching hospitals). Venue rental itself isn't a transfer of value to a physician, but the meal served at that venue is. Track per-person meal costs accurately, including tax and gratuity, and report any amount above the annual reporting threshold.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "KOL Dinner Planning", "url": "/blog/kol-dinner-planning-healthcare/"},
+            {"text": "Medical Device Lunch and Learn Playbook", "url": "/blog/medical-device-lunch-and-learn-playbook/"},
+            {"text": "Medical Device Demo Day Planning", "url": "/blog/medical-device-demo-day-planning/"},
+        ],
+        "outbound_links": [
+            ("https://www.gsa.gov/travel/plan-book/per-diem-rates", "GSA Per Diem Rates"),
+            ("https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/", "AdvaMed Code of Ethics"),
+        ],
+        "tags": ["event marketing", "venue selection", "healthcare events", "compliance"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 32: Medical Device Event Compliance Checklist
+    # -------------------------------------------------------------------------
+    {
+        "slug": "medical-device-event-compliance-checklist",
+        "title": "Medical Device Event Compliance Checklist (2026)",
+        "meta_description": "Pre-event, during-event, and post-event compliance checklist for medical device events. AdvaMed, Sunshine Act, and state meal limits covered.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "The compliance side of medical device events is where good planning separates from expensive mistakes. Here's the checklist your legal team will actually approve.",
+        "content_html": """
+<h2>Why Compliance Makes or Breaks Device Events</h2>
+
+<p>Medical device companies run thousands of physician-facing events every year. Lunch and learns, demo days, speaker programs, KOL dinners, advisory boards. Every one of these events involves transfers of value to healthcare professionals, and every transfer of value creates a reporting obligation under federal and state law.</p>
+
+<p>The consequences of getting this wrong aren't theoretical. In 2023, CMS reported that device and pharmaceutical companies transferred over <a href="https://openpaymentsdata.cms.gov/" target="_blank" rel="noopener">$12.6 billion in payments to physicians and teaching hospitals</a>, all documented in the Open Payments database. Underreporting, late reporting, or failing to track transfers of value can result in civil monetary penalties up to $150,000 per violation.</p>
+
+<p>This checklist covers the three phases of event compliance: pre-event planning, during-event documentation, and post-event reporting. Print it, share it with your event team, and use it as the starting point for your internal compliance review.</p>
+
+<p>A note upfront: this checklist covers federal requirements (AdvaMed Code of Ethics, Sunshine Act/Open Payments, OIG guidance) and common state-level requirements. Your company's compliance team should review this against your specific policies, and you should always check state-specific rules for the state where your event is held.</p>
+
+<h2>Phase 1: Pre-Event Compliance Checklist</h2>
+
+<h3>Event Purpose and Documentation</h3>
+
+<ul>
+<li><strong>Define and document the educational or informational purpose of the event.</strong> Every physician-facing event should have a written business purpose statement. "Educate dermatologists on [Device X]'s clinical applications for [Indication Y] supported by [Study Z] outcomes data" is specific and defensible. "Dinner with doctors to build relationships" is not.</li>
+<li><strong>Prepare a formal event agenda.</strong> Include start time, end time, presentation topics, speaker name and credentials, Q&A period, and meal timing. The agenda should demonstrate that the meal is incidental to the educational content, not the primary purpose of the gathering.</li>
+<li><strong>Get compliance department sign-off on the event plan.</strong> Most device companies require advance approval from compliance or legal before any physician-facing event. Submit the event purpose, agenda, venue, expected meal cost per person, and attendee list for review. Do this 30-60 days before the event.</li>
+<li><strong>Verify the event is in a venue and setting conducive to education.</strong> The <a href="https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/" target="_blank" rel="noopener">AdvaMed Code of Ethics</a> requires that events occur in clinical, educational, or professional settings. Entertainment and recreational venues (golf courses, sporting events, ski resorts) are prohibited for company-sponsored educational events.</li>
+</ul>
+
+<h3>Meal and Hospitality Limits</h3>
+
+<ul>
+<li><strong>Confirm per-person meal budget against AdvaMed "modest" standard.</strong> AdvaMed doesn't set a dollar amount but requires meals be "modest as judged by local standards." Your compliance team likely has an internal cap, typically $75-150 depending on the city and meal type.</li>
+<li><strong>Check state-specific meal gift limits.</strong> Several states have their own physician gift and meal limits that are stricter than federal thresholds. Vermont bans manufacturer-provided meals entirely for certain interactions. Minnesota requires reporting gifts over $50. Massachusetts caps industry-funded meals at $100. Check the specific state where your event takes place.</li>
+<li><strong>Calculate total per-person cost including tax, gratuity, and alcohol.</strong> Your per-person figure must include everything, not just the food cost. A $75 entree becomes $110 after tax (8-10%), gratuity (20%), and a glass of wine ($15-20). If your cap is $125, that $75 menu price is tight.</li>
+<li><strong>Confirm venue does not include entertainment or recreational components.</strong> No golf, no concert tickets, no spa packages bundled with the event. Even if the educational component is legitimate, bundling entertainment creates a compliance violation under AdvaMed and raises OIG anti-kickback concerns.</li>
+</ul>
+
+<h3>Speaker and Presenter Compliance</h3>
+
+<ul>
+<li><strong>Execute a written speaker agreement before the event.</strong> The agreement should document the speaker's qualifications, the scope of the presentation, compensation amount, and a statement that the speaker was selected based on clinical expertise (not prescribing volume or purchasing history).</li>
+<li><strong>Verify speaker compensation reflects fair market value (FMV).</strong> FMV assessments should be documented and based on the speaker's specialty, geographic market, and the nature of the engagement. Overpaying speakers relative to FMV is an anti-kickback risk. The <a href="https://oig.hhs.gov/compliance/compliance-guidance/index.asp" target="_blank" rel="noopener">OIG's compliance guidance for pharmaceutical manufacturers</a> (which device companies also reference) specifically calls out speaker compensation as a high-risk area.</li>
+<li><strong>Confirm slide deck has been reviewed by medical/legal/regulatory (MLR).</strong> Every presentation used at a company-sponsored event should be reviewed and approved by your MLR team. Off-label promotion in a sponsored event creates both regulatory risk and speaker liability.</li>
+<li><strong>Ensure speaker discloses financial relationships at the start of the presentation.</strong> The speaker should verbally disclose their consulting or speaking arrangement with your company at the beginning of the presentation. This is standard practice and aligns with ACCME requirements for CME-eligible activities.</li>
+</ul>
+
+<h3>Attendee List and Invitations</h3>
+
+<ul>
+<li><strong>Invite only HCPs with a legitimate professional interest in the topic.</strong> Inviting a dermatologist to an orthopedic device presentation raises questions about why they're there. Keep invitations targeted to the specialties your device serves.</li>
+<li><strong>Do not invite spouses, guests, or plus-ones.</strong> Under AdvaMed, hospitality should not be extended to guests or companions of HCPs. Family members dining on the company's tab is a clear violation.</li>
+<li><strong>Maintain a documented invite list with NPI numbers.</strong> You'll need NPI numbers for Sunshine Act reporting. Collect them during registration, not after the event when it's harder to track down.</li>
+<li><strong>Exclude sanctioned or debarred individuals.</strong> Cross-reference your invite list against the OIG exclusion database (LEIE) and the GSA System for Award Management (SAM) exclusion list. Providing meals or payments to excluded individuals creates significant legal risk.</li>
+</ul>
+
+<h2>Phase 2: During-Event Compliance Checklist</h2>
+
+<h3>Attendee Sign-In and Documentation</h3>
+
+<ul>
+<li><strong>Set up a formal sign-in process at the registration desk.</strong> Every attendee must sign in with their full name, professional credentials (MD, DO, NP, PA), NPI number, and practice name. This sign-in sheet is your primary compliance record.</li>
+<li><strong>Use a printed sign-in sheet or digital check-in system.</strong> Paper sign-in sheets work but are harder to reconcile after the event. Digital check-in (QR code scanning, tablet sign-in) captures data more accurately and integrates with your CRM for follow-up. Either way, the data must be captured at the door, not reconstructed later.</li>
+<li><strong>Record actual attendance, not just registration.</strong> Registered but absent physicians should not be reported as receiving a meal. Track who was actually in the room when food was served. This distinction matters for Sunshine Act reporting accuracy.</li>
+<li><strong>Capture meal value per attendee.</strong> If the meal is a plated dinner, the per-person cost is straightforward. For buffets, divide total food and beverage cost (including tax and gratuity) by the number of attendees present. Document this calculation.</li>
+</ul>
+
+<h3>Content and Presentation Compliance</h3>
+
+<ul>
+<li><strong>Ensure only MLR-approved materials are presented or distributed.</strong> No improvised slides, no off-label claims from the podium, no unapproved handouts. If the speaker deviates from approved content, your company representative should address it during the Q&A or afterward.</li>
+<li><strong>Record the actual presentation start and end time.</strong> This documents that the educational component was substantive and not a pretext for a meal. A 10-minute presentation followed by a 90-minute dinner looks problematic. A 45-minute presentation with 15 minutes of Q&A followed by a 60-minute dinner looks proportionate.</li>
+<li><strong>Do not distribute promotional items with a value exceeding $10.</strong> AdvaMed prohibits non-educational promotional items (branded pens, stress balls, etc.) and limits educational items to $10 in value. Clinical reference cards, dosing guides, and approved patient education materials are acceptable. Branded merchandise is not.</li>
+</ul>
+
+<h3>Photography and Consent</h3>
+
+<ul>
+<li><strong>If photographing or recording the event, obtain consent from attendees.</strong> A sign at the registration desk stating "this event may be photographed for internal/marketing purposes" is a minimum. For recordings that include identifiable individuals, get written consent.</li>
+<li><strong>If any demonstrations involve patients or human subjects, execute separate clinical consent forms.</strong> This is covered in detail in our <a href="/blog/medical-device-demo-day-planning/">medical device demo day planning guide</a>.</li>
+</ul>
+
+<h2>Phase 3: Post-Event Compliance Checklist</h2>
+
+<h3>Sunshine Act / CMS Open Payments Reporting</h3>
+
+<ul>
+<li><strong>Calculate the reportable transfer of value for each attendee.</strong> This includes the meal value, any educational materials provided, and travel reimbursement if applicable. The current reporting threshold is $12.49 per interaction (2025 figure, adjusted annually by CMS). Any individual transfer of value at or above this threshold must be reported.</li>
+<li><strong>Report physician payments to your company's Open Payments data collection system.</strong> Most device companies have an internal system for aggregating reportable payments throughout the year. Submit your event data within 30 days of the event so it's captured in the next reporting cycle.</li>
+<li><strong>Categorize the payment correctly.</strong> CMS Open Payments has specific categories: "Food and Beverage," "Compensation for Services Other Than Consulting" (speaker fees), "Travel and Lodging," etc. Miscategorizing payments can trigger CMS review.</li>
+<li><strong>Reconcile attendee list against sign-in sheet.</strong> Only report meals for physicians who actually attended and were present when food was served. Reporting a meal for a physician who registered but didn't show up is both inaccurate and a waste of your reporting capacity. Cross-reference your registration list against the sign-in sheet and only report confirmed attendees.</li>
+</ul>
+
+<h3>Speaker Payment Reporting</h3>
+
+<ul>
+<li><strong>Report speaker honoraria and travel reimbursements separately from meal values.</strong> The speaker's meal is reported as food and beverage. Their honorarium is reported as compensation for services. Their travel is reported as travel and lodging. Each category appears separately in the Open Payments database.</li>
+<li><strong>Confirm payment was made per the speaker agreement terms.</strong> Document when payment was issued and that it matches the agreed-upon FMV rate. Discrepancies between the agreement and actual payment create audit risk.</li>
+</ul>
+
+<h3>Record Retention</h3>
+
+<ul>
+<li><strong>Retain all event documentation for a minimum of 7 years.</strong> This includes the event purpose statement, agenda, attendee sign-in sheet, meal cost documentation, speaker agreement, FMV assessment, MLR-approved slide deck, and any consent forms. The statute of limitations for False Claims Act violations is 6 years (10 years if the government intervened), so 7 years is the conservative retention period.</li>
+<li><strong>Store records in a centralized, accessible system.</strong> If a compliance audit requires you to produce documentation for an event you ran three years ago, you shouldn't be digging through a rep's email to find the sign-in sheet. Use your company's document management system.</li>
+</ul>
+
+<h2>State-Specific Meal Limits: Key States to Watch</h2>
+
+<p>Federal reporting requirements apply everywhere, but several states have additional restrictions that can catch out-of-state event teams off guard.</p>
+
+<ul>
+<li><strong>Vermont:</strong> Annual disclosure required for payments over $25 to HCPs. The Vermont Attorney General publishes manufacturer payment data separately from CMS Open Payments.</li>
+<li><strong>Minnesota:</strong> Gifts valued over $50 per year (aggregate) to individual practitioners are prohibited. Meals are included in the gift calculation. A $75 dinner and a $30 lunch in the same year to the same physician exceeds the threshold.</li>
+<li><strong>Massachusetts:</strong> Meals must not exceed $100 per physician per event. Annual aggregate gift cap of $100 per physician from any single company.</li>
+<li><strong>District of Columbia:</strong> Aggregate gift limit of $100 per year per HCP. Reporting required for gifts over $25.</li>
+<li><strong>Connecticut:</strong> Annual reporting of payments over $78 per HCP. Compliance program certification required.</li>
+</ul>
+
+<p>Always check the specific state's pharmaceutical marketing regulations before hosting an event. State laws change, and new states periodically enact gift and meal restrictions.</p>
+
+<h2>Common Compliance Mistakes</h2>
+
+<p>Based on events we've supported and conversations with compliance teams, these are the mistakes that come up repeatedly:</p>
+
+<ul>
+<li><strong>Reconstructing the attendee list after the event.</strong> If you didn't have a sign-in sheet, you end up estimating who was there based on rep memory and email RSVPs. This produces inaccurate Sunshine Act reports. Always capture attendance at the door.</li>
+<li><strong>Forgetting to include tax and gratuity in per-person meal cost.</strong> The compliance cap is on total cost, not the menu price. A $100 per-person menu becomes $130 after tax and tip. If your cap is $125, you've exceeded it.</li>
+<li><strong>Inviting spouses or office staff who aren't HCPs.</strong> Meals for non-HCP guests are not reportable under Open Payments, but providing them raises questions about whether the hospitality is a gift to the physician (who benefits from their spouse's meal). Keep attendee lists limited to HCPs with a professional interest in the topic.</li>
+<li><strong>Running events at entertainment venues.</strong> A dinner at a restaurant near a golf course is fine. A dinner at the golf course clubhouse after a round of golf is a clear AdvaMed violation. The venue matters.</li>
+<li><strong>Late submission of event data to internal compliance systems.</strong> Waiting until Q4 to report Q1 events means you're reconstructing details from 9 months ago. Submit event compliance data within 30 days while the details are fresh.</li>
+</ul>
+
+<p>For help with event registration infrastructure that captures NPI numbers, tracks attendance, and produces clean compliance records, explore our <a href="/services/event-marketing/">event marketing service</a>. For the KOL dinner format specifically, see our <a href="/blog/kol-dinner-planning-healthcare/">KOL dinner planning guide</a>. For the lunch and learn format, see our <a href="/blog/medical-device-lunch-and-learn-playbook/">lunch and learn playbook</a>. And for speaker program compliance, see our <a href="/blog/physician-speaker-program-planning/">physician speaker program planning guide</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "What is the Sunshine Act reporting threshold for physician meals?",
+                "answer": "The CMS Open Payments reporting threshold for 2025 is $12.49 per individual payment or transfer of value. Any meal provided to a physician that meets or exceeds this amount must be reported. The threshold is adjusted annually by CMS. Even meals below the threshold must be reported if the aggregate total from a single company to a single physician exceeds $100 in a calendar year.",
+            },
+            {
+                "question": "How long do I need to keep medical device event compliance records?",
+                "answer": "Retain all event compliance documentation for a minimum of 7 years. This includes the event purpose statement, agenda, attendee sign-in sheets with NPI numbers, per-person meal cost calculations, speaker agreements, FMV assessments, MLR-approved presentation decks, and consent forms. The False Claims Act statute of limitations is 6 years (10 years with government intervention), making 7 years the conservative standard.",
+            },
+            {
+                "question": "Are there state-specific meal limits for medical device events?",
+                "answer": "Yes. Several states have limits stricter than federal requirements. Minnesota prohibits aggregate gifts over $50 per year per HCP. Massachusetts caps meals at $100 per event. Vermont requires disclosure of payments over $25. The District of Columbia has a $100 annual aggregate gift limit. Always check the specific state's pharmaceutical marketing laws before hosting an event, as state regulations change and new states periodically enact restrictions.",
+            },
+            {
+                "question": "Do I need to report meals for nurses and physician assistants under the Sunshine Act?",
+                "answer": "Starting in 2022, CMS expanded Open Payments reporting to include physician assistants, nurse practitioners, clinical nurse specialists, certified registered nurse anesthetists, and anesthesiologist assistants. Meals provided to these practitioners at your events must be tracked and reported the same way physician meals are. Make sure your sign-in sheet captures credentials (MD, DO, NP, PA, etc.) for accurate categorization.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "KOL Dinner Planning", "url": "/blog/kol-dinner-planning-healthcare/"},
+            {"text": "Medical Device Lunch and Learn Playbook", "url": "/blog/medical-device-lunch-and-learn-playbook/"},
+            {"text": "Physician Speaker Program Planning", "url": "/blog/physician-speaker-program-planning/"},
+        ],
+        "outbound_links": [
+            ("https://openpaymentsdata.cms.gov/", "CMS Open Payments Database"),
+            ("https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics/", "AdvaMed Code of Ethics"),
+            ("https://oig.hhs.gov/compliance/compliance-guidance/index.asp", "OIG Compliance Guidance"),
+        ],
+        "tags": ["event marketing", "compliance", "AdvaMed", "Sunshine Act", "medical device"],
+    },
+    # -------------------------------------------------------------------------
+    # Post 33: Physician Event Check-In Methods
+    # -------------------------------------------------------------------------
+    {
+        "slug": "physician-event-check-in-methods",
+        "title": "Physician Event Attendance: Check-In Methods That Work",
+        "meta_description": "Compare QR code, sign-in sheet, and badge scanning check-in methods for physician events. Accurate attendance tracking for compliance and ROI.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Your attendance data is only as good as your check-in process. Here's what to capture, how to capture it, and why the method you choose affects everything downstream.",
+        "content_html": """
+<h2>Attendance Tracking Is a Compliance Requirement, Not a Nice-to-Have</h2>
+
+<p>Here's a scenario that plays out more often than anyone admits: a device company runs a dinner event for 25 physicians. Fifteen show up. But the only attendance record is the reservation list of 25 names. The compliance team reports meals for all 25 to CMS Open Payments. Ten physicians who never attended now have a reported transfer of value on their public Open Payments profile that they'll dispute, creating work for your compliance department and damaging the trust your reps built with those physicians.</p>
+
+<p>Under the <a href="https://openpaymentsdata.cms.gov/" target="_blank" rel="noopener">CMS Open Payments reporting requirements</a>, device and pharmaceutical companies must accurately report transfers of value to covered recipients. "Accurately" means reporting meals only for physicians who actually attended and were present when food was served. Registration data alone doesn't satisfy this requirement. You need confirmed attendance.</p>
+
+<p>Beyond compliance, accurate attendance data drives three other critical functions: ROI measurement (cost per attendee, pipeline per attendee), follow-up segmentation (different messages for attendees vs. no-shows), and future event planning (which territories, specialties, and formats produce the best turnout).</p>
+
+<p>The check-in method you choose determines the quality of all four of these outputs. Here's how the three main methods compare.</p>
+
+<h2>Method 1: Paper Sign-In Sheets</h2>
+
+<h3>How It Works</h3>
+
+<p>A printed sheet at the registration table. Attendees write their name, credentials, NPI number, practice name, and sign on a line. The rep or registration coordinator greets each attendee and hands them the clipboard.</p>
+
+<h3>What It Gets Right</h3>
+
+<p>Simplicity. No technology to configure, no app to download, no Wi-Fi dependency. A printed sign-in sheet works in a hospital conference room with no internet just as well as it works in a hotel ballroom. It's also familiar to physicians, who sign in at hospital meetings and CME events regularly.</p>
+
+<p>Paper sign-in sheets also provide a physical record that can be stored in your compliance files. Some compliance teams prefer a wet signature as the attendance record because it's harder to fabricate than a digital log.</p>
+
+<h3>What It Gets Wrong</h3>
+
+<p>Legibility is the biggest problem. Physicians are not famous for clear handwriting. After the event, someone has to transcribe every name, NPI number, and practice name from the sheet into your CRM or compliance system. Misread handwriting turns "Dr. Patricia Chen, NPI 1234567890" into "Dr. P. Char, NPI 123456780." That transcription error flows into your Open Payments report, your CRM, and your follow-up email list.</p>
+
+<p>NPI accuracy is the second problem. Many physicians don't have their 10-digit NPI memorized. They leave the NPI field blank, write it incorrectly, or write their state license number instead. You then spend time after the event looking up NPIs manually through the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPPES NPI Registry</a>.</p>
+
+<p>Data entry delay is the third problem. The sign-in sheet sits on someone's desk until they have time to type it up. That delay slows your post-event follow-up (every hour matters for the first 24-48 hour follow-up window) and creates a gap in your compliance records.</p>
+
+<h3>When to Use It</h3>
+
+<p>Paper sign-in sheets are acceptable for small events (under 15 attendees) in venues with unreliable or no internet access. They're also a necessary backup for any event, regardless of your primary check-in method. Technology fails. Wi-Fi goes down. Batteries die. Always have a printed sign-in sheet at the registration table even if you're using a digital system.</p>
+
+<h2>Method 2: QR Code Check-In</h2>
+
+<h3>How It Works</h3>
+
+<p>Each registrant receives a unique QR code in their confirmation email (or a universal event QR code is posted at the registration desk). At check-in, the attendee presents their QR code on their phone, and a staff member scans it with a tablet or phone camera. The scan logs the attendee's name, NPI, registration data, and check-in time automatically.</p>
+
+<h3>What It Gets Right</h3>
+
+<p>Data accuracy is the primary advantage. Because the attendee's information was captured during online registration, the check-in scan pulls pre-verified data rather than relying on handwritten input. The NPI number the physician entered during registration is the NPI that gets logged at check-in. No transcription, no legibility issues, no manual lookup.</p>
+
+<p>Speed is the second advantage. A QR scan takes 3-5 seconds per attendee. A paper sign-in with name, credentials, NPI, practice, and signature takes 30-60 seconds. For an event with 40 attendees arriving in a 15-minute window, that's the difference between a smooth check-in and a line out the door.</p>
+
+<p>Real-time data is the third advantage. Your registration dashboard updates the moment each scan processes. You can see actual attendance vs. registered attendance in real time, which lets your event lead make decisions (delay the start by 5 minutes if only 60% have checked in, adjust table settings, notify the catering manager of the final head count).</p>
+
+<h3>What It Gets Wrong</h3>
+
+<p>QR code check-in requires that registrants received and can locate their confirmation email at the event. Physicians who registered weeks ago may not find the email quickly. Those who had an assistant register on their behalf may not have the email at all. You need a fallback process for attendees who can't produce their QR code: look them up by name in the registration system or fall back to the paper sign-in sheet.</p>
+
+<p>Wi-Fi dependency is a risk. If the scan app requires an internet connection to verify QR codes against the registration database, a Wi-Fi outage kills your check-in process. Use a system that can scan and store check-ins offline, then sync when connectivity returns.</p>
+
+<p>There's also a learning curve for staff. The registration coordinator needs to be comfortable with the scanning app, know how to handle exceptions (walk-ins not in the system, registrants with different names than their registration), and troubleshoot basic technical issues. A 5-minute training session before the event prevents problems.</p>
+
+<h3>When to Use It</h3>
+
+<p>QR code check-in is the best option for events with 20+ attendees where registration happens through a digital platform. It's particularly valuable for multi-specialty events where you want to track which specialty page each registrant came through, and for compliance-heavy events where NPI accuracy matters for Open Payments reporting.</p>
+
+<h2>Method 3: Badge Scanning / RFID</h2>
+
+<h3>How It Works</h3>
+
+<p>Pre-printed name badges with embedded QR codes or RFID chips are prepared for each registrant. At check-in, attendees pick up their badge and it's scanned. For multi-station events (like demo days), badge scanning at each station tracks which stations each attendee visited and how long they spent at each.</p>
+
+<h3>What It Gets Right</h3>
+
+<p>Station-level tracking is the standout capability. At a demo day with five stations, badge scanning tells you that Dr. Smith spent 18 minutes at the body contouring station, 12 minutes at the business model station, and skipped the technology overview. That data is gold for post-event follow-up. You know Dr. Smith is interested in the clinical application and the business case, so your follow-up email leads with ROI data and an in-office demo offer, not a technology whitepaper.</p>
+
+<p>For more on how station-level tracking integrates with demo day planning, see our <a href="/blog/medical-device-demo-day-planning/">medical device demo day guide</a>.</p>
+
+<p>Badge scanning also creates an authoritative attendance record. The badge is a physical artifact tied to a specific registrant, scanned at the door. It's harder to dispute than a paper sign-in and more official than a QR code on a phone.</p>
+
+<h3>What It Gets Wrong</h3>
+
+<p>Cost and complexity. Pre-printed badges with QR codes require a badge printer or a print shop, plus the time to prepare and sort badges alphabetically before the event. RFID badges add hardware cost (RFID readers at each station) and a more complex technical setup. For a 25-person lunch and learn, this is overkill.</p>
+
+<p>Badge production requires a finalized attendee list at least 24-48 hours before the event. Late registrations and walk-ins need blank badges that are filled in by hand, defeating the purpose of the pre-printed system. If your events have a high rate of day-of registrations, badge scanning loses much of its advantage.</p>
+
+<h3>When to Use It</h3>
+
+<p>Badge scanning makes sense for larger events (40+ attendees), multi-station events where station-level tracking adds value, and multi-day events where the same attendee checks in on consecutive days. For single-station lunch and learns and dinners under 30 people, QR code check-in delivers 90% of the benefit at a fraction of the complexity.</p>
+
+<h2>What to Capture at Check-In (Beyond "Present")</h2>
+
+<p>Regardless of which check-in method you use, you should be capturing more than just a name and a checkmark. The check-in moment is the one time you have every attendee's focused attention at a controlled point. Use it.</p>
+
+<h3>Required Data (Compliance)</h3>
+
+<ul>
+<li><strong>Full legal name</strong> as it appears in the NPI registry</li>
+<li><strong>Professional credentials</strong> (MD, DO, NP, PA, DPM, etc.) for Open Payments recipient categorization</li>
+<li><strong>NPI number</strong> for Sunshine Act reporting</li>
+<li><strong>Practice name and address</strong> for accurate CRM matching</li>
+<li><strong>Check-in timestamp</strong> proving the attendee was present during the educational component and meal</li>
+</ul>
+
+<h3>Valuable Data (Marketing and Sales)</h3>
+
+<ul>
+<li><strong>Specialty</strong> (self-reported, may differ from NPI taxonomy) for follow-up segmentation</li>
+<li><strong>How they heard about the event</strong> (rep invitation, email, colleague referral, landing page) for channel attribution</li>
+<li><strong>Current device/technology usage</strong> for competitive intelligence ("Do you currently use [Competitor X]?")</li>
+<li><strong>Interest level</strong> (a simple "what brought you here today" question reveals whether they're early-stage curious or actively evaluating)</li>
+</ul>
+
+<p>Don't try to capture all of this at the door. Collect the compliance-required fields at check-in (name, credentials, NPI, practice). Capture the marketing fields through a brief survey card at their seat or a post-event email survey within 24 hours.</p>
+
+<h2>Connecting Check-In Data to Your CRM</h2>
+
+<p>Check-in data that lives in a spreadsheet is a missed opportunity. The real value comes from flowing attendance data into your CRM so your sales team can act on it immediately.</p>
+
+<p>Here's what that connection enables:</p>
+
+<ul>
+<li><strong>Automatic attendee tagging:</strong> Every physician who attended gets tagged in the CRM with the event name, date, and format. Reps can see at a glance which prospects have attended events and which haven't.</li>
+<li><strong>Follow-up workflow triggering:</strong> Check-in data triggers an automated follow-up sequence. Attendees get a thank-you email within 2 hours. No-shows get a "sorry we missed you" email with a link to the presentation recording or slides. Each sequence is tailored to the outcome.</li>
+<li><strong>ROI attribution:</strong> When a physician who attended your demo day purchases a device 60 days later, the CRM attribution model connects that revenue to the event. Without check-in data flowing into the CRM, that connection is lost and the event team can't prove pipeline impact.</li>
+<li><strong>Compliance record sync:</strong> The same check-in data that feeds your CRM feeds your compliance reporting. One capture point, two outputs. No duplicate data entry, no reconciliation headaches.</li>
+</ul>
+
+<p>For help building event registration pages that capture NPI data at registration, QR-code check-in systems that connect to your CRM, and compliance-ready attendance records, explore our <a href="/services/event-marketing/">event marketing service</a>.</p>
+
+<h2>Check-In Method Comparison</h2>
+
+<table>
+<thead>
+<tr><th>Factor</th><th>Paper Sign-In</th><th>QR Code</th><th>Badge Scan</th></tr>
+</thead>
+<tbody>
+<tr><td>Setup cost</td><td>~$0</td><td>Low (software)</td><td>Medium (badges + readers)</td></tr>
+<tr><td>Speed per attendee</td><td>30-60 sec</td><td>3-5 sec</td><td>3-5 sec</td></tr>
+<tr><td>Data accuracy</td><td>Low (handwriting)</td><td>High (pre-populated)</td><td>High (pre-populated)</td></tr>
+<tr><td>NPI capture</td><td>Often incomplete</td><td>Captured at registration</td><td>Captured at registration</td></tr>
+<tr><td>Station tracking</td><td>No</td><td>No</td><td>Yes</td></tr>
+<tr><td>CRM integration</td><td>Manual entry</td><td>Automatic</td><td>Automatic</td></tr>
+<tr><td>Wi-Fi required</td><td>No</td><td>Recommended</td><td>Recommended</td></tr>
+<tr><td>Best for</td><td>Small events, backup</td><td>20+ attendees</td><td>40+ or multi-station</td></tr>
+</tbody>
+</table>
+
+<h2>The Bottom Line on Attendance Tracking</h2>
+
+<p>For most medical device events, QR code check-in is the sweet spot. It's accurate enough for Sunshine Act compliance, fast enough for smooth event flow, and integrates with your CRM for automated follow-up and ROI tracking. Paper sign-in sheets should always be on hand as backup but shouldn't be your primary method for events over 15 people.</p>
+
+<p>Badge scanning is worth the added complexity only when station-level tracking adds clear value, like demo days with multiple stations or multi-day events where attendees move between sessions.</p>
+
+<p>Whatever method you choose, the principle is the same: capture accurate data once at the door, and flow it to every system that needs it (CRM, compliance, follow-up automation). That single point of capture eliminates duplicate data entry, reduces compliance errors, and gives your sales team actionable intelligence within hours of the event.</p>
+
+<p>For ROI measurement beyond attendance, see our guide on <a href="/blog/healthcare-event-marketing-roi/">healthcare event marketing ROI</a>. For the compliance implications of attendance tracking, see our <a href="/blog/medical-device-event-compliance-checklist/">medical device event compliance checklist</a>. And for post-event follow-up strategies that use check-in data, see our guide on <a href="/blog/post-event-follow-up-medical-device/">post-event follow-up for medical device events</a>.</p>
+""",
+        "faqs": [
+            {
+                "question": "Do I need NPI numbers at physician event check-in?",
+                "answer": "Yes. CMS Open Payments (the Sunshine Act) requires that transfers of value be reported against individual physicians identified by NPI number. Capturing NPI at check-in, or better yet at online registration before the event, ensures your compliance records are accurate and avoids the time-consuming process of looking up NPI numbers after the fact through the NPPES registry.",
+            },
+            {
+                "question": "What's the best check-in method for a medical device lunch and learn?",
+                "answer": "For a lunch and learn with 15-40 attendees, QR code check-in is the best balance of speed, accuracy, and simplicity. Each registrant receives a unique QR code in their confirmation email. At the door, a staff member scans the code with a tablet, which logs attendance with pre-verified name, NPI, and practice data. Keep a paper sign-in sheet as backup in case of Wi-Fi or app issues.",
+            },
+            {
+                "question": "How do I handle walk-in attendees who didn't pre-register?",
+                "answer": "Have a walk-in registration process at the check-in table. For QR code systems, the check-in app should have an 'add walk-in' function where staff can enter the attendee's name, credentials, NPI, and practice information manually. For paper systems, have extra lines on the sign-in sheet. Walk-ins still need to provide NPI numbers for compliance reporting. If a walk-in doesn't know their NPI, note their full name and credentials and look it up through the NPPES registry after the event.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Healthcare Event Marketing ROI", "url": "/blog/healthcare-event-marketing-roi/"},
+            {"text": "Medical Device Event Compliance Checklist", "url": "/blog/medical-device-event-compliance-checklist/"},
+            {"text": "Post-Event Follow-Up for Medical Devices", "url": "/blog/post-event-follow-up-medical-device/"},
+        ],
+        "outbound_links": [
+            ("https://openpaymentsdata.cms.gov/", "CMS Open Payments Reporting Requirements"),
+            ("https://www.accme.org/accreditation-rules/policies/attendance-and-participation", "ACCME Attendance Documentation Standards"),
+        ],
+        "tags": ["event marketing", "check-in", "attendance tracking", "compliance", "physician events"],
+    },
+    # -------------------------------------------------------------------------
+    # Specialty Event Guide: Dermatology
+    # -------------------------------------------------------------------------
+    {
+        "slug": "dermatology-practice-event-planning",
+        "title": "How to Plan a Dermatology Practice Event",
+        "meta_description": "Plan dermatology practice events that fill seats and drive device adoption. Laser demo logistics, venue setup, and specialty targeting.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Dermatology events involve live device demos, laser safety requirements, and a specialty that splits sharply between medical and cosmetic practices. Here's how to plan around all of it.",
+        "content_html": """
+<h2>Why Dermatology Events Are Different</h2>
+
+<p>Dermatology is one of the few specialties where live device demonstrations are genuinely persuasive. A dermatologist considering a $150,000 laser system wants to see it work on real skin, in real time. They want to watch the handpiece move, see the tissue response, and ask questions mid-procedure. No amount of slide decks or brochure photography replaces that experience.</p>
+
+<p>That makes dermatology events high-impact but also high-complexity. You're dealing with live demonstrations on patients or models, laser safety protocols, specialized room configurations, and an audience that splits into two distinct camps: medical dermatologists focused on conditions like psoriasis and skin cancer, and cosmetic dermatologists focused on aesthetics, rejuvenation, and body contouring. The event that works for one group may completely miss the other.</p>
+
+<p>According to the <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a>, there are roughly 13,200 practicing dermatologists in the U.S. That's a small, concentrated specialty. Getting the right 20-40 into a room matters more than filling 200 seats with the wrong audience. Your targeting has to be precise.</p>
+
+<h2>Know Your Audience: Medical vs. Cosmetic Derm</h2>
+
+<p>The single biggest mistake in dermatology event planning is treating all dermatologists the same. A board-certified dermatologist running a Mohs surgery practice cares about different devices, different clinical data, and different business models than a cosmetic dermatologist running a cash-pay aesthetics clinic.</p>
+
+<p>Medical dermatologists evaluate devices through a clinical efficacy lens. They want peer-reviewed studies, FDA clearance details, and integration with existing treatment protocols. Their purchasing decisions often involve hospital or practice group committees. Events for this segment should emphasize clinical outcomes, published data, and insurance reimbursement pathways.</p>
+
+<p>Cosmetic dermatologists evaluate devices through a revenue lens. They want to know the per-treatment revenue, patient demand in their market, competitive differentiation from other aesthetic practices nearby, and the learning curve for their staff. Events for this segment should lead with the business case and patient demand data, then back it up with clinical safety and efficacy.</p>
+
+<p>Your invitation list should reflect this split. If your device is a cosmetic laser, don't waste seats on dermatopathologists or pediatric dermatologists. If it's a phototherapy system for psoriasis, don't invite the cosmetic derm who does nothing but injectables. Use <a href="/providers/dermatology/">dermatology provider data</a> segmented by subspecialty and procedure mix to build a targeted list.</p>
+
+<h2>Live Demo Logistics</h2>
+
+<p>Live demonstrations are the centerpiece of most dermatology events, and they require planning that other specialties don't. Here's what you need to get right.</p>
+
+<h3>Laser Safety Requirements</h3>
+
+<p>Any event involving laser devices must comply with your state's laser safety regulations and the <a href="https://www.aad.org/member/practice/managing/laser-safety" target="_blank" rel="noopener">American Academy of Dermatology's laser safety guidelines</a>. At minimum, this means:</p>
+
+<ul>
+<li><strong>Laser safety officer (LSO) on site.</strong> Someone with documented LSO training must be present and responsible for safety protocols during any live laser demonstration.</li>
+<li><strong>Protective eyewear for everyone.</strong> Every person in the demo room needs wavelength-appropriate laser safety glasses. Have extras. Attendees forget theirs, and you can't let anyone watch without eye protection.</li>
+<li><strong>Controlled access.</strong> The demo room needs a closed door with a warning sign posted outside. No one walks in mid-demonstration without protective eyewear.</li>
+<li><strong>Window coverings.</strong> Any windows in the demo room need to be covered to prevent laser energy from exiting the space.</li>
+</ul>
+
+<p>Hotel ballrooms and conference rooms don't come set up for laser demos. You'll need to scout the venue specifically for this. The demo room needs adequate power outlets (some laser systems draw significant current), a layout that keeps the audience at a safe distance from the treatment area, and enough space for the device, the treatment bed, and the demonstration physician to work comfortably.</p>
+
+<h3>Patient or Model Coordination</h3>
+
+<p>Live demos need someone to demonstrate on. That means coordinating with a patient or model who has signed appropriate consent forms, has the right skin type or condition for the demonstration, and is comfortable being observed by a room full of physicians.</p>
+
+<p>Schedule the model's arrival 30-45 minutes before the demo for prep. Have a private area for them before and after the demonstration. And have a backup plan. Models cancel, patients get nervous, skin conditions flare or resolve before the event date. A second model on standby, or a recorded demonstration as backup, keeps your event on track.</p>
+
+<h3>Before-and-After Photo Stations</h3>
+
+<p>Set up a dedicated photo station where attendees can review before-and-after results from the device. This isn't a poster board with printouts. Use a large monitor or display showing high-resolution clinical photographs in standardized lighting conditions. Dermatologists are trained to evaluate skin, and they'll dismiss photos that look manipulated by lighting or angle differences.</p>
+
+<p>Include case details with each set of photos: patient skin type, number of treatments, treatment parameters, time between photos. The more clinical rigor in the photo presentation, the more credible it is to a physician audience.</p>
+
+<h2>Venue Requirements</h2>
+
+<p>For a dermatology event with live demos, you need at minimum two distinct spaces: a presentation and dining area for the educational component and a demo room for live device demonstrations. Trying to do both in one room creates problems. The demo room needs to be darkened and access-controlled during laser use. The dining and presentation area needs standard lighting and a comfortable seating arrangement.</p>
+
+<p>Hotels with conference suites that include multiple adjoining rooms work well. Medical office buildings with a large enough conference room and an adjacent treatment room work even better because the clinical environment adds credibility. For more venue considerations, see our <a href="/blog/healthcare-event-venue-selection-guide/">healthcare event venue selection guide</a>.</p>
+
+<p>Power is a detail that trips up event planners. Some laser and energy-based devices need dedicated 20-amp or 30-amp circuits. Confirm the venue's electrical capacity and have the device rep verify that the available outlets support the equipment. Running a high-draw laser on the same circuit as the audiovisual setup is a good way to trip a breaker during a demonstration.</p>
+
+<h2>Event Format That Works for Dermatologists</h2>
+
+<p>The most effective format for dermatology device events is a 2-3 hour window with three segments:</p>
+
+<ol>
+<li><strong>Clinical presentation (30-40 min).</strong> A physician speaker (ideally a respected dermatologist who uses the device) presents clinical data, published studies, and their own practice experience. This establishes clinical credibility before anyone sees the device in action.</li>
+<li><strong>Live demonstration (30-45 min).</strong> The demo happens in the designated demo room. Attendees rotate in groups if the room can't hold everyone at once. The demonstrating physician narrates while treating, explaining technique, settings, and patient selection criteria.</li>
+<li><strong>Networking and Q&amp;A over dinner or drinks (45-60 min).</strong> This is where the real conversations happen. Physicians ask the questions they won't ask in front of a group: pricing, competitive positioning, patient financing, how long it took the speaker to get comfortable with the device.</li>
+</ol>
+
+<p>For a deeper breakdown of demo day structure, see our <a href="/blog/medical-device-demo-day-planning/">medical device demo day planning guide</a>.</p>
+
+<h2>Getting Dermatologists to Show Up</h2>
+
+<p>Dermatologists are in high demand and overbooked. Your invitation strategy needs to cut through the noise. A few things that work:</p>
+
+<p><strong>Peer invitations outperform vendor invitations.</strong> If a respected local dermatologist is speaking or hosting, their personal invitation to colleagues carries more weight than a branded email from a device company. Ask your physician speaker to send personal invitations to 10-15 colleagues they know.</p>
+
+<p><strong>Specificity in the invitation matters.</strong> "Join us for a dermatology event" gets ignored. "See the [Device Name] treat a Fitzpatrick Type IV patient live, with before-and-after results from 40+ cases" gets opened. Dermatologists respond to clinical specificity.</p>
+
+<p><strong>Timing around conferences helps.</strong> Schedule your event in a market right before or after a major dermatology conference (AAD Annual Meeting, Cosmetic Surgery Forum, ODAC). Physicians in "learning mode" around conferences are more receptive to events that build on conference topics.</p>
+
+<p>For more attendance strategies, see our guide on <a href="/blog/how-to-get-doctors-to-attend-events/">getting doctors to attend events</a>.</p>
+
+<h2>Targeting the Right Dermatologists</h2>
+
+<p>Building your invite list requires more than pulling every dermatologist in a metro area. You need to segment by:</p>
+
+<ul>
+<li><strong>Practice type:</strong> Solo practice, group practice, academic, hospital-employed. Solo and small group practices make faster purchasing decisions. Academic and hospital-employed dermatologists often need committee approval.</li>
+<li><strong>Procedure focus:</strong> Does the practice offer aesthetic procedures, or is it purely medical? A dermatologist who already does laser procedures is a warmer target for a new laser system than one who's never offered energy-based treatments.</li>
+<li><strong>Geography:</strong> For a hands-on demo event, your practical radius is about 30-45 minutes of drive time. Dermatologists won't drive an hour for a dinner event unless the speaker or device is unusually compelling.</li>
+</ul>
+
+<p>Accurate, segmented provider data is the foundation of this targeting. Browse our <a href="/providers/dermatology/">dermatology provider database</a> to see the practice-level detail available for your event targeting.</p>
+
+<p>If you're planning a dermatology device event and need help with provider targeting, registration pages, or event logistics, our <a href="/services/event-marketing/">event marketing service</a> handles the data and operational work so you can focus on the clinical program.</p>
+""",
+        "faqs": [
+            {
+                "question": "Do I need a laser safety officer for a dermatology device demo event?",
+                "answer": "Yes. Any event where a laser device is operated requires a designated laser safety officer (LSO) on site who is responsible for ensuring protective eyewear is worn by all attendees, the demo room has controlled access and window coverings, and all state laser safety regulations are followed. This applies even if the demonstration is on a model rather than a patient.",
+            },
+            {
+                "question": "How do I target cosmetic dermatologists vs. medical dermatologists for an event?",
+                "answer": "Segment your invite list by procedure focus and practice type. Cosmetic dermatologists typically offer aesthetic services like laser resurfacing, body contouring, and injectables. Medical dermatologists focus on conditions like psoriasis, skin cancer, and eczema. Provider databases that include procedure and subspecialty data let you filter by these categories so your invitation list matches your device's clinical use case.",
+            },
+            {
+                "question": "What's the best venue for a dermatology event with live laser demos?",
+                "answer": "You need at least two rooms: a presentation and dining area with standard lighting, and a separate demo room that can be darkened, access-controlled, and equipped with adequate electrical outlets for the laser device. Hotels with adjoining conference suites work, but medical office buildings with treatment rooms add clinical credibility. Always confirm the venue's electrical capacity can handle your device's power requirements.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Dermatology Provider Data", "url": "/providers/dermatology/"},
+            {"text": "Medical Device Demo Day Planning", "url": "/blog/medical-device-demo-day-planning/"},
+            {"text": "How to Get Doctors to Attend Events", "url": "/blog/how-to-get-doctors-to-attend-events/"},
+        ],
+        "outbound_links": [
+            ("https://www.aad.org/member/practice/managing/laser-safety", "AAD Laser Safety Guidelines"),
+            ("https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm", "BLS Dermatologist Occupation Data"),
+        ],
+        "tags": ["event marketing", "dermatology", "device demos", "laser safety", "practice events"],
+    },
+    # -------------------------------------------------------------------------
+    # Specialty Event Guide: Chiropractic
+    # -------------------------------------------------------------------------
+    {
+        "slug": "chiropractic-education-event-planning",
+        "title": "How to Plan a Chiropractic Education Event",
+        "meta_description": "Plan chiropractic education events that drive new modality adoption. CE credit logistics, targeting solo practices, and vendor compliance.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Chiropractors are among the fastest adopters of new treatment modalities, and CE requirements mean they're actively looking for educational events. Here's how to plan one that fills seats and moves product.",
+        "content_html": """
+<h2>Chiropractors Adopt New Modalities Faster Than Most Specialties</h2>
+
+<p>If you sell a treatment modality to chiropractors, you have an advantage that most medical device companies don't: your buyer makes purchasing decisions quickly. A solo chiropractor who sees a decompression therapy system or a Class IV laser and understands the clinical application and revenue potential can write a check within weeks. There's no hospital committee, no group practice vote, no six-month capital equipment review cycle.</p>
+
+<p>That speed of decision-making makes chiropractic one of the most event-responsive specialties in healthcare. A well-run education event can take a chiropractor from "never heard of it" to "ready to order" in a single evening. But only if the event is structured correctly for this audience.</p>
+
+<p>The <a href="https://www.bls.gov/ooh/healthcare/chiropractors.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a> counts approximately 36,600 chiropractors practicing in the U.S., and the profession is projected to grow 10% through 2033. Most of them operate solo or small group practices. They own their businesses, they control their equipment budgets, and they're constantly looking for ways to differentiate their practice and expand their service menu.</p>
+
+<h2>The CE Credit Angle</h2>
+
+<p>Continuing education requirements are a major driver of chiropractic event attendance, and they work in your favor if you plan for them correctly.</p>
+
+<p>Every state requires chiropractors to complete CE credits for license renewal, but the requirements vary significantly. Some states require 12 hours annually, others require 24 hours biennially. Some mandate specific topic categories (ethics, radiology, documentation). The <a href="https://www.acatoday.org/advocacy/state-licensing-boards/" target="_blank" rel="noopener">American Chiropractic Association</a> maintains a directory of state licensing boards where you can verify requirements for your target markets.</p>
+
+<p>If your event offers CE credits, you've transformed the value proposition. The chiropractor isn't just attending a vendor event. They're earning credits they need anyway while learning about a new modality. That's a meaningful draw, especially for chiropractors who are behind on their CE hours (and there are always plenty of those as the renewal deadline approaches).</p>
+
+<h3>Getting CE Accreditation for Your Event</h3>
+
+<p>CE accreditation for chiropractic events is managed through state boards and approved CE providers. The process varies by state but generally requires:</p>
+
+<ul>
+<li><strong>An approved CE provider or sponsor.</strong> Most device vendors aren't CE providers themselves. You'll need to partner with an accredited CE provider, a chiropractic college, or a state or national association that can sponsor the CE credits for your event.</li>
+<li><strong>A qualified instructor.</strong> The presenter needs credentials that the CE approval body accepts. A practicing chiropractor (DC) with clinical experience in the modality is typically required. Your device rep alone usually won't qualify.</li>
+<li><strong>A structured curriculum.</strong> CE-accredited events need a defined learning agenda, learning objectives, and a method for verifying attendance (sign-in and sign-out times). The content can cover your device's clinical applications, but it can't be a pure sales pitch. There has to be genuine educational value.</li>
+<li><strong>Advance approval.</strong> Most states require CE programs to be submitted and approved weeks or months before the event. Don't assume you can add CE credits at the last minute.</li>
+</ul>
+
+<p>The compliance piece is important: if you're offering CE credits, the event content must meet the accrediting body's standards for educational programming. Your device demonstration can be part of the educational content, but the event needs to include clinical evidence, technique training, or patient selection criteria beyond just "here's why you should buy our product."</p>
+
+<h2>Targeting Chiropractors Outside Hospital Systems</h2>
+
+<p>Unlike physicians in many other specialties, most chiropractors aren't employed by hospital systems or large health networks. They operate independent practices. This changes your outreach strategy in several ways.</p>
+
+<p><strong>There's no system-level gatekeeper.</strong> You're reaching the decision-maker directly. The chiropractor who opens your invitation email is the same person who signs the purchase order. This means your invitation can speak directly to practice revenue, patient outcomes, and competitive differentiation without needing to navigate a procurement department.</p>
+
+<p><strong>Solo practitioners are harder to reach at scale.</strong> There's no "send it to the practice manager and they'll distribute it to all 15 chiropractors in the group." Each practice is an individual outreach target. You need accurate contact data for each chiropractor, not just practice-level data. Our <a href="/providers/chiropractic/">chiropractic provider database</a> includes individual practitioner contacts with NPI, practice address, and contact information.</p>
+
+<p><strong>Geography is tighter.</strong> Solo chiropractors are busy. They're seeing patients all day and often managing the business side of their practice in the evenings. They won't drive 90 minutes for a dinner event. Your practical radius is 20-30 minutes for a weeknight event, maybe 45 minutes for a weekend CE seminar. Plan multiple smaller events across a territory rather than one large regional event.</p>
+
+<h2>Event Formats That Work for Chiropractors</h2>
+
+<p>Three formats consistently produce strong results with chiropractic audiences:</p>
+
+<h3>The CE Dinner Seminar (2-3 Hours, Weeknight)</h3>
+
+<p>Dinner at a local restaurant or hotel, combined with a 60-90 minute CE-accredited presentation on a clinical topic related to your modality. This format works because it respects the chiropractor's time, provides CE credits, and includes a meal. Schedule it for a Tuesday, Wednesday, or Thursday evening starting at 6:30 PM, after the last patient appointment. Mondays and Fridays perform poorly for chiropractors.</p>
+
+<p>Target 15-25 attendees. Chiropractors are comfortable in smaller settings and are more likely to ask questions and engage with the device in an intimate group. A room of 100 feels like a conference, not a practice-relevant learning experience.</p>
+
+<h3>The Hands-On Workshop (Half-Day, Weekend)</h3>
+
+<p>A Saturday morning workshop where attendees learn technique and get hands-on experience with the device. This format is especially effective for modalities like spinal decompression, shockwave therapy, or therapeutic laser where technique matters and hands-on practice builds confidence. Offer 3-4 CE credits and include a working lunch.</p>
+
+<p>Limit the group to 10-15 so everyone gets meaningful hands-on time. A chiropractor who has operated the device, felt comfortable with the technique, and treated a simulated case is dramatically closer to purchasing than one who watched a presentation.</p>
+
+<h3>The Lunch and Learn (90 Minutes, Weekday)</h3>
+
+<p>A midday event during the lunch break. Bring food to a practice or a nearby meeting room, present for 45-60 minutes, and leave time for questions. This format works best for follow-up events with practices that are already interested, or for modalities that don't require live demonstration. See our <a href="/blog/medical-device-lunch-and-learn-playbook/">medical device lunch and learn playbook</a> for the full breakdown.</p>
+
+<h2>Building Your Invite List</h2>
+
+<p>Effective chiropractic event targeting goes beyond pulling a list of every DC in a zip code radius. Segment by:</p>
+
+<ul>
+<li><strong>Practice type:</strong> Solo vs. group practice. Solo practitioners make faster decisions. Group practices may bring multiple doctors who then discuss the purchase together, potentially buying multiple units.</li>
+<li><strong>Current modalities offered:</strong> A chiropractor who already offers laser therapy is a warmer prospect for an upgraded laser system than one who has never offered adjunctive modalities.</li>
+<li><strong>Years in practice:</strong> Newer practitioners (under 10 years) tend to be more open to adding modalities. Established practitioners with 20+ years of adjustment-only practice may be less receptive, though the revenue argument sometimes wins them over.</li>
+<li><strong>Proximity:</strong> Stay within 30 minutes of the event venue for weeknight events. You can stretch to 45 minutes for a Saturday CE workshop offering 3+ credits.</li>
+</ul>
+
+<p>Getting this segmentation right requires practice-level data. Browse our <a href="/providers/chiropractic/">chiropractic provider data</a> to see the level of detail available for your targeting.</p>
+
+<h2>Vendor Compliance for CE Events</h2>
+
+<p>When a device vendor sponsors a CE-accredited event, the line between education and sales gets scrutinized. State chiropractic boards take CE compliance seriously, and violations can result in the CE credits being revoked (bad for your attendees and your reputation) or the sponsoring provider losing their accreditation.</p>
+
+<p>Keep the educational content and the sales content clearly separated. The CE portion should be presented by a qualified DC, cover clinical topics with genuine educational value, and avoid direct sales pitches for specific products. The product demonstration and purchasing conversation can happen after the CE portion concludes, during a separate networking or Q&A segment that's clearly not part of the accredited program.</p>
+
+<p>Document everything: attendee sign-in and sign-out times (for CE credit verification), the educational agenda as submitted for CE approval, and the presenter's credentials. These records protect you if a state board audits the program.</p>
+
+<p>For more on attendance tracking and compliance documentation, see our guide on <a href="/blog/increase-physician-event-attendance/">increasing physician event attendance</a>.</p>
+
+<p>If you're planning a chiropractic education event and need help with provider targeting, CE logistics, or event operations, our <a href="/services/event-marketing/">event marketing service</a> handles the data side so you can focus on the clinical program.</p>
+""",
+        "faqs": [
+            {
+                "question": "How do I get CE credit approval for a chiropractic vendor event?",
+                "answer": "Partner with an accredited CE provider, a chiropractic college, or a state association that can sponsor the credits. You'll need a qualified instructor (typically a practicing DC), a structured curriculum with defined learning objectives, and advance approval from the relevant state board. The educational content must provide genuine clinical value beyond a product sales pitch. Submit the program for approval weeks or months before the event, depending on the state's requirements.",
+            },
+            {
+                "question": "What's the best event format for selling chiropractic devices?",
+                "answer": "The CE dinner seminar (2-3 hours, weeknight, 15-25 attendees) consistently produces the best results. It combines CE credits the chiropractor needs anyway with a meal and a focused presentation on clinical applications. For modalities where hands-on experience matters, like decompression therapy or shockwave, a Saturday morning hands-on workshop with 10-15 attendees is even more effective because the chiropractor leaves having used the device.",
+            },
+            {
+                "question": "How far will chiropractors travel for an event?",
+                "answer": "For a weeknight dinner event, your practical radius is about 20-30 minutes of drive time. Solo chiropractors are busy with patients all day and managing their practices in the evenings, so they won't drive far for a 2-hour event. For a Saturday CE workshop offering 3 or more credits, you can stretch to 45 minutes. Plan multiple smaller events across a territory rather than one large regional event.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Chiropractic Provider Data", "url": "/providers/chiropractic/"},
+            {"text": "Medical Device Lunch and Learn Playbook", "url": "/blog/medical-device-lunch-and-learn-playbook/"},
+            {"text": "Increase Physician Event Attendance", "url": "/blog/increase-physician-event-attendance/"},
+        ],
+        "outbound_links": [
+            ("https://www.acatoday.org/advocacy/state-licensing-boards/", "ACA State Licensing Board Directory"),
+            ("https://www.bls.gov/ooh/healthcare/chiropractors.htm", "BLS Chiropractor Occupation Data"),
+        ],
+        "tags": ["event marketing", "chiropractic", "CE credits", "education events", "modality adoption"],
+    },
+    # -------------------------------------------------------------------------
+    # Specialty Event Guide: Dental
+    # -------------------------------------------------------------------------
+    {
+        "slug": "dental-practice-event-planning",
+        "title": "How to Plan a Dental Practice Event",
+        "meta_description": "Plan dental practice events that reach the right buyers. DSO vs. independent targeting, ADA CE requirements, and device showcase formats.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Dental is consolidating fast. The person who decides to buy your product at an independent practice and at a DSO-owned practice may look completely different. Here's how to plan events that reach both.",
+        "content_html": """
+<h2>The DSO Factor Changes Everything</h2>
+
+<p>If you're planning dental events the way you did five years ago, you're missing the biggest shift in the industry. Dental service organizations (DSOs) now account for a significant and growing share of U.S. dental practices. According to the <a href="https://www.ada.org/resources/research/health-policy-institute" target="_blank" rel="noopener">ADA Health Policy Institute</a>, the percentage of dentists affiliated with DSOs has been climbing steadily, with younger dentists particularly likely to work in DSO-affiliated practices.</p>
+
+<p>This matters for event planning because the buyer at a DSO practice is often not the dentist. The practicing dentist may influence the decision, but the purchase order goes through a regional clinical director, a VP of operations, or a procurement team at the DSO's corporate office. Your beautifully planned dinner event for 20 local dentists might fill every seat, generate genuine interest, and still produce zero sales because none of those dentists have purchasing authority.</p>
+
+<p>Independent practices are the opposite. The owner-dentist makes the call. They see your device at a demo dinner, run the numbers on the drive home, and call your rep on Monday. The event format, messaging, and follow-up process need to be different for each audience.</p>
+
+<h2>Targeting DSO Practices vs. Independent Practices</h2>
+
+<h3>Independent Practice Events</h3>
+
+<p>For independent practices, your event playbook is straightforward. The dentist who attends is the decision-maker. Your invitation goes directly to them. Your presentation should combine clinical evidence with practice economics: how does this device affect revenue per patient, chair time, patient satisfaction, and competitive positioning against the DSO-owned practice down the street?</p>
+
+<p>Independent dentists are also motivated by what other independent dentists in their market are doing. If you can get a local dentist who already uses your device to speak at the event, their peer endorsement carries significant weight. "I added digital impressions 18 months ago and reduced my crown remake rate by 40%" is more persuasive than any vendor presentation.</p>
+
+<p>Target your invite list using <a href="/providers/dental/">dental provider data</a> filtered by practice ownership type. You want owner-operators of independent practices within a 20-30 minute drive of your venue.</p>
+
+<h3>DSO Practice Events</h3>
+
+<p>Reaching DSO-affiliated dentists requires a different approach. The clinical dentist at a DSO location may attend your event and love the device, but they can't authorize a purchase. You need to identify and engage the clinical decision-makers at the DSO level.</p>
+
+<p>For smaller DSOs (5-20 locations), the decision-maker is often the founder-dentist or a clinical director. They're reachable through direct outreach and will attend local events. For larger DSOs (50+ locations), purchasing decisions go through formal procurement processes, and your event strategy should target DSO corporate contacts rather than individual practice locations.</p>
+
+<p>A format that works for DSO engagement: invite DSO clinical directors to a smaller, more exclusive event. Position it as a peer roundtable or advisory dinner rather than a product demo. Clinical directors at mid-size DSOs are evaluating technology for dozens of locations simultaneously. The conversation they want to have is about multi-location deployment, standardized training, and volume pricing. A dinner for 8-10 DSO clinical leaders produces more pipeline than a demo event for 30 individual DSO-employed dentists who can't buy.</p>
+
+<h2>ADA Continuing Education Requirements</h2>
+
+<p>Most states require dentists to complete continuing education hours for license renewal, and the <a href="https://www.ada.org/education/continuing-education" target="_blank" rel="noopener">ADA's CERP (Continuing Education Recognition Program)</a> is the primary accreditation standard. If your event offers ADA CERP-recognized CE credits, attendance goes up. Dentists need the hours, and earning them at a local dinner event is more appealing than sitting through an online course.</p>
+
+<p>Getting ADA CERP recognition for your event requires working with an ADA CERP-recognized provider. Similar to chiropractic CE, you'll need a qualified presenter (a DDS or DMD with clinical expertise), a structured educational program with defined learning objectives, and an attendance verification process. The educational content has to provide genuine clinical value. A pure product demo doesn't qualify.</p>
+
+<p>Some states also accept CE credits from other approved providers (state dental associations, dental specialty academies). Check the requirements for your target states and pursue the accreditation path that's fastest and most widely accepted.</p>
+
+<h2>Dental-Specific Device Categories</h2>
+
+<p>The device category you're showcasing affects your event format. Here's what works for the major categories:</p>
+
+<h3>Digital Impressions and CAD/CAM</h3>
+
+<p>These systems require hands-on experience. A dentist won't commit to a $30,000+ digital impression scanner based on a slide deck. Set up the scanner at the event and let attendees take a digital impression (on a model, on each other, or on a willing staff member). The tactile experience of holding the wand, seeing the 3D image build in real time, and comparing it to a traditional impression is what sells this technology.</p>
+
+<p>Hands-on time means small groups. Limit to 10-15 attendees per event so everyone gets 5-10 minutes with the device. A half-day Saturday workshop works better than an evening event for this category because the hands-on portion takes time.</p>
+
+<h3>Implant Systems</h3>
+
+<p>Implant events draw both general dentists considering adding implant services and periodontists or oral surgeons evaluating a new system. The audience mix matters. General dentists want to see simplified workflows and mentorship programs. Specialists want to see the system's handling of complex cases and compare it to the system they're already using.</p>
+
+<p>Consider running separate events for each audience, or structuring a single event with breakout sessions: one track for general dentists new to implants, one for experienced implant providers evaluating your system.</p>
+
+<h3>Practice Management Software</h3>
+
+<p>Software events are different from device events. There's no physical product to demonstrate on a patient. Instead, set up workstations where attendees can navigate the software, see their specific workflows simulated, and compare it to their current system. For DSO-affiliated practices, the conversation shifts to multi-location reporting, centralized scheduling, and data standardization across locations.</p>
+
+<h2>Event Format and Scheduling</h2>
+
+<p>Dentists keep predictable schedules. Most practices close by 5:00-5:30 PM on weekdays, and many close early on Fridays or don't see patients on Fridays at all. The best event windows:</p>
+
+<ul>
+<li><strong>Weeknight dinner events:</strong> Tuesday through Thursday, 6:30 PM start. Allows time for the dentist to finish with patients, clean up, and drive to the venue. Mondays are typically the busiest clinical day. Fridays, many dentists are off or mentally checked out for the weekend.</li>
+<li><strong>Saturday morning workshops:</strong> 8:30 AM to noon. Dentists who are motivated enough to give up a Saturday morning are serious prospects. Offer CE credits and breakfast to justify the time investment. These work especially well for hands-on device training.</li>
+<li><strong>Lunch and learns at the practice:</strong> 12:00-1:30 PM. Bring lunch to the practice and present to the dentist and their clinical team together. This format is ideal for follow-up after initial interest because it includes the hygienists, assistants, and office manager who will use the product daily. See our <a href="/blog/how-to-get-doctors-to-attend-events/">guide on getting doctors to attend events</a> for invitation strategies.</li>
+</ul>
+
+<h2>Multi-Location Outreach for DSO Groups</h2>
+
+<p>If you're targeting a DSO with 30 locations in a metro area, you don't send 30 individual invitations to 30 practicing dentists. You identify the clinical decision-maker at the DSO level and build a relationship with them first. Then, if the DSO is interested, you coordinate a pilot at 2-3 locations and use the pilot results to build the case for a system-wide rollout.</p>
+
+<p>Your event strategy for DSOs should reflect this sales cycle:</p>
+
+<ol>
+<li><strong>Phase 1: Executive dinner.</strong> An intimate dinner with the DSO's clinical director and 1-2 other decision-makers. Present the clinical and business case. Get agreement to a pilot.</li>
+<li><strong>Phase 2: Pilot training event.</strong> On-site training at the 2-3 pilot locations. This is an event for the dentists and clinical staff at those locations, focused on technique and workflow integration.</li>
+<li><strong>Phase 3: Results presentation.</strong> After the pilot period, present results back to the DSO leadership team. If the pilot data is strong, this meeting becomes the rollout discussion.</li>
+</ol>
+
+<p>This approach takes longer than a single demo dinner, but one DSO deal can be worth 20-50 individual practice sales. The time investment pays for itself if the DSO target is well-chosen.</p>
+
+<p>For territory-level event planning across multiple markets, see our <a href="/blog/medical-device-territory-event-planning/">medical device territory event planning guide</a>.</p>
+
+<h2>Building Your Dental Event Invite List</h2>
+
+<p>The foundation of a successful dental event is reaching the right people. You need provider data that distinguishes between independent owner-dentists and DSO-employed dentists, includes practice-level details like location count and specialty mix, and covers the specific geographic radius around your venue.</p>
+
+<p>Browse our <a href="/providers/dental/">dental provider database</a> to see the segmentation available for your event targeting. If you need help building targeted invite lists, designing registration pages, or managing event logistics, our <a href="/services/event-marketing/">event marketing service</a> handles the data and operations so you can focus on the clinical program and sales conversations.</p>
+""",
+        "faqs": [
+            {
+                "question": "How do I reach the decision-maker at a DSO for a dental device event?",
+                "answer": "At small to mid-size DSOs (5-20 locations), the decision-maker is typically the founder-dentist or a clinical director who is reachable through direct outreach. For larger DSOs, purchasing decisions go through procurement teams at the corporate level. Rather than inviting individual DSO-employed dentists to a demo dinner, host a smaller executive dinner or advisory roundtable targeting the DSO's clinical leadership. One DSO decision-maker can unlock 20-50 location purchases.",
+            },
+            {
+                "question": "Should I offer ADA CE credits at my dental event?",
+                "answer": "Yes, if possible. CE credits increase attendance because dentists need them for license renewal. You'll need to work with an ADA CERP-recognized provider, have a qualified presenter (DDS or DMD), and structure the educational content to meet CERP standards. The educational portion must provide genuine clinical value beyond a product demonstration. Plan ahead because CE accreditation typically requires advance approval weeks before the event.",
+            },
+            {
+                "question": "What event format works best for dental technology demos?",
+                "answer": "It depends on the technology. Digital impression scanners and CAD/CAM systems require hands-on experience, so a Saturday morning workshop with 10-15 attendees where everyone gets 5-10 minutes with the device is most effective. Implant systems benefit from live case presentations or breakout sessions tailored to experience level. Software demos work best with individual workstations where attendees can navigate the interface themselves. For all formats, keeping the group small enough for meaningful interaction produces better results than large-audience presentations.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Dental Provider Data", "url": "/providers/dental/"},
+            {"text": "How to Get Doctors to Attend Events", "url": "/blog/how-to-get-doctors-to-attend-events/"},
+            {"text": "Medical Device Territory Event Planning", "url": "/blog/medical-device-territory-event-planning/"},
+        ],
+        "outbound_links": [
+            ("https://www.ada.org/education/continuing-education", "ADA CERP Standards"),
+            ("https://www.ada.org/resources/research/health-policy-institute", "ADA Health Policy Institute"),
+        ],
+        "tags": ["event marketing", "dental", "DSO", "CE credits", "practice events"],
+    },
+    # -------------------------------------------------------------------------
+    # Specialty Event Guide: Med Spa
+    # -------------------------------------------------------------------------
+    {
+        "slug": "med-spa-open-house-planning",
+        "title": "How to Plan a Med Spa Open House",
+        "meta_description": "Plan med spa open house events that attract providers for device adoption and training. Dual-audience strategy, compliance, and targeting.",
+        "date_published": "2026-03-10",
+        "date_modified": "2026-03-10",
+        "author": {
+            "name": "Rome",
+            "credentials": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+            "linkedin": "https://www.linkedin.com/in/romecaputo/",
+        },
+        "hero_subtitle": "Med spa events sit at the intersection of provider education and patient marketing. If you're selling devices into this space, here's how to plan events that address both audiences without confusing either one.",
+        "content_html": """
+<h2>The Dual-Audience Problem</h2>
+
+<p>Med spa events are unusual because they often serve two completely different audiences: providers who might purchase or adopt a new device, and patients who might book treatments. Most specialties don't deal with this. A cardiology dinner event is strictly for physicians. A patient awareness seminar is strictly for patients. Med spas blur the line.</p>
+
+<p>If you're selling aesthetic devices into med spas, you need to decide upfront which audience your event is for, or how you'll serve both without diluting either experience. A provider considering a $100,000 body contouring system doesn't want to sit through a patient-facing presentation about "the latest trends in non-invasive aesthetics." And a patient considering a treatment doesn't benefit from a deep dive into clinical parameters and ROI calculations.</p>
+
+<p>The most effective approach is to run separate events for each audience, or to structure a single event with clearly separated segments. Mixing the two in a single room almost always fails.</p>
+
+<h2>Provider-Facing Med Spa Events</h2>
+
+<p>Provider events at med spas target the practitioners who perform treatments and the med spa owners or medical directors who authorize equipment purchases. The audience includes aesthetic-focused MDs, nurse practitioners (NPs), physician assistants (PAs), and registered nurses with aesthetic training.</p>
+
+<p>According to the <a href="https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a>, the NP profession is growing at 40% through 2033, and a substantial portion of that growth is flowing into aesthetics. Many new aesthetic NPs are actively building their service menus and are strong prospects for device adoption events.</p>
+
+<h3>What Providers Want From a Med Spa Event</h3>
+
+<p>Med spa providers evaluating a new device want to understand three things: clinical performance, business impact, and training requirements.</p>
+
+<p><strong>Clinical performance</strong> means seeing the device work. Live demonstrations are expected in this space. A provider wants to see the treatment performed, observe the tissue response, and understand the treatment parameters for different skin types and body areas. Before-and-after photos are table stakes. Live demos are what close the gap between "interested" and "convinced."</p>
+
+<p><strong>Business impact</strong> means per-treatment revenue, treatment time, consumable costs, and patient demand. A med spa owner runs on margins. They need to know that a new device will generate enough treatment revenue to justify the lease or purchase cost within a reasonable timeframe. Come prepared with a clear financial model: average treatment price in their market, number of treatments per week to break even, and a realistic ramp-up timeline.</p>
+
+<p><strong>Training requirements</strong> matter because med spa staff often perform treatments under physician supervision. If adopting a new device means sending three team members to a two-day training course, that's two days of lost patient revenue per team member. Devices with shorter training curves and on-site training options are easier to sell.</p>
+
+<h3>Provider Event Format</h3>
+
+<p>A 2.5-3 hour evening event works well for med spa providers. Structure it as:</p>
+
+<ol>
+<li><strong>Clinical presentation (30 min).</strong> A physician or experienced practitioner presents clinical data, treatment protocols, and their own results. Focus on practical technique rather than basic science. Med spa providers are clinically trained and don't need Anatomy 101. They want to see real cases, hear about complications and how to manage them, and understand patient selection criteria.</li>
+<li><strong>Live demonstration (30-45 min).</strong> Treat a model or patient in front of the group. Narrate the process, explain settings, and invite questions during the procedure. For more on running effective device demos, see our <a href="/blog/medical-device-demo-day-planning/">medical device demo day planning guide</a>.</li>
+<li><strong>Hands-on station (30 min, optional).</strong> If the device allows it, let attendees try the handpiece on a model or simulation pad. Hands-on experience accelerates the purchase decision because the provider leaves feeling capable rather than intimidated by new technology.</li>
+<li><strong>Networking dinner/drinks (45-60 min).</strong> This is where one-on-one conversations happen. Have your sales team available but not aggressive. Med spa owners will ask about pricing, financing, and competitive positioning on their own terms.</li>
+</ol>
+
+<h2>The Patient Open House (and Why It Matters for Device Sales)</h2>
+
+<p>Patient-facing open houses aren't directly your event to run if you're a device vendor. The med spa hosts them. But understanding the patient open house format matters because it's one of the strongest selling points you can offer a med spa owner: "Here's how to fill your schedule after you buy this device."</p>
+
+<p>A device vendor who can help a med spa plan and execute a patient open house after device purchase provides value beyond the hardware. It's a partnership play. "We don't just sell you the device. We help you launch it with an event that books your first 30 patients." That's a meaningful differentiator against competitors who ship the device and send an invoice.</p>
+
+<p>If you're offering post-purchase launch support, your device event for providers should include a segment on patient marketing: how to announce the new treatment to existing patients, how to run a launch open house, and how to use before-and-after results from the first patients to build demand.</p>
+
+<h2>Targeting the Right Med Spa Providers</h2>
+
+<p>Med spa provider targeting is more complex than targeting a single specialty because the practitioners come from multiple credential backgrounds.</p>
+
+<h3>Who Attends Med Spa Device Events</h3>
+
+<ul>
+<li><strong>Medical directors (MDs, DOs):</strong> The supervising physician who may also perform treatments. Often the owner and financial decision-maker. They evaluate devices through both a clinical and business lens.</li>
+<li><strong>Aesthetic NPs and PAs:</strong> Increasingly the primary treatment providers at med spas. They're hands-on practitioners who care about technique, training, and workflow. They influence the purchase decision even if they don't sign the check.</li>
+<li><strong>Med spa owners (non-physician):</strong> In some states, non-physicians can own med spas with a medical director arrangement. These owners evaluate devices almost entirely through the business lens: ROI, patient demand, competitive positioning.</li>
+</ul>
+
+<p>Your invitation list should include all three segments, but your messaging may need to vary. The medical director gets an invitation emphasizing clinical evidence and practice growth. The aesthetic NP gets an invitation emphasizing technique training and hands-on experience. The non-physician owner gets an invitation emphasizing business impact and market positioning.</p>
+
+<p>Use our <a href="/providers/medical-spas/">med spa provider data</a> to build segmented invite lists by credential type, practice role, and geography.</p>
+
+<h2>Compliance Considerations for Med Spa Events</h2>
+
+<p>Med spa events operate in a regulatory gray area that varies significantly by state. A few compliance considerations to get right:</p>
+
+<p><strong>Scope of practice rules.</strong> What NPs and PAs can do in a med spa varies by state. Some states allow NPs to perform aesthetic procedures independently. Others require direct physician supervision. Your event content should be aware of the scope of practice rules in your target state and avoid demonstrating procedures that local NPs or PAs can't legally perform without physician supervision.</p>
+
+<p><strong>CE credits for NPs and PAs.</strong> NPs and PAs have their own CE requirements separate from physician CME. If you want to offer CE credits to attract NP and PA attendees, you'll need accreditation through an approved nursing or PA CE provider, not just a physician CME provider. The <a href="https://www.americanmedspa.org/page/compliance" target="_blank" rel="noopener">American Med Spa Association (AmSpa)</a> offers compliance resources and guidance on provider event regulations.</p>
+
+<p><strong>Advertising claims.</strong> Med spa marketing is subject to state medical board regulations and FTC guidelines. If your event materials or presentations include before-and-after photos, treatment outcome claims, or pricing information, make sure everything complies with your state's medical advertising rules. Claims must be accurate and not misleading. "Guaranteed results" language is a compliance problem waiting to happen.</p>
+
+<h2>Venue and Format Considerations</h2>
+
+<p><strong>At the med spa itself:</strong> If a med spa owner is hosting a provider event for colleagues, their own spa is ideal. The device can be set up in a treatment room for live demos, and the intimate setting encourages conversation. Best for groups of 8-15.</p>
+
+<p><strong>Upscale restaurant or hotel:</strong> For vendor-organized events targeting providers from multiple med spas, a restaurant with a private dining room works well. The aesthetic industry skews premium, and the venue should reflect that. For venue guidance, see our <a href="/blog/healthcare-event-venue-selection-guide/">healthcare event venue selection guide</a>.</p>
+
+<p>Schedule Tuesday through Thursday evenings starting at 7:00 PM (med spas often stay open until 7:00, so start later than traditional medical events), or Saturday mornings for hands-on workshops.</p>
+
+<h2>Making the Ask</h2>
+
+<p>Med spa device sales cycles are typically shorter than hospital or large practice sales. A med spa owner who attends your event, sees the demo, likes the numbers, and has the capital can move fast. Your follow-up process should match that speed.</p>
+
+<p>Within 24 hours of the event, send personalized follow-up that references what the attendee expressed interest in (which device, which treatment application, which business question they asked). Include the financial model you presented, customized to their practice if possible. And offer a next step that's easy to say yes to: an in-office demo, a call with a practice that recently adopted the device, or a trial period if your company offers one.</p>
+
+<p>If you're planning med spa provider events and need help with targeting, registration, or event logistics, our <a href="/services/event-marketing/">event marketing service</a> can build your invite lists from verified provider data and handle the operational details.</p>
+""",
+        "faqs": [
+            {
+                "question": "Should a med spa device event target providers or patients?",
+                "answer": "Run separate events for each audience. Provider events focus on clinical evidence, device demos, business impact, and training. Patient open houses focus on treatment education, before-and-after results, and booking appointments. Mixing both audiences in one event dilutes the experience for both groups. If you're a device vendor, your primary event is the provider event. You can support the med spa's patient open house as a post-purchase launch strategy.",
+            },
+            {
+                "question": "What credentials should I target for med spa device events?",
+                "answer": "Invite medical directors (MDs and DOs who supervise the med spa), aesthetic nurse practitioners and physician assistants who perform treatments, and med spa owners who make purchasing decisions. Each group evaluates devices differently: medical directors focus on clinical evidence and safety, NPs and PAs focus on technique and training, and owners focus on ROI and patient demand. Segment your invitation messaging accordingly.",
+            },
+            {
+                "question": "Do I need separate CE accreditation for NPs and PAs at a med spa event?",
+                "answer": "Yes. NPs and PAs have CE requirements through nursing and PA accrediting bodies, which are separate from physician CME. If you want to offer CE credits that NPs and PAs can use for license renewal, you need accreditation through an approved nursing CE provider or PA CE provider, not just a physician CME accreditor. Check with AmSpa or your state's nursing board for approved CE provider requirements.",
+            },
+        ],
+        "related_links": [
+            {"text": "Event Marketing Service", "url": "/services/event-marketing/"},
+            {"text": "Med Spa Provider Data", "url": "/providers/medical-spas/"},
+            {"text": "Medical Device Demo Day Planning", "url": "/blog/medical-device-demo-day-planning/"},
+            {"text": "Healthcare Event Venue Selection Guide", "url": "/blog/healthcare-event-venue-selection-guide/"},
+        ],
+        "outbound_links": [
+            ("https://www.americanmedspa.org/page/compliance", "AmSpa Compliance Guidelines"),
+            ("https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm", "BLS Nurse Practitioner Occupation Data"),
+        ],
+        "tags": ["event marketing", "med spa", "aesthetic devices", "open house", "provider events"],
+    },
 ]
