@@ -15547,6 +15547,34 @@ SERVICES = [
             "chiropractic",
             "medical-spas",
         ],
+        "related_articles": [
+            {"href": "/blog/how-to-get-doctors-to-attend-events/", "label": "How to Get Doctors to Attend Your Events"},
+            {"href": "/blog/increase-physician-event-attendance/", "label": "How to Increase Physician Event Attendance by 2x"},
+            {"href": "/blog/physician-event-invitation-template/", "label": "Physician Event Invitation Template (+ Pre-Fill Strategy)"},
+            {"href": "/blog/healthcare-conference-registration-best-practices/", "label": "Healthcare Conference Registration: 9 Best Practices"},
+            {"href": "/blog/healthcare-event-marketing-roi/", "label": "Healthcare Event Marketing ROI: How to Measure What Matters"},
+            {"href": "/blog/medical-device-lunch-and-learn-playbook/", "label": "Medical Device Lunch and Learn: The Field Marketing Playbook"},
+            {"href": "/blog/medical-device-territory-event-planning/", "label": "Territory Event Planning for Medical Device Sales Teams"},
+            {"href": "/blog/kol-dinner-planning-healthcare/", "label": "KOL Dinner Planning for Pharma and Medical Device Teams"},
+            {"href": "/blog/cme-event-registration-platform-guide/", "label": "CME Event Registration: Platforms, Compliance, and What Works"},
+            {"href": "/blog/physician-speaker-program-planning/", "label": "How to Plan a Physician Speaker Program That Fills the Room"},
+            {"href": "/blog/how-much-does-medical-device-lunch-and-learn-cost/", "label": "How Much Does a Medical Device Lunch and Learn Cost?"},
+            {"href": "/blog/build-physician-event-invite-list/", "label": "How to Build a Physician Event Invite List"},
+            {"href": "/blog/post-event-follow-up-medical-device/", "label": "Post-Event Follow-Up for Medical Device Events"},
+            {"href": "/blog/sunshine-act-medical-device-events/", "label": "Sunshine Act Compliance for Medical Device Events"},
+            {"href": "/blog/multi-city-physician-event-planning/", "label": "How to Run the Same Physician Event in Multiple Cities"},
+            {"href": "/blog/physician-event-reminder-email-sequence/", "label": "Physician Event Reminder Email Sequence: What to Send and When"},
+            {"href": "/blog/virtual-vs-in-person-physician-events/", "label": "Virtual vs. In-Person Physician Events: When to Use Each"},
+            {"href": "/blog/mobile-physician-event-registration/", "label": "How to Get Physicians to Register for Events on Mobile"},
+            {"href": "/blog/medical-device-demo-day-planning/", "label": "How to Plan a Medical Device Demo Day"},
+            {"href": "/blog/healthcare-event-venue-selection-guide/", "label": "Healthcare Event Venue Selection: Hospital vs. Hotel vs. Restaurant"},
+            {"href": "/blog/medical-device-event-compliance-checklist/", "label": "Medical Device Event Compliance Checklist (AdvaMed + Sunshine Act)"},
+            {"href": "/blog/physician-event-check-in-methods/", "label": "How to Measure Physician Event Attendance (Check-In Methods)"},
+            {"href": "/blog/dermatology-practice-event-planning/", "label": "How to Plan a Dermatology Practice Event"},
+            {"href": "/blog/chiropractic-education-event-planning/", "label": "How to Plan a Chiropractic Education Event"},
+            {"href": "/blog/dental-practice-event-planning/", "label": "How to Plan a Dental Practice Event"},
+            {"href": "/blog/med-spa-open-house-planning/", "label": "How to Plan a Med Spa Open House"},
+        ],
     },
 ]
 
@@ -15579,6 +15607,14 @@ def _build_related_links_html(svc):
         for cat in provider_cats:
             label = cat.replace("-", " ").title()
             lines.append(f'    <li><a href="/providers/{cat}/">{label}</a></li>')
+        lines.append("  </ul>")
+
+    related_articles = svc.get("related_articles", [])
+    if related_articles:
+        lines.append("  <h3>Event Marketing Resources</h3>")
+        lines.append("  <ul>")
+        for article in related_articles:
+            lines.append(f'    <li><a href="{article["href"]}">{article["label"]}</a></li>')
         lines.append("  </ul>")
 
     lines.append("</section>")
