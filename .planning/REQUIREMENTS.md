@@ -9,10 +9,10 @@ Requirements for SEO Content Optimization milestone. Each maps to roadmap phases
 
 ### CTR Optimization
 
-- [ ] **CTR-01**: Title and meta description rewritten on `/resources/healthcare-data-vendor-comparison/` (1,681 impr, pos 6, 0% CTR)
-- [ ] **CTR-02**: Title and meta on `/alternatives/definitive-healthcare-alternative/` (696 impr, pos 8.3, 0.1% CTR)
-- [ ] **CTR-03**: Title and meta on `/resources/healthcare-value-analysis-committee-guide/` (439 impr, pos 7.5, 0% CTR)
-- [ ] **CTR-04**: Title and meta on `/compare/provyx-vs-definitive-healthcare/` (388 impr, pos 8, 0.3% CTR)
+- [x] **CTR-01**: Title and meta description rewritten on `/resources/healthcare-data-vendor-comparison/` (1,681 impr, pos 6, 0% CTR)
+- [x] **CTR-02**: Title and meta on `/alternatives/definitive-healthcare-alternative/` (696 impr, pos 8.3, 0.1% CTR)
+- [x] **CTR-03**: Title and meta on `/resources/healthcare-value-analysis-committee-guide/` (439 impr, pos 7.5, 0% CTR)
+- [x] **CTR-04**: Title and meta on `/compare/provyx-vs-definitive-healthcare/` (388 impr, pos 8, 0.3% CTR)
 - [ ] **CTR-05**: Title and meta on `/services/practice-location-data/` (189 impr, pos 10.3)
 - [ ] **CTR-06**: Title and meta on `/resources/healthcare-data-providers-small-teams/` (180 impr, pos 16.2)
 - [ ] **CTR-07**: Title and meta on `/compare/provyx-vs-lusha/` (162 impr, pos 7.6)
@@ -81,10 +81,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CTR-01 | Phase 1 | Pending |
-| CTR-02 | Phase 1 | Pending |
-| CTR-03 | Phase 1 | Pending |
-| CTR-04 | Phase 1 | Pending |
+| CTR-01 | Phase 1 | Complete |
+| CTR-02 | Phase 1 | Complete |
+| CTR-03 | Phase 1 | Complete |
+| CTR-04 | Phase 1 | Complete |
 | CTR-05 | Phase 2 | Pending |
 | CTR-06 | Phase 2 | Pending |
 | CTR-07 | Phase 2 | Pending |
