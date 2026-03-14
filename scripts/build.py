@@ -12525,13 +12525,13 @@ RESOURCES = [
     },
 
     # =========================================================================
-    # 17. Acupuncturist Email List
+    # 17. Acupuncturists Email List
     # =========================================================================
     {
-        "slug": "acupuncturist-email-list",
-        "title": "Acupuncturist Email List: Verified LAc Contacts",
-        "meta_description": "Build a verified acupuncturist email list with NPI data, direct emails, and practice details. Accurate data for needle suppliers, CE providers, and wellness brands.",
-        "h1": "Acupuncturist Email List",
+        "slug": "acupuncturists-email-list",
+        "title": "Acupuncturists Email List: Verified LAc Contacts",
+        "meta_description": "Get a verified acupuncturists email list with NPI data, direct emails, and practice details. Accurate LAc contact data for needle suppliers, CE providers, and wellness brands.",
+        "h1": "Acupuncturists Email List",
         "subtitle": "Acupuncture sits at the boundary between conventional healthcare and the wellness market. Many acupuncturists have NPI numbers, many don't. Building an accurate email list means pulling from multiple data sources that most vendors don't bother combining.",
         "sections": [
             {
@@ -12752,6 +12752,386 @@ RESOURCES = [
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
             ("https://taxonomy.nucc.org/", "NUCC Healthcare Provider Taxonomy"),
+        ],
+        "author": AUTHOR_ROME,
+    },
+
+    # =========================================================================
+    # 20. Psychiatrists Email List
+    # =========================================================================
+    {
+        "slug": "psychiatrists-email-list",
+        "title": "Psychiatrists Email List: Verified Contact Data",
+        "meta_description": "Get a verified psychiatrists email list with NPI data, direct emails, and sub-specialty filters. Accurate contact data for pharma, telepsychiatry, and CME outreach.",
+        "h1": "Psychiatrists Email List",
+        "subtitle": "Psychiatrists are among the most in-demand and hardest-to-reach providers in healthcare. Sub-specialization, hospital employment, and the explosion of telepsychiatry have fragmented psychiatrist contact data across dozens of sources that rarely agree with each other.",
+        "sections": [
+            {
+                "heading": "Why Psychiatrist Contact Data Is Hard to Source",
+                "body": """<p>There are roughly 37,000 practicing psychiatrists in the United States, according to the <a href="https://www.psychiatry.org/" target="_blank" rel="noopener noreferrer">American Psychiatric Association</a>. That sounds like a healthy market, but the reality is more complicated. Psychiatry has a well-documented workforce shortage, which means the practicing psychiatrists you can reach are in high demand from multiple vendors, recruiters, and health systems simultaneously.</p>
+
+<p>Sub-specialization makes targeting harder. A psychiatrist might focus on child and adolescent psychiatry, addiction psychiatry, geriatric psychiatry, forensic psychiatry, consultation-liaison psychiatry, or psychosomatic medicine. Each sub-specialty has its own patient population, treatment protocols, and product needs. If you're selling a medication approved for treatment-resistant depression, a forensic psychiatrist at a state facility isn't your buyer. But most databases just label everyone "psychiatrist" without the sub-specialty detail you need to segment effectively.</p>
+
+<p>Practice setting creates another data layer. About half of practicing psychiatrists work in hospital or health system employment, where their contact information is locked behind institutional directories and generic department email addresses. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> has their NPI and taxonomy codes, but the listed address is often a hospital billing office rather than where the psychiatrist actually works. Private practice psychiatrists are easier to reach directly, but they represent a shrinking share of the overall market.</p>
+
+<p>Telepsychiatry has accelerated this problem since 2020. Many psychiatrists now see patients virtually from locations that don't match their NPI-registered address. Some practice across multiple state lines under various telehealth compacts. Their "practice address" might be a home office, a co-working space, or a virtual mailbox. Traditional location-based data sourcing misses or mislocates these providers.</p>"""
+            },
+            {
+                "heading": "What a Good Psychiatrists Email List Includes",
+                "body": """<p><strong>NPI number and taxonomy code.</strong> The NPI uniquely identifies each psychiatrist in the CMS system. Taxonomy codes distinguish general psychiatry from sub-specialties like child/adolescent (2084P0804X), addiction (2084A0401X), and geriatric (2084G0909X). This coding is your first filter for sub-specialty targeting.</p>
+
+<p><strong>Verified business email.</strong> Hospital-employed psychiatrists often have institutional email addresses that route through gatekeepers. Private practice psychiatrists may use practice-domain emails or, increasingly, telehealth platform addresses. A verified list confirms deliverability at the mail-server level and prioritizes direct addresses over generic department aliases.</p>
+
+<p><strong>Practice setting and employment type.</strong> Hospital-based, private practice solo, private practice group, academic medical center, community mental health center, VA system, correctional facility, or telehealth-only. Your outreach strategy and messaging should change based on where and how the psychiatrist practices.</p>
+
+<p><strong>Sub-specialty classification.</strong> Beyond the broad "psychiatrist" label, you need to know whether this provider focuses on children, geriatric patients, addiction medicine, forensics, or general adult psychiatry. Sub-specialty data comes from taxonomy codes, board certification records, and practice website analysis.</p>
+
+<p><strong>Prescribing indicators.</strong> Psychiatrists are prescribers by definition, but their prescribing patterns vary enormously by sub-specialty and practice setting. If you're a pharmaceutical company, knowing whether a psychiatrist primarily prescribes antidepressants, antipsychotics, stimulants, or controlled substances helps you match your product to the right provider segment.</p>"""
+            },
+            {
+                "heading": "Common Problems with Psychiatrist Email Lists",
+                "body": """<p>The most frequent mistake is confusing psychiatrists with psychologists. Psychiatrists are medical doctors (MD or DO) who can prescribe medication. Psychologists hold doctoral degrees (PhD or PsyD) and, in most states, cannot prescribe. If your product requires prescribing authority, a list that mixes these two groups wastes half your outreach on providers who can't use what you're selling. Many data vendors classify both under "mental health" without distinguishing the credential.</p>
+
+<p>Therapists add more confusion. Licensed clinical social workers (LCSWs), licensed professional counselors (LPCs), and marriage and family therapists (LMFTs) are all "mental health providers," but none of them are psychiatrists. A vendor that builds mental health provider lists from business directories rather than NPI taxonomy codes will mix all these credential types together.</p>
+
+<p>Hospital gatekeeping is a real barrier. When a psychiatrist works for a health system, the publicly available contact information is typically a department phone number and a scheduling line. The psychiatrist's direct email and phone aren't published. Some data vendors list the hospital's main number or a fax line as the "direct" contact, which doesn't help your sales team reach the actual provider.</p>
+
+<p>Telepsychiatry providers present a coverage gap. Psychiatrists who practice exclusively via telehealth platforms may not have a traditional practice address or phone number. Their "practice" exists inside Teladoc, Cerebral, Done, Talkiatry, or similar platforms. Reaching these psychiatrists requires identifying them through the platform rather than through traditional provider directories. Some telepsychiatry-only psychiatrists maintain NPI registrations with outdated addresses from their last in-person practice, leading to inaccurate location data.</p>"""
+            },
+            {
+                "heading": "How Provyx Builds Psychiatrist Email Lists",
+                "body": """<p>Provyx starts with the CMS NPI Registry, filtering for all psychiatry taxonomy codes including sub-specialty classifications. This gives us the complete NPI-registered universe of psychiatrists in the United States, not a subset filtered through one broad taxonomy code.</p>
+
+<p>From there, we enrich each record with verified business email, direct phone, practice address, and practice setting details. For hospital-employed psychiatrists, we cross-reference institutional directories and faculty pages to find individual contact information beyond the department switchboard. For telehealth providers, we identify the platforms they practice on and capture their most current contact details.</p>
+
+<p>Sub-specialty classification goes beyond taxonomy codes. We analyze board certification records, practice website content, and professional association memberships to tag psychiatrists by their actual clinical focus. A psychiatrist with a child and adolescent board certification who practices at a children's hospital gets tagged accurately, even if their NPI taxonomy code is listed as general psychiatry. CAN-SPAM compliance is built into our data practices, with opt-out tracking and suppression list management included.</p>
+
+<p>You get a clean dataset in CSV or Excel format with standardized fields. Filter by sub-specialty, practice setting, geography, or employment type. No annual contract, no platform login. Tell us what segment of the psychiatrist market you need, and we'll build a verified list matched to your criteria.</p>"""
+            },
+        ],
+        "faqs": [
+            {"question": "How many psychiatrists are there in the United States?",
+             "answer": "There are approximately 37,000 practicing psychiatrists in the US, though the total number with active medical licenses is higher when you include those in administrative, research, or retired-but-licensed roles. The practicing count comes from the American Psychiatric Association and workforce analyses that exclude non-clinical psychiatrists."},
+            {"question": "What's the difference between a psychiatrist and a psychologist for targeting purposes?",
+             "answer": "Psychiatrists are MDs or DOs who can prescribe medication and order medical tests. Psychologists hold PhDs or PsyDs and provide therapy but typically cannot prescribe (a handful of states allow psychologist prescribing with additional training). If your product involves medication, medical devices, or clinical diagnostics, you need psychiatrists specifically. If your product is therapy-related software or continuing education, both groups may be relevant."},
+            {"question": "Can you filter psychiatrists by sub-specialty?",
+             "answer": "Yes. We classify psychiatrists by sub-specialty using NPI taxonomy codes, board certification data, and practice analysis. Available sub-specialty filters include child and adolescent, addiction, geriatric, forensic, consultation-liaison, and general adult psychiatry."},
+            {"question": "Are telepsychiatry providers included in the list?",
+             "answer": "Yes. Psychiatrists who practice via telehealth platforms are included with their current contact information. We identify telepsychiatry providers through platform affiliations, NPI practice addresses, and online presence analysis. You can filter for telehealth-only, in-person-only, or hybrid practice models."},
+        ],
+        "related_links": [
+            {"url": "/providers/mental-health/", "text": "Mental Health Provider Data"},
+            {"url": "/resources/find-physician-email-addresses/", "text": "Find Physician Email Addresses"},
+            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
+        ],
+        "outbound_links": [
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.psychiatry.org/", "American Psychiatric Association"),
+        ],
+        "author": AUTHOR_ROME,
+    },
+
+    # =========================================================================
+    # 21. Therapists Email List
+    # =========================================================================
+    {
+        "slug": "therapists-email-list",
+        "title": "Therapists Email List: Verified Mental Health Contacts",
+        "meta_description": "Get a verified therapists email list with credential types, direct emails, and practice details. Accurate contact data for EHR vendors, CE providers, and health plans.",
+        "h1": "Therapists Email List",
+        "subtitle": "The word 'therapist' covers an enormous range of licensed professionals in the mental health space. LPCs, LCSWs, LMFTs, PsyDs, and more all get called therapists, and they all practice under different licensing rules, in different settings, with different purchasing authority. Building a useful email list means knowing which therapists you actually want to reach.",
+        "sections": [
+            {
+                "heading": "Why Therapist Data Is So Fragmented",
+                "body": """<p>There are over 600,000 licensed mental health professionals in the United States who could be called "therapists." That includes licensed professional counselors (LPCs), licensed clinical social workers (LCSWs), licensed marriage and family therapists (LMFTs), psychologists (PsyD and PhD), and several other credential types depending on the state. The <a href="https://www.counseling.org/" target="_blank" rel="noopener noreferrer">American Counseling Association</a> alone represents over 60,000 professional counselors, and that's just one credential type.</p>
+
+<p>State licensing creates the first data problem. Every state has its own licensing board, its own credential abbreviations, and its own scope-of-practice rules. A "licensed professional counselor" in Texas is an "licensed mental health counselor" in New York and a "licensed clinical professional counselor" in Illinois. These aren't different professions; they're the same credential with different state labels. Data vendors that don't normalize across state licensing terminology will give you fragmented lists that undercount or double-count practitioners.</p>
+
+<p>Practice models add another complexity layer. Many therapists work solo, operating small cash-pay or insurance-based practices out of rented office suites or their homes. Others work in group practices with 5-50 clinicians. Still others are employed by community mental health centers, hospital systems, schools, or Employee Assistance Programs (EAPs). Each setting has different data visibility: solo practitioners with private websites are easy to find, therapists employed inside a hospital system are almost invisible in external databases.</p>
+
+<p>The telehealth explosion has further fragmented the data. Platforms like BetterHelp, Talkspace, Alma, Headway, and Grow Therapy employ or contract with thousands of therapists. Some of these therapists also maintain private practices. Others practice exclusively through the platform. Their contact information may be locked inside the platform with no public-facing email or phone number. The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> captures therapists who bill insurance, but the address listed may be the platform's corporate office rather than the therapist's actual location.</p>"""
+            },
+            {
+                "heading": "What a Therapist Email List Should Include",
+                "body": """<p><strong>Credential type and license status.</strong> This is the most important field. You need to know whether you're reaching an LCSW, an LPC, an LMFT, a PsyD, or another credential type. Each has different training, different scope of practice, different prescribing ability (generally none, with rare exceptions), and different professional interests. If you're selling a continuing education course on EMDR, you want trauma-focused therapists. If you're selling EHR software, you want practice owners regardless of credential.</p>
+
+<p><strong>Verified business email.</strong> Therapists in solo practice often use personal email addresses or free providers like Gmail for their practice communication. Group practices may have @practicename.com addresses. Institutional therapists have @hospital.org or @agency.org addresses. A good list validates deliverability regardless of the email domain type and prioritizes the address the therapist actually checks for business communication.</p>
+
+<p><strong>Practice model and setting.</strong> Solo private practice, group private practice, community mental health center, hospital outpatient, school-based, telehealth platform, or VA. Your product and your messaging need to match the practice setting. A solo therapist who makes their own purchasing decisions is a different buyer than a therapist employed by a community mental health center with centralized purchasing.</p>
+
+<p><strong>Specialty focus.</strong> Therapists specialize in specific modalities (CBT, DBT, EMDR, psychodynamic, somatic experiencing) and specific populations (children, adolescents, couples, trauma survivors, substance use). If your product targets a specific clinical niche, you need list segmentation that goes beyond the broad "therapist" category.</p>
+
+<p><strong>NPI number (where available).</strong> Therapists who bill insurance have NPI numbers. Cash-pay-only therapists often don't. The presence of an NPI indicates insurance participation and higher data visibility. For some campaigns, NPI-holding therapists are the right target. For others, you want the full market including cash-pay practitioners.</p>"""
+            },
+            {
+                "heading": "Problems with Off-the-Shelf Therapist Lists",
+                "body": """<p>The biggest problem is contamination. The word "therapist" gets applied to licensed mental health professionals, life coaches, wellness practitioners, pastoral counselors, and unlicensed practitioners in states that don't restrict the title. If your data vendor pulls from business directories and searches for "therapist," you'll get a mix of licensed clinicians and people with weekend certifications. For regulated industries like insurance credentialing or pharmaceutical marketing, this distinction is critical.</p>
+
+<p>Missing telehealth-only providers is a growing gap. Thousands of therapists have moved to exclusively online practice since 2020. They may not have a physical office address, a Google Business listing, or any web presence outside of their profile on a telehealth platform. Data vendors that rely on physical business listings and practice websites will systematically miss this growing segment of the market.</p>
+
+<p>License verification is often absent. A list that includes therapists whose licenses have lapsed, been suspended, or been restricted creates compliance risk for buyers in regulated industries. State licensing boards publish this information, but scraping and normalizing across 50 different board websites is a data engineering challenge that most vendors skip.</p>
+
+<p>Geography is unreliable for telehealth practitioners. A therapist licensed in California who practices from their apartment in Austin, Texas, might appear in either location depending on which data source captured them. For companies that need to target therapists in specific states, address data alone isn't sufficient. You need licensing state data to know where a therapist is authorized to practice, which may differ from where they physically sit.</p>"""
+            },
+            {
+                "heading": "How Provyx Builds Therapist Email Lists",
+                "body": """<p>Provyx builds therapist lists from multiple sources to avoid the coverage gaps inherent in any single approach. We start with NPI Registry data for therapists who bill insurance, then layer in state licensing board records, professional association directories, and commercial databases to capture cash-pay and telehealth-only practitioners.</p>
+
+<p>Every record includes the credential type (LCSW, LPC, LMFT, PsyD, etc.) normalized across state naming conventions. An LPC in Texas and an LMHC in New York are both flagged as licensed professional counselors so you can filter consistently regardless of state terminology. We verify active license status against state board records where available.</p>
+
+<p>Email verification runs at the mail-server level. We confirm that each address resolves and accepts mail, not just that the format looks valid. For therapists on telehealth platforms, we identify their most reachable contact channel and flag the platform affiliation so you can adjust your outreach approach. All data handling follows CAN-SPAM requirements, with suppression list management built in.</p>
+
+<p>You get a structured CSV or Excel file ready for CRM import. Define your target segment by credential type, practice model, specialty focus, geography, or any combination, and we'll build a verified list that matches your criteria. No annual subscription, no data platform to learn.</p>"""
+            },
+        ],
+        "faqs": [
+            {"question": "How many licensed therapists are in the United States?",
+             "answer": "There are over 600,000 licensed mental health professionals in the US who practice therapy, including approximately 250,000 licensed clinical social workers, 180,000 licensed professional counselors, 60,000 licensed marriage and family therapists, and 100,000+ psychologists. The exact count depends on how broadly you define 'therapist' and whether you include inactive licenses."},
+            {"question": "What credential types are included in a therapists email list?",
+             "answer": "Our therapist lists include LCSWs (Licensed Clinical Social Workers), LPCs/LMHCs (Licensed Professional Counselors/Mental Health Counselors), LMFTs (Licensed Marriage and Family Therapists), PsyDs and PhDs (Psychologists), and other state-specific credential types. Each record is tagged with the specific credential so you can filter for the types relevant to your product."},
+            {"question": "Can you filter therapists by therapy modality?",
+             "answer": "Where available, yes. We tag therapists by their stated specialties and modalities such as CBT, DBT, EMDR, psychodynamic therapy, play therapy, and others. This information comes from practice websites, professional profiles, and directory listings. Coverage is best for therapists with active web presence and lower for those who rely solely on platform-based referrals."},
+            {"question": "Are telehealth-only therapists included?",
+             "answer": "Yes. Therapists who practice exclusively through telehealth platforms like BetterHelp, Talkspace, Alma, Headway, or Grow Therapy are included where we can verify their contact information. We flag telehealth-only practitioners separately from those who also maintain in-person practices."},
+        ],
+        "related_links": [
+            {"url": "/providers/mental-health/", "text": "Mental Health Provider Data"},
+            {"url": "/resources/psychiatrists-email-list/", "text": "Psychiatrists Email List"},
+            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
+        ],
+        "outbound_links": [
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.counseling.org/", "American Counseling Association"),
+        ],
+        "author": AUTHOR_ROME,
+    },
+
+    # =========================================================================
+    # 22. Nursing Homes Contact Database
+    # =========================================================================
+    {
+        "slug": "nursing-homes-contact-database",
+        "title": "Nursing Homes Contact Database: Verified Facility Data",
+        "meta_description": "Get a verified nursing homes contact database with administrator emails, bed counts, star ratings, and CMS data. Accurate facility contacts for vendor outreach.",
+        "h1": "Nursing Homes Contact Database",
+        "subtitle": "Nursing home data is fundamentally different from individual provider data. You're targeting facilities, not practitioners. The decision-makers are administrators, directors of nursing, and corporate owners, not the physicians who treat patients there. Building a useful nursing home contact database means understanding facility-level data structures that most provider databases don't handle.",
+        "sections": [
+            {
+                "heading": "Why Nursing Home Data Differs from Provider Data",
+                "body": """<p>There are approximately 15,000 CMS-certified nursing homes in the United States, according to the <a href="https://www.cms.gov/medicare/health-safety-standards/quality-safety-oversight-general-information/nursing-home-quality" target="_blank" rel="noopener noreferrer">CMS Nursing Home Quality</a> program. These facilities are tracked at the facility level, not the individual provider level. The CMS Nursing Home Compare database (now part of <a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">Care Compare</a>) provides public data on every certified facility, including bed count, ownership type, star ratings, inspection results, and staffing metrics.</p>
+
+<p>But Care Compare doesn't include what vendors actually need: business email addresses for decision-makers, direct phone numbers for administrators, and verified contact details for the people who approve purchases. The publicly available data tells you everything about the facility's quality metrics and nothing about how to reach the person who signs vendor contracts.</p>
+
+<p>Nursing homes have a distinct organizational structure. The administrator manages daily operations and typically controls vendor relationships for supplies, equipment, and services. The director of nursing (DON) influences clinical purchasing decisions. The medical director is usually a physician who works part-time and has limited purchasing authority. In chain-owned facilities, corporate procurement may override facility-level decisions entirely. Your outreach needs to reach the right role, and that role depends on what you're selling.</p>
+
+<p>Ownership structure matters more in nursing homes than in most healthcare segments. About 70% of US nursing homes are for-profit, and many are owned by chains or private equity groups. A single ownership entity might control 50-200 facilities. When the parent company centralizes purchasing, your contact at the individual facility can't make buying decisions. Knowing the ownership chain helps you identify whether to approach the facility or the corporate office.</p>"""
+            },
+            {
+                "heading": "What a Nursing Home Contact Database Includes",
+                "body": """<p><strong>CMS certification number.</strong> This is the unique facility identifier in the CMS system, analogous to an NPI for individual providers. It links to inspection records, quality ratings, staffing data, and ownership history. Every legitimate nursing home has one.</p>
+
+<p><strong>Administrator email and phone.</strong> The administrator is the operational decision-maker at most facilities. Getting their direct business email, not the facility's general phone line, is the key data point for vendor outreach. Administrator turnover in nursing homes is higher than in most healthcare settings, which means this data point needs frequent re-verification.</p>
+
+<p><strong>Bed count and occupancy.</strong> Facility size directly correlates to purchasing volume. A 30-bed facility buys different quantities of supplies, technology, and services than a 200-bed facility. Occupancy rates indicate financial health and growth potential. CMS publishes bed count data; occupancy data requires additional sourcing.</p>
+
+<p><strong>Star rating and quality metrics.</strong> CMS assigns 1-5 star overall ratings based on health inspections, staffing, and quality measures. For vendors selling quality improvement tools, infection prevention products, or compliance software, star ratings indicate which facilities are most likely to buy. Low-rated facilities face regulatory pressure to improve. High-rated facilities want to maintain their status.</p>
+
+<p><strong>Ownership type and chain affiliation.</strong> Independent, chain-affiliated, government-owned, or nonprofit. For chain-affiliated facilities, the parent company name and the number of facilities in the chain helps you decide whether to pursue a facility-level or enterprise-level sales approach.</p>"""
+            },
+            {
+                "heading": "Common Quality Issues with Nursing Home Data",
+                "body": """<p>Chain ownership masks individual facilities. A nursing home owned by a private equity group may appear under a management company name, a holding company name, or the facility's local DBA name depending on the data source. Cross-referencing CMS ownership data with state business filings and commercial databases to identify the actual decision-making entity is a non-trivial data exercise. Some chains deliberately use complex ownership structures that make it hard to connect facilities to their parent companies.</p>
+
+<p>Administrator turnover is the biggest contact data challenge. Nursing home administrators change positions more frequently than most healthcare roles. A list verified six months ago could have 15-20% of its administrator contacts outdated. DON turnover is similarly high. If you're buying a nursing home contact database, ask about the verification frequency. Annual verification isn't sufficient for this market.</p>
+
+<p>Confusion with adjacent facility types degrades list quality. "Nursing home" gets mixed up with assisted living facilities (which provide personal care but not skilled nursing), continuing care retirement communities (CCRCs, which include nursing homes as one component), and rehabilitation centers (which may be licensed as nursing homes but serve a different patient population). If your product targets skilled nursing specifically, your list can't include assisted living facilities that happen to appear in the same directories.</p>
+
+<p>State-licensed-only facilities create gaps. CMS certification is voluntary for facilities that don't accept Medicare or Medicaid. A small number of nursing homes operate under state license only and don't appear in federal databases. These facilities are typically small, private-pay-focused, and harder to find in standard data sources.</p>"""
+            },
+            {
+                "heading": "How Provyx Builds Nursing Home Contact Lists",
+                "body": """<p>Provyx starts with the CMS Care Compare database for the complete universe of certified nursing facilities. This gives us facility name, address, bed count, star ratings, ownership data, and CMS certification number for approximately 15,000 facilities nationwide.</p>
+
+<p>We then enrich each facility record with verified decision-maker contacts. We identify administrators, directors of nursing, and medical directors through commercial databases, LinkedIn analysis, state licensing records, and web intelligence. Every email address is verified at the mail-server level. Phone numbers are confirmed against carrier databases.</p>
+
+<p>Ownership chain mapping connects individual facilities to their parent companies. We identify the top-level ownership entity so you can segment your outreach by chain size, ownership type, and corporate structure. If you want to approach the corporate office for a 100-facility chain, we can identify that contact. If you want to approach individual facility administrators within that chain, we have those contacts too.</p>
+
+<p>The data is delivered in CSV or Excel format with standardized fields. CAN-SPAM compliance is maintained through our verification and suppression processes. You can filter by geography, bed count, star rating, ownership type, or chain affiliation. No annual contract, no data platform to navigate. Tell us what segment of the nursing home market you need, and we'll deliver a verified contact database.</p>"""
+            },
+        ],
+        "faqs": [
+            {"question": "How many nursing homes are in the United States?",
+             "answer": "There are approximately 15,000 CMS-certified nursing homes (skilled nursing facilities) in the US. This count comes from the CMS Care Compare database and includes facilities that accept Medicare and/or Medicaid. A small number of additional facilities operate under state license only without federal certification."},
+            {"question": "What's the difference between a nursing home and an assisted living facility for targeting purposes?",
+             "answer": "Nursing homes (skilled nursing facilities) provide 24-hour medical care from licensed nurses and accept Medicare/Medicaid. Assisted living facilities provide personal care assistance (bathing, dressing, medication management) but not skilled nursing care, and are regulated at the state level with no federal certification database. The decision-makers, purchasing processes, and regulatory environments are different. Make sure your list distinguishes between the two."},
+            {"question": "Who is the decision-maker at a nursing home?",
+             "answer": "It depends on what you're selling. The administrator manages operations and controls most vendor relationships. The director of nursing (DON) influences clinical and medical supply decisions. For chain-owned facilities, corporate procurement at the parent company level may control vendor selection and contract terms. We provide contact data for all three roles where available."},
+            {"question": "Can you filter nursing homes by star rating?",
+             "answer": "Yes. We include CMS star ratings (1-5 stars overall, plus sub-ratings for health inspections, staffing, and quality measures) so you can target facilities by quality level. This is useful for vendors selling quality improvement tools, compliance software, or staffing services to facilities under regulatory pressure."},
+        ],
+        "related_links": [
+            {"url": "/providers/senior-care/", "text": "Senior Care Provider Data"},
+            {"url": "/resources/retirement-communities-email-list/", "text": "Retirement Communities Email List"},
+            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
+        ],
+        "outbound_links": [
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.medicare.gov/care-compare/", "CMS Care Compare"),
+        ],
+        "author": AUTHOR_ROME,
+    },
+
+    # =========================================================================
+    # 23. Retirement Communities Email List
+    # =========================================================================
+    {
+        "slug": "retirement-communities-email-list",
+        "title": "Retirement Communities Email List: Verified Contacts",
+        "meta_description": "Get a verified retirement communities email list with administrator contacts, unit counts, and care-level data. Reach ILFs, ALFs, CCRCs, and 55+ communities.",
+        "h1": "Retirement Communities Email List",
+        "subtitle": "Retirement communities span a wide range of facility types, from independent living apartments for active seniors to full continuing care retirement communities with nursing home beds. There is no single federal registry that captures all of them, which makes building a comprehensive email list a multi-source challenge.",
+        "sections": [
+            {
+                "heading": "Why Retirement Community Data Is Messy",
+                "body": """<p>The term "retirement community" covers at least four distinct facility types, each with different regulatory frameworks, different data sources, and different decision-making structures. Independent living facilities (ILFs) are essentially apartment communities for adults 55 or older and face minimal healthcare regulation. Assisted living facilities (ALFs) provide personal care services and are regulated at the state level with no federal database. Continuing care retirement communities (CCRCs) offer multiple levels of care on one campus, from independent living through skilled nursing. And 55+ active adult communities are age-restricted housing developments with no care services at all.</p>
+
+<p>There is no single registry for all these types. CMS tracks skilled nursing facilities through <a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer">Care Compare</a>, but that only captures the nursing home component of CCRCs and misses standalone independent living and assisted living facilities entirely. State licensing databases cover assisted living, but their formats, field definitions, and accessibility vary wildly across 50 states. Independent living communities and 55+ developments may not require any healthcare license at all, making them invisible in healthcare-focused databases.</p>
+
+<p>The result is fragmented data. A CCRC with 300 residents might appear in the CMS database (for its nursing wing), in the state assisted living registry (for its ALF component), and in a commercial real estate database (for its independent living apartments). But no single source connects all three components into one facility record with unified contact information.</p>
+
+<p>For vendors selling food service, wellness programs, technology solutions, furniture, or property management services to retirement communities, this fragmentation means your total addressable market is scattered across dozens of data sources that don't talk to each other.</p>"""
+            },
+            {
+                "heading": "What a Good Retirement Community Email List Includes",
+                "body": """<p><strong>Community name and type.</strong> The fundamental classification: independent living, assisted living, CCRC, memory care, or 55+ active adult. This determines the decision-making structure, regulatory requirements, and purchasing needs. A CCRC with a nursing component has entirely different vendor needs than a 55+ golf community.</p>
+
+<p><strong>Administrator or executive director email.</strong> The operational leader at most retirement communities is an executive director (ED) or administrator. In CCRCs, there may be separate directors for independent living, assisted living, and skilled nursing. Getting the right person's direct email is the most valuable data point in the list. General "info@" addresses and main phone lines route through reception staff who screen vendor calls.</p>
+
+<p><strong>Unit count and care levels.</strong> A 50-unit assisted living facility is a different sales opportunity than a 500-unit CCRC with three care levels. Unit count indicates purchasing volume for supplies, food service, and technology. The number of care levels indicates organizational complexity and the number of potential decision-makers.</p>
+
+<p><strong>Ownership and management.</strong> Retirement communities may be owned by REITs, private equity firms, nonprofit organizations, religious organizations, or individual operators. Many use third-party management companies. The owner-operator distinction matters because management companies often control vendor selection across their entire portfolio. <a href="https://leadingage.org/" target="_blank" rel="noopener noreferrer">LeadingAge</a> and other industry associations track the largest operators.</p>
+
+<p><strong>Amenities and service indicators.</strong> Memory care, wellness center, on-site rehabilitation, dining options, and other amenities signal what a community invests in and what types of products and services they might buy next. A community with an existing wellness program is a better prospect for wellness technology than one with no current program.</p>"""
+            },
+            {
+                "heading": "Where Standard Lists Go Wrong",
+                "body": """<p>Mixing nursing homes with retirement communities is the most common contamination problem. Nursing homes (skilled nursing facilities) serve a different population, have different regulatory requirements, and have different decision-makers than independent living or assisted living communities. When a data vendor classifies everything serving seniors as "retirement communities," your list gets diluted with facilities that don't match your target market.</p>
+
+<p>Missing independent living is a systematic gap. Because independent living facilities don't require healthcare licensing in most states, they don't appear in healthcare provider databases. Vendors who build senior living lists from CMS or state health department data will capture nursing homes and assisted living but miss the independent living segment entirely. For companies selling lifestyle products, technology, dining services, or community amenities, independent living residents are often the highest-value segment.</p>
+
+<p>Corporate HQ versus facility-level contacts is a persistent issue. When a large senior living operator manages 100+ communities, some databases list the corporate headquarters contact for every location. That gives you one email address repeated 100 times instead of 100 individual facility contacts. For enterprise sales approaches, the corporate contact is useful. For local marketing or facility-level vendor relationships, you need the on-site executive director.</p>
+
+<p>Data staleness hits this market hard. Executive director turnover in senior living is substantial, driven by burnout, career advancement, and management company reassignments. A contact list that was verified a year ago may have 20-25% of its ED contacts outdated. If you're planning a major outreach campaign, verify the recency of your list data before investing in messaging and creative.</p>"""
+            },
+            {
+                "heading": "How Provyx Builds Retirement Community Contact Lists",
+                "body": """<p>Provyx builds retirement community lists by combining healthcare facility data with commercial real estate and business databases. We start with CMS data for facilities with nursing or skilled nursing components, then layer in state-level assisted living registries, senior housing directories, and commercial business databases to capture independent living and 55+ communities that don't appear in healthcare sources.</p>
+
+<p>Each facility is classified by type (ILF, ALF, CCRC, memory care, 55+) and enriched with decision-maker contact information. We identify executive directors, administrators, and department heads through commercial databases, LinkedIn analysis, and web intelligence. Every email address is validated at the mail-server level.</p>
+
+<p>Ownership and management chain mapping connects individual communities to their parent organizations. If a management company operates 75 communities, we can provide both the facility-level contacts and the corporate-level contacts, so your sales team can decide whether to pursue a bottom-up or top-down approach. CAN-SPAM compliance is maintained through our verification and suppression processes.</p>
+
+<p>Delivery is in CSV or Excel format. Filter by community type, care level, unit count, geography, or ownership. No annual contract, no platform to learn. Describe your target segment and we'll build a verified list that covers the retirement community market you're after.</p>"""
+            },
+        ],
+        "faqs": [
+            {"question": "How many retirement communities are in the United States?",
+             "answer": "There are approximately 30,000 or more senior living communities in the US when you include all types: roughly 15,000 assisted living facilities, 15,000+ nursing homes, approximately 2,000 CCRCs, and thousands of independent living and 55+ communities. The exact count depends on how broadly you define 'retirement community' and which facility types you include."},
+            {"question": "What's the difference between a CCRC and an independent living facility for targeting?",
+             "answer": "A CCRC (continuing care retirement community) offers multiple levels of care on one campus, from independent living through skilled nursing. Residents pay an entrance fee and monthly charges in exchange for a guaranteed continuum of care. An independent living facility offers housing only, with no healthcare services. CCRCs have larger budgets, more complex operations, and more decision-makers. Independent living communities are simpler organizations with fewer purchasing needs."},
+            {"question": "Can you filter retirement communities by care level?",
+             "answer": "Yes. We classify communities by their available care levels: independent living only, assisted living only, memory care, skilled nursing, or combinations (such as CCRCs that offer all levels). You can target communities that match the specific care level relevant to your product."},
+            {"question": "What companies typically buy retirement community email lists?",
+             "answer": "Common buyers include food service companies, technology vendors (EHR, resident engagement, smart home), furniture and equipment suppliers, wellness program providers, staffing agencies, property management firms, insurance companies, and organizations marketing continuing education to senior living professionals."},
+        ],
+        "related_links": [
+            {"url": "/providers/senior-care/", "text": "Senior Care Provider Data"},
+            {"url": "/resources/nursing-homes-contact-database/", "text": "Nursing Homes Contact Database"},
+            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
+        ],
+        "outbound_links": [
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://leadingage.org/", "LeadingAge"),
+        ],
+        "author": AUTHOR_ROME,
+    },
+
+    # =========================================================================
+    # 24. Pediatric Dentists Email List
+    # =========================================================================
+    {
+        "slug": "pediatric-dentists-email-list",
+        "title": "Pediatric Dentists Email List: Verified Contacts",
+        "meta_description": "Get a verified pediatric dentists email list with NPI data, direct emails, and practice details. Accurate contact data for dental suppliers, fluoride brands, and CE providers.",
+        "h1": "Pediatric Dentists Email List",
+        "subtitle": "Pediatric dentistry is a board-recognized specialty with roughly 7,500 specialists in the United States. That makes it large enough to be a meaningful market but small enough that generic dental databases consistently mishandle it, either lumping pediatric dentists in with general practitioners or missing them entirely.",
+        "sections": [
+            {
+                "heading": "Why Pediatric Dentist Data Needs Specialty Filtering",
+                "body": """<p>There are over 200,000 active dentists in the United States, according to the <a href="https://www.ada.org/" target="_blank" rel="noopener noreferrer">American Dental Association</a>. Of those, approximately 7,500 are board-certified pediatric dental specialists who completed a two-year residency focused exclusively on treating children and adolescents. The <a href="https://www.aapd.org/" target="_blank" rel="noopener noreferrer">American Academy of Pediatric Dentistry (AAPD)</a> represents most of these specialists.</p>
+
+<p>The targeting problem is straightforward: tens of thousands of general dentists treat children as part of their practice, but they aren't pediatric dental specialists. If you're selling a product specifically designed for pediatric dental practices (child-sized equipment, behavior management tools, fluoride varnish systems, or pediatric-focused practice management features), you need the 7,500 specialists, not the 200,000 general dentists who happen to see some pediatric patients.</p>
+
+<p>The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> uses specific <a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">taxonomy codes</a> to distinguish pediatric dentists (1223P0221X) from general dentists (1223G0001X). But not every pediatric dentist has selected the pediatric-specific taxonomy code. Some registered under the general dental practice code when they first obtained their NPI and never updated it. Others have multiple taxonomy codes listed. Relying solely on the primary taxonomy code will miss pediatric specialists who are coded as general dentists in the NPI system.</p>
+
+<p>Practice structure adds another dimension. Pediatric dental practices tend to be larger and more complex than general dental practices. Many operate with multiple locations, associate dentists, and a team of hygienists seeing high patient volumes. Group pediatric dental practices with 3-10 locations are common, and some pediatric dental organizations operate 20+ locations under one ownership entity. Reaching the practice owner or managing partner, not just any dentist at the practice, requires decision-maker identification beyond what an NPI list provides.</p>"""
+            },
+            {
+                "heading": "What a Pediatric Dentists Email List Includes",
+                "body": """<p><strong>NPI number and taxonomy code verification.</strong> We confirm pediatric dental specialty through multiple signals, not just the primary taxonomy code. Board certification records, practice website analysis, and AAPD membership data help catch pediatric specialists who are coded as general dentists in the NPI system.</p>
+
+<p><strong>Verified business email.</strong> Pediatric dental practices typically have practice-domain email addresses (drsmith@happykidsdental.com) that are more stable than personal emails. However, group practices may route through a general info@ address or an office manager's email. We verify deliverability at the mail-server level and identify the dentist's direct address where possible.</p>
+
+<p><strong>Practice name and location data.</strong> Pediatric dental practice names are often distinctive (descriptive names referencing kids, smiles, or similar themes). Matching the practice name to the correct NPI record helps with deduplication when a dentist appears in multiple databases under slightly different name formats.</p>
+
+<p><strong>Practice type.</strong> Solo practice, single-location group, multi-location group, hospital-based, or academic pediatric dentistry program. Multi-location groups are the highest-value targets for most dental vendors because a single relationship can drive purchases across all locations. Academic programs influence product adoption through training the next generation of practitioners.</p>
+
+<p><strong>Geographic data.</strong> Practice address, state, and county. Pediatric dental practices are concentrated in suburban areas with family populations. Rural areas often have zero pediatric dental specialists, with children served by general dentists. For territory-based sales teams, knowing where the specialists actually practice is essential for route planning.</p>"""
+            },
+            {
+                "heading": "Common Problems with Pediatric Dentist Data",
+                "body": """<p>The confusion between pediatric dental specialists and general dentists who see children is the primary data quality issue. Many data vendors categorize dentists by the services they advertise rather than their board certification. A general dentist who lists "children's dentistry" on their website might get tagged as a pediatric dentist, even though they didn't complete a pediatric dental residency and aren't board-certified. For products that are genuinely specialty-specific, this contamination wastes outreach on providers who won't buy.</p>
+
+<p>Group practice identification is frequently botched. A pediatric dental group with five locations might appear as five separate "practices" in one database, or as one practice with only the headquarters address in another. Neither representation is correct for outreach purposes. You need to know that it's one organization with five locations, who the owner or managing partner is, and that reaching that person once covers all locations.</p>
+
+<p>Missing decision-maker data is more impactful in pediatric dentistry than in many specialties. Because pediatric dental practices are often larger and more corporate in structure, the purchasing decision-maker may be a non-dentist practice administrator, a regional manager, or a dental service organization (DSO). An email list that only includes dentist names and NPI numbers misses the operational buyers who actually sign vendor contracts.</p>
+
+<p>Specialty dental organizations (DSOs) are consolidating pediatric dental practices aggressively. When a DSO acquires a pediatric practice, the NPI records don't immediately change, but the purchasing authority shifts to the DSO's corporate office. A list built six months before a DSO acquisition shows the independent owner as the contact, when the actual decision-maker is now a corporate procurement team.</p>"""
+            },
+            {
+                "heading": "How Provyx Builds Pediatric Dentist Email Lists",
+                "body": """<p>Provyx identifies pediatric dental specialists through a multi-signal approach. We start with NPI taxonomy codes for pediatric dentistry, then cross-reference AAPD membership data, state dental board specialty registrations, and board certification records. This catches pediatric specialists whose NPI records use general dental taxonomy codes and filters out general dentists who merely treat some pediatric patients.</p>
+
+<p>Practice-level enrichment maps each pediatric dentist to their practice entity, identifies whether it's a solo practice, group practice, or DSO-affiliated location, and tags the decision-maker at each entity. For multi-location groups, we identify the managing partner or owner alongside the individual dentists at each location.</p>
+
+<p>Every email address is verified at the mail-server level. Every phone number is checked against carrier databases. We provide practice address, location count for groups, and ownership indicators (independent vs. DSO-affiliated) to help your sales team prioritize outreach. CAN-SPAM compliance is built into our data handling processes.</p>
+
+<p>Delivery is in CSV or Excel format, ready for CRM import. Filter by geography, practice type (solo, group, DSO, academic), or practice size. Whether you're a fluoride varnish manufacturer, a pediatric dental supply distributor, or a CE provider targeting pediatric specialists, the list is built to match your specific segment of this market.</p>"""
+            },
+        ],
+        "faqs": [
+            {"question": "How many pediatric dentists are in the United States?",
+             "answer": "There are approximately 7,500 board-certified pediatric dental specialists in the US. This counts dentists who completed a two-year pediatric dental residency accredited by CODA (Commission on Dental Accreditation). The number of general dentists who also treat children is much larger but represents a different target audience for most dental vendors."},
+            {"question": "What's the difference between a pediatric dentist and a family dentist for targeting purposes?",
+             "answer": "A pediatric dentist completed a residency specifically in treating children and adolescents and limits their practice to that population. A family or general dentist treats patients of all ages, including children. Pediatric dental practices have child-specific equipment, office design, behavior management protocols, and product needs. If your product is designed for the pediatric dental workflow, you want the specialists."},
+            {"question": "Can you filter by practice type (solo vs. group)?",
+             "answer": "Yes. We classify pediatric dental practices as solo, single-location group, multi-location group, DSO-affiliated, hospital-based, or academic program. Multi-location groups and DSO-affiliated practices are flagged with location count and ownership entity so your sales team can identify enterprise-level opportunities."},
+            {"question": "What companies typically buy pediatric dentist email lists?",
+             "answer": "Common buyers include dental supply distributors, fluoride and sealant product manufacturers, pediatric dental equipment companies, practice management software vendors, dental staffing agencies, continuing education providers, pediatric dental insurance networks, and dental service organizations (DSOs) looking for acquisition targets."},
+        ],
+        "related_links": [
+            {"url": "/providers/dental/", "text": "Dental Provider Data Hub"},
+            {"url": "/resources/periodontist-email-list/", "text": "Periodontist Email List"},
+            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
+            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
+        ],
+        "outbound_links": [
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+            ("https://www.aapd.org/", "American Academy of Pediatric Dentistry"),
         ],
         "author": AUTHOR_ROME,
     },
