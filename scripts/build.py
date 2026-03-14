@@ -11969,10 +11969,10 @@ RESOURCES = [
              "answer": "Yes. A significant portion of oral pathologists practice in academic settings. Our data includes pathologists at university dental schools, teaching hospitals, and research institutions, with their institutional affiliation and contact details verified against multiple sources."},
         ],
         "related_links": [
-            {"url": "/providers/oral-pathologists/", "text": "Oral Pathologist Provider Data"},
+            {"url": "/resources/oral-surgeons-email-list/", "text": "Oral Surgeons Email List"},
+            {"url": "/resources/periodontist-email-list/", "text": "Periodontist Email List"},
+            {"url": "/resources/pediatric-dentists-email-list/", "text": "Pediatric Dentists Email List"},
             {"url": "/providers/dental/", "text": "Dental Provider Data Hub"},
-            {"url": "/resources/healthcare-marketing-list-guide/", "text": "Healthcare Marketing List Building Guide"},
-            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
@@ -12047,10 +12047,10 @@ RESOURCES = [
              "answer": "Common buyers include supplement and nutraceutical companies, diagnostic laboratory services (functional medicine testing), botanical product manufacturers, practice management software vendors serving integrative clinics, and continuing education providers. Pharmaceutical companies targeting NDs with prescribing authority also use these lists for specific product launches."},
         ],
         "related_links": [
-            {"url": "/providers/naturopathic-doctors/", "text": "Naturopathic Doctor Provider Data"},
+            {"url": "/resources/acupuncturists-email-list/", "text": "Acupuncturists Email List"},
+            {"url": "/resources/midwife-email-list/", "text": "Midwife Email List"},
             {"url": "/providers/integrative-medicine/", "text": "Integrative Medicine Provider Data"},
             {"url": "/resources/find-physician-email-addresses/", "text": "How to Find Physician Email Addresses"},
-            {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
@@ -12064,8 +12064,8 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "periodontist-email-list",
-        "title": "Periodontist Email List: Verified Perio Contacts",
-        "meta_description": "Access a verified periodontist email list with NPI data, direct emails, and practice details. Built for implant companies, dental suppliers, and sales teams.",
+        "title": "Periodontist Email List: Verified Implant-Ready Data",
+        "meta_description": "Get a verified periodontist email list with NPI data, direct emails, and practice details. Built for implant companies, dental suppliers, and sales teams.",
         "h1": "Periodontist Email List",
         "subtitle": "Periodontists are high-value targets for implant manufacturers, bone graft suppliers, and dental technology companies. But most provider databases lump them in with general dentists, which means your outreach is reaching the wrong inboxes.",
         "sections": [
@@ -12125,10 +12125,10 @@ RESOURCES = [
              "answer": "A dental email list includes all dental professionals: general dentists, orthodontists, oral surgeons, periodontists, endodontists, and others. A periodontist email list is filtered specifically for practitioners of periodontics. For companies selling implant systems, bone graft materials, or guided tissue regeneration products, the periodontist-specific list eliminates 96% of dental contacts that aren't your target buyer."},
         ],
         "related_links": [
-            {"url": "/providers/periodontists/", "text": "Periodontist Provider Data"},
+            {"url": "/resources/oral-surgeons-email-list/", "text": "Oral Surgeons Email List"},
+            {"url": "/resources/orthodontists-email-list/", "text": "Orthodontists Email List"},
+            {"url": "/resources/oral-pathologists-email-list/", "text": "Oral Pathologists Email List"},
             {"url": "/providers/dental/", "text": "Dental Provider Data Hub"},
-            {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
-            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
@@ -12142,7 +12142,7 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "physiatrist-email-list",
-        "title": "Physiatrist Email List: Verified PM&R Contacts",
+        "title": "Physiatrist Email List: Verified PM&R Provider Data",
         "meta_description": "Get a verified physiatrist email list with NPI data, direct emails, and practice details. Accurate PM&R contacts for device companies and rehab vendors.",
         "h1": "Physiatrist Email List",
         "subtitle": "Physiatrists are the most misclassified specialty in provider databases. If your data vendor confuses physiatry with psychiatry or physical therapy, your email list is reaching the wrong people before the first message goes out.",
@@ -12201,7 +12201,7 @@ RESOURCES = [
              "answer": "Yes. Health system-employed physiatrists are included with their institutional affiliation, practice location, and available contact details. We note the practice setting so you can distinguish between independent practices and health system employment in your outreach strategy."},
         ],
         "related_links": [
-            {"url": "/providers/physiatrists/", "text": "Physiatrist Provider Data"},
+            {"url": "/resources/rheumatologists-email-list/", "text": "Rheumatologists Email List"},
             {"url": "/providers/orthopedics/", "text": "Orthopedic Provider Data Hub"},
             {"url": "/providers/pain-management/", "text": "Pain Management Provider Data"},
             {"url": "/use-cases/medical-device-territory-planning/", "text": "Medical Device Territory Planning"},
@@ -12218,9 +12218,9 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "iv-infusion-therapy-email-list",
-        "title": "IV Infusion Therapy Providers Email List",
-        "meta_description": "Get a verified IV infusion therapy providers email list. Covers clinical infusion centers and wellness IV bars with emails, phones, and practice data.",
-        "h1": "IV Infusion Therapy Providers Email List",
+        "title": "IV Infusion Therapy Email List: Clinical and Wellness",
+        "meta_description": "Get a verified IV infusion therapy email list covering clinical infusion centers and wellness IV bars. Direct emails, phones, and practice classification.",
+        "h1": "IV Infusion Therapy Email List",
         "subtitle": "IV infusion therapy spans two distinct markets: clinical infusion centers administering biologics and chemotherapy, and wellness IV bars offering vitamin drips and hydration. Your email list needs to reflect which segment you're selling into.",
         "sections": [
             {
@@ -12277,9 +12277,9 @@ RESOURCES = [
              "answer": "Mobile IV therapy services (house-call IV drip providers) are included in our wellness IV segment data where we can verify their contact information and service area. Because mobile services don't have fixed practice addresses, we list their business registration address and service geography."},
         ],
         "related_links": [
-            {"url": "/providers/iv-therapy-clinics/", "text": "IV Therapy Clinic Provider Data"},
+            {"url": "/resources/naturopathic-doctors-email-list/", "text": "Naturopathic Doctors Email List"},
+            {"url": "/resources/med-spa-owners-contact-list/", "text": "Med Spa Owners Contact List"},
             {"url": "/providers/integrative-medicine/", "text": "Integrative Medicine Provider Data"},
-            {"url": "/resources/healthcare-marketing-list-guide/", "text": "Healthcare Marketing List Building Guide"},
             {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
         ],
         "outbound_links": [
@@ -12294,9 +12294,9 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "lasik-surgeons-email-list",
-        "title": "LASIK Refractive Surgeons Email List",
-        "meta_description": "Get a verified LASIK refractive surgeons email list. Direct emails, NPI data, and practice details for laser manufacturers and ophthalmology sales teams.",
-        "h1": "LASIK Refractive Surgeons Email List",
+        "title": "LASIK Surgeons Email List: Verified Refractive Data",
+        "meta_description": "Get a verified LASIK surgeons email list with direct emails, NPI data, and practice details. Built for laser manufacturers and ophthalmology sales teams.",
+        "h1": "LASIK Surgeons Email List",
         "subtitle": "Fewer than 2,000 ophthalmologists actively perform LASIK and refractive surgery in the United States. At that scale, every contact on your list needs to be right. A single inaccurate record represents a meaningful share of your total addressable market.",
         "sections": [
             {
@@ -12357,7 +12357,7 @@ RESOURCES = [
              "answer": "We recommend quarterly refreshes for a market this small. With fewer than 2,000 active surgeons, even a small number of practice changes, retirements, or new surgeons entering the market can shift a meaningful percentage of your list. Quarterly updates keep your data current without over-investing in refresh frequency."},
         ],
         "related_links": [
-            {"url": "/providers/lasik-centers/", "text": "LASIK Center Provider Data"},
+            {"url": "/resources/optometrists-email-list/", "text": "Optometrists Email List"},
             {"url": "/providers/eye-care/", "text": "Eye Care Provider Data Hub"},
             {"url": "/services/technology-detection/", "text": "Technology Detection Data"},
             {"url": "/use-cases/medical-device-territory-planning/", "text": "Medical Device Territory Planning"},
@@ -12375,7 +12375,7 @@ RESOURCES = [
     {
         "slug": "med-spa-owners-contact-list",
         "title": "Med Spa Owners Contact List: Verified Decision-Makers",
-        "meta_description": "Get a verified med spa owners contact list with direct emails, phones, and business details. Reach decision-makers at medical spas, not just medical directors.",
+        "meta_description": "Get a verified med spa owners contact list with direct emails, phones, and business details. Reach decision-makers at medical spas, not just the MD on file.",
         "h1": "Med Spa Owners Contact List",
         "subtitle": "Med spas have a unique ownership structure that trips up most provider databases. The medical director is a physician, but the business owner who signs vendor contracts is often someone else entirely. If your list only gives you the MD on file, you're pitching to the wrong person.",
         "sections": [
@@ -12433,7 +12433,7 @@ RESOURCES = [
              "answer": "Yes. We identify multi-location med spa groups and link individual locations to the parent entity. This is valuable for enterprise sales teams targeting group purchasing opportunities, where a single deal covers multiple locations."},
         ],
         "related_links": [
-            {"url": "/providers/med-spas/", "text": "Med Spa Provider Data"},
+            {"url": "/resources/iv-infusion-therapy-email-list/", "text": "IV Infusion Therapy Email List"},
             {"url": "/providers/medical-spas/", "text": "Medical Spas Category Hub"},
             {"url": "/services/custom-list-building/", "text": "Custom List Building"},
             {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
@@ -12450,8 +12450,8 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "chiropractor-email-list",
-        "title": "Chiropractor Email List: Verified DC Contacts",
-        "meta_description": "Access a verified chiropractor email list with NPI data, direct emails, and practice details. 70,000+ DCs nationwide for supplement and equipment outreach.",
+        "title": "Chiropractor Email List: 70,000+ Verified DC Contacts",
+        "meta_description": "Access a verified chiropractor email list with 70,000+ DC contacts. NPI data, direct emails, and practice details for supplement and equipment outreach.",
         "h1": "Chiropractor Email List",
         "subtitle": "Chiropractors are one of the largest non-physician provider segments in the US, with over 70,000 active practitioners. The volume is an asset and a problem: there's plenty of data available, but the quality is all over the map.",
         "sections": [
@@ -12511,10 +12511,10 @@ RESOURCES = [
              "answer": "We include available practice model indicators that can help identify supplement-dispensing practices, though this specific data point isn't available for every record. Practice names, service descriptions, and website data often indicate whether a chiropractic office includes a supplement dispensary."},
         ],
         "related_links": [
-            {"url": "/providers/chiropractors/", "text": "Chiropractor Provider Data"},
+            {"url": "/resources/acupuncturists-email-list/", "text": "Acupuncturists Email List"},
+            {"url": "/resources/naturopathic-doctors-email-list/", "text": "Naturopathic Doctors Email List"},
             {"url": "/providers/chiropractic/", "text": "Chiropractic Provider Data Hub"},
             {"url": "/resources/find-physician-email-addresses/", "text": "How to Find Physician Email Addresses"},
-            {"url": "/services/provider-contact-data/", "text": "Provider Contact Data"},
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
