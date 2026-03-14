@@ -22,12 +22,12 @@ Requirements for SEO Content Optimization milestone. Each maps to roadmap phases
 
 ### Email List Resource Pages
 
-- [ ] **EMAIL-01**: Create `/resources/psychiatrists-email-list/` (63+ impressions across query variants)
-- [ ] **EMAIL-02**: Create `/resources/acupuncturists-email-list/` (52+ impressions)
-- [ ] **EMAIL-03**: Create `/resources/therapists-email-list/` (31+ impressions)
-- [ ] **EMAIL-04**: Create `/resources/nursing-homes-contact-database/` (21+ impressions)
-- [ ] **EMAIL-05**: Create `/resources/retirement-communities-email-list/` (6+ impressions)
-- [ ] **EMAIL-06**: Create `/resources/pediatric-dentists-email-list/` (8+ impressions)
+- [x] **EMAIL-01**: Create `/resources/psychiatrists-email-list/` (63+ impressions across query variants)
+- [x] **EMAIL-02**: Create `/resources/acupuncturists-email-list/` (52+ impressions)
+- [x] **EMAIL-03**: Create `/resources/therapists-email-list/` (31+ impressions)
+- [x] **EMAIL-04**: Create `/resources/nursing-homes-contact-database/` (21+ impressions)
+- [x] **EMAIL-05**: Create `/resources/retirement-communities-email-list/` (6+ impressions)
+- [x] **EMAIL-06**: Create `/resources/pediatric-dentists-email-list/` (8+ impressions)
 - [ ] **EMAIL-07**: Create `/resources/oral-surgeons-email-list/` (4+ impressions)
 - [ ] **EMAIL-08**: Create `/resources/orthodontists-email-list/` (2+ impressions)
 - [ ] **EMAIL-09**: Create `/resources/rheumatologists-email-list/` (3+ impressions)
@@ -91,12 +91,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CTR-08 | Phase 2 | Complete |
 | CTR-09 | Phase 2 | Complete |
 | CTR-10 | Phase 2 | Complete |
-| EMAIL-01 | Phase 3 | Pending |
-| EMAIL-02 | Phase 3 | Pending |
-| EMAIL-03 | Phase 3 | Pending |
-| EMAIL-04 | Phase 3 | Pending |
-| EMAIL-05 | Phase 3 | Pending |
-| EMAIL-06 | Phase 3 | Pending |
+| EMAIL-01 | Phase 3 | Complete |
+| EMAIL-02 | Phase 3 | Complete |
+| EMAIL-03 | Phase 3 | Complete |
+| EMAIL-04 | Phase 3 | Complete |
+| EMAIL-05 | Phase 3 | Complete |
+| EMAIL-06 | Phase 3 | Complete |
 | EMAIL-07 | Phase 3 | Pending |
 | EMAIL-08 | Phase 3 | Pending |
 | EMAIL-09 | Phase 3 | Pending |
