@@ -8696,6 +8696,80 @@ supplements CRM activity data and internal deal tracking.
     ]
 },
 
+    # =========================================================================
+    #  10. EHR Lead Generation with Provider Data
+    # =========================================================================
+    {
+        "slug": "ehr-lead-generation",
+        "title": "EHR Lead Generation for Health IT Sales Teams",
+        "meta_description": "Generate qualified leads using EHR adoption data. Identify practices by EHR system, specialty, and geography for targeted health IT sales outreach.",
+        "h1": "EHR Lead Generation with Provider Technology Data",
+        "subtitle": "Your health IT sales team needs to know what EHR each practice runs before the first call. Provyx identifies EHR adoption at the practice level so you can build qualified lead lists based on actual technology usage, not guesswork.",
+        "problem_heading": "Why EHR Lead Generation Is Broken Without Technology Data",
+        "problem_content": """<p><strong>EHR adoption data is scattered across incompatible sources.</strong> The <a href="https://www.healthit.gov/data/quickstats/office-based-physician-electronic-health-record-adoption" target="_blank" rel="noopener noreferrer">ONC Health IT Dashboard</a> publishes aggregate adoption statistics showing that over 90% of office-based physicians use a certified EHR. That's useful for market sizing but useless for lead generation. It tells you the market exists. It doesn't tell you which practices in Houston run eClinicalWorks, which orthopedic groups in Atlanta just migrated off Allscripts, or which solo dermatologists in Denver are still on a legacy system approaching end-of-life.</p>
+
+<p><strong>Practices using specific EHRs have predictable needs.</strong> A practice on athenahealth has different integration requirements, pain points, and budget cycles than one running Epic. The EHR defines the technology ecosystem around it: which clearinghouse the practice uses, what patient portal they offer, whether they need a separate practice management system, and which third-party tools are compatible. When your sales reps understand a prospect's EHR, they can tailor the pitch to address real integration constraints and workflow gaps instead of delivering a generic demo.</p>
+
+<p><strong>CMS attestation records capture only part of the picture.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> doesn't track technology usage. Meaningful Use attestation data from CMS identifies some EHR systems, but that program ended years ago and the data reflects choices practices made in 2015-2016, not what they're running today. Vendor press releases announce new wins but don't publish full customer lists. Job postings mention required EHR experience but only capture a slice of the install base. No single public source gives you a current, practice-level view of EHR adoption.</p>
+
+<p><strong>Reps waste pipeline on mismatched prospects.</strong> Without knowing the prospect's EHR, your team pitches integrations that don't apply, references case studies from the wrong ecosystem, and discovers compatibility issues mid-demo. The cost compounds across hundreds of outreach attempts per quarter. Connect rates stay high enough to justify the activity, but conversion from demo to opportunity drops because the pitch doesn't match the prospect's actual technology environment. That's a lead quality problem disguised as a messaging problem.</p>
+
+<p><strong>Manual research doesn't scale.</strong> Some teams assign SDRs to research each prospect's EHR before outreach. They check practice websites for patient portal links, scan job boards for technology mentions, and look for vendor certification badges. This works for 20 accounts. It doesn't work for a territory with 2,000 target practices. By the time an SDR manually researches 50 practices, the information on the first 10 is already changing.</p>""",
+        "solution_heading": "How Provyx Powers EHR-Based Lead Generation",
+        "solution_content": """<p><strong>Multi-source technology detection at the practice level.</strong> Provyx identifies EHR systems, practice management platforms, billing software, and telehealth tools at individual practice locations through a combination of website analysis, patient portal identification, job posting monitoring, vendor API detection, and public certification databases. We cross-reference these signals to confirm technology usage rather than relying on any single data point. When a practice's website embeds an athenahealth scheduling widget and their job posting requires athenahealth experience, that's a confirmed detection, not a guess.</p>
+
+<p><strong>Filter by EHR vendor, specialty, and geography.</strong> Tell Provyx which EHR systems you want to target and we'll build a lead list of practices running those systems in your territory. Filter further by provider specialty, practice size, and location to match your ideal customer profile. If you sell an integration that works with Epic and Cerner in cardiology practices, you get exactly that list, not a generic dump of cardiologists that forces your team to research each one manually.</p>
+
+<p><strong>Workflow examples that drive results.</strong> Health IT vendors use Provyx EHR lead data to build competitive displacement campaigns targeting practices on specific legacy systems. Medical device companies identify practices whose EHR supports their device integration protocol. Revenue cycle management firms find practices using PM systems with known billing workflow gaps. Consultants target practices still running on-premise systems that are candidates for cloud migration. Each workflow starts with EHR detection and layers on contact data and firmographics to build a complete prospecting list.</p>
+
+<p><strong>Decision-maker contacts included.</strong> Technology detection data alone tells you what a practice uses. Paired with Provyx's provider contact data, you also get who makes technology decisions and how to reach them: practice owner name, direct phone number, verified business email, and LinkedIn profile where available. Your reps go from "this practice runs eClinicalWorks" to "here's the office manager who handles vendor relationships, her direct line, and her email" in one dataset.</p>
+
+<p><strong>Quarterly refresh keeps your pipeline current.</strong> Practices switch EHR systems, add modules, and consolidate vendors. Provyx refreshes technology detection data quarterly so your lead lists reflect current adoption, not last year's install base. Per-record pricing with no annual contract means you can refresh your highest-priority territories every quarter and expand coverage as your sales capacity grows.</p>""",
+        "how_it_works_heading": "How It Works",
+        "how_it_works_steps": [
+            {"title": "Define Your Target EHR Systems", "description": "Tell us which EHR vendors, practice management systems, or health IT platforms you want to target. We'll map your criteria to our technology detection taxonomy."},
+            {"title": "We Identify Practices Using Those Systems", "description": "Provyx scans multiple data sources to identify practices running your target technology. Each detection is cross-referenced for accuracy and tagged with confidence indicators."},
+            {"title": "Receive a Verified Lead List with Contacts", "description": "You get a clean dataset with detected EHR system, practice details, provider contacts, decision-maker information, and firmographic data. Formatted for direct import into your CRM or sales engagement platform."},
+            {"title": "Integrate Into Your Sales Workflow", "description": "Your reps start outreach with EHR-specific messaging. They know the prospect's current system, can reference relevant integrations, and position your product against real competitive alternatives."},
+        ],
+        "results_heading": "What EHR-Aware Prospecting Delivers",
+        "results_content": """<p>Sales teams that prospect with EHR adoption data see higher conversion at every stage of the funnel. First-call relevance increases because reps reference the prospect's actual technology stack instead of asking discovery questions the practice has answered 50 times before. Demo-to-opportunity conversion improves because the product demonstration addresses real integration points and workflow gaps specific to the prospect's EHR.</p>
+
+<p>Pipeline quality improves measurably. When lead lists are filtered by technology fit, the practices that enter your pipeline are pre-qualified for compatibility. Your sales engineers spend less time on evaluations that end with "your product doesn't integrate with our system." Deal velocity increases because technical validation happens earlier in the process, not as a late-stage surprise.</p>
+
+<p>Territory planning gets sharper. When you can see the EHR distribution across a geography, you can allocate rep coverage based on technology density. A territory with 300 practices running your target EHR system justifies a dedicated rep. A territory with 40 might be better served by inside sales. That visibility turns territory planning from a headcount exercise into a market-coverage strategy.</p>
+
+<p>Marketing campaigns benefit too. When you know a prospect's EHR, your email sequences, ad targeting, and content marketing can address specific pain points of that platform rather than generic healthcare challenges. Practices on legacy systems get migration messaging. Practices on modern platforms get integration and optimization messaging. The same product, positioned differently based on what you know about the prospect's technology environment.</p>""",
+        "faqs": [
+            {
+                "question": "Which EHR systems can Provyx identify at the practice level?",
+                "answer": "We detect major EHR platforms including Epic, Cerner (Oracle Health), athenahealth, eClinicalWorks, NextGen, Allscripts, DrChrono, Practice Fusion, Kareo, AdvancedMD, Greenway Health, and dozens of smaller vendors. Coverage varies by practice size and specialty. Hospital-based systems have higher detection rates than small solo practice installations. We publish detection coverage rates by vendor on request."
+            },
+            {
+                "question": "How current is the EHR adoption data?",
+                "answer": "Technology detection data is refreshed quarterly. Each refresh cycle re-scans practice websites, job postings, and other signals to identify system changes. Practices that switch EHR vendors are updated in the next cycle. The refresh cadence captures most technology changes within 3-6 months of implementation, since new EHR deployments typically take that long to become visible across multiple data sources."
+            },
+            {
+                "question": "Can I filter EHR lead lists by medical specialty?",
+                "answer": "Yes. Every practice record includes NUCC taxonomy codes for specialty classification, so you can cross-filter by EHR system and specialty. For example, you can request all cardiology practices running Epic in the Southeast, or all dermatology solo practices using eClinicalWorks nationwide. Specialty and EHR filters combine with geography and practice size for precise targeting."
+            },
+            {
+                "question": "How is this different from the EHR Install Base Targeting page?",
+                "answer": "The EHR Install Base Targeting use case focuses specifically on competitive displacement — targeting practices using a competitor's system for rip-and-replace campaigns. EHR Lead Generation is broader: it covers any sales motion where knowing the prospect's EHR improves targeting. That includes selling integrations, add-on tools, services, and consulting, not just competitive replacement. Both use the same underlying technology detection data."
+            },
+        ],
+        "related_links": [
+            {"url": "/use-cases/ehr-install-base-targeting/", "text": "EHR Install Base Targeting for Competitive Displacement"},
+            {"url": "/services/technology-detection/", "text": "Technology Detection Data"},
+            {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
+            {"url": "/use-cases/healthcare-data-enrichment/", "text": "Healthcare Data Enrichment for CRM"},
+        ],
+        "outbound_links": [
+            ("https://www.healthit.gov/data/quickstats/office-based-physician-electronic-health-record-adoption", "ONC Health IT Dashboard"),
+            ("https://npiregistry.cms.hhs.gov/", "CMS NPI Registry"),
+        ],
+    },
+
 ]
 
 
