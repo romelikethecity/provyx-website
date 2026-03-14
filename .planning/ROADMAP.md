@@ -31,8 +31,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 01-01-PLAN.md — Rewrite titles and meta descriptions on all 4 high-impression pages
-- [ ] 01-02-PLAN.md — Add comparison table + FAQ schema to vendor comparison page and pricing comparison section to DH alternative page
+- [x] 01-01-PLAN.md — Rewrite titles and meta descriptions on all 4 high-impression pages
+- [x] 01-02-PLAN.md — Add comparison table + FAQ schema to vendor comparison page and pricing comparison section to DH alternative page
 
 ### Phase 2: Remaining CTR and Service Page Depth
 **Goal**: Every page with 100+ impressions has an optimized title and meta, and service pages have enough content depth to rank for their target queries
@@ -43,11 +43,11 @@ Plans:
   2. Technology detection page includes EHR install base examples showing how the data applies to real sales workflows
   3. Firmographic content on both /services/practice-firmographics/ and /resources/healthcare-provider-firmographic-data/ is expanded with specific data field descriptions and use-case examples
   4. All updated pages pass the SEO checklist in CLAUDE.md
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Rewrite titles, metas, and H1s on 6 remaining CTR pages (practice-location-data, small-teams, provyx-vs-lusha, oral-pathologists, NPPES resource, zoominfo-alternative)
+- [ ] 02-02-PLAN.md — Add EHR install base examples to technology detection page and expand firmographic content on service and resource pages
 
 ### Phase 3: Email List Pages
 **Goal**: Searchers looking for "[specialty] email list" find a dedicated Provyx page with specialty-specific content, data field descriptions, and clear CTA
@@ -87,7 +87,7 @@ Note: Phase 3 depends on Phase 1 (not Phase 2), so Phases 2 and 3 could run in p
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. High-Impact CTR and Content Depth | 0/2 | Complete    | 2026-03-14 |
-| 2. Remaining CTR and Service Page Depth | 0/2 | Not started | - |
+| 1. High-Impact CTR and Content Depth | 2/2 | Complete    | 2026-03-14 |
+| 2. Remaining CTR and Service Page Depth | 0/2 | Planned | - |
 | 3. Email List Pages | 0/2 | Not started | - |
 | 4. Content Gap Pages | 0/1 | Not started | - |
