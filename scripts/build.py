@@ -10124,6 +10124,73 @@ RESOURCES = [
 <p><strong>Technology stack detection identifies the EHR, practice management, billing, and other clinical systems in use.</strong> This is the healthcare equivalent of technographic data in general B2B. Knowing that a practice runs Epic vs. eClinicalWorks vs. athenahealth determines whether your product integrates, whether the practice is likely to switch systems, and which competitive displacement messaging to use. Technology detection for healthcare practices uses web scraping, job posting analysis, patent filings, and vendor relationship databases rather than the JavaScript-based detection used for SaaS companies.</p>"""
             },
             {
+                "heading": "Firmographic Field Reference: What Each Field Tells You",
+                "body": """<p>The table below documents the key firmographic fields for healthcare practice targeting, their source methodology, and how each field applies to sales and marketing workflows. For pre-built firmographic datasets, see our <a href="/services/practice-firmographics/">practice firmographics service</a>.</p>
+
+<table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+<thead>
+<tr style="background:#F8FAFC; border-bottom:2px solid #E2E8F0;">
+<th style="padding:12px 16px; text-align:left; font-weight:700;">Field Name</th>
+<th style="padding:12px 16px; text-align:left; font-weight:700;">What It Tells You</th>
+<th style="padding:12px 16px; text-align:left; font-weight:700;">Source Methodology</th>
+<th style="padding:12px 16px; text-align:left; font-weight:700;">Sales Application</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #E2E8F0;">
+<td style="padding:12px 16px; font-weight:600;">Provider Count</td>
+<td style="padding:12px 16px;">Provider headcount by licensed clinicians (MD/DO, NP, PA)</td>
+<td style="padding:12px 16px;">NPI affiliation data + web presence analysis</td>
+<td style="padding:12px 16px;">Segment by practice size tier; predict deal size and cycle length</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0; background:#FAFAFA;">
+<td style="padding:12px 16px; font-weight:600;">Revenue Range</td>
+<td style="padding:12px 16px;">Estimated annual revenue band (e.g., $1M-$2.5M)</td>
+<td style="padding:12px 16px;">Specialty benchmarks x provider count x geo adjustment</td>
+<td style="padding:12px 16px;">Prioritize high-value targets; size proposals appropriately</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0;">
+<td style="padding:12px 16px; font-weight:600;">Ownership Type</td>
+<td style="padding:12px 16px;">Decision-making structure (solo, group, DSO, PE-backed, health system)</td>
+<td style="padding:12px 16px;">State filings, PE deal databases, web research, parent entity mapping</td>
+<td style="padding:12px 16px;">Route to correct sales motion; adjust messaging for buyer type</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0; background:#FAFAFA;">
+<td style="padding:12px 16px; font-weight:600;">Years in Operation</td>
+<td style="padding:12px 16px;">Practice maturity and vendor entrenchment level</td>
+<td style="padding:12px 16px;">NPI enumeration date + state business registration date</td>
+<td style="padding:12px 16px;">Target new practices (active buyers) vs. established (displacement plays)</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0;">
+<td style="padding:12px 16px; font-weight:600;">Specialty Mix</td>
+<td style="padding:12px 16px;">Clinical focus of the practice (single vs. multi-specialty)</td>
+<td style="padding:12px 16px;"><a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC taxonomy codes</a> aggregated to practice level</td>
+<td style="padding:12px 16px;">Match product relevance to clinical workflows</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0; background:#FAFAFA;">
+<td style="padding:12px 16px; font-weight:600;">Location Count</td>
+<td style="padding:12px 16px;">Single vs. multi-site operation; geographic footprint</td>
+<td style="padding:12px 16px;">NPI address matching + organizational NPI linkage</td>
+<td style="padding:12px 16px;">Multi-location = higher account value, single procurement decision</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0;">
+<td style="padding:12px 16px; font-weight:600;">Technology Stack</td>
+<td style="padding:12px 16px;">Installed EHR, PM, billing, and telehealth systems</td>
+<td style="padding:12px 16px;">Web scraping, job postings, vendor directories, <a href="https://www.healthit.gov/" target="_blank" rel="noopener noreferrer">ONC data</a></td>
+<td style="padding:12px 16px;">Competitive displacement; integration-based selling</td>
+</tr>
+<tr style="border-bottom:1px solid #E2E8F0; background:#FAFAFA;">
+<td style="padding:12px 16px; font-weight:600;">Payer Mix Indicators</td>
+<td style="padding:12px 16px;">Estimated commercial vs. Medicare vs. Medicaid patient share</td>
+<td style="padding:12px 16px;">Geographic Medicare penetration + practice specialty patterns</td>
+<td style="padding:12px 16px;">Predict budget flexibility; identify practices with higher reimbursement rates</td>
+</tr>
+</tbody>
+</table>
+
+<p>Each field is linked to the practice's <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI record</a> for identity resolution. Fields are refreshed quarterly, with provider count and technology stack updated most frequently because they change most often.</p>"""
+            },
+            {
                 "heading": "Use Cases for Healthcare Firmographic Data",
                 "body": """<p><strong>Account-based marketing (ABM) depends on firmographic data to define and prioritize target accounts.</strong> If your product is designed for independent multi-specialty groups with 5-20 providers, firmographic filtering lets you identify exactly those accounts and exclude the thousands of solo practices and health system-employed groups that are outside your ICP. Without firmographics, your ABM target list is built on guesswork, and you waste campaign budget on accounts that cannot buy.</p>
 
@@ -10135,7 +10202,15 @@ RESOURCES = [
 
 <p><strong>Competitive analysis uses firmographic data to understand where competitors have traction.</strong> If your EHR competitor is strong in 10-20 provider multi-specialty groups, firmographic data lets you quantify that segment, identify the practices in it, and assess whether to compete head-on or target adjacent segments. Technology detection as a firmographic field is particularly valuable here, as it directly reveals competitive install base by practice size and specialty.</p>
 
-<p><strong>Sales enablement teams use firmographic data to prepare reps for conversations.</strong> Before calling a 12-provider orthopedic group, a rep should know the practice size, location count, technology stack, ownership structure, and key decision-maker contacts. Firmographic data pre-loaded into the CRM gives reps this context automatically, reducing research time and improving conversation quality. The alternative is reps spending 10-15 minutes manually researching each account on Google and LinkedIn before every call, which is time they could spend in conversations instead.</p>"""
+<p><strong>Sales enablement teams use firmographic data to prepare reps for conversations.</strong> Before calling a 12-provider orthopedic group, a rep should know the practice size, location count, technology stack, ownership structure, and key decision-maker contacts. Firmographic data pre-loaded into the CRM gives reps this context automatically, reducing research time and improving conversation quality. The alternative is reps spending 10-15 minutes manually researching each account on Google and LinkedIn before every call, which is time they could spend in conversations instead.</p>
+
+<p><strong>Medical device territory planning uses firmographic data to balance opportunity, not just geography.</strong> Assign territories by total provider count and practice revenue, not just zip codes. A territory with 200 solo practices has different total addressable value than one with 20 multi-provider groups, even if they cover similar geography. Firmographic data lets territory managers quantify the revenue potential in each region and rebalance assignments so reps carry equitable quotas.</p>
+
+<p><strong>SaaS product-market fit validation uses firmographic filtering to size the actual addressable market.</strong> Filter your TAM to practices matching your ICP -- for example, 5-20 providers, independent ownership, using a legacy EHR -- to size the realistic addressable market rather than the theoretical total. A healthcare SaaS company claiming a $5B TAM based on "all physician practices" is not credible. Showing 12,000 practices that match your specific ICP, with firmographic data to prove the count, makes investor presentations and board decks defensible.</p>
+
+<p><strong>Private equity due diligence maps practice ownership structures across a specialty to identify consolidation patterns.</strong> PE firms evaluating a dental, dermatology, or ophthalmology roll-up need to know how many independent practices remain in each market, which ones are already PE-owned, and where the remaining acquisition targets sit. Firmographic data with ownership classification provides this map, revealing markets that are 80% consolidated (limited runway) vs. markets with hundreds of independent targets. This intelligence directly shapes platform investment theses and add-on acquisition pipelines.</p>
+
+<p>For pre-built firmographic datasets covering all specialties, see our <a href="/services/practice-firmographics/">practice firmographics service</a>.</p>"""
             },
             {
                 "heading": "Building a Firmographic Dataset for Healthcare",
@@ -14647,6 +14722,51 @@ SERVICES = [
                     "long that process takes. PE-backed practices and DSOs often centralize "
                     "procurement, which means larger deals but longer cycles. Independent groups "
                     "make decisions faster but buy for fewer locations."
+                ),
+            },
+            {
+                "name": "Complete Data Fields Reference",
+                "icon": "list",
+                "description": (
+                    "Every practice firmographic record from Provyx includes these fields: "
+                    "provider headcount (total, and by credential type: MD/DO, NP, PA, other licensed "
+                    "clinicians), revenue range estimate (modeled from specialty benchmarks multiplied by "
+                    "provider count with geographic cost-of-living adjustment), ownership classification "
+                    "(solo, independent group, DSO/MSO-affiliated, health system-owned, PE-backed, FQHC, "
+                    "government-operated), years in operation (derived from NPI enumeration date plus state "
+                    "business filing date), multi-location flag and location count, and practice type "
+                    "(single-specialty, multi-specialty, hospital-based outpatient).\n\n"
+                    "These fields are documented in detail in our "
+                    '<a href="/resources/healthcare-provider-firmographic-data/">firmographic data guide</a>, '
+                    "which covers source methodology for each field and how to apply them in sales workflows. "
+                    "Enhanced records add payer mix estimates, patient volume indicators, and technology stack "
+                    "data from our "
+                    '<a href="/services/technology-detection/">technology detection</a> service. '
+                    "All fields are linked to the practice's "
+                    '<a href="https://npiregistry.cms.hhs.gov/">NPI record</a> for identity resolution.'
+                ),
+            },
+            {
+                "name": "Segmentation Examples for Sales Teams",
+                "icon": "target",
+                "description": (
+                    "Firmographic data is only useful if you can filter it into actionable segments. "
+                    "Here are real examples of how teams use these fields.\n\n"
+                    "Filter to independent dental practices with 3-8 providers and $2M-$5M estimated "
+                    "revenue -- your mid-market sweet spot for practice management software. Identify "
+                    "PE-backed dermatology groups with 10+ locations for enterprise platform pitches where "
+                    "a single deal covers dozens of sites. Exclude health system-owned practices where "
+                    "purchasing decisions happen at the corporate level and your field rep has no path to "
+                    "the buyer.\n\n"
+                    "Combine firmographic filters with geographic targeting: independent orthopedic groups "
+                    "with 5+ providers within 50 miles of your existing customer base, sorted by estimated "
+                    "revenue. Or time-based targeting: practices in business less than two years that are "
+                    "actively buying everything from EHR systems to office supplies. Each filter narrows "
+                    "a national universe of 400,000+ practices down to the hundreds or low thousands that "
+                    "match your ICP. That is the difference between spray-and-pray outreach and precision "
+                    "targeting backed by "
+                    '<a href="https://www.bls.gov/ooh/healthcare/">BLS healthcare employment data</a> '
+                    "and NPI-verified practice records."
                 ),
             },
         ],
