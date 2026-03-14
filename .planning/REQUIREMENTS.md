@@ -28,11 +28,11 @@ Requirements for SEO Content Optimization milestone. Each maps to roadmap phases
 - [x] **EMAIL-04**: Create `/resources/nursing-homes-contact-database/` (21+ impressions)
 - [x] **EMAIL-05**: Create `/resources/retirement-communities-email-list/` (6+ impressions)
 - [x] **EMAIL-06**: Create `/resources/pediatric-dentists-email-list/` (8+ impressions)
-- [ ] **EMAIL-07**: Create `/resources/oral-surgeons-email-list/` (4+ impressions)
-- [ ] **EMAIL-08**: Create `/resources/orthodontists-email-list/` (2+ impressions)
-- [ ] **EMAIL-09**: Create `/resources/rheumatologists-email-list/` (3+ impressions)
-- [ ] **EMAIL-10**: Create `/resources/optometrists-email-list/` (1+ impressions)
-- [ ] **EMAIL-11**: Create `/resources/midwife-email-list/` (4+ impressions)
+- [x] **EMAIL-07**: Create `/resources/oral-surgeons-email-list/` (4+ impressions)
+- [x] **EMAIL-08**: Create `/resources/orthodontists-email-list/` (2+ impressions)
+- [x] **EMAIL-09**: Create `/resources/rheumatologists-email-list/` (3+ impressions)
+- [x] **EMAIL-10**: Create `/resources/optometrists-email-list/` (1+ impressions)
+- [x] **EMAIL-11**: Create `/resources/midwife-email-list/` (4+ impressions)
 
 ### Content Gap Pages
 
@@ -97,11 +97,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EMAIL-04 | Phase 3 | Complete |
 | EMAIL-05 | Phase 3 | Complete |
 | EMAIL-06 | Phase 3 | Complete |
-| EMAIL-07 | Phase 3 | Pending |
-| EMAIL-08 | Phase 3 | Pending |
-| EMAIL-09 | Phase 3 | Pending |
-| EMAIL-10 | Phase 3 | Pending |
-| EMAIL-11 | Phase 3 | Pending |
+| EMAIL-07 | Phase 3 | Complete |
+| EMAIL-08 | Phase 3 | Complete |
+| EMAIL-09 | Phase 3 | Complete |
+| EMAIL-10 | Phase 3 | Complete |
+| EMAIL-11 | Phase 3 | Complete |
 | DEPTH-01 | Phase 1 | Complete |
 | DEPTH-02 | Phase 1 | Complete |
 | DEPTH-03 | Phase 3 | Pending |
