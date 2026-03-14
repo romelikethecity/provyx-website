@@ -12530,7 +12530,7 @@ RESOURCES = [
     {
         "slug": "acupuncturists-email-list",
         "title": "Acupuncturists Email List: Verified LAc Contacts",
-        "meta_description": "Get a verified acupuncturists email list with NPI data, direct emails, and practice details. Accurate LAc contact data for needle suppliers, CE providers, and wellness brands.",
+        "meta_description": "Get a verified acupuncturists email list with NPI data, direct emails, and practice details. Accurate LAc contacts for needle suppliers and CE providers.",
         "h1": "Acupuncturists Email List",
         "subtitle": "Acupuncture sits at the boundary between conventional healthcare and the wellness market. Many acupuncturists have NPI numbers, many don't. Building an accurate email list means pulling from multiple data sources that most vendors don't bother combining.",
         "sections": [
@@ -12762,7 +12762,7 @@ RESOURCES = [
     {
         "slug": "psychiatrists-email-list",
         "title": "Psychiatrists Email List: Verified Contact Data",
-        "meta_description": "Get a verified psychiatrists email list with NPI data, direct emails, and sub-specialty filters. Accurate contact data for pharma, telepsychiatry, and CME outreach.",
+        "meta_description": "Get a verified psychiatrists email list with NPI data, sub-specialty filters, and direct emails. Accurate contacts for pharma and CME outreach.",
         "h1": "Psychiatrists Email List",
         "subtitle": "Psychiatrists are among the most in-demand and hardest-to-reach providers in healthcare. Sub-specialization, hospital employment, and the explosion of telepsychiatry have fragmented psychiatrist contact data across dozens of sources that rarely agree with each other.",
         "sections": [
@@ -12838,7 +12838,7 @@ RESOURCES = [
     {
         "slug": "therapists-email-list",
         "title": "Therapists Email List: Verified Mental Health Contacts",
-        "meta_description": "Get a verified therapists email list with credential types, direct emails, and practice details. Accurate contact data for EHR vendors, CE providers, and health plans.",
+        "meta_description": "Get a verified therapists email list with credential types, direct emails, and practice details. Accurate data for EHR vendors and CE providers.",
         "h1": "Therapists Email List",
         "subtitle": "The word 'therapist' covers an enormous range of licensed professionals in the mental health space. LPCs, LCSWs, LMFTs, PsyDs, and more all get called therapists, and they all practice under different licensing rules, in different settings, with different purchasing authority. Building a useful email list means knowing which therapists you actually want to reach.",
         "sections": [
@@ -12914,7 +12914,7 @@ RESOURCES = [
     {
         "slug": "nursing-homes-contact-database",
         "title": "Nursing Homes Contact Database: Verified Facility Data",
-        "meta_description": "Get a verified nursing homes contact database with administrator emails, bed counts, star ratings, and CMS data. Accurate facility contacts for vendor outreach.",
+        "meta_description": "Get a verified nursing homes contact database with administrator emails, bed counts, and CMS star ratings. Accurate facility data for vendor outreach.",
         "h1": "Nursing Homes Contact Database",
         "subtitle": "Nursing home data is fundamentally different from individual provider data. You're targeting facilities, not practitioners. The decision-makers are administrators, directors of nursing, and corporate owners, not the physicians who treat patients there. Building a useful nursing home contact database means understanding facility-level data structures that most provider databases don't handle.",
         "sections": [
@@ -13066,7 +13066,7 @@ RESOURCES = [
     {
         "slug": "pediatric-dentists-email-list",
         "title": "Pediatric Dentists Email List: Verified Contacts",
-        "meta_description": "Get a verified pediatric dentists email list with NPI data, direct emails, and practice details. Accurate contact data for dental suppliers, fluoride brands, and CE providers.",
+        "meta_description": "Get a verified pediatric dentists email list with NPI data, direct emails, and practice details. Accurate contacts for dental suppliers and CE providers.",
         "h1": "Pediatric Dentists Email List",
         "subtitle": "Pediatric dentistry is a board-recognized specialty with roughly 7,500 specialists in the United States. That makes it large enough to be a meaningful market but small enough that generic dental databases consistently mishandle it, either lumping pediatric dentists in with general practitioners or missing them entirely.",
         "sections": [
