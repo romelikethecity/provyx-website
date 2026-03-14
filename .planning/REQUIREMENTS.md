@@ -81,43 +81,43 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CTR-01 | — | Pending |
-| CTR-02 | — | Pending |
-| CTR-03 | — | Pending |
-| CTR-04 | — | Pending |
-| CTR-05 | — | Pending |
-| CTR-06 | — | Pending |
-| CTR-07 | — | Pending |
-| CTR-08 | — | Pending |
-| CTR-09 | — | Pending |
-| CTR-10 | — | Pending |
-| EMAIL-01 | — | Pending |
-| EMAIL-02 | — | Pending |
-| EMAIL-03 | — | Pending |
-| EMAIL-04 | — | Pending |
-| EMAIL-05 | — | Pending |
-| EMAIL-06 | — | Pending |
-| EMAIL-07 | — | Pending |
-| EMAIL-08 | — | Pending |
-| EMAIL-09 | — | Pending |
-| EMAIL-10 | — | Pending |
-| EMAIL-11 | — | Pending |
-| GAP-01 | — | Pending |
-| GAP-02 | — | Pending |
-| GAP-03 | — | Pending |
-| GAP-04 | — | Pending |
-| GAP-05 | — | Pending |
-| DEPTH-01 | — | Pending |
-| DEPTH-02 | — | Pending |
-| DEPTH-03 | — | Pending |
-| DEPTH-04 | — | Pending |
-| DEPTH-05 | — | Pending |
+| CTR-01 | Phase 1 | Pending |
+| CTR-02 | Phase 1 | Pending |
+| CTR-03 | Phase 1 | Pending |
+| CTR-04 | Phase 1 | Pending |
+| CTR-05 | Phase 2 | Pending |
+| CTR-06 | Phase 2 | Pending |
+| CTR-07 | Phase 2 | Pending |
+| CTR-08 | Phase 2 | Pending |
+| CTR-09 | Phase 2 | Pending |
+| CTR-10 | Phase 2 | Pending |
+| EMAIL-01 | Phase 3 | Pending |
+| EMAIL-02 | Phase 3 | Pending |
+| EMAIL-03 | Phase 3 | Pending |
+| EMAIL-04 | Phase 3 | Pending |
+| EMAIL-05 | Phase 3 | Pending |
+| EMAIL-06 | Phase 3 | Pending |
+| EMAIL-07 | Phase 3 | Pending |
+| EMAIL-08 | Phase 3 | Pending |
+| EMAIL-09 | Phase 3 | Pending |
+| EMAIL-10 | Phase 3 | Pending |
+| EMAIL-11 | Phase 3 | Pending |
+| DEPTH-01 | Phase 1 | Pending |
+| DEPTH-02 | Phase 1 | Pending |
+| DEPTH-03 | Phase 3 | Pending |
+| DEPTH-04 | Phase 2 | Pending |
+| DEPTH-05 | Phase 2 | Pending |
+| GAP-01 | Phase 4 | Pending |
+| GAP-02 | Phase 4 | Pending |
+| GAP-03 | Phase 4 | Pending |
+| GAP-04 | Phase 4 | Pending |
+| GAP-05 | Phase 4 | Pending |
 
 **Coverage:**
 - v1.0 requirements: 31 total
-- Mapped to phases: 0
-- Unmapped: 31 ⚠️
+- Mapped to phases: 31
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-13*
-*Last updated: 2026-03-13 after initial definition*
+*Last updated: 2026-03-13 after roadmap creation*
