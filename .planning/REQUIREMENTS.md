@@ -13,12 +13,12 @@ Requirements for SEO Content Optimization milestone. Each maps to roadmap phases
 - [x] **CTR-02**: Title and meta on `/alternatives/definitive-healthcare-alternative/` (696 impr, pos 8.3, 0.1% CTR)
 - [x] **CTR-03**: Title and meta on `/resources/healthcare-value-analysis-committee-guide/` (439 impr, pos 7.5, 0% CTR)
 - [x] **CTR-04**: Title and meta on `/compare/provyx-vs-definitive-healthcare/` (388 impr, pos 8, 0.3% CTR)
-- [ ] **CTR-05**: Title and meta on `/services/practice-location-data/` (189 impr, pos 10.3)
-- [ ] **CTR-06**: Title and meta on `/resources/healthcare-data-providers-small-teams/` (180 impr, pos 16.2)
-- [ ] **CTR-07**: Title and meta on `/compare/provyx-vs-lusha/` (162 impr, pos 7.6)
-- [ ] **CTR-08**: Title and meta on `/providers/oral-pathologists/` (143 impr, pos 15.8)
-- [ ] **CTR-09**: Title and meta on `/resources/nppes-vs-commercial-provider-data/` (143 impr, pos 20.8)
-- [ ] **CTR-10**: Title and meta on `/alternatives/zoominfo-alternative/` (118 impr, pos 6.1)
+- [x] **CTR-05**: Title and meta on `/services/practice-location-data/` (189 impr, pos 10.3)
+- [x] **CTR-06**: Title and meta on `/resources/healthcare-data-providers-small-teams/` (180 impr, pos 16.2)
+- [x] **CTR-07**: Title and meta on `/compare/provyx-vs-lusha/` (162 impr, pos 7.6)
+- [x] **CTR-08**: Title and meta on `/providers/oral-pathologists/` (143 impr, pos 15.8)
+- [x] **CTR-09**: Title and meta on `/resources/nppes-vs-commercial-provider-data/` (143 impr, pos 20.8)
+- [x] **CTR-10**: Title and meta on `/alternatives/zoominfo-alternative/` (118 impr, pos 6.1)
 
 ### Email List Resource Pages
 
@@ -85,12 +85,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CTR-02 | Phase 1 | Complete |
 | CTR-03 | Phase 1 | Complete |
 | CTR-04 | Phase 1 | Complete |
-| CTR-05 | Phase 2 | Pending |
-| CTR-06 | Phase 2 | Pending |
-| CTR-07 | Phase 2 | Pending |
-| CTR-08 | Phase 2 | Pending |
-| CTR-09 | Phase 2 | Pending |
-| CTR-10 | Phase 2 | Pending |
+| CTR-05 | Phase 2 | Complete |
+| CTR-06 | Phase 2 | Complete |
+| CTR-07 | Phase 2 | Complete |
+| CTR-08 | Phase 2 | Complete |
+| CTR-09 | Phase 2 | Complete |
+| CTR-10 | Phase 2 | Complete |
 | EMAIL-01 | Phase 3 | Pending |
 | EMAIL-02 | Phase 3 | Pending |
 | EMAIL-03 | Phase 3 | Pending |

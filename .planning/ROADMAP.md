@@ -43,7 +43,7 @@ Plans:
   2. Technology detection page includes EHR install base examples showing how the data applies to real sales workflows
   3. Firmographic content on both /services/practice-firmographics/ and /resources/healthcare-provider-firmographic-data/ is expanded with specific data field descriptions and use-case examples
   4. All updated pages pass the SEO checklist in CLAUDE.md
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
 - [ ] 02-01-PLAN.md — Rewrite titles, metas, and H1s on 6 remaining CTR pages (practice-location-data, small-teams, provyx-vs-lusha, oral-pathologists, NPPES resource, zoominfo-alternative)
@@ -88,6 +88,6 @@ Note: Phase 3 depends on Phase 1 (not Phase 2), so Phases 2 and 3 could run in p
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. High-Impact CTR and Content Depth | 2/2 | Complete    | 2026-03-14 |
-| 2. Remaining CTR and Service Page Depth | 0/2 | Planned | - |
+| 2. Remaining CTR and Service Page Depth | 1/2 | In Progress|  |
 | 3. Email List Pages | 0/2 | Not started | - |
 | 4. Content Gap Pages | 0/1 | Not started | - |
