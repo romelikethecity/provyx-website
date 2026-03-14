@@ -5086,6 +5086,72 @@ ALTERNATIVES = [
             "not where its strength is concentrated.</p>"
         ),
 
+        # Section 2b -- Pricing Comparison
+        "pricing_comparison_heading": "What Definitive Healthcare Costs vs. Provyx",
+        "pricing_comparison_body": (
+            "<p>The pricing gap between Definitive Healthcare and Provyx reflects different product philosophies. "
+            "Definitive Healthcare bundles provider contacts with analytics, claims data, and hospital intelligence "
+            "into a single platform subscription. Provyx sells provider contact data as a standalone product with "
+            "pay-per-record pricing. If your team uses the full analytics suite, the bundled approach makes sense. "
+            "If your team mainly exports provider lists for outbound, you are paying for capabilities you do not use.</p>"
+
+            '<table class="comparison-table">'
+            "<thead>"
+            "<tr>"
+            "<th></th>"
+            "<th>Definitive Healthcare</th>"
+            "<th>Provyx</th>"
+            "</tr>"
+            "</thead>"
+            "<tbody>"
+            "<tr>"
+            "<td><strong>Entry price</strong></td>"
+            "<td>$25,000-$50,000/yr</td>"
+            "<td>Pay-per-record (no minimum)</td>"
+            "</tr>"
+            "<tr>"
+            "<td><strong>Full platform</strong></td>"
+            "<td>$75,000-$100,000+/yr</td>"
+            "<td>Pay-per-record</td>"
+            "</tr>"
+            "<tr>"
+            "<td><strong>CRM integration</strong></td>"
+            "<td>$22,000+/yr add-on</td>"
+            "<td>Included (CSV/API)</td>"
+            "</tr>"
+            "<tr>"
+            "<td><strong>Contract</strong></td>"
+            "<td>Annual, auto-renew with 5% uplift</td>"
+            "<td>No annual contract</td>"
+            "</tr>"
+            "<tr>"
+            "<td><strong>Per-seat licensing</strong></td>"
+            "<td>Yes (per user)</td>"
+            "<td>No per-seat fees</td>"
+            "</tr>"
+            "<tr>"
+            "<td><strong>Data export</strong></td>"
+            "<td>Platform-dependent, monthly caps</td>"
+            "<td>Full export included</td>"
+            "</tr>"
+            "</tbody>"
+            "</table>"
+
+            "<p><strong>When Definitive Healthcare is worth the investment.</strong> "
+            "If your team depends on hospital intelligence, claims analytics, referral network mapping, "
+            "or health system org charts, Definitive Healthcare provides capabilities that Provyx does not "
+            "replicate. Strategy teams, market access analysts, and companies selling exclusively into large "
+            "IDNs and hospital systems will get value from the full analytics platform that justifies the "
+            "subscription cost.</p>"
+
+            "<p><strong>When Provyx is the better fit.</strong> "
+            "If your team's primary workflow is building provider contact lists for outbound sales and marketing, "
+            "you are using a fraction of what Definitive Healthcare offers. Outbound teams that need verified "
+            "phone numbers, email addresses, NPI data, and specialty taxonomy codes for individual providers and "
+            "small practices can get that data from Provyx at per-record pricing without an annual contract, "
+            "seat licenses, or CRM integration fees.</p>"
+        ),
+
         # Section 3 -- What Healthcare Teams Actually Need
         "what_teams_need_heading": "What Healthcare Teams Actually Need from a Provider Data Source",
         "what_teams_need_body": (
@@ -17014,8 +17080,19 @@ def build_alternative_page(alt):
         </div>
     </section>
 
-    <!-- What Healthcare Teams Actually Need -->
+    <!-- Pricing Comparison (if present) -->
+    {"" if not alt.get("pricing_comparison_heading") else f'''
     <section class="content-section bg-light">
+        <div class="container">
+            <div class="section-label">Pricing Breakdown</div>
+            <h2>{alt["pricing_comparison_heading"]}</h2>
+            {alt["pricing_comparison_body"]}
+        </div>
+    </section>
+    '''}
+
+    <!-- What Healthcare Teams Actually Need -->
+    <section class="content-section{"" if alt.get("pricing_comparison_heading") else " bg-light"}">
         <div class="container">
             <div class="section-label">Requirements</div>
             <h2>{alt["what_teams_need_heading"]}</h2>
