@@ -58,11 +58,12 @@ Plans:
   2. Existing email list pages (oral pathologists, chiropractor, naturopathic, periodontist, physiatrist, IV infusion, lasik, med spa) are rewritten so H1 and content match "[specialty] email list" query intent
   3. Every new and rewritten page has 3+ internal links to related provider/resource pages and 2+ outbound links to specialty associations
   4. All pages are registered in the build system (build.py data structures, sitemap, nav where appropriate)
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md — Create 6 new email list pages (psychiatrists, acupuncturists, therapists, nursing homes, retirement communities, pediatric dentists)
+- [ ] 03-02-PLAN.md — Create 5 new email list pages (oral surgeons, orthodontists, rheumatologists, optometrists, midwife)
+- [ ] 03-03-PLAN.md — Rewrite 8 existing email list pages for query intent optimization
 
 ### Phase 4: Content Gap Pages
 **Goal**: Searchers with purchase-intent queries about DH pricing, NPPES accuracy, ketamine/TMS CRM, and EHR lead gen land on relevant Provyx content instead of bouncing to competitors
@@ -88,6 +89,6 @@ Note: Phase 3 depends on Phase 1 (not Phase 2), so Phases 2 and 3 could run in p
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. High-Impact CTR and Content Depth | 2/2 | Complete    | 2026-03-14 |
-| 2. Remaining CTR and Service Page Depth | 1/2 | Complete    | 2026-03-14 |
-| 3. Email List Pages | 0/2 | Not started | - |
+| 2. Remaining CTR and Service Page Depth | 2/2 | Complete    | 2026-03-14 |
+| 3. Email List Pages | 0/3 | Not started | - |
 | 4. Content Gap Pages | 0/1 | Not started | - |
