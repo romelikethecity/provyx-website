@@ -7226,7 +7226,7 @@ BLOG_POSTS = [
     # -------------------------------------------------------------------------
     {
         "slug": "ketamine-clinic-crm-provider-data",
-        "title": "Ketamine Clinic CRM: Build Referral Networks with Provider Data",
+        "title": "Ketamine Clinic CRM: Build Referral Networks",
         "meta_description": "How ketamine clinics use CRM workflows and provider data to build psychiatrist referral networks, track relationships, and grow patient volume.",
         "date_published": "2026-03-14",
         "date_modified": "2026-03-14",
