@@ -47,8 +47,8 @@ Requirements for SEO Content Optimization milestone. Each maps to roadmap phases
 - [x] **DEPTH-01**: Add pricing comparison section to DH alternative page (position 8.3, high purchase intent)
 - [x] **DEPTH-02**: Add FAQ schema and comparison table to vendor comparison resource (position 6.0)
 - [ ] **DEPTH-03**: Rewrite existing email list resource pages to match "[specialty] email list" query intent (oral pathologists, chiropractor, naturopathic, periodontist, physiatrist, IV infusion, lasik, med spa)
-- [ ] **DEPTH-04**: Add EHR install base examples to `/services/technology-detection/` (105 impr, pos 8.4)
-- [ ] **DEPTH-05**: Expand firmographic content on `/services/practice-firmographics/` and `/resources/healthcare-provider-firmographic-data/`
+- [x] **DEPTH-04**: Add EHR install base examples to `/services/technology-detection/` (105 impr, pos 8.4)
+- [x] **DEPTH-05**: Expand firmographic content on `/services/practice-firmographics/` and `/resources/healthcare-provider-firmographic-data/`
 
 ## v2 Requirements
 
@@ -105,8 +105,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEPTH-01 | Phase 1 | Complete |
 | DEPTH-02 | Phase 1 | Complete |
 | DEPTH-03 | Phase 3 | Pending |
-| DEPTH-04 | Phase 2 | Pending |
-| DEPTH-05 | Phase 2 | Pending |
+| DEPTH-04 | Phase 2 | Complete |
+| DEPTH-05 | Phase 2 | Complete |
 | GAP-01 | Phase 4 | Pending |
 | GAP-02 | Phase 4 | Pending |
 | GAP-03 | Phase 4 | Pending |
