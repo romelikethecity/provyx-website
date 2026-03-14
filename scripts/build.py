@@ -14145,6 +14145,51 @@ SERVICES = [
                     "side of healthcare practices."
                 ),
             },
+            {
+                "name": "EHR Install Base for Sales Targeting",
+                "icon": "database",
+                "description": (
+                    "Technology detection becomes a sales weapon when you use it to build install base "
+                    "segments. Instead of cold-calling from a generic list, you target practices running "
+                    "specific systems with messaging tailored to that platform.\n\n"
+                    "A medical device company targeting practices on eClinicalWorks can filter 4,200+ practices "
+                    "nationally using that EHR, then layer on specialty and practice size to build a segment of "
+                    "800 orthopedic practices with 3+ providers -- ready for outreach. A patient engagement startup "
+                    "identifies 1,200 dermatology practices still using on-premise EHR systems with no telehealth "
+                    "integration. These practices are displacement targets for cloud-based solutions. A billing "
+                    "company spots 600 multi-location pain management groups using legacy RCM software from a "
+                    "vendor acquired last year. Contract uncertainty creates a 6-month window for competitive "
+                    "pitches.\n\n"
+                    "What this means for your sales team: every outreach list starts with the installed system, "
+                    "not just the specialty or geography. Knowing the EHR turns a cold call into a warm one "
+                    "because you already know what they are running and where the friction points are. "
+                    'The <a href="https://www.healthit.gov/">ONC Health IT</a> certified product list tracks '
+                    "what's available, but install base data tells you what's actually deployed at each practice."
+                ),
+            },
+            {
+                "name": "Healthcare Software ABM Workflows",
+                "icon": "target",
+                "description": (
+                    "Account-based marketing in healthcare software starts with technology data. The workflow: "
+                    "identify target accounts by EHR type, segment by practice size and specialty, score by "
+                    "replacement cycle signals (contract age, vendor instability, regulatory deadlines like "
+                    "information blocking rules), and route qualified accounts to reps with full technology "
+                    "context attached.\n\n"
+                    "Knowing the installed EHR transforms the first conversation. Instead of a generic pitch, "
+                    "your rep opens with \"I see you're running athenahealth -- we integrate natively with that "
+                    "platform and most practices go live in under two weeks.\" Or for displacement plays: "
+                    "\"Practices switching from [legacy system] to a cloud platform typically cut 6 hours per "
+                    "week of manual data entry. We've helped three groups your size make that transition.\"\n\n"
+                    "The scoring layer is where technology data compounds. A practice on a stable, modern EHR "
+                    "with a fresh contract scores low -- they are not buying. A practice on an EHR whose vendor "
+                    "was acquired 18 months ago, running a version approaching end-of-life, with no patient "
+                    "portal integration? That practice scores high. Layer in firmographic data from our "
+                    '<a href="/services/practice-firmographics/">practice firmographics</a> service -- practice '
+                    "size, revenue range, ownership type -- and you have a fully scored ABM target list that "
+                    "tells reps not just who to call, but why and when."
+                ),
+            },
         ],
         "included_addons": (
             "Enhanced technology intelligence includes estimated contract renewal windows based "
