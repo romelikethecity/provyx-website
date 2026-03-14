@@ -1700,11 +1700,10 @@ COMPARISONS = [
     {
         "slug": "provyx-vs-definitive-healthcare",
         "competitor_name": "Definitive Healthcare",
-        "page_title": "Provyx vs. Definitive Healthcare: Provider Data Platforms Compared",
+        "page_title": "Provyx vs Definitive Healthcare: Pricing and Data Compared",
         "meta_description": (
-            "Side-by-side comparison of Provyx and Definitive Healthcare for "
-            "healthcare provider business data. Pricing, NPI coverage, data "
-            "depth, and contract terms analyzed in detail."
+            "Provyx vs Definitive Healthcare: pay-per-record vs $50K+ annual platform. "
+            "Compare NPI coverage, data accuracy, contract terms, and which fits your team."
         ),
         "hero_headline": "Provyx vs. Definitive Healthcare",
         "hero_subheadline": (
@@ -5014,13 +5013,12 @@ ALTERNATIVES = [
         "slug": "definitive-healthcare-alternative",
         "competitor": "Definitive Healthcare",
         "competitor_url": "https://www.definitivehc.com/",
-        "title": "Best Definitive Healthcare Alternative for Data",
+        "title": "Definitive Healthcare Alternative: Same Data, Lower Cost",
         "meta_description": (
-            "Provyx is a Definitive Healthcare alternative for teams that need "
-            "provider contact intelligence without enterprise pricing. NPI-verified "
-            "records, pay-per-record, no annual contract."
+            "Skip the $25K-$100K/yr Definitive Healthcare contract. Provyx delivers "
+            "NPI-verified provider contact data with pay-per-record pricing and no annual contract."
         ),
-        "hero_h1": "Best Definitive Healthcare Alternative for Provider Contact Data",
+        "hero_h1": "Definitive Healthcare Alternative: Same Data, Lower Cost",
         "hero_subtitle": (
             "Definitive Healthcare is a powerful analytics platform for hospital and health system "
             "intelligence. But if your team's primary job is reaching individual providers and practices "
@@ -10499,9 +10497,9 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "healthcare-value-analysis-committee-guide",
-        "title": "Winning the Value Analysis Committee: A Vendor Guide",
-        "meta_description": "A practical guide for vendors preparing submissions to hospital value analysis committees. Covers VAC composition, the review process, building a financial case, and identifying a champion.",
-        "h1": "Winning the Value Analysis Committee: A Vendor Guide",
+        "title": "Value Analysis Committee Guide for Medical Device Vendors",
+        "meta_description": "How to win VAC approval at hospitals. Covers committee composition, submission process, building a financial case, and identifying your champion.",
+        "h1": "Value Analysis Committee Guide for Medical Device Vendors",
         "subtitle": "Value analysis committees control product access at most hospitals. This guide explains how they work and how vendors can prepare winning submissions.",
         "sections": [
             {
@@ -10884,9 +10882,9 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "healthcare-data-vendor-comparison",
-        "title": "Healthcare Data Vendor Comparison 2026",
-        "meta_description": "Side-by-side healthcare data vendor comparison for 2026. Coverage, accuracy, pricing, and healthcare-specific features for IQVIA, Definitive Healthcare, ZoomInfo, Apollo, Cognism, Lusha, CarePrecise, and Provyx.",
-        "h1": "Healthcare Data Vendor Comparison 2026",
+        "title": "Healthcare Data Vendors Compared: 8 Providers Ranked",
+        "meta_description": "Compare 8 healthcare data vendors on pricing, coverage, accuracy, and NPI depth. IQVIA, Definitive Healthcare, ZoomInfo, Apollo, and more.",
+        "h1": "Healthcare Data Vendors Compared: 8 Providers Ranked",
         "subtitle": "An honest breakdown of eight B2B healthcare data providers across coverage, accuracy, pricing, and specialty depth.",
         "sections": [
             {
