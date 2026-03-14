@@ -41,6 +41,7 @@ NAV_ITEMS = [
             {"href": "/services/technology-detection/", "label": "Technology Detection"},
             {"href": "/services/custom-list-building/", "label": "Custom Lists"},
             {"href": "/services/event-marketing/", "label": "Event Marketing"},
+            {"href": "/services/physician-outreach-campaigns/", "label": "Physician Outreach"},
         ],
     },
     {
@@ -75,6 +76,7 @@ FOOTER_COLUMNS = {
         {"href": "/services/", "label": "All Services"},
         {"href": "/services/custom-list-building/", "label": "Custom List Building"},
         {"href": "/services/event-marketing/", "label": "Event Marketing"},
+        {"href": "/services/physician-outreach-campaigns/", "label": "Physician Outreach"},
         {"href": "/pricing/", "label": "Pricing"},
         {"href": "/contact/", "label": "Contact Us"},
     ],

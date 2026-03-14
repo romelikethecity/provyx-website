@@ -128,6 +128,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://getprovyx.com/services/physician-outreach-campaigns/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://getprovyx.com/providers/</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -3558,6 +3567,15 @@
   </url>
   <url>
     <loc>https://getprovyx.com/case-studies/medical-device-event-registration/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://getprovyx.com/case-studies/medical-device-physician-outreach/</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

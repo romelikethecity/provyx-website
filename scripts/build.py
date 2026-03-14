@@ -630,6 +630,7 @@ ICP_PAGES = [
         ],
 
         "related_links": [
+            {"text": "Physician Outreach Campaigns (Managed Service)", "url": "/services/physician-outreach-campaigns/"},
             {"text": "Medical Device Territory Planning", "url": "/use-cases/medical-device-territory-planning/"},
             {"text": "Territory Planning Guide", "url": "/resources/medical-device-territory-planning-guide/"},
             {"text": "Healthcare Competitive Intelligence", "url": "/use-cases/healthcare-competitive-intelligence/"},
@@ -5813,6 +5814,7 @@ USE_CASES = [
              "answer": "We typically see deliverability rates above 90% on verified business email addresses. Rates vary by specialty and practice type because some segments (like hospital-employed physicians) have more restrictive email systems. We provide deliverability estimates with your order and will replace or credit records that fall below our stated accuracy threshold."},
         ],
         "related_links": [
+            {"url": "/services/physician-outreach-campaigns/", "text": "Physician Outreach Campaigns (Managed Service)"},
             {"url": "/services/provider-contact-data/", "text": "Provider Contact Data Product Details"},
             {"url": "/use-cases/healthcare-email-marketing/", "text": "Healthcare Email Marketing"},
             {"url": "/use-cases/healthcare-sales-prospecting/", "text": "Healthcare Sales Prospecting"},
@@ -6010,6 +6012,7 @@ USE_CASES = [
              "answer": "Email addresses decay faster in healthcare than in most industries. We recommend refreshing your list every 90 days for active campaign lists and every 6 months for CRM enrichment purposes. Provider turnover, practice closures, and email system changes all contribute to list decay over time."},
         ],
         "related_links": [
+            {"url": "/services/physician-outreach-campaigns/", "text": "Physician Outreach Campaigns (Managed Service)"},
             {"url": "/services/provider-contact-data/", "text": "Provider Contact Data Product Details"},
             {"url": "/use-cases/physician-outreach/", "text": "Physician Outreach Campaigns"},
             {"url": "/use-cases/healthcare-abm/", "text": "Healthcare Account-Based Marketing"},
@@ -16726,6 +16729,362 @@ SERVICES = [
             {"href": "/blog/med-spa-open-house-planning/", "label": "How to Plan a Med Spa Open House"},
         ],
     },
+
+    # ======================================================================
+    # 8. PHYSICIAN OUTREACH CAMPAIGNS
+    # ======================================================================
+    {
+        "slug": "physician-outreach-campaigns",
+        "title": "Physician Outreach Campaigns by Specialty",
+        "short_title": "Physician Outreach",
+        "aeo_definition": {
+            "term": "Physician Outreach Campaigns",
+            "definition": "are managed email outreach programs that generate specialty-specific email sequences for healthcare providers, using verified provider contact data, AI-powered copy tuned to each practice type, and automated compliance verification to ensure every message is accurate and relevant.",
+            "context": "Unlike generic email marketing agencies that treat all healthcare providers as one audience, physician outreach campaigns segment by practice type and generate copy that speaks to each specialty's clinical workflow, buying motivation, and compliance requirements.",
+        },
+        "aeo_steps": {
+            "title": "How to Run a Physician Outreach Campaign",
+            "steps": [
+                {"name": "Define your target specialties and geography", "description": "Choose which practice types to reach (chiropractors, dermatologists, pain clinics, etc.) and the states or metros to target. We pull verified contacts from our provider database."},
+                {"name": "We generate specialty-specific email sequences", "description": "AI generates a 4-step email sequence for each practice type, with copy tuned to that specialty's clinical workflow and buying motivation. Every claim is compliance-verified."},
+                {"name": "Review and approve before any send", "description": "You review every email sequence in our campaign dashboard. Nothing sends without your explicit approval. Edit copy, adjust targeting, or request new variants."},
+                {"name": "Launch and track performance", "description": "Campaigns deploy through your email platform with full reporting: opens, clicks, replies, and bounces by specialty and geography."},
+            ],
+        },
+        "subtitle": (
+            "Managed email outreach to healthcare providers with AI-generated, compliance-verified "
+            "sequences tuned to each practice type. Your contacts come from our verified provider "
+            "database. Your copy speaks to each specialty's actual problems."
+        ),
+        "meta_description": (
+            "Managed physician outreach campaigns with specialty-specific email sequences. "
+            "AI-generated copy, compliance-verified, built on 100K+ verified provider contacts."
+        ),
+        "outbound_links": [
+            {"url": "https://npiregistry.cms.hhs.gov/", "text": "CMS NPI Registry"},
+            {"url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business", "text": "FTC CAN-SPAM Act Compliance Guide"},
+        ],
+        # --- Section: Hero stats ---
+        "custom_hero_stats_html": """
+<style>
+  .hero-pain-stats { grid-template-columns: repeat(4, 1fr); max-width: 900px; }
+  @media (max-width: 768px) { .hero-pain-stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .hero-pain-stats { grid-template-columns: 1fr; } }
+</style>
+<div class="pain-stats hero-pain-stats">
+  <div class="pain-stat">
+    <span class="pain-stat__number">22</span>
+    <span class="pain-stat__label">practice types with custom copy</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">100K+</span>
+    <span class="pain-stat__label">verified provider contacts</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">4&#8209;step</span>
+    <span class="pain-stat__label">email sequences per specialty</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">2&#8209;tier</span>
+    <span class="pain-stat__label">compliance verification</span>
+  </div>
+</div>
+""",
+        # --- Section: The Problem ---
+        "problem_heading": "Why Physician Email Outreach Underperforms",
+        "problem_body": (
+            "Your email agency writes one campaign and sends it to every physician on your list. "
+            "Chiropractors, dermatologists, pain management specialists, and OB/GYNs all get the "
+            "same subject line, the same opening paragraph, and the same value proposition. The "
+            "agency doesn't know that a chiropractor evaluating pelvic floor rehabilitation has "
+            "completely different clinical concerns than a dermatologist evaluating skin tightening. "
+            "So open rates sit at 12%, reply rates are under 1%, and you're paying $5,000 a month "
+            "for what amounts to a broadcast email with a mail merge.\n\n"
+            "The underlying problem is that physician outreach requires specialty-level segmentation "
+            "that generic agencies and email tools can't provide. A chiropractor worries about "
+            "insurance reimbursement pressure and cash-pay revenue streams. A mental health nurse "
+            "practitioner worries about insurance shrinkage and client retention. A med spa owner "
+            "worries about competing with injectables on price. These are fundamentally different "
+            "conversations, and sending the same email to all three is a waste of your budget and "
+            "their attention.\n\n"
+            "Then there's compliance. Healthcare outreach requires accuracy in every clinical claim, "
+            "and generic agencies routinely produce copy with unverified statistics, presumptive "
+            'language about a prospect\'s revenue, and claims that haven\'t been cleared by the '
+            '<a href="https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/overview-device-regulation" '
+            'target="_blank" rel="noopener noreferrer">FDA</a>. One sloppy email to a physician '
+            "with a fabricated ROI figure doesn't just waste a send. It damages your brand with "
+            "someone who evaluates evidence for a living.\n\n"
+            "The contact data compounds the problem. Most agencies use generic B2B databases that "
+            "don't verify against the "
+            '<a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">'
+            "CMS NPI Registry</a>. They can't filter by practice type, don't distinguish solo "
+            "practitioners from group practices, and deliver email lists with 15-20% bounce rates "
+            "that tank your sender reputation."
+        ),
+        # --- Section: Data Bridge ---
+        "custom_bridge_html": """
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Why a Data Company Runs Better Outreach Than Your Agency</h2>
+    <p>Generic email agencies start with a purchased contact list and write copy based on what they think physicians care about. We start with 100,000+ verified provider contacts with specialty, practice type, geography, and NPI verification already mapped. That data changes how every part of the campaign works.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i data-feather="crosshair"></i></div>
+        <h3>Precision Targeting</h3>
+        <p>Segment by practice type, state, and metro before a single email is drafted. Chiropractors in Michigan get different messaging than dermatologists in Texas. Every email sequence is built for the recipient's actual clinical context.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-feather="shield"></i></div>
+        <h3>Compliance by Default</h3>
+        <p>Every email passes a two-tier verification: deterministic checks catch banned language, unverified claims, and AI cliches. A second LLM review catches subtler compliance issues. Nothing sends without clearing both layers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i data-feather="edit-3"></i></div>
+        <h3>Copy That Knows the Specialty</h3>
+        <p>Each practice type has its own problem angles, proof points, and clinical context baked into the copy engine. The email a chiropractor receives reads like it was written by someone who understands their practice, because the system was built that way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+""",
+        # --- Section: What's Included ---
+        "included_heading": "What's Included in Physician Outreach Campaigns",
+        "included_features": [
+            {
+                "name": "Specialty-Specific Email Sequences",
+                "icon": "mail",
+                "description": (
+                    "4-step email sequences generated for each practice type you target. "
+                    "Each step has a distinct purpose: hook with a business problem the physician recognizes, "
+                    "present evidence, share peer proof, and close with a specific next step. "
+                    "No copy is repeated across steps."
+                ),
+            },
+            {
+                "name": "Verified Provider Contacts",
+                "icon": "users",
+                "description": (
+                    "Contacts sourced from our database of 100,000+ healthcare providers across "
+                    "22 practice types. Every record includes NPI verification, business email, "
+                    "practice name, and specialty classification. No purchased lists from generic B2B vendors."
+                ),
+            },
+            {
+                "name": "Compliance Verification",
+                "icon": "check-circle",
+                "description": (
+                    "Two-tier automated compliance checks on every email before it reaches your review queue. "
+                    "Tier 1 catches banned language, unverified statistics, and presumptive claims. "
+                    "Tier 2 uses LLM review for subtler compliance issues. Only FDA-cleared claims survive."
+                ),
+            },
+            {
+                "name": "A/B Hook Variants",
+                "icon": "git-branch",
+                "description": (
+                    "Each email step generates 3 subject line variants so you can test what resonates "
+                    "with each specialty. Subject lines are under 50 characters and tailored to the "
+                    "practice type's clinical context."
+                ),
+            },
+            {
+                "name": "Campaign Dashboard",
+                "icon": "bar-chart-2",
+                "description": (
+                    "Track opens, clicks, replies, and bounces by specialty and geography. "
+                    "See which practice types engage most and which sequences drive the highest "
+                    "reply rates. Data flows directly from your email platform."
+                ),
+            },
+            {
+                "name": "Human Review Gate",
+                "icon": "eye",
+                "description": (
+                    "Every campaign starts in draft. You review rendered emails with real contact data "
+                    "merged in, send test emails to yourself, and approve before anything goes live. "
+                    "No automated sends without your explicit sign-off."
+                ),
+            },
+        ],
+        "included_addons": (
+            "Custom landing pages for campaigns ($1,500 one-time). "
+            "Reply handling and meeting booking ($500/mo). "
+            "CRM integrations for lead routing ($2,000 setup)."
+        ),
+        # --- Section: How It Works ---
+        "sourcing_heading": "How We Build Your Outreach Campaign",
+        "sourcing_body": (
+            "You tell us the practice types and geographies you want to reach. We pull verified "
+            "contacts from our provider database, filtered by specialty and state. For a medical device "
+            "company targeting chiropractors and dermatologists in Michigan, that might be 3,400 "
+            "verified contacts with business emails, NPI numbers, and practice details.\n\n"
+            "Our AI copy engine generates a 4-step email sequence for each practice type. The "
+            "system uses a PVP framework: Problem (a business problem the physician recognizes), "
+            "Value (what changes if they solve it), Proof (peer results, not vendor marketing). "
+            "Each practice type has its own problem angles, clinical context, and proof points. "
+            "A chiropractor's sequence talks about insurance reimbursement pressure. A med spa "
+            "owner's sequence talks about competing with injectables.\n\n"
+            "Every email passes compliance verification before it reaches your review queue. "
+            "Tier 1 checks are deterministic: banned words, unverified statistics, presumptive "
+            "language about the prospect's revenue, device names where they shouldn't appear, "
+            "repeated claims across emails. Tier 2 is an LLM review that catches subtler issues "
+            "like implied guarantees or claims that sound factual but aren't sourced.\n\n"
+            "You review everything in our campaign dashboard. Rendered emails show real contact "
+            "data merged in so you see exactly what physicians will receive. You can edit copy, "
+            "adjust targeting, request new variants, or send test emails to yourself. Nothing "
+            "deploys until you approve it."
+        ),
+        # --- Section: Who Uses This ---
+        "users_heading": "Who Uses Physician Outreach Campaigns",
+        "users_body": (
+            "<strong>Medical device manufacturers</strong> use outreach campaigns to reach physicians "
+            "by specialty for product education events, in-office demonstrations, and territory "
+            "expansion. They need copy that speaks to each specialty's clinical use case without "
+            "making unverified claims about device capabilities.\n\n"
+            "<strong>Healthcare marketing agencies</strong> use outreach campaigns as a white-label "
+            "service for their device and pharma clients. One agency subscription covers multiple "
+            "end clients, each with their own targeting criteria and compliance requirements.\n\n"
+            "<strong>Medical staffing and recruiting firms</strong> use outreach campaigns to reach "
+            "practice owners about locum tenens, permanent placement, or credentialing services. "
+            "Different practice types have different staffing pain points, and the campaigns reflect that.\n\n"
+            "<strong>Healthcare SaaS vendors</strong> use outreach campaigns to reach practice "
+            "decision-makers about EHR, practice management, telehealth, and patient engagement "
+            "platforms. The segmentation ensures a pediatric dentist doesn't receive an email about "
+            "orthopedic surgery scheduling software."
+        ),
+        # --- Section: Pricing ---
+        "quality_heading": "Pricing and Plans",
+        "quality_body": (
+            '<div class="pricing-grid">'
+            '<div class="pricing-card">'
+            '<h2 class="pricing-card__name">Launch</h2>'
+            '<div class="pricing-card__price">$2,000</div>'
+            '<div class="pricing-card__period">per month</div>'
+            '<ul class="pricing-card__features">'
+            "<li>2 campaigns per month</li>"
+            "<li>Up to 5,000 contacts</li>"
+            "<li>1 practice type</li>"
+            "<li>1 state</li>"
+            "<li>4-step PVP email sequences</li>"
+            "<li>Compliance verification</li>"
+            "<li>Campaign reporting</li>"
+            "</ul>"
+            "</div>"
+            '<div class="pricing-card pricing-card--featured">'
+            '<h2 class="pricing-card__name">Growth</h2>'
+            '<div class="pricing-card__price">$3,500</div>'
+            '<div class="pricing-card__period">per month</div>'
+            '<ul class="pricing-card__features">'
+            "<li>5 campaigns per month</li>"
+            "<li>Up to 15,000 contacts</li>"
+            "<li>3 practice types</li>"
+            "<li>3 states</li>"
+            "<li>A/B hook variants</li>"
+            "<li>Everything in Launch</li>"
+            "</ul>"
+            "</div>"
+            '<div class="pricing-card">'
+            '<h2 class="pricing-card__name">Scale</h2>'
+            '<div class="pricing-card__price">$5,000</div>'
+            '<div class="pricing-card__period">per month</div>'
+            '<ul class="pricing-card__features">'
+            "<li>Unlimited campaigns</li>"
+            "<li>Up to 35,000 contacts</li>"
+            "<li>All practice types</li>"
+            "<li>All states</li>"
+            "<li>Priority support</li>"
+            "<li>Everything in Growth</li>"
+            "</ul>"
+            "</div>"
+            "</div>"
+            "<p>All plans include AI-generated compliance-verified email sequences, contacts from "
+            "our verified provider database, human review gate, and campaign reporting. "
+            "No annual contracts. Cancel anytime.</p>"
+        ),
+        # --- FAQs ---
+        "faqs": [
+            {
+                "question": "What practice types can you target?",
+                "answer": (
+                    "We currently support 22 practice types including chiropractic, dermatology, "
+                    "dental, mental health, medical spas, OB/GYN, pain management, primary care, "
+                    "orthopedics, senior care, physical therapy, plastic surgery, weight loss, "
+                    "neurology, podiatry, and more. Each practice type has its own problem angles, "
+                    "proof points, and clinical context built into our copy engine."
+                ),
+            },
+            {
+                "question": "How is this different from using Lemlist, Apollo, or Instantly?",
+                "answer": (
+                    "Those are horizontal email sending platforms. You bring your own data, write "
+                    "your own copy, and manage your own compliance. We are a managed service: we "
+                    "provide the verified contacts, generate specialty-specific copy, verify every "
+                    "email for compliance, and give you a review dashboard. You approve and we "
+                    "deploy. The difference is the same as between renting a kitchen and hiring a chef."
+                ),
+            },
+            {
+                "question": "Who reviews the emails before they send?",
+                "answer": (
+                    "You do. Every campaign starts in draft. You see rendered emails with real "
+                    "contact data merged in, can send test emails to yourself, and must explicitly "
+                    "approve before any campaign goes live. We never send emails without your sign-off."
+                ),
+            },
+            {
+                "question": "Where do the contacts come from?",
+                "answer": (
+                    "All contacts come from our verified provider database of 100,000+ healthcare "
+                    "providers. Every record is anchored to an NPI number from the CMS NPI Registry, "
+                    "with business emails validated at the mail-server level. We don't purchase lists "
+                    "from generic B2B data vendors."
+                ),
+            },
+            {
+                "question": "What does compliance verification actually check?",
+                "answer": (
+                    "Tier 1 checks are deterministic: banned words and AI cliches, unverified "
+                    "statistics, presumptive language about the prospect's revenue, device names "
+                    "in emails where they shouldn't appear, repeated claims across email steps, "
+                    "and subject lines over 50 characters. Tier 2 is an LLM review that catches "
+                    "implied guarantees, unsourced factual claims, and tone issues."
+                ),
+            },
+            {
+                "question": "Can I use my own email platform?",
+                "answer": (
+                    "Yes. We integrate with Lemlist, and we can work with your existing email "
+                    "infrastructure. The campaign data and email sequences we generate are platform-agnostic. "
+                    "If you already have an email sending tool your team prefers, we'll work with it."
+                ),
+            },
+        ],
+        # --- Related links ---
+        "related_services": [
+            "provider-contact-data",
+            "event-marketing",
+            "custom-list-building",
+        ],
+        "related_content": [
+            {"href": "/case-studies/medical-device-physician-outreach/", "label": "Case Study: Medical Device Physician Outreach"},
+            {"href": "/case-studies/medical-device-event-registration/", "label": "Case Study: Medical Device Event Registration"},
+            {"href": "/for/medical-device-sales/", "label": "Medical Device Sales"},
+            {"href": "/use-cases/physician-outreach/", "label": "Physician Outreach Data"},
+            {"href": "/use-cases/healthcare-email-marketing/", "label": "Healthcare Email Marketing"},
+        ],
+        "related_provider_categories": [
+            "chiropractic",
+            "dermatology",
+            "mental-health",
+            "medical-spas",
+        ],
+        # --- Custom CTA ---
+        "cta": {
+            "title": "Start Your First Physician Outreach Campaign",
+            "text": "Tell us which specialties and states you want to reach. We'll show you the contact volume and build a sample sequence.",
+            "button_text": "Get a Campaign Estimate",
+        },
+    },
 ]
 
 
@@ -19859,7 +20218,8 @@ def main():
     print("\nCase studies (manual pages):")
     ALL_PAGES.append(("/case-studies/healthcare-recruiting-snf-contacts/", 0.7, "monthly"))
     ALL_PAGES.append(("/case-studies/medical-device-event-registration/", 0.7, "monthly"))
-    print(f"  Registered 2 case study URLs for sitemap")
+    ALL_PAGES.append(("/case-studies/medical-device-physician-outreach/", 0.7, "monthly"))
+    print(f"  Registered 3 case study URLs for sitemap")
 
     # Sitemap + RSS
     print("\nSitemap:")
