@@ -38,8 +38,8 @@ Requirements for SEO Content Optimization milestone. Each maps to roadmap phases
 
 - [x] **GAP-01**: Create `/blog/definitive-healthcare-pricing-guide/` (35+ impressions for DH cost/pricing queries)
 - [x] **GAP-02**: Create `/blog/nppes-database-accuracy-guide/` (42+ impressions)
-- [ ] **GAP-03**: Create `/blog/ketamine-clinic-crm-provider-data/` (12+ impressions)
-- [ ] **GAP-04**: Create `/blog/tms-therapy-crm-marketing/` (10+ impressions)
+- [x] **GAP-03**: Create `/blog/ketamine-clinic-crm-provider-data/` (12+ impressions)
+- [x] **GAP-04**: Create `/blog/tms-therapy-crm-marketing/` (10+ impressions)
 - [x] **GAP-05**: Create `/use-cases/ehr-lead-generation/` (51+ impressions)
 
 ### Existing Page Depth
@@ -109,8 +109,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEPTH-05 | Phase 2 | Complete |
 | GAP-01 | Phase 4 | Complete |
 | GAP-02 | Phase 4 | Complete |
-| GAP-03 | Phase 4 | Pending |
-| GAP-04 | Phase 4 | Pending |
+| GAP-03 | Phase 4 | Complete |
+| GAP-04 | Phase 4 | Complete |
 | GAP-05 | Phase 4 | Complete |
 
 **Coverage:**
