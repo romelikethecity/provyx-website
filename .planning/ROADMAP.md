@@ -75,10 +75,12 @@ Plans:
   3. Ketamine clinic CRM and TMS therapy CRM pages exist with specialty-specific CRM workflow content connecting provider data to marketing/sales use cases
   4. EHR lead generation use-case page exists at /use-cases/ehr-lead-generation/ following the existing use-case template pattern
   5. All 5 new pages pass the SEO checklist, are in the sitemap, and have proper schema markup
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Create DH pricing guide and NPPES accuracy guide blog posts
+- [ ] 04-02-PLAN.md — Create ketamine clinic CRM and TMS therapy CRM blog posts
+- [ ] 04-03-PLAN.md — Create EHR lead generation use-case page
 
 ## Progress
 
@@ -90,5 +92,5 @@ Note: Phase 3 depends on Phase 1 (not Phase 2), so Phases 2 and 3 could run in p
 |-------|----------------|--------|-----------|
 | 1. High-Impact CTR and Content Depth | 2/2 | Complete    | 2026-03-14 |
 | 2. Remaining CTR and Service Page Depth | 2/2 | Complete    | 2026-03-14 |
-| 3. Email List Pages | 0/3 | Complete    | 2026-03-14 |
-| 4. Content Gap Pages | 0/1 | Not started | - |
+| 3. Email List Pages | 3/3 | Complete    | 2026-03-14 |
+| 4. Content Gap Pages | 0/3 | Not started | - |
