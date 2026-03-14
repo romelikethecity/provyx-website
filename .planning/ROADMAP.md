@@ -28,11 +28,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. DH alternative page (/alternatives/definitive-healthcare-alternative/) has rewritten title/meta plus a new pricing comparison section showing DH vs Provyx costs
   3. VAC guide and Provyx-vs-DH comparison pages have rewritten titles and metas that match their top-ranking queries
   4. All 4 pages pass the SEO checklist in CLAUDE.md (title 50-60 chars, meta 120-158 chars, schema valid, 2+ outbound links)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Rewrite titles and meta descriptions on all 4 high-impression pages
+- [ ] 01-02-PLAN.md — Add comparison table + FAQ schema to vendor comparison page and pricing comparison section to DH alternative page
 
 ### Phase 2: Remaining CTR and Service Page Depth
 **Goal**: Every page with 100+ impressions has an optimized title and meta, and service pages have enough content depth to rank for their target queries
