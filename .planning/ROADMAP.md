@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: High-Impact CTR and Content Depth** - Rewrite titles/metas and deepen content on the 4 highest-impression pages (3,200+ impressions combined) (completed 2026-03-14)
 - [x] **Phase 2: Remaining CTR and Service Page Depth** - Optimize remaining 6 CTR pages and strengthen service page content (completed 2026-03-14)
-- [ ] **Phase 3: Email List Pages** - Create 11 new specialty email list pages and rewrite existing ones to match query intent
+- [x] **Phase 3: Email List Pages** - Create 11 new specialty email list pages and rewrite existing ones to match query intent (completed 2026-03-14)
 - [ ] **Phase 4: Content Gap Pages** - Create 5 new blog and use-case pages targeting unserved search queries
 
 ## Phase Details
@@ -58,7 +58,7 @@ Plans:
   2. Existing email list pages (oral pathologists, chiropractor, naturopathic, periodontist, physiatrist, IV infusion, lasik, med spa) are rewritten so H1 and content match "[specialty] email list" query intent
   3. Every new and rewritten page has 3+ internal links to related provider/resource pages and 2+ outbound links to specialty associations
   4. All pages are registered in the build system (build.py data structures, sitemap, nav where appropriate)
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
 - [ ] 03-01-PLAN.md — Create 6 new email list pages (psychiatrists, acupuncturists, therapists, nursing homes, retirement communities, pediatric dentists)
@@ -90,5 +90,5 @@ Note: Phase 3 depends on Phase 1 (not Phase 2), so Phases 2 and 3 could run in p
 |-------|----------------|--------|-----------|
 | 1. High-Impact CTR and Content Depth | 2/2 | Complete    | 2026-03-14 |
 | 2. Remaining CTR and Service Page Depth | 2/2 | Complete    | 2026-03-14 |
-| 3. Email List Pages | 0/3 | Not started | - |
+| 3. Email List Pages | 0/3 | Complete    | 2026-03-14 |
 | 4. Content Gap Pages | 0/1 | Not started | - |
