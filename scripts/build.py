@@ -233,7 +233,7 @@ SUBTYPES = [
     ("prosthodontists", "Prosthodontists", "dental", [],
      "Prosthodontist data for dental prosthetics specialists including implant, crown, and denture providers."),
     ("oral-pathologists", "Oral Pathologists", "dental", [],
-     "Oral pathologist data for providers specializing in diagnosis of oral and maxillofacial diseases."),
+     "Oral pathologist email list and contact data. Verified practice addresses, NPI details, and direct contacts for oral and maxillofacial disease specialists."),
     ("dental-laboratories", "Dental Laboratories", "dental", ["dental lab"],
      "Dental laboratory data with owner contacts, services offered, and technology capabilities."),
     ("emergency-dentists", "Emergency Dentists", "dental", [],
@@ -3385,13 +3385,12 @@ COMPARISONS = [
     {
     "slug": "provyx-vs-lusha",
     "competitor_name": "Lusha",
-    "page_title": "Provyx vs. Lusha: Healthcare Provider Data Compared",
+    "page_title": "Provyx vs Lusha: Healthcare Provider Data Compared",
     "meta_description": (
-        "Compare Provyx and Lusha for healthcare provider contact data. "
-        "NPI verification, taxonomy filtering, and pricing evaluated "
-        "for healthcare sales teams."
+        "Provyx vs Lusha for healthcare data. See how NPI verification, taxonomy filtering, "
+        "and per-record pricing compare when your team sells to medical practices."
     ),
-    "hero_headline": "Provyx vs. Lusha: Provider Data Platform Comparison",
+    "hero_headline": "Provyx vs Lusha: Healthcare Provider Data Compared",
     "hero_subheadline": (
         "Lusha is a fast, affordable way to grab B2B contact data from LinkedIn. "
         "But healthcare provider outreach needs more than names and emails. "
@@ -4515,13 +4514,13 @@ ALTERNATIVES = [
         "slug": "zoominfo-alternative",
         "competitor": "ZoomInfo",
         "competitor_url": "https://www.zoominfo.com/",
-        "title": "Best ZoomInfo Alternative for Healthcare Data",
+        "title": "ZoomInfo Alternative for Healthcare Provider Data",
         "meta_description": (
-            "Provyx is a ZoomInfo alternative built for healthcare. "
-            "Get NPI-verified provider contact intelligence with pay-per-record "
-            "pricing and no annual contract."
+            "ZoomInfo alternative built for healthcare sales teams. "
+            "NPI-verified provider contacts, pay-per-record pricing, "
+            "and no annual contract. Switch in a day."
         ),
-        "hero_h1": "Best ZoomInfo Alternative for Healthcare Provider Data",
+        "hero_h1": "ZoomInfo Alternative for Healthcare Provider Data",
         "hero_subtitle": (
             "ZoomInfo covers every industry. Provyx covers one: healthcare. "
             "If your sales team only sells to physicians, clinics, and health systems, "
@@ -9552,9 +9551,9 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "nppes-vs-commercial-provider-data",
-        "title": "NPPES Data Download vs Commercial Provider Data: A Practical Comparison",
-        "meta_description": "Compare the free NPPES data download to commercial provider databases. Field-by-field breakdown of what you get, what is missing, and when each option makes sense.",
-        "h1": "NPPES Data Download vs Commercial Provider Data",
+        "title": "NPPES Data Accuracy vs Commercial Provider Databases",
+        "meta_description": "NPPES data accuracy compared field by field to commercial provider databases. See what the free download misses and when paid data makes sense.",
+        "h1": "NPPES Data Accuracy vs Commercial Provider Databases",
         "subtitle": "The NPPES file is free and contains every NPI in the country. Commercial provider data costs money. Understanding exactly what each gives you prevents both overspending and underinvesting.",
         "sections": [
             {
@@ -9978,9 +9977,9 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "healthcare-data-providers-small-teams",
-        "title": "Best Healthcare Data Providers for Small Sales Teams",
-        "meta_description": "An honest comparison of healthcare data providers for small sales teams. Covers pricing models, what to evaluate, and how to pick a vendor that fits a 2-15 person team.",
-        "h1": "Best Healthcare Data Providers for Small Sales Teams",
+        "title": "Healthcare Data Providers for Small Sales Teams",
+        "meta_description": "Healthcare data providers ranked for small teams. Per-record pricing, no contracts, and NPI-verified contacts that fit a 2-15 person sales team budget.",
+        "h1": "Healthcare Data Providers for Small Sales Teams",
         "subtitle": "Enterprise data platforms assume you have a six-figure budget and a dedicated data team. If you have 2-15 reps and need provider contacts that work, here is how to find the right vendor.",
         "sections": [
             {
@@ -13827,7 +13826,7 @@ SERVICES = [
     # ======================================================================
     {
         "slug": "practice-location-data",
-        "title": "Geocoded Healthcare Practice Location Intelligence",
+        "title": "Practice Location Data for Healthcare Providers",
         "short_title": "Practice Location Data",
         "aeo_definition": {
             "term": "Practice Location Data",
@@ -13844,12 +13843,11 @@ SERVICES = [
             ],
         },
         "subtitle": (
-            "Geocoded practice addresses, multi-site mapping, and location type classification "
-            "for every NPI-registered provider in the United States."
+            "Practice Location Data for Healthcare Providers"
         ),
         "meta_description": (
-            "Geocoded healthcare practice location data with lat/long coordinates, multi-site mapping, "
-            "and practice vs mailing address differentiation. Updated quarterly."
+            "Practice location data with geocoded addresses, multi-site mapping, and territory planning. "
+            "Covers every NPI-registered provider in the US. Updated quarterly."
         ),
         "outbound_links": [
             {"url": "https://npiregistry.cms.hhs.gov/", "text": "CMS NPI Registry"},
