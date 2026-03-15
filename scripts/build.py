@@ -17035,6 +17035,58 @@ SERVICES = [
         color: #16A34A;
       }
 
+      /* Results callout */
+      .results-callout {
+        margin: 3rem 0 0;
+        background: linear-gradient(135deg, #1B2A4A 0%, #0c1a30 100%);
+        border-radius: 12px;
+        padding: 2.5rem 2rem;
+        color: #fff;
+      }
+      .results-callout__badge {
+        display: inline-block;
+        font-size: 0.6875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #0EA5E9;
+        margin-bottom: 0.75rem;
+      }
+      .results-callout__title {
+        font-size: 1.375rem;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+      .results-callout__sub {
+        font-size: 0.875rem;
+        color: #94A3B8;
+        margin-bottom: 1.5rem;
+      }
+      .outreach-results-stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+      }
+      .results-stat {
+        text-align: center;
+      }
+      .results-stat__value {
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: #0EA5E9;
+        line-height: 1.1;
+      }
+      .results-stat__label {
+        font-size: 0.75rem;
+        color: #94A3B8;
+        margin-top: 0.25rem;
+        line-height: 1.3;
+      }
+      @media (max-width: 768px) {
+        .outreach-results-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+      }
+
       /* Typing cursor animation */
       .typing-cursor {
         display: inline-block;
@@ -17176,7 +17228,7 @@ SERVICES = [
       <div class="results-callout__badge">System Specs</div>
       <div class="results-callout__title">Physician Outreach Automation &mdash; Medical Device Client</div>
       <div class="results-callout__sub">AI-generated, compliance-verified email sequences across 22 physician specialties. Replaced manual agency workflow.</div>
-      <div class="results-stats" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="outreach-results-stats">
         <div class="results-stat">
           <div class="results-stat__value">22</div>
           <div class="results-stat__label">Specialty-specific email sequences</div>
