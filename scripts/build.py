@@ -17337,9 +17337,13 @@ SERVICES = [
             "</ul>"
             "</div>"
             "</div>"
-            "<p>All plans include AI-generated compliance-verified email sequences, contacts from "
-            "our verified provider database, human review gate, and campaign reporting. "
+            "<p>All plans include AI-generated compliance-verified email sequences, "
+            "human review gate, and campaign reporting. "
             "No annual contracts. Cancel anytime.</p>"
+            "<p><strong>Pricing assumes you provide your own contact list</strong> or are targeting "
+            "providers already in your CRM. Need us to source verified provider contacts for your "
+            'campaign? Data sourcing is available as a separate add-on at per-contact pricing. '
+            '<a href="/pricing/">See data pricing</a>.</p>'
         ),
         # --- FAQs ---
         "faqs": [
