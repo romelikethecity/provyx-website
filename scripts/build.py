@@ -16773,20 +16773,20 @@ SERVICES = [
 </style>
 <div class="pain-stats hero-pain-stats">
   <div class="pain-stat">
+    <span class="pain-stat__number">$1,500</span>
+    <span class="pain-stat__label">less than your agency per month</span>
+  </div>
+  <div class="pain-stat">
+    <span class="pain-stat__number">5x</span>
+    <span class="pain-stat__label">more campaigns per month</span>
+  </div>
+  <div class="pain-stat">
     <span class="pain-stat__number">22</span>
-    <span class="pain-stat__label">practice types with custom copy</span>
+    <span class="pain-stat__label">specialties, each with unique copy</span>
   </div>
   <div class="pain-stat">
-    <span class="pain-stat__number">100K+</span>
-    <span class="pain-stat__label">verified provider contacts</span>
-  </div>
-  <div class="pain-stat">
-    <span class="pain-stat__number">4&#8209;step</span>
-    <span class="pain-stat__label">email sequences per specialty</span>
-  </div>
-  <div class="pain-stat">
-    <span class="pain-stat__number">2&#8209;tier</span>
-    <span class="pain-stat__label">compliance verification</span>
+    <span class="pain-stat__number">0</span>
+    <span class="pain-stat__label">unverified claims in your emails</span>
   </div>
 </div>
 """,
@@ -16911,6 +16911,294 @@ SERVICES = [
             "Reply handling and meeting booking ($500/mo). "
             "CRM integrations for lead routing ($2,000 setup)."
         ),
+        # --- Custom visual mockups (injected after features) ---
+        "custom_visual_html": """
+<section class="content-section">
+  <div class="container">
+
+    <style>
+      /* Email mockup styles */
+      .email-mockup {
+        padding: 20px 24px;
+      }
+      .email-mockup__header {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #E2E8F0;
+      }
+      .email-mockup__avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #0EA5E9, #1B2A4A);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .email-mockup__meta {
+        flex: 1;
+        min-width: 0;
+      }
+      .email-mockup__from {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--color-text-primary);
+      }
+      .email-mockup__to {
+        font-size: 11px;
+        color: var(--color-text-muted);
+        margin-top: 2px;
+      }
+      .email-mockup__subject {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--color-text-primary);
+        margin-bottom: 14px;
+      }
+      .email-mockup__body {
+        font-size: 13px;
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+      }
+      .email-mockup__body p {
+        margin: 0 0 10px;
+      }
+      .email-mockup__highlight {
+        background: #F0F9FF;
+        border-left: 3px solid #0EA5E9;
+        padding: 10px 14px;
+        border-radius: 0 6px 6px 0;
+        margin: 12px 0;
+        font-size: 12px;
+        color: var(--color-text-primary);
+        font-weight: 500;
+      }
+      .email-mockup__sig {
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #F1F5F9;
+        font-size: 11px;
+        color: var(--color-text-muted);
+      }
+
+      /* Fade-in animation */
+      .outreach-fade-in {
+        opacity: 0;
+        transform: translateY(24px);
+        animation: outreachSlideUp 0.6s ease forwards;
+      }
+      .outreach-fade-in:nth-child(2) { animation-delay: 0.15s; }
+      .outreach-fade-in:nth-child(3) { animation-delay: 0.3s; }
+      @keyframes outreachSlideUp {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Generic vs targeted duo */
+      .outreach-duo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .outreach-duo .browser-frame { width: 100%; }
+      @media (max-width: 768px) {
+        .outreach-duo { grid-template-columns: 1fr; }
+        .specialty-showcase { flex-direction: column; }
+        .specialty-showcase .browser-frame { min-width: 100%; }
+        .outreach-results-stats { grid-template-columns: repeat(2, 1fr) !important; }
+      }
+
+      /* Verdict badge */
+      .outreach-verdict {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+      .outreach-verdict--bad {
+        background: #FEF2F2;
+        color: #DC2626;
+      }
+      .outreach-verdict--good {
+        background: #F0FDF4;
+        color: #16A34A;
+      }
+
+      /* Typing cursor animation */
+      .typing-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 14px;
+        background: #0EA5E9;
+        margin-left: 2px;
+        vertical-align: text-bottom;
+        animation: cursorBlink 1s step-end infinite;
+      }
+      @keyframes cursorBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+
+    <p class="mockup-label">Every specialty gets different copy because they buy differently</p>
+    <div class="specialty-showcase">
+      <div class="browser-frame outreach-fade-in">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">inbox &mdash; chiropractor</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="email-mockup">
+            <div class="email-mockup__header">
+              <div class="email-mockup__avatar">P</div>
+              <div class="email-mockup__meta">
+                <div class="email-mockup__from">Your Company</div>
+                <div class="email-mockup__to">to Dr. Sarah Mitchell &lt;s.mitchell@brightonchiro.com&gt;</div>
+              </div>
+            </div>
+            <div class="email-mockup__subject">Insurance reimbursement is shrinking. Here's what 340 chiro practices did about it.<span class="typing-cursor"></span></div>
+            <div class="email-mockup__body">
+              <p>Dr. Mitchell,</p>
+              <p>Average chiropractic reimbursement dropped 8% last year. Practices adding cash-pay procedures are offsetting it.</p>
+              <div class="email-mockup__highlight">340 chiropractic practices added a new procedure category in 2025. Average incremental revenue: $14,200/month within 6 months.</div>
+              <p>Would it make sense to see how practices your size are structuring this?</p>
+              <div class="email-mockup__sig">Sent via Provyx Physician Outreach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browser-frame outreach-fade-in">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">inbox &mdash; med spa owner</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="email-mockup">
+            <div class="email-mockup__header">
+              <div class="email-mockup__avatar">P</div>
+              <div class="email-mockup__meta">
+                <div class="email-mockup__from">Your Company</div>
+                <div class="email-mockup__to">to Dr. James Park &lt;jpark@renewmedspa.com&gt;</div>
+              </div>
+            </div>
+            <div class="email-mockup__subject">Botox patients leave after 2 visits. What if they didn't?<span class="typing-cursor"></span></div>
+            <div class="email-mockup__body">
+              <p>Dr. Park,</p>
+              <p>The average injectable patient visits twice, then either switches providers or stops. Med spas adding body contouring retain those patients 3x longer.</p>
+              <div class="email-mockup__highlight">Renew Med Spa's profile: 4 treatment rooms, 2 providers, high-volume injectable practice. Body contouring pairs with your existing patient flow.</div>
+              <p>Worth a 15-minute look at what other practices your size are doing?</p>
+              <div class="email-mockup__sig">Sent via Provyx Physician Outreach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browser-frame outreach-fade-in">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">inbox &mdash; dermatologist</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="email-mockup">
+            <div class="email-mockup__header">
+              <div class="email-mockup__avatar">P</div>
+              <div class="email-mockup__meta">
+                <div class="email-mockup__from">Your Company</div>
+                <div class="email-mockup__to">to Dr. Lisa Chen &lt;lchen@clearskinderm.com&gt;</div>
+              </div>
+            </div>
+            <div class="email-mockup__subject">Your patients are asking about skin tightening. Are you sending them to the med spa next door?<span class="typing-cursor"></span></div>
+            <div class="email-mockup__body">
+              <p>Dr. Chen,</p>
+              <p>Non-invasive skin tightening is a $1.8B market. Dermatologists who offer it in-house capture revenue that otherwise walks to med spas and plastic surgeons.</p>
+              <div class="email-mockup__highlight">FDA-cleared, non-invasive. No consumables, no downtime for patients. 22-minute treatment fits between appointments.</div>
+              <p>Can I send over the peer-reviewed data?</p>
+              <div class="email-mockup__sig">Sent via Provyx Physician Outreach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mockup-label" style="margin-top: 2.5rem;">Generic outreach vs. Provyx outreach</p>
+    <div class="outreach-duo">
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">generic email blast</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="email-mockup">
+            <div class="outreach-verdict outreach-verdict--bad">What your agency sends</div>
+            <div class="email-mockup__subject">Innovative solutions for your practice</div>
+            <div class="email-mockup__body">
+              <p>Dear Healthcare Provider,</p>
+              <p>We are excited to introduce our cutting-edge technology that is transforming practices across the country. Our innovative platform delivers amazing results for providers just like you.</p>
+              <p>Schedule a demo to learn more about how we can help your practice grow.</p>
+              <div class="email-mockup__sig" style="color: #DC2626; font-weight: 600;">Same email to chiropractors, dermatologists, med spas, and everyone else.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browser-frame">
+        <div class="browser-frame__bar">
+          <span class="browser-frame__dots"><span class="browser-frame__dot browser-frame__dot--red"></span><span class="browser-frame__dot browser-frame__dot--yellow"></span><span class="browser-frame__dot browser-frame__dot--green"></span></span>
+          <span class="browser-frame__url">provyx outreach &mdash; chiropractor</span>
+        </div>
+        <div class="browser-frame__body">
+          <div class="email-mockup">
+            <div class="outreach-verdict outreach-verdict--good">What Provyx writes</div>
+            <div class="email-mockup__subject">Insurance reimbursement is shrinking. Here's what 340 chiro practices did about it.</div>
+            <div class="email-mockup__body">
+              <p>Dr. Mitchell,</p>
+              <p>Average chiropractic reimbursement dropped 8% last year. Practices adding cash-pay procedures are offsetting it.</p>
+              <div class="email-mockup__highlight">Problem the prospect recognizes. Value tied to their practice type. Proof from peers, not from the vendor.</div>
+              <p>Would it make sense to see how practices your size are structuring this?</p>
+              <div class="email-mockup__sig" style="color: #16A34A; font-weight: 600;">Different problem, different value prop, different proof &mdash; for every specialty.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mockup-label" style="margin-top: 2.5rem;">Built for a medical device company replacing their $5K/mo email agency</p>
+    <div class="results-callout">
+      <div class="results-callout__badge">System Specs</div>
+      <div class="results-callout__title">Physician Outreach Automation &mdash; Medical Device Client</div>
+      <div class="results-callout__sub">AI-generated, compliance-verified email sequences across 22 physician specialties. Replaced manual agency workflow.</div>
+      <div class="results-stats" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="results-stat">
+          <div class="results-stat__value">22</div>
+          <div class="results-stat__label">Specialty-specific email sequences</div>
+        </div>
+        <div class="results-stat">
+          <div class="results-stat__value">$1,500</div>
+          <div class="results-stat__label">Monthly savings vs agency</div>
+        </div>
+        <div class="results-stat">
+          <div class="results-stat__value">Hours</div>
+          <div class="results-stat__label">To launch a new campaign</div>
+        </div>
+        <div class="results-stat">
+          <div class="results-stat__value">2&#8209;tier</div>
+          <div class="results-stat__label">Compliance verification on every email</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+""",
         # --- Section: How It Works ---
         "sourcing_heading": "How We Build Your Outreach Campaign",
         "sourcing_body": (
