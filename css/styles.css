@@ -3012,7 +3012,7 @@ img {
 .mockup-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
 
 /* Pricing grid */
-.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin: 2rem 0; }
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin: 2rem 0; }
 .pricing-card { background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-xl); text-align: center; }
 .pricing-card--featured { border-color: var(--color-accent); box-shadow: 0 0 0 1px var(--color-accent); }
 .pricing-card__price { font-size: 1.75rem; font-weight: 800; color: var(--color-text-primary); margin-bottom: 0.25rem; }
