@@ -16190,6 +16190,9 @@ SERVICES = [
       </div>
     </div>
     <p style="margin-top: 1.5rem; font-weight: 600; color: var(--color-text-primary);">The result: faster builds, higher registration rates, and a system that gets smarter with every event you run.</p>
+    <div style="text-align:center;margin-top:1.5rem">
+      <a href="/contact/" class="btn btn--primary">Build Your Event Site</a>
+    </div>
   </div>
 </section>
 """,
@@ -16973,6 +16976,9 @@ SERVICES = [
         <h3>Copy That Knows the Specialty</h3>
         <p>Each practice type has its own problem angles, proof points, and clinical context baked into the copy engine. The email a chiropractor receives reads like it was written by someone who understands their practice, because the system was built that way.</p>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/contact/" class="btn btn--primary">Start Your First Campaign</a>
     </div>
   </div>
 </section>
