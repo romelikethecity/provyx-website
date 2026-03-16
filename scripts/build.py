@@ -14444,7 +14444,7 @@ def build_pricing():
                         <ul class="pricing-card__features">
                             <li>New venue, date, local testimonials</li>
                             <li>Same conversion system</li>
-                            <li>~2 hour turnaround</li>
+                            <li>Fraction of initial build cost</li>
                         </ul>
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Contact Us</a>
                     </div>
@@ -16606,8 +16606,8 @@ SERVICES = [
           <div class="results-stat__label">Brief to live site</div>
         </div>
         <div class="results-stat">
-          <div class="results-stat__value">~2hrs</div>
-          <div class="results-stat__label">To relaunch in a new city</div>
+          <div class="results-stat__value">1x</div>
+          <div class="results-stat__label">Build once, relaunch anywhere</div>
         </div>
       </div>
     </div>
@@ -16720,7 +16720,7 @@ SERVICES = [
             "Excel file organized by practice type so your marketing team can target campaigns "
             "by specialty.\n\n"
             "First build typically takes 5-7 business days. Subsequent cities using the same "
-            "template take approximately two hours."
+            "template are a fraction of the cost and turnaround."
         ),
         # --- Section: Who Uses This ---
         "users_heading": "How It Works for Your Team",
@@ -16731,12 +16731,12 @@ SERVICES = [
             'your contact database (or ours), and deploy the full site in 5-7 business days. Your reps '
             'get a multi-sheet Excel file with links organized by practice type. They send. Physicians '
             'click, see a page built for their specialty, and register in one click. You run the same '
-            'event in Miami two months later. Same system, new city. Two hours.\n\n'
+            'event in Miami two months later. Same system, new city, fast turnaround.\n\n'
             '<strong>Pharma event planner:</strong> You\'re running 4 KOL dinners this quarter across '
             '4 cities. Same speaker roster, different metro HCP lists. Each city needs its own '
             'registration page with the speaker\'s bio, CME credit details, and a capacity limit of '
             '20 physicians. We build the template once, then launch each city with updated venue, date, '
-            'and local provider links. Each new city takes about two hours. Your invitations go out with '
+            'and local provider links. Your invitations go out with '
             'pre-filled registration links. Attendees register with a single click.\n\n'
             '<strong>Healthcare SaaS marketing director:</strong> Your annual user conference is in '
             '3 months. You want specialty-specific tracks with separate registration paths. Primary care '
@@ -16761,7 +16761,7 @@ SERVICES = [
             '<div class="pricing-card">'
             '<div class="pricing-card__price">$1,500–2,500</div>'
             '<div class="pricing-card__label">Additional Cities</div>'
-            '<div class="pricing-card__desc">New venue, date, and local testimonials. Same conversion system. ~2 hours turnaround.</div>'
+            '<div class="pricing-card__desc">New venue, date, and local testimonials. Same conversion system, fraction of initial cost.</div>'
             '</div>'
             '<div class="pricing-card">'
             '<div class="pricing-card__price">$1,000–2,000</div>'
@@ -16775,7 +16775,7 @@ SERVICES = [
             '</div>'
             '</div>\n\n'
             "The first event is the investment. Every additional city is a fraction of the "
-            "cost and a two-hour turnaround. No platform fees, no per-registrant "
+            "cost. No platform fees, no per-registrant "
             "charges, no annual contracts."
         ),
         # --- Section: FAQs ---
@@ -16785,7 +16785,7 @@ SERVICES = [
                 "answer": (
                     "A first-time build — including specialty landing pages, "
                     "personalized link generation, and deployment — typically takes 5-7 business "
-                    "days. Subsequent events using the same template take approximately two hours."
+                    "days. Subsequent events using the same template are significantly faster."
                 ),
             },
             {
@@ -16793,7 +16793,7 @@ SERVICES = [
                 "answer": (
                     "Yes. The site is built for reuse. To launch the same event in a "
                     "new city, we update the venue, date, and city-specific details. The entire "
-                    "site regenerates in about two hours. Build once, deploy everywhere."
+                    "site regenerates quickly. Build once, deploy everywhere."
                 ),
             },
             {
