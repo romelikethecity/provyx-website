@@ -14212,23 +14212,25 @@ def build_pricing():
     ]
 
     faqs = [
-        {"question": "What's included in each record?",
+        {"question": "What's included in each provider record?",
          "answer": "Every record includes practice name, address, business phone, website URL, owner or decision-maker name, NPI number, taxonomy codes, and LinkedIn profile. Growth plans add practice firmographics and technology detection."},
         {"question": "Can I get a sample before purchasing?",
          "answer": "Yes. We provide a free sample of 25-50 records matched to your target criteria so you can validate data quality before committing to a purchase."},
         {"question": "Do you offer email or mobile phone data?",
          "answer": "Yes. Direct email and mobile phone enrichment are available as add-ons. Contact us for enrichment pricing based on your volume and match rate requirements."},
+        {"question": "Can I use Provyx data with the outreach service?",
+         "answer": "Yes. If you need us to source the provider contacts for your outreach campaigns, data sourcing is available as a separate add-on at per-contact pricing. Many clients bring their own CRM list and just use the outreach service."},
         {"question": "How fast can I get my data?",
-         "answer": "Most orders ship within a few business days. We routinely turn around 10,000+ records in a single day for standard specialties and geographies. Custom requests with unusual filtering criteria may take longer."},
-        {"question": "What if I need a specialty or geography you don't cover?",
-         "answer": "Contact us. We can build custom datasets for specialties or regions outside our standard coverage."},
+         "answer": "Most data orders ship within a few business days. Event registration sites take 5-7 business days for the first build. Outreach campaigns can launch within days of onboarding."},
+        {"question": "Do any of these services require annual contracts?",
+         "answer": "No. Provider data is pay-per-order. Outreach campaigns are month-to-month. Event sites are one-time builds. No annual commitments on any product."},
     ]
 
     pricing_schema = json.dumps({
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "Provyx Healthcare Provider Data",
-        "description": "Verified healthcare provider contact data across 40+ specialties. NPI-verified, multi-source validated.",
+        "name": "Provyx Healthcare Provider Intelligence",
+        "description": "Provider contact lists, physician outreach campaigns, and event registration sites for healthcare sales and marketing teams.",
         "brand": {
             "@type": "Organization",
             "@id": f"{BASE_URL}/#organization",
@@ -14237,20 +14239,38 @@ def build_pricing():
         "offers": [
             {
                 "@type": "Offer",
-                "name": "Starter",
+                "name": "Provider Data - Starter",
                 "price": "750",
                 "priceCurrency": "USD",
                 "description": "Up to 1,000 provider records with practice details, owner contacts, and NPI verification.",
-                "url": f"{BASE_URL}/pricing/",
+                "url": f"{BASE_URL}/pricing/#provider-data",
                 "availability": "https://schema.org/InStock",
             },
             {
                 "@type": "Offer",
-                "name": "Growth",
+                "name": "Provider Data - Growth",
                 "price": "2500",
                 "priceCurrency": "USD",
                 "description": "Up to 5,000 provider records with firmographics, technology detection, and volume pricing.",
-                "url": f"{BASE_URL}/pricing/",
+                "url": f"{BASE_URL}/pricing/#provider-data",
+                "availability": "https://schema.org/InStock",
+            },
+            {
+                "@type": "Offer",
+                "name": "Physician Outreach - Launch",
+                "price": "2000",
+                "priceCurrency": "USD",
+                "description": "Managed physician outreach with AI-generated, compliance-verified email sequences. 2 campaigns/mo, 1 specialty, 1 state.",
+                "url": f"{BASE_URL}/pricing/#physician-outreach",
+                "availability": "https://schema.org/InStock",
+            },
+            {
+                "@type": "Offer",
+                "name": "Event Registration Site",
+                "price": "3500",
+                "priceCurrency": "USD",
+                "description": "Specialty-targeted event registration site with personalized links. First event build.",
+                "url": f"{BASE_URL}/pricing/#event-marketing",
                 "availability": "https://schema.org/InStock",
             },
         ],
@@ -14266,15 +14286,19 @@ def build_pricing():
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
                 <h1 class="page-hero__title">Simple, Transparent Pricing</h1>
-                <p class="page-hero__subtitle">Pay per record. No annual contracts. Delivered in days, not weeks.</p>
+                <p class="page-hero__subtitle">Provider data, event marketing, and physician outreach. No annual contracts on any of it.</p>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="provider-data">
             <div class="container">
+                <div style="margin-bottom:2rem">
+                    <h2 style="margin-bottom:0.5rem">Provider Contact Lists</h2>
+                    <p style="color:var(--color-text-secondary);max-width:640px">Verified contact data for healthcare providers across 22 specialties. Practice details, owner names, NPI numbers, and LinkedIn profiles. Built to order, delivered in days. <a href="/services/provider-contact-data/">Learn more</a>.</p>
+                </div>
                 <div class="pricing-grid">
                     <div class="pricing-card">
-                        <h2 class="pricing-card__name">Starter</h2>
+                        <h3 class="pricing-card__name">Starter</h3>
                         <div class="pricing-card__price">$750</div>
                         <div class="pricing-card__period">one-time purchase</div>
                         <ul class="pricing-card__features">
@@ -14289,7 +14313,7 @@ def build_pricing():
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Get Started</a>
                     </div>
                     <div class="pricing-card pricing-card--featured">
-                        <h2 class="pricing-card__name">Growth</h2>
+                        <h3 class="pricing-card__name">Growth</h3>
                         <div class="pricing-card__price">$2,500</div>
                         <div class="pricing-card__period">5,000 records</div>
                         <ul class="pricing-card__features">
@@ -14304,7 +14328,7 @@ def build_pricing():
                         <a href="/contact/" class="btn btn--primary" style="width:100%">Contact Us</a>
                     </div>
                     <div class="pricing-card">
-                        <h2 class="pricing-card__name">Enterprise</h2>
+                        <h3 class="pricing-card__name">Enterprise</h3>
                         <div class="pricing-card__price">Custom</div>
                         <div class="pricing-card__period">10,000+ records</div>
                         <ul class="pricing-card__features">
@@ -14318,11 +14342,9 @@ def build_pricing():
                         <a href="/contact/" class="btn btn--secondary" style="width:100%">Talk to Sales</a>
                     </div>
                 </div>
-                <p class="pricing-proof">Healthcare sales teams, medical device companies, and health IT vendors use Provyx to build targeted provider lists without annual contracts.</p>
                 <div style="margin-top:2rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
                     <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Need verified email or mobile?</strong> Direct email and mobile phone enrichment available as add-ons. <a href="/contact/">Contact us</a> for enrichment pricing based on your volume.</p>
                 </div>
-
                 <div style="margin-top:1.5rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
                     <p style="margin:0 0 0.75rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Intelligence Add-Ons</strong></p>
                     <p style="margin:0 0 0.5rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong>Ownership Change Alerts</strong> — Monthly reports flagging facilities that changed ownership or management, signaling likely leadership turnover and new decision-makers. Available for senior care and other regulated facility types.</p>
@@ -14331,12 +14353,128 @@ def build_pricing():
             </div>
         </section>
 
+        <section class="section bg-light" id="physician-outreach">
+            <div class="container">
+                <div style="margin-bottom:2rem">
+                    <h2 style="margin-bottom:0.5rem">Physician Outreach Campaigns</h2>
+                    <p style="color:var(--color-text-secondary);max-width:640px">Managed email outreach with AI-generated, compliance-verified sequences tuned to each practice type. We write different emails for chiropractors and dermatologists because they buy differently. <a href="/services/physician-outreach-campaigns/">Learn more</a>.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Launch</h3>
+                        <div class="pricing-card__price">$2,000</div>
+                        <div class="pricing-card__period">per month</div>
+                        <ul class="pricing-card__features">
+                            <li>2 campaigns per month</li>
+                            <li>Up to 5,000 contacts</li>
+                            <li>1 practice type</li>
+                            <li>1 state</li>
+                            <li>4-step PVP email sequences</li>
+                            <li>Compliance verification</li>
+                            <li>Campaign reporting</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn--primary" style="width:100%">Get Started</a>
+                    </div>
+                    <div class="pricing-card pricing-card--featured">
+                        <h3 class="pricing-card__name">Growth</h3>
+                        <div class="pricing-card__price">$3,500</div>
+                        <div class="pricing-card__period">per month</div>
+                        <ul class="pricing-card__features">
+                            <li>5 campaigns per month</li>
+                            <li>Up to 15,000 contacts</li>
+                            <li>3 practice types</li>
+                            <li>3 states</li>
+                            <li>A/B hook variants</li>
+                            <li>Everything in Launch</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn--primary" style="width:100%">Contact Us</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Scale</h3>
+                        <div class="pricing-card__price">$5,000</div>
+                        <div class="pricing-card__period">per month</div>
+                        <ul class="pricing-card__features">
+                            <li>Unlimited campaigns</li>
+                            <li>Up to 35,000 contacts</li>
+                            <li>All practice types</li>
+                            <li>All states</li>
+                            <li>Priority support</li>
+                            <li>Everything in Growth</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn--secondary" style="width:100%">Talk to Sales</a>
+                    </div>
+                </div>
+                <div style="margin-top:2rem;padding:1.5rem 2rem;background:#fff;border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
+                    <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Pricing assumes you provide your own contact list.</strong> Need us to source verified provider contacts? Data sourcing is available as a separate add-on at <a href="#provider-data">per-contact pricing</a>.</p>
+                </div>
+                <div style="margin-top:1.5rem;padding:1.5rem 2rem;background:#fff;border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
+                    <p style="margin:0 0 0.75rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Outreach Add-Ons</strong></p>
+                    <p style="margin:0 0 0.5rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong>Custom Landing Pages</strong> — Dedicated campaign landing pages for each outreach sequence. $1,500 one-time per page.</p>
+                    <p style="margin:0 0 0.5rem 0;color:var(--color-text-secondary);font-size:0.9375rem"><strong>Reply Handling</strong> — We monitor replies, qualify responses, and book meetings on your calendar. $500/mo.</p>
+                    <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong>CRM Integration</strong> — Route qualified leads directly into your CRM with custom field mapping. $2,000 setup.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="event-marketing">
+            <div class="container">
+                <div style="margin-bottom:2rem">
+                    <h2 style="margin-bottom:0.5rem">Event Registration Sites</h2>
+                    <p style="color:var(--color-text-secondary);max-width:640px">Specialty-targeted registration pages with personalized links from your provider database. Each physician specialty sees a landing page built for their clinical workflow. <a href="/services/event-marketing/">Learn more</a>.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card pricing-card--featured">
+                        <h3 class="pricing-card__name">First Event Site</h3>
+                        <div class="pricing-card__price">$3,500–5,000</div>
+                        <div class="pricing-card__period">one-time build</div>
+                        <ul class="pricing-card__features">
+                            <li>Specialty-specific landing pages</li>
+                            <li>Personalized registration links</li>
+                            <li>Scarcity and conversion mechanics</li>
+                            <li>Confirmation page with calendar sync</li>
+                            <li>Full deployment and hosting</li>
+                            <li>5–7 business day turnaround</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn--primary" style="width:100%">Get Started</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Additional Cities</h3>
+                        <div class="pricing-card__price">$1,500–2,500</div>
+                        <div class="pricing-card__period">per city</div>
+                        <ul class="pricing-card__features">
+                            <li>New venue, date, local testimonials</li>
+                            <li>Same conversion system</li>
+                            <li>~2 hour turnaround</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn--primary" style="width:100%">Contact Us</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Contact Links</h3>
+                        <div class="pricing-card__price">$1,000–2,000</div>
+                        <div class="pricing-card__period">per event</div>
+                        <ul class="pricing-card__features">
+                            <li>Pre-filled registration URLs</li>
+                            <li>From your CRM or Provyx database</li>
+                            <li>Organized by practice type</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn--secondary" style="width:100%">Talk to Sales</a>
+                    </div>
+                </div>
+                <div style="margin-top:2rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
+                    <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">Running monthly events?</strong> Monthly retainer at $2,000/mo covers template management and link generation for companies running events across multiple cities. <a href="/contact/">Contact us</a> for details.</p>
+                </div>
+                <div style="margin-top:1.5rem;padding:1.5rem 2rem;background:var(--color-bg-secondary);border-radius:var(--radius-md);border-left:4px solid var(--color-teal)">
+                    <p style="margin:0;color:var(--color-text-secondary);font-size:0.9375rem"><strong style="color:var(--color-text-primary)">No platform fees, no per-registrant charges.</strong> You own the site. The first event is the investment. Every additional city is a fraction of the cost.</p>
+                </div>
+            </div>
+        </section>
+
 {generate_faq_html(faqs, heading="Pricing FAQ")}
 {generate_cta_section()}'''
 
     html = get_page_wrapper(
-        title="Pricing",
-        description="Provyx healthcare provider data pricing starting at $0.50/record. Practice data, owner contacts, NPI verification. No annual contracts. Delivered in days.",
+        title="Pricing - Provider Data, Outreach, Events",
+        description="Provyx pricing for provider contact lists, physician outreach campaigns, and event registration sites. No annual contracts on any product.",
         canonical_path="/pricing/",
         body_content=body,
         active_page="/pricing/",
