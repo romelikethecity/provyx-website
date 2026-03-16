@@ -16126,18 +16126,14 @@ SERVICES = [
         # --- Section: Pain stats below hero ---
         "custom_hero_stats_html": """
 <style>
-  .hero-pain-stats { grid-template-columns: repeat(4, 1fr); max-width: 900px; }
-  @media (max-width: 768px) { .hero-pain-stats { grid-template-columns: repeat(2, 1fr); } }
+  .hero-pain-stats { grid-template-columns: repeat(3, 1fr); max-width: 750px; }
+  @media (max-width: 768px) { .hero-pain-stats { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 480px) { .hero-pain-stats { grid-template-columns: 1fr; } }
 </style>
 <div class="pain-stats hero-pain-stats">
   <div class="pain-stat">
     <span class="pain-stat__number">64%</span>
     <span class="pain-stat__label">of web traffic is mobile</span>
-  </div>
-  <div class="pain-stat">
-    <span class="pain-stat__number">67%</span>
-    <span class="pain-stat__label">average form abandonment rate</span>
   </div>
   <div class="pain-stat">
     <span class="pain-stat__number">53%</span>
@@ -16905,8 +16901,8 @@ SERVICES = [
         # --- Section: Hero stats ---
         "custom_hero_stats_html": """
 <style>
-  .hero-pain-stats { grid-template-columns: repeat(4, 1fr); max-width: 900px; }
-  @media (max-width: 768px) { .hero-pain-stats { grid-template-columns: repeat(2, 1fr); } }
+  .hero-pain-stats { grid-template-columns: repeat(3, 1fr); max-width: 750px; }
+  @media (max-width: 768px) { .hero-pain-stats { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 480px) { .hero-pain-stats { grid-template-columns: 1fr; } }
 </style>
 <div class="pain-stats hero-pain-stats">
@@ -16921,10 +16917,6 @@ SERVICES = [
   <div class="pain-stat">
     <span class="pain-stat__number">22</span>
     <span class="pain-stat__label">specialties, each with unique copy</span>
-  </div>
-  <div class="pain-stat">
-    <span class="pain-stat__number">0</span>
-    <span class="pain-stat__label">unverified claims in your emails</span>
   </div>
 </div>
 """,
