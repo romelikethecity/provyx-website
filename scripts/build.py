@@ -13972,6 +13972,11 @@ def build_homepage():
                         <h3 class="service-card__title">Event Marketing</h3>
                         <p class="service-card__text">Specialty-targeted event registration with personalized links from your provider database. Reusable templates that launch new cities in hours.</p>
                     </a>
+                    <a href="/services/physician-outreach-campaigns/" class="service-card">
+                        <div class="service-card__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                        <h3 class="service-card__title">Physician Outreach</h3>
+                        <p class="service-card__text">Multi-touch campaigns targeting the right providers. We handle list building, messaging, and follow-up so your team focuses on closing.</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -14151,7 +14156,7 @@ def build_contact():
             <div class="container">
                 {get_breadcrumb_html(breadcrumbs)}
                 <h1 class="page-hero__title">Get in Touch</h1>
-                <p class="page-hero__subtitle">Tell us what provider data you need. We'll put together a custom quote.</p>
+                <p class="page-hero__subtitle">Tell us what you need. We'll put together a custom quote.</p>
             </div>
         </section>
 
@@ -14159,12 +14164,12 @@ def build_contact():
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h2>What to expect</h2>
-                        <p>Fill out the form with details about the provider data you need. Include the specialties, geography, and volume you're targeting. We'll respond within one business day with a custom quote and sample data overview.</p>
-                        <h2>Custom list requests</h2>
-                        <p>Need a specific provider list? Tell us your target criteria: specialty, state/region, practice size, technology stack, or any other filters. We'll build a matched list and send you a sample before you commit.</p>
-                        <h2>Questions?</h2>
-                        <p>Use the form and we'll get back to you within one business day.</p>
+                        <h2>Provider Data</h2>
+                        <p>Custom provider lists matched to your specialty, geography, and criteria. NPI-verified contacts with practice details, owner info, and LinkedIn profiles. Sample before you commit.</p>
+                        <h2>Event Marketing</h2>
+                        <p>Specialty-targeted event registration pages with personalized invite links from your provider database. Reusable templates that launch new cities in hours.</p>
+                        <h2>Physician Outreach</h2>
+                        <p>Multi-touch campaigns targeting the right providers. We handle list building, messaging, and follow-up so your team focuses on closing.</p>
                     </div>
                     <div class="contact-form">
                         <form class="form" action="https://formspree.io/f/{FORMSPREE_ID}" method="POST">
@@ -14182,8 +14187,17 @@ def build_contact():
                                 <input class="form__input" type="text" id="company" name="company">
                             </div>
                             <div class="form__group">
-                                <label class="form__label" for="message">What provider data do you need?</label>
-                                <textarea class="form__textarea" id="message" name="message" rows="5" placeholder="e.g., I need chiropractor emails in Colorado and Minnesota..."></textarea>
+                                <label class="form__label">How can we help?</label>
+                                <div class="form__checkboxes">
+                                    <label class="form__checkbox"><input type="checkbox" name="service" value="Provider Data"> Provider Data</label>
+                                    <label class="form__checkbox"><input type="checkbox" name="service" value="Event Marketing"> Event Marketing</label>
+                                    <label class="form__checkbox"><input type="checkbox" name="service" value="Physician Outreach"> Physician Outreach</label>
+                                    <label class="form__checkbox"><input type="checkbox" name="service" value="Something Else"> Something Else</label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="message">Tell us about your project</label>
+                                <textarea class="form__textarea" id="message" name="message" rows="5" placeholder="Specialties, geography, timeline, or anything else that helps us scope your project..."></textarea>
                             </div>
                             <button type="submit" class="btn btn--primary btn--lg form__submit">Send Request</button>
                             <p class="form__proof">We respond within one business day. No spam, no sales pressure.</p>
@@ -14195,7 +14209,7 @@ def build_contact():
 
     html = get_page_wrapper(
         title="Contact Us",
-        description="Request healthcare provider data from Provyx. Tell us what you need and get a custom quote within one business day.",
+        description="Contact Provyx for provider data, event marketing, or physician outreach. Get a custom quote within one business day.",
         canonical_path="/contact/",
         body_content=body,
         extra_schema=extra_schema,
