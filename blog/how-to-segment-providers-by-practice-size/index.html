@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
+    <title>How to Segment Providers by Practice Size | Provyx</title>
+    <meta name="description" content="Segment healthcare providers by practice size using NPI data, provider counts, and location signals. Solo vs group vs system indicators explained.">
+    <link rel="canonical" href="https://getprovyx.com/blog/how-to-segment-providers-by-practice-size/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getprovyx.com/blog/how-to-segment-providers-by-practice-size/">
+    <meta property="og:title" content="How to Segment Providers by Practice Size | Provyx">
+    <meta property="og:description" content="Segment healthcare providers by practice size using NPI data, provider counts, and location signals. Solo vs group vs system indicators explained.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Segment Providers by Practice Size | Provyx">
+    <meta name="twitter:description" content="Segment healthcare providers by practice size using NPI data, provider counts, and location signals. Solo vs group vs system indicators explained.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getprovyx.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Segment Providers by Practice Size",
+      "item": "https://getprovyx.com/blog/how-to-segment-providers-by-practice-size/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Segment Providers by Practice Size",
+  "description": "Segment healthcare providers by practice size using NPI data, provider counts, and location signals. Solo vs group vs system indicators explained.",
+  "url": "https://getprovyx.com/blog/how-to-segment-providers-by-practice-size/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/og-resources.png",
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-03-29",
+  "author": {
+    "@type": "Person",
+    "name": "Rome",
+    "url": "https://www.linkedin.com/in/romecaputo/",
+    "jobTitle": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://getprovyx.com/#organization",
+      "name": "Provyx"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://getprovyx.com/#organization",
+    "name": "Provyx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getprovyx.com/assets/images/og-providers.png"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero h1",
+      ".page-hero .subtitle"
+    ]
+  }
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
+
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=11" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.min.css?v=11">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+<a href="/services/physician-outreach-campaigns/" class="nav__dropdown-item">Physician Outreach</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+<a href="/services/physician-outreach-campaigns/" class="nav__dropdown-item">Physician Outreach</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main id="main-content">
+
+
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/blog/">Blog</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">How to Segment Providers by Practice Size</span>
+        </nav>
+            <span class="comp-badge">BLOG</span>
+            <h1>How to Segment Providers by Practice Size</h1>
+            <p class="subtitle">Selling to a solo chiropractor is nothing like selling to a 50-provider orthopedic group. Here is how to tell the difference before you pick up the phone.</p>
+            <p class="page-hero__date">2026-03-29</p>
+            <div class="glossary-tag-list" style="margin-top:1rem;"><span class="glossary-tag">practice size</span> <span class="glossary-tag">segmentation</span> <span class="glossary-tag">NPI data</span> <span class="glossary-tag">sales targeting</span></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container" style="max-width:800px">
+            
+<h2>Why Practice Size Segmentation Changes Everything</h2>
+
+<p>A solo family medicine physician in rural Ohio and a 200-physician multi-specialty group in Dallas are both "primary care providers" in most databases. They share a taxonomy code, they both have NPIs, and they both appear on generic provider lists with no differentiation. But the similarities end there.</p>
+
+<p>The solo physician makes purchasing decisions alone, has a budget measured in thousands, and can sign a contract in a single meeting. The large group has a procurement committee, a budget measured in millions, and a sales cycle that takes 6-12 months. If your sales team approaches both the same way, they will waste time on one and underperform on the other.</p>
+
+<p>According to the <a href="https://www.ama-assn.org/practice-management/sustainability/ama-physician-practice-benchmark-survey" target="_blank" rel="noopener">AMA's Practice Benchmark Survey</a>, roughly 44% of physicians work in practices with 10 or fewer physicians, while 21% work in practices with 50 or more. That distribution means nearly every specialty list contains a mix of practice sizes that require different sales approaches.</p>
+
+<p>The problem is that practice size is not a standard field in any public provider database. You have to derive it from multiple signals. Here is how.</p>
+
+<h2>Signal 1: NPI Provider Count at a Single Address</h2>
+
+<p>The simplest indicator of practice size is how many individual NPIs (Type 1) share the same practice address. If three physicians list the same street address in the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPI registry</a>, that practice has at least three providers.</p>
+
+<h3>How to Calculate It</h3>
+
+<p>Download the NPPES file, filter to your target specialty, and group by practice address (after standardizing address formats). Count the distinct NPIs at each address. Then map each NPI to the count at their address.</p>
+
+<p>This gives you a rough practice size indicator:</p>
+
+<ul>
+<li><strong>1 provider:</strong> Likely solo practice</li>
+<li><strong>2-5 providers:</strong> Small group practice</li>
+<li><strong>6-20 providers:</strong> Mid-size group practice</li>
+<li><strong>21-50 providers:</strong> Large group practice</li>
+<li><strong>50+:</strong> Health system, hospital-based, or large multi-specialty group</li>
+</ul>
+
+<h3>Limitations</h3>
+
+<p>NPI addresses are self-reported and not always current. Some providers list billing addresses instead of practice locations, which inflates the count at billing company addresses. Others list a corporate headquarters for a multi-location practice, making a 3-location practice look like a single large group. Use this signal as a starting point, not a definitive answer.</p>
+
+<h2>Signal 2: Organizational NPI (Type 2) Data</h2>
+
+<p>Type 2 NPIs are assigned to organizations: practices, clinics, hospitals, and health systems. When an individual provider's practice address matches a Type 2 NPI's address, you can infer a connection to that organization.</p>
+
+<p>Type 2 NPI records often include the organization name ("Springfield Family Medicine Group" vs. "Springfield Community Hospital"), which gives you additional context about the practice structure. Organizations with "group," "associates," or "partners" in the name are likely physician-owned groups. Those with "hospital," "health system," or "medical center" are likely system-employed settings.</p>
+
+<p>Matching individual NPIs to organizational NPIs also helps you identify health system affiliations. If 15 orthopedic surgeons at different addresses all link to the same Type 2 NPI for "Mercy Health Orthopedics," you know they are system-employed rather than independent.</p>
+
+<h2>Signal 3: Multi-Location Indicators</h2>
+
+<p>Practices with multiple locations present a special challenge. A dermatology group with 4 locations and 12 total providers might look like four solo practices if you only count providers per address. Or it might look like a 12-provider group if all providers list the same headquarters address.</p>
+
+<p>To identify multi-location practices:</p>
+
+<ul>
+<li><strong>Shared organization name across addresses:</strong> If multiple addresses have the same or similar practice name, they are likely locations of the same organization.</li>
+<li><strong>Shared phone number:</strong> Practices with multiple locations often route calls through the same main number.</li>
+<li><strong>Web domain matching:</strong> All locations typically share the same website domain.</li>
+<li><strong>Provider overlap:</strong> Physicians who practice at multiple locations will list different addresses on different days, creating a natural link between locations.</li>
+</ul>
+
+<p>Multi-location identification is harder to automate than single-location counting, but it dramatically improves your practice size estimates. A 4-location practice with 3 providers per location is a 12-provider group, and it buys like one.</p>
+
+<h2>Signal 4: Business Data Enrichment</h2>
+
+<p>Public business databases add context that NPI data alone cannot provide. Sources include:</p>
+
+<ul>
+<li><strong>State business registrations:</strong> The entity type (LLC, PLLC, PC, sole proprietorship) provides a rough indicator. Sole proprietorships are almost always solo practices. Professional corporations and PLLCs with multiple registered members are groups.</li>
+<li><strong>Revenue estimates:</strong> Business data providers like Dun & Bradstreet and similar services estimate annual revenue for businesses. While estimates are imprecise, they correlate with practice size. A practice with $500K estimated revenue is likely 1-2 providers. One with $5M is likely a mid-size group.</li>
+<li><strong>Employee count estimates:</strong> Similar to revenue, estimated employee counts from business databases provide a rough proxy for practice size. A practice with 5 estimated employees is likely 1-2 providers plus support staff. One with 50 employees is a larger operation.</li>
+</ul>
+
+<h2>Signal 5: Practice Website Analysis</h2>
+
+<p>A practice's website is often the most accurate indicator of its current size and structure. The "Our Team" or "Our Providers" page lists the physicians, mid-levels, and key staff. Automated web scraping can extract provider counts from these pages with reasonable accuracy.</p>
+
+<p>Website analysis also reveals practice characteristics that affect your sales approach:</p>
+
+<ul>
+<li><strong>Service offerings:</strong> A practice listing 15 different services is likely larger and more diverse than one listing 3.</li>
+<li><strong>Multiple office locations:</strong> Listed on the Contact page.</li>
+<li><strong>Advanced services or equipment:</strong> Practices investing in expensive equipment (CT scanners, laser systems, surgical suites) tend to be larger and more established.</li>
+<li><strong>Online scheduling:</strong> Practices using sophisticated scheduling and patient portal systems are typically larger groups with dedicated IT resources.</li>
+</ul>
+
+<h2>Putting the Signals Together</h2>
+
+<p>No single signal gives you a reliable practice size classification. The power is in combining them. Here is a practical scoring approach:</p>
+
+<ol>
+<li><strong>Start with NPI provider count</strong> as your base estimate.</li>
+<li><strong>Adjust for multi-location patterns.</strong> If you find multiple addresses sharing the same organization name, combine the provider counts.</li>
+<li><strong>Cross-reference with Type 2 NPI data</strong> to identify health system affiliations that indicate employed (not independent) practice structures.</li>
+<li><strong>Layer in business data</strong> (entity type, revenue estimates) to validate or override the NPI-based estimate.</li>
+<li><strong>Spot-check with website data</strong> for your highest-value segments to confirm accuracy.</li>
+</ol>
+
+<p>This combined approach produces practice size estimates that are accurate enough for sales segmentation. You do not need perfect precision. You need to distinguish solo practices from small groups from large groups from health systems. That four-tier segmentation is achievable with these signals and dramatically improves targeting.</p>
+
+<h2>How Practice Size Should Change Your Sales Approach</h2>
+
+<p>Once you have practice size segments, use them to align your sales motion:</p>
+
+<ul>
+<li><strong>Solo practices (1 provider):</strong> Short sales cycle. Decision-maker is the physician. Lead with ROI and simplicity. They do not have time for long demos or multi-stakeholder meetings.</li>
+<li><strong>Small groups (2-10 providers):</strong> Decision may require partner consensus. Lead with operational efficiency and peer evidence. Ask who else needs to weigh in.</li>
+<li><strong>Mid-size groups (11-50 providers):</strong> Formal buying process. Likely has an operations manager or administrator. Lead with scalability and integration. Expect a 2-4 month sales cycle.</li>
+<li><strong>Large groups and health systems (50+ providers):</strong> Enterprise sale. Multiple stakeholders, procurement involvement, possibly RFP process. Lead with compliance, enterprise features, and executive ROI. Sales cycle of 6-12 months or more.</li>
+</ul>
+
+<p>If your product is priced and built for small groups, filter out health systems before your reps waste time on accounts that will never close. If your product requires enterprise infrastructure, filter out solo practices. The segmentation saves time on both ends.</p>
+
+<p>For teams that need practice size already calculated, <a href="/services/provider-contact-data/">Provyx includes practice size indicators</a> in every data delivery. We combine NPI provider counts, organizational affiliations, and business data to classify practices into actionable size tiers.</p>
+
+        </div>
+    </section>
+
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>Rome</strong></p>
+                <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+                <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you determine practice size from NPI data alone?", "acceptedAnswer": {"@type": "Answer", "text": "You can get a rough estimate by counting individual NPIs at the same practice address. This works well for single-location practices but can be misleading for multi-location groups and practices that use billing addresses instead of practice locations. Combining NPI data with organizational NPI matching, business registration data, and website analysis produces more reliable size estimates."}}, {"@type": "Question", "name": "What is the difference between a Type 1 and Type 2 NPI?", "acceptedAnswer": {"@type": "Answer", "text": "Type 1 NPIs are assigned to individual healthcare providers (physicians, nurse practitioners, therapists). Type 2 NPIs are assigned to organizations (practices, clinics, hospitals, health systems). Matching individual providers to their associated organizational NPIs helps identify practice affiliations and distinguish independent practices from health system-employed providers."}}, {"@type": "Question", "name": "How accurate are practice size estimates from public data?", "acceptedAnswer": {"@type": "Answer", "text": "Using a multi-signal approach (NPI provider count, organizational matching, business data, and website verification), practice size classifications are accurate enough for sales segmentation. Expect 80-85% accuracy for the four-tier classification (solo, small group, mid-size, large/system). The remaining 15-20% are edge cases like multi-location practices or recently restructured groups."}}, {"@type": "Question", "name": "Why does practice size matter for healthcare sales?", "acceptedAnswer": {"@type": "Answer", "text": "Practice size determines who makes purchasing decisions, how long the sales cycle takes, what budget is available, and what product features matter most. A solo practice buys differently from a 50-provider group. Sending the same pitch to both wastes time and produces lower conversion rates."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details class="faq-item">
+                    <summary class="faq-item__question">Can you determine practice size from NPI data alone?</summary>
+                    <div class="faq-item__answer"><p>You can get a rough estimate by counting individual NPIs at the same practice address. This works well for single-location practices but can be misleading for multi-location groups and practices that use billing addresses instead of practice locations. Combining NPI data with organizational NPI matching, business registration data, and website analysis produces more reliable size estimates.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is the difference between a Type 1 and Type 2 NPI?</summary>
+                    <div class="faq-item__answer"><p>Type 1 NPIs are assigned to individual healthcare providers (physicians, nurse practitioners, therapists). Type 2 NPIs are assigned to organizations (practices, clinics, hospitals, health systems). Matching individual providers to their associated organizational NPIs helps identify practice affiliations and distinguish independent practices from health system-employed providers.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How accurate are practice size estimates from public data?</summary>
+                    <div class="faq-item__answer"><p>Using a multi-signal approach (NPI provider count, organizational matching, business data, and website verification), practice size classifications are accurate enough for sales segmentation. Expect 80-85% accuracy for the four-tier classification (solo, small group, mid-size, large/system). The remaining 15-20% are edge cases like multi-location practices or recently restructured groups.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Why does practice size matter for healthcare sales?</summary>
+                    <div class="faq-item__answer"><p>Practice size determines who makes purchasing decisions, how long the sales cycle takes, what budget is available, and what product features matter most. A solo practice buys differently from a 50-provider group. Sending the same pitch to both wastes time and produces lower conversion rates.</p></div>
+                </details>
+            </div>
+        </section>
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul><li><a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a></li>
+<li><a href="https://www.ama-assn.org/practice-management/sustainability/ama-physician-practice-benchmark-survey" target="_blank" rel="noopener noreferrer">AMA Physician Practice Benchmark Survey</a></li>
+</ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/use-cases/healthcare-sales-prospecting/">Healthcare Sales Prospecting Guide</a></li>
+<li><a href="/blog/how-to-find-practice-owners-vs-employed-physicians/">How to Find Practice Owners vs Employed Physicians</a></li>
+<li><a href="/services/provider-contact-data/">Provider Contact Data Service</a></li>
+<li><a href="/blog/npi-database-guide-healthcare-marketers/">NPI Database Guide for Marketers</a></li>
+</ul>
+        </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/icons/icon-no-bg-white.svg" alt="" class="footer__logo-icon" width="32" height="40" loading="lazy">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/services/event-marketing/">Event Marketing</a></li>
+<li><a href="/services/physician-outreach-campaigns/">Physician Outreach</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/glossary/">Glossary</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+<li><a href="/case-studies/">Case Studies</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Publications</h4>
+                <ul class="footer__links">
+                    <li><a href="https://thecroreport.com" target="_blank" rel="noopener noreferrer">The CRO Report</a></li>
+<li><a href="https://theaimarketpulse.com" target="_blank" rel="noopener noreferrer">AI Market Pulse</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
