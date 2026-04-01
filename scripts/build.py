@@ -14887,16 +14887,16 @@ SERVICES = [
 <section class="content-section">
   <div class="container">
     <h2 style="text-align:center; margin-bottom: 0.5rem;">How We Source and Verify Records</h2>
-    <p style="text-align:center; color: var(--gray-500); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Every record is cross-referenced across multiple independent sources. Each field is delivered with the source it came from.</p>
+    <p style="text-align:center; color: var(--color-text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Every record is cross-referenced across multiple independent sources. Each field is delivered with the source it came from.</p>
     <style>
       .xref-diagram { position: relative; max-width: 780px; margin: 0 auto; height: 340px; }
-      .xref-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: var(--navy); border: 2px solid var(--teal); border-radius: 12px; padding: 1rem 1.75rem; text-align: center; z-index: 2; box-shadow: 0 0 30px rgba(14,165,233,0.12); opacity: 0; animation: xrefFadeIn 0.5s ease forwards; }
+      .xref-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: var(--color-navy); border: 2px solid var(--color-teal); border-radius: 12px; padding: 1rem 1.75rem; text-align: center; z-index: 2; box-shadow: 0 0 30px rgba(14,165,233,0.12); opacity: 0; animation: xrefFadeIn 0.5s ease forwards; }
       .xref-center .xref-name { font-size: 1.05rem; font-weight: 700; color: #fff; }
-      .xref-center .xref-spec { font-size: 0.8rem; color: var(--gray-400); margin-top: 2px; }
-      .xref-node { position: absolute; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 0.65rem 1rem; text-align: center; min-width: 130px; z-index: 2; box-shadow: 0 2px 8px rgba(27,42,74,0.06); opacity: 0; animation: xrefFadeIn 0.5s ease forwards; }
+      .xref-center .xref-spec { font-size: 0.8rem; color: var(--color-text-muted); margin-top: 2px; }
+      .xref-node { position: absolute; background: #fff; border: 1px solid var(--color-border); border-radius: 10px; padding: 0.65rem 1rem; text-align: center; min-width: 130px; z-index: 2; box-shadow: 0 2px 8px rgba(27,42,74,0.06); opacity: 0; animation: xrefFadeIn 0.5s ease forwards; }
       .xref-node .xref-icon { font-size: 1.25rem; margin-bottom: 4px; }
-      .xref-node .xref-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--teal); }
-      .xref-node .xref-detail { font-size: 0.72rem; color: var(--gray-500); margin-top: 2px; line-height: 1.35; }
+      .xref-node .xref-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-teal); }
+      .xref-node .xref-detail { font-size: 0.72rem; color: var(--color-text-secondary); margin-top: 2px; line-height: 1.35; }
       .xn-npi { left: 0; top: 50px; animation-delay: 0.3s; }
       .xn-pecos { left: 0; bottom: 50px; animation-delay: 0.5s; }
       .xn-google { right: 0; top: 50px; animation-delay: 0.7s; }
@@ -14904,7 +14904,7 @@ SERVICES = [
       .xn-state { left: 50%; transform: translateX(-50%); top: 0; animation-delay: 1.1s; }
       .xn-physician { left: 50%; transform: translateX(-50%); bottom: 0; animation-delay: 1.3s; }
       .xref-diagram svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-      .xref-line { stroke: var(--border); stroke-width: 1.5; stroke-dasharray: 200; stroke-dashoffset: 200; animation: xrefDraw 0.8s ease forwards; }
+      .xref-line { stroke: var(--color-border); stroke-width: 1.5; stroke-dasharray: 200; stroke-dashoffset: 200; animation: xrefDraw 0.8s ease forwards; }
       .xl1 { animation-delay: 0.4s; } .xl2 { animation-delay: 0.6s; } .xl3 { animation-delay: 0.8s; }
       .xl4 { animation-delay: 1.0s; } .xl5 { animation-delay: 1.2s; } .xl6 { animation-delay: 1.4s; }
       @keyframes xrefFadeIn { to { opacity: 1; } }
