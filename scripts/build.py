@@ -14713,8 +14713,7 @@ SERVICES = [
                     "business address. We differentiate between the practice location where "
                     "patients are seen and the mailing address used for correspondence, because "
                     "they're often different. For multi-site practices, we map each location "
-                    "separately so you know exactly which office your contact works from. "
-                    "Addresses are verified against postal records quarterly."
+                    "separately so you know exactly which office your contact works from."
                 ),
             },
             {
@@ -14722,11 +14721,9 @@ SERVICES = [
                 "icon": "phone",
                 "description": (
                     "We provide the main business phone line, fax number, and practice website URL "
-                    "for each record. Phone numbers are validated against carrier databases to "
-                    "confirm they're active and correctly classified as landline, VoIP, or mobile. "
-                    "Fax numbers are tested for connectivity. Website URLs are checked for live "
-                    "status. If a phone number routes to a call center or answering service rather "
-                    "than the practice directly, we flag that in the record."
+                    "for each record. Phone numbers are verified active so your team connects on "
+                    "the first call. If a number routes to a call center or answering service "
+                    "rather than the practice directly, we flag that in the record."
                 ),
             },
             {
@@ -14760,8 +14757,8 @@ SERVICES = [
         "included_addons": (
             "Optional add-ons include verified direct email addresses and mobile phone numbers. "
             "Direct emails bypass the info@ inbox and reach the provider or administrator personally. "
-            "Mobile numbers are sourced from commercial consumer databases and validated for "
-            "ownership before delivery. Both add-ons are priced separately and available on request."
+            "Mobile numbers are verified for ownership before delivery. Both add-ons are priced "
+            "separately and available on request."
         ),
         # --- Section: How We Source This Data ---
         "sourcing_heading": "How We Source and Verify Provider Contact Data",
@@ -14801,11 +14798,6 @@ SERVICES = [
             '})();'
             '</script>'
             '<div style="max-width: 720px; margin: 2.5rem auto 0;">'
-            "<p>When two or more independent sources agree on a phone number or address, we mark that field as "
-            "verified. When sources conflict, we flag the discrepancy and use recency signals "
-            "to determine which value is most likely current. Phone numbers are validated "
-            "against real-time carrier lookups. Addresses are standardized through USPS APIs. "
-            "Email addresses are checked for deliverability before they're added to any record.</p>"
             "<p>Every field in a delivered record includes a source column so your team knows "
             "exactly where each data point came from.</p>"
             "<p>Data is built at the time of your request, not pulled from a static database. "
@@ -14852,8 +14844,7 @@ SERVICES = [
             {
                 "question": "How often is provider contact data updated?",
                 "answer": (
-                    "The full database is refreshed on a rolling 90-day cycle. We pull updated "
-                    "NPPES files weekly and run phone and address validation monthly. High-churn "
+                    "The full database is refreshed on a rolling 90-day cycle. High-churn "
                     "specialties and regions get priority in our refresh queue. If you find a "
                     "stale record, you can flag it and we'll re-verify within five business days."
                 ),
@@ -15237,10 +15228,9 @@ SERVICES = [
                 "description": (
                     "We identify the electronic health record system in use at each practice, covering "
                     "major platforms like Epic, Cerner (now Oracle Health), athenahealth, eClinicalWorks, "
-                    "Greenway Health, NextGen, DrChrono, and dozens of smaller vendors. Our detection "
-                    "covers both cloud-hosted and on-premise deployments. For larger organizations with "
-                    "multiple EHR instances, we identify the primary system and note secondary or "
-                    "departmental systems where our signals are strong enough to confirm."
+                    "Greenway Health, NextGen, DrChrono, and dozens of smaller vendors. For larger "
+                    "organizations with multiple EHR instances, we identify both primary and "
+                    "departmental systems."
                 ),
             },
             {
@@ -15336,21 +15326,10 @@ SERVICES = [
             "detecting website technologies like CMS platforms or analytics tools. Healthcare "
             "software often runs behind logins with no public-facing signals. We use multiple "
             "independent methods to identify what each practice is actually running.\n\n"
-            "We scan practice websites for patient portal links that identify the underlying "
-            "EHR vendor. A practice linking to portal.athenahealth.com is a confirmed athenahealth "
-            "user. We mine career pages and job postings where practices name the EHR or PM system "
-            "candidates need experience with. We also analyze historical web archives to catch "
-            "technology signals from pages that have since been updated or removed. And we run "
-            "targeted web searches to fill gaps where other signals are absent.\n\n"
             "Beyond EHR, we detect patient engagement platforms, scheduling widgets, telehealth "
-            "tools, and billing systems from website signatures, vendor directories, and partner "
-            "listings. Each technology detection is linked to the practice's "
+            "tools, and billing systems. Each technology detection is linked to the practice's "
             '<a href="https://npiregistry.cms.hhs.gov/">NPI record</a>, so you can cross-reference '
-            "technology data with provider contact information and firmographics.\n\n"
-            "No single method covers every practice. The combination gives us technology signals "
-            "for the majority of practices with five or more providers. "
-            "Solo practices are harder to detect because they have smaller web footprints and "
-            "fewer job postings."
+            "technology data with provider contact information and firmographics."
         ),
         "users_heading": "Who Uses Technology Detection Data",
         "users_body": (
@@ -15372,16 +15351,9 @@ SERVICES = [
         ),
         "quality_heading": "Data Quality and Accuracy",
         "quality_body": (
-            "Technology detection is inherently probabilistic. We're inferring technology usage "
-            "from indirect signals, not reading it from a definitive registry. Our confidence "
-            "levels reflect that reality.\n\n"
-            "For major EHR platforms at medium and large practices, our detection accuracy is "
-            "above 80%. For niche PM tools at small practices, accuracy drops because the signals "
-            "are weaker. Every technology detection record carries a confidence score: high (multiple "
-            "independent signals), medium (single strong signal), or low (inferred from indirect "
-            "evidence). We recommend filtering to medium and high confidence for outbound campaigns "
-            "and using all confidence levels for market analysis. Technology data is refreshed "
-            "on a quarterly cycle."
+            "Every technology detection record carries a confidence level so you know which "
+            "records to prioritize for outbound campaigns versus broader market analysis. "
+            "Technology data is refreshed regularly to reflect vendor changes."
         ),
         "faqs": [
             {
@@ -15398,21 +15370,17 @@ SERVICES = [
             {
                 "question": "Can technology detection tell me when a contract is up for renewal?",
                 "answer": (
-                    "Not directly. We don't have access to contract terms. However, we can provide "
-                    "estimated install date ranges based on when we first detected the technology "
-                    "at a given practice. If you know a vendor's typical contract length, you can "
-                    "estimate renewal windows from our install date signal. Our enhanced tier also "
-                    "includes technology change alerts that notify you when a practice switches."
+                    "Not directly. We don't have access to contract terms. However, we can "
+                    "help you identify practices approaching likely renewal windows. Our enhanced "
+                    "tier also includes technology change alerts that notify you when a practice switches."
                 ),
             },
             {
                 "question": "Does technology detection work for solo practices?",
                 "answer": (
-                    "Coverage is lower for solo practices because they generate fewer web signals "
-                    "and rarely post job listings that name their technology. Our detection rate "
-                    "for solo practices is roughly 40-50%, compared to 75-85% for group practices "
-                    "with five or more providers. We're transparent about this limitation because "
-                    "we'd rather you know the coverage rate upfront than discover gaps later."
+                    "Coverage is strongest for group practices with five or more providers. Solo "
+                    "practice coverage is available but more limited. We're transparent about "
+                    "coverage upfront so you know what to expect before you buy."
                 ),
             },
             {
