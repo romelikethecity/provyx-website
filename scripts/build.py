@@ -6123,7 +6123,7 @@ USE_CASES = [
             {"title": "Define Your Competitive Scope", "description": "Tell us the specialties, geographies, and practice types that define your competitive market. We'll confirm the data available for your analysis."},
             {"title": "Receive Your Market Dataset", "description": "We deliver a verified provider dataset covering your competitive scope, with NPI, specialty, practice location, ownership, and contact details."},
             {"title": "Analyze Competitive Dynamics", "description": "Map provider density, practice distribution, and market composition using your BI tools. Identify gaps, clusters, and trends in your competitive landscape."},
-            {"title": "Track Changes Over Time", "description": "Order refreshed data quarterly or semi-annually to monitor market shifts, new entrants, and consolidation activity in your competitive set."},
+            {"title": "Track Changes Over Time", "description": "Order refreshed data on demand to monitor market shifts, new entrants, and consolidation activity in your competitive set."},
         ],
         "results_heading": "What Provider-Level Competitive Intelligence Delivers",
         "results_content": """<p>Organizations that build competitive intelligence on verified provider data make better strategic decisions because they're working with facts rather than estimates. Market entry decisions are based on actual provider density and practice distribution, not rough projections. Expansion plans account for where competitors have strong positions and where gaps exist.</p>
@@ -14844,9 +14844,8 @@ SERVICES = [
             {
                 "question": "How often is provider contact data updated?",
                 "answer": (
-                    "The full database is refreshed on a rolling 90-day cycle. High-churn "
-                    "specialties and regions get priority in our refresh queue. If you find a "
-                    "stale record, you can flag it and we'll re-verify within five business days."
+                    "Data is refreshed on demand. If you find a stale record, you can flag it "
+                    "and we'll re-verify within five business days."
                 ),
             },
             {
@@ -15029,9 +15028,7 @@ SERVICES = [
                 "icon": "git-branch",
                 "description": (
                     "For providers and organizations with multiple practice sites, we map every "
-                    "known location and designate which is the primary site. Primary designation "
-                    "is based on the address listed on the NPI record, supplemented by web presence "
-                    "signals and appointment availability data. Secondary sites are listed with their "
+                    "known location and designate which is the primary site. Secondary sites are listed with their "
                     "own full address records. This is critical for medical device reps planning "
                     "routes and for payers validating network directory listings at the site level."
                 ),
@@ -15059,10 +15056,7 @@ SERVICES = [
             "practice and mailing addresses for every NPI record. We supplement this with "
             "commercial business listing databases, Google Places data, and state facility "
             "licensing records to validate and enrich each address.\n\n"
-            "Geocoding is handled through a multi-provider approach. We run addresses through "
-            "two independent geocoding services and compare results. When both agree within a "
-            "tight tolerance, we use the higher-precision result. When they diverge, we "
-            "flag the record for manual review. This catches common geocoding failures like "
+            "Geocoding is validated through multiple layers to catch common failures like "
             "addresses that resolve to the wrong side of the street or to a zip centroid "
             "instead of the actual building.\n\n"
             "Multi-location mapping draws from organizational NPI records, practice website "
@@ -15094,15 +15088,12 @@ SERVICES = [
             "Practice addresses are the most stable field in our database. Providers move less "
             "often than they change phone numbers. That said, we still see roughly 8-12% of "
             "addresses change annually due to practice relocations, closures, and mergers.\n\n"
-            "Every address goes through USPS standardization to correct formatting issues like "
+            "Addresses are standardized and validated to correct formatting issues like "
             "misspelled street names, missing suite numbers, and inconsistent abbreviations. "
-            "Geocoding accuracy is validated against known reference points. Records where the "
-            "geocoded location doesn't match the state or zip code in the address are flagged "
-            "for review. We also cross-check against commercial business listing databases to "
+            "We cross-check against business listing databases to "
             "confirm that the address corresponds to an active healthcare practice and not a "
             "vacant building or unrelated business. "
-            "The location database is refreshed quarterly, with NPPES-sourced "
-            "updates applied weekly."
+            "Location data is refreshed on demand."
         ),
         "faqs": [
             {
@@ -15535,16 +15526,10 @@ SERVICES = [
             "their full name, credentials, specialty, and practice location. We then search for "
             "matching profiles across LinkedIn, Facebook, and Instagram using a combination of "
             "API access, web scraping, and manual verification for ambiguous matches.\n\n"
-            "The matching algorithm weights multiple factors. An exact name match alone isn't "
-            "enough because there are over 20 physicians named \"Michael Smith\" in most large "
-            "metros. We require at least two corroborating data points: specialty listed on the "
-            "profile, practice name in the work history, geographic match, or credential match. "
-            "This multi-factor approach keeps our false positive rate below 5% for high-confidence "
-            "matches.\n\n"
-            "Social profiles are refreshed semi-annually. LinkedIn profiles change infrequently. "
-            "Facebook and Instagram accounts are checked for active status during each refresh "
-            "cycle. New providers added to the NPI registry are queued for social matching within "
-            "60 days of enumeration."
+            "An exact name match alone isn't enough because there are over 20 physicians named "
+            "\"Michael Smith\" in most large metros. We use multiple corroborating factors "
+            "including specialty, practice name, geography, and credentials to confirm each match.\n\n"
+            "Social profiles are refreshed on demand."
         ),
         "users_heading": "Who Uses Social Profile Data",
         "users_body": (
@@ -15583,11 +15568,9 @@ SERVICES = [
             {
                 "question": "How do you avoid matching the wrong provider on LinkedIn?",
                 "answer": (
-                    "We require at least two corroborating data points beyond name alone. "
-                    "These include specialty, practice name, geographic location, and credentials. "
-                    "For common names, we apply stricter thresholds and may require three or more "
-                    "matching factors. Matches that don't meet our confidence threshold are excluded "
-                    "from the high-confidence tier rather than included with a wrong match."
+                    "We use multiple corroborating factors beyond name alone, including specialty, "
+                    "practice name, geographic location, and credentials. Matches that don't meet "
+                    "our confidence threshold are excluded rather than included with a wrong match."
                 ),
             },
             {
@@ -15612,10 +15595,8 @@ SERVICES = [
             {
                 "question": "How often are social profiles updated?",
                 "answer": (
-                    "Social profile data is refreshed semi-annually. LinkedIn profiles don't change "
-                    "frequently for most healthcare providers. Facebook and Instagram accounts are "
-                    "checked for active status and updated engagement metrics during each cycle. "
-                    "If you need a more current check on a specific set of profiles, we can run "
+                    "Social profile data is refreshed on demand. "
+                    "If you need a current check on a specific set of profiles, we can run "
                     "an on-demand refresh for an additional fee."
                 ),
             },
@@ -15888,10 +15869,10 @@ SERVICES = [
                 "question": "How often does ownership classification change?",
                 "answer": (
                     "Ownership changes happen constantly through acquisitions, mergers, and divestitures. "
-                    "We scan for ownership changes quarterly through PE deal monitoring, news alerts, "
-                    "and business registration updates. The pace of PE-backed consolidation in "
-                    "healthcare means that practices we classified as independent six months ago may "
-                    "now be part of a platform. Quarterly updates catch most transitions, but there's "
+                    "We monitor for ownership changes on an ongoing basis. The pace of PE-backed "
+                    "consolidation in healthcare means that practices we classified as independent "
+                    "six months ago may now be part of a platform. Regular updates catch most "
+                    "transitions, but there's "
                     "always a lag."
                 ),
             },
@@ -16005,7 +15986,7 @@ SERVICES = [
                 "icon": "check-square",
                 "description": (
                     "Before delivery, every custom list goes through a quality assurance process. "
-                    "We deduplicate against multiple match keys (NPI, phone, address, practice name) "
+                    "We deduplicate across multiple verified fields "
                     "to remove records that appear multiple times due to data source overlap. We "
                     "validate that all records meet the specified filter criteria. We flag any "
                     "records with low confidence scores on key fields so you know where the data "
@@ -17025,7 +17006,7 @@ SERVICES = [
       <div class="feature-card">
         <div class="feature-icon"><i data-feather="shield"></i></div>
         <h3>Compliance by Default</h3>
-        <p>Every email passes a two-tier verification: deterministic checks catch banned language, unverified claims, and AI cliches. A second LLM review catches subtler compliance issues. Nothing sends without clearing both layers.</p>
+        <p>Every email passes compliance verification before it reaches your review queue. Nothing sends without clearing our checks.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><i data-feather="edit-3"></i></div>
@@ -17457,10 +17438,8 @@ SERVICES = [
             "A chiropractor's sequence talks about insurance reimbursement pressure. A med spa "
             "owner's sequence talks about competing with injectables.\n\n"
             "Every email passes compliance verification before it reaches your review queue. "
-            "Tier 1 checks are deterministic: banned words, unverified statistics, presumptive "
-            "language about the prospect's revenue, device names where they shouldn't appear, "
-            "repeated claims across emails. Tier 2 is an LLM review that catches subtler issues "
-            "like implied guarantees or claims that sound factual but aren't sourced.\n\n"
+            "We check for banned language, unverified claims, presumptive statements, and "
+            "tone issues. Nothing sends without clearing our verification.\n\n"
             "You review everything in our campaign dashboard. Rendered emails show real contact "
             "data merged in so you see exactly what physicians will receive. You can edit copy, "
             "adjust targeting, request new variants, or send test emails to yourself. Nothing "
@@ -17579,11 +17558,8 @@ SERVICES = [
             {
                 "question": "What does compliance verification actually check?",
                 "answer": (
-                    "Tier 1 checks are deterministic: banned words and AI cliches, unverified "
-                    "statistics, presumptive language about the prospect's revenue, device names "
-                    "in emails where they shouldn't appear, repeated claims across email steps, "
-                    "and subject lines over 50 characters. Tier 2 is an LLM review that catches "
-                    "implied guarantees, unsourced factual claims, and tone issues."
+                    "We check for banned language, unverified statistics, presumptive claims, "
+                    "AI cliches, and tone issues. Nothing sends without clearing verification."
                 ),
             },
             {

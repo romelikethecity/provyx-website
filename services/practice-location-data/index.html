@@ -325,7 +325,7 @@
     <div class="feature-card">
       <div class="feature-icon"><i data-feather="git-branch"></i></div>
       <h3>Multi-Location Mapping with Primary and Secondary Designation</h3>
-      <p>For providers and organizations with multiple practice sites, we map every known location and designate which is the primary site. Primary designation is based on the address listed on the NPI record, supplemented by web presence signals and appointment availability data. Secondary sites are listed with their own full address records. This is critical for medical device reps planning routes and for payers validating network directory listings at the site level.</p>
+      <p>For providers and organizations with multiple practice sites, we map every known location and designate which is the primary site. Secondary sites are listed with their own full address records. This is critical for medical device reps planning routes and for payers validating network directory listings at the site level.</p>
     </div>
 
     <div class="feature-card">
@@ -342,7 +342,7 @@
 <section class="content-section">
   <div class="container">
     <h2>How We Build Practice Location Intelligence</h2>
-    <p>The foundation is the NPPES data dissemination, which provides the self-reported practice and mailing addresses for every NPI record. We supplement this with commercial business listing databases, Google Places data, and state facility licensing records to validate and enrich each address.</p><p>Geocoding is handled through a multi-provider approach. We run addresses through two independent geocoding services and compare results. When both agree within a tight tolerance, we use the higher-precision result. When they diverge, we flag the record for manual review. This catches common geocoding failures like addresses that resolve to the wrong side of the street or to a zip centroid instead of the actual building.</p><p>Multi-location mapping draws from organizational NPI records, practice website analysis, and appointment booking platforms. If a practice website lists three office locations, we capture all three and link them to the appropriate NPI records.</p>
+    <p>The foundation is the NPPES data dissemination, which provides the self-reported practice and mailing addresses for every NPI record. We supplement this with commercial business listing databases, Google Places data, and state facility licensing records to validate and enrich each address.</p><p>Geocoding is validated through multiple layers to catch common failures like addresses that resolve to the wrong side of the street or to a zip centroid instead of the actual building.</p><p>Multi-location mapping draws from organizational NPI records, practice website analysis, and appointment booking platforms. If a practice website lists three office locations, we capture all three and link them to the appropriate NPI records.</p>
   </div>
 </section>
 
@@ -356,7 +356,7 @@
 <section class="content-section">
   <div class="container">
     <h2>Data Quality and Accuracy</h2>
-    <p>Practice addresses are the most stable field in our database. Providers move less often than they change phone numbers. That said, we still see roughly 8-12% of addresses change annually due to practice relocations, closures, and mergers.</p><p>Every address goes through USPS standardization to correct formatting issues like misspelled street names, missing suite numbers, and inconsistent abbreviations. Geocoding accuracy is validated against known reference points. Records where the geocoded location doesn't match the state or zip code in the address are flagged for review. We also cross-check against commercial business listing databases to confirm that the address corresponds to an active healthcare practice and not a vacant building or unrelated business. The location database is refreshed quarterly, with NPPES-sourced updates applied weekly.</p>
+    <p>Practice addresses are the most stable field in our database. Providers move less often than they change phone numbers. That said, we still see roughly 8-12% of addresses change annually due to practice relocations, closures, and mergers.</p><p>Addresses are standardized and validated to correct formatting issues like misspelled street names, missing suite numbers, and inconsistent abbreviations. We cross-check against business listing databases to confirm that the address corresponds to an active healthcare practice and not a vacant building or unrelated business. Location data is refreshed on demand.</p>
   </div>
 </section>
 
