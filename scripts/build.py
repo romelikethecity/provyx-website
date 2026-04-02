@@ -5013,10 +5013,10 @@ ALTERNATIVES = [
         "slug": "definitive-healthcare-alternative",
         "competitor": "Definitive Healthcare",
         "competitor_url": "https://www.definitivehc.com/",
-        "title": "Definitive Healthcare Alternative: Same Data, Lower Cost",
+        "title": "Definitive Healthcare Alternative - No Contract",
         "meta_description": (
-            "Skip the $25K-$100K/yr Definitive Healthcare contract. Provyx delivers "
-            "NPI-verified provider contact data with pay-per-record pricing and no annual contract."
+            "Skip the $25K-$100K/yr Definitive Healthcare contract. Same NPI-verified provider "
+            "data with pay-per-record pricing. No annual commitment, no platform fee."
         ),
         "hero_h1": "Definitive Healthcare Alternative: Same Data, Lower Cost",
         "hero_subtitle": (
@@ -11099,8 +11099,8 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "healthcare-data-vendor-comparison",
-        "title": "Healthcare Data Vendors Compared: 8 Providers Ranked",
-        "meta_description": "Compare 8 healthcare data vendors on pricing, coverage, accuracy, and NPI depth. IQVIA, Definitive Healthcare, ZoomInfo, Apollo, and more.",
+        "title": "Healthcare Data Vendors Compared 2026 - 8 Ranked",
+        "meta_description": "8 healthcare data vendors ranked on pricing, accuracy, and NPI depth. IQVIA, Definitive Healthcare, ZoomInfo, Apollo, and 4 more compared side by side.",
         "h1": "Healthcare Data Vendors Compared: 8 Providers Ranked",
         "subtitle": "An honest breakdown of eight B2B healthcare data providers across coverage, accuracy, pricing, and specialty depth.",
         "sections": [
@@ -12606,8 +12606,8 @@ RESOURCES = [
     # =========================================================================
     {
         "slug": "acupuncturists-email-list",
-        "title": "Acupuncturists Email List: Verified LAc Contacts",
-        "meta_description": "Get a verified acupuncturists email list with NPI data, direct emails, and practice details. Accurate LAc contacts for needle suppliers and CE providers.",
+        "title": "Acupuncturists Email List - Verified LAc Contacts",
+        "meta_description": "Verified acupuncturist email list with NPI data, direct emails, and practice details. Built from NPI registry and business listings, not recycled databases.",
         "h1": "Acupuncturists Email List",
         "subtitle": "Acupuncture sits at the boundary between conventional healthcare and the wellness market. Many acupuncturists have NPI numbers, many don't. Building an accurate email list means pulling from multiple data sources that most vendors don't bother combining.",
         "sections": [
