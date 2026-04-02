@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
+    <title>Telehealth Provider Database Guide for B2B Sales | Provyx</title>
+    <meta name="description" content="How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.">
+    <link rel="canonical" href="https://getprovyx.com/blog/telehealth-provider-database-guide/">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getprovyx.com/blog/telehealth-provider-database-guide/">
+    <meta property="og:title" content="Telehealth Provider Database Guide for B2B Sales | Provyx">
+    <meta property="og:description" content="How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.">
+    <meta property="og:site_name" content="Provyx">
+    <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Telehealth Provider Database Guide for B2B Sales | Provyx">
+    <meta name="twitter:description" content="How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.">
+    <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getprovyx.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://getprovyx.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Telehealth Provider Database Guide for B2B Sales",
+      "item": "https://getprovyx.com/blog/telehealth-provider-database-guide/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Telehealth Provider Database Guide for B2B Sales",
+  "description": "How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.",
+  "url": "https://getprovyx.com/blog/telehealth-provider-database-guide/",
+  "inLanguage": "en-US",
+  "image": "https://getprovyx.com/assets/images/og-resources.png",
+  "datePublished": "2026-04-02",
+  "dateModified": "2026-04-02",
+  "author": {
+    "@type": "Person",
+    "name": "Rome",
+    "url": "https://www.linkedin.com/in/romecaputo/",
+    "jobTitle": "Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://getprovyx.com/#organization",
+      "name": "Provyx"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://getprovyx.com/#organization",
+    "name": "Provyx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getprovyx.com/assets/images/og-providers.png"
+    }
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero h1",
+      ".page-hero .subtitle"
+    ]
+  }
+}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Provyx Guides" href="https://getprovyx.com/feed.xml">
+
+    <!-- Preconnect to analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.min.css?v=11" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.min.css?v=11">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _pc = localStorage.getItem('provyx-consent');
+      if (_pc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QERDPYTQ9D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-QERDPYTQ9D');
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
+                <span class="header__logo-text">Provyx</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+<a href="/services/physician-outreach-campaigns/" class="nav__dropdown-item">Physician Outreach</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Provider Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Data <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/providers/" class="nav__dropdown-item">All Provider Data</a>
+<a href="/providers/dental/" class="nav__dropdown-item">Dental</a>
+<a href="/providers/mental-health/" class="nav__dropdown-item">Mental Health</a>
+<a href="/providers/medical-spas/" class="nav__dropdown-item">Medical Spas</a>
+<a href="/providers/primary-care/" class="nav__dropdown-item">Primary Care</a>
+<a href="/providers/chiropractic/" class="nav__dropdown-item">Chiropractic</a>
+<a href="/providers/senior-care/" class="nav__dropdown-item">Senior Care</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/provider-contact-data/" class="nav__dropdown-item">Provider Contacts</a>
+<a href="/services/practice-location-data/" class="nav__dropdown-item">Practice Locations</a>
+<a href="/services/technology-detection/" class="nav__dropdown-item">Technology Detection</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom Lists</a>
+<a href="/services/event-marketing/" class="nav__dropdown-item">Event Marketing</a>
+<a href="/services/physician-outreach-campaigns/" class="nav__dropdown-item">Physician Outreach</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/use-cases/" class="nav__dropdown-item">Use Cases</a>
+<a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/blog/" class="nav__dropdown-item">Blog</a>
+<a href="/glossary/" class="nav__dropdown-item">Glossary</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/case-studies/" class="nav__dropdown-item">Case Studies</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Provider Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main id="main-content">
+
+
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/blog/">Blog</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Telehealth Provider Database Guide for B2B Sales</span>
+        </nav>
+            <span class="comp-badge">BLOG</span>
+            <h1>Telehealth Provider Database Guide for B2B Sales</h1>
+            <p class="subtitle">Telehealth providers are some of the hardest to find in any database. They change addresses, hold licenses in multiple states, and operate without a physical clinic. Here is how to get the data right.</p>
+            <p class="page-hero__date">2026-04-02</p>
+            <div class="glossary-tag-list" style="margin-top:1rem;"><span class="glossary-tag">telehealth data</span> <span class="glossary-tag">virtual care</span> <span class="glossary-tag">multi-state licensing</span> <span class="glossary-tag">telehealth prescribers</span> <span class="glossary-tag">remote patient monitoring</span></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container" style="max-width:800px">
+            
+<h2>Why Telehealth Provider Data Is Different</h2>
+
+<p>Selling to telehealth providers sounds straightforward until you try to build a target list. Traditional provider databases are built around physical practice locations. They track clinic addresses, office phone numbers, fax lines, and in-person practice affiliations. Telehealth providers break every one of those assumptions.</p>
+
+<p>A telehealth psychiatrist in Austin might hold active licenses in Texas, California, New York, and Florida. They might list their home address in the NPI registry, a virtual office address on their website, and a different mailing address for each state licensing board. They might work for three separate telehealth platforms simultaneously while also maintaining a small in-person practice two days a week.</p>
+
+<p>This creates a data problem that most vendors don't solve well. Provider records get duplicated across states. Contact information points to P.O. boxes and virtual mailboxes instead of reachable business addresses. Practice affiliations are incomplete because telehealth platforms aren't always captured in the NPI registry's organizational data.</p>
+
+<p>The <a href="https://www.hhs.gov/telehealth/index.html" target="_blank" rel="noopener">U.S. Department of Health and Human Services</a> reported that telehealth utilization stabilized at 4-5x pre-pandemic levels as of 2024. That's not a temporary spike. Telehealth is a permanent care delivery channel, and the provider data infrastructure hasn't caught up.</p>
+
+<h2>Virtual-Only vs. Hybrid Providers</h2>
+
+<p>The first segmentation question for any telehealth data strategy is distinguishing virtual-only providers from hybrid providers who see patients both in-person and virtually.</p>
+
+<h3>Virtual-Only Providers</h3>
+
+<p>These providers have no physical clinic. They work exclusively through telehealth platforms or their own virtual practice. Common characteristics:</p>
+
+<ul>
+<li>NPI address is often a home address or registered agent</li>
+<li>No office phone listed, or the phone number routes to a platform's call center</li>
+<li>May hold licenses in 5-15+ states through interstate compacts or individual applications</li>
+<li>Primary affiliation is with a telehealth platform (Cerebral, Done, Talkiatry, Alma, Headway) rather than a hospital or clinic</li>
+<li>Harder to reach through traditional channels because there's no front desk to call</li>
+</ul>
+
+<p>Virtual-only providers are growing fastest in mental health, primary care, and endocrinology (driven by weight loss medication demand). They're attractive targets for SaaS companies selling practice management tools, clinical documentation software, and patient engagement platforms.</p>
+
+<h3>Hybrid Providers</h3>
+
+<p>Hybrid providers maintain a physical practice but also offer telehealth appointments. They're easier to find in traditional databases because they have a real clinic address and phone number. The telehealth component of their practice is often invisible in standard data.</p>
+
+<p>Hybrid providers matter because they represent a different buyer profile. They already have in-person infrastructure. They need technology that bridges their in-person and virtual workflows. EMR integration, scheduling across modalities, and billing for both facility-based and telehealth claims are their pain points.</p>
+
+<p>For sales targeting, you want to know which of your existing practice-based contacts also offer telehealth. That's a data enrichment question, not a sourcing question. Website analysis, directory listings on telehealth platforms, and state telehealth registration data all help identify hybrid practices.</p>
+
+<h2>Multi-State Licensing: The Data Nightmare</h2>
+
+<p>Multi-state licensing is the single biggest data challenge in telehealth. A provider licensed in 8 states might appear as 8 separate records in state licensing databases. The NPI registry tracks only one address per provider, which may not reflect where they're practicing or available to see patients.</p>
+
+<p>The <a href="https://www.fsmb.org/advocacy/interstate-medical-licensure-compact/" target="_blank" rel="noopener">Federation of State Medical Boards (FSMB)</a> administers the Interstate Medical Licensure Compact (IMLC), which simplifies multi-state licensing for physicians. As of 2026, 42 states participate in the compact. For psychologists, the PSYPACT compact covers 41 states. These compacts have accelerated multi-state licensing, making the data deduplication problem worse, not better.</p>
+
+<p>Here's what multi-state licensing means for your data:</p>
+
+<ul>
+<li><strong>Deduplication is critical.</strong> Without proper deduplication, your reps will call the same provider multiple times thinking they're different people. One provider with licenses in 10 states is still one person who needs one sales conversation.</li>
+<li><strong>State-level targeting gets complicated.</strong> If you're selling a product available only in certain states, you need to know which states a telehealth provider is licensed in and actively practicing in. Licensed doesn't mean active. A provider might hold a California license but haven't seen a California patient in 2 years.</li>
+<li><strong>Platform affiliation matters more than geography.</strong> A telehealth provider's primary "location" is the platform they work through, not their home state. Knowing that a psychiatrist is contracted with Cerebral tells you more about their workflow, tools, and pain points than knowing they live in Colorado.</li>
+</ul>
+
+<h2>Telehealth Prescribers and the Ryan Haight Act</h2>
+
+<p>If you're selling to telehealth providers who prescribe controlled substances, you need to understand the Ryan Haight Act and its impact on prescribing data.</p>
+
+<p>The Ryan Haight Online Pharmacy Consumer Protection Act (2008) requires an in-person medical evaluation before prescribing controlled substances via telemedicine. During COVID, the DEA issued temporary exemptions allowing telehealth prescribing of controlled substances without an in-person visit. Those exemptions have been extended multiple times but remain temporary.</p>
+
+<p>As of early 2026, the DEA has proposed a rule requiring a DEA-registered telehealth provider to either conduct an in-person evaluation or use a Special Registration for Telemedicine. This creates a distinct provider segment: telehealth prescribers who need Special Registration vs. those who only prescribe non-controlled medications.</p>
+
+<p>For pharma companies and pharmacies, this distinction is critical. A telehealth provider prescribing stimulants for ADHD (Schedule II) faces different regulatory requirements than one prescribing SSRIs for depression (non-controlled). Your data should flag which telehealth providers hold DEA registrations with controlled substance authority and in which states those registrations are active.</p>
+
+<p>Learn more about mental health provider data challenges in our <a href="/blog/mental-health-provider-data-for-telehealth/">mental health provider data for telehealth</a> guide.</p>
+
+<h2>What Companies Are Selling to Telehealth Providers</h2>
+
+<p>The telehealth provider market attracts several categories of B2B sellers:</p>
+
+<h3>SaaS and Platform Companies</h3>
+
+<ul>
+<li><strong>Telehealth platforms</strong> (Doxy.me, Zoom for Healthcare, Amwell) selling video infrastructure</li>
+<li><strong>EHR/EMR vendors</strong> building telehealth-native clinical documentation</li>
+<li><strong>Practice management platforms</strong> handling scheduling, billing, and patient intake for virtual practices</li>
+<li><strong>E-prescribing tools</strong> with telehealth-specific compliance workflows</li>
+<li><strong>Patient engagement platforms</strong> managing between-visit communication, symptom tracking, and medication adherence</li>
+</ul>
+
+<p>These companies need to reach the provider directly because telehealth providers make their own technology decisions. There's no IT department or procurement committee in a solo virtual practice. The provider is the user, the buyer, and the decision-maker.</p>
+
+<h3>Medical Device Companies</h3>
+
+<p>Remote patient monitoring (RPM) devices are the primary hardware play in telehealth. Blood pressure monitors, glucose monitors, pulse oximeters, and wearable devices that stream data to telehealth providers represent a growing market. The telehealth provider is both the prescriber of the device and the consumer of the data it generates.</p>
+
+<p>RPM device sales require data that identifies which telehealth providers are managing chronic conditions (diabetes, hypertension, heart failure) where remote monitoring is clinically relevant and reimbursable. CMS has expanded RPM billing codes, making this a revenue-positive addition for telehealth practices.</p>
+
+<h3>Staffing and Credentialing Services</h3>
+
+<p>Telehealth platforms constantly recruit providers. Staffing companies and credentialing services that help providers get licensed in multiple states, get credentialed with insurance panels, and get onboarded to telehealth platforms are a growing market. These companies need provider data segmented by specialty, licensing status, and platform affiliation.</p>
+
+<h2>Building a Telehealth Provider Database</h2>
+
+<p>Here's the process that works:</p>
+
+<ol>
+<li><strong>Start with NPI, but don't stop there.</strong> The NPI registry captures most telehealth providers, but their records may be outdated or reflect a previous in-person practice. Use NPI as the identity anchor, not the sole data source.</li>
+<li><strong>Layer in state licensing data.</strong> Pull active license records from every state your target providers might practice in. This reveals multi-state coverage and license status (active, expired, restricted).</li>
+<li><strong>Map platform affiliations.</strong> Scrape provider directories on major telehealth platforms. This tells you where providers are actively seeing patients and what specialties they're offering through each platform.</li>
+<li><strong>Classify virtual-only vs. hybrid.</strong> Cross-reference NPI address data with practice website analysis. If the NPI address is residential or a virtual office and there's no physical clinic website, the provider is likely virtual-only.</li>
+<li><strong>Deduplicate aggressively.</strong> Match across NPI, state license numbers, and name/DOB combinations. A provider with 8 state licenses should be one record with 8 license attributes, not 8 records.</li>
+<li><strong>Enrich contact channels.</strong> Traditional contact data (office phone, fax) doesn't work for virtual providers. You need email addresses, LinkedIn profiles, and platform-specific messaging channels. Direct outreach paths matter more here than in any other provider segment.</li>
+</ol>
+
+<p>Explore our <a href="/providers/mental-health/">mental health provider data</a> for the specialty most active in telehealth, or check out our analysis of <a href="/blog/healthcare-provider-data-trends-2026/">healthcare provider data trends in 2026</a> for more on how virtual care is changing the data landscape.</p>
+
+<h2>Telehealth Data Quality Challenges</h2>
+
+<p>Three problems plague telehealth provider data more than any other segment:</p>
+
+<h3>Address Decay</h3>
+
+<p>Telehealth providers change addresses more frequently than office-based providers because their "address" is often a home or virtual office that has no clinical significance. A provider who moves from Denver to Portland doesn't change their practice in any meaningful way, but their NPI address becomes stale. We see 15-20% annual address decay rates for virtual-only providers, compared to 6-8% for traditional practices.</p>
+
+<h3>Platform Churn</h3>
+
+<p>Telehealth providers switch platforms frequently. A therapist might leave BetterHelp for Alma, then join Headway while maintaining their Alma contract. Platform affiliation data has a shelf life of 3-6 months before it needs re-verification. Static databases can't keep up with this churn.</p>
+
+<h3>Scope Ambiguity</h3>
+
+<p>Many telehealth providers offer services outside their primary specialty. A family medicine physician might offer telehealth weight management, dermatology triage, and mental health counseling alongside traditional primary care. Their NPI taxonomy says "family medicine," but their telehealth practice looks nothing like a traditional family medicine clinic. Specialty classification for telehealth providers requires service-level analysis, not just credential-level data.</p>
+
+<h2>Compliance Considerations for Telehealth Outreach</h2>
+
+<p>Selling to telehealth providers raises specific compliance questions that don't apply to traditional practice outreach:</p>
+
+<ul>
+<li><strong>State privacy laws:</strong> Because telehealth providers practice across states, your outreach may be subject to privacy regulations in every state they're licensed in. California's CCPA may apply to a provider who's physically in Texas but licensed and seeing patients in California.</li>
+<li><strong>CAN-SPAM and email:</strong> Many telehealth providers use personal email addresses for professional purposes. Make sure your email outreach complies with CAN-SPAM requirements and includes clear opt-out mechanisms.</li>
+<li><strong>Platform terms of service:</strong> Some telehealth platforms prohibit third-party marketing to their contracted providers. Reaching out to a provider through a platform's messaging system may violate their terms.</li>
+</ul>
+
+<p>None of these are dealbreakers, but they require data that tracks licensing jurisdiction and contact channel provenance. You need to know not just how to reach a provider, but whether your outreach method is compliant in their jurisdiction.</p>
+
+<h2>The Future of Telehealth Provider Data</h2>
+
+<p>Three trends will shape telehealth provider data over the next 2-3 years:</p>
+
+<ul>
+<li><strong>Compact expansion:</strong> As more states join the IMLC and PSYPACT, multi-state licensing will become the norm rather than the exception. Data systems need to handle providers practicing in 20+ states without creating duplication.</li>
+<li><strong>DEA telehealth registration:</strong> Once the DEA finalizes its Special Registration for Telemedicine, a new data layer will emerge. Providers with Special Registration can prescribe controlled substances via telehealth permanently. That registration status becomes a high-value targeting attribute for pharma companies.</li>
+<li><strong>Platform consolidation:</strong> The telehealth platform market is consolidating. Smaller platforms will be acquired or shut down, and providers will concentrate on fewer, larger platforms. This makes platform affiliation data both more valuable (fewer platforms to track) and more accurate (less churn).</li>
+</ul>
+
+        </div>
+    </section>
+
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>Rome</strong></p>
+                <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
+                <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </section>
+    
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you find telehealth-only providers in the NPI database?", "acceptedAnswer": {"@type": "Answer", "text": "The NPI registry doesn't have a telehealth flag. You identify virtual-only providers by cross-referencing NPI addresses with practice website analysis and telehealth platform directories. If a provider's NPI address is residential or a virtual office, they have no physical clinic website, and they appear on telehealth platform provider directories, they're likely virtual-only. This multi-signal approach correctly classifies roughly 85% of virtual providers."}}, {"@type": "Question", "name": "How many telehealth providers are there in the US?", "acceptedAnswer": {"@type": "Answer", "text": "There's no single count because 'telehealth provider' isn't a formal classification. HHS reports that over 40% of all providers used telehealth as of 2024. Among mental health providers, the share exceeds 70%. The number of virtual-only providers (no physical practice) is estimated at 50,000-80,000 and growing. The challenge isn't the total count. It's identifying which providers are actively using telehealth vs. those who used it once and stopped."}}, {"@type": "Question", "name": "What is the Ryan Haight Act and how does it affect telehealth data?", "acceptedAnswer": {"@type": "Answer", "text": "The Ryan Haight Act requires an in-person evaluation before prescribing controlled substances via telemedicine. COVID-era exemptions allowed remote prescribing without in-person visits, but these are temporary. The DEA is implementing Special Registration for Telemedicine that will allow permanent telehealth controlled substance prescribing. For data purposes, this creates a critical segmentation: telehealth prescribers with DEA controlled substance authority vs. those prescribing only non-controlled medications."}}, {"@type": "Question", "name": "How often does telehealth provider data need to be refreshed?", "acceptedAnswer": {"@type": "Answer", "text": "More often than traditional provider data. We see 15-20% annual address decay for virtual-only providers vs. 6-8% for office-based providers. Platform affiliations change every 3-6 months. State licensing status can shift quarterly. For active sales campaigns targeting telehealth providers, monthly data refreshes are the minimum. Weekly verification of high-priority targets is better."}}, {"@type": "Question", "name": "Can I target telehealth providers by the platform they work for?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and it's one of the most effective segmentation strategies. Knowing that a provider contracts with Cerebral, Talkiatry, or Headway tells you about their patient volume, specialty focus, technology stack, and likely pain points. We map platform affiliations by scraping provider directories on major telehealth platforms and cross-referencing with NPI and licensing data."}}]}</script>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details class="faq-item">
+                    <summary class="faq-item__question">How do you find telehealth-only providers in the NPI database?</summary>
+                    <div class="faq-item__answer"><p>The NPI registry doesn't have a telehealth flag. You identify virtual-only providers by cross-referencing NPI addresses with practice website analysis and telehealth platform directories. If a provider's NPI address is residential or a virtual office, they have no physical clinic website, and they appear on telehealth platform provider directories, they're likely virtual-only. This multi-signal approach correctly classifies roughly 85% of virtual providers.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How many telehealth providers are there in the US?</summary>
+                    <div class="faq-item__answer"><p>There's no single count because 'telehealth provider' isn't a formal classification. HHS reports that over 40% of all providers used telehealth as of 2024. Among mental health providers, the share exceeds 70%. The number of virtual-only providers (no physical practice) is estimated at 50,000-80,000 and growing. The challenge isn't the total count. It's identifying which providers are actively using telehealth vs. those who used it once and stopped.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is the Ryan Haight Act and how does it affect telehealth data?</summary>
+                    <div class="faq-item__answer"><p>The Ryan Haight Act requires an in-person evaluation before prescribing controlled substances via telemedicine. COVID-era exemptions allowed remote prescribing without in-person visits, but these are temporary. The DEA is implementing Special Registration for Telemedicine that will allow permanent telehealth controlled substance prescribing. For data purposes, this creates a critical segmentation: telehealth prescribers with DEA controlled substance authority vs. those prescribing only non-controlled medications.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How often does telehealth provider data need to be refreshed?</summary>
+                    <div class="faq-item__answer"><p>More often than traditional provider data. We see 15-20% annual address decay for virtual-only providers vs. 6-8% for office-based providers. Platform affiliations change every 3-6 months. State licensing status can shift quarterly. For active sales campaigns targeting telehealth providers, monthly data refreshes are the minimum. Weekly verification of high-priority targets is better.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Can I target telehealth providers by the platform they work for?</summary>
+                    <div class="faq-item__answer"><p>Yes, and it's one of the most effective segmentation strategies. Knowing that a provider contracts with Cerebral, Talkiatry, or Headway tells you about their patient volume, specialty focus, technology stack, and likely pain points. We map platform affiliations by scraping provider directories on major telehealth platforms and cross-referencing with NPI and licensing data.</p></div>
+                </details>
+            </div>
+        </section>
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="outbound-references">
+                <h3>Sources and References</h3>
+                <ul><li><a href="https://www.hhs.gov/telehealth/index.html" target="_blank" rel="noopener noreferrer">HHS Telehealth Policy</a></li>
+<li><a href="https://www.fsmb.org/advocacy/interstate-medical-licensure-compact/" target="_blank" rel="noopener noreferrer">Federation of State Medical Boards Interstate Compact</a></li>
+</ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <ul class="related-links"><li><a href="/blog/mental-health-provider-data-for-telehealth/">Mental Health Provider Data for Telehealth</a></li>
+<li><a href="/providers/mental-health/">Mental Health Provider Data</a></li>
+<li><a href="/blog/healthcare-provider-data-trends-2026/">Healthcare Provider Data Trends 2026</a></li>
+<li><a href="/blog/provider-data-enrichment-npi-to-sales-ready/">Provider Data Enrichment Guide</a></li>
+</ul>
+        </div>
+    </section>
+    
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Get the Provider Data You Need</h2>
+                    <p class="cta-section__text">Tell us what you're looking for. We'll build a custom list matched to your target market.</p>
+                </div>
+                
+                <a href="/contact/" class="btn btn--white btn--lg">Get Provider Data</a>
+                <p class="cta-section__proof">Trusted by healthcare sales teams, medical device companies, and health IT vendors across the US.</p>
+            </div>
+        </section>
+    
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/icons/icon-no-bg-white.svg" alt="" class="footer__logo-icon" width="32" height="40" loading="lazy">
+                        <span class="footer__logo-text">Provyx</span>
+                    </a>
+                    <p class="footer__tagline">Healthcare Provider Intelligence</p>
+                </div>
+                
+            <div class="footer__column">
+                <h4 class="footer__heading">Data Products</h4>
+                <ul class="footer__links">
+                    <li><a href="/providers/">Provider Directory</a></li>
+<li><a href="/services/provider-contact-data/">Contact Data</a></li>
+<li><a href="/services/practice-location-data/">Location Data</a></li>
+<li><a href="/services/social-profiles/">Social Profiles</a></li>
+<li><a href="/services/practice-firmographics/">Firmographics</a></li>
+<li><a href="/services/technology-detection/">Technology Data</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/">All Services</a></li>
+<li><a href="/services/custom-list-building/">Custom List Building</a></li>
+<li><a href="/services/event-marketing/">Event Marketing</a></li>
+<li><a href="/services/physician-outreach-campaigns/">Physician Outreach</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/use-cases/">Use Cases</a></li>
+<li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/glossary/">Glossary</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+<li><a href="/case-studies/">Case Studies</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/provyx-vs-zoominfo/">Provyx vs ZoomInfo</a></li>
+<li><a href="/compare/provyx-vs-definitive-healthcare/">Provyx vs Definitive</a></li>
+<li><a href="/compare/provyx-vs-apollo/">Provyx vs Apollo</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/compare/">View All Comparisons</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Provyx</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="https://datastackguide.com/" target="_blank" rel="noopener noreferrer">DataStackGuide</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Publications</h4>
+                <ul class="footer__links">
+                    <li><a href="https://thecroreport.com" target="_blank" rel="noopener noreferrer">The CRO Report</a></li>
+<li><a href="https://theaimarketpulse.com" target="_blank" rel="noopener noreferrer">AI Market Pulse</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Provyx. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="provyxConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="provyxConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function provyxConsent(v){
+      localStorage.setItem('provyx-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('provyx-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
