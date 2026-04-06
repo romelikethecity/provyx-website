@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1B2A4A">
-    <title>Telehealth Provider Database Guide for B2B Sales | Provyx</title>
-    <meta name="description" content="How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.">
+    <title>Telehealth Provider Data: Challenges and Solutions | Provyx</title>
+    <meta name="description" content="Telehealth provider data is fragmented by design. Here's how to identify virtual-only vs hybrid providers, handle multi-state licensing, and build usable lists.">
     <link rel="canonical" href="https://getprovyx.com/blog/telehealth-provider-database-guide/">
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://getprovyx.com/blog/telehealth-provider-database-guide/">
-    <meta property="og:title" content="Telehealth Provider Database Guide for B2B Sales | Provyx">
-    <meta property="og:description" content="How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.">
+    <meta property="og:title" content="Telehealth Provider Data: Challenges and Solutions | Provyx">
+    <meta property="og:description" content="Telehealth provider data is fragmented by design. Here's how to identify virtual-only vs hybrid providers, handle multi-state licensing, and build usable lists.">
     <meta property="og:site_name" content="Provyx">
     <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Telehealth Provider Database Guide for B2B Sales | Provyx">
-    <meta name="twitter:description" content="How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.">
+    <meta name="twitter:title" content="Telehealth Provider Data: Challenges and Solutions | Provyx">
+    <meta name="twitter:description" content="Telehealth provider data is fragmented by design. Here's how to identify virtual-only vs hybrid providers, handle multi-state licensing, and build usable lists.">
     <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <script type="application/ld+json">
@@ -43,7 +43,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Telehealth Provider Database Guide for B2B Sales",
+      "name": "Telehealth Provider Data: Challenges and Solutions",
       "item": "https://getprovyx.com/blog/telehealth-provider-database-guide/"
     }
   ]
@@ -53,8 +53,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Telehealth Provider Database Guide for B2B Sales",
-  "description": "How to build and use telehealth provider data for SaaS, device, and service sales. Multi-state licensing, virtual-only vs hybrid, and prescriber targeting.",
+  "headline": "Telehealth Provider Data: Challenges and Solutions",
+  "description": "Telehealth provider data is fragmented by design. Here's how to identify virtual-only vs hybrid providers, handle multi-state licensing, and build usable lists.",
   "url": "https://getprovyx.com/blog/telehealth-provider-database-guide/",
   "inLanguage": "en-US",
   "image": "https://getprovyx.com/assets/images/og-resources.png",
@@ -280,159 +280,184 @@
     <section class="page-hero">
         <div class="container">
             <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/blog/">Blog</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Telehealth Provider Database Guide for B2B Sales</span>
+            <a href="https://getprovyx.com/">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getprovyx.com/blog/">Blog</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">Telehealth Provider Data: Challenges and Solutions</span>
         </nav>
             <span class="comp-badge">BLOG</span>
-            <h1>Telehealth Provider Database Guide for B2B Sales</h1>
-            <p class="subtitle">Telehealth providers are some of the hardest to find in any database. They change addresses, hold licenses in multiple states, and operate without a physical clinic. Here is how to get the data right.</p>
+            <h1>Telehealth Provider Data: Challenges and Solutions</h1>
+            <p class="subtitle">Telehealth providers don't fit neatly into traditional healthcare databases. Their addresses are PO boxes, their licenses span 12 states, and half of them don't show up in the NPI registry the way you'd expect.</p>
             <p class="page-hero__date">2026-04-02</p>
-            <div class="glossary-tag-list" style="margin-top:1rem;"><span class="glossary-tag">telehealth data</span> <span class="glossary-tag">virtual care</span> <span class="glossary-tag">multi-state licensing</span> <span class="glossary-tag">telehealth prescribers</span> <span class="glossary-tag">remote patient monitoring</span></div>
+            <div class="glossary-tag-list" style="margin-top:1rem;"><span class="glossary-tag">telehealth data</span> <span class="glossary-tag">virtual care</span> <span class="glossary-tag">multi-state licensing</span> <span class="glossary-tag">remote patient monitoring</span> <span class="glossary-tag">DEA prescribing</span></div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
             
-<h2>Why Telehealth Provider Data Is Different</h2>
+<h2>The Telehealth Data Problem Nobody Talks About</h2>
 
-<p>Selling to telehealth providers sounds straightforward until you try to build a target list. Traditional provider databases are built around physical practice locations. They track clinic addresses, office phone numbers, fax lines, and in-person practice affiliations. Telehealth providers break every one of those assumptions.</p>
+<p>Telehealth isn't new anymore. Post-pandemic utilization has stabilized at roughly 5-6% of all outpatient visits, according to the <a href="https://www.hhs.gov/about/news/index.html" target="_blank" rel="noopener">U.S. Department of Health and Human Services</a>. That might sound small, but it translates to tens of millions of visits per year and thousands of providers who deliver care primarily or exclusively through virtual channels.</p>
 
-<p>A telehealth psychiatrist in Austin might hold active licenses in Texas, California, New York, and Florida. They might list their home address in the NPI registry, a virtual office address on their website, and a different mailing address for each state licensing board. They might work for three separate telehealth platforms simultaneously while also maintaining a small in-person practice two days a week.</p>
+<p>Here's the problem: traditional healthcare provider databases were built for brick-and-mortar practices. They organize data around physical addresses, local phone numbers, and single-state license records. Telehealth providers break every one of those assumptions. A telepsychiatry company might have providers licensed in 30 states, operating from home offices in 3 states, with a corporate address in a 4th state. Which address goes in your CRM? Which state do you assign to the territory rep?</p>
 
-<p>This creates a data problem that most vendors don't solve well. Provider records get duplicated across states. Contact information points to P.O. boxes and virtual mailboxes instead of reachable business addresses. Practice affiliations are incomplete because telehealth platforms aren't always captured in the NPI registry's organizational data.</p>
+<p>If you're selling SaaS, devices, or services to telehealth providers, you need data that accounts for how these businesses operate in practice. This guide covers the specific challenges and practical solutions.</p>
 
-<p>The <a href="https://www.hhs.gov/telehealth/index.html" target="_blank" rel="noopener">U.S. Department of Health and Human Services</a> reported that telehealth utilization stabilized at 4-5x pre-pandemic levels as of 2024. That's not a temporary spike. Telehealth is a permanent care delivery channel, and the provider data infrastructure hasn't caught up.</p>
+<h2>Virtual-Only vs. Hybrid: The First Segmentation That Matters</h2>
 
-<h2>Virtual-Only vs. Hybrid Providers</h2>
-
-<p>The first segmentation question for any telehealth data strategy is distinguishing virtual-only providers from hybrid providers who see patients both in-person and virtually.</p>
+<p>Not all telehealth providers are the same. The market splits into three distinct segments, each with different buying behaviors and data needs.</p>
 
 <h3>Virtual-Only Providers</h3>
 
-<p>These providers have no physical clinic. They work exclusively through telehealth platforms or their own virtual practice. Common characteristics:</p>
+<p>These are companies and individual practitioners who deliver care exclusively through video, phone, or asynchronous messaging. Companies like Cerebral, Done, Talkiatry, and hundreds of smaller operations fall here. Individual providers who went fully virtual during the pandemic and never returned to in-person practice are also in this bucket.</p>
+
+<p>Data challenges with virtual-only providers:</p>
 
 <ul>
-<li>NPI address is often a home address or registered agent</li>
-<li>No office phone listed, or the phone number routes to a platform's call center</li>
-<li>May hold licenses in 5-15+ states through interstate compacts or individual applications</li>
-<li>Primary affiliation is with a telehealth platform (Cerebral, Done, Talkiatry, Alma, Headway) rather than a hospital or clinic</li>
-<li>Harder to reach through traditional channels because there's no front desk to call</li>
+<li><strong>No meaningful physical address.</strong> Their NPI registration might list a home address, a UPS Store mailbox, or a registered agent's office. None of these are useful for territory mapping.</li>
+<li><strong>Company vs. individual NPI confusion.</strong> Large telehealth companies often have an organizational NPI (Type 2) plus individual NPIs (Type 1) for each provider. If you're targeting the company, you want the Type 2 entity. If you're targeting individual prescribers, you want Type 1 records linked to that company.</li>
+<li><strong>Rapid headcount changes.</strong> Virtual-only companies scale provider headcount up and down quickly. A telehealth startup might go from 50 to 200 providers in a quarter, then back to 100 after a funding round falls through. Your data ages faster here than in any other healthcare segment.</li>
 </ul>
-
-<p>Virtual-only providers are growing fastest in mental health, primary care, and endocrinology (driven by weight loss medication demand). They're attractive targets for SaaS companies selling practice management tools, clinical documentation software, and patient engagement platforms.</p>
 
 <h3>Hybrid Providers</h3>
 
-<p>Hybrid providers maintain a physical practice but also offer telehealth appointments. They're easier to find in traditional databases because they have a real clinic address and phone number. The telehealth component of their practice is often invisible in standard data.</p>
+<p>These are traditional brick-and-mortar practices that added telehealth as a service line. A primary care practice that sees patients in-office 3 days a week and offers telehealth visits 2 days. A behavioral health group that does initial assessments in-person and follow-ups via video. This is the largest segment by provider count.</p>
 
-<p>Hybrid providers matter because they represent a different buyer profile. They already have in-person infrastructure. They need technology that bridges their in-person and virtual workflows. EMR integration, scheduling across modalities, and billing for both facility-based and telehealth claims are their pain points.</p>
+<p>The data challenge with hybrid providers is identifying which ones actively use telehealth vs. which ones technically "offer" it but do fewer than 5 virtual visits per month. Many practices added telehealth capability during COVID, collected the FQHC or telehealth modifier reimbursements, and then quietly stopped once in-person volumes recovered. If you're selling telehealth-specific software, you need volume indicators, not just capability flags.</p>
 
-<p>For sales targeting, you want to know which of your existing practice-based contacts also offer telehealth. That's a data enrichment question, not a sourcing question. Website analysis, directory listings on telehealth platforms, and state telehealth registration data all help identify hybrid practices.</p>
+<h3>Telehealth Platforms</h3>
 
-<h2>Multi-State Licensing: The Data Nightmare</h2>
+<p>Companies like Teladoc, Amwell, MDLive, and their competitors operate as platforms that employ or contract with thousands of providers. These are enterprise sales targets, not individual provider outreach. Your data needs for this segment are completely different: company firmographics, decision-maker contacts (Chief Medical Officer, VP of Clinical Operations, Head of Provider Network), and contract details.</p>
 
-<p>Multi-state licensing is the single biggest data challenge in telehealth. A provider licensed in 8 states might appear as 8 separate records in state licensing databases. The NPI registry tracks only one address per provider, which may not reflect where they're practicing or available to see patients.</p>
+<p>Check our <a href="/blog/mental-health-provider-data-for-telehealth/">mental health provider data guide</a> for deep coverage of the behavioral health telehealth segment, which accounts for the largest share of virtual visits.</p>
 
-<p>The <a href="https://www.fsmb.org/advocacy/interstate-medical-licensure-compact/" target="_blank" rel="noopener">Federation of State Medical Boards (FSMB)</a> administers the Interstate Medical Licensure Compact (IMLC), which simplifies multi-state licensing for physicians. As of 2026, 42 states participate in the compact. For psychologists, the PSYPACT compact covers 41 states. These compacts have accelerated multi-state licensing, making the data deduplication problem worse, not better.</p>
+<h2>Multi-State Licensing: The Territory Planning Nightmare</h2>
 
-<p>Here's what multi-state licensing means for your data:</p>
+<p>A dermatologist in a brick-and-mortar practice in Chicago is licensed in Illinois. Simple. A teledermatologist based in Chicago might be licensed in Illinois, Indiana, Wisconsin, Michigan, Ohio, Iowa, and 6 other states. They see patients in all of them.</p>
 
-<ul>
-<li><strong>Deduplication is critical.</strong> Without proper deduplication, your reps will call the same provider multiple times thinking they're different people. One provider with licenses in 10 states is still one person who needs one sales conversation.</li>
-<li><strong>State-level targeting gets complicated.</strong> If you're selling a product available only in certain states, you need to know which states a telehealth provider is licensed in and actively practicing in. Licensed doesn't mean active. A provider might hold a California license but haven't seen a California patient in 2 years.</li>
-<li><strong>Platform affiliation matters more than geography.</strong> A telehealth provider's primary "location" is the platform they work through, not their home state. Knowing that a psychiatrist is contracted with Cerebral tells you more about their workflow, tools, and pain points than knowing they live in Colorado.</li>
-</ul>
+<p>For sales teams, this creates a territory attribution problem. Which rep gets credit for this provider? The one covering Illinois (where the provider lives)? The one covering Ohio (where 30% of their patients are)? All of them?</p>
 
-<h2>Telehealth Prescribers and the Ryan Haight Act</h2>
+<p>The <a href="https://www.fsmb.org/advocacy/interstate-medical-licensure-compact/" target="_blank" rel="noopener">Federation of State Medical Boards (FSMB)</a> tracks the Interstate Medical Licensure Compact, which now includes 40+ member states. This compact makes it easier for physicians to get licensed in multiple states, which means multi-state telehealth practice will keep growing. Your data and territory models need to account for this.</p>
 
-<p>If you're selling to telehealth providers who prescribe controlled substances, you need to understand the Ryan Haight Act and its impact on prescribing data.</p>
-
-<p>The Ryan Haight Online Pharmacy Consumer Protection Act (2008) requires an in-person medical evaluation before prescribing controlled substances via telemedicine. During COVID, the DEA issued temporary exemptions allowing telehealth prescribing of controlled substances without an in-person visit. Those exemptions have been extended multiple times but remain temporary.</p>
-
-<p>As of early 2026, the DEA has proposed a rule requiring a DEA-registered telehealth provider to either conduct an in-person evaluation or use a Special Registration for Telemedicine. This creates a distinct provider segment: telehealth prescribers who need Special Registration vs. those who only prescribe non-controlled medications.</p>
-
-<p>For pharma companies and pharmacies, this distinction is critical. A telehealth provider prescribing stimulants for ADHD (Schedule II) faces different regulatory requirements than one prescribing SSRIs for depression (non-controlled). Your data should flag which telehealth providers hold DEA registrations with controlled substance authority and in which states those registrations are active.</p>
-
-<p>Learn more about mental health provider data challenges in our <a href="/blog/mental-health-provider-data-for-telehealth/">mental health provider data for telehealth</a> guide.</p>
-
-<h2>What Companies Are Selling to Telehealth Providers</h2>
-
-<p>The telehealth provider market attracts several categories of B2B sellers:</p>
-
-<h3>SaaS and Platform Companies</h3>
-
-<ul>
-<li><strong>Telehealth platforms</strong> (Doxy.me, Zoom for Healthcare, Amwell) selling video infrastructure</li>
-<li><strong>EHR/EMR vendors</strong> building telehealth-native clinical documentation</li>
-<li><strong>Practice management platforms</strong> handling scheduling, billing, and patient intake for virtual practices</li>
-<li><strong>E-prescribing tools</strong> with telehealth-specific compliance workflows</li>
-<li><strong>Patient engagement platforms</strong> managing between-visit communication, symptom tracking, and medication adherence</li>
-</ul>
-
-<p>These companies need to reach the provider directly because telehealth providers make their own technology decisions. There's no IT department or procurement committee in a solo virtual practice. The provider is the user, the buyer, and the decision-maker.</p>
-
-<h3>Medical Device Companies</h3>
-
-<p>Remote patient monitoring (RPM) devices are the primary hardware play in telehealth. Blood pressure monitors, glucose monitors, pulse oximeters, and wearable devices that stream data to telehealth providers represent a growing market. The telehealth provider is both the prescriber of the device and the consumer of the data it generates.</p>
-
-<p>RPM device sales require data that identifies which telehealth providers are managing chronic conditions (diabetes, hypertension, heart failure) where remote monitoring is clinically relevant and reimbursable. CMS has expanded RPM billing codes, making this a revenue-positive addition for telehealth practices.</p>
-
-<h3>Staffing and Credentialing Services</h3>
-
-<p>Telehealth platforms constantly recruit providers. Staffing companies and credentialing services that help providers get licensed in multiple states, get credentialed with insurance panels, and get onboarded to telehealth platforms are a growing market. These companies need provider data segmented by specialty, licensing status, and platform affiliation.</p>
-
-<h2>Building a Telehealth Provider Database</h2>
-
-<p>Here's the process that works:</p>
+<h3>Practical Solutions for Multi-State Attribution</h3>
 
 <ol>
-<li><strong>Start with NPI, but don't stop there.</strong> The NPI registry captures most telehealth providers, but their records may be outdated or reflect a previous in-person practice. Use NPI as the identity anchor, not the sole data source.</li>
-<li><strong>Layer in state licensing data.</strong> Pull active license records from every state your target providers might practice in. This reveals multi-state coverage and license status (active, expired, restricted).</li>
-<li><strong>Map platform affiliations.</strong> Scrape provider directories on major telehealth platforms. This tells you where providers are actively seeing patients and what specialties they're offering through each platform.</li>
-<li><strong>Classify virtual-only vs. hybrid.</strong> Cross-reference NPI address data with practice website analysis. If the NPI address is residential or a virtual office and there's no physical clinic website, the provider is likely virtual-only.</li>
-<li><strong>Deduplicate aggressively.</strong> Match across NPI, state license numbers, and name/DOB combinations. A provider with 8 state licenses should be one record with 8 license attributes, not 8 records.</li>
-<li><strong>Enrich contact channels.</strong> Traditional contact data (office phone, fax) doesn't work for virtual providers. You need email addresses, LinkedIn profiles, and platform-specific messaging channels. Direct outreach paths matter more here than in any other provider segment.</li>
+<li><strong>Primary practice state.</strong> Assign each provider to their primary state based on where they physically operate (home office or headquarters), regardless of how many states they're licensed in. This is the simplest approach and works for most sales motions.</li>
+<li><strong>Patient volume weighting.</strong> If you have claims data or patient volume estimates, attribute the provider to each state proportionally. A provider seeing 60% Illinois patients and 40% Indiana patients gets partial credit in both territories. More complex, but more accurate for market sizing.</li>
+<li><strong>License state enumeration.</strong> Store all license states in your database and make them searchable. When a rep needs to know "who's licensed to practice in Ohio via telehealth," they can query across the full license dataset, not just primary addresses.</li>
 </ol>
 
-<p>Explore our <a href="/providers/mental-health/">mental health provider data</a> for the specialty most active in telehealth, or check out our analysis of <a href="/blog/healthcare-provider-data-trends-2026/">healthcare provider data trends in 2026</a> for more on how virtual care is changing the data landscape.</p>
+<h2>DEA Telehealth Prescribing Rules: Why They Matter for Your Data</h2>
 
-<h2>Telehealth Data Quality Challenges</h2>
+<p>If you're selling to telehealth prescribers, the DEA's evolving telehealth prescribing rules are critical context. During the COVID public health emergency, the DEA allowed providers to prescribe controlled substances via telehealth without an in-person visit. As that flexibility winds down, the rules are getting more complex.</p>
 
-<p>Three problems plague telehealth provider data more than any other segment:</p>
-
-<h3>Address Decay</h3>
-
-<p>Telehealth providers change addresses more frequently than office-based providers because their "address" is often a home or virtual office that has no clinical significance. A provider who moves from Denver to Portland doesn't change their practice in any meaningful way, but their NPI address becomes stale. We see 15-20% annual address decay rates for virtual-only providers, compared to 6-8% for traditional practices.</p>
-
-<h3>Platform Churn</h3>
-
-<p>Telehealth providers switch platforms frequently. A therapist might leave BetterHelp for Alma, then join Headway while maintaining their Alma contract. Platform affiliation data has a shelf life of 3-6 months before it needs re-verification. Static databases can't keep up with this churn.</p>
-
-<h3>Scope Ambiguity</h3>
-
-<p>Many telehealth providers offer services outside their primary specialty. A family medicine physician might offer telehealth weight management, dermatology triage, and mental health counseling alongside traditional primary care. Their NPI taxonomy says "family medicine," but their telehealth practice looks nothing like a traditional family medicine clinic. Specialty classification for telehealth providers requires service-level analysis, not just credential-level data.</p>
-
-<h2>Compliance Considerations for Telehealth Outreach</h2>
-
-<p>Selling to telehealth providers raises specific compliance questions that don't apply to traditional practice outreach:</p>
+<p>As of early 2026, the DEA has proposed rules that would require an initial in-person visit for Schedule II-V controlled substance prescriptions initiated via telehealth, with some exceptions. This directly affects:</p>
 
 <ul>
-<li><strong>State privacy laws:</strong> Because telehealth providers practice across states, your outreach may be subject to privacy regulations in every state they're licensed in. California's CCPA may apply to a provider who's physically in Texas but licensed and seeing patients in California.</li>
-<li><strong>CAN-SPAM and email:</strong> Many telehealth providers use personal email addresses for professional purposes. Make sure your email outreach complies with CAN-SPAM requirements and includes clear opt-out mechanisms.</li>
-<li><strong>Platform terms of service:</strong> Some telehealth platforms prohibit third-party marketing to their contracted providers. Reaching out to a provider through a platform's messaging system may violate their terms.</li>
+<li><strong>Telepsychiatry providers</strong> prescribing stimulants (ADHD medications like Adderall, Vyvanse) and benzodiazepines</li>
+<li><strong>Pain management telehealth</strong> providers prescribing opioids and muscle relaxants</li>
+<li><strong>Telehealth companies</strong> built specifically around controlled substance prescribing (some of which have already shut down or pivoted)</li>
 </ul>
 
-<p>None of these are dealbreakers, but they require data that tracks licensing jurisdiction and contact channel provenance. You need to know not just how to reach a provider, but whether your outreach method is compliant in their jurisdiction.</p>
+<p>For data purposes, you need to distinguish between telehealth prescribers who handle controlled substances and those who don't. A teledermatology company prescribing topical retinoids isn't affected by DEA rule changes. A telepsychiatry company prescribing Adderall is directly in the crosshairs. The DEA registration status and Schedule classifications in your provider data become critical filtering fields.</p>
 
-<h2>The Future of Telehealth Provider Data</h2>
+<h3>The Impact on Your Target List</h3>
 
-<p>Three trends will shape telehealth provider data over the next 2-3 years:</p>
+<p>DEA rule changes will cause market consolidation. Some virtual-only prescribers of controlled substances will need to add in-person capabilities or partner with brick-and-mortar practices. This means your data needs to track these transitions. A provider who was virtual-only in 2025 might be hybrid by mid-2026. If your database still shows them as virtual-only, your reps are working with outdated intelligence.</p>
+
+<h2>Selling SaaS to Telehealth Providers</h2>
+
+<p>If you're selling practice management software, EHR systems, patient engagement tools, or other SaaS products to telehealth providers, here's what your data needs to include beyond standard practice fields.</p>
+
+<h3>Technology Stack Indicators</h3>
+
+<p>Telehealth providers are technology-native by definition. They already use video platforms, EHR systems, e-prescribing tools, and patient scheduling software. Your competitive landscape is denser here than in traditional practices where some providers are still using paper charts.</p>
+
+<p>Key data points:</p>
 
 <ul>
-<li><strong>Compact expansion:</strong> As more states join the IMLC and PSYPACT, multi-state licensing will become the norm rather than the exception. Data systems need to handle providers practicing in 20+ states without creating duplication.</li>
-<li><strong>DEA telehealth registration:</strong> Once the DEA finalizes its Special Registration for Telemedicine, a new data layer will emerge. Providers with Special Registration can prescribe controlled substances via telehealth permanently. That registration status becomes a high-value targeting attribute for pharma companies.</li>
-<li><strong>Platform consolidation:</strong> The telehealth platform market is consolidating. Smaller platforms will be acquired or shut down, and providers will concentrate on fewer, larger platforms. This makes platform affiliation data both more valuable (fewer platforms to track) and more accurate (less churn).</li>
+<li><strong>Current EHR system.</strong> Is the provider on a major platform (Epic, Cerner, athenahealth) or a telehealth-specific system (Wheel, Truepill infrastructure, custom build)?</li>
+<li><strong>Video platform.</strong> Doxy.me, Zoom for Healthcare, proprietary. This indicates how integrated their telehealth tech stack is.</li>
+<li><strong>Practice size.</strong> Solo telehealth providers buy differently than 50-provider telehealth companies. Solo providers want simplicity. Larger operations want API integrations and reporting.</li>
+<li><strong>Funding status.</strong> For venture-backed telehealth companies, funding stage affects buying capacity and urgency. A Series B company with fresh capital is a better SaaS prospect than one that just did layoffs.</li>
 </ul>
+
+<h3>Selling Devices to Telehealth Providers</h3>
+
+<p>This sounds counterintuitive, but telehealth providers are a growing market for medical devices, specifically remote patient monitoring (RPM) devices. Blood pressure cuffs, continuous glucose monitors, pulse oximeters, and other home-use devices are prescribed or recommended by telehealth providers to compensate for the lack of in-person vital signs collection.</p>
+
+<p>RPM is one of the fastest-growing telehealth reimbursement categories. Providers can bill CPT codes 99453, 99454, 99457, and 99458 for RPM setup, data transmission, and monitoring. This creates a financial incentive for telehealth providers to incorporate devices into their practice.</p>
+
+<p>Data needs for RPM device sales: provider specialty (chronic disease management specialties like endocrinology, cardiology, and pulmonology are highest-value targets), patient panel size (more patients = more device volume), current RPM program status (already billing RPM codes vs. not yet), and payer mix (Medicare patients drive RPM reimbursement).</p>
+
+<h2>Finding Telehealth Providers in Your Data</h2>
+
+<p>Here's the step-by-step process for building a telehealth provider database.</p>
+
+<h3>Step 1: NPI Registry Signals</h3>
+
+<p>The NPI registry doesn't have a "telehealth" flag. But there are signals. Look for: practice addresses that are clearly residential or virtual office spaces, providers with multiple practice location addresses in different states, and taxonomy codes associated with high telehealth adoption (psychiatry, psychology, primary care, dermatology).</p>
+
+<h3>Step 2: State License Cross-Referencing</h3>
+
+<p>Providers with licenses in 5+ states who aren't part of a large health system are likely doing telehealth. Cross-reference NPI data with state medical board records to build a multi-state license profile for each provider. The Interstate Medical Licensure Compact database is a useful starting point.</p>
+
+<h3>Step 3: Telehealth Platform Identification</h3>
+
+<p>Identify providers affiliated with known telehealth platforms. Scrape organizational NPI records for major telehealth companies, then link individual providers to those organizations. This captures employed and contracted telehealth providers who might not be identifiable from NPI data alone.</p>
+
+<h3>Step 4: Website and Marketing Signal Analysis</h3>
+
+<p>Practices that offer telehealth almost always market it on their websites. Look for: "telehealth," "virtual visits," "online appointments," video platform integration pages, and state-specific "we see patients in..." language. This is particularly useful for identifying hybrid providers who added telehealth as a service line.</p>
+
+<h3>Step 5: Claims-Based Identification</h3>
+
+<p>If you have access to claims data, telehealth visits are identifiable through place-of-service code 02 (Telehealth Provided Other than in Patient's Home) and modifier 95 (Synchronous Telemedicine Service). Providers with significant volume on these codes are confirmed telehealth practitioners.</p>
+
+<h2>Data Quality Challenges Specific to Telehealth</h2>
+
+<p>Beyond the structural challenges already discussed, telehealth data has unique quality issues that affect every downstream use case.</p>
+
+<h3>Address Instability</h3>
+
+<p>Virtual-only providers change addresses more frequently than brick-and-mortar practices because their address is often a home office or virtual mailbox. When a provider moves from Austin to Denver, their practice "moves" too. In traditional healthcare data, an address change might happen once per decade. For virtual providers, it can happen yearly. This means your data refresh cadence needs to be more aggressive for telehealth segments.</p>
+
+<h3>Provider-Company Attribution</h3>
+
+<p>Many telehealth providers work for multiple platforms simultaneously. A psychiatrist might see patients through Talkiatry 3 days per week and through their own independent practice 2 days per week. Your data might show them affiliated with Talkiatry, with their independent practice, or both. Getting this attribution right matters for targeting: if you're selling to the platform, you need to know which providers are on it. If you're selling to independent providers, you need to exclude platform-employed ones.</p>
+
+<h3>Credential Verification Complexity</h3>
+
+<p>Telehealth providers practicing across state lines need active licenses in each state. License lapses are more common in multi-state scenarios because providers have more renewals to track. A provider licensed in 12 states who lets 3 licenses lapse is still active in 9 states. Your data should reflect current license status by state, not just a single "active/inactive" flag. Review our <a href="/providers/mental-health/">mental health provider data</a> for examples of multi-state license tracking in the highest-telehealth-adoption specialty.</p>
+
+<h2>Telehealth Market Sizing: Getting the Numbers Right</h2>
+
+<p>Market sizing for telehealth is tricky because the definition keeps shifting. Here's a framework that works:</p>
+
+<ol>
+<li><strong>Virtual-only companies and their employed/contracted providers.</strong> Start with the known telehealth companies and count their provider networks. This is the most clearly defined segment. Estimated at 50,000-80,000 providers nationally, though many work part-time on these platforms.</li>
+<li><strong>Hybrid practices with active telehealth service lines.</strong> Estimated at 150,000-200,000 practices that conducted at least 10 telehealth visits in the past quarter. This number is softer because it depends on how you define "active."</li>
+<li><strong>Individual providers with telehealth capability but low volume.</strong> Hundreds of thousands of providers technically have telehealth capabilities through their EHR system. Most don't use it regularly. Including them inflates your TAM without improving your pipeline.</li>
+</ol>
+
+<p>For most sales motions, segments 1 and 2 are your real TAM. Segment 3 is aspirational. Your data should clearly distinguish between them so you can focus outreach on providers who are doing telehealth, not providers who once set up a Zoom account. Check out our <a href="/blog/healthcare-provider-data-trends-2026/">2026 provider data trends</a> article for broader context on how verification frequency affects data quality across all segments.</p>
+
+<h2>What to Ask a Data Vendor About Telehealth Coverage</h2>
+
+<p>Before buying telehealth provider data from any source, ask these questions:</p>
+
+<ul>
+<li>How do you identify telehealth providers vs. traditional in-person practices?</li>
+<li>Can you distinguish virtual-only providers from hybrid practices?</li>
+<li>Do you track multi-state licensure at the provider level?</li>
+<li>How do you handle address data for virtual-only providers?</li>
+<li>Do you track telehealth platform affiliations (which providers work for which platforms)?</li>
+<li>How frequently is your telehealth data refreshed? (This should be more frequent than traditional provider data)</li>
+<li>Can you provide technology stack data (EHR, video platform, RPM capabilities)?</li>
+<li>Do you track DEA registration and controlled substance prescribing authorization?</li>
+</ul>
+
+<p>If the vendor's telehealth coverage is just "NPI records with a telehealth tag," that's not sufficient. The telehealth segment requires purpose-built data enrichment that goes well beyond standard provider databases.</p>
+
+<p>Need telehealth provider data that reflects how virtual care works? <a href="/contact/">Contact Provyx</a> to discuss your specific use case and see sample records.</p>
 
         </div>
     </section>
@@ -449,30 +474,34 @@
         </div>
     </section>
     
-        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you find telehealth-only providers in the NPI database?", "acceptedAnswer": {"@type": "Answer", "text": "The NPI registry doesn't have a telehealth flag. You identify virtual-only providers by cross-referencing NPI addresses with practice website analysis and telehealth platform directories. If a provider's NPI address is residential or a virtual office, they have no physical clinic website, and they appear on telehealth platform provider directories, they're likely virtual-only. This multi-signal approach correctly classifies roughly 85% of virtual providers."}}, {"@type": "Question", "name": "How many telehealth providers are there in the US?", "acceptedAnswer": {"@type": "Answer", "text": "There's no single count because 'telehealth provider' isn't a formal classification. HHS reports that over 40% of all providers used telehealth as of 2024. Among mental health providers, the share exceeds 70%. The number of virtual-only providers (no physical practice) is estimated at 50,000-80,000 and growing. The challenge isn't the total count. It's identifying which providers are actively using telehealth vs. those who used it once and stopped."}}, {"@type": "Question", "name": "What is the Ryan Haight Act and how does it affect telehealth data?", "acceptedAnswer": {"@type": "Answer", "text": "The Ryan Haight Act requires an in-person evaluation before prescribing controlled substances via telemedicine. COVID-era exemptions allowed remote prescribing without in-person visits, but these are temporary. The DEA is implementing Special Registration for Telemedicine that will allow permanent telehealth controlled substance prescribing. For data purposes, this creates a critical segmentation: telehealth prescribers with DEA controlled substance authority vs. those prescribing only non-controlled medications."}}, {"@type": "Question", "name": "How often does telehealth provider data need to be refreshed?", "acceptedAnswer": {"@type": "Answer", "text": "More often than traditional provider data. We see 15-20% annual address decay for virtual-only providers vs. 6-8% for office-based providers. Platform affiliations change every 3-6 months. State licensing status can shift quarterly. For active sales campaigns targeting telehealth providers, monthly data refreshes are the minimum. Weekly verification of high-priority targets is better."}}, {"@type": "Question", "name": "Can I target telehealth providers by the platform they work for?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and it's one of the most effective segmentation strategies. Knowing that a provider contracts with Cerebral, Talkiatry, or Headway tells you about their patient volume, specialty focus, technology stack, and likely pain points. We map platform affiliations by scraping provider directories on major telehealth platforms and cross-referencing with NPI and licensing data."}}]}</script>
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I identify telehealth providers in healthcare databases?", "acceptedAnswer": {"@type": "Answer", "text": "There's no single 'telehealth' flag in the NPI registry. You need to combine multiple signals: multi-state licensure patterns, practice addresses (virtual offices, residential), telehealth platform affiliations, website marketing language mentioning virtual visits, and claims data with place-of-service code 02 or modifier 95. Purpose-built telehealth datasets layer these signals to classify providers as virtual-only, hybrid, or telehealth-capable but inactive."}}, {"@type": "Question", "name": "What's the difference between virtual-only and hybrid telehealth providers?", "acceptedAnswer": {"@type": "Answer", "text": "Virtual-only providers deliver care exclusively through video, phone, or asynchronous messaging with no physical clinic. Hybrid providers operate traditional brick-and-mortar practices that also offer telehealth as a service line. Hybrid is the larger segment by provider count. The distinction matters because their technology needs, buying processes, and data profiles are very different."}}, {"@type": "Question", "name": "How do DEA telehealth prescribing rules affect provider data?", "acceptedAnswer": {"@type": "Answer", "text": "The DEA's evolving rules around controlled substance prescribing via telehealth directly impact providers in psychiatry, pain management, and ADHD treatment. Proposed rules may require initial in-person visits for controlled substance prescriptions started via telehealth. This will force some virtual-only prescribers to add in-person capabilities or shut down, changing their data profile from virtual-only to hybrid or inactive."}}, {"@type": "Question", "name": "How should I handle territory assignment for multi-state telehealth providers?", "acceptedAnswer": {"@type": "Answer", "text": "Three common approaches: (1) assign to the provider's physical home base state, (2) weight assignment by patient volume across states, or (3) store all license states and allow multi-territory querying. Most sales teams use option 1 for simplicity but maintain searchable license data for market sizing and coverage analysis."}}, {"@type": "Question", "name": "Can I use NPI data alone to build a telehealth provider list?", "acceptedAnswer": {"@type": "Answer", "text": "NPI data alone is insufficient for telehealth targeting. It lacks telehealth activity indicators, multi-state license details beyond the registration address, platform affiliations, technology stack information, and virtual vs. hybrid classification. You need enrichment from state medical board records, website analysis, platform employment data, and ideally claims-based telehealth utilization signals."}}, {"@type": "Question", "name": "What types of products sell well to telehealth providers?", "acceptedAnswer": {"@type": "Answer", "text": "The main categories are: SaaS (practice management, EHR, patient engagement, scheduling), remote patient monitoring devices (blood pressure cuffs, glucose monitors, pulse oximeters), e-prescribing and pharmacy integration tools, clinical decision support software, and patient communication platforms. RPM devices are a particularly fast-growing segment due to dedicated Medicare reimbursement codes."}}]}</script>
         <section class="section faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
-                    <summary class="faq-item__question">How do you find telehealth-only providers in the NPI database?</summary>
-                    <div class="faq-item__answer"><p>The NPI registry doesn't have a telehealth flag. You identify virtual-only providers by cross-referencing NPI addresses with practice website analysis and telehealth platform directories. If a provider's NPI address is residential or a virtual office, they have no physical clinic website, and they appear on telehealth platform provider directories, they're likely virtual-only. This multi-signal approach correctly classifies roughly 85% of virtual providers.</p></div>
+                    <summary class="faq-item__question">How do I identify telehealth providers in healthcare databases?</summary>
+                    <div class="faq-item__answer"><p>There's no single 'telehealth' flag in the NPI registry. You need to combine multiple signals: multi-state licensure patterns, practice addresses (virtual offices, residential), telehealth platform affiliations, website marketing language mentioning virtual visits, and claims data with place-of-service code 02 or modifier 95. Purpose-built telehealth datasets layer these signals to classify providers as virtual-only, hybrid, or telehealth-capable but inactive.</p></div>
                 </details>
                 <details class="faq-item">
-                    <summary class="faq-item__question">How many telehealth providers are there in the US?</summary>
-                    <div class="faq-item__answer"><p>There's no single count because 'telehealth provider' isn't a formal classification. HHS reports that over 40% of all providers used telehealth as of 2024. Among mental health providers, the share exceeds 70%. The number of virtual-only providers (no physical practice) is estimated at 50,000-80,000 and growing. The challenge isn't the total count. It's identifying which providers are actively using telehealth vs. those who used it once and stopped.</p></div>
+                    <summary class="faq-item__question">What's the difference between virtual-only and hybrid telehealth providers?</summary>
+                    <div class="faq-item__answer"><p>Virtual-only providers deliver care exclusively through video, phone, or asynchronous messaging with no physical clinic. Hybrid providers operate traditional brick-and-mortar practices that also offer telehealth as a service line. Hybrid is the larger segment by provider count. The distinction matters because their technology needs, buying processes, and data profiles are very different.</p></div>
                 </details>
                 <details class="faq-item">
-                    <summary class="faq-item__question">What is the Ryan Haight Act and how does it affect telehealth data?</summary>
-                    <div class="faq-item__answer"><p>The Ryan Haight Act requires an in-person evaluation before prescribing controlled substances via telemedicine. COVID-era exemptions allowed remote prescribing without in-person visits, but these are temporary. The DEA is implementing Special Registration for Telemedicine that will allow permanent telehealth controlled substance prescribing. For data purposes, this creates a critical segmentation: telehealth prescribers with DEA controlled substance authority vs. those prescribing only non-controlled medications.</p></div>
+                    <summary class="faq-item__question">How do DEA telehealth prescribing rules affect provider data?</summary>
+                    <div class="faq-item__answer"><p>The DEA's evolving rules around controlled substance prescribing via telehealth directly impact providers in psychiatry, pain management, and ADHD treatment. Proposed rules may require initial in-person visits for controlled substance prescriptions started via telehealth. This will force some virtual-only prescribers to add in-person capabilities or shut down, changing their data profile from virtual-only to hybrid or inactive.</p></div>
                 </details>
                 <details class="faq-item">
-                    <summary class="faq-item__question">How often does telehealth provider data need to be refreshed?</summary>
-                    <div class="faq-item__answer"><p>More often than traditional provider data. We see 15-20% annual address decay for virtual-only providers vs. 6-8% for office-based providers. Platform affiliations change every 3-6 months. State licensing status can shift quarterly. For active sales campaigns targeting telehealth providers, monthly data refreshes are the minimum. Weekly verification of high-priority targets is better.</p></div>
+                    <summary class="faq-item__question">How should I handle territory assignment for multi-state telehealth providers?</summary>
+                    <div class="faq-item__answer"><p>Three common approaches: (1) assign to the provider's physical home base state, (2) weight assignment by patient volume across states, or (3) store all license states and allow multi-territory querying. Most sales teams use option 1 for simplicity but maintain searchable license data for market sizing and coverage analysis.</p></div>
                 </details>
                 <details class="faq-item">
-                    <summary class="faq-item__question">Can I target telehealth providers by the platform they work for?</summary>
-                    <div class="faq-item__answer"><p>Yes, and it's one of the most effective segmentation strategies. Knowing that a provider contracts with Cerebral, Talkiatry, or Headway tells you about their patient volume, specialty focus, technology stack, and likely pain points. We map platform affiliations by scraping provider directories on major telehealth platforms and cross-referencing with NPI and licensing data.</p></div>
+                    <summary class="faq-item__question">Can I use NPI data alone to build a telehealth provider list?</summary>
+                    <div class="faq-item__answer"><p>NPI data alone is insufficient for telehealth targeting. It lacks telehealth activity indicators, multi-state license details beyond the registration address, platform affiliations, technology stack information, and virtual vs. hybrid classification. You need enrichment from state medical board records, website analysis, platform employment data, and ideally claims-based telehealth utilization signals.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What types of products sell well to telehealth providers?</summary>
+                    <div class="faq-item__answer"><p>The main categories are: SaaS (practice management, EHR, patient engagement, scheduling), remote patient monitoring devices (blood pressure cuffs, glucose monitors, pulse oximeters), e-prescribing and pharmacy integration tools, clinical decision support software, and patient communication platforms. RPM devices are a particularly fast-growing segment due to dedicated Medicare reimbursement codes.</p></div>
                 </details>
             </div>
         </section>
@@ -481,8 +510,8 @@
         <div class="container">
             <div class="outbound-references">
                 <h3>Sources and References</h3>
-                <ul><li><a href="https://www.hhs.gov/telehealth/index.html" target="_blank" rel="noopener noreferrer">HHS Telehealth Policy</a></li>
-<li><a href="https://www.fsmb.org/advocacy/interstate-medical-licensure-compact/" target="_blank" rel="noopener noreferrer">Federation of State Medical Boards Interstate Compact</a></li>
+                <ul><li><a href="https://www.hhs.gov/about/news/index.html" target="_blank" rel="noopener noreferrer">U.S. Department of Health and Human Services</a></li>
+<li><a href="https://www.fsmb.org/advocacy/interstate-medical-licensure-compact/" target="_blank" rel="noopener noreferrer">FSMB Interstate Medical Licensure Compact</a></li>
 </ul>
             </div>
         </div>
@@ -494,7 +523,7 @@
             <ul class="related-links"><li><a href="/blog/mental-health-provider-data-for-telehealth/">Mental Health Provider Data for Telehealth</a></li>
 <li><a href="/providers/mental-health/">Mental Health Provider Data</a></li>
 <li><a href="/blog/healthcare-provider-data-trends-2026/">Healthcare Provider Data Trends 2026</a></li>
-<li><a href="/blog/provider-data-enrichment-npi-to-sales-ready/">Provider Data Enrichment Guide</a></li>
+<li><a href="/contact/">Contact Us</a></li>
 </ul>
         </div>
     </section>
