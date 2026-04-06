@@ -37,7 +37,7 @@ EVENT_POSTS_BATCH3 = [
 
 <p>When the invitation list comes from individual reps, you get their network, not the ideal audience. A rep who's been in territory for two years has relationships with maybe 30-50 physicians. They'll invite the ones they know, regardless of whether those physicians are the best clinical fit for the KOL's topic.</p>
 
-<p>This creates two failures. First, you miss physicians who would genuinely benefit from the content because they're not in any rep's rolodex. Second, you fill seats with physicians who attend as a favor to the rep but have no real interest in the clinical topic. They're polite, they eat dinner, and they never think about the discussion again.</p>
+<p>This creates two failures. First, you miss physicians who would benefit from the content because they're not in any rep's rolodex. Second, you fill seats with physicians who attend as a favor to the rep but have no real interest in the clinical topic. They're polite, they eat dinner, and they never think about the discussion again.</p>
 
 <h3>Problem 2: Stale CRM Data</h3>
 

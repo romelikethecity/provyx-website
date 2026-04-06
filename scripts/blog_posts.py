@@ -3119,7 +3119,7 @@ BLOG_POSTS = [
 <p>Best,<br>[Name]<br>[Title]</p>
 </blockquote>
 
-<p><strong>Why this works:</strong> The subject line names the specialty, the procedure, and the date. The body leads with a financial outcome specific to chiropractic. No generic language. No "cutting-edge technology" filler.</p>
+<p><strong>Why this works:</strong> The subject line names the specialty, the procedure, and the date. The body leads with a financial outcome specific to chiropractic. No generic language. No "advanced technology" filler.</p>
 
 <h2>Template 2: KOL Dinner Invitation (Cardiologists)</h2>
 
@@ -3237,7 +3237,7 @@ BLOG_POSTS = [
         "faqs": [
             {
                 "question": "What should a physician event invitation email include?",
-                "answer": "The subject line should name the specialty, the topic, and the date or city. The body should lead with a specific benefit relevant to that specialty (financial outcome, clinical application, or competitive advantage). Include event logistics (date, time, venue), speaker credentials if applicable, and a pre-filled registration link. Avoid generic language like 'exciting opportunity' or 'cutting-edge technology.'",
+                "answer": "The subject line should name the specialty, the topic, and the date or city. The body should lead with a specific benefit relevant to that specialty (financial outcome, clinical application, or competitive advantage). Include event logistics (date, time, venue), speaker credentials if applicable, and a pre-filled registration link. Avoid generic language like 'exciting opportunity' or 'advanced technology.'",
             },
             {
                 "question": "How do I create pre-filled registration links for physician events?",
@@ -11823,7 +11823,7 @@ BLOG_POSTS = [
 
 <h3>Mistake 5: Treating All Cataract Surgeons the Same</h3>
 
-<p>A high-volume cataract surgeon doing 2,000 cases per year is a fundamentally different prospect than one doing 200 cases. Volume affects IOL preferences (premium vs. standard), equipment utilization rates (ROI calculations change), and purchasing influence (high-volume surgeons have more leverage at ASCs). Segment by procedure volume when possible.</p>
+<p>A high-volume cataract surgeon doing 2,000 cases per year is a fundamentally different prospect than one doing 200 cases. Volume affects IOL preferences (premium vs. standard), equipment use rates (ROI calculations change), and purchasing influence (high-volume surgeons have more leverage at ASCs). Segment by procedure volume when possible.</p>
 
 <h2>Getting Started with Ophthalmology Practice Data</h2>
 
@@ -12469,7 +12469,7 @@ BLOG_POSTS = [
 
 <h3>CMS Procedure Data</h3>
 
-<p><a href="https://www.cms.gov/data-research" target="_blank" rel="noopener">CMS publishes Medicare physician utilization data</a> that shows which providers performed which procedures and in what volumes. For device companies, this is gold. You can identify which pain physicians performed the most spinal cord stimulator trials (CPT 63650), the most epidural steroid injections (CPT 62322/62323), or the most radiofrequency ablations (CPT 64633-64636).</p>
+<p><a href="https://www.cms.gov/data-research" target="_blank" rel="noopener">CMS publishes Medicare physician use data</a> that shows which providers performed which procedures and in what volumes. For device companies, this is gold. You can identify which pain physicians performed the most spinal cord stimulator trials (CPT 63650), the most epidural steroid injections (CPT 62322/62323), or the most radiofrequency ablations (CPT 64633-64636).</p>
 
 <p>This data runs approximately 18 months behind, but procedure patterns are relatively stable year over year. A physician performing 200 SCS trials per year in the 2024 data is almost certainly still a high-volume implanter in 2026.</p>
 
@@ -12548,7 +12548,7 @@ BLOG_POSTS = [
 <li><strong>Segment by practice type.</strong> Interventional vs. comprehensive vs. PM&R-based. Your messaging and product positioning should differ by segment.</li>
 <li><strong>Flag ASC affiliations.</strong> Identify which physicians perform procedures at ASCs and include ASC contact information in your dataset.</li>
 <li><strong>Enrich with contact data.</strong> Add direct phone numbers, email addresses, and office manager contacts for each practice. Verify against multiple sources.</li>
-<li><strong>Layer procedure volume estimates.</strong> Use CMS utilization data to prioritize high-volume practices. Your top 20% of targets by procedure volume likely represent 60-70% of your addressable device revenue.</li>
+<li><strong>Layer procedure volume estimates.</strong> Use CMS use data to prioritize high-volume practices. Your top 20% of targets by procedure volume likely represent 60-70% of your addressable device revenue.</li>
 <li><strong>Map competitive device presence.</strong> Where possible, identify which devices each practice currently uses. This informs your competitive positioning and replacement strategy.</li>
 </ol>
 
@@ -12573,7 +12573,7 @@ BLOG_POSTS = [
             },
             {
                 "question": "How do I identify high-volume spinal cord stimulator implanters?",
-                "answer": "CMS Medicare physician utilization data shows procedure volumes by provider NPI. Look for CPT code 63650 (spinal cord stimulator trial) and CPT 63685 (permanent SCS implant). Physicians performing 100+ trials per year are high-volume implanters. This data runs about 18 months behind, but implant volumes are relatively stable year over year for established practices.",
+                "answer": "CMS Medicare physician use data shows procedure volumes by provider NPI. Look for CPT code 63650 (spinal cord stimulator trial) and CPT 63685 (permanent SCS implant). Physicians performing 100+ trials per year are high-volume implanters. This data runs about 18 months behind, but implant volumes are relatively stable year over year for established practices.",
             },
             {
                 "question": "What data quality issues should I watch for in pain management provider lists?",
@@ -12885,7 +12885,7 @@ BLOG_POSTS = [
         "content_html": """
 <h2>The Telehealth Data Problem Nobody Talks About</h2>
 
-<p>Telehealth isn't new anymore. Post-pandemic utilization has stabilized at roughly 5-6% of all outpatient visits, according to the <a href="https://www.hhs.gov/about/news/index.html" target="_blank" rel="noopener">U.S. Department of Health and Human Services</a>. That might sound small, but it translates to tens of millions of visits per year and thousands of providers who deliver care primarily or exclusively through virtual channels.</p>
+<p>Telehealth isn't new anymore. Post-pandemic use has stabilized at roughly 5-6% of all outpatient visits, according to the <a href="https://www.hhs.gov/about/news/index.html" target="_blank" rel="noopener">U.S. Department of Health and Human Services</a>. That might sound small, but it translates to tens of millions of visits per year and thousands of providers who deliver care primarily or exclusively through virtual channels.</p>
 
 <p>Here's the problem: traditional healthcare provider databases were built for brick-and-mortar practices. They organize data around physical addresses, local phone numbers, and single-state license records. Telehealth providers break every one of those assumptions. A telepsychiatry company might have providers licensed in 30 states, operating from home offices in 3 states, with a corporate address in a 4th state. Which address goes in your CRM? Which state do you assign to the territory rep?</p>
 
@@ -13068,7 +13068,7 @@ BLOG_POSTS = [
             },
             {
                 "question": "Can I use NPI data alone to build a telehealth provider list?",
-                "answer": "NPI data alone is insufficient for telehealth targeting. It lacks telehealth activity indicators, multi-state license details beyond the registration address, platform affiliations, technology stack information, and virtual vs. hybrid classification. You need enrichment from state medical board records, website analysis, platform employment data, and ideally claims-based telehealth utilization signals.",
+                "answer": "NPI data alone is insufficient for telehealth targeting. It lacks telehealth activity indicators, multi-state license details beyond the registration address, platform affiliations, technology stack information, and virtual vs. hybrid classification. You need enrichment from state medical board records, website analysis, platform employment data, and ideally claims-based telehealth use signals.",
             },
             {
                 "question": "What types of products sell well to telehealth providers?",

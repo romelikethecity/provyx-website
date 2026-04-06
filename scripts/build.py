@@ -717,7 +717,7 @@ ICP_PAGES = [
             },
             {
                 "question": "Can I get a list of practices NOT using any EHR?",
-                "answer": "We can identify practices where we detect no EHR or practice management system. This could mean they genuinely don't use one, or it could mean their system isn't web-visible. For very small practices, especially solo providers without websites, the absence of detected technology is often a real signal. We'll flag the distinction so your team can interpret it correctly during outreach."
+                "answer": "We can identify practices where we detect no EHR or practice management system. This could mean they don't use one, or it could mean their system isn't web-visible. For very small practices, especially solo providers without websites, the absence of detected technology is often a real signal. We'll flag the distinction so your team can interpret it correctly during outreach."
             },
             {
                 "question": "Do you track when practices change their technology?",
@@ -1184,7 +1184,7 @@ COMPARISONS = [
             "listings, and commercial databases.</p>"
             "<p>One note before we start: Provyx is not the right tool for "
             "everyone reading this. If you prospect heavily outside of healthcare, "
-            "ZoomInfo may genuinely be the better investment. We'll explain why "
+            "ZoomInfo may be the better investment. We'll explain why "
             "in the scenario breakdown toward the end of this page. This isn't "
             "a comparison designed to steer you toward one answer. It's designed "
             "to help you make the call faster.</p>"
@@ -1788,7 +1788,7 @@ COMPARISONS = [
             "intelligence on which vendors hospitals are already using. For "
             "enterprise pharmaceutical companies, medical device manufacturers "
             "with national sales forces, and healthcare IT companies selling to "
-            "health systems, this breadth of intelligence is genuinely valuable.</p>"
+            "health systems, this breadth of intelligence is valuable.</p>"
             "<p>Definitive Healthcare's data on hospitals and health systems is "
             "particularly strong. You can identify which facilities perform specific "
             "procedures, estimate their patient volumes for particular conditions, "
@@ -1819,7 +1819,7 @@ COMPARISONS = [
             "patient volume trends, and model the impact of market shifts on "
             "specific facility types. For strategic planning at pharmaceutical "
             "and medical device companies with nine-figure revenue, these tools "
-            "are genuinely differentiated. For a 20-person health-tech company "
+            "are differentiated. For a 20-person health-tech company "
             "that needs contact data for its first 500 outbound emails, they're "
             "academic.</p>"
         ),
@@ -2227,7 +2227,7 @@ COMPARISONS = [
             "The Salesforce add-on alone can exceed the cost of Provyx for a year.",
             "<strong>How many individual provider records will you actually use?</strong> "
             "If it's under 50,000, the per-record cost at Definitive may be $1-2+ each.",
-            "<strong>Can your team fully utilize the analytics platform?</strong> "
+            "<strong>Can your team fully use the analytics platform?</strong> "
             "If you're only exporting contact lists, you're paying for features you won't use.",
             "<strong>What are the renewal terms?</strong> "
             "Ask about automatic uplifts, multi-year lock-ins, and cancellation windows.",
@@ -2341,7 +2341,7 @@ COMPARISONS = [
             "<p>Apollo.io also provides intent data, job change alerts, and "
             "technographic information. These features help prioritize which "
             "accounts to target and when to reach out. For tech and SaaS sales "
-            "teams, these signals are genuinely useful for timing outreach "
+            "teams, these signals are useful for timing outreach "
             "around buying triggers.</p>"
             "<p>The platform has grown rapidly and has a loyal user base, "
             "particularly among startups, SMBs, and growth-stage companies. "
@@ -2359,7 +2359,7 @@ COMPARISONS = [
             "email addresses follow no consistent pattern, are often hosted "
             "through EHR vendors, or route through institutional systems "
             "with non-obvious naming conventions.</p>"
-            "<p>It's worth noting that Apollo.io is genuinely good at what "
+            "<p>It's worth noting that Apollo.io is good at what "
             "it was designed for. The product-market fit for tech sales "
             "teams, startup founders, and growth marketers is strong. The "
             "platform's usability, pricing, and feature set are well-suited "
@@ -2442,7 +2442,7 @@ COMPARISONS = [
             "direct mail campaigns that need the actual clinic address.</p>"
             "<p><strong>Engagement tools don't compensate for bad data.</strong> "
             "Apollo.io's built-in sequencing, calling, and LinkedIn tools are "
-            "genuinely useful. But they amplify whatever data you feed them. "
+            "useful. But they amplify whatever data you feed them. "
             "If 30% of your contact list has invalid email addresses, your "
             "email sequence will damage your sender reputation, trigger spam "
             "filters, and generate vanity metrics (\"we sent 10,000 emails\") "
@@ -2908,7 +2908,7 @@ COMPARISONS = [
         "stack includes the Orchestrated Customer Engagement (OCE) platform for commercial "
         "teams, which integrates CRM functionality with their data assets. For a large pharma "
         "commercial organization, this integration between data, analytics, and execution "
-        "tools can be genuinely valuable. You're not just buying a database; you're buying "
+        "tools can be valuable. You're not just buying a database; you're buying "
         "into an ecosystem where your CRM, your analytics dashboards, and your provider "
         "data all speak the same language.</p>"
 
@@ -3306,7 +3306,7 @@ COMPARISONS = [
         "text": (
             "IQVIA OneKey is designed for pharma commercial operations at scale. "
             "The prescribing data, claims analytics, and global coverage are "
-            "genuinely unmatched. But most of that capability is irrelevant "
+            "unmatched. But most of that capability is irrelevant "
             "if you're building outreach lists, not managing drug brand strategy."
         ),
     },
@@ -3424,7 +3424,7 @@ COMPARISONS = [
         "<p>We'll also be direct about where Lusha wins. If your "
         "prospecting extends well beyond healthcare, or if your primary "
         "workflow is Chrome-based LinkedIn outreach across multiple "
-        "industries, Lusha may genuinely be the better fit. Not every "
+        "industries, Lusha may be the better fit. Not every "
         "team needs a healthcare-specific data vendor, and we'd rather "
         "help you make that call quickly than waste your time.</p>"
     ),
@@ -3472,7 +3472,7 @@ COMPARISONS = [
         "you visit a LinkedIn profile, the extension surfaces the contact's "
         "email address, phone number, company details, and job title in a "
         "sidebar. For sales reps who spend their prospecting hours on "
-        "LinkedIn, this workflow is genuinely efficient. You find someone, "
+        "LinkedIn, this workflow is efficient. You find someone, "
         "you get their contact info, and you add them to your CRM or "
         "outreach sequence in seconds. The friction is minimal, and the "
         "time-to-first-touch is very fast compared to traditional data "
@@ -3538,7 +3538,7 @@ COMPARISONS = [
         "particularly if you're building initial prospect lists for a "
         "new territory or campaign.</p>"
         "<p>Compared to enterprise data platforms, Lusha's pricing is "
-        "genuinely low. A single Pro user at $36 per month costs less "
+        "low. A single Pro user at $36 per month costs less "
         "than most teams spend on coffee. The annual commitment on paid "
         "plans is standard in the industry, and the month-to-month "
         "option (at a higher rate) gives you flexibility if you're not "
@@ -3606,7 +3606,7 @@ COMPARISONS = [
         "or your direct mail campaign needs the right practice address, "
         "Lusha's location data won't get you there.</p>"
         "<p><strong>Chrome-first workflow doesn't fit healthcare "
-        "prospecting.</strong> Lusha's Chrome extension is genuinely "
+        "prospecting.</strong> Lusha's Chrome extension is "
         "great for LinkedIn-based prospecting. The problem is that "
         "many healthcare providers don't maintain active LinkedIn "
         "profiles. Physicians, in particular, are among the least "
@@ -3975,7 +3975,7 @@ COMPARISONS = [
         " Cognism comparison gets interesting.</p>"
         "<p>Cognism is a well-regarded B2B data provider, especially popular in Europe and"
         " among teams that rely heavily on outbound calling. Their Diamond Data product offers"
-        " phone-verified mobile numbers, which is genuinely useful if you're trying to reach"
+        " phone-verified mobile numbers, which is useful if you're trying to reach"
         " decision-makers across industries. They've earned strong reviews on G2 and built a"
         " loyal customer base in EMEA markets. For general B2B prospecting, particularly in"
         " European territories, Cognism is a serious contender.</p>"
@@ -4294,7 +4294,7 @@ COMPARISONS = [
     "scenario_general_b2b": (
         "<strong>If you need phone-verified European B2B contacts:</strong> Cognism is"
         " the stronger choice, and it's not close. Their Diamond Data product provides"
-        " manually verified mobile numbers with genuinely high connect rates, and their"
+        " manually verified mobile numbers with high connect rates, and their"
         " EMEA coverage is among the best in the market. If your sales team is calling"
         " into the UK, Germany, France, or other European markets across a range of"
         " industries, Cognism's compliance infrastructure and verified phone data will"
@@ -4497,7 +4497,7 @@ COMPARISONS = [
         "<strong>Do you need NPI numbers in your records?</strong> "
         "Cognism doesn't have them. This is a dealbreaker for healthcare compliance.",
         "<strong>Is phone outreach your primary channel?</strong> "
-        "If EMEA phone outreach, Cognism's Diamond Data is genuinely valuable.",
+        "If EMEA phone outreach, Cognism's Diamond Data is valuable.",
         "<strong>Do you need taxonomy-based specialty filtering?</strong> "
         "Cognism offers job title filters, not clinical specialty codes.",
         "<strong>What's your total budget including all seats?</strong> "
@@ -5081,7 +5081,7 @@ ALTERNATIVES = [
             "up rationing your exports or submitting requests to the platform team for bulk downloads, "
             "adding delays to what should be a straightforward workflow.</p>"
 
-            "<p>Definitive Healthcare is a genuinely strong product for the use cases it was designed "
+            "<p>Definitive Healthcare is a strong product for the use cases it was designed "
             "for. The mismatch happens when teams buy it as a provider contact database, because that's "
             "not where its strength is concentrated.</p>"
         ),
@@ -5317,7 +5317,7 @@ ALTERNATIVES = [
             "<p>Provyx doesn't provide claims data analytics. If you need to know how many knee "
             "replacements a hospital performed last year or which physicians have the highest referral "
             "volume for a specific procedure, that's not what Provyx does. Definitive Healthcare is "
-            "genuinely better at that job.</p>"
+            "better at that job.</p>"
             "<p>Provyx doesn't map health system org charts, track hospital M&A activity, or provide "
             "capital budget intelligence. If your team's workflow depends on understanding health system "
             "hierarchies and affiliate relationships, Provyx isn't the right tool.</p>"
@@ -5551,7 +5551,7 @@ ALTERNATIVES = [
             "Factor in the $22K+ Salesforce add-on.",
             "<strong>How many individual provider records do you export per month?</strong> "
             "Calculate the per-record cost at your current spend level.",
-            "<strong>Does your team fully utilize the analytics platform?</strong> "
+            "<strong>Does your team fully use the analytics platform?</strong> "
             "Enterprise analytics require dedicated analyst resources.",
         ],
     },
@@ -6141,7 +6141,7 @@ USE_CASES = [
             {"question": "How granular is the geographic data for competitive mapping?",
              "answer": "Practice addresses are geocoded with latitude and longitude coordinates, which supports mapping at any geographic level: state, county, ZIP code, census tract, or custom-drawn boundaries. You can calculate provider density per capita, drive-time catchment areas, and distance-based market definitions."},
             {"question": "Can I combine Provyx data with claims data for competitive analysis?",
-             "answer": "Yes. Many organizations use our provider data as the demographic and contact layer, then join it with claims data (from CMS or commercial sources) to add utilization and referral pattern information. NPI number serves as the common key for matching across datasets."},
+             "answer": "Yes. Many organizations use our provider data as the demographic and contact layer, then join it with claims data (from CMS or commercial sources) to add use and referral pattern information. NPI number serves as the common key for matching across datasets."},
         ],
         "related_links": [
             {"url": "/services/technology-detection/", "text": "Technology Detection Data"},
@@ -6820,7 +6820,7 @@ Telehealth moved from a niche offering to a standard care delivery model in a ma
 during 2020, and the shift has proven permanent. The
 <a href="https://aspe.hhs.gov/reports/national-survey-trends-telehealth" target="_blank"
 rel="noopener noreferrer">HHS Office of the Assistant Secretary for Planning and Evaluation (ASPE)</a>
-found that telehealth utilization stabilized at levels far above pre-pandemic baselines.
+found that telehealth use stabilized at levels far above pre-pandemic baselines.
 Roughly 74% of practices now offer some form of video visit. For B2B companies selling
 telehealth platforms, remote patient monitoring devices, digital health tools, or practice
 management software, this creates a massive addressable market. The problem is identifying
@@ -6899,7 +6899,7 @@ stated intentions.
 <strong>Specialty-based targeting.</strong> Telehealth adoption rates vary dramatically by specialty.
 Behavioral health leads adoption, with psychiatry and therapy practices delivering 50% or more
 of visits virtually in many markets. Primary care, endocrinology, and dermatology also have
-high telehealth utilization. Surgical specialties and procedural fields have lower adoption
+high telehealth use. Surgical specialties and procedural fields have lower adoption
 for obvious reasons. Filtering by taxonomy code and specialty lets you focus on the segments
 where telehealth is most relevant to your product, avoiding wasted outreach to specialties
 where virtual care plays a minimal role.
@@ -6924,9 +6924,9 @@ for identifying telehealth-first behavioral health providers and direct-to-consu
 companies that operate across state lines.
 </p>
 <p>
-<strong>Claims-based utilization indicators.</strong> Medicare claims data includes place-of-service
+<strong>Claims-based use indicators.</strong> Medicare claims data includes place-of-service
 codes that identify telehealth encounters. While this data has a publication lag, it provides
-a quantitative measure of telehealth utilization at the provider level. High telehealth claim
+a quantitative measure of telehealth use at the provider level. High telehealth claim
 volumes confirm that a provider is not just equipped for virtual care but is actively
 delivering it at scale.
 </p>
@@ -6955,7 +6955,7 @@ telehealth-active) and false negatives (telehealth-active providers missed by a 
         },
         {
             "title": "Filter by Technology and Practice Signals",
-            "description": "Provyx applies technology detection filters to identify practices running telehealth platforms. We combine this with specialty taxonomy codes, organization size, multi-state licensing data, and claims-based utilization indicators to build a targeted list of telehealth-active providers meeting your criteria."
+            "description": "Provyx applies technology detection filters to identify practices running telehealth platforms. We combine this with specialty taxonomy codes, organization size, multi-state licensing data, and claims-based use indicators to build a targeted list of telehealth-active providers meeting your criteria."
         },
         {
             "title": "Enrich with Contacts and Firmographics",
@@ -7026,7 +7026,7 @@ opportunities to underpowered digital-only outreach.
     "faqs": [
         {
             "question": "How do you determine if a provider offers telehealth?",
-            "answer": "We use multiple signals: technology detection (identifying telehealth platforms installed at the practice), multi-state licensing patterns, specialty-based adoption rates, claims-based utilization data, and organizational attributes. No single signal is definitive, but combining them produces reliable telehealth identification with high accuracy."
+            "answer": "We use multiple signals: technology detection (identifying telehealth platforms installed at the practice), multi-state licensing patterns, specialty-based adoption rates, claims-based use data, and organizational attributes. No single signal is definitive, but combining them produces reliable telehealth identification with high accuracy."
         },
         {
             "question": "Can I target providers using a specific telehealth platform?",
@@ -7034,7 +7034,7 @@ opportunities to underpowered digital-only outreach.
         },
         {
             "question": "How large is the telehealth provider market?",
-            "answer": "According to HHS data, telehealth utilization has stabilized well above pre-pandemic levels. Roughly 74% of practices offer some telehealth. The addressable market depends on your product: telehealth-first organizations number in the hundreds, but hybrid practices offering virtual visits number in the hundreds of thousands across all specialties."
+            "answer": "According to HHS data, telehealth use has stabilized well above pre-pandemic levels. Roughly 74% of practices offer some telehealth. The addressable market depends on your product: telehealth-first organizations number in the hundreds, but hybrid practices offering virtual visits number in the hundreds of thousands across all specialties."
         },
         {
             "question": "Does this include behavioral health telehealth providers?",
@@ -8485,7 +8485,7 @@ or ASC where the procedure occurs, and every device and supply company involved 
 procedure. Multiply this by thousands of referral relationships across a territory, and the
 referral network becomes the underlying infrastructure of healthcare revenue.
 The <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier"
-target="_blank" rel="noopener noreferrer">CMS Medicare Provider Utilization and Payment Data</a>
+target="_blank" rel="noopener noreferrer">CMS Medicare Provider Use and Payment Data</a>
 reveals the volume of these provider-to-provider relationships, but translating public
 claims data into actionable sales intelligence requires significant data processing and
 enrichment.
@@ -8574,7 +8574,7 @@ patient panels generate significant downstream procedure volume. Some referral r
 are concentrated (one PCP sends 90% of their specialty referrals to one surgeon) while others
 are diffuse (referrals spread across 10 specialists). Ranking providers by referral volume,
 referral concentration, and network position helps reps prioritize the physicians with the
-greatest downstream impact on procedure volume and device utilization.
+greatest downstream impact on procedure volume and device use.
 </p>
 <p>
 <strong>Affiliation and co-location signals.</strong> Referral patterns often follow
@@ -8694,7 +8694,7 @@ supplements CRM activity data and internal deal tracking.
         {"url": "/use-cases/medical-device-territory-planning/", "text": "Medical Device Territory Planning"}
     ],
     "outbound_links": [
-        ("https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier", "CMS Medicare Provider Utilization Data"),
+        ("https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier", "CMS Medicare Provider Use Data"),
         ("https://data.cms.gov/", "CMS Data Portal"),
     ]
 },
@@ -9406,7 +9406,7 @@ RESOURCES = [
             {"question": "How do I account for hospital-employed surgeons vs. independent surgeons?",
              "answer": "Hospital-employed surgeons typically require a different sales approach than independent practitioners. Our data includes indicators for practice type (solo, group, health system) that help you weight territories differently. A territory with mostly hospital-employed surgeons may need relationship-based selling, while one with independent surgeons may respond better to direct outreach."},
             {"question": "What if my territory plan is based on procedure volume rather than provider count?",
-             "answer": "Provider data from Provyx covers identity, location, and contact information, not procedure volume. Most device companies combine our provider data with CMS claims data or proprietary procedure volume estimates to create opportunity-weighted territory plans. We provide the provider foundation; claims data adds the utilization layer."},
+             "answer": "Provider data from Provyx covers identity, location, and contact information, not procedure volume. Most device companies combine our provider data with CMS claims data or proprietary procedure volume estimates to create opportunity-weighted territory plans. We provide the provider foundation; claims data adds the use layer."},
         ],
         "related_links": [
             {"url": "/use-cases/medical-device-territory-planning/", "text": "Medical Device Territory Planning Use Case"},
@@ -9879,7 +9879,7 @@ RESOURCES = [
 
 <p><strong>Paid search can work but requires tight negative keyword management.</strong> Healthcare keywords have high competition from patient-facing advertisers, healthcare staffing companies, and education providers. A broad match campaign on "healthcare software" will attract clicks from nurses looking for scheduling apps, patients looking for telehealth, and students researching health informatics programs. Tight keyword targeting, aggressive negative keyword lists, and landing pages with clear B2B qualification signals are essential to avoid burning budget on unqualified traffic.</p>
 
-<p><strong>Webinars and virtual events work for mid-funnel engagement if the content is genuinely educational.</strong> Healthcare professionals will attend a 30-minute session on a regulatory change, a clinical workflow optimization, or a peer-presented case study. They will not attend a product demo disguised as a webinar. Co-presenting with a respected clinician or industry expert increases registration and attendance rates significantly. Gate the recording, not the live event, to maximize audience reach while still capturing leads.</p>
+<p><strong>Webinars and virtual events work for mid-funnel engagement if the content is educational.</strong> Healthcare professionals will attend a 30-minute session on a regulatory change, a clinical workflow optimization, or a peer-presented case study. They will not attend a product demo disguised as a webinar. Co-presenting with a respected clinician or industry expert increases registration and attendance rates significantly. Gate the recording, not the live event, to maximize audience reach while still capturing leads.</p>
 
 <p><strong>The inbound challenge in healthcare B2B is volume, not quality.</strong> Healthcare buyers convert from inbound at reasonable rates, but the total addressable search volume and content consumption in niche healthcare categories is small compared to horizontal SaaS. Plan for inbound to be a steady pipeline contributor, not your primary lead source, unless you sell a broadly applicable product to a large buyer segment.</p>
 
@@ -10741,7 +10741,7 @@ RESOURCES = [
 
 <p><strong>Physicians.</strong> Many VACs include one or more physicians, often the medical director, chief of surgery, or specialty-specific department chiefs. Physician participation varies — some VACs have highly engaged physician members, others have physicians who attend intermittently. When physicians are present, they focus on clinical outcomes, procedural efficiency, and how the product compares to what they've used at other institutions. A physician member who supports your product is your strongest asset.</p>
 
-<p><strong>Finance.</strong> A representative from the finance department — often a financial analyst or the CFO's delegate — evaluates the total cost of ownership. Not just unit price, but implementation costs, training costs, projected utilization, reimbursement impact, and effect on case margins. Finance members ask questions like: "If we switch to this product, what happens to our DRG reimbursement?" and "What's the payback period on this capital investment?" Come with financial models, not just pricing sheets.</p>
+<p><strong>Finance.</strong> A representative from the finance department — often a financial analyst or the CFO's delegate — evaluates the total cost of ownership. Not just unit price, but implementation costs, training costs, projected use, reimbursement impact, and effect on case margins. Finance members ask questions like: "If we switch to this product, what happens to our DRG reimbursement?" and "What's the payback period on this capital investment?" Come with financial models, not just pricing sheets.</p>
 
 <p><strong>Quality and risk management.</strong> Some VACs include quality officers or risk management representatives who assess safety data, recall history, FDA warning letters, and liability considerations. For implantable devices, this scrutiny is intense. Have your safety data organized: adverse event reports, post-market surveillance data, and any relevant <a href="https://www.fda.gov/medical-devices" target="_blank" rel="noopener noreferrer">FDA documentation</a>.</p>
 
@@ -10795,7 +10795,7 @@ RESOURCES = [
                 "heading": "Benchmarking Against Peer Institutions",
                 "body": """<p>Hospitals are inherently comparative organizations. They benchmark clinical outcomes, financial performance, patient satisfaction, and staffing ratios against peer institutions. Value analysis committees apply this same comparative mindset to product decisions. Showing that comparable hospitals use your product — and the results they've achieved — is one of the most effective arguments you can make.</p>
 
-<p><strong>Define the peer set carefully.</strong> "Over 500 hospitals use our product" is not benchmarking — it's a marketing claim. Effective benchmarking means comparing the target hospital against institutions that are genuinely similar: same bed count range, same teaching status, same geographic market, same patient acuity (measured by case mix index). A 200-bed community hospital in Ohio doesn't care that the Mayo Clinic uses your product. They care that three other 200-bed community hospitals in the Midwest use it and have measurable results.</p>
+<p><strong>Define the peer set carefully.</strong> "Over 500 hospitals use our product" is not benchmarking — it's a marketing claim. Effective benchmarking means comparing the target hospital against institutions that are similar: same bed count range, same teaching status, same geographic market, same patient acuity (measured by case mix index). A 200-bed community hospital in Ohio doesn't care that the Mayo Clinic uses your product. They care that three other 200-bed community hospitals in the Midwest use it and have measurable results.</p>
 
 <p><strong>Build the peer comparison with provider data.</strong> Use hospital databases to identify institutions that match the target on key dimensions. Then cross-reference with your customer list to identify which of those peers use your product. This gives you a specific, credible reference set: "Of the 14 hospitals in your state with 150-250 beds and a Level III trauma center, 6 currently use our system." That's a data point, not a marketing claim.</p>
 
@@ -10904,7 +10904,7 @@ RESOURCES = [
 
 <p><strong>Contract duration and renewal cycles.</strong> GPO contracts typically run 3-5 years, with specific bid windows for new awards. If your company missed the last contract cycle, you may need to wait until the next bid window — or pursue alternative channels in the meantime. Track contract expiration dates for your product category across major GPOs. Your corporate accounts team should maintain this calendar.</p>
 
-<p><strong>When GPO pricing isn't competitive.</strong> GPO pricing represents negotiated rates based on aggregate volume, but it's not always the lowest available price. Some manufacturers offer better direct pricing to specific health systems based on volume commitments that exceed what the GPO aggregates. Additionally, for highly differentiated products with limited competition, GPO pricing may be close to list price because the GPO has less negotiating leverage. Understanding when GPO pricing is genuinely competitive versus when it's just a benchmark helps you position your offer appropriately.</p>"""
+<p><strong>When GPO pricing isn't competitive.</strong> GPO pricing represents negotiated rates based on aggregate volume, but it's not always the lowest available price. Some manufacturers offer better direct pricing to specific health systems based on volume commitments that exceed what the GPO aggregates. Additionally, for highly differentiated products with limited competition, GPO pricing may be close to list price because the GPO has less negotiating leverage. Understanding when GPO pricing is competitive versus when it's just a benchmark helps you position your offer appropriately.</p>"""
             },
             {
                 "heading": "Working With GPO Purchasing Committees",
@@ -10916,9 +10916,9 @@ RESOURCES = [
 
 <p><strong>Member engagement supports your contract bid.</strong> GPO contracting committees consider member demand when evaluating manufacturers. If multiple member hospitals are requesting contracts with your company, that signals market demand and increases your chances of an award. This is where field sales and GPO strategy intersect: your reps' relationships with hospital supply chain directors can generate the member pull-through that strengthens your corporate GPO bid. Coordinate between your field team and your GPO/corporate accounts team to ensure member demand is visible.</p>
 
-<p><strong>Supplier diversity and innovation pathways.</strong> Most major GPOs have programs for smaller or innovative manufacturers that may not meet the volume thresholds for standard contract awards. Premier's Breakthrough Technology program, Vizient's Innovative Technology program, and similar initiatives provide a pathway to GPO access for emerging device companies. These programs typically require demonstrating clinical differentiation and innovation, not just competitive pricing. If your company is newer or your product is genuinely novel, explore these pathways before assuming you need to compete head-to-head on a standard contract bid.</p>
+<p><strong>Supplier diversity and innovation pathways.</strong> Most major GPOs have programs for smaller or innovative manufacturers that may not meet the volume thresholds for standard contract awards. Premier's Breakthrough Technology program, Vizient's Innovative Technology program, and similar initiatives provide a pathway to GPO access for emerging device companies. These programs typically require demonstrating clinical differentiation and innovation, not just competitive pricing. If your company is newer or your product is novel, explore these pathways before assuming you need to compete head-to-head on a standard contract bid.</p>
 
-<p><strong>Post-award execution.</strong> Winning a GPO contract is the beginning, not the end. Contract utilization — the percentage of eligible member spend that flows through your contract — depends on field execution. Your reps need to know they have a GPO contract, which hospitals are members, and how to reference the contract in their selling process. Provide your field team with GPO-specific sell sheets that include the contract number, pricing tiers, and ordering instructions. A GPO contract that your reps don't know about or can't articulate is a wasted asset.</p>"""
+<p><strong>Post-award execution.</strong> Winning a GPO contract is the beginning, not the end. Contract use — the percentage of eligible member spend that flows through your contract — depends on field execution. Your reps need to know they have a GPO contract, which hospitals are members, and how to reference the contract in their selling process. Provide your field team with GPO-specific sell sheets that include the contract number, pricing tiers, and ordering instructions. A GPO contract that your reps don't know about or can't articulate is a wasted asset.</p>"""
             },
             {
                 "heading": "When to Go Direct vs. Through GPO Channels",
@@ -11336,7 +11336,7 @@ RESOURCES = [
                 "heading": "Identifying Surgical KOLs: Data Sources and Signals",
                 "body": """<p>Effective KOL identification for medical devices requires combining multiple data sources. No single database contains a "KOL score" that you can sort by. Instead, you build a composite picture from procedure data, publication records, conference activity, and institutional affiliations.</p>
 
-<p><strong>Procedure volume data.</strong> The most important signal for surgical KOLs is how many relevant procedures they perform. High-volume surgeons have more experience with the tools and techniques in your category, more opportunities to evaluate new devices, and more credibility with peers. <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data" target="_blank" rel="noopener noreferrer">CMS Medicare utilization data</a> provides procedure counts by physician NPI for Medicare patients. This is a partial view (Medicare only), but it is the most accessible claims-based dataset. Commercial claims databases from vendors like IQVIA or Definitive Healthcare offer broader coverage but at significant cost.</p>
+<p><strong>Procedure volume data.</strong> The most important signal for surgical KOLs is how many relevant procedures they perform. High-volume surgeons have more experience with the tools and techniques in your category, more opportunities to evaluate new devices, and more credibility with peers. <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-use-payment-data" target="_blank" rel="noopener noreferrer">CMS Medicare use data</a> provides procedure counts by physician NPI for Medicare patients. This is a partial view (Medicare only), but it is the most accessible claims-based dataset. Commercial claims databases from vendors like IQVIA or Definitive Healthcare offer broader coverage but at significant cost.</p>
 
 <p><strong>Publication and research activity.</strong> Search <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed</a> for physicians who publish in journals relevant to your device category. Filter by publication type: clinical outcomes studies and technique papers carry more weight than review articles. Look for physicians who are listed as first or last author (indicating they led the work or run the lab). A surgeon who has published three comparative studies on different fixation techniques in spine surgery is signaling deep engagement with the clinical evidence around device selection.</p>
 
@@ -11422,7 +11422,7 @@ RESOURCES = [
             },
             {
                 "question": "What is the best data source for identifying emerging KOLs?",
-                "answer": "No single source is sufficient. The most effective approach combines fellowship program graduation records (ACGME), early-career publication activity (PubMed), conference abstract acceptances (specialty society archives), and year-over-year procedure volume growth (CMS utilization data or commercial claims). Provyx provider data can help you build the initial provider universe and maintain current contact data for identified emerging KOLs."
+                "answer": "No single source is sufficient. The most effective approach combines fellowship program graduation records (ACGME), early-career publication activity (PubMed), conference abstract acceptances (specialty society archives), and year-over-year procedure volume growth (CMS use data or commercial claims). Provyx provider data can help you build the initial provider universe and maintain current contact data for identified emerging KOLs."
             }
         ],
         "related_links": [
@@ -11435,7 +11435,7 @@ RESOURCES = [
             ("https://pubmed.ncbi.nlm.nih.gov/", "PubMed"),
             ("https://www.cms.gov/priorities/key-initiatives/open-payments", "CMS Open Payments"),
             ("https://www.acgme.org/", "ACGME"),
-            ("https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data", "CMS Medicare Utilization Data")
+            ("https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-use-payment-data", "CMS Medicare Use Data")
         ],
         "author": AUTHOR_ROME
     },
@@ -11508,7 +11508,7 @@ RESOURCES = [
             },
             {
                 "heading": "Relationship Building Before the Formal Process",
-                "body": """<p>Data tells you where and when to engage. Relationships determine whether you win. The goal of pre-RFP relationship building is to be the known, trusted option when the procurement process starts. This does not mean manipulating the process. It means being genuinely helpful before you are asked to sell.</p>
+                "body": """<p>Data tells you where and when to engage. Relationships determine whether you win. The goal of pre-RFP relationship building is to be the known, trusted option when the procurement process starts. This does not mean manipulating the process. It means being helpful before you are asked to sell.</p>
 
 <p><strong>Identify the internal champion.</strong> Every healthcare purchase has an internal champion: the person who will advocate for the budget, define the requirements, and push the project forward. This is usually a clinical or operational leader, not a procurement officer. For EHR purchases, it might be the CMIO or a senior physician. For medical devices, it might be a department head or a high-volume surgeon. For revenue cycle technology, it might be the CFO or revenue cycle director. Use <a href="/services/provider-contact-data/">provider contact data</a> to identify and reach the right individuals at your target accounts.</p>
 
@@ -11632,7 +11632,7 @@ RESOURCES = [
 
 <p><strong>Tiering criteria for medical device territories.</strong> Four factors drive account tier assignment:</p>
 
-<p><strong>1. Procedure volume.</strong> How many relevant procedures does this facility or surgeon perform? A surgeon who performs 200 joint replacements per year represents more revenue than one who performs 20. Facility-level data is available through <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data" target="_blank" rel="noopener noreferrer">CMS Medicare utilization data</a> (free but Medicare-only) and commercial claims databases. Even a rough estimate based on facility size and specialty mix is better than none.</p>
+<p><strong>1. Procedure volume.</strong> How many relevant procedures does this facility or surgeon perform? A surgeon who performs 200 joint replacements per year represents more revenue than one who performs 20. Facility-level data is available through <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-use-payment-data" target="_blank" rel="noopener noreferrer">CMS Medicare use data</a> (free but Medicare-only) and commercial claims databases. Even a rough estimate based on facility size and specialty mix is better than none.</p>
 
 <p><strong>2. Technology and competitive landscape.</strong> What does this account currently use? Accounts with your products are retention priorities. Accounts using a competitor with a known vulnerability (recall, quality issue, expiring contract) are displacement opportunities. Greenfield accounts use no product in your category. Each requires a different strategy. <a href="/services/technology-detection/">Technology detection data</a> helps identify what is installed.</p>
 
@@ -11680,7 +11680,7 @@ RESOURCES = [
             },
             {
                 "question": "What if my company does not provide a data platform like Definitive Healthcare?",
-                "answer": "Many device companies, especially smaller ones, do not license enterprise data platforms. You can build a solid territory assessment using free sources (NPI Registry, CMS utilization data, state licensing databases) supplemented by a targeted commercial data service. Provyx is designed for this scenario: practice-level data without requiring a $30,000+ enterprise subscription. See our healthcare data providers for small teams guide."
+                "answer": "Many device companies, especially smaller ones, do not license enterprise data platforms. You can build a solid territory assessment using free sources (NPI Registry, CMS use data, state licensing databases) supplemented by a targeted commercial data service. Provyx is designed for this scenario: practice-level data without requiring a $30,000+ enterprise subscription. See our healthcare data providers for small teams guide."
             },
             {
                 "question": "How often should I update my account tiers?",
@@ -11699,7 +11699,7 @@ RESOURCES = [
         ],
         "outbound_links": [
             ("https://npiregistry.cms.hhs.gov/", "NPI Registry (NPPES)"),
-            ("https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-utilization-payment-data", "CMS Medicare Utilization Data"),
+            ("https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-provider-use-payment-data", "CMS Medicare Use Data"),
             ("https://data.cms.gov/", "CMS Data Portal"),
             ("https://www.definitivehc.com/", "Definitive Healthcare")
         ],
@@ -11774,7 +11774,7 @@ RESOURCES = [
 
 <p><strong>Reassignment data can be stale.</strong> Relationships in the reassignment file may lag actual employment changes by months. Cross-reference with other sources to validate organizational affiliations.</p>
 
-<p><strong>No financial or volume data.</strong> PECOS covers enrollment status and relationships, not practice size, revenue, or procedure volume. For those data points, you need CMS utilization datasets or commercial vendors.</p>"""
+<p><strong>No financial or volume data.</strong> PECOS covers enrollment status and relationships, not practice size, revenue, or procedure volume. For those data points, you need CMS use datasets or commercial vendors.</p>"""
             },
             {
                 "heading": "Combining PECOS + NPI + Commercial Data for a Complete Provider Profile",
@@ -11856,7 +11856,7 @@ RESOURCES = [
                 "heading": "Why Finding Physician Emails Is Harder Than It Looks",
                 "body": """<p>If you search for "physician email list" or "doctor email addresses," you will find dozens of vendors offering millions of records for a few hundred dollars. They all claim high accuracy, recent verification, and compliance with relevant regulations. They are almost all selling the same recycled data at different price points.</p>
 
-<p>Finding physician email addresses for B2B outreach is a genuinely difficult data problem. Here is why:</p>
+<p>Finding physician email addresses for B2B outreach is a difficult data problem. Here is why:</p>
 
 <p><strong>The NPI Registry does not include email addresses.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI Registry (NPPES)</a> is the most comprehensive public database of healthcare providers in the U.S. It contains 8+ million provider records with names, NPI numbers, taxonomy codes, and practice addresses. It does not contain email addresses. This means every vendor claiming to sell physician email data is sourcing those emails from somewhere other than the most authoritative provider database.</p>
 
@@ -13171,7 +13171,7 @@ RESOURCES = [
             },
             {
                 "heading": "Common Problems with Pediatric Dentist Data",
-                "body": """<p>The confusion between pediatric dental specialists and general dentists who see children is the primary data quality issue. Many data vendors categorize dentists by the services they advertise rather than their board certification. A general dentist who lists "children's dentistry" on their website might get tagged as a pediatric dentist, even though they didn't complete a pediatric dental residency and aren't board-certified. For products that are genuinely specialty-specific, this contamination wastes outreach on providers who won't buy.</p>
+                "body": """<p>The confusion between pediatric dental specialists and general dentists who see children is the primary data quality issue. Many data vendors categorize dentists by the services they advertise rather than their board certification. A general dentist who lists "children's dentistry" on their website might get tagged as a pediatric dentist, even though they didn't complete a pediatric dental residency and aren't board-certified. For products that are specialty-specific, this contamination wastes outreach on providers who won't buy.</p>
 
 <p>Group practice identification is frequently botched. A pediatric dental group with five locations might appear as five separate "practices" in one database, or as one practice with only the headquarters address in another. Neither representation is correct for outreach purposes. You need to know that it's one organization with five locations, who the owner or managing partner is, and that reaching that person once covers all locations.</p>
 
@@ -13483,7 +13483,7 @@ RESOURCES = [
 
 <p>Practice ownership identification is central to our optometrist data. We classify each OD as practice owner, associate/employed, corporate-affiliated (with chain identification), or locum/temp. This classification comes from business registration records, practice website analysis, and corporate directory cross-referencing. Your sales team immediately knows whether they're reaching a decision-maker or an employed clinician with no purchasing authority.</p>
 
-<p>Optical retail affiliations are tagged at the practice level. We identify whether a practice operates under a VSP, EyeMed, Luxottica, Walmart, Costco, or National Vision umbrella, or whether it's truly independent. For independent practices, we capture additional signals like practice size, location count, and specialty focus areas (contact lens, medical optometry, pediatric, low vision).</p>
+<p>Optical retail affiliations are tagged at the practice level. We identify whether a practice operates under a VSP, EyeMed, Luxottica, Walmart, Costco, or National Vision umbrella, or whether it's independent. For independent practices, we capture additional signals like practice size, location count, and specialty focus areas (contact lens, medical optometry, pediatric, low vision).</p>
 
 <p>Every record is verified for email deliverability and phone accuracy. CAN-SPAM compliance is built into our data processes. Delivery is in CSV or Excel format, filterable by geography, ownership status, retail affiliation, practice size, and specialty focus. Whether you're a lens manufacturer, a diagnostic equipment company, or a practice management software vendor, the list matches your specific target within the optometric market.</p>"""
             },
@@ -17368,7 +17368,7 @@ SERVICES = [
             <div class="email-mockup__subject">Innovative solutions for your practice</div>
             <div class="email-mockup__body">
               <p>Dear Healthcare Provider,</p>
-              <p>We are excited to introduce our cutting-edge technology that is transforming practices across the country. Our innovative platform delivers amazing results for providers just like you.</p>
+              <p>We are excited to introduce our advanced technology that is transforming practices across the country. Our innovative platform delivers amazing results for providers just like you.</p>
               <p>Schedule a demo to learn more about how we can help your practice grow.</p>
               <div class="email-mockup__sig" style="color: #DC2626; font-weight: 600;">Same email to chiropractors, dermatologists, med spas, and everyone else.</div>
             </div>

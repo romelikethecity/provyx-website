@@ -72,7 +72,7 @@ NEW_ALTERNATIVES = [
             "creates friction.</p>"
 
             "<p><strong>Credit system adds up quickly.</strong> "
-            "Apollo's free tier is genuinely useful for small teams, but the credit system means you burn through "
+            "Apollo's free tier is useful for small teams, but the credit system means you burn through "
             "your allocation fast when prospecting at scale. Exporting contacts, viewing emails, and running "
             "sequences all consume credits. Teams that start on the free tier often find themselves upgrading "
             "to a $49-99/month plan within weeks, and from there to a $79-149/user/month plan once they need "
@@ -2544,7 +2544,7 @@ NEW_ALTERNATIVES = [
             "<p><a href=\"https://www.acuitymd.com/\" target=\"_blank\" rel=\"noopener noreferrer\">AcuityMD</a> "
             "has built a well-regarded product for one specific use case: helping medical device sales teams "
             "identify which surgeons perform the most procedures relevant to their product. If you sell orthopedic "
-            "implants, cardiac devices, or surgical robotics, AcuityMD's procedure volume data is genuinely useful "
+            "implants, cardiac devices, or surgical robotics, AcuityMD's procedure volume data is useful "
             "for territory planning.</p>"
 
             "<p>The problems emerge when your needs extend beyond that narrow lane.</p>"

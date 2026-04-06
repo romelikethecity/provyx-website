@@ -218,7 +218,7 @@ GLOSSARY_TERMS = [
             {"url": "/for/pharma-sales/", "text": "Data for Pharma Sales Teams"},
         ],
         "faqs": [
-            {"question": "Is PECOS data publicly available?", "answer": "Partially. CMS publishes enrollment and reassignment data through the Medicare Provider Enrollment files, but the full PECOS database is not publicly searchable in the same way NPPES is. Some data is available through the Medicare Provider Utilization and Payment Data files."},
+            {"question": "Is PECOS data publicly available?", "answer": "Partially. CMS publishes enrollment and reassignment data through the Medicare Provider Enrollment files, but the full PECOS database is not publicly searchable in the same way NPPES is. Some data is available through the Medicare Provider Use and Payment Data files."},
             {"question": "What is the difference between NPPES and PECOS?", "answer": "NPPES assigns NPI numbers and maintains the provider identity registry. PECOS manages Medicare enrollment and billing eligibility. A provider needs an NPI first (from NPPES), then enrolls in Medicare through PECOS to bill Medicare."},
             {"question": "How do you check if a provider is enrolled in PECOS?", "answer": "CMS provides online verification through the Medicare Provider Enrollment portal. Some data vendors also include PECOS enrollment status as an enrichment field in their provider databases."},
         ],
@@ -458,9 +458,9 @@ GLOSSARY_TERMS = [
             "<p>CMS is the single largest payer in the US healthcare system, covering over 150 million Americans through Medicare and Medicaid combined. "
             "The agency sets reimbursement rates, quality standards, and enrollment requirements that affect every healthcare provider in the country.</p>"
             "<p>For healthcare data, CMS is critical because the agency manages NPPES (the NPI registry) and PECOS (the Medicare enrollment system). "
-            "CMS also publishes massive public datasets including Medicare claims data, hospital quality metrics, physician payment information, and provider utilization statistics. "
+            "CMS also publishes massive public datasets including Medicare claims data, hospital quality metrics, physician payment information, and provider use statistics. "
             "These datasets are free to download and contain valuable information for market analysis and provider targeting.</p>"
-            "<p>Key CMS data products for B2B use include: the NPPES downloadable file (provider identity), Medicare Provider Utilization and Payment Data (who bills what), "
+            "<p>Key CMS data products for B2B use include: the NPPES downloadable file (provider identity), Medicare Provider Use and Payment Data (who bills what), "
             "Hospital Compare data (facility quality scores), and the Open Payments database (pharmaceutical and device company payments to physicians).</p>"
         ),
         "why_it_matters": "CMS data is the foundation of healthcare provider intelligence. The agency's public datasets let you identify providers, verify their status, understand their billing patterns, and analyze market dynamics. Every healthcare data vendor builds on CMS data in some way.",
@@ -472,8 +472,8 @@ GLOSSARY_TERMS = [
             {"url": "/use-cases/healthcare-competitive-intelligence/", "text": "Healthcare Competitive Intelligence"},
         ],
         "faqs": [
-            {"question": "What CMS data is publicly available?", "answer": "CMS publishes extensive data including NPPES (NPI registry), Medicare Provider Utilization and Payment Data, Hospital Compare quality metrics, Open Payments (industry payments to physicians), Medicare Advantage enrollment data, and Part D prescriber data. All available at data.cms.gov."},
-            {"question": "Is CMS data free to use commercially?", "answer": "Yes. CMS public use files are freely available for commercial use, including building provider databases and data products. Some datasets require data use agreements, but the core files (NPPES, provider utilization) are open access."},
+            {"question": "What CMS data is publicly available?", "answer": "CMS publishes extensive data including NPPES (NPI registry), Medicare Provider Use and Payment Data, Hospital Compare quality metrics, Open Payments (industry payments to physicians), Medicare Advantage enrollment data, and Part D prescriber data. All available at data.cms.gov."},
+            {"question": "Is CMS data free to use commercially?", "answer": "Yes. CMS public use files are freely available for commercial use, including building provider databases and data products. Some datasets require data use agreements, but the core files (NPPES, provider use) are open access."},
             {"question": "How does CMS affect healthcare provider data quality?", "answer": "CMS sets the standards. Providers must maintain accurate NPI records and enrollment information to bill Medicare. This creates a natural incentive for data accuracy, though self-reported information still has gaps."},
         ],
         "outbound_links": [

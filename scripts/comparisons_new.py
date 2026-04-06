@@ -1656,7 +1656,7 @@ NEW_COMPARISONS = [
 
         "scenario_general_b2b": (
             "<strong>If you sell surgical implants, instruments, or capital equipment:</strong> "
-            "AcuityMD's procedure volume data is genuinely useful. Knowing which surgeons "
+            "AcuityMD's procedure volume data is useful. Knowing which surgeons "
             "perform the most relevant procedures helps you prioritize accounts. Consider "
             "supplementing with Provyx for contact data gaps where AcuityMD's coverage "
             "is thin, especially for office-based procedures and non-surgeon stakeholders."
@@ -1941,7 +1941,7 @@ NEW_COMPARISONS = [
             "need for day-to-day operations.</p>"
             "<p>Health Cloud also includes features oriented toward patient engagement "
             "(care plans, patient timelines, consent management) and payer operations "
-            "(utilization management, prior authorization). These features matter for "
+            "(use management, prior authorization). These features matter for "
             "health systems and payers, but they're largely irrelevant for B2B teams "
             "that sell products and services to healthcare providers.</p>"
             "<p>The key distinction: Health Cloud provides the container for provider "
@@ -2071,7 +2071,7 @@ NEW_COMPARISONS = [
             "<strong>If you're building a healthcare sales stack from scratch:</strong> "
             "Start with your CRM of choice (Salesforce Sales Cloud, HubSpot, whatever "
             "fits your team) and Provyx for provider data. Add Health Cloud later if "
-            "your workflows genuinely require healthcare-specific CRM features. Don't "
+            "your workflows require healthcare-specific CRM features. Don't "
             "over-buy platform before you've validated your go-to-market."
         ),
 

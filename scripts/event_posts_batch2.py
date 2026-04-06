@@ -69,7 +69,7 @@ EVENT_POSTS_BATCH2 = [
 
 <p>Work backward from 30 attendees: you need 35-43 registrations, which requires 70-143 page visitors, which requires 200-570 email opens, which means 570-2,280 invitations. The range is wide because each conversion rate varies by specialty, geography, and list quality.</p>
 
-<p>For a realistic planning target: <strong>send 8-10x your desired attendance count</strong>. Want 30 in the room? Build an invite list of 240-300 providers. That gives you enough volume to absorb natural funnel drop-off while keeping the list targeted enough that recipients are genuinely relevant.</p>
+<p>For a realistic planning target: <strong>send 8-10x your desired attendance count</strong>. Want 30 in the room? Build an invite list of 240-300 providers. That gives you enough volume to absorb natural funnel drop-off while keeping the list targeted enough that recipients are relevant.</p>
 
 <p>The ratio shifts based on list warmth:</p>
 
