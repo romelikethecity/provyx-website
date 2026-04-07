@@ -3048,3 +3048,8 @@ img {
   .mockup-duo { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
   .pricing-grid { grid-template-columns: 1fr; }
 }
+
+/* Content Figures — SEO Image System */
+.content-figure { margin: 2rem 0; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-bg-secondary); border: 1px solid var(--color-border); }
+.content-figure img { display: block; width: 100%; height: auto; }
+.content-figure figcaption { padding: 0.75rem 1rem; font-size: 0.8125rem; color: var(--color-text-secondary); text-align: center; border-top: 1px solid var(--color-border); background: var(--color-bg-primary); }

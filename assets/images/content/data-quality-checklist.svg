@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <text x="600" y="44" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#1B2A4A" text-anchor="middle">Provider Data Quality Checklist</text>
+  <!-- Left panel: Quality Checks -->
+  <g transform="translate(40,70)">
+    <rect width="540" height="520" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect width="540" height="48" rx="12" fill="#1B2A4A"/>
+    <text x="270" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Quality Verification Points</text>
+    <g transform="translate(24,68)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.08"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">NPI number matches CMS registry</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,124)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.05"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Provider name matches NPI record</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,180)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.08"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Taxonomy code valid for specialty</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,236)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.05"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Email deliverability confirmed</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,292)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.08"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Phone is active landline/mobile</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,348)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.05"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Address geocodes to valid location</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,404)">
+      <rect width="492" height="48" rx="8" fill="#16a34a" opacity="0.08"/>
+      <rect x="12" y="12" width="24" height="24" rx="4" fill="#16a34a"/>
+      <text x="24" y="30" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">✓</text>
+      <text x="48" y="30" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Practice website resolves (200 OK)</text>
+      <text x="440" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a">PASS</text>
+    </g>
+    <g transform="translate(24,460)">
+      <rect width="492" height="40" rx="8" fill="#1B2A4A"/>
+      <text x="246" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">7/7 checks passed — record verified</text>
+    </g>
+  </g>
+  <!-- Right panel: Score breakdown -->
+  <g transform="translate(620,70)">
+    <rect width="540" height="520" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect width="540" height="48" rx="12" fill="#0EA5E9"/>
+    <text x="270" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Data Accuracy by Field</text>
+    <!-- Email -->
+    <g transform="translate(24,72)">
+      <text x="0" y="16" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Email Deliverability</text>
+      <text x="460" y="16" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#16a34a">95%</text>
+      <rect y="28" width="492" height="10" rx="5" fill="#E2E8F0"/>
+      <rect y="28" width="467" height="10" rx="5" fill="#16a34a"/>
+    </g>
+    <!-- Phone -->
+    <g transform="translate(24,132)">
+      <text x="0" y="16" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Phone Connectivity</text>
+      <text x="460" y="16" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#16a34a">93%</text>
+      <rect y="28" width="492" height="10" rx="5" fill="#E2E8F0"/>
+      <rect y="28" width="457" height="10" rx="5" fill="#16a34a"/>
+    </g>
+    <!-- NPI -->
+    <g transform="translate(24,192)">
+      <text x="0" y="16" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">NPI Accuracy</text>
+      <text x="460" y="16" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0EA5E9">99%</text>
+      <rect y="28" width="492" height="10" rx="5" fill="#E2E8F0"/>
+      <rect y="28" width="487" height="10" rx="5" fill="#0EA5E9"/>
+    </g>
+    <!-- Address -->
+    <g transform="translate(24,252)">
+      <text x="0" y="16" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Address Currency</text>
+      <text x="460" y="16" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0EA5E9">91%</text>
+      <rect y="28" width="492" height="10" rx="5" fill="#E2E8F0"/>
+      <rect y="28" width="447" height="10" rx="5" fill="#0EA5E9"/>
+    </g>
+    <!-- Specialty -->
+    <g transform="translate(24,312)">
+      <text x="0" y="16" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Specialty Classification</text>
+      <text x="460" y="16" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0EA5E9">98%</text>
+      <rect y="28" width="492" height="10" rx="5" fill="#E2E8F0"/>
+      <rect y="28" width="482" height="10" rx="5" fill="#0EA5E9"/>
+    </g>
+    <!-- Practice size -->
+    <g transform="translate(24,372)">
+      <text x="0" y="16" font-family="system-ui,sans-serif" font-size="14" fill="#1B2A4A">Practice Size Data</text>
+      <text x="460" y="16" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1B2A4A">87%</text>
+      <rect y="28" width="492" height="10" rx="5" fill="#E2E8F0"/>
+      <rect y="28" width="427" height="10" rx="5" fill="#1B2A4A"/>
+    </g>
+    <!-- Overall score -->
+    <g transform="translate(24,432)">
+      <rect width="492" height="80" rx="10" fill="#1B2A4A"/>
+      <text x="246" y="32" font-family="system-ui,sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Overall Data Quality Score</text>
+      <text x="246" y="64" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#16a34a" text-anchor="middle">95.3%</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <text x="600" y="44" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#1B2A4A" text-anchor="middle">Healthcare Territory Planning</text>
+  <!-- Map area (stylized US regions) -->
+  <g transform="translate(40,70)">
+    <rect width="720" height="480" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- West -->
+    <rect x="30" y="60" width="180" height="200" rx="8" fill="#0EA5E9" opacity="0.1" stroke="#0EA5E9" stroke-width="1.5"/>
+    <text x="120" y="48" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" text-anchor="middle">WEST</text>
+    <text x="120" y="130" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#0EA5E9" text-anchor="middle">412K</text>
+    <text x="120" y="155" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">providers</text>
+    <circle cx="80" y="190" r="6" fill="#0EA5E9"/>
+    <text x="92" y="194" font-family="system-ui,sans-serif" font-size="11" fill="#334155">CA: 185K</text>
+    <circle cx="80" y="210" r="6" fill="#0EA5E9" opacity="0.6"/>
+    <text x="92" y="214" font-family="system-ui,sans-serif" font-size="11" fill="#334155">WA: 42K</text>
+    <circle cx="80" y="230" r="6" fill="#0EA5E9" opacity="0.4"/>
+    <text x="92" y="234" font-family="system-ui,sans-serif" font-size="11" fill="#334155">OR: 28K</text>
+    <!-- Midwest -->
+    <rect x="230" y="60" width="180" height="200" rx="8" fill="#1B2A4A" opacity="0.08" stroke="#1B2A4A" stroke-width="1.5"/>
+    <text x="320" y="48" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A" text-anchor="middle">MIDWEST</text>
+    <text x="320" y="130" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#1B2A4A" text-anchor="middle">538K</text>
+    <text x="320" y="155" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">providers</text>
+    <circle cx="280" y="190" r="6" fill="#1B2A4A"/>
+    <text x="292" y="194" font-family="system-ui,sans-serif" font-size="11" fill="#334155">IL: 72K</text>
+    <circle cx="280" y="210" r="6" fill="#1B2A4A" opacity="0.6"/>
+    <text x="292" y="214" font-family="system-ui,sans-serif" font-size="11" fill="#334155">OH: 65K</text>
+    <circle cx="280" y="230" r="6" fill="#1B2A4A" opacity="0.4"/>
+    <text x="292" y="234" font-family="system-ui,sans-serif" font-size="11" fill="#334155">MI: 54K</text>
+    <!-- South -->
+    <rect x="230" y="290" width="280" height="160" rx="8" fill="#16a34a" opacity="0.08" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="370" y="278" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">SOUTH</text>
+    <text x="370" y="350" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#16a34a" text-anchor="middle">820K</text>
+    <text x="370" y="375" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">providers</text>
+    <circle cx="280" y="410" r="6" fill="#16a34a"/>
+    <text x="292" y="414" font-family="system-ui,sans-serif" font-size="11" fill="#334155">TX: 145K</text>
+    <circle cx="380" y="410" r="6" fill="#16a34a" opacity="0.6"/>
+    <text x="392" y="414" font-family="system-ui,sans-serif" font-size="11" fill="#334155">FL: 128K</text>
+    <!-- Northeast -->
+    <rect x="430" y="60" width="260" height="200" rx="8" fill="#0EA5E9" opacity="0.05" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="560" y="48" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" text-anchor="middle">NORTHEAST</text>
+    <text x="560" y="130" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#0EA5E9" text-anchor="middle">630K</text>
+    <text x="560" y="155" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">providers</text>
+    <circle cx="480" y="190" r="6" fill="#0EA5E9"/>
+    <text x="492" y="194" font-family="system-ui,sans-serif" font-size="11" fill="#334155">NY: 120K</text>
+    <circle cx="480" y="210" r="6" fill="#0EA5E9" opacity="0.6"/>
+    <text x="492" y="214" font-family="system-ui,sans-serif" font-size="11" fill="#334155">PA: 78K</text>
+    <circle cx="480" y="230" r="6" fill="#0EA5E9" opacity="0.4"/>
+    <text x="492" y="234" font-family="system-ui,sans-serif" font-size="11" fill="#334155">MA: 52K</text>
+    <!-- Legend -->
+    <g transform="translate(540,310)">
+      <rect width="150" height="140" rx="8" fill="#1B2A4A"/>
+      <text x="75" y="24" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">TOTAL</text>
+      <text x="75" y="60" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#0EA5E9" text-anchor="middle">2.4M+</text>
+      <text x="75" y="80" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">providers</text>
+      <text x="75" y="108" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#fff" text-anchor="middle">50</text>
+      <text x="75" y="128" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">states + DC</text>
+    </g>
+  </g>
+  <!-- Right panel: Territory metrics -->
+  <g transform="translate(800,70)">
+    <rect width="360" height="480" rx="12" fill="#1B2A4A"/>
+    <text x="180" y="36" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Territory Metrics</text>
+    <g transform="translate(24,56)">
+      <rect width="312" height="70" rx="8" fill="rgba(14,165,233,0.1)"/>
+      <text x="16" y="24" font-family="system-ui,sans-serif" font-size="12" fill="#94A3B8">Avg. Providers per Territory</text>
+      <text x="16" y="52" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#0EA5E9">2,400</text>
+    </g>
+    <g transform="translate(24,140)">
+      <rect width="312" height="70" rx="8" fill="rgba(22,163,74,0.1)"/>
+      <text x="16" y="24" font-family="system-ui,sans-serif" font-size="12" fill="#94A3B8">Email Coverage</text>
+      <text x="16" y="52" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#16a34a">68%</text>
+    </g>
+    <g transform="translate(24,224)">
+      <rect width="312" height="70" rx="8" fill="rgba(14,165,233,0.1)"/>
+      <text x="16" y="24" font-family="system-ui,sans-serif" font-size="12" fill="#94A3B8">Phone Coverage</text>
+      <text x="16" y="52" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#0EA5E9">92%</text>
+    </g>
+    <g transform="translate(24,308)">
+      <rect width="312" height="70" rx="8" fill="rgba(255,255,255,0.05)"/>
+      <text x="16" y="24" font-family="system-ui,sans-serif" font-size="12" fill="#94A3B8">Practice Owner ID Rate</text>
+      <text x="16" y="52" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#fff">74%</text>
+    </g>
+    <g transform="translate(24,392)">
+      <rect width="312" height="70" rx="8" fill="rgba(14,165,233,0.15)"/>
+      <text x="156" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#0EA5E9" text-anchor="middle">Filter by specialty, size,</text>
+      <text x="156" y="50" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#0EA5E9" text-anchor="middle">geography, and technology</text>
+    </g>
+  </g>
+</svg>

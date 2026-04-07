@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <text x="600" y="44" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#1B2A4A" text-anchor="middle">CRM Data: Before vs After Enrichment</text>
+  <!-- Before -->
+  <g transform="translate(40,70)">
+    <rect width="540" height="520" rx="12" fill="#fff" stroke="#dc2626" stroke-width="2"/>
+    <rect width="540" height="48" rx="12" fill="#dc2626"/>
+    <text x="270" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Before Enrichment</text>
+    <!-- Row headers -->
+    <g transform="translate(12,60)">
+      <rect width="100" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="50" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Name</text>
+      <rect x="108" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="148" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Email</text>
+      <rect x="196" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="236" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Phone</text>
+      <rect x="284" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="324" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Specialty</text>
+      <rect x="372" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="412" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Size</text>
+      <rect x="460" y="0" width="56" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="488" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">EHR</text>
+    </g>
+    <!-- Data rows with gaps -->
+    <g transform="translate(12,96)">
+      <text x="8" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">J. Smith MD</text>
+      <rect x="108" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="148" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">missing</text>
+      <text x="204" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">555-1234</text>
+      <text x="292" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">Family</text>
+      <rect x="372" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="412" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">unknown</text>
+      <rect x="460" y="2" width="56" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="488" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">--</text>
+    </g>
+    <g transform="translate(12,122)">
+      <text x="8" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">L. Chen PhD</text>
+      <text x="116" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#d97706">bounced@...</text>
+      <rect x="196" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="236" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">missing</text>
+      <text x="292" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">Psych</text>
+      <text x="380" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">Solo</text>
+      <rect x="460" y="2" width="56" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="488" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">--</text>
+    </g>
+    <g transform="translate(12,148)">
+      <text x="8" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">R. Kim DO</text>
+      <rect x="108" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="148" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">missing</text>
+      <rect x="196" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="236" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">missing</text>
+      <rect x="284" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="324" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">unknown</text>
+      <rect x="372" y="2" width="80" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="412" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">unknown</text>
+      <rect x="460" y="2" width="56" height="20" rx="3" fill="#dc2626" opacity="0.1"/>
+      <text x="488" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">--</text>
+    </g>
+    <!-- Stats -->
+    <g transform="translate(24,240)">
+      <rect width="492" height="100" rx="10" fill="#dc2626" opacity="0.06"/>
+      <text x="246" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#dc2626" text-anchor="middle">Data Gaps</text>
+      <g transform="translate(20,44)">
+        <text x="0" y="16" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#dc2626">42%</text>
+        <text x="0" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Missing emails</text>
+      </g>
+      <g transform="translate(150,44)">
+        <text x="0" y="16" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#dc2626">35%</text>
+        <text x="0" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Missing phones</text>
+      </g>
+      <g transform="translate(280,44)">
+        <text x="0" y="16" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#dc2626">68%</text>
+        <text x="0" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">No practice intel</text>
+      </g>
+    </g>
+    <g transform="translate(24,360)">
+      <rect width="492" height="120" rx="10" fill="#1B2A4A"/>
+      <text x="246" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle">Impact on Sales</text>
+      <text x="246" y="56" font-family="system-ui,sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">Wasted dials on disconnected numbers</text>
+      <text x="246" y="76" font-family="system-ui,sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">Bounced emails hurt sender reputation</text>
+      <text x="246" y="96" font-family="system-ui,sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">No intel = generic, low-converting pitches</text>
+    </g>
+  </g>
+  <!-- After -->
+  <g transform="translate(620,70)">
+    <rect width="540" height="520" rx="12" fill="#fff" stroke="#16a34a" stroke-width="2"/>
+    <rect width="540" height="48" rx="12" fill="#16a34a"/>
+    <text x="270" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">After Enrichment</text>
+    <!-- Row headers -->
+    <g transform="translate(12,60)">
+      <rect width="100" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="50" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Name</text>
+      <rect x="108" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="148" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Email</text>
+      <rect x="196" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="236" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Phone</text>
+      <rect x="284" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="324" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Specialty</text>
+      <rect x="372" y="0" width="80" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="412" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Size</text>
+      <rect x="460" y="0" width="56" height="28" rx="4" fill="#1B2A4A"/>
+      <text x="488" y="18" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">EHR</text>
+    </g>
+    <!-- Enriched rows -->
+    <g transform="translate(12,96)">
+      <text x="8" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">J. Smith MD</text>
+      <rect x="108" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="148" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">verified ✓</text>
+      <text x="204" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">555-1234</text>
+      <text x="292" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">Family</text>
+      <rect x="372" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="412" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">3 provs</text>
+      <rect x="460" y="2" width="56" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="488" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">Epic</text>
+    </g>
+    <g transform="translate(12,122)">
+      <text x="8" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">L. Chen PhD</text>
+      <rect x="108" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="148" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">new ✓</text>
+      <rect x="196" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="236" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">found ✓</text>
+      <text x="292" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">Psych</text>
+      <text x="380" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">Solo</text>
+      <rect x="460" y="2" width="56" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="488" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">Simple</text>
+    </g>
+    <g transform="translate(12,148)">
+      <text x="8" y="16" font-family="system-ui,sans-serif" font-size="11" fill="#334155">R. Kim DO</text>
+      <rect x="108" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="148" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">found ✓</text>
+      <rect x="196" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="236" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">found ✓</text>
+      <rect x="284" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="324" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">Int Med ✓</text>
+      <rect x="372" y="2" width="80" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="412" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">5 provs</text>
+      <rect x="460" y="2" width="56" height="20" rx="3" fill="#16a34a" opacity="0.1"/>
+      <text x="488" y="16" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">Athena</text>
+    </g>
+    <!-- Stats -->
+    <g transform="translate(24,240)">
+      <rect width="492" height="100" rx="10" fill="#16a34a" opacity="0.06"/>
+      <text x="246" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">Fields Enriched</text>
+      <g transform="translate(20,44)">
+        <text x="0" y="16" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#16a34a">95%</text>
+        <text x="0" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Email coverage</text>
+      </g>
+      <g transform="translate(150,44)">
+        <text x="0" y="16" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#16a34a">92%</text>
+        <text x="0" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Phone coverage</text>
+      </g>
+      <g transform="translate(280,44)">
+        <text x="0" y="16" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#16a34a">100%</text>
+        <text x="0" y="36" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Practice intel</text>
+      </g>
+    </g>
+    <g transform="translate(24,360)">
+      <rect width="492" height="120" rx="10" fill="#1B2A4A"/>
+      <text x="246" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#16a34a" text-anchor="middle">Impact on Sales</text>
+      <text x="246" y="56" font-family="system-ui,sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">3x better connect rates on outbound</text>
+      <text x="246" y="76" font-family="system-ui,sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">Under 2% email bounce rate</text>
+      <text x="246" y="96" font-family="system-ui,sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">Personalized pitches with practice context</text>
+    </g>
+  </g>
+</svg>

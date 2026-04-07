@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <text x="600" y="48" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#1B2A4A" text-anchor="middle">NPI Data Verification Process</text>
+  <!-- Left: Raw Record -->
+  <g transform="translate(40,80)">
+    <rect width="340" height="500" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect width="340" height="48" rx="12" fill="#1B2A4A"/>
+    <text x="170" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Raw NPI Record</text>
+    <g transform="translate(20,68)">
+      <text x="0" y="0" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">NPI</text>
+      <text x="0" y="20" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">1234567890</text>
+      <text x="0" y="50" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">NAME</text>
+      <text x="0" y="70" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">SMITH, JOHN A</text>
+      <text x="0" y="100" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">TAXONOMY</text>
+      <text x="0" y="120" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">207Q00000X</text>
+      <text x="0" y="150" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">ADDRESS</text>
+      <text x="0" y="170" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">123 MAIN ST</text>
+      <text x="0" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">ANYTOWN, TX 75001</text>
+      <text x="0" y="220" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">PHONE</text>
+      <text x="0" y="240" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">(555) 123-4567</text>
+      <text x="0" y="270" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">EMAIL</text>
+      <text x="0" y="290" font-family="system-ui,sans-serif" font-size="15" fill="#94A3B8">Not in NPI data</text>
+      <text x="0" y="320" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">PRACTICE SIZE</text>
+      <text x="0" y="340" font-family="system-ui,sans-serif" font-size="15" fill="#94A3B8">Unknown</text>
+      <text x="0" y="370" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">WEBSITE</text>
+      <text x="0" y="390" font-family="system-ui,sans-serif" font-size="15" fill="#94A3B8">Not in NPI data</text>
+    </g>
+  </g>
+  <!-- Center: Verification Steps -->
+  <g transform="translate(430,80)">
+    <rect width="340" height="500" rx="12" fill="#fff" stroke="#0EA5E9" stroke-width="2"/>
+    <rect width="340" height="48" rx="12" fill="#0EA5E9"/>
+    <text x="170" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Verification Steps</text>
+    <g transform="translate(20,68)">
+      <rect width="300" height="52" rx="8" fill="#0EA5E9" opacity="0.08"/>
+      <circle cx="26" cy="26" r="18" fill="#0EA5E9"/>
+      <text x="26" y="31" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+      <text x="56" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A">NPI Registry Cross-Ref</text>
+      <text x="56" y="38" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Validate active status + taxonomy</text>
+    </g>
+    <g transform="translate(20,132)">
+      <rect width="300" height="52" rx="8" fill="#0EA5E9" opacity="0.05"/>
+      <circle cx="26" cy="26" r="18" fill="#0EA5E9"/>
+      <text x="26" y="31" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+      <text x="56" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A">Email Discovery</text>
+      <text x="56" y="38" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Website scrape + pattern matching</text>
+    </g>
+    <g transform="translate(20,196)">
+      <rect width="300" height="52" rx="8" fill="#0EA5E9" opacity="0.08"/>
+      <circle cx="26" cy="26" r="18" fill="#0EA5E9"/>
+      <text x="26" y="31" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+      <text x="56" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A">Email Validation</text>
+      <text x="56" y="38" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">SMTP check + deliverability score</text>
+    </g>
+    <g transform="translate(20,260)">
+      <rect width="300" height="52" rx="8" fill="#0EA5E9" opacity="0.05"/>
+      <circle cx="26" cy="26" r="18" fill="#16a34a"/>
+      <text x="26" y="31" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+      <text x="56" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A">Phone Verification</text>
+      <text x="56" y="38" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Line type + active status check</text>
+    </g>
+    <g transform="translate(20,324)">
+      <rect width="300" height="52" rx="8" fill="#0EA5E9" opacity="0.08"/>
+      <circle cx="26" cy="26" r="18" fill="#16a34a"/>
+      <text x="26" y="31" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+      <text x="56" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A">Practice Intelligence</text>
+      <text x="56" y="38" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Website, size, tech stack, EHR</text>
+    </g>
+    <g transform="translate(20,388)">
+      <rect width="300" height="52" rx="8" fill="#16a34a" opacity="0.08"/>
+      <circle cx="26" cy="26" r="18" fill="#1B2A4A"/>
+      <text x="26" y="31" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+      <text x="56" y="22" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#1B2A4A">Quality Score</text>
+      <text x="56" y="38" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Confidence rating per field</text>
+    </g>
+  </g>
+  <!-- Right: Enriched Record -->
+  <g transform="translate(820,80)">
+    <rect width="340" height="500" rx="12" fill="#fff" stroke="#16a34a" stroke-width="2"/>
+    <rect width="340" height="48" rx="12" fill="#16a34a"/>
+    <text x="170" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Enriched Record</text>
+    <g transform="translate(20,68)">
+      <text x="0" y="0" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">NPI</text>
+      <text x="0" y="20" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">1234567890</text>
+      <text x="270" y="20" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a">✓</text>
+      <text x="0" y="50" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">NAME</text>
+      <text x="0" y="70" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">Dr. John A. Smith, MD</text>
+      <text x="270" y="70" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a">✓</text>
+      <text x="0" y="100" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">SPECIALTY</text>
+      <text x="0" y="120" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">Family Medicine</text>
+      <text x="270" y="120" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a">✓</text>
+      <text x="0" y="150" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">ADDRESS</text>
+      <text x="0" y="170" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">123 Main St, Suite 200</text>
+      <text x="0" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">Anytown, TX 75001</text>
+      <text x="270" y="170" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a">✓</text>
+      <text x="0" y="220" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#64748B">PHONE</text>
+      <text x="0" y="240" font-family="system-ui,sans-serif" font-size="15" fill="#1B2A4A">(555) 123-4567</text>
+      <text x="270" y="240" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a">✓ Active</text>
+      <text x="0" y="270" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9">EMAIL (NEW)</text>
+      <text x="0" y="290" font-family="system-ui,sans-serif" font-size="15" fill="#0EA5E9">jsmith@mainstreetfm.com</text>
+      <text x="270" y="290" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a">✓ Valid</text>
+      <text x="0" y="320" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9">PRACTICE SIZE (NEW)</text>
+      <text x="0" y="340" font-family="system-ui,sans-serif" font-size="15" fill="#0EA5E9">3 providers, solo-owned</text>
+      <text x="0" y="370" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9">WEBSITE (NEW)</text>
+      <text x="0" y="390" font-family="system-ui,sans-serif" font-size="15" fill="#0EA5E9">mainstreetfamilymed.com</text>
+      <text x="0" y="420" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9">EHR (NEW)</text>
+      <text x="0" y="440" font-family="system-ui,sans-serif" font-size="15" fill="#0EA5E9">athenahealth</text>
+    </g>
+  </g>
+</svg>

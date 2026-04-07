@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <text x="600" y="44" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#1B2A4A" text-anchor="middle">Healthcare Data Vendor Comparison</text>
+  <!-- Table -->
+  <g transform="translate(40,65)">
+    <!-- Header row -->
+    <rect width="1120" height="50" rx="8" fill="#1B2A4A"/>
+    <text x="180" y="32" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Feature</text>
+    <text x="420" y="32" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0EA5E9" text-anchor="middle">Provyx</text>
+    <text x="620" y="32" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">Enterprise Vendors</text>
+    <text x="860" y="32" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">Generic B2B Tools</text>
+    <text x="1060" y="32" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">Free NPI Data</text>
+    <!-- Row 1 -->
+    <g transform="translate(0,58)">
+      <rect width="1120" height="48" rx="4" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Pricing Model</text>
+      <rect x="360" y="10" width="120" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">Pay-per-record</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">$30K-200K/yr</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#d97706" text-anchor="middle">$5K-50K/yr</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">Free</text>
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(0,110)">
+      <rect width="1120" height="48" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Contract Length</text>
+      <rect x="360" y="10" width="120" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">No contract</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">12-24 months</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#d97706" text-anchor="middle">12 months</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">None</text>
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(0,162)">
+      <rect width="1120" height="48" rx="4" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Direct Emails</text>
+      <rect x="360" y="10" width="120" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">Verified</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">Verified</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#d97706" text-anchor="middle">Mixed quality</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">Not included</text>
+    </g>
+    <!-- Row 4 -->
+    <g transform="translate(0,214)">
+      <rect width="1120" height="48" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Healthcare Focus</text>
+      <rect x="360" y="10" width="120" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">100%</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">100%</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">5-10%</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">100%</text>
+    </g>
+    <!-- Row 5 -->
+    <g transform="translate(0,266)">
+      <rect width="1120" height="48" rx="4" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Practice Intel</text>
+      <rect x="360" y="10" width="120" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">Included</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">Included</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">Not available</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">Not included</text>
+    </g>
+    <!-- Row 6 -->
+    <g transform="translate(0,318)">
+      <rect width="1120" height="48" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Min. Commitment</text>
+      <rect x="360" y="10" width="120" height="28" rx="4" fill="#16a34a" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#16a34a" text-anchor="middle">$0</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">$30,000+</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#d97706" text-anchor="middle">$5,000+</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">$0</text>
+    </g>
+    <!-- Row 7 -->
+    <g transform="translate(0,370)">
+      <rect width="1120" height="48" rx="4" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Best For</text>
+      <rect x="340" y="10" width="160" height="28" rx="4" fill="#0EA5E9" opacity="0.1"/>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9" text-anchor="middle">Growing teams</text>
+      <text x="620" y="30" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Enterprise orgs</text>
+      <text x="860" y="30" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Non-healthcare</text>
+      <text x="1060" y="30" font-family="system-ui,sans-serif" font-size="12" fill="#64748B" text-anchor="middle">DIY research</text>
+    </g>
+  </g>
+  <!-- Bottom verdict -->
+  <g transform="translate(40,510)">
+    <rect width="1120" height="90" rx="12" fill="#1B2A4A"/>
+    <rect x="20" y="16" width="4" height="58" rx="2" fill="#0EA5E9"/>
+    <text x="40" y="38" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#fff">Key Takeaway</text>
+    <text x="40" y="62" font-family="system-ui,sans-serif" font-size="14" fill="#CBD5E1">Enterprise vendors charge $30K-200K/yr with 12-24 month contracts. Generic B2B tools lack healthcare depth.</text>
+    <text x="40" y="80" font-family="system-ui,sans-serif" font-size="14" fill="#CBD5E1">Provyx delivers healthcare-grade data without enterprise pricing or long-term commitments.</text>
+  </g>
+</svg>

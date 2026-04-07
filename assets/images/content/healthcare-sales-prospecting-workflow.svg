@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <text x="600" y="44" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#1B2A4A" text-anchor="middle">Healthcare Sales Prospecting Workflow</text>
+  <!-- Phase 1 -->
+  <g transform="translate(40,70)">
+    <rect width="260" height="520" rx="12" fill="#fff" stroke="#0EA5E9" stroke-width="2"/>
+    <rect width="260" height="52" rx="12" fill="#0EA5E9"/>
+    <text x="130" y="20" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.7)" text-anchor="middle">PHASE 1</text>
+    <text x="130" y="40" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Target Definition</text>
+    <g transform="translate(20,72)">
+      <rect width="220" height="40" rx="6" fill="#0EA5E9" opacity="0.08"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Define specialty focus</text>
+    </g>
+    <g transform="translate(20,122)">
+      <rect width="220" height="40" rx="6" fill="#0EA5E9" opacity="0.05"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Set geographic scope</text>
+    </g>
+    <g transform="translate(20,172)">
+      <rect width="220" height="40" rx="6" fill="#0EA5E9" opacity="0.08"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Choose practice size filter</text>
+    </g>
+    <g transform="translate(20,222)">
+      <rect width="220" height="40" rx="6" fill="#0EA5E9" opacity="0.05"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Define decision-maker titles</text>
+    </g>
+    <g transform="translate(20,282)">
+      <rect width="220" height="80" rx="8" fill="#1B2A4A"/>
+      <text x="110" y="24" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9" text-anchor="middle">EXAMPLE ICP</text>
+      <text x="110" y="46" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">Dental practice owners</text>
+      <text x="110" y="64" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">3+ operatories, TX/FL/CA</text>
+    </g>
+    <g transform="translate(20,380)">
+      <text x="110" y="16" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#0EA5E9" text-anchor="middle">140+</text>
+      <text x="110" y="40" font-family="system-ui,sans-serif" font-size="13" fill="#64748B" text-anchor="middle">specialties to target</text>
+    </g>
+  </g>
+  <!-- Arrow 1 -->
+  <g transform="translate(310,310)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="5,3"/>
+    <polygon points="36,-6 48,0 36,6" fill="#0EA5E9"/>
+  </g>
+  <!-- Phase 2 -->
+  <g transform="translate(360,70)">
+    <rect width="260" height="520" rx="12" fill="#fff" stroke="#1B2A4A" stroke-width="2"/>
+    <rect width="260" height="52" rx="12" fill="#1B2A4A"/>
+    <text x="130" y="20" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.7)" text-anchor="middle">PHASE 2</text>
+    <text x="130" y="40" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Data Acquisition</text>
+    <g transform="translate(20,72)">
+      <rect width="220" height="40" rx="6" fill="#1B2A4A" opacity="0.05"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Pull NPI registry records</text>
+    </g>
+    <g transform="translate(20,122)">
+      <rect width="220" height="40" rx="6" fill="#1B2A4A" opacity="0.03"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Enrich with contact data</text>
+    </g>
+    <g transform="translate(20,172)">
+      <rect width="220" height="40" rx="6" fill="#1B2A4A" opacity="0.05"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Append practice intel</text>
+    </g>
+    <g transform="translate(20,222)">
+      <rect width="220" height="40" rx="6" fill="#1B2A4A" opacity="0.03"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Verify every record</text>
+    </g>
+    <g transform="translate(20,282)">
+      <rect width="220" height="80" rx="8" fill="#1B2A4A"/>
+      <text x="110" y="24" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0EA5E9" text-anchor="middle">FIELDS INCLUDED</text>
+      <text x="110" y="46" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">Email, Phone, NPI, Address</text>
+      <text x="110" y="64" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">Website, EHR, Practice Size</text>
+    </g>
+    <g transform="translate(20,380)">
+      <text x="110" y="16" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#1B2A4A" text-anchor="middle">95%</text>
+      <text x="110" y="40" font-family="system-ui,sans-serif" font-size="13" fill="#64748B" text-anchor="middle">data accuracy rate</text>
+    </g>
+  </g>
+  <!-- Arrow 2 -->
+  <g transform="translate(630,310)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="5,3"/>
+    <polygon points="36,-6 48,0 36,6" fill="#16a34a"/>
+  </g>
+  <!-- Phase 3 -->
+  <g transform="translate(680,70)">
+    <rect width="260" height="520" rx="12" fill="#fff" stroke="#16a34a" stroke-width="2"/>
+    <rect width="260" height="52" rx="12" fill="#16a34a"/>
+    <text x="130" y="20" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.7)" text-anchor="middle">PHASE 3</text>
+    <text x="130" y="40" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Outreach</text>
+    <g transform="translate(20,72)">
+      <rect width="220" height="40" rx="6" fill="#16a34a" opacity="0.08"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Import to CRM</text>
+    </g>
+    <g transform="translate(20,122)">
+      <rect width="220" height="40" rx="6" fill="#16a34a" opacity="0.05"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Build email sequences</text>
+    </g>
+    <g transform="translate(20,172)">
+      <rect width="220" height="40" rx="6" fill="#16a34a" opacity="0.08"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Schedule calls by territory</text>
+    </g>
+    <g transform="translate(20,222)">
+      <rect width="220" height="40" rx="6" fill="#16a34a" opacity="0.05"/>
+      <text x="16" y="25" font-family="system-ui,sans-serif" font-size="13" fill="#1B2A4A">Track engagement metrics</text>
+    </g>
+    <g transform="translate(20,282)">
+      <rect width="220" height="80" rx="8" fill="#1B2A4A"/>
+      <text x="110" y="24" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#16a34a" text-anchor="middle">INTEGRATIONS</text>
+      <text x="110" y="46" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">Salesforce, HubSpot</text>
+      <text x="110" y="64" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">CSV, API, Direct Upload</text>
+    </g>
+    <g transform="translate(20,380)">
+      <text x="110" y="16" font-family="system-ui,sans-serif" font-size="36" font-weight="800" fill="#16a34a" text-anchor="middle">3x</text>
+      <text x="110" y="40" font-family="system-ui,sans-serif" font-size="13" fill="#64748B" text-anchor="middle">better connect rates</text>
+    </g>
+  </g>
+  <!-- Arrow 3 -->
+  <g transform="translate(950,310)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#1B2A4A" stroke-width="2.5" stroke-dasharray="5,3"/>
+    <polygon points="36,-6 48,0 36,6" fill="#1B2A4A"/>
+  </g>
+  <!-- Phase 4 -->
+  <g transform="translate(1000,70)">
+    <rect width="160" height="520" rx="12" fill="#1B2A4A"/>
+    <text x="80" y="36" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.7)" text-anchor="middle">RESULT</text>
+    <text x="80" y="100" font-family="system-ui,sans-serif" font-size="60" font-weight="800" fill="#0EA5E9" text-anchor="middle" transform="rotate(-90,80,280)">PIPELINE</text>
+    <g transform="translate(20,430)">
+      <rect width="120" height="70" rx="8" fill="rgba(14,165,233,0.15)"/>
+      <text x="60" y="30" font-family="system-ui,sans-serif" font-size="24" font-weight="800" fill="#0EA5E9" text-anchor="middle">ROI</text>
+      <text x="60" y="52" font-family="system-ui,sans-serif" font-size="12" fill="#CBD5E1" text-anchor="middle">Measurable</text>
+    </g>
+  </g>
+</svg>
