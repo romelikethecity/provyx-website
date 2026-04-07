@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 old-logos-do not use!/
+
+# Build scripts (not for public serving)
+scripts/
+
+# Internal docs
+CLAUDE.md
+CONTEXT_STATE.md
+EVENT-MARKETING-CONTENT-HANDOFF.md
+HANDOFF-EVENT-MARKETING.md
+KEYWORD_MAP.md
+SEO_IMPROVEMENT_PLAN.md
