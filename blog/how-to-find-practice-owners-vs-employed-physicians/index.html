@@ -293,6 +293,7 @@
     <section class="content-section">
         <div class="container" style="max-width:800px">
             
+
 <h2>Why Ownership Status Is the Most Underrated Data Point in Healthcare Sales</h2>
 
 <p>You pull a list of 500 dermatologists in Texas. Your reps start calling. Half the time, they reach a physician who says "I don't make those decisions" or "you need to talk to corporate." The call is over in 30 seconds. Your rep just burned their opening with that practice on someone who cannot buy.</p>
@@ -303,6 +304,13 @@
 
 <p>Ownership data tells you who to call, what to say, and how the deal will move forward. Here is how to identify practice owners versus employed physicians.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Method 1: State Secretary of State Filings</h2>
 
 <p>Every business entity in the US is registered with a state agency, usually the Secretary of State. These filings are public record and typically include the business name, entity type, registered agent, and in many states, the names of officers, directors, or managing members.</p>
@@ -323,6 +331,7 @@
 
 <p>For PE-backed practices, the SOS filing will often show a holding company or management entity as the member rather than individual physician names. This is actually useful information: if the managing member is "Dermatology Partners Holdings LLC" instead of a physician name, you know the practice is PE-owned and the buying authority likely sits at the platform company level.</p>
 
+
 <h2>Method 2: NPI Entity Type Cross-Reference</h2>
 
 <p>While the NPI registry does not directly indicate ownership, you can infer ownership patterns using entity type data.</p>
@@ -340,6 +349,13 @@
 
 <p>This method has good precision (the people it identifies as owners usually are owners) but limited recall (it misses owners who are not the authorized official on the Type 2 NPI). Use it as one signal in combination with other methods.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Method 3: Practice Website and LinkedIn Research</h2>
 
 <p>Practice websites frequently identify owners and partners. Common indicators:</p>
@@ -358,6 +374,7 @@
 
 <p>The accuracy tradeoff: manual research produces 90%+ accuracy on ownership classification. Automated web research produces 75-85% accuracy. The hybrid approach (automated extraction with manual verification of edge cases) balances speed and accuracy for lists in the 500-5,000 range.</p>
 
+
 <h2>Method 4: Ownership Indicators from Business Data</h2>
 
 <p>Commercial business databases and credit reporting agencies track business ownership as part of their standard data model. While these sources are not free, they provide direct ownership information that is harder to derive from public records alone.</p>
@@ -368,6 +385,13 @@
 <li><strong>Corporate parent indicators:</strong> If the practice entity is a subsidiary of or shares a registered agent with a larger holding company, it is likely PE-owned or part of a health system.</li>
 </ul>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Building an Ownership Classification Pipeline</h2>
 
 <p>The most reliable ownership classification combines multiple signals. Here is the pipeline we use:</p>
@@ -382,6 +406,7 @@
 
 <p>This pipeline achieves 85-90% classification accuracy across a typical provider list. The unclassified 10-15% are edge cases (newly acquired practices, practices in states with limited public data, locum tenens arrangements).</p>
 
+
 <h2>How Ownership Data Changes Your Sales Motion</h2>
 
 <p>With ownership classification in your CRM, you can:</p>
@@ -395,16 +420,23 @@
 
 <p>For teams that need ownership data without building the pipeline themselves, <a href="/services/provider-contact-data/">Provyx includes ownership classification</a> as part of our provider contact data deliveries. We run the multi-source pipeline described above and deliver records pre-classified as owner, employed, or PE-affiliated.</p>
 
-            
+
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
       
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
+
     <figure class="content-figure">
-      <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
       
-      <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
+      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>

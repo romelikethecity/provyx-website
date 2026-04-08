@@ -293,6 +293,7 @@
     <section class="content-section">
         <div class="container" style="max-width:800px">
             
+
 <h2>The Territory Planning Problem in Medical Device Sales</h2>
 
 <p>Most medical device companies carve territories using one of two approaches: historical sales data (where did we sell last year?) or crude geographic splits (you get the Northeast, I get the Southeast). Both approaches have the same flaw: they do not account for where the actual target providers are located right now.</p>
@@ -301,6 +302,13 @@
 
 <p>The fix is straightforward: build your territory model on actual provider data. Map every target specialist in your addressable market, cluster them by geography and density, and carve territories that balance opportunity across your sales team. This guide walks through the process.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Step 1: Build Your Provider Universe</h2>
 
 <p>Start by defining which providers are relevant to your device. This is more specific than "orthopedic surgeons" or "dermatologists." Consider:</p>
@@ -312,6 +320,7 @@
 </ul>
 
 <p>Pull all matching providers from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> with their practice addresses. For a national territory model, this typically produces 2,000 to 50,000 target providers depending on how niche your device category is.</p>
+
 
 <h2>Step 2: Geocode and Plot Provider Locations</h2>
 
@@ -332,6 +341,13 @@
 
 <p>For failed geocodes, try geocoding at the city + state level to place the provider in the correct general area. This is accurate enough for territory planning even if you cannot pinpoint the exact building.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Step 3: Identify Provider Clusters</h2>
 
 <p>Medical device sales are fundamentally local. A rep based in Phoenix can cover Tucson (2 hours), but covering Albuquerque (6 hours) is a different territory. Identifying natural provider clusters helps you draw territory boundaries that make geographic sense.</p>
@@ -343,6 +359,7 @@
 <p><strong>Drive-time analysis:</strong> For field sales teams that visit provider offices, drive time matters more than straight-line distance. Use routing APIs to calculate drive time from a proposed rep location to each provider in the territory. Group providers into clusters where all members are within a target drive time (typically 2-3 hours) of a central point.</p>
 
 <p><strong>Density-based clustering:</strong> Algorithms like DBSCAN identify clusters of providers that are geographically close to each other, regardless of administrative boundaries like zip codes or MSAs. This is useful for identifying natural clusters that cross city or county lines.</p>
+
 
 <h2>Step 4: Score Each Cluster by Opportunity</h2>
 
@@ -358,6 +375,13 @@
 <li><strong>Payer mix:</strong> Some regions have better reimbursement for your device's procedures than others. Where reimbursement is favorable, providers are more likely to adopt new devices.</li>
 </ul>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Step 5: Balance Territories Across Your Sales Team</h2>
 
 <p>The goal of territory balancing is to give each rep a roughly equal opportunity to hit their number. Equal does not mean the same number of providers in each territory. It means equalizing weighted opportunity based on the cluster scores from Step 4.</p>
@@ -380,6 +404,7 @@
 <li><strong>Optimizing for today only:</strong> Build some flexibility into territories. If a market is growing (new ASCs opening, new providers entering practice), the territory should have room to absorb that growth without immediate realignment.</li>
 </ul>
 
+
 <h2>Step 6: Maintain the Map Over Time</h2>
 
 <p>Provider data changes. New practices open. Surgeons relocate. Practices get acquired by health systems. A territory map built on static data degrades the same way any provider list does.</p>
@@ -388,16 +413,23 @@
 
 <p>For the underlying provider data that powers territory mapping, <a href="/services/practice-location-data/">Provyx delivers verified provider locations</a> with practice addresses differentiated from billing addresses, geocoded coordinates, and NPI-level specialty data. We refresh the data on your schedule so your territory model stays current.</p>
 
-            
+
     <figure class="content-figure">
-      <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
       
-      <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
+      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
+
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
       
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>

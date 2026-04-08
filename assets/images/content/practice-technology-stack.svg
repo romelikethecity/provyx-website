@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="50" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#1B2A4A" text-anchor="middle">Practice Technology Stack Detection</text>
+  <text x="600" y="76" font-family="system-ui,sans-serif" font-size="14" fill="#64748B" text-anchor="middle">EHR, practice management, and billing systems identified per provider</text>
+
+  <!-- Grid of tech cards -->
+  <!-- Row 1 -->
+  <rect x="60" y="100" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="80" y="120" width="40" height="40" rx="8" fill="#0EA5E9" opacity="0.12"/>
+  <text x="100" y="146" font-family="system-ui,sans-serif" font-size="16" fill="#0EA5E9" text-anchor="middle" font-weight="700">E</text>
+  <text x="135" y="138" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">Epic</text>
+  <text x="135" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Enterprise EHR</text>
+  <rect x="244" y="125" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="269" y="140" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">34K+</text>
+
+  <rect x="340" y="100" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="360" y="120" width="40" height="40" rx="8" fill="#16a34a" opacity="0.12"/>
+  <text x="380" y="146" font-family="system-ui,sans-serif" font-size="16" fill="#16a34a" text-anchor="middle" font-weight="700">A</text>
+  <text x="415" y="138" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">athenahealth</text>
+  <text x="415" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Cloud EHR + RCM</text>
+  <rect x="524" y="125" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="549" y="140" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">28K+</text>
+
+  <rect x="620" y="100" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="640" y="120" width="40" height="40" rx="8" fill="#0EA5E9" opacity="0.12"/>
+  <text x="660" y="146" font-family="system-ui,sans-serif" font-size="16" fill="#0EA5E9" text-anchor="middle" font-weight="700">D</text>
+  <text x="695" y="138" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">Dentrix</text>
+  <text x="695" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Dental PM</text>
+  <rect x="804" y="125" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="829" y="140" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">42K+</text>
+
+  <rect x="900" y="100" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="920" y="120" width="40" height="40" rx="8" fill="#16a34a" opacity="0.12"/>
+  <text x="940" y="146" font-family="system-ui,sans-serif" font-size="16" fill="#16a34a" text-anchor="middle" font-weight="700">C</text>
+  <text x="975" y="138" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">Cerner</text>
+  <text x="975" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Hospital EHR</text>
+  <rect x="1084" y="125" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="1109" y="140" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">18K+</text>
+
+  <!-- Row 2 -->
+  <rect x="60" y="230" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="80" y="250" width="40" height="40" rx="8" fill="#0EA5E9" opacity="0.12"/>
+  <text x="100" y="276" font-family="system-ui,sans-serif" font-size="16" fill="#0EA5E9" text-anchor="middle" font-weight="700">O</text>
+  <text x="135" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">Open Dental</text>
+  <text x="135" y="288" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Dental PM (Open Source)</text>
+  <rect x="244" y="255" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="269" y="270" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">19K+</text>
+
+  <rect x="340" y="230" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="360" y="250" width="40" height="40" rx="8" fill="#16a34a" opacity="0.12"/>
+  <text x="380" y="276" font-family="system-ui,sans-serif" font-size="16" fill="#16a34a" text-anchor="middle" font-weight="700">N</text>
+  <text x="415" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">NextGen</text>
+  <text x="415" y="288" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Ambulatory EHR</text>
+  <rect x="524" y="255" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="549" y="270" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">15K+</text>
+
+  <rect x="620" y="230" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="640" y="250" width="40" height="40" rx="8" fill="#0EA5E9" opacity="0.12"/>
+  <text x="660" y="276" font-family="system-ui,sans-serif" font-size="16" fill="#0EA5E9" text-anchor="middle" font-weight="700">T</text>
+  <text x="695" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">TherapyNotes</text>
+  <text x="695" y="288" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Mental Health PM</text>
+  <rect x="804" y="255" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="829" y="270" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">22K+</text>
+
+  <rect x="900" y="230" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="920" y="250" width="40" height="40" rx="8" fill="#16a34a" opacity="0.12"/>
+  <text x="940" y="276" font-family="system-ui,sans-serif" font-size="16" fill="#16a34a" text-anchor="middle" font-weight="700">P</text>
+  <text x="975" y="268" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">Practice Fusion</text>
+  <text x="975" y="288" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Free Cloud EHR</text>
+  <rect x="1084" y="255" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="1109" y="270" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">12K+</text>
+
+  <!-- Row 3 -->
+  <rect x="60" y="360" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="80" y="380" width="40" height="40" rx="8" fill="#0EA5E9" opacity="0.12"/>
+  <text x="100" y="406" font-family="system-ui,sans-serif" font-size="16" fill="#0EA5E9" text-anchor="middle" font-weight="700">K</text>
+  <text x="135" y="398" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">Kareo</text>
+  <text x="135" y="418" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Small Practice PM</text>
+  <rect x="244" y="385" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="269" y="400" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">14K+</text>
+
+  <rect x="340" y="360" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="360" y="380" width="40" height="40" rx="8" fill="#16a34a" opacity="0.12"/>
+  <text x="380" y="406" font-family="system-ui,sans-serif" font-size="16" fill="#16a34a" text-anchor="middle" font-weight="700">E</text>
+  <text x="415" y="398" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">eClinicalWorks</text>
+  <text x="415" y="418" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Multi-specialty EHR</text>
+  <rect x="524" y="385" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="549" y="400" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">21K+</text>
+
+  <rect x="620" y="360" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="640" y="380" width="40" height="40" rx="8" fill="#0EA5E9" opacity="0.12"/>
+  <text x="660" y="406" font-family="system-ui,sans-serif" font-size="16" fill="#0EA5E9" text-anchor="middle" font-weight="700">C</text>
+  <text x="695" y="398" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">ChiroTouch</text>
+  <text x="695" y="418" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Chiropractic PM</text>
+  <rect x="804" y="385" width="50" height="22" rx="11" fill="#16a34a" opacity="0.12"/>
+  <text x="829" y="400" font-family="system-ui,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">11K+</text>
+
+  <rect x="900" y="360" width="250" height="100" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="920" y="380" width="40" height="40" rx="8" fill="#1B2A4A" opacity="0.12"/>
+  <text x="940" y="406" font-family="system-ui,sans-serif" font-size="16" fill="#1B2A4A" text-anchor="middle" font-weight="700">+</text>
+  <text x="975" y="398" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#1B2A4A">40+ More</text>
+  <text x="975" y="418" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">Systems tracked</text>
+
+  <!-- Bottom bar -->
+  <rect x="60" y="490" width="1080" height="100" rx="12" fill="#1B2A4A"/>
+  <text x="600" y="530" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">Technology stack data helps you target practices using specific EHR systems</text>
+  <text x="600" y="560" font-family="system-ui,sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Filter by software vendor, implementation date, and practice size for precision targeting</text>
+</svg>

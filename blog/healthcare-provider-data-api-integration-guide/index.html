@@ -293,6 +293,7 @@
     <section class="content-section">
         <div class="container" style="max-width:800px">
             
+
 <h2>The Real Cost of Manual Provider Data Management</h2>
 
 <p>Here's a number that should make you uncomfortable: sales operations teams at healthcare B2B companies spend an average of 12-15 hours per week managing provider data manually. Downloading files, reformatting columns, deduplicating records, uploading to the CRM, fixing field mapping errors, then doing it all again next month.</p>
@@ -303,6 +304,13 @@
 
 <p>This guide covers the technical and strategic considerations for integrating healthcare provider data into your systems. Whether you're evaluating API vendors, building an ETL pipeline, or trying to figure out if you should build or buy, this is the breakdown you need.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>API vs. Bulk File Delivery: When to Use Each</h2>
 
 <p>The first decision is how you want to receive provider data. There are two primary models, and most mature organizations use both for different purposes.</p>
@@ -371,6 +379,7 @@
 <li>Monthly delta file adds new providers and removes deactivated NPIs</li>
 </ol>
 
+
 <h2>CRM Integration Patterns</h2>
 
 <p>The CRM is where your sales team lives. If provider data doesn't make it into the CRM cleanly, it doesn't matter how good the data is. Here's how to structure the integration for Salesforce and HubSpot, the two most common CRMs in healthcare B2B.</p>
@@ -408,6 +417,13 @@
 <li><strong>Multi-practice provider handling.</strong> Approximately 15-20% of providers practice at multiple locations. Decide your strategy: create one Contact record with the primary location, or create Contact records for each location? For sales teams, one Contact per provider (at their primary location) with a notes field listing other locations is usually the right approach. It prevents duplicate outreach.</li>
 </ul>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Building an ETL Pipeline for Provider Data</h2>
 
 <p>If you're working with bulk provider data files, you need an ETL (Extract, Transform, Load) pipeline to get that data into your systems cleanly and repeatably.</p>
@@ -463,6 +479,7 @@
 <li><strong>Enterprise (1M+ records, real-time needs):</strong> Managed ETL service (Fivetran, Airbyte) for extraction. dbt for transformation. Snowflake for storage. Reverse ETL (Census, Hightouch) for CRM sync. Infrastructure cost: $1,000-$5,000/month depending on volume.</li>
 </ul>
 
+
 <h2>Real-Time Verification Endpoints</h2>
 
 <p>One of the highest-value uses of a provider data API is real-time verification. When a sales rep pulls up a provider record, verify that the data is still current before they pick up the phone.</p>
@@ -491,6 +508,13 @@
 
 <p>Response time matters here. If verification takes more than 2-3 seconds, reps will click away before it completes. Look for APIs with sub-second response times on single-record queries.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Data Refresh Strategies</h2>
 
 <p>Provider data isn't static. CMS data shows 4-6% of provider records change every month. Phone numbers disconnect. Providers move practices. New providers enter the market. Your data integration needs a refresh strategy.</p>
@@ -521,6 +545,7 @@
 <p>Webhook-based updates are ideal for teams that need data freshness measured in hours rather than days. They require a publicly accessible endpoint on your side to receive the webhook payload, plus logic to process and apply the update.</p>
 
 <p>Not all vendors offer webhooks. If yours doesn't, you can approximate the pattern by polling the API for changes at frequent intervals (hourly or every few hours).</p>
+
 
 <h2>Build vs. Buy: The Decision Framework</h2>
 
@@ -577,6 +602,13 @@
 
 <p>For most healthcare B2B sales teams, buying is the right call. The total cost of building and maintaining a complete provider data pipeline exceeds what you'd pay a vendor, and you get better data faster. The build route makes sense for companies where provider data is the core product (like a <a href="/services/data-enrichment/">data enrichment service</a>) or where you have very specific data requirements that no vendor can meet.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Cost Comparison: API vs. Manual Data Management</h2>
 
 <p>Let's put real numbers on the comparison between manual data management and API-integrated workflows.</p>
@@ -605,6 +637,7 @@
 
 <p>The API-integrated approach saves $30,000-$60,000 per year in direct costs. But the bigger savings are in sales productivity. When reps trust the data and don't spend 30-60 minutes per day verifying contacts, they make more calls, send more emails, and book more meetings. A 10-rep team reclaiming 30 minutes per day generates an additional 1,300+ hours of selling time annually.</p>
 
+
 <h2>Security and Compliance Considerations</h2>
 
 <p>Provider contact data isn't Protected Health Information (PHI), but it's still business-sensitive data that requires proper handling.</p>
@@ -619,6 +652,13 @@
 
 <p>For more on healthcare data compliance in CRM contexts, check our <a href="/blog/healthcare-crm-data-enrichment/">CRM data enrichment guide</a>.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Getting Started</h2>
 
 <p>If you're moving from manual provider data management to API-integrated workflows, here's the path:</p>
@@ -633,16 +673,11 @@
 
 <p>Provyx supports both bulk file delivery and API access for healthcare provider data. Whether you need a one-time list or an ongoing data feed into your CRM, <a href="/contact/">talk to our team</a> about the integration pattern that fits your stack.</p>
 
-            
+
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
+      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
       
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
-    </figure>
-    <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Data API: Integration Guide for Teams" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>

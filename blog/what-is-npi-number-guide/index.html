@@ -293,6 +293,7 @@
     <section class="content-section">
         <div class="container" style="max-width:800px">
             
+
 <h2>The Basics: What an NPI Number Is</h2>
 
 <p>An NPI number is a 10-digit identifier assigned to every healthcare provider in the United States. NPI stands for National Provider Identifier. The system was created by the Centers for Medicare and Medicaid Services (CMS) under the Health Insurance Portability and Accountability Act of 1996 (HIPAA). Every doctor, dentist, therapist, chiropractor, and healthcare organization that bills insurance needs one.</p>
@@ -303,6 +304,13 @@
 
 <p>Here's what matters for sales teams: because every active provider has an NPI, and because the registry is public, it's the most complete starting point for building a provider database. Not the most useful starting point. Not the most accurate. But the most complete. That distinction matters a lot, and we'll get into why.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Type 1 vs. Type 2 NPI Numbers</h2>
 
 <p>There are two types of NPI numbers. Understanding the difference is critical if you're using NPI data for prospecting.</p>
@@ -322,6 +330,7 @@
 <p>This is where it gets interesting for sales teams. A single dental practice with 4 dentists might have 5 NPIs: one Type 2 for the practice itself, and four Type 1 NPIs for each individual dentist. A large health system could have hundreds of Type 2 NPIs for different facilities, departments, and subsidiaries.</p>
 
 <p>There are approximately 1.2 million active Type 2 NPIs. But the relationship between Type 1 and Type 2 records isn't cleanly mapped in the registry. You can't easily query "show me all providers who work at this organization" using NPI data alone. That linkage problem is one of the biggest limitations for sales use cases.</p>
+
 
 <h2>What Data the NPI Registry Contains</h2>
 
@@ -363,6 +372,13 @@
 
 <p>For a deeper look at exactly where NPI data falls short compared to commercial sources, we <a href="/blog/npi-database-vs-commercial-provider-data/">cover NPI vs commercial data in depth here</a>.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>How to Look Up an NPI Number</h2>
 
 <p>There are three main ways to access NPI data. Each serves a different use case.</p>
@@ -388,6 +404,7 @@
 <p>This is the approach for any serious data operation. Download the full file, load it into a database (PostgreSQL, MySQL, even SQLite if you're careful about memory), and query it however you want. No rate limits, no API restrictions, total flexibility.</p>
 
 <p>The download is available at <a href="https://download.cms.gov/nppes/NPI_Files.html" target="_blank" rel="noopener">CMS NPPES Data Dissemination</a>. You'll need to parse the pipe-delimited format and handle the taxonomy code crosswalk table separately.</p>
+
 
 <h2>NPI Data Limitations for Sales Teams</h2>
 
@@ -419,6 +436,13 @@
 
 <p>For B2B sales, you typically want to target practices, not individual providers. You want to know: this practice has 6 providers, does $3M in revenue, uses Dentrix for their EHR, and the office manager's name is Janet. NPI data gives you fragments of that picture with no clean way to assemble them.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>How Smart Sales Teams Use NPI Data</h2>
 
 <p>Despite its limitations, NPI data is valuable when you use it for what it's good at: coverage, deduplication, and as a foundation for enrichment.</p>
@@ -447,6 +471,7 @@
 
 <p>Set up a monthly process to pull new Type 2 NPIs in your target taxonomies and geographies. These are practices that haven't been saturated by every other sales team yet.</p>
 
+
 <h2>Enrichment: What You Need Beyond NPI</h2>
 
 <p>NPI data is a starting point. To build a list your sales team can work, you need to layer on additional data sources. Here's what to prioritize.</p>
@@ -473,6 +498,13 @@
 
 <p>Is the practice independently owned? Part of a DSO? Hospital-affiliated? PE-backed? Ownership determines who makes buying decisions, how long the sales cycle takes, and what budget authority looks like. NPI data doesn't capture this. Commercial sources build it from state filings, acquisition announcements, and organizational data.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Common Mistakes When Using NPI Data for Sales</h2>
 
 <p>We've seen these errors repeatedly across sales teams that try to build provider lists from NPI data alone.</p>
@@ -495,6 +527,7 @@
 
 <p>For more on common prospecting errors, check out our guide on <a href="/blog/healthcare-sales-prospecting-mistakes/">healthcare sales prospecting mistakes</a>.</p>
 
+
 <h2>A Practical Workflow for Sales Teams</h2>
 
 <p>Here's the exact process we recommend for using NPI data as part of your prospecting workflow.</p>
@@ -510,6 +543,13 @@
 
 <p>This workflow turns raw NPI data into a working sales list. The NPI step takes an hour. The enrichment and verification steps take days. That's where the real value is created.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>NPI Data Is a Starting Point, Not a Sales List</h2>
 
 <p>NPI numbers are the foundation of healthcare provider identification. For sales teams, NPI data is essential for coverage, deduplication, and verification. It's free, it's public, and it's the most complete source of provider information available.</p>
@@ -520,16 +560,11 @@
 
 <p>If you want to skip the manual enrichment process, <a href="/contact/">talk to us</a>. Provyx starts with NPI data and adds verified contact information, practice intelligence, and technology data so your team can start selling instead of data wrangling.</p>
 
-            
+
     <figure class="content-figure">
       <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
       
       <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
-    </figure>
-    <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to What Is an NPI Number? The B2B Sales Team's Guide to NPI Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>

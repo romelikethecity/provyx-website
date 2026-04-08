@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="50" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#1B2A4A" text-anchor="middle">Email Deliverability Dashboard</text>
+
+  <!-- Top metric cards -->
+  <!-- Deliverability Rate -->
+  <rect x="60" y="80" width="260" height="140" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="80" y="115" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#64748B">DELIVERABILITY RATE</text>
+  <text x="80" y="165" font-family="system-ui,sans-serif" font-size="48" font-weight="800" fill="#16a34a">94.2%</text>
+  <rect x="80" y="185" width="220" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="80" y="185" width="207" height="8" rx="4" fill="#16a34a"/>
+  <text x="80" y="210" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Industry avg: 79%</text>
+
+  <!-- Bounce Rate -->
+  <rect x="350" y="80" width="260" height="140" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="370" y="115" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#64748B">BOUNCE RATE</text>
+  <text x="370" y="165" font-family="system-ui,sans-serif" font-size="48" font-weight="800" fill="#0EA5E9">2.1%</text>
+  <rect x="370" y="185" width="220" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="370" y="185" width="10" height="8" rx="4" fill="#0EA5E9"/>
+  <text x="370" y="210" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Industry avg: 8-12%</text>
+
+  <!-- Inbox Placement -->
+  <rect x="640" y="80" width="260" height="140" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="660" y="115" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#64748B">INBOX PLACEMENT</text>
+  <text x="660" y="165" font-family="system-ui,sans-serif" font-size="48" font-weight="800" fill="#16a34a">91.7%</text>
+  <rect x="660" y="185" width="220" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="660" y="185" width="201" height="8" rx="4" fill="#16a34a"/>
+  <text x="660" y="210" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Primary inbox, not spam</text>
+
+  <!-- Domain Reputation -->
+  <rect x="930" y="80" width="210" height="140" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="950" y="115" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#64748B">DOMAIN HEALTH</text>
+  <text x="950" y="165" font-family="system-ui,sans-serif" font-size="48" font-weight="800" fill="#16a34a">A+</text>
+  <text x="950" y="210" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Sender reputation score</text>
+
+  <!-- Chart area -->
+  <rect x="60" y="250" width="540" height="320" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="80" y="285" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#1B2A4A">Delivery Performance (Last 30 Days)</text>
+
+  <!-- Y-axis labels -->
+  <text x="75" y="320" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">100%</text>
+  <text x="80" y="380" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">75%</text>
+  <text x="80" y="440" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">50%</text>
+  <text x="80" y="500" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">25%</text>
+  <text x="85" y="555" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">0%</text>
+
+  <!-- Grid lines -->
+  <line x1="110" y1="315" x2="580" y2="315" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="110" y1="375" x2="580" y2="375" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="110" y1="435" x2="580" y2="435" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="110" y1="495" x2="580" y2="495" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="110" y1="550" x2="580" y2="550" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Delivered line (green) -->
+  <polyline points="120,325 170,322 220,328 270,320 320,318 370,324 420,319 470,322 520,317 570,320" stroke="#16a34a" stroke-width="2.5" fill="none"/>
+
+  <!-- Bounced line (light) -->
+  <polyline points="120,540 170,542 220,538 270,543 320,541 370,539 420,542 470,540 520,543 570,541" stroke="#E2E8F0" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+
+  <!-- Legend -->
+  <circle cx="130" y1="320" cy="560" r="5" fill="#16a34a"/>
+  <text x="142" y="564" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Delivered</text>
+  <circle cx="220" cy="560" r="5" fill="#E2E8F0"/>
+  <text x="232" y="564" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">Bounced</text>
+
+  <!-- Right side: breakdown panel -->
+  <rect x="640" y="250" width="500" height="320" rx="12" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="660" y="285" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#1B2A4A">Verification Breakdown</text>
+
+  <!-- Verification bars -->
+  <text x="660" y="325" font-family="system-ui,sans-serif" font-size="13" fill="#334155">Valid emails</text>
+  <rect x="660" y="335" width="460" height="24" rx="6" fill="#E2E8F0"/>
+  <rect x="660" y="335" width="434" height="24" rx="6" fill="#16a34a"/>
+  <text x="1100" y="352" font-family="system-ui,sans-serif" font-size="12" fill="#16a34a" text-anchor="end">94.2%</text>
+
+  <text x="660" y="390" font-family="system-ui,sans-serif" font-size="13" fill="#334155">Catch-all domains</text>
+  <rect x="660" y="400" width="460" height="24" rx="6" fill="#E2E8F0"/>
+  <rect x="660" y="400" width="16" height="24" rx="6" fill="#0EA5E9"/>
+  <text x="1100" y="417" font-family="system-ui,sans-serif" font-size="12" fill="#0EA5E9" text-anchor="end">3.7%</text>
+
+  <text x="660" y="455" font-family="system-ui,sans-serif" font-size="13" fill="#334155">Hard bounces</text>
+  <rect x="660" y="465" width="460" height="24" rx="6" fill="#E2E8F0"/>
+  <rect x="660" y="465" width="10" height="24" rx="6" fill="#ef4444"/>
+  <text x="1100" y="482" font-family="system-ui,sans-serif" font-size="12" fill="#ef4444" text-anchor="end">2.1%</text>
+
+  <!-- Bottom note -->
+  <rect x="660" y="510" width="460" height="44" rx="8" fill="#F8FAFC"/>
+  <text x="680" y="535" font-family="system-ui,sans-serif" font-size="12" fill="#64748B">ZeroBounce verified before delivery. No stale emails.</text>
+</svg>

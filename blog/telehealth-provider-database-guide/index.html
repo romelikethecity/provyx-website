@@ -293,6 +293,7 @@
     <section class="content-section">
         <div class="container" style="max-width:800px">
             
+
 <h2>The Telehealth Data Problem Nobody Talks About</h2>
 
 <p>Telehealth isn't new anymore. Post-pandemic use has stabilized at roughly 5-6% of all outpatient visits, according to the <a href="https://www.hhs.gov/about/news/index.html" target="_blank" rel="noopener">U.S. Department of Health and Human Services</a>. That might sound small, but it translates to tens of millions of visits per year and thousands of providers who deliver care primarily or exclusively through virtual channels.</p>
@@ -301,6 +302,13 @@
 
 <p>If you're selling SaaS, devices, or services to telehealth providers, you need data that accounts for how these businesses operate in practice. This guide covers the specific challenges and practical solutions.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Virtual-Only vs. Hybrid: The First Segmentation That Matters</h2>
 
 <p>Not all telehealth providers are the same. The market splits into three distinct segments, each with different buying behaviors and data needs.</p>
@@ -329,6 +337,7 @@
 
 <p>Check our <a href="/blog/mental-health-provider-data-for-telehealth/">mental health provider data guide</a> for deep coverage of the behavioral health telehealth segment, which accounts for the largest share of virtual visits.</p>
 
+
 <h2>Multi-State Licensing: The Territory Planning Nightmare</h2>
 
 <p>A dermatologist in a brick-and-mortar practice in Chicago is licensed in Illinois. Simple. A teledermatologist based in Chicago might be licensed in Illinois, Indiana, Wisconsin, Michigan, Ohio, Iowa, and 6 other states. They see patients in all of them.</p>
@@ -345,6 +354,13 @@
 <li><strong>License state enumeration.</strong> Store all license states in your database and make them searchable. When a rep needs to know "who's licensed to practice in Ohio via telehealth," they can query across the full license dataset, not just primary addresses.</li>
 </ol>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>DEA Telehealth Prescribing Rules: Why They Matter for Your Data</h2>
 
 <p>If you're selling to telehealth prescribers, the DEA's evolving telehealth prescribing rules are critical context. During the COVID public health emergency, the DEA allowed providers to prescribe controlled substances via telehealth without an in-person visit. As that flexibility winds down, the rules are getting more complex.</p>
@@ -362,6 +378,7 @@
 <h3>The Impact on Your Target List</h3>
 
 <p>DEA rule changes will cause market consolidation. Some virtual-only prescribers of controlled substances will need to add in-person capabilities or partner with brick-and-mortar practices. This means your data needs to track these transitions. A provider who was virtual-only in 2025 might be hybrid by mid-2026. If your database still shows them as virtual-only, your reps are working with outdated intelligence.</p>
+
 
 <h2>Selling SaaS to Telehealth Providers</h2>
 
@@ -388,6 +405,13 @@
 
 <p>Data needs for RPM device sales: provider specialty (chronic disease management specialties like endocrinology, cardiology, and pulmonology are highest-value targets), patient panel size (more patients = more device volume), current RPM program status (already billing RPM codes vs. not yet), and payer mix (Medicare patients drive RPM reimbursement).</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Finding Telehealth Providers in Your Data</h2>
 
 <p>Here's the step-by-step process for building a telehealth provider database.</p>
@@ -412,6 +436,7 @@
 
 <p>If you have access to claims data, telehealth visits are identifiable through place-of-service code 02 (Telehealth Provided Other than in Patient's Home) and modifier 95 (Synchronous Telemedicine Service). Providers with significant volume on these codes are confirmed telehealth practitioners.</p>
 
+
 <h2>Data Quality Challenges Specific to Telehealth</h2>
 
 <p>Beyond the structural challenges already discussed, telehealth data has unique quality issues that affect every downstream use case.</p>
@@ -428,6 +453,13 @@
 
 <p>Telehealth providers practicing across state lines need active licenses in each state. License lapses are more common in multi-state scenarios because providers have more renewals to track. A provider licensed in 12 states who lets 3 licenses lapse is still active in 9 states. Your data should reflect current license status by state, not just a single "active/inactive" flag. Review our <a href="/providers/mental-health/">mental health provider data</a> for examples of multi-state license tracking in the highest-telehealth-adoption specialty.</p>
 
+
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Telehealth Market Sizing: Getting the Numbers Right</h2>
 
 <p>Market sizing for telehealth is tricky because the definition keeps shifting. Here's a framework that works:</p>
@@ -439,6 +471,7 @@
 </ol>
 
 <p>For most sales motions, segments 1 and 2 are your real TAM. Segment 3 is aspirational. Your data should clearly distinguish between them so you can focus outreach on providers who are doing telehealth, not providers who once set up a Zoom account. Check out our <a href="/blog/healthcare-provider-data-trends-2026/">2026 provider data trends</a> article for broader context on how verification frequency affects data quality across all segments.</p>
+
 
 <h2>What to Ask a Data Vendor About Telehealth Coverage</h2>
 
@@ -459,16 +492,17 @@
 
 <p>Need telehealth provider data that reflects how virtual care works? <a href="/contact/">Contact Provyx</a> to discuss your specific use case and see sample records.</p>
 
-            
+
+    <figure class="content-figure">
+      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
+      
+      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
     <figure class="content-figure">
       <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
       
       <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
-    </figure>
-    <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Telehealth Provider Data: Challenges and Solutions" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>
