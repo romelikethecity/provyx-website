@@ -1,0 +1,108 @@
+# Provyx
+
+> Provyx is a healthcare provider intelligence company that delivers NPI-verified contact data, practice firmographics, and location intelligence across 40+ medical specialties. Built for healthcare marketing agencies, medical device sales teams, healthcare SaaS vendors, and pharma sales teams who need accurate B2B data without $50K+ annual contracts. Pay per record, delivered in days, sourced from the public NPI registry, state business filings, and commercial databases.
+
+Provyx differs from incumbents like Definitive Healthcare, IQVIA, and ZoomInfo by offering per-record pricing and custom list builds instead of locked annual subscriptions. Data covers ~170 pages of specialty-specific provider intelligence including practice ownership, technology stack, social profiles, and direct contact information. The company specializes in hard-to-find verticals where generic B2B tools fall short: medical spas, IV therapy clinics, behavioral health, and independent specialty practices.
+
+## Core Pages
+
+- [Homepage](https://getprovyx.com/): Healthcare provider data across 40+ specialties with NPI verification and per-record pricing
+- [Pricing](https://getprovyx.com/pricing/): Pay-per-record pricing with no annual contracts, custom list building costs, and enrichment tiers
+- [About](https://getprovyx.com/about/): Founder background, data sourcing methodology, and company story
+- [Services Overview](https://getprovyx.com/services/): Full catalog of provider data products and custom list building
+
+## Services
+
+- [Provider Contact Data](https://getprovyx.com/services/provider-contact-data/): NPI-verified provider contact information including email, phone, and practice affiliation
+- [Practice Location Data](https://getprovyx.com/services/practice-location-data/): Multi-location practice mapping with addresses, counts, and ownership structures
+- [Practice Firmographics](https://getprovyx.com/services/practice-firmographics/): Revenue estimates, employee counts, years in business, and specialty details
+- [Technology Detection](https://getprovyx.com/services/technology-detection/): EHR, practice management, and marketing tech stack detection for medical practices
+- [Social Profiles](https://getprovyx.com/services/social-profiles/): LinkedIn, Facebook, and Instagram profiles for provider outreach
+- [Custom List Building](https://getprovyx.com/services/custom-list-building/): Bespoke provider lists built to specialty, geography, and firmographic criteria
+- [Physician Outreach Campaigns](https://getprovyx.com/services/physician-outreach-campaigns/): Done-for-you outreach to verified provider lists
+- [Event Marketing](https://getprovyx.com/services/event-marketing/): Provider data and targeted advertising for trade shows and CME events
+
+## Competitor Comparisons
+
+- [Provyx vs Definitive Healthcare](https://getprovyx.com/compare/provyx-vs-definitive-healthcare/): Definitive Healthcare alternative with per-record pricing, no annual contract lock-in
+- [Provyx vs IQVIA](https://getprovyx.com/compare/provyx-vs-iqvia/): IQVIA OneKey alternative for teams that need provider data without enterprise pricing
+- [Provyx vs ZoomInfo](https://getprovyx.com/compare/provyx-vs-zoominfo/): Why generic B2B databases fail for healthcare and what to use instead
+- [Provyx vs Apollo](https://getprovyx.com/compare/provyx-vs-apollo/): Apollo comparison for healthcare-specific provider data needs
+- [Provyx vs Cognism](https://getprovyx.com/compare/provyx-vs-cognism/): Cognism alternative with healthcare specialty depth
+- [Provyx vs Doximity](https://getprovyx.com/compare/provyx-vs-doximity/): Doximity alternative for B2B sales teams (not clinician networking)
+- [Provyx vs Komodo Health](https://getprovyx.com/compare/provyx-vs-komodo-health/): Komodo Health alternative for B2B data without claims pricing
+- [Provyx vs Veeva OpenData](https://getprovyx.com/compare/provyx-vs-veeva-opendata/): Veeva alternative for non-pharma teams needing provider data
+- [Provyx vs Ribbon Health](https://getprovyx.com/compare/provyx-vs-ribbon-health/): Ribbon Health alternative for B2B sales use cases
+- [Provyx vs AcuityMD](https://getprovyx.com/compare/provyx-vs-acuitymd/): AcuityMD alternative for medical device teams
+- [Provyx vs Lusha](https://getprovyx.com/compare/provyx-vs-lusha/): Lusha alternative with NPI verification
+- [Provyx vs D&B Hoovers](https://getprovyx.com/compare/provyx-vs-dnb-hoovers/): D&B Hoovers alternative for healthcare vertical
+- [All Comparisons](https://getprovyx.com/compare/): Index of all healthcare data vendor comparisons
+
+## Alternatives
+
+- [Definitive Healthcare Alternative](https://getprovyx.com/alternatives/definitive-healthcare-alternative/): Alternatives to Definitive Healthcare with pricing comparison
+- [IQVIA Alternative](https://getprovyx.com/alternatives/iqvia-alternative/): Alternatives to IQVIA OneKey
+- [ZoomInfo Alternative](https://getprovyx.com/alternatives/zoominfo-alternative/): ZoomInfo alternatives for healthcare teams
+- [Doximity Alternative](https://getprovyx.com/alternatives/doximity-alternative/): Doximity alternatives for B2B use cases
+- [Komodo Health Alternative](https://getprovyx.com/alternatives/komodo-health-alternative/): Komodo Health alternatives
+- [Salesforce Health Cloud Alternative](https://getprovyx.com/alternatives/salesforce-health-cloud-alternative/): Salesforce Health Cloud alternatives for provider data
+- [Veeva OpenData Alternative](https://getprovyx.com/alternatives/veeva-opendata-alternative/): Veeva OpenData alternatives
+- [AcuityMD Alternative](https://getprovyx.com/alternatives/acuitymd-alternative/): AcuityMD alternatives for medical device sales
+
+## Use Cases by Audience
+
+- [Healthcare Marketing Agencies](https://getprovyx.com/for/healthcare-marketing-agencies/): Provider data for agencies running campaigns for healthcare clients
+- [Medical Device Sales](https://getprovyx.com/for/medical-device-sales/): Territory data, KOL identification, and hospital decision-maker targeting
+- [Pharma Sales](https://getprovyx.com/for/pharma-sales/): Physician targeting, prescriber data, and compliance-safe outreach lists
+- [Healthcare SaaS](https://getprovyx.com/for/healthcare-saas/): ICP data for healthcare SaaS vendors targeting practices and hospitals
+- [Health IT](https://getprovyx.com/for/health-it/): Provider and facility data for health IT sales teams
+- [Medical Staffing](https://getprovyx.com/for/medical-staffing/): Contact data for medical staffing and recruitment agencies
+- [Healthcare Consulting](https://getprovyx.com/for/healthcare-consulting/): Market analysis and decision-maker data for healthcare consultancies
+
+## Use Cases by Task
+
+- [Healthcare Sales Prospecting](https://getprovyx.com/use-cases/healthcare-sales-prospecting/): Building qualified provider prospect lists
+- [Medical Device Territory Planning](https://getprovyx.com/use-cases/medical-device-territory-planning/): Territory mapping with practice density and prescriber data
+- [Healthcare ABM](https://getprovyx.com/use-cases/healthcare-abm/): Account-based marketing to health systems and multi-location practices
+- [Healthcare CRM Enrichment](https://getprovyx.com/use-cases/healthcare-crm-enrichment/): Cleaning and enriching existing healthcare CRM data
+- [EHR Install Base Targeting](https://getprovyx.com/use-cases/ehr-install-base-targeting/): Targeting practices by their current EHR vendor
+- [Health System Org Chart Mapping](https://getprovyx.com/use-cases/health-system-org-chart-mapping/): Mapping decision-makers at multi-facility health systems
+- [NPI Data Enrichment](https://getprovyx.com/use-cases/npi-data-enrichment/): Enriching records with data from the NPI registry
+- [Hospital Supply Chain Decision Makers](https://getprovyx.com/use-cases/hospital-supply-chain-decision-makers/): Identifying value analysis committees and supply chain leaders
+- [Behavioral Health Provider Targeting](https://getprovyx.com/use-cases/behavioral-health-provider-targeting/): Mental health and behavioral health practice targeting
+- [Telehealth Provider Targeting](https://getprovyx.com/use-cases/telehealth-provider-targeting/): Telehealth and virtual care provider lists
+
+## Resources and Guides
+
+- [Healthcare Data Vendor Comparison](https://getprovyx.com/resources/healthcare-data-vendor-comparison/): Side-by-side comparison of major healthcare data vendors
+- [Provider Data Buying Guide](https://getprovyx.com/resources/provider-data-buying-guide/): How to evaluate and purchase provider contact data
+- [NPI Registry Guide](https://getprovyx.com/resources/npi-registry-guide/): Complete guide to the NPI registry and how to use it
+- [NPPES vs Commercial Provider Data](https://getprovyx.com/resources/nppes-vs-commercial-provider-data/): Differences between NPPES public data and commercial vendors
+- [Cost of Bad Provider Data](https://getprovyx.com/resources/cost-of-bad-provider-data/): Real cost of bounce rates and decay in healthcare CRM data
+- [ROI of Clean Provider Data](https://getprovyx.com/resources/roi-clean-provider-data/): ROI calculation framework for provider data investments
+- [CRM Data Decay in Healthcare](https://getprovyx.com/resources/crm-data-decay-healthcare/): Data decay rates for healthcare CRM systems
+- [Healthcare Data Providers for Small Teams](https://getprovyx.com/resources/healthcare-data-providers-small-teams/): Vendor options for teams under 20 reps
+- [Healthcare ABM Strategy](https://getprovyx.com/resources/healthcare-abm-strategy/): Building an ABM motion for healthcare targets
+- [Medical Device Territory Planning Guide](https://getprovyx.com/resources/medical-device-territory-planning-guide/): Step-by-step territory planning for med device teams
+- [KOL Identification for Medical Devices](https://getprovyx.com/resources/kol-identification-medical-devices/): Finding and prioritizing key opinion leaders
+- [Healthcare Value Analysis Committee Guide](https://getprovyx.com/resources/healthcare-value-analysis-committee-guide/): Selling to hospital VACs
+- [Hospital Buying Cycle Guide](https://getprovyx.com/resources/hospital-buying-cycle-guide/): How hospitals actually buy equipment and software
+
+## Specialty Email Lists
+
+- [Chiropractor Email List](https://getprovyx.com/resources/chiropractor-email-list/): NPI-verified chiropractor contacts
+- [Optometrists Email List](https://getprovyx.com/resources/optometrists-email-list/): Optometrist and eye care provider contacts
+- [Psychiatrists Email List](https://getprovyx.com/resources/psychiatrists-email-list/): Psychiatrist contact database
+- [Therapists Email List](https://getprovyx.com/resources/therapists-email-list/): Licensed therapist and counselor contacts
+- [Orthodontists Email List](https://getprovyx.com/resources/orthodontists-email-list/): Orthodontist and pediatric dental contacts
+- [Med Spa Owners Contact List](https://getprovyx.com/resources/med-spa-owners-contact-list/): Medical spa owner contacts
+- [IV Infusion Therapy Email List](https://getprovyx.com/resources/iv-infusion-therapy-email-list/): IV therapy clinic contacts
+- [Rheumatologists Email List](https://getprovyx.com/resources/rheumatologists-email-list/): Rheumatology specialist contacts
+
+## Optional
+
+- [Blog](https://getprovyx.com/blog/): Healthcare sales and data operations articles
+- [Case Studies](https://getprovyx.com/case-studies/): Client case studies and outcomes
+- [Glossary](https://getprovyx.com/glossary/): Healthcare data terminology reference
+- [Providers Directory](https://getprovyx.com/providers/): Hub and spoke directory of 17 specialty categories and ~130 subtypes
+- [Contact](https://getprovyx.com/contact/): Contact form for custom list requests
