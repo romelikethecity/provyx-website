@@ -292,24 +292,13 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
-            
-
-<h2>Why Practice Size Segmentation Changes Everything</h2>
-
-<p>A solo family medicine physician in rural Ohio and a 200-physician multi-specialty group in Dallas are both "primary care providers" in most databases. They share a taxonomy code, they both have NPIs, and they both appear on generic provider lists with no differentiation. But the similarities end there.</p>
-
-<p>The solo physician makes purchasing decisions alone, has a budget measured in thousands, and can sign a contract in a single meeting. The large group has a procurement committee, a budget measured in millions, and a sales cycle that takes 6-12 months. If your sales team approaches both the same way, they will waste time on one and underperform on the other.</p>
-
-<p>According to the <a href="https://www.ama-assn.org/practice-management/sustainability/ama-physician-practice-benchmark-survey" target="_blank" rel="noopener">AMA's Practice Benchmark Survey</a>, roughly 44% of physicians work in practices with 10 or fewer physicians, while 21% work in practices with 50 or more. That distribution means nearly every specialty list contains a mix of practice sizes that require different sales approaches.</p>
-
-<p>The problem is that practice size is not a standard field in any public provider database. You have to derive it from multiple signals. Here is how.</p>
-
+        
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Signal 1: NPI Provider Count at a Single Address</h2>
 
@@ -334,20 +323,41 @@
 <p>NPI addresses are self-reported and not always current. Some providers list billing addresses instead of practice locations, which inflates the count at billing company addresses. Others list a corporate headquarters for a multi-location practice, making a 3-location practice look like a single large group. Use this signal as a starting point, not a definitive answer.</p>
 
 
-<h2>Signal 2: Organizational NPI (Type 2) Data</h2>
-
-<p>Type 2 NPIs are assigned to organizations: practices, clinics, hospitals, and health systems. When an individual provider's practice address matches a Type 2 NPI's address, you can infer a connection to that organization.</p>
-
-<p>Type 2 NPI records often include the organization name ("Springfield Family Medicine Group" vs. "Springfield Community Hospital"), which gives you additional context about the practice structure. Organizations with "group," "associates," or "partners" in the name are likely physician-owned groups. Those with "hospital," "health system," or "medical center" are likely system-employed settings.</p>
-
-<p>Matching individual NPIs to organizational NPIs also helps you identify health system affiliations. If 15 orthopedic surgeons at different addresses all link to the same Type 2 NPI for "Mercy Health Orthopedics," you know they are system-employed rather than independent.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Signal 3: Multi-Location Indicators</h2>
 
@@ -365,22 +375,35 @@
 <p>Multi-location identification is harder to automate than single-location counting, but it dramatically improves your practice size estimates. A 4-location practice with 3 providers per location is a 12-provider group, and it buys like one.</p>
 
 
-<h2>Signal 4: Business Data Enrichment</h2>
-
-<p>Public business databases add context that NPI data alone cannot provide. Sources include:</p>
-
-<ul>
-<li><strong>State business registrations:</strong> The entity type (LLC, PLLC, PC, sole proprietorship) provides a rough indicator. Sole proprietorships are almost always solo practices. Professional corporations and PLLCs with multiple registered members are groups.</li>
-<li><strong>Revenue estimates:</strong> Business data providers like Dun & Bradstreet and similar services estimate annual revenue for businesses. While estimates are imprecise, they correlate with practice size. A practice with $500K estimated revenue is likely 1-2 providers. One with $5M is likely a mid-size group.</li>
-<li><strong>Employee count estimates:</strong> Similar to revenue, estimated employee counts from business databases provide a rough proxy for practice size. A practice with 5 estimated employees is likely 1-2 providers plus support staff. One with 50 employees is a larger operation.</li>
-</ul>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Signal 5: Practice Website Analysis</h2>
 
@@ -396,26 +419,29 @@
 </ul>
 
 
-<h2>Putting the Signals Together</h2>
-
-<p>No single signal gives you a reliable practice size classification. The power is in combining them. Here is a practical scoring approach:</p>
-
-<ol>
-<li><strong>Start with NPI provider count</strong> as your base estimate.</li>
-<li><strong>Adjust for multi-location patterns.</strong> If you find multiple addresses sharing the same organization name, combine the provider counts.</li>
-<li><strong>Cross-reference with Type 2 NPI data</strong> to identify health system affiliations that indicate employed (not independent) practice structures.</li>
-<li><strong>Layer in business data</strong> (entity type, revenue estimates) to validate or override the NPI-based estimate.</li>
-<li><strong>Spot-check with website data</strong> for your highest-value segments to confirm accuracy.</li>
-</ol>
-
-<p>This combined approach produces practice size estimates that are accurate enough for sales segmentation. You do not need perfect precision. You need to distinguish solo practices from small groups from large groups from health systems. That four-tier segmentation is achievable with these signals and dramatically improves targeting.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>How Practice Size Should Change Your Sales Approach</h2>
 
@@ -434,15 +460,15 @@
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Segment Providers by Practice Size" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>
@@ -456,7 +482,7 @@
                 <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
                 <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             </div>
-        </div>
+            </div>
     </section>
     
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you determine practice size from NPI data alone?", "acceptedAnswer": {"@type": "Answer", "text": "You can get a rough estimate by counting individual NPIs at the same practice address. This works well for single-location practices but can be misleading for multi-location groups and practices that use billing addresses instead of practice locations. Combining NPI data with organizational NPI matching, business registration data, and website analysis produces more reliable size estimates."}}, {"@type": "Question", "name": "What is the difference between a Type 1 and Type 2 NPI?", "acceptedAnswer": {"@type": "Answer", "text": "Type 1 NPIs are assigned to individual healthcare providers (physicians, nurse practitioners, therapists). Type 2 NPIs are assigned to organizations (practices, clinics, hospitals, health systems). Matching individual providers to their associated organizational NPIs helps identify practice affiliations and distinguish independent practices from health system-employed providers."}}, {"@type": "Question", "name": "How accurate are practice size estimates from public data?", "acceptedAnswer": {"@type": "Answer", "text": "Using a multi-signal approach (NPI provider count, organizational matching, business data, and website verification), practice size classifications are accurate enough for sales segmentation. Expect 80-85% accuracy for the four-tier classification (solo, small group, mid-size, large/system). The remaining 15-20% are edge cases like multi-location practices or recently restructured groups."}}, {"@type": "Question", "name": "Why does practice size matter for healthcare sales?", "acceptedAnswer": {"@type": "Answer", "text": "Practice size determines who makes purchasing decisions, how long the sales cycle takes, what budget is available, and what product features matter most. A solo practice buys differently from a 50-provider group. Sending the same pitch to both wastes time and produces lower conversion rates."}}]}</script>
@@ -491,7 +517,7 @@
 <li><a href="https://www.ama-assn.org/practice-management/sustainability/ama-physician-practice-benchmark-survey" target="_blank" rel="noopener noreferrer">AMA Physician Practice Benchmark Survey</a></li>
 </ul>
             </div>
-        </div>
+            </div>
     </section>
     
     <section class="content-section bg-light">

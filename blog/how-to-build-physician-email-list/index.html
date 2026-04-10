@@ -292,22 +292,13 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
-            
-
-<h2>Why Most Physician Email Lists Are Worthless</h2>
-
-<p>You can buy a physician email list from a dozen vendors for a few hundred dollars. Most of those lists will bounce at 15-25% on the first send, tank your sender reputation, and produce close to zero pipeline. The problem is not that physician emails are hard to find. The problem is that finding <em>current, deliverable, correctly attributed</em> physician emails requires a multi-step process that most list vendors skip entirely.</p>
-
-<p>According to the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a>, there are roughly 1.3 million active physician NPIs in the United States. The registry gives you names, taxonomy codes, and practice addresses. It does not give you email addresses. That gap between "knowing a physician exists" and "having a verified way to reach them digitally" is where the real work begins.</p>
-
-<p>This guide walks through the exact workflow for building a physician email list from scratch using NPI data as your foundation, enrichment tools to find emails, and verification processes to ensure deliverability before you send a single message.</p>
-
+        
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Step 1: Pull Your Target Physicians from the NPI Registry</h2>
 
@@ -327,27 +318,41 @@
 <p>After filtering, you will have a list of active physicians in your target specialty and geography. For a single state and specialty combination, this is typically 500 to 5,000 records. Nationally, it can be tens of thousands.</p>
 
 
-<h2>Step 2: Clean and Deduplicate Your Base List</h2>
-
-<p>The NPI file has known data quality issues you need to handle before enrichment. Some providers have multiple NPI records (they changed practices and registered new NPIs instead of updating). Some have outdated addresses that were never corrected. Some list a billing address in one state while practicing in another.</p>
-
-<p>Basic cleaning steps:</p>
-
-<ol>
-<li><strong>Deduplicate by name + state.</strong> Look for exact name matches at different addresses in the same state. Keep the record with the most recent enumeration date or the one with a practice location (vs. mailing) address.</li>
-<li><strong>Remove PO Box addresses.</strong> A PO Box as the primary address usually means the practice location is not accurately recorded. You can still use these records, but flag them for manual review during enrichment.</li>
-<li><strong>Standardize names.</strong> Remove suffixes, middle initials, and credentials from the name fields. "SMITH, JOHN A MD" and "John Smith" need to match during enrichment lookups.</li>
-<li><strong>Validate state codes.</strong> Ensure the state in the practice location field matches the geography you are targeting.</li>
-</ol>
-
-<p>This step typically removes 5-10% of records from your list. That is fine. A smaller, cleaner base list produces better enrichment results than a larger, messier one.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Step 3: Enrich with Email Addresses</h2>
 
@@ -383,28 +388,35 @@
 <p>Run all three enrichment paths in sequence: website scraping first (highest accuracy), then pattern generation with verification, then commercial APIs for remaining gaps. With this layered approach, you can typically achieve 50-70% email coverage for your target physician list. That means if you started with 5,000 target physicians, you will have verified emails for 2,500 to 3,500 of them.</p>
 
 
-<h2>Step 4: Verify Every Email Before You Send</h2>
-
-<p>This is the step that separates a useful physician email list from a sender-reputation destroyer. Every email address you found in Step 3 needs to be validated before it goes into an outreach sequence.</p>
-
-<p>Email verification checks three things:</p>
-
-<ol>
-<li><strong>Syntax validation:</strong> Is the email formatted correctly? This catches obvious errors from scraping or pattern generation.</li>
-<li><strong>Domain validation:</strong> Does the domain have active MX records? This confirms the email server exists and accepts mail.</li>
-<li><strong>Mailbox validation:</strong> Does the specific mailbox exist on that server? This is the critical check. The server will respond with a "deliverable," "undeliverable," or "risky" classification for each address.</li>
-</ol>
-
-<p>Use a dedicated email verification service (NeverBounce, ZeroBounce, or similar) rather than attempting to verify emails yourself. These services handle the SMTP handshakes at scale and maintain reputation with receiving servers so your verification queries do not get blocked.</p>
-
-<p>After verification, remove all "undeliverable" addresses. For "risky" or "unknown" classifications, quarantine those in a separate segment and send to them with lower volume and careful monitoring. A properly verified list should bounce at less than 2% on the first send.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Step 5: Segment for Targeted Outreach</h2>
 
@@ -420,20 +432,29 @@
 <p>The more precisely you segment, the more relevant your messaging can be. Relevant messaging drives higher open rates, higher reply rates, and lower unsubscribe rates. That keeps your sender reputation healthy for future campaigns.</p>
 
 
-<h2>Step 6: Maintain and Refresh the List</h2>
-
-<p>A physician email list degrades over time. Physicians change practices, retire, switch to new email systems, or have their accounts deactivated. CMS data shows that 4-6% of provider records change every month. That means within 6 months, roughly a quarter of your list may have shifted.</p>
-
-<p>Plan to re-verify your email list every 90 days at minimum. Re-run bounced addresses through enrichment to find updated emails. Monitor campaign metrics for signs of list degradation: rising bounce rates, declining open rates, or increasing spam complaints are all signals that your data needs a refresh.</p>
-
-<p>For teams running ongoing physician outreach programs, a monthly enrichment and verification cycle produces the best long-term deliverability. The cost of monthly maintenance is a fraction of the cost of rebuilding a list from scratch after your sender reputation takes a hit from stale data.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Common Mistakes to Avoid</h2>
 
@@ -448,25 +469,17 @@
 </ul>
 
 
-<h2>What This Costs and What to Expect</h2>
-
-<p>Building a physician email list from scratch using this workflow costs significantly less than buying a pre-built list from a major data vendor. The NPI data is free. Email verification services charge $0.003-0.01 per verification. Commercial enrichment APIs range from $0.02-0.10 per lookup depending on volume.</p>
-
-<p>For a list of 5,000 target physicians, expect to spend $200-500 on enrichment and verification, plus the time investment in data processing. If your team does not have the technical capacity to run this workflow internally, <a href="/services/provider-contact-data/">Provyx handles the full pipeline</a> and delivers a verified, segmented physician email list ready for import into your outreach tools.</p>
-
-<p>The expected output: 50-70% email coverage, less than 2% bounce rate, and segmentation by specialty, geography, practice type, and size. That is a list you can send to with confidence.</p>
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to How to Build a Physician Email List from Scratch" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>
@@ -480,7 +493,7 @@
                 <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
                 <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             </div>
-        </div>
+            </div>
     </section>
     
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many physician emails can I expect to find from NPI data?", "acceptedAnswer": {"@type": "Answer", "text": "The NPI registry itself does not contain email addresses. Using a multi-step enrichment process (website scraping, pattern generation, and commercial APIs), you can typically find verified emails for 50-70% of your target physician list. Coverage varies by specialty, with larger group practices having higher coverage than solo practitioners."}}, {"@type": "Question", "name": "How much does it cost to build a physician email list?", "acceptedAnswer": {"@type": "Answer", "text": "NPI data is free from CMS. Email enrichment and verification costs $0.003-0.10 per record depending on tools used. For a list of 5,000 physicians, expect to spend $200-500 on enrichment and verification. This is significantly less than pre-built lists from major data vendors, which can cost $0.25-1.00 per record."}}, {"@type": "Question", "name": "How often should I re-verify my physician email list?", "acceptedAnswer": {"@type": "Answer", "text": "Every 90 days at minimum. CMS data shows 4-6% of provider records change monthly, so a quarterly refresh catches most changes before they impact your campaign performance. Teams with ongoing outreach programs benefit from monthly verification cycles."}}, {"@type": "Question", "name": "Is it legal to cold email physicians for B2B sales?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, under CAN-SPAM. B2B commercial email does not require opt-in consent under federal law. Requirements include a physical address, unsubscribe mechanism, honest subject lines, and honoring opt-outs within 10 business days. Use business email addresses, not personal ones, and check state-specific regulations for your target markets."}}]}</script>
@@ -516,7 +529,7 @@
 <li><a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC Healthcare Provider Taxonomy</a></li>
 </ul>
             </div>
-        </div>
+            </div>
     </section>
     
     <section class="content-section bg-light">

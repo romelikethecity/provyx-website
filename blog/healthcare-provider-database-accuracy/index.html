@@ -292,20 +292,13 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
-            
-
-<h2>Accuracy Claims vs. Accuracy Reality</h2>
-
-<p>Open the website of any healthcare data vendor and you'll see accuracy claims. "97% accurate." "Verified monthly." "The most complete healthcare database available." These claims are almost never testable because the vendors define accuracy differently, measure it differently, and report it differently.</p>
-
-<p>Here's what accuracy actually means in healthcare provider data, how to measure it yourself, and what benchmarks are realistic for different data fields.</p>
-
+        
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>The Five Dimensions of Provider Data Accuracy</h2>
 
@@ -371,32 +364,41 @@
 <p>Where coverage gaps appear: new practices (takes 2-6 months to appear in most databases), recently relocated practices, providers in rural areas, and niche specialties like <a href="/providers/integrative-medicine/">integrative medicine</a> or <a href="/providers/ketamine-clinics/">ketamine clinics</a> that are underrepresented in traditional data sources.</p>
 
 
-<h2>Why Healthcare Provider Data Decays Faster Than You Think</h2>
-
-<p>Provider data decays faster than general B2B data. The reasons are structural:</p>
-
-<h3>Practice Consolidation</h3>
-
-<p>Private equity acquisitions, DSO rollups, and hospital system expansions are changing practice ownership at an unprecedented rate. The <a href="https://www.ama-assn.org/practice-management/sustainability/ama-physician-practice-benchmark-survey" target="_blank" rel="noopener">AMA's 2025 benchmark survey</a> found less than 47% of physicians own their practices, down from 53% five years earlier. When ownership changes, email domains change, phone systems change, decision-makers change, and sometimes the practice address changes.</p>
-
-<h3>Provider Mobility</h3>
-
-<p>Physicians change practice affiliations more frequently than professionals in most other industries. Early-career physicians especially move between practices as they complete fellowship training, join group practices, and eventually establish or acquire their own practices. Each move invalidates multiple data fields simultaneously.</p>
-
-<h3>Technology Transitions</h3>
-
-<p>Practices that switch EHR systems, phone systems, or email providers invalidate contact data en masse. A practice migrating from an on-premise email server to Google Workspace or Microsoft 365 changes every email address at the organization overnight.</p>
-
-<h3>Retirement and Deactivation</h3>
-
-<p>The physician workforce is aging. According to <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm" target="_blank" rel="noopener">BLS projections</a>, physician retirements are accelerating as baby boomer doctors exit the workforce. Retired providers whose NPI records remain active create ghost records that look valid in databases but correspond to non-practicing individuals.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>How to Test a Vendor's Accuracy Claims</h2>
 
@@ -423,36 +425,35 @@
 <p>For 10 records that include owner or decision-maker names, visit the practice website and verify. Is that person actually at the practice? Are they in the role described? This is where most databases have the highest error rates because personnel changes happen frequently and are hard to detect programmatically.</p>
 
 
-<h2>Accuracy Expectations by Use Case</h2>
-
-<p>The accuracy you need depends on what you're doing with the data. Not every use case demands the same standard.</p>
-
-<h3>Email Outreach</h3>
-
-<p>You need high email correctness (95%+) and current verification. A 10% bounce rate doesn't just waste 10% of your sends. It triggers spam filters that reduce deliverability across your entire campaign. For email, <a href="/services/provider-contact-data/">verified contact data</a> isn't optional.</p>
-
-<h3>Direct Mail</h3>
-
-<p>Address accuracy matters most. You can tolerate slightly outdated email data if your addresses are current. USPS address standardization catches most formatting issues, but it won't tell you if the practice has moved to a new building three blocks away. Run addresses through USPS validation before any mail campaign.</p>
-
-<h3>Territory Planning</h3>
-
-<p>You need accurate addresses, specialty classifications, and practice size indicators. Individual contact accuracy matters less than geographic and specialty accuracy. A territory plan built on NPI data that places 10% of practices at billing addresses instead of practice locations creates territory overlap and coverage gaps. See our <a href="/use-cases/medical-device-territory-planning/">territory planning guide</a> for more detail.</p>
-
-<h3>Market Sizing</h3>
-
-<p>Coverage accuracy is the priority. You need to know that your database represents the full universe of providers in your target segment. Field-level accuracy matters less when you're counting practices than when you're contacting them. But missing 20% of the market gives you a market size estimate that's 20% too low, which affects everything from pricing to headcount planning.</p>
-
-<h3>CRM Enrichment</h3>
-
-<p>Deduplication quality is critical. Enriching your CRM with a database that creates duplicates makes your data worse, not better. Before enriching, establish matching rules between your CRM records and the vendor's records, and run a dedup pass after the merge. More on this in our <a href="/blog/healthcare-crm-data-enrichment/">CRM data enrichment guide</a>.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>The Accuracy Tax</h2>
 
@@ -469,21 +470,21 @@
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>
@@ -497,7 +498,7 @@
                 <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
                 <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             </div>
-        </div>
+            </div>
     </section>
     
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What accuracy rate should I expect from a healthcare provider database?", "acceptedAnswer": {"@type": "Answer", "text": "Accuracy varies by field. NPI numbers: 99%+. Addresses: 85-92%. Phone numbers: 80-90%. Verified email: 85-95% at time of verification, decaying 2-4% per month. Practice owner names: 70-85%. Any vendor claiming 97%+ across all fields is likely using a narrow definition of accuracy or not measuring it rigorously."}}, {"@type": "Question", "name": "How fast does healthcare provider data decay?", "acceptedAnswer": {"@type": "Answer", "text": "Roughly 4-6% of provider records change every month according to CMS data. Over 12 months, that compounds to 40-50% of records having at least one changed field. Email addresses, phone numbers, and practice affiliations are the fastest-decaying fields. NPI numbers and specialty classifications are the most stable."}}, {"@type": "Question", "name": "How can I independently test a healthcare data vendor's accuracy?", "acceptedAnswer": {"@type": "Answer", "text": "Request a 50-100 record sample, then verify it yourself. Run emails through a third-party verification service (NeverBounce, ZeroBounce). Call 15-20 phone numbers. Cross-reference 20 addresses against Google Maps and practice websites. Check 10 decision-maker names against practice websites. This takes 2-3 hours and gives you more signal than any vendor demo."}}, {"@type": "Question", "name": "Why is healthcare provider data less accurate than general B2B data?", "acceptedAnswer": {"@type": "Answer", "text": "Three structural reasons: practice consolidation (PE acquisitions, DSO rollups, and health system mergers change contact data en masse), provider mobility (physicians change affiliations more frequently than most professionals), and technology transitions (practices switching email systems or phone providers invalidate contact data overnight). These factors create decay rates roughly 1.5-2x higher than general B2B contact data."}}]}</script>
@@ -533,7 +534,7 @@
 <li><a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm" target="_blank" rel="noopener noreferrer">BLS Physicians and Surgeons Outlook</a></li>
 </ul>
             </div>
-        </div>
+            </div>
     </section>
     
     <section class="content-section bg-light">

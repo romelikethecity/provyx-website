@@ -1,3852 +1,3897 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
+ <url>
     <loc>https://getprovyx.com/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/about/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/contact/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/pricing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/privacy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/terms/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/provider-contact-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/practice-location-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/technology-detection/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/social-profiles/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/practice-firmographics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/custom-list-building/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/event-marketing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/services/physician-outreach-campaigns/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-services.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/mental-health/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/chiropractic/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dental/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dermatology/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/primary-care/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/senior-care/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/integrative-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/medical-spas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/womens-health/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/eye-care/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/orthopedics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/pain-management/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/physical-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/plastic-surgery/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/rheumatology/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/weight-loss/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/neurology/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/psychiatrists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/psychiatric-nurse-practitioners/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/psychotherapists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/counselors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/therapists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/ketamine-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/spravato-providers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/tms-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/depression-treatment-centers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/anxiety-treatment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/mental-health-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/community-mental-health/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/crisis-centers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/chiropractors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/sports-chiropractors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/functional-chiropractors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/integrative-chiropractic/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/mobile-chiropractors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/cosmetic-dentists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/general-dentists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/orthodontists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/oral-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/tmj-specialists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
-    <loc>https://getprovyx.com/providers/holistic-dentists/</loc>
-    <lastmod>2026-04-07</lastmod>
+ <url>
+    <loc>https://getprovyx.com/providers/full-dentists/</loc>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dental-spas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/neuromuscular-dentists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/sedation-dentistry/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/periodontists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/endodontists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/pediatric-dentists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/prosthodontists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/oral-pathologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dental-laboratories/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/emergency-dentists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dermatologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/cosmetic-dermatologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/skin-care-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/mohs-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/pediatric-dermatologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dermatopathologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/family-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/primary-care-physicians/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/internal-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/concierge-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/direct-primary-care/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/urgent-care/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/community-health-centers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/independent-living/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/assisted-living/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/memory-care/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/nursing-homes/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/rehabilitation-centers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/hospice/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/home-health/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/integrative-medicine-doctors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/functional-medicine-doctors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/naturopathic-doctors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
-    <loc>https://getprovyx.com/providers/holistic-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+ <url>
+    <loc>https://getprovyx.com/providers/full-medicine/</loc>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/regenerative-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/anti-aging-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/wellness-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/iv-therapy-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/hormone-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/peptide-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/homeopaths/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/acupuncturists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/med-spas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/aesthetic-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/laser-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/body-contouring/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/botox-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/iv-lounges/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/skin-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/obgyn/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/gynecologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/womens-health-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/urogynecologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/pelvic-floor-specialists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/menopause-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/midwife-practices/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/fertility-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/optometrists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/dry-eye-specialists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/ophthalmologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/lasik-centers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/oculoplastic-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/orthopedic-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/sports-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/spine-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/joint-replacement/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/physiatrists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/pain-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/interventional-pain/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/chronic-pain-treatment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/spine-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/regenerative-pain/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/addiction-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/physical-therapists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/sports-physical-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/orthopedic-physical-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/pelvic-floor-physical-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/aquatic-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/manual-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/home-health-physical-therapy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/plastic-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/facial-plastic-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/body-contouring-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/breast-augmentation/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/tummy-tuck-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/mommy-makeover/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/reconstructive-surgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/rheumatologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/arthritis-specialists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/autoimmune-specialists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/fibromyalgia-treatment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/weight-loss-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/bariatric-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/glp1-providers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/body-transformation-clinics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/obesity-medicine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/bariatric-surgery/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/nutritionists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/neurologists/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/neurosurgeons/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/healthcare-marketing-agencies/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/medical-device-sales/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/healthcare-saas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/pharma-sales/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/medical-staffing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/healthcare-consulting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/for/health-it/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-zoominfo/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-definitive-healthcare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-apollo/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-iqvia/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-lusha/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-cognism/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-veeva-opendata/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-ribbon-health/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-doximity/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-komodo-health/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-acuitymd/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-salesforce-health-cloud/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/compare/provyx-vs-dnb-hoovers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-compare.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/zoominfo-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/definitive-healthcare-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/apollo-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/iqvia-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/lusha-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/cognism-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/veeva-opendata-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/ribbon-health-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/doximity-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/komodo-health-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/acuitymd-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/salesforce-health-cloud-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/alternatives/dnb-hoovers-alternative/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-alternatives.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-sales-prospecting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/medical-device-territory-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-abm/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/physician-outreach/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-market-sizing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/provider-network-analysis/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-email-marketing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/provider-credentialing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-competitive-intelligence/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/medical-staffing-recruitment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-decision-maker-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/npi-data-enrichment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-crm-enrichment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/ehr-install-base-targeting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/territory-planning-data-sources/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/health-system-org-chart-mapping/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/telehealth-provider-targeting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/healthcare-data-enrichment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/npi-lookup-sales-prospecting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/hospital-supply-chain-decision-makers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/dental-practice-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/behavioral-health-provider-targeting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/ambulatory-surgery-center-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/physician-referral-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/use-cases/ehr-lead-generation/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/cost-of-bad-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/npi-registry-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-marketing-list-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/provider-data-buying-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/crm-data-decay-healthcare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-abm-strategy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/medical-device-territory-planning-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/roi-clean-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/physician-prospect-list-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/nppes-vs-commercial-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/sell-to-medical-practices/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/b2b-healthcare-lead-generation/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/clean-provider-data-salesforce/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-data-providers-small-teams/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-provider-firmographic-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-account-planning-template/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-cold-calling-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/b2b-healthcare-email-compliance/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-value-analysis-committee-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/gpo-navigation-medical-device/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/hospital-buying-cycle-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-data-vendor-comparison/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/kol-identification-medical-devices/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/pre-rfp-intelligence-healthcare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/medical-device-territory-assessment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/pecos-data-sales-prospecting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/find-physician-email-addresses/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/oral-pathologists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/naturopathic-doctors-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/periodontist-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/physiatrist-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/iv-infusion-therapy-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/lasik-surgeons-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/med-spa-owners-contact-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/chiropractor-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/acupuncturists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/spravato-marketing-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/healthcare-software-abm-strategy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/psychiatrists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/therapists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/nursing-homes-contact-database/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/retirement-communities-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/pediatric-dentists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/oral-surgeons-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/orthodontists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/rheumatologists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/optometrists-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/resources/midwife-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/npi-number/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/nppes/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/taxonomy-code/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/type-1-vs-type-2-npi/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-enumeration/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-credentialing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/pecos/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/caqh/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-enrollment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-data-enrichment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/data-hygiene/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/match-rate/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/data-append/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/healthcare-provider/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/cms/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/practice-firmographics/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/technology-detection/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/ehr/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/healthcare-sales-prospecting/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/ideal-customer-profile-healthcare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-contact-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/healthcare-abm/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/territory-planning-healthcare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/dso/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/idn/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/hipaa/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/nucc/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-specialty/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/pay-per-record/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/custom-list-building/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/provider-directory/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/open-payments/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/glossary/bounce-rate-email/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/alabama/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/alaska/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/arizona/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/arkansas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/california/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/colorado/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/connecticut/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/delaware/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/florida/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/georgia/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/hawaii/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/idaho/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/illinois/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/indiana/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/iowa/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/kansas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/kentucky/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/louisiana/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/maine/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/maryland/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/massachusetts/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/michigan/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/minnesota/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/mississippi/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/missouri/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/montana/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/nebraska/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/nevada/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/new-hampshire/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/new-jersey/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/new-mexico/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/new-york/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/north-carolina/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/north-dakota/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/ohio/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/oklahoma/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/oregon/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/pennsylvania/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/rhode-island/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/south-carolina/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/south-dakota/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/tennessee/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/texas/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/utah/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/vermont/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/virginia/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/washington/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/west-virginia/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/wisconsin/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/providers/states/wyoming/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-provider-data-trends-2026/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-build-healthcare-provider-contact-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/npi-database-vs-commercial-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-sales-prospecting-mistakes/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-practice-data-quality-checklist/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/what-is-npi-number-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-crm-data-enrichment/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/dental-practice-data-sales-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-data-vendor-evaluation-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/mental-health-provider-data-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/private-equity-healthcare-data-needs/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-get-doctors-to-attend-events/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/increase-physician-event-attendance/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/physician-event-invitation-template/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-conference-registration-best-practices/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-event-marketing-roi/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-device-lunch-and-learn-cost/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-build-physician-event-invite-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/post-event-follow-up-medical-device/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/sunshine-act-compliance-medical-device-events/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/multi-city-physician-event-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/physician-event-reminder-email-sequence/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/virtual-vs-in-person-physician-events/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/mobile-physician-event-registration/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-device-lunch-and-learn-playbook/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-device-territory-event-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/kol-dinner-planning-healthcare/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/cme-event-registration-platform-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/physician-speaker-program-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-device-demo-day-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-event-venue-selection-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-device-event-compliance-checklist/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/physician-event-check-in-methods/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/dermatology-practice-event-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/chiropractic-education-event-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/dental-practice-event-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/med-spa-open-house-planning/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/definitive-healthcare-pricing-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/nppes-database-accuracy-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/ketamine-clinic-crm-provider-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/tms-therapy-crm-marketing/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/npi-database-guide-healthcare-marketers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/medical-device-find-decision-makers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/provider-data-enrichment-npi-to-sales-ready/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-email-list-providers-comparison/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-provider-database-accuracy/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-sell-to-healthcare-systems/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/specialty-practice-owner-data-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/ambulatory-surgery-center-decision-makers/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/hipaa-compliant-data-enrichment-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-build-physician-email-list/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-verify-npi-numbers-bulk/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-segment-providers-by-practice-size/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-find-practice-owners-vs-employed-physicians/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/how-to-map-medical-device-sales-territories/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/chiropractor-email-lists-for-device-sales/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/dermatologist-data-for-pharma-reps/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/mental-health-provider-data-for-telehealth/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/orthopedic-surgeon-data-for-implant-sales/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/primary-care-data-for-health-it-vendors/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-data-for-medical-staffing-agencies/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/healthcare-provider-data-api-integration-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/physical-therapy-practice-data-for-device-sales/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/urgent-care-center-decision-maker-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/ophthalmology-practice-data-for-device-reps/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/senior-living-facility-contact-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/weight-loss-clinic-marketing-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/pain-management-practice-data-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/plastic-surgery-practice-marketing-data/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/telehealth-provider-database-guide/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/blog/neurology-practice-data-for-device-sales/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
+    <loc>https://getprovyx.com/blog/cardiology-practice-data-for-device-sales/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
+    </image:image>
+  </url>
+ <url>
+    <loc>https://getprovyx.com/blog/oncology-practice-data-for-pharma-and-device-sales/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
+    </image:image>
+  </url>
+ <url>
+    <loc>https://getprovyx.com/blog/hospital-gpo-and-value-analysis-committee-data/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
+    </image:image>
+  </url>
+ <url>
+    <loc>https://getprovyx.com/blog/locum-tenens-and-physician-recruiter-contact-data/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
+    </image:image>
+  </url>
+ <url>
+    <loc>https://getprovyx.com/blog/dso-and-mso-consolidation-data-for-vendor-sales/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://getprovyx.com/assets/images/og-resources.png</image:loc>
+    </image:image>
+  </url>
+ <url>
     <loc>https://getprovyx.com/case-studies/healthcare-recruiting-snf-contacts/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/case-studies/medical-device-event-registration/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://getprovyx.com/assets/images/og-providers.png</image:loc>
     </image:image>
   </url>
-  <url>
+ <url>
     <loc>https://getprovyx.com/case-studies/medical-device-physician-outreach/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>

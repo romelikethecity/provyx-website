@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1B2A4A">
     <title>How to Clean Healthcare Provider Data in Salesforce | Provyx</title>
-    <meta name="description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
+    <meta name="description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing.">
     <link rel="canonical" href="https://getprovyx.com/resources/clean-provider-data-salesforce/">
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
@@ -13,14 +13,14 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://getprovyx.com/resources/clean-provider-data-salesforce/">
     <meta property="og:title" content="How to Clean Healthcare Provider Data in Salesforce | Provyx">
-    <meta property="og:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
+    <meta property="og:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing.">
     <meta property="og:site_name" content="Provyx">
     <meta property="og:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Clean Healthcare Provider Data in Salesforce | Provyx">
-    <meta name="twitter:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing maintenance.">
+    <meta name="twitter:description" content="A practical guide to auditing and cleaning healthcare provider data in Salesforce. Covers deduplication, NPI matching, address validation, and ongoing.">
     <meta name="twitter:image" content="https://getprovyx.com/assets/images/og-resources.png">
 
     <script type="application/ld+json">
@@ -367,29 +367,29 @@
     </section>
 
     <section class="content-section">
-      <div class="container" style="max-width:800px">
+        <div class="container" style="max-width:800px">
         
     <figure class="content-figure">
-      <img src="/assets/images/content/email-list-building-process.svg" alt="Email List for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Email List: visual reference for healthcare data buyers.</figcaption>
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual reference for healthcare data buyers.</figcaption>
     </figure>
     <figure class="content-figure">
-      <img src="/assets/images/content/email-deliverability-metrics.svg" alt="Deliverability for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Deliverability: visual reference for healthcare data buyers.</figcaption>
+    <img src="/assets/images/content/email-deliverability-metrics.svg" alt="Deliverability for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Deliverability: visual reference for healthcare data buyers.</figcaption>
     </figure>
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual reference for healthcare data buyers.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual reference for healthcare data buyers.</figcaption>
     </figure>
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Data Sources: visual reference for healthcare data buyers.</figcaption>
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources for How to Clean Healthcare Provider Data in Salesforce" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual reference for healthcare data buyers.</figcaption>
     </figure>
-      </div>
+        </div>
     </section>
 
     
@@ -401,7 +401,7 @@
           <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
           <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         </div>
-      </div>
+        </div>
     </section>
     
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often should healthcare provider data in Salesforce be refreshed?", "acceptedAnswer": {"@type": "Answer", "text": "At minimum, refresh quarterly. Healthcare provider data decays at 15-25% annually due to practice moves, retirements, acquisitions, and role changes. A quarterly refresh cycle catches most decay before it impacts campaign performance. High-volume outbound teams should verify email addresses monthly and refresh phone data quarterly. Re-run your data quality audit reports monthly to detect decay trends early and trigger refresh cycles before quality degrades to the point where it impacts deliverability or connect rates."}}, {"@type": "Question", "name": "What is the best way to deduplicate healthcare provider records in Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Start by deduplicating on NPI number, which is a unique identifier that definitively identifies each provider. Records sharing an NPI are the same provider. This resolves 30-50% of duplicates immediately. For records without NPI, match on last name + first name + practice city and manually review matches before merging. Use Salesforce duplicate rules or a third-party dedup tool to automate detection. Always keep the record with the most complete data and the most recent activity when merging."}}, {"@type": "Question", "name": "Should I delete bad records or try to re-enrich them?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the record value and the nature of the problem. Records with bounced emails or disconnected phones should be flagged and sent for re-enrichment, not deleted, because the provider may still be a valid prospect at a new contact point. Records for providers who have retired, had their NPI deactivated, or left your target market should be archived or deleted. Records with no usable contact information and no strategic value should be removed to keep your database lean and your metrics accurate."}}, {"@type": "Question", "name": "What Salesforce validation rules help prevent healthcare provider data quality issues?", "acceptedAnswer": {"@type": "Answer", "text": "Implement these rules: require NPI field on provider records with format validation (10 digits, passes the Luhn check digit algorithm), use a controlled picklist for specialty/taxonomy rather than free text, require state abbreviation standardization on address fields, validate email format on entry, and set a required field policy for at least name, NPI, specialty, and one contact method (email or phone). These rules prevent the most common data entry errors and ensure a baseline level of data completeness on every new record."}}]}</script>
@@ -427,7 +427,7 @@
                 </details>
             </div>
         </section>
-    
+            
     <section class="content-section">
       <div class="container">
         <div class="outbound-references">
@@ -436,7 +436,7 @@
 <li><a href="https://help.salesforce.com/" target="_blank" rel="noopener noreferrer">Salesforce Help</a></li>
 </ul>
         </div>
-      </div>
+        </div>
     </section>
     
     <section class="content-section bg-light">

@@ -292,22 +292,13 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
-            
-
-<h2>What Is the NPPES Database?</h2>
-
-<p>The National Plan and Provider Enumeration System (NPPES) is the CMS-managed database that assigns and tracks National Provider Identifiers (NPIs). Every healthcare provider in the United States who transmits health information electronically needs an NPI, which means the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">NPPES database</a> contains records for over 7.8 million providers and organizations.</p>
-
-<p>The database is free to search online and free to download in bulk from the <a href="https://download.cms.gov/nppes/NPI_Files.html" target="_blank" rel="noopener">CMS NPPES data dissemination page</a>. For anyone building a healthcare provider list, it's the obvious starting point. It's also the source that most commercial data vendors build on top of.</p>
-
-<p>The problem is that "free and complete" doesn't mean "accurate and complete." NPPES has well-documented accuracy gaps that can undermine your outreach if you rely on it as your sole data source. This guide covers the specific accuracy problems, why they exist, and what it takes to fix them.</p>
-
+        
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>How NPPES Data Gets Created (and Why That Causes Problems)</h2>
 
@@ -322,77 +313,41 @@
 <p>That third point is where the accuracy problems originate. NPPES is a self-reported database with no verification layer and no enforcement of update requirements. Providers are supposed to update their records within 30 days of a change, but the reality is that many never do.</p>
 
 
-<h2>The 6 Biggest NPPES Accuracy Gaps</h2>
-
-<h3>1. Stale Addresses from Provider Moves</h3>
-
-<p>When a provider changes practice locations, their NPI record should be updated with the new address. In practice, this frequently doesn't happen. A provider who moved from a group practice in Chicago to a solo practice in Phoenix three years ago may still show their Chicago address in NPPES.</p>
-
-<p>How common is this? We've analyzed provider address data across multiple specialties and consistently find that 8-15% of NPPES addresses are outdated. In high-turnover specialties like primary care and mental health, the rate can be even higher because providers in these fields change practice settings more frequently.</p>
-
-<p>For sales and marketing teams, stale addresses mean direct mail that never arrives, territory assignments based on wrong locations, and reps driving to offices where the target provider hasn't worked in years.</p>
-
-<h3>2. Billing Address vs. Practice Location Mismatch</h3>
-
-<p>This is one of the most misunderstood problems with NPPES data. The NPI application asks for a "practice location address," but many providers, especially those in group practices, list their billing address instead. For a provider employed by a large health system, the billing address might be a corporate headquarters 50 miles from the actual clinic where they see patients.</p>
-
-<p>Consider a dermatologist who works at a suburban clinic but is employed by a health system based downtown. Their NPI record might show the health system's billing address, not the clinic where they see patients. If you're planning a lunch-and-learn at practices within 10 miles of your venue, this provider wouldn't show up in your geographic search even though their actual practice location is right down the street.</p>
-
-<p>Group practices with multiple locations create a similar problem. The NPI may list the main office, but the provider splits time across three locations. NPPES gives you one address. Reality is more complicated.</p>
-
-<h3>3. Missing Contact Information</h3>
-
-<p>NPPES collects limited contact data. Here's what's in the database versus what you actually need for outreach:</p>
-
-<ul>
-<li><strong>Phone number:</strong> NPPES includes a phone number field, but it's often the main practice line, not a direct number. For large group practices, this might be a general reception number where your call goes to a phone tree.</li>
-<li><strong>Email:</strong> NPPES does not collect email addresses. If you need provider emails for outreach, NPPES cannot help you. Period.</li>
-<li><strong>Fax:</strong> Included in NPPES, and actually useful for some healthcare workflows, but not sufficient for modern sales outreach.</li>
-<li><strong>Decision-maker contacts:</strong> NPPES has no concept of "office manager," "practice administrator," or "purchasing decision-maker." You get the provider's name and their practice phone number. That's it.</li>
-</ul>
-
-<p>For B2B sales teams that need email addresses, direct phone numbers, or contacts for non-clinical decision-makers, NPPES data alone is a dead end.</p>
-
-<h3>4. Deactivated NPIs Still Appearing in Downloads</h3>
-
-<p>When a provider retires, dies, or has their NPI deactivated for other reasons, the record stays in the NPPES database with a deactivation date. This is by design since CMS needs to maintain historical records for claims processing.</p>
-
-<p>The issue is that if you're downloading the full NPPES file and building provider lists, you need to actively filter out deactivated records. It sounds obvious, but we regularly see teams using NPPES data that includes thousands of deactivated providers. As of early 2026, the full NPPES file contains over 400,000 deactivated NPI records. If you're not filtering on the deactivation date field, those records are polluting your lists.</p>
-
-<h3>5. Taxonomy Codes That Are Too Broad</h3>
-
-<p>NPPES uses the Healthcare Provider Taxonomy Code Set to classify providers by specialty. There are over 800 taxonomy codes, which sounds granular. But in practice, the codes are often too broad for targeted outreach.</p>
-
-<p>Examples of taxonomy limitations:</p>
-
-<ul>
-<li><strong>Internal Medicine (207R00000X):</strong> This single code covers hospitalists, outpatient internists, concierge medicine doctors, and integrative medicine practitioners. If you're selling to outpatient practices, you need to filter out hospitalists, but the taxonomy code doesn't distinguish between them.</li>
-<li><strong>Family Medicine (207Q00000X):</strong> Covers rural family doctors, urgent care physicians who happen to be FM-boarded, and concierge family practices. Very different practice settings, same code.</li>
-<li><strong>Clinical Psychologist (103T00000X):</strong> Doesn't tell you whether they run a group practice, work in a hospital setting, or do exclusively telehealth. The practice setting matters enormously for B2B sales targeting.</li>
-</ul>
-
-<p>Providers also self-select their taxonomy codes, and some choose broadly. A sports medicine orthopedist might list only "Orthopedic Surgery" without the sports medicine sub-specialty code, making them invisible to targeted searches.</p>
-
-<h3>6. No Practice Size, Ownership, or Revenue Data</h3>
-
-<p>NPPES tells you that a provider exists and roughly what they do. It tells you nothing about their practice context:</p>
-
-<ul>
-<li>How many providers work at this practice?</li>
-<li>Is it independently owned or part of a PE-backed group?</li>
-<li>What's the approximate revenue or patient volume?</li>
-<li>How many locations does the practice operate?</li>
-<li>What technology or equipment do they currently use?</li>
-</ul>
-
-<p>For sales teams doing account-based targeting, this context is essential. Pitching a solo practitioner the same way you pitch a 50-provider group doesn't work. But NPPES gives you no way to distinguish between them.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>How Commercial Data Vendors Fix NPPES Gaps</h2>
 
@@ -415,23 +370,35 @@
 <p>Going beyond taxonomy codes by analyzing practice websites, procedure menus, and professional association memberships to classify providers at the sub-specialty level. That "Internal Medicine" taxonomy code becomes "outpatient geriatric practice" or "concierge primary care" based on multiple data signals.</p>
 
 
-<h2>When NPPES Data Is Good Enough</h2>
-
-<p>To be fair, NPPES data isn't always wrong. For certain use cases, the free NPI registry is perfectly adequate:</p>
-
-<ul>
-<li><strong>Claims processing:</strong> NPPES was designed for this, and it works well. NPI numbers, provider names, and taxonomy codes are reliable for claims submission.</li>
-<li><strong>Credentialing verification:</strong> Confirming that a provider has a valid NPI and checking their listed specialty is straightforward in NPPES.</li>
-<li><strong>Broad market sizing:</strong> If you need a rough count of how many cardiologists are in Texas, NPPES will get you in the right ballpark. The count won't be perfect (some deactivated records, some misclassified), but it's directionally accurate.</li>
-<li><strong>Research and analysis:</strong> Academic researchers studying provider distribution, specialty trends, or workforce demographics can use NPPES data effectively because small address errors don't materially affect aggregate analysis.</li>
-</ul>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>When NPPES Data Falls Short</h2>
 
@@ -446,33 +413,23 @@
 </ul>
 
 
-<h2>How Provyx Handles NPPES Accuracy</h2>
-
-<p>We start with NPI data as the foundation, the same as every other vendor. The difference is in the verification and enrichment layers we apply on top of it.</p>
-
-<p>Every provider record in our database goes through multi-source address verification, active practice confirmation, contact enrichment (emails, direct phones, decision-maker contacts), specialty refinement beyond taxonomy codes, and practice context enrichment (size, ownership type, location count).</p>
-
-<p>The result is provider data that's accurate enough to build real outreach campaigns on, not just broad enough to do market sizing. For a detailed comparison of what you get from NPPES versus commercial provider data, see our <a href="/resources/nppes-vs-commercial-provider-data/">NPPES vs. commercial provider data guide</a>.</p>
-
-<p>If you're currently working from raw NPPES downloads and running into the accuracy problems described above, <a href="/services/provider-contact-data/">our provider contact data service</a> can show you what verified data looks like for your target specialty and geography.</p>
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to NPPES Database Accuracy: Known Gaps and How to Fix Them" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>
@@ -486,7 +443,7 @@
                 <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
                 <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             </div>
-        </div>
+            </div>
     </section>
     
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How accurate is NPPES data for provider addresses?", "acceptedAnswer": {"@type": "Answer", "text": "NPPES address accuracy varies by specialty, but across the board, 8-15% of provider addresses in the NPI registry are outdated at any given time. This happens because providers are responsible for updating their own records and there is no enforcement mechanism. High-turnover specialties like primary care and mental health tend to have higher rates of stale addresses."}}, {"@type": "Question", "name": "Does NPPES include email addresses for healthcare providers?", "acceptedAnswer": {"@type": "Answer", "text": "No. The NPPES database does not collect or store email addresses for healthcare providers. It includes a practice phone number and fax number, but no email field exists in the NPI record. If you need provider email addresses for outreach, you'll need a commercial data vendor that enriches NPI records with email data from other sources."}}, {"@type": "Question", "name": "How often is the NPPES database updated by CMS?", "acceptedAnswer": {"@type": "Answer", "text": "CMS updates the NPPES data dissemination file monthly. However, the accuracy of individual records depends on whether providers submit updates when their information changes. CMS publishes the file, but providers are responsible for keeping their own records current. A monthly file update doesn't mean all records in the file are current, only that CMS has published the latest version of what providers have reported."}}, {"@type": "Question", "name": "Can I use NPPES data for sales outreach?", "acceptedAnswer": {"@type": "Answer", "text": "You can use NPPES data as a starting point for identifying providers by specialty and general location, but it has significant limitations for direct outreach. Missing email addresses, outdated practice addresses, billing-versus-practice address mismatches, and lack of decision-maker contacts mean raw NPPES data will produce high bounce rates and wasted effort. Most sales teams supplement NPPES with commercial provider data that adds verification, emails, and practice context."}}]}</script>
@@ -521,7 +478,7 @@
 <li><a href="https://download.cms.gov/nppes/NPI_Files.html" target="_blank" rel="noopener noreferrer">CMS NPPES Data Dissemination</a></li>
 </ul>
             </div>
-        </div>
+            </div>
     </section>
     
     <section class="content-section bg-light">

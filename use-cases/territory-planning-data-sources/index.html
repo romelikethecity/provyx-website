@@ -320,9 +320,9 @@
         <h2>Why Territory Planning Data Is a Persistent Problem</h2>
         <p><strong>Mapping tools are empty without data.</strong> Sales operations teams invest in territory mapping and route optimization tools. Salesforce Maps, Badger Maps, Maptive, or Geopointe, but these platforms need an underlying dataset of providers and practices to visualize. The tool draws the map; you supply the pins. Most territory planning projects stall not because the mapping software doesn't work, but because the team can't get reliable provider data to feed into it.</p>
 
-<p><strong>The NPI Registry is free but insufficient for territory planning.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> contains every credentialed provider in the country, but the addresses are mailing addresses, often PO boxes, billing offices, or hospital credentialing departments rather than the physical locations where providers see patients and use devices. You can't plan a field rep's territory around PO boxes. You need geocoded practice locations with street addresses your rep can drive to.</p>
+        <p><strong>The NPI Registry is free but insufficient for territory planning.</strong> The <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">CMS NPI Registry</a> contains every credentialed provider in the country, but the addresses are mailing addresses, often PO boxes, billing offices, or hospital credentialing departments rather than the physical locations where providers see patients and use devices. You can't plan a field rep's territory around PO boxes. You need geocoded practice locations with street addresses your rep can drive to.</p>
 
-<p><strong>Enterprise data platforms are overbuilt and overpriced for territory data.</strong> Definitive Healthcare, IQVIA, and similar platforms offer complete healthcare intelligence with annual contracts that start at five or six figures. If your sales ops team needs 8,000 orthopedic surgeon records in four states for an annual territory realignment, you're paying for a platform when you need a dataset. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">BLS Healthcare Occupations</a> data provides macro workforce statistics but nothing at the provider level.</p>
+        <p><strong>Enterprise data platforms are overbuilt and overpriced for territory data.</strong> Definitive Healthcare, IQVIA, and similar platforms offer complete healthcare intelligence with annual contracts that start at five or six figures. If your sales ops team needs 8,000 orthopedic surgeon records in four states for an annual territory realignment, you're paying for a platform when you need a dataset. The <a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">BLS Healthcare Occupations</a> data provides macro workforce statistics but nothing at the provider level.</p>
 
 <p><strong>Stale data from the last planning cycle carries forward.</strong> Many medical device sales teams reuse territory data from the previous year's planning cycle, adjusting boundaries based on rep feedback and quota attainment. The underlying provider data doesn't get refreshed. Providers who retired, relocated, or stopped performing relevant procedures stay in the territory map. New practices and providers who entered the market since the last cycle aren't represented. Reps inherit territories sized on phantom accounts.</p>
 
@@ -332,26 +332,26 @@
 
     <section class="content-section">
       <div class="container">
-        
-    <figure class="content-figure">
-      <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
       
-      <figcaption>Tech Stack: visual guide for this healthcare use case.</figcaption>
+    <figure class="content-figure">
+    <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Tech Stack: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual guide for this healthcare use case.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-sales-prospecting-workflow.svg" alt="Prospecting Workflow for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Prospecting Workflow: visual guide for this healthcare use case.</figcaption>
+    <img src="/assets/images/content/healthcare-sales-prospecting-workflow.svg" alt="Prospecting Workflow for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Prospecting Workflow: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
-      <img src="/assets/images/content/crm-data-enrichment-before-after.svg" alt="Crm Enrichment for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Crm Enrichment: visual guide for this healthcare use case.</figcaption>
+    <img src="/assets/images/content/crm-data-enrichment-before-after.svg" alt="Crm Enrichment for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Crm Enrichment: visual guide for this healthcare use case.</figcaption>
     </figure>
       </div>
     </section>
@@ -361,11 +361,11 @@
         <h2>How Provyx Provides Territory Planning Data</h2>
         <p><strong>Geocoded practice locations, not mailing addresses.</strong> Provyx resolves every provider record to the physical practice location where they see patients. Each address is geocoded with latitude and longitude coordinates, ready for direct import into Salesforce Maps, Maptive, Badger Maps, Tableau, or any BI/mapping tool. When a provider practices at multiple locations, each location is represented as a separate record so your territory map reflects actual care delivery sites.</p>
 
-<p><strong>Sub-specialty and procedure-level filtering.</strong> Provyx classifies providers beyond standard <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI taxonomy codes</a> using board certification data, fellowship training, procedure volume indicators, and practice focus analysis. Request "orthopedic spine surgeons" and you get spine surgeons, not sports medicine orthopedists or joint replacement specialists. This precision means your territory assignments are based on the providers who actually use your category of device, not a broad specialty bucket that inflates opportunity counts.</p>
+        <p><strong>Sub-specialty and procedure-level filtering.</strong> Provyx classifies providers beyond standard <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener noreferrer">NPI taxonomy codes</a> using board certification data, fellowship training, procedure volume indicators, and practice focus analysis. Request "orthopedic spine surgeons" and you get spine surgeons, not sports medicine orthopedists or joint replacement specialists. This precision means your territory assignments are based on the providers who actually use your category of device, not a broad specialty bucket that inflates opportunity counts.</p>
 
-<p><strong>Practice firmographics for account prioritization.</strong> Territory data includes practice-level intelligence: provider headcount, practice type (solo, group, hospital-employed, ASC-affiliated), surgical volume indicators, and current technology systems. These fields let your sales ops team tier accounts within each territory, high-volume surgical groups get more rep attention than solo practitioners. Territory sizing becomes a function of weighted opportunity, not raw provider count.</p>
+        <p><strong>Practice firmographics for account prioritization.</strong> Territory data includes practice-level intelligence: provider headcount, practice type (solo, group, hospital-employed, ASC-affiliated), surgical volume indicators, and current technology systems. These fields let your sales ops team tier accounts within each territory, high-volume surgical groups get more rep attention than solo practitioners. Territory sizing becomes a function of weighted opportunity, not raw provider count.</p>
 
-<p><strong>Per-record pricing for the exact scope you need.</strong> Request data for the specific specialties, sub-specialties, and geographies that match your territory structure. If you need orthopedic surgeons in Texas and Florida, you pay for those records, not for a national database you'll never use. Pricing is per record with no annual contract and no platform fee. When you need to refresh the data for next year's planning cycle, you order a new pull at the same per-record rate.</p>
+        <p><strong>Per-record pricing for the exact scope you need.</strong> Request data for the specific specialties, sub-specialties, and geographies that match your territory structure. If you need orthopedic surgeons in Texas and Florida, you pay for those records, not for a national database you'll never use. Pricing is per record with no annual contract and no platform fee. When you need to refresh the data for next year's planning cycle, you order a new pull at the same per-record rate.</p>
 
 <p><strong>Quarterly refresh for dynamic territory management.</strong> Territory planning isn't just an annual event anymore. Reps need updated data when providers move, new practices open, or market dynamics shift mid-year. Provyx offers quarterly data refreshes so your territory maps reflect current reality. New providers entering your specialty in a territory are surfaced. Providers who've relocated or retired are flagged. Your mapping tool stays populated with accurate data throughout the year, not just during the annual planning cycle.</p>
       </div>
@@ -397,7 +397,7 @@
               <p class="step__text">Schedule quarterly or annual refreshes to keep territory data current. Each refresh includes new providers, updated locations, and flagged retirements or relocations. Adjust your territory boundaries based on fresh data rather than stale assumptions.</p>
             </div>
         </div>
-      </div>
+        </div>
     </section>
 
     <section class="content-section bg-light">
@@ -414,7 +414,7 @@
     </section>
 
     
-        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What mapping and BI tools can I import this data into?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx delivers data as geocoded CSV files with latitude and longitude columns, which import directly into Salesforce Maps, Maptive, Badger Maps, Geopointe, Tableau, Power BI, Google Maps, and any other platform that accepts coordinate data. We don't require a specific tool \u2014 any system that can ingest a CSV with lat/long coordinates will work."}}, {"@type": "Question", "name": "How granular is the sub-specialty filtering?", "acceptedAnswer": {"@type": "Answer", "text": "We go beyond standard NPI taxonomy codes to identify sub-specialty focus areas. For example, within orthopedic surgery, we can filter for spine, sports medicine, joint replacement, trauma, hand, foot and ankle, and pediatric orthopedics. This filtering uses board certification data, fellowship training records, and practice focus indicators. Specificity varies by specialty \u2014 surgical sub-specialties generally have higher classification accuracy than primary care."}}, {"@type": "Question", "name": "Do you include ASC and hospital outpatient department data?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can include ambulatory surgery centers and hospital outpatient departments as practice locations in addition to office-based practices. Each location type is tagged so you can filter by care setting. ASC data is particularly relevant for device companies since many surgical procedures have shifted to outpatient settings. ASC records include facility NPI, associated surgeons, and geocoded address."}}, {"@type": "Question", "name": "How does per-record pricing compare to a Definitive Healthcare or IQVIA subscription?", "acceptedAnswer": {"@type": "Answer", "text": "Per-record pricing from Provyx typically costs a fraction of what an annual platform subscription runs, especially if your data needs are focused on specific specialties and geographies. A medical device company needing 5,000-10,000 records for territory planning will pay significantly less than the entry-level annual contract at enterprise data platforms. The tradeoff is that Provyx provides a dataset, not a platform with dashboards and analytics. If you need the data for your own tools, per-record pricing is more cost-efficient."}}]}</script>
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What mapping and BI tools can I import this data into?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx delivers data as geocoded CSV files with latitude and longitude columns, which import directly into Salesforce Maps, Maptive, Badger Maps, Geopointe, Tableau, Power BI, Google Maps, and any other platform that accepts coordinate data. We don't require a specific tool, any system that can ingest a CSV with lat/long coordinates will work."}}, {"@type": "Question", "name": "How granular is the sub-specialty filtering?", "acceptedAnswer": {"@type": "Answer", "text": "We go beyond standard NPI taxonomy codes to identify sub-specialty focus areas. For example, within orthopedic surgery, we can filter for spine, sports medicine, joint replacement, trauma, hand, foot and ankle, and pediatric orthopedics. This filtering uses board certification data, fellowship training records, and practice focus indicators. Specificity varies by specialty, surgical sub-specialties generally have higher classification accuracy than primary care."}}, {"@type": "Question", "name": "Do you include ASC and hospital outpatient department data?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can include ambulatory surgery centers and hospital outpatient departments as practice locations in addition to office-based practices. Each location type is tagged so you can filter by care setting. ASC data is particularly relevant for device companies since many surgical procedures have shifted to outpatient settings. ASC records include facility NPI, associated surgeons, and geocoded address."}}, {"@type": "Question", "name": "How does per-record pricing compare to a Definitive Healthcare or IQVIA subscription?", "acceptedAnswer": {"@type": "Answer", "text": "Per-record pricing from Provyx typically costs a fraction of what an annual platform subscription runs, especially if your data needs are focused on specific specialties and geographies. A medical device company needing 5,000-10,000 records for territory planning will pay significantly less than the entry-level annual contract at enterprise data platforms. The tradeoff is that Provyx provides a dataset, not a platform with dashboards and analytics. If you need the data for your own tools, per-record pricing is more cost-efficient."}}]}</script>
         <section class="section faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
@@ -446,7 +446,7 @@
 <li><a href="https://www.bls.gov/ooh/healthcare/" target="_blank" rel="noopener noreferrer">BLS Healthcare Occupations</a></li>
 </ul>
             </div>
-          </div>
+            </div>
         </section>
     
         <section class="content-section bg-light">

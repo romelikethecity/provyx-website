@@ -292,22 +292,13 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
-            
-
-<h2>The Territory Planning Problem in Medical Device Sales</h2>
-
-<p>Most medical device companies carve territories using one of two approaches: historical sales data (where did we sell last year?) or crude geographic splits (you get the Northeast, I get the Southeast). Both approaches have the same flaw: they do not account for where the actual target providers are located right now.</p>
-
-<p>Historical data tells you where you already have relationships. It does not tell you where the untapped opportunity is. Geographic splits assume providers are evenly distributed, which they are not. According to the <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a>, physician density varies by 3-5x between major metro areas and rural regions. A territory that covers two rural states might have fewer target surgeons than a single urban county.</p>
-
-<p>The fix is straightforward: build your territory model on actual provider data. Map every target specialist in your addressable market, cluster them by geography and density, and carve territories that balance opportunity across your sales team. This guide walks through the process.</p>
-
+        
 
 
     <figure class="content-figure">
-      <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Step 1: Build Your Provider Universe</h2>
 
@@ -322,31 +313,41 @@
 <p>Pull all matching providers from the <a href="https://npiregistry.cms.hhs.gov/" target="_blank" rel="noopener">CMS NPI Registry</a> with their practice addresses. For a national territory model, this typically produces 2,000 to 50,000 target providers depending on how niche your device category is.</p>
 
 
-<h2>Step 2: Geocode and Plot Provider Locations</h2>
-
-<p>NPI addresses give you street addresses. For territory mapping, you need latitude and longitude coordinates. Run each unique practice address through a geocoding service (Google Geocoding API, Census Geocoder, or similar) to get coordinates.</p>
-
-<p>Plot the coordinates on a map. Even before any analysis, the visual distribution reveals patterns that raw address lists cannot. You will see dense clusters in major metro areas, scattered providers in suburban regions, and empty zones in rural areas. These patterns are the foundation of your territory model.</p>
-
-<h3>Handling Address Quality Issues</h3>
-
-<p>Expect 5-10% of addresses to fail geocoding or return low-confidence results. Common issues:</p>
-
-<ul>
-<li>PO Box addresses (cannot be geocoded to a specific location)</li>
-<li>Suite numbers that confuse the geocoder</li>
-<li>Outdated addresses for providers who have moved</li>
-<li>Billing addresses that are in a different city than the practice</li>
-</ul>
-
-<p>For failed geocodes, try geocoding at the city + state level to place the provider in the correct general area. This is accurate enough for territory planning even if you cannot pinpoint the exact building.</p>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Step 3: Identify Provider Clusters</h2>
 
@@ -361,26 +362,35 @@
 <p><strong>Density-based clustering:</strong> Algorithms like DBSCAN identify clusters of providers that are geographically close to each other, regardless of administrative boundaries like zip codes or MSAs. This is useful for identifying natural clusters that cross city or county lines.</p>
 
 
-<h2>Step 4: Score Each Cluster by Opportunity</h2>
-
-<p>Provider count alone does not tell you the full story. A cluster of 50 surgeons at academic medical centers where your device already has high penetration is different from a cluster of 50 surgeons at independent ASCs where you have no presence.</p>
-
-<p>Score clusters using weighted factors:</p>
-
-<ul>
-<li><strong>Provider count:</strong> Base measure of cluster size.</li>
-<li><strong>Practice type mix:</strong> Independent practices and ASCs are typically easier to sell to than hospital-employed physicians. Weight clusters higher if they have a favorable practice type mix.</li>
-<li><strong>Existing penetration:</strong> Overlay your current customer data. Clusters with low existing penetration and high provider counts represent the biggest growth opportunity.</li>
-<li><strong>Competitive presence:</strong> If you have competitive intelligence, factor in where competitors are strong or weak.</li>
-<li><strong>Payer mix:</strong> Some regions have better reimbursement for your device's procedures than others. Where reimbursement is favorable, providers are more likely to adopt new devices.</li>
-</ul>
-
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/territory-planning-map.svg" alt="Territory Map diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Territory Map: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Step 5: Balance Territories Across Your Sales Team</h2>
 
@@ -405,31 +415,23 @@
 </ul>
 
 
-<h2>Step 6: Maintain the Map Over Time</h2>
-
-<p>Provider data changes. New practices open. Surgeons relocate. Practices get acquired by health systems. A territory map built on static data degrades the same way any provider list does.</p>
-
-<p>Schedule quarterly refreshes of your provider universe. Re-geocode new providers, recalculate cluster scores, and flag territories where the opportunity balance has shifted significantly. Most companies do a full territory realignment annually, but quarterly data refreshes let you make micro-adjustments (like reassigning a newly opened ASC to the nearest rep) without waiting for the annual cycle.</p>
-
-<p>For the underlying provider data that powers territory mapping, <a href="/services/practice-location-data/">Provyx delivers verified provider locations</a> with practice addresses differentiated from billing addresses, geocoded coordinates, and NPI-level specialty data. We refresh the data on your schedule so your territory model stays current.</p>
-
 
     <figure class="content-figure">
-      <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
     </figure>
 
     <figure class="content-figure">
-      <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
-      
-      <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Map Device Sales Territories with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
     </figure>
         </div>
     </section>
@@ -443,17 +445,17 @@
                 <p>Former Datajoy (acquired by Databricks), Microsoft, Salesforce. UC Berkeley Haas MBA.</p>
                 <p><a href="https://www.linkedin.com/in/romecaputo/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             </div>
-        </div>
+            </div>
     </section>
     
-        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What data do I need to build a provider-based territory map?", "acceptedAnswer": {"@type": "Answer", "text": "At minimum, you need target provider names, NPI numbers, practice addresses (not billing addresses), and specialty classifications. For weighted territory balancing, you also benefit from practice type (independent vs. system-employed), practice size indicators, and your existing customer data overlaid on the provider map. Geocoded coordinates make the mapping process faster."}}, {"@type": "Question", "name": "How often should medical device territories be rebalanced?", "acceptedAnswer": {"@type": "Answer", "text": "Most companies do a full territory realignment annually during their planning cycle. However, refreshing the underlying provider data quarterly allows for micro-adjustments throughout the year. If a major market change occurs (large practice acquisition, new ASC opening, rep turnover), update the affected territories immediately rather than waiting for the annual cycle."}}, {"@type": "Question", "name": "Should territories be balanced by provider count or weighted opportunity?", "acceptedAnswer": {"@type": "Answer", "text": "Weighted opportunity. Raw provider count ignores critical factors like practice type, existing penetration, and competitive dynamics. A territory with 100 surgeons at hospital systems where you have 40% market share has less growth opportunity than a territory with 80 surgeons at independent ASCs where you have 5% share. Weight clusters by the factors that drive your specific sales motion."}}, {"@type": "Question", "name": "How do you handle providers who practice at multiple locations?", "acceptedAnswer": {"@type": "Answer", "text": "Count the provider once, in the territory where they spend the majority of their clinical time (their primary practice location). If a surgeon operates at both an ASC and a hospital, map them to whichever location is their primary address. Avoid double-counting, which inflates opportunity estimates and leads to territory imbalances."}}]}</script>
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What data do I need to build a provider-based territory map?", "acceptedAnswer": {"@type": "Answer", "text": "At minimum, you need target provider names, NPI numbers, practice addresses (not billing addresses), and specialty classifications. For weighted territory balancing, you also benefit from practice type (independent vs. System-employed), practice size indicators, and your existing customer data overlaid on the provider map. Geocoded coordinates make the mapping process faster."}}, {"@type": "Question", "name": "How often should medical device territories be rebalanced?", "acceptedAnswer": {"@type": "Answer", "text": "Most companies do a full territory realignment annually during their planning cycle. However, refreshing the underlying provider data quarterly allows for micro-adjustments throughout the year. If a major market change occurs (large practice acquisition, new ASC opening, rep turnover), update the affected territories immediately rather than waiting for the annual cycle."}}, {"@type": "Question", "name": "Should territories be balanced by provider count or weighted opportunity?", "acceptedAnswer": {"@type": "Answer", "text": "Weighted opportunity. Raw provider count ignores critical factors like practice type, existing penetration, and competitive dynamics. A territory with 100 surgeons at hospital systems where you have 40% market share has less growth opportunity than a territory with 80 surgeons at independent ASCs where you have 5% share. Weight clusters by the factors that drive your specific sales motion."}}, {"@type": "Question", "name": "How do you handle providers who practice at multiple locations?", "acceptedAnswer": {"@type": "Answer", "text": "Count the provider once, in the territory where they spend the majority of their clinical time (their primary practice location). If a surgeon operates at both an ASC and a hospital, map them to whichever location is their primary address. Avoid double-counting, which inflates opportunity estimates and leads to territory imbalances."}}]}</script>
         <section class="section faq-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What data do I need to build a provider-based territory map?</summary>
-                    <div class="faq-item__answer"><p>At minimum, you need target provider names, NPI numbers, practice addresses (not billing addresses), and specialty classifications. For weighted territory balancing, you also benefit from practice type (independent vs. system-employed), practice size indicators, and your existing customer data overlaid on the provider map. Geocoded coordinates make the mapping process faster.</p></div>
+                    <div class="faq-item__answer"><p>At minimum, you need target provider names, NPI numbers, practice addresses (not billing addresses), and specialty classifications. For weighted territory balancing, you also benefit from practice type (independent vs. System-employed), practice size indicators, and your existing customer data overlaid on the provider map. Geocoded coordinates make the mapping process faster.</p></div>
                 </details>
                 <details class="faq-item">
                     <summary class="faq-item__question">How often should medical device territories be rebalanced?</summary>
@@ -480,7 +482,7 @@
 <li><a href="https://taxonomy.nucc.org/" target="_blank" rel="noopener noreferrer">NUCC Healthcare Provider Taxonomy</a></li>
 </ul>
             </div>
-        </div>
+            </div>
     </section>
     
     <section class="content-section bg-light">
