@@ -1774,10 +1774,6 @@ img {
   .hero .hero__buttons {
     justify-content: flex-start;
   }
-  .hero .pain-stats {
-    justify-content: flex-start;
-    max-width: 420px;
-  }
 }
 
 .hero__visual {
