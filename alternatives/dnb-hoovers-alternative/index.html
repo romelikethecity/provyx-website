@@ -72,13 +72,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -436,6 +436,12 @@
     <!-- Data Sources Pipeline -->
     <section class="content-section">
         <div class="container">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases as an alternative to D&B Hoovers" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline: an alternative to D&B Hoovers for healthcare provider data.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -498,7 +504,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does D&B Hoovers have healthcare provider data?", "acceptedAnswer": {"@type": "Answer", "text": "D&B Hoovers includes healthcare businesses in its general database, but records are business-level (not provider-level) and classified by NAICS codes (not NUCC taxonomy codes). There's no NPI verification, no specialty sub-classification, and no provider-level granularity. For healthcare sales targeting, these gaps create significant data quality issues."}}, {"@type": "Question", "name": "Is Provyx more accurate than D&B Hoovers for healthcare?", "acceptedAnswer": {"@type": "Answer", "text": "For healthcare provider data specifically, yes. Provyx records are anchored to NPI numbers verified against the CMS registry, classified by NUCC taxonomy codes, and enriched with practice-level contact data from healthcare-specific sources. D&B's healthcare records come from general business databases that don't include these provider-specific verification layers."}}, {"@type": "Question", "name": "Can I use D&B Hoovers and Provyx together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many teams use Provyx for healthcare provider data and D&B for non-healthcare B2B prospecting. If you sell to both healthcare organizations and general businesses, this combination gives you vertical depth for healthcare and horizontal breadth for everything else."}}, {"@type": "Question", "name": "How does pricing compare between D&B Hoovers and Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "D&B Hoovers packages start around $10,000-25,000 annually. Provyx charges per record with no annual commitment. For teams focused on healthcare, Provyx delivers more relevant, higher-quality data at a lower total cost because you're paying for provider-specific records, not a general business database."}}, {"@type": "Question", "name": "What about D&B's firmographic data like revenue and employee count?", "acceptedAnswer": {"@type": "Answer", "text": "D&B provides estimated revenue and employee counts for businesses, which Provyx doesn't include for individual providers. If firmographic data is critical to your qualification process, you can enrich Provyx records with D&B firmographic data or use both sources. Most healthcare sales teams find that specialty, location, and practice type are more useful qualification criteria than revenue estimates."}}, {"@type": "Question", "name": "How do I migrate my healthcare contacts from D&B Hoovers to Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "Export your current healthcare contacts from D&B Hoovers. Request a Provyx list for the same specialties and geographies. Import the Provyx records into your CRM alongside or in place of the D&B records. Most teams use the NPI number as the deduplication key since D&B records don't have NPIs, this effectively creates a clean separation between old and new data. The entire process takes one to two days of admin work, not weeks."}}, {"@type": "Question", "name": "How often does Provyx update its provider records compared to D&B?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx refreshes its NPI registry data in sync with the NPPES weekly update cycle from CMS. Practice contact details from business listings and commercial databases are updated on a rolling basis, with most records refreshed within 90 days. D&B Hoovers updates its general business database on its own cycle, but healthcare records aren't prioritized for refresh because they're a small slice of D&B's 500M+ record database. For healthcare teams, the difference in data freshness shows up in fewer bounced emails and more accurate phone numbers."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Does D&B Hoovers have healthcare provider data?</summary>

@@ -72,13 +72,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -436,6 +436,12 @@
     <!-- Data Sources Pipeline -->
     <section class="content-section">
         <div class="container">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases as an alternative to Veeva OpenData" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline: an alternative to Veeva OpenData for healthcare provider data.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -498,7 +504,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Provyx replace Veeva OpenData?", "acceptedAnswer": {"@type": "Answer", "text": "For provider contact data, yes. Provyx provides NPI-verified records with taxonomy codes and practice-level contacts, delivered to any CRM. Provyx doesn't replace Veeva CRM's territory management, sample tracking, or compliance tools. If you need those, you need Veeva CRM regardless of your data source."}}, {"@type": "Question", "name": "Does Provyx have international provider data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Provyx covers US healthcare providers only. Veeva OpenData includes international HCP records in 100+ countries. If your commercial operations span multiple countries, you'll need Veeva or another international data source for non-US markets."}}, {"@type": "Question", "name": "How fast can I get Provyx data compared to Veeva?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx delivers data within days of your request. Veeva OpenData implementations typically take 3-6 months including CRM setup, data mapping, training, and testing. For teams with immediate data needs, the timeline difference is significant."}}, {"@type": "Question", "name": "Is Provyx data compatible with Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Provyx delivers CSV files that import directly into Salesforce with standard field mapping. NPI numbers, taxonomy codes, and practice details map to custom fields. Many teams that switch from Veeva already use Salesforce as their CRM."}}, {"@type": "Question", "name": "Does Veeva OpenData work without Veeva CRM?", "acceptedAnswer": {"@type": "Answer", "text": "Technically you can license OpenData separately, but it's designed for the Veeva ecosystem. Using it outside Veeva CRM means dealing with proprietary specialty codes, limited export options, and pricing that assumes you're bundling CRM. Most teams find it's not cost-effective as a standalone data product when alternatives like Provyx deliver the same NPI-verified records in standard formats."}}, {"@type": "Question", "name": "How do Veeva's proprietary codes compare to NUCC taxonomy codes?", "acceptedAnswer": {"@type": "Answer", "text": "Veeva uses its own classification system for provider specialties. NUCC taxonomy codes are the industry standard maintained by the National Uniform Claim Committee and used across CMS, insurance claims, and most healthcare data systems. If you ever need to use your data outside the Veeva ecosystem, you'll need to map Veeva codes to NUCC. Provyx uses NUCC natively, so your data is portable from day one."}}, {"@type": "Question", "name": "What's the typical savings when switching from Veeva to Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "Teams that switch from Veeva's bundled CRM + data platform to their existing CRM plus Provyx data typically save 70-90% on their annual data spend. The savings come from eliminating CRM licensing, implementation consulting, and platform admin costs. A 10-person team paying $150K+ for Veeva's bundle often gets equivalent provider contact data from Provyx for under $20K."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Can Provyx replace Veeva OpenData?</summary>

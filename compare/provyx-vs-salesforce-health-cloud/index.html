@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to Salesforce Health Cloud" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs Salesforce Health Cloud: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -457,7 +463,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Salesforce Health Cloud come with provider data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Salesforce Health Cloud provides healthcare-specific CRM objects (provider profiles, NPI fields, specialty classifications) but the data fields are empty at setup. You need an external data source like Provyx to populate those records with actual provider contact information."}}, {"@type": "Question", "name": "Can I use Provyx data inside Salesforce Health Cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Provyx data maps directly to Health Cloud's provider objects. NPI numbers, NUCC taxonomy codes, practice addresses, and contact details import into Health Cloud's healthcare-specific fields. Many teams use Provyx as their data source and Health Cloud as their CRM workflow layer."}}, {"@type": "Question", "name": "Is Health Cloud worth the premium over standard Salesforce for sales teams?", "acceptedAnswer": {"@type": "Answer", "text": "For most B2B healthcare sales teams, standard Salesforce Sales Cloud with imported provider data covers the core need: managing provider relationships with good contact data. Health Cloud's premium is justified when you need healthcare-specific workflow features like care plans, patient timelines, or clinical compliance tools. If your team just needs a CRM with provider records, standard Salesforce plus a data vendor is more practical."}}, {"@type": "Question", "name": "How much does Salesforce Health Cloud cost?", "acceptedAnswer": {"@type": "Answer", "text": "Salesforce Health Cloud Enterprise starts at $300 per user per month, billed annually. A 10-person team pays $36,000+ per year for licensing alone. Implementation costs ($25,000-$150,000+) and data acquisition are additional. Provyx's pay-per-record model has no platform fee, no per-seat cost, and no annual commitment."}}, {"@type": "Question", "name": "What's the biggest difference between Provyx and Salesforce Health Cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Category. Salesforce Health Cloud is a CRM platform. Provyx is a data product. Health Cloud gives you the structure to manage provider relationships. Provyx gives you the provider records to put into that structure. They're complementary, not competing."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Does Salesforce Health Cloud come with provider data?</summary>

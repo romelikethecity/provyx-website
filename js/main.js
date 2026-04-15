@@ -28,18 +28,20 @@
     });
   });
 
-  // Header scroll effect
+  // Header scroll effect using IntersectionObserver
   var header = document.querySelector('.header');
+  var sentinel = document.createElement('div');
+  sentinel.style.cssText = 'position:absolute;top:100px;height:1px;width:1px;pointer-events:none';
+  document.body.prepend(sentinel);
 
-  function updateHeader() {
-    if (window.scrollY > 100) {
-      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.08)';
+  var headerObs = new IntersectionObserver(function(entries) {
+    if (entries[0].isIntersecting) {
+      header.classList.remove('header--scrolled');
     } else {
-      header.style.boxShadow = 'none';
+      header.classList.add('header--scrolled');
     }
-  }
-
-  window.addEventListener('scroll', updateHeader, { passive: true });
+  });
+  headerObs.observe(sentinel);
 
   // Form submission handling + GA4 events
   var forms = document.querySelectorAll('form');
@@ -112,52 +114,72 @@
     });
   });
 
-  // GA4: Scroll depth milestones
-  var scrollMilestones = { 25: false, 50: false, 75: false, 100: false };
-  window.addEventListener('scroll', function() {
-    if (typeof gtag !== 'function') return;
-    var scrollPct = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
-    [25, 50, 75, 100].forEach(function(milestone) {
-      if (scrollPct >= milestone && !scrollMilestones[milestone]) {
-        scrollMilestones[milestone] = true;
-        gtag('event', 'scroll_depth', {
-          percent_scrolled: milestone
-        });
-      }
+  // GA4: Scroll depth milestones via IntersectionObserver
+  if (typeof gtag === 'function') {
+    [25, 50, 75, 100].forEach(function(pct) {
+      var marker = document.createElement('div');
+      marker.style.cssText = 'position:absolute;left:0;width:1px;height:1px;pointer-events:none';
+      marker.style.top = pct + '%';
+      document.body.appendChild(marker);
+
+      var obs = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          gtag('event', 'scroll_depth', { percent_scrolled: pct });
+          obs.disconnect();
+        }
+      });
+      obs.observe(marker);
     });
-  }, { passive: true });
+  }
 
   // Scroll-triggered CTA bar (appears after 60% scroll, not on contact/pricing pages)
-  var ctaBarShown = false;
-  var ctaBarDismissed = false;
+  // Uses static trusted HTML only - no user input involved
   var skipCtaBar = window.location.pathname.indexOf('/contact') === 0
     || window.location.pathname.indexOf('/pricing') === 0;
 
-  if (!skipCtaBar) {
-    window.addEventListener('scroll', function() {
-      if (ctaBarShown || ctaBarDismissed) return;
-      var pct = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
-      if (pct >= 60) {
-        ctaBarShown = true;
+  if (!skipCtaBar && !sessionStorage.getItem('provyx-cta-dismissed')) {
+    var ctaMarker = document.createElement('div');
+    ctaMarker.style.cssText = 'position:absolute;left:0;top:60%;width:1px;height:1px;pointer-events:none';
+    document.body.appendChild(ctaMarker);
+
+    var ctaObs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        ctaObs.disconnect();
+
         var bar = document.createElement('div');
         bar.className = 'scroll-cta-bar';
-        bar.innerHTML = '<p>Need healthcare provider data for your team?</p>'
-          + '<a href="/contact/" class="btn btn--primary btn--sm">Get a Sample List</a>'
-          + '<button class="scroll-cta-bar__close" aria-label="Dismiss">&times;</button>';
+
+        var p = document.createElement('p');
+        p.textContent = 'Need healthcare provider data for your team?';
+        bar.appendChild(p);
+
+        var link = document.createElement('a');
+        link.href = '/contact/';
+        link.className = 'btn btn--primary btn--sm';
+        link.textContent = 'Get a Sample List';
+        bar.appendChild(link);
+
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'scroll-cta-bar__close';
+        closeBtn.setAttribute('aria-label', 'Dismiss');
+        closeBtn.textContent = '\u00D7';
+        bar.appendChild(closeBtn);
+
         document.body.appendChild(bar);
         requestAnimationFrame(function() {
           requestAnimationFrame(function() { bar.classList.add('visible'); });
         });
-        bar.querySelector('.scroll-cta-bar__close').addEventListener('click', function() {
+        closeBtn.addEventListener('click', function() {
           bar.classList.remove('visible');
-          ctaBarDismissed = true;
+          sessionStorage.setItem('provyx-cta-dismissed', '1');
           setTimeout(function() { bar.remove(); }, 300);
         });
         if (typeof gtag === 'function') {
           gtag('event', 'scroll_cta_shown', { page_path: window.location.pathname });
         }
       }
-    }, { passive: true });
+    });
+    ctaObs.observe(ctaMarker);
   }
 
 })();

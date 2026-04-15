@@ -113,13 +113,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -307,6 +307,12 @@
 
 <section class="content-section">
  <div class="container">
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources for Practice Location Data service" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: how Provyx delivers practice location data for healthcare teams.</figcaption>
+    </figure>
  </div>
 </section>
 
@@ -334,6 +340,12 @@
 
 <section class="content-section">
  <div class="container">
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/provider-data-enrichment-flow.svg" alt="Enrichment Flow for Practice Location Data service" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Enrichment Flow: how Provyx delivers practice location data for healthcare teams.</figcaption>
+    </figure>
  </div>
 </section>
 
@@ -422,7 +434,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What's the geocoding precision level?", "acceptedAnswer": {"@type": "Answer", "text": "Most addresses are geocoded to rooftop-level precision, meaning the coordinates point to the specific building. When rooftop geocoding isn't possible, typically for rural addresses or new construction, we fall back to parcel or street-level precision. Every record includes a precision indicator so you know the accuracy level of the coordinates."}}, {"@type": "Question", "name": "How do you handle practices that have closed?", "acceptedAnswer": {"@type": "Answer", "text": "We check NPI deactivation records, business registration status, and web presence signals to identify closed practices. Deactivated NPI records are flagged, and addresses associated with confirmed closures are marked as inactive. We don't remove them from the database because historical location data is valuable for market analysis, but they won't appear in active-only data pulls."}}, {"@type": "Question", "name": "Can I get location data in a GIS-compatible format?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We deliver location data in CSV with lat/long columns by default, which imports directly into any GIS tool. We can also provide GeoJSON or Shapefile formats on request. If you're integrating with a mapping platform like Mapbox or Google Maps, the default CSV format with WGS84 coordinates works without any conversion."}}, {"@type": "Question", "name": "How many practice locations are in the database?", "acceptedAnswer": {"@type": "Answer", "text": "The database covers over 3.5 million practice location records linked to active NPI registrations across all 50 states and territories. This includes both Type 1 individual provider locations and Type 2 organizational locations. The count fluctuates as new providers enumerate and others deactivate, but we track every active NPI in the NPPES system."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What's the geocoding precision level?</summary>

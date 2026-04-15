@@ -104,13 +104,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -292,6 +292,14 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>The Five Dimensions of Provider Data Accuracy</h2>
 
 <p>Accuracy isn't a single number. It's at least five separate measurements, and a database can score well on one while failing on another.</p>
@@ -364,6 +372,18 @@
     </figure>
 
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
     <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
     
  <figcaption>Tech Stack: visual guide for healthcare data teams.</figcaption>
@@ -404,6 +424,20 @@
 
 <p>For 10 records that include owner or decision-maker names, visit the practice website and verify. Is that person actually at the practice? Are they in the role described? This is where most databases have the highest error rates because personnel changes happen frequently and are hard to detect programmatically.</p>
 
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
     <figure class="content-figure">
     <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
     
@@ -414,6 +448,12 @@
     <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
     
  <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>The Accuracy Tax</h2>
 
@@ -427,6 +467,13 @@
 </ul>
 
 <p>The vendors with the lowest per-record cost rarely deliver the lowest cost per qualified conversation. That's the metric that matters, and it correlates with accuracy far more than it correlates with list price.</p>
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
 
     <figure class="content-figure">
     <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack diagram related to Healthcare Provider Database Accuracy: What to Expect" width="1200" height="630" loading="lazy">
@@ -457,7 +504,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What accuracy rate should I expect from a healthcare provider database?", "acceptedAnswer": {"@type": "Answer", "text": "Accuracy varies by field. NPI numbers: 99%+. Addresses: 85-92%. Phone numbers: 80-90%. Verified email: 85-95% at time of verification, decaying 2-4% per month. Practice owner names: 70-85%. Any vendor claiming 97%+ across all fields is likely using a narrow definition of accuracy or not measuring it rigorously."}}, {"@type": "Question", "name": "How fast does healthcare provider data decay?", "acceptedAnswer": {"@type": "Answer", "text": "Roughly 4-6% of provider records change every month according to CMS data. Over 12 months, that compounds to 40-50% of records having at least one changed field. Email addresses, phone numbers, and practice affiliations are the fastest-decaying fields. NPI numbers and specialty classifications are the most stable."}}, {"@type": "Question", "name": "How can I independently test a healthcare data vendor's accuracy?", "acceptedAnswer": {"@type": "Answer", "text": "Request a 50-100 record sample, then verify it yourself. Run emails through a third-party verification service (NeverBounce, ZeroBounce). Call 15-20 phone numbers. Cross-reference 20 addresses against Google Maps and practice websites. Check 10 decision-maker names against practice websites. This takes 2-3 hours and gives you more signal than any vendor demo."}}, {"@type": "Question", "name": "Why is healthcare provider data less accurate than general B2B data?", "acceptedAnswer": {"@type": "Answer", "text": "Three structural reasons: practice consolidation (PE acquisitions, DSO rollups, and health system mergers change contact data en masse), provider mobility (physicians change affiliations more frequently than most professionals), and technology transitions (practices switching email systems or phone providers invalidate contact data overnight). These factors create decay rates roughly 1.5-2x higher than general B2B contact data."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What accuracy rate should I expect from a healthcare provider database?</summary>

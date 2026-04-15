@@ -131,13 +131,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -344,6 +344,11 @@
  <figcaption>Segmentation Filters: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-sales-prospecting-workflow.svg" alt="Prospecting Workflow for Provider Network Analysis with Verified Practice Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Prospecting Workflow: visual guide for this healthcare use case.</figcaption>
+    </figure>
+    <figure class="content-figure">
     <img src="/assets/images/content/crm-data-enrichment-before-after.svg" alt="Crm Enrichment for Provider Network Analysis with Verified Practice Data" width="1200" height="630" loading="lazy">
     
  <figcaption>Crm Enrichment: visual guide for this healthcare use case.</figcaption>
@@ -412,7 +417,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Provyx data support CMS network adequacy reporting?", "acceptedAnswer": {"@type": "Answer", "text": "Our data includes the fields typically required for network adequacy analysis: NPI number, taxonomy codes, verified practice address with geocoding, and provider type classification. We don't generate the regulatory filings themselves, but the underlying data supports the distance, provider count, and specialty coverage analyses that those filings require."}}, {"@type": "Question", "name": "How do you handle providers who practice at multiple locations?", "acceptedAnswer": {"@type": "Answer", "text": "We track individual providers across their practice locations using NPI as the primary key. If a provider practices at three different addresses, each location appears as a separate record linked to the same NPI. This gives you an accurate picture of access points rather than just provider headcount."}}, {"@type": "Question", "name": "Can I get provider data for a specific health plan service area?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can define your service area by county, ZIP code, MSA, or custom geographic boundaries. We'll deliver all matching providers within that area, including those who may not be in your current network, so you can identify both your panel and the broader market."}}, {"@type": "Question", "name": "How often should network analysis data be refreshed?", "acceptedAnswer": {"@type": "Answer", "text": "Most health plans refresh their external provider data quarterly to align with regulatory reporting cycles. If you're in a period of active network development or preparing for an audit, more frequent refreshes may be warranted. We offer flexible delivery schedules without requiring annual contracts."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Can Provyx data support CMS network adequacy reporting?</summary>

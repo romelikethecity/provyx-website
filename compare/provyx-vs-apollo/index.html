@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to Apollo.io" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs Apollo.io: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -455,7 +461,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I use Apollo.io for healthcare sales outreach?", "acceptedAnswer": {"@type": "Answer", "text": "You can, but the results will likely be poor compared to other industries. Apollo.io users targeting healthcare providers commonly report email bounce rates of 20% to 35%, which is two to four times higher than what they see when targeting technology or SaaS contacts. The platform lacks NPI data and taxonomy codes, so you can't verify that contacts are active providers or filter by clinical specialty. For occasional healthcare outreach, it might suffice. For dedicated healthcare sales, it won't."}}, {"@type": "Question", "name": "Why are healthcare email bounce rates so high on Apollo.io?", "acceptedAnswer": {"@type": "Answer", "text": "Healthcare providers don't maintain professional email addresses the same way tech workers do. Many use institutional email systems with non-standard formats. Others use EHR-linked messaging and rarely check external email. Apollo.io infers email addresses using pattern matching (first.last@domain), which works well for companies with consistent email formats but fails frequently for medical practices, hospitals, and clinics. Provyx sources healthcare email addresses through methods designed for this specific challenge."}}, {"@type": "Question", "name": "Is Apollo.io's free plan enough for healthcare prospecting?", "acceptedAnswer": {"@type": "Answer", "text": "The free plan gives you limited credits to unlock contacts each month. For healthcare prospecting, the credit limitation is less of an issue than the data quality. Even with unlimited free credits, you'd still face the same problems: no NPI verification, no taxonomy filtering, high bounce rates, and no practice-level addressing. The free tier is a reasonable way to test Apollo.io for non-healthcare outreach, but it won't give you an accurate picture of healthcare results."}}, {"@type": "Question", "name": "Does Provyx have engagement tools like Apollo.io's email sequencer?", "acceptedAnswer": {"@type": "Answer", "text": "No. Provyx is a data platform, not an engagement platform. It doesn't include email sequencing, a dialer, or LinkedIn outreach tools. Provyx delivers verified provider records into the tools you already use: HubSpot, Outreach, Salesloft, Salesforce, or any other CRM and engagement platform. The philosophy is that your outreach tools should work with the best available data, rather than relying on a single platform to do both jobs adequately."}}, {"@type": "Question", "name": "What's the real cost difference between Apollo.io and Provyx for healthcare?", "acceptedAnswer": {"@type": "Answer", "text": "Apollo.io appears cheaper on paper. A Professional plan at $79 per month is far less than most data platforms. But when 25% to 35% of your healthcare contacts bounce, your cost per usable record rises sharply. Provyx's pay-per-record pricing is higher per individual record, but virtually every record is NPI-verified and deliverable. When you compare cost per qualified, contactable healthcare provider, Provyx is typically equal to or less expensive than Apollo.io."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Can I use Apollo.io for healthcare sales outreach?</summary>

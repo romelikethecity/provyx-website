@@ -72,13 +72,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -420,6 +420,12 @@
     <!-- Data Sources Pipeline -->
     <section class="content-section">
         <div class="container">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases as an alternative to ZoomInfo" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline: an alternative to ZoomInfo for healthcare provider data.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -482,7 +488,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Provyx a direct replacement for ZoomInfo?", "acceptedAnswer": {"@type": "Answer", "text": "Not across the board. ZoomInfo covers 50+ industries and includes sales engagement tools like email sequencing and a dialer. Provyx only covers healthcare provider business data. If your team sells exclusively to healthcare providers, Provyx replaces the data layer at a lower cost with better healthcare-specific fields like NPI numbers and taxonomy codes. If you sell into multiple industries, you'd still need a general-purpose tool for non-healthcare verticals."}}, {"@type": "Question", "name": "How does Provyx verify its healthcare provider data?", "acceptedAnswer": {"@type": "Answer", "text": "Every provider record is matched against the NPPES registry maintained by CMS. Provyx confirms that the NPI is active, matches the provider's name, and reflects their current taxonomy classification. Practice details like phone numbers and addresses are cross-referenced across business listings and public filings. Records that can't be confidently verified are excluded from delivery rather than shipped with a disclaimer. The goal is accuracy over volume."}}, {"@type": "Question", "name": "What does Provyx cost compared to ZoomInfo?", "acceptedAnswer": {"@type": "Answer", "text": "ZoomInfo starts at roughly $14,995 per year on an annual contract with per-seat pricing. Provyx uses pay-per-record pricing with no annual contract and no seat licenses. A typical list purchase costs a fraction of ZoomInfo's annual fee. Exact pricing depends on volume and the filters you apply. You can request a quote on the Provyx pricing page for your specific use case."}}, {"@type": "Question", "name": "Can I import Provyx data into my CRM?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Provyx delivers data as CSV or Excel files that import into any CRM, including Salesforce, HubSpot, Zoho, and Microsoft Dynamics. The files include standard column headers that map to common CRM fields. Most teams complete the import in under an hour. If you're on a growth plan with API access, you can also pull records directly into your systems programmatically without manual file imports."}}, {"@type": "Question", "name": "How current is the data in Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx refreshes its core NPI registry data in sync with the NPPES weekly update cycle. Practice details sourced from business listings and commercial databases are updated on a rolling basis, with most records refreshed within a 90-day window. When you purchase a list, you're getting data from the most recent available refresh. Provyx timestamps every record so you can see when it was last verified."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is Provyx a direct replacement for ZoomInfo?</summary>

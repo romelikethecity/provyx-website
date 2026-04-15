@@ -131,13 +131,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -344,6 +344,11 @@
  <figcaption>Tech Stack: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-sales-prospecting-workflow.svg" alt="Prospecting Workflow for Medical Device Territory Planning with Provider Data" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Prospecting Workflow: visual guide for this healthcare use case.</figcaption>
+    </figure>
+    <figure class="content-figure">
     <img src="/assets/images/content/crm-data-enrichment-before-after.svg" alt="Crm Enrichment for Medical Device Territory Planning with Provider Data" width="1200" height="630" loading="lazy">
     
  <figcaption>Crm Enrichment: visual guide for this healthcare use case.</figcaption>
@@ -412,7 +417,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you provide provider data for specific surgical subspecialties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We filter by NUCC taxonomy codes, which break down broad specialties like orthopedics into subspecialties such as spine surgery, sports medicine, hand surgery, and joint replacement. You can request data for one subspecialty or a combination that matches your device's clinical application."}}, {"@type": "Question", "name": "Does the data distinguish between practice locations and billing addresses?", "acceptedAnswer": {"@type": "Answer", "text": "It does. The NPI Registry often lists a billing or mailing address that's different from where the provider sees patients. We verify and differentiate practice locations from billing addresses so your territory map reflects where providers actually work, not where their mail goes."}}, {"@type": "Question", "name": "How do I integrate this data with Salesforce Maps or Tableau?", "acceptedAnswer": {"@type": "Answer", "text": "We deliver data in CSV or Excel format with standardized columns for geocoding. Most BI and mapping tools can import this directly. We include latitude and longitude coordinates where available, and our address fields follow USPS formatting standards for clean geocoding."}}, {"@type": "Question", "name": "Can you provide competitor device usage or market share data?", "acceptedAnswer": {"@type": "Answer", "text": "We don't track device usage or market share directly. Our data covers provider identity, location, specialty, and contact information. Some teams combine our provider data with claims data or self-reported surveys to build a fuller competitive picture."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Can you provide provider data for specific surgical subspecialties?</summary>

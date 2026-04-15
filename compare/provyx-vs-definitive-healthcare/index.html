@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to Definitive Healthcare" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs Definitive Healthcare: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -455,7 +461,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Definitive Healthcare worth the price for small to mid-size companies?", "acceptedAnswer": {"@type": "Answer", "text": "For most small to mid-size companies, the answer is no. The starting cost of $25,000 per year, plus $22,000 or more for Salesforce integration, plus staff time to learn the platform, creates a total investment that's difficult to justify unless you're using the claims analytics and market sizing features regularly. If your primary need is provider contact data for outreach, a specialized and less expensive tool will deliver better ROI."}}, {"@type": "Question", "name": "Does Definitive Healthcare have individual provider contact information?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, Definitive Healthcare includes individual provider records with contact information. However, the platform's core strength is institutional data: hospitals, health systems, and organizational hierarchies. Individual provider records are available but are often presented in the context of their organizational affiliations rather than as standalone practice-level contacts. For teams that primarily need individual provider outreach data, the platform's design adds unnecessary complexity."}}, {"@type": "Question", "name": "How does Definitive Healthcare's data accuracy compare to Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "Both platforms maintain high data accuracy, but for different record types. Definitive Healthcare is exceptionally accurate for hospital-level data: bed counts, procedure volumes, technology installations, and executive contacts. Provyx focuses its accuracy on individual provider records: NPI verification, practice-level addresses, and direct contact details. The right comparison depends on whether you're targeting institutions or individual providers."}}, {"@type": "Question", "name": "Can I export data from Definitive Healthcare into my CRM?", "acceptedAnswer": {"@type": "Answer", "text": "You can, but it typically requires a paid add-on. The Salesforce integration module has been reported at $22,000 or more per year. Without it, you're limited to manual CSV exports, which often come with record caps per download. Provyx includes data delivery via CSV, API, or direct CRM push at no additional cost. If getting data into your CRM quickly is a priority, factor the integration cost into your Definitive Healthcare budget."}}, {"@type": "Question", "name": "What's the main advantage Definitive Healthcare has over Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "Depth of institutional analytics. Definitive Healthcare offers claims-based insights, referral network mapping, procedure volume estimates, and technology installation data that Provyx doesn't provide. If you need to understand which hospitals perform the most hip replacements in a region, or map referral patterns between primary care physicians and specialists, Definitive Healthcare is the right tool. Provyx focuses on provider contact intelligence, not institutional analytics."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is Definitive Healthcare worth the price for small to mid-size companies?</summary>

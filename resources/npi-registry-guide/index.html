@@ -104,13 +104,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -354,10 +354,21 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources for NPI Registry: What It Gives You and What It Doesn't" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual reference for healthcare data buyers.</figcaption>
+    </figure>
     <figure class="content-figure">
     <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters for NPI Registry: What It Gives You and What It Doesn't" width="1200" height="630" loading="lazy">
     
  <figcaption>Segmentation Filters: visual reference for healthcare data buyers.</figcaption>
+    </figure>
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List for NPI Registry: What It Gives You and What It Doesn't" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual reference for healthcare data buyers.</figcaption>
     </figure>
     <figure class="content-figure">
     <img src="/assets/images/content/email-deliverability-metrics.svg" alt="Deliverability for NPI Registry: What It Gives You and What It Doesn't" width="1200" height="630" loading="lazy">
@@ -382,7 +393,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is NPI Registry data free to use for commercial purposes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The NPPES data dissemination files are public data and free to download and use. CMS makes the data available without licensing restrictions. However, the raw data requires significant processing, cleaning, and enrichment before it's useful for commercial applications like sales outreach or marketing campaigns."}}, {"@type": "Question", "name": "How often is the NPI Registry updated?", "acceptedAnswer": {"@type": "Answer", "text": "CMS publishes updated NPPES data files weekly. However, individual provider records update on varying schedules depending on when the provider re-enrolls, revalidates, or submits a change. Some records haven't been updated since the provider's original enrollment. The weekly update cycle reflects new and modified records, not a full re-verification of all existing records."}}, {"@type": "Question", "name": "Can I use NPI numbers to match providers across different data systems?", "acceptedAnswer": {"@type": "Answer", "text": "NPI numbers are designed for exactly this purpose. They're unique, permanent identifiers assigned to each provider. You can use NPI as a primary key to match records across your CRM, billing system, credentialing database, and external data sources. It's the most reliable matching key in healthcare provider data."}}, {"@type": "Question", "name": "What's the difference between Type 1 and Type 2 NPI numbers?", "acceptedAnswer": {"@type": "Answer", "text": "Type 1 NPIs are assigned to individual healthcare providers (physicians, nurses, therapists, etc.). Type 2 NPIs are assigned to organizations (practices, hospitals, group practices, laboratories, etc.). A solo physician might have both a Type 1 individual NPI and a Type 2 organizational NPI for their practice entity."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is NPI Registry data free to use for commercial purposes?</summary>

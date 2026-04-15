@@ -568,7 +568,17 @@ img {
   padding-top: 8rem;
   padding-bottom: var(--space-4xl);
   text-align: center;
-  background-color: var(--color-bg-primary);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F7FF 60%, var(--color-bg-secondary) 100%);
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 20% 40%, rgba(14, 165, 233, 0.04) 0%, transparent 70%),
+              radial-gradient(ellipse 60% 40% at 80% 60%, rgba(27, 42, 74, 0.03) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .hero__content {
@@ -1184,7 +1194,13 @@ img {
 
 @media (min-width: 768px) {
   .footer__grid {
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 1.5fr repeat(6, 1fr);
   }
 }
 
@@ -1569,6 +1585,59 @@ img {
   margin-top: var(--space-xl);
 }
 
+.pricing-card .btn {
+  width: 100%;
+}
+
+/* Pricing section header */
+.pricing-section__header {
+  margin-bottom: 2rem;
+}
+
+.pricing-section__header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.pricing-section__header p {
+  color: var(--color-text-secondary);
+  max-width: 640px;
+}
+
+/* Pricing callout boxes */
+.pricing-callout {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-teal);
+}
+
+.pricing-callout + .pricing-callout {
+  margin-top: 1.5rem;
+}
+
+.pricing-callout p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+}
+
+.pricing-callout p + p {
+  margin-top: 0.5rem;
+}
+
+.pricing-callout p:first-child:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.pricing-callout strong {
+  color: var(--color-text-primary);
+}
+
+.bg-light .pricing-callout {
+  background: #fff;
+}
+
 /* ============================================
    Feature Grid (Service Pages)
    ============================================ */
@@ -1647,6 +1716,230 @@ img {
 
 .fade-in {
   animation: fadeIn 0.5s ease forwards;
+}
+
+/* ============================================
+   Trust Bar
+   ============================================ */
+.trust-bar {
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+}
+
+.trust-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2.5rem;
+}
+
+.trust-bar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.trust-bar__item svg {
+  color: var(--color-teal);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   Hero Card (Homepage visual)
+   ============================================ */
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+  .hero .hero__content {
+    text-align: left;
+    max-width: none;
+  }
+  .hero .hero__buttons {
+    justify-content: flex-start;
+  }
+  .hero .pain-stats {
+    justify-content: flex-start;
+    max-width: 420px;
+  }
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card-wrapper {
+  width: 100%;
+  max-width: 380px;
+}
+
+.hero-card {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(27, 42, 74, 0.08), 0 4px 12px rgba(27, 42, 74, 0.04);
+  opacity: 0;
+  transform: translateY(12px);
+  animation: hcAppear 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.hero-card__dot {
+  width: 10px;
+  height: 10px;
+  background: #0EA5E9;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.5);
+  animation: hcDotPulse 2s ease infinite;
+  animation-delay: 3.5s;
+}
+
+.hero-card__name {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: #1B2A4A;
+}
+
+.hero-card__address {
+  font-size: 0.75rem;
+  color: #64748B;
+  margin-top: 0.15rem;
+}
+
+.hero-card__divider {
+  height: 1px;
+  background: #E2E8F0;
+  margin: 0;
+}
+
+.hero-card__rows {
+  padding: 0.5rem 0;
+}
+
+.hero-card__row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 1.5rem;
+  opacity: 0;
+  transform: translateX(-8px);
+  animation: hcSlide 0.45s ease forwards;
+}
+
+.hero-card__check {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 165, 233, 0.1);
+  color: #0EA5E9;
+  border-radius: 50%;
+  font-size: 0.625rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.hero-card__label {
+  font-size: 0.75rem;
+  color: #64748B;
+  min-width: 56px;
+}
+
+.hero-card__value {
+  font-size: 0.8125rem;
+  color: #1B2A4A;
+  font-weight: 500;
+}
+
+.hero-card__footer {
+  padding: 0.6rem 1.5rem;
+  border-top: 1px solid #E2E8F0;
+  font-size: 0.6875rem;
+  color: #94A3B8;
+  opacity: 0;
+  animation: hcFade 0.4s ease forwards;
+  animation-delay: 3.4s;
+}
+
+.hero-card--flagged {
+  max-width: 340px;
+  margin: 0.75rem auto 0;
+  opacity: 0;
+  transform: translateY(8px) scale(0.97);
+  animation: hcFlagged 0.5s ease forwards;
+  animation-delay: 3.8s;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.hero-card--flagged .hero-card__header {
+  padding: 0.75rem 1.25rem;
+}
+
+.hero-card__dot--flagged {
+  background: #EF4444 !important;
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.4) !important;
+  animation: none !important;
+}
+
+.hero-card__name--flagged {
+  text-decoration: line-through;
+  color: #94A3B8 !important;
+  font-size: 0.8125rem !important;
+}
+
+.hero-card__address--flagged {
+  color: #EF4444;
+  font-size: 0.6875rem;
+}
+
+@keyframes hcAppear {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hcSlide {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes hcFade {
+  to { opacity: 1; }
+}
+
+@keyframes hcFlagged {
+  to { opacity: 0.7; transform: translateY(0) scale(0.97); }
+}
+
+@keyframes hcDotPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(14, 165, 233, 0.5); }
+  50% { box-shadow: 0 0 16px rgba(14, 165, 233, 0.8); }
 }
 
 /* ============================================
@@ -1765,11 +2058,17 @@ img {
 }
 
 /* Comparison Table - Red/Green Styling */
+.comparison-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .comparison-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 1rem 0;
   margin: 2rem 0;
+  min-width: 500px;
 }
 
 .comparison-table thead th {
@@ -2567,10 +2866,11 @@ img {
 
 /* AEO/GEO Content Blocks */
 .definition-block {
-  background-color: var(--color-bg-secondary);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.06) 0%, rgba(14, 165, 233, 0.02) 100%);
+  border: 1px solid rgba(14, 165, 233, 0.15);
   border-left: 4px solid var(--color-teal);
-  padding: var(--space-xl);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-2xl);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
   margin: var(--space-xl) 0;
 }
 

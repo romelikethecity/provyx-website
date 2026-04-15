@@ -104,13 +104,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -292,6 +292,14 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Method 1: State Secretary of State Filings</h2>
 
 <p>Every business entity in the US is registered with a state agency, usually the Secretary of State. These filings are public record and typically include the business name, entity type, registered agent, and in many states, the names of officers, directors, or managing members.</p>
@@ -312,6 +320,20 @@
 
 <p>For PE-backed practices, the SOS filing will often show a holding company or management entity as the member rather than individual physician names. This is actually useful information: if the managing member is "Dermatology Partners Holdings LLC" instead of a physician name, you know the practice is PE-owned and the buying authority likely sits at the platform company level.</p>
 
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
     <figure class="content-figure">
     <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
     
@@ -328,6 +350,12 @@
     <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
     
  <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Method 3: Practice Website and LinkedIn Research</h2>
 
@@ -347,6 +375,14 @@
 
 <p>The accuracy tradeoff: manual research produces 90%+ accuracy on ownership classification. Automated web research produces 75-85% accuracy. The hybrid approach (automated extraction with manual verification of edge cases) balances speed and accuracy for lists in the 500-5,000 range.</p>
 
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
     <figure class="content-figure">
     <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
     
@@ -363,6 +399,12 @@
     <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
     
  <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Find Practice Owners vs Employed Physicians" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
     </figure>
 <h2>Building an Ownership Classification Pipeline</h2>
 
@@ -415,7 +457,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What percentage of physicians own their practice?", "acceptedAnswer": {"@type": "Answer", "text": "According to the AMA's 2025 Practice Benchmark Survey, less than 47% of physicians work in physician-owned practices. This varies significantly by specialty. Surgical specialties and those targeted by private equity (dermatology, ophthalmology, orthopedics) have seen the steepest declines in physician ownership over the past decade."}}, {"@type": "Question", "name": "Can you determine practice ownership from NPI data alone?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly. The NPI registry does not include an ownership field. However, you can infer likely ownership by matching individual physicians to the authorized official field on organizational (Type 2) NPI records. This method has good precision but limited recall and should be combined with state filings, website research, and business data for reliable classification."}}, {"@type": "Question", "name": "How do you identify PE-owned medical practices?", "acceptedAnswer": {"@type": "Answer", "text": "State Secretary of State filings are the most reliable indicator. PE-backed practices typically list a holding company or management entity as the managing member instead of individual physician names. Corporate naming patterns (containing 'Holdings,' 'Partners,' 'Management,' or similar terms) are strong indicators of PE ownership. Website footers and About pages sometimes disclose the platform company relationship as well."}}, {"@type": "Question", "name": "Why does ownership status matter for healthcare sales targeting?", "acceptedAnswer": {"@type": "Answer", "text": "Ownership determines who has purchasing authority. A practice owner can evaluate, negotiate, and sign a contract. An employed physician typically needs corporate approval. Pitching an employed physician as if they are the decision-maker wastes their time and yours. Ownership data lets you route to the right person from the first touchpoint."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What percentage of physicians own their practice?</summary>

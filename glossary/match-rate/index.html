@@ -117,13 +117,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -343,6 +343,12 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="NPI data verification process showing how Match Rate relates to healthcare provider data quality and validation" width="1200" height="630" loading="lazy">
+    
+ <figcaption>How NPI verification ensures data accuracy for healthcare provider records.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -350,7 +356,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a good match rate for healthcare provider data?", "acceptedAnswer": {"@type": "Answer", "text": "For NPI verification: 90%+ is expected. For email append: 50-70% is good for named decision-makers. For phone numbers: 45-65% is typical. Anything below these ranges suggests the vendor has limited healthcare data coverage."}}, {"@type": "Question", "name": "Why do match rates vary so much between vendors?", "acceptedAnswer": {"@type": "Answer", "text": "Vendors have different data sources, matching algorithms, and quality standards. A vendor with healthcare-specific data sources will match at higher rates for providers than a general B2B data vendor. Matching methodology also matters: fuzzy matching inflates rates but reduces accuracy."}}, {"@type": "Question", "name": "Should I optimize for match rate or accuracy?", "acceptedAnswer": {"@type": "Answer", "text": "Accuracy. A 50% match rate with 95% accuracy means 475 usable records out of 1,000. A 90% match rate with 60% accuracy means only 540 usable records, but you also waste time on 360 bad records. The total cost of wasted outreach on inaccurate data usually exceeds the cost of lower match rates."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What is a good match rate for healthcare provider data?</summary>

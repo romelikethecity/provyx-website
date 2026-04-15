@@ -104,13 +104,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -348,6 +348,18 @@
     </figure>
 
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
     <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
     
  <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
@@ -415,6 +427,18 @@
     </figure>
 
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
     <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
     
  <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
@@ -452,6 +476,18 @@
     </figure>
 
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
     <img src="/assets/images/content/roi-calculator-visualization.svg" alt="Roi Calculator diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
     
  <figcaption>Roi Calculator: visual guide for healthcare data teams.</figcaption>
@@ -465,6 +501,20 @@
 <li><strong>You process high volumes continuously.</strong> If you need 500,000+ records enriched and refreshed monthly, the per-record economics of in-house enrichment start to beat vendor pricing. The fixed costs (engineer, infrastructure) get amortized across enough records to make sense.</li>
 <li><strong>Provider data is your product, not just an input.</strong> If you're a healthcare analytics company or a data-driven consultancy, your enrichment pipeline is part of your competitive moat. Outsourcing it to a vendor means outsourcing your differentiation.</li>
 </ol>
+
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to Provider Data Enrichment: NPI to Sales-Ready Contacts" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -483,7 +533,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is provider data enrichment?", "acceptedAnswer": {"@type": "Answer", "text": "Provider data enrichment is the process of adding contact information, practice intelligence, and quality signals to base provider records (typically from the NPI database). Enrichment fields include verified email addresses, direct phone numbers, practice ownership, facility size, technology stack, and decision-maker names. The goal is to transform a registry record into a sales-ready contact."}}, {"@type": "Question", "name": "What match rates should I expect for healthcare provider email enrichment?", "acceptedAnswer": {"@type": "Answer", "text": "Realistic match rates for verified business email addresses range from 40-60% when enriching NPI records, depending on specialty. Dental and dermatology practices tend to have higher match rates (closer to 60%) because they maintain websites more consistently. Mental health and solo practitioners are lower (closer to 40%). Any vendor claiming 90%+ across all specialties likely includes generic addresses in their counts."}}, {"@type": "Question", "name": "Should I build an in-house provider data enrichment pipeline or buy from a vendor?", "acceptedAnswer": {"@type": "Answer", "text": "For most teams, buying makes sense initially. Building a pipeline takes 3-6 months and costs $80K-$150K annually for 50K records. Buying costs $0.50-$5.00 per record with no engineering overhead. Build in-house if you process 500K+ records continuously, need niche data fields no vendor provides, or treat provider data as a core product. Many teams use a hybrid approach: vendor data for broad coverage, in-house research for top accounts."}}, {"@type": "Question", "name": "How often should enriched provider data be refreshed?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly at minimum. CMS data shows 4-6% of provider records change every month, meaning a quarterly refresh leaves 12-18% of your data degraded. Critical fields like email deliverability and phone connectivity should be validated more frequently, ideally before each outreach campaign."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What is provider data enrichment?</summary>

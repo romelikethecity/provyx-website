@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to ZoomInfo" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs ZoomInfo: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -456,7 +462,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is ZoomInfo worth the cost for healthcare sales teams?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your market scope. If healthcare is one of several industries you sell into, ZoomInfo's breadth can justify the cost. If healthcare is your only market, you're paying $15,000 or more per year for a database where most of the records are irrelevant to you, and the healthcare records lack NPI verification and taxonomy code filtering. The per-qualified-lead cost tends to be significantly higher than with a healthcare-specific platform."}}, {"@type": "Question", "name": "Does ZoomInfo have NPI numbers in its database?", "acceptedAnswer": {"@type": "Answer", "text": "ZoomInfo does not include NPI numbers as a standard data field, and it does not verify its healthcare contacts against the CMS NPI Registry. You can filter healthcare contacts by industry codes and job titles, but you can't confirm whether a contact is an active, licensed provider using ZoomInfo's data alone. If NPI verification matters to your workflow, you'll need a supplemental data source or a healthcare-focused provider like Provyx."}}, {"@type": "Question", "name": "Can I cancel my ZoomInfo contract early?", "acceptedAnswer": {"@type": "Answer", "text": "ZoomInfo contracts are annual with automatic renewal. To cancel, you typically need to provide written notice at least 60 days before your renewal date. If you miss that window, you're locked in for another full year. Multiple user reviews mention this as a pain point, especially when paired with reported annual price increases of 10% to 30%. Read your specific contract terms carefully before signing."}}, {"@type": "Question", "name": "How accurate is ZoomInfo's data for physicians and medical practices?", "acceptedAnswer": {"@type": "Answer", "text": "ZoomInfo's general data accuracy is well-regarded; the platform carries a roughly 4.4 out of 5 rating on G2. However, healthcare users frequently report higher bounce rates on provider emails and outdated practice addresses. Physicians change practice locations more often than corporate executives change jobs, and ZoomInfo's refresh cycle doesn't always keep pace with that churn. For individual provider outreach, NPI-verified data sources tend to deliver better results."}}, {"@type": "Question", "name": "What's the biggest difference between Provyx and ZoomInfo?", "acceptedAnswer": {"@type": "Answer", "text": "Scope and specialization. ZoomInfo is a horizontal B2B data platform covering 50-plus industries with broad contact and company intelligence. Provyx is a vertical platform built exclusively for healthcare provider business data. Provyx verifies every record against the NPI Registry, supports taxonomy code filtering, and maps providers to practice locations. ZoomInfo offers none of those healthcare-specific capabilities but provides far more data outside of healthcare."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is ZoomInfo worth the cost for healthcare sales teams?</summary>

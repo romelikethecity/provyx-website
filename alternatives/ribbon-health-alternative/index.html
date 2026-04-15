@@ -72,13 +72,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -435,6 +435,12 @@
     <!-- Data Sources Pipeline -->
     <section class="content-section">
         <div class="container">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases as an alternative to Ribbon Health" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline: an alternative to Ribbon Health for healthcare provider data.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -497,7 +503,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Ribbon Health or Provyx better for provider data?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the use case. Ribbon Health is better for product teams building provider directory features in health plan or digital health applications. Provyx is better for sales and marketing teams building provider contact lists for outbound campaigns. Different tools for different jobs."}}, {"@type": "Question", "name": "Does Provyx have an API like Ribbon Health?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, Provyx offers API access for teams that prefer programmatic data retrieval. However, most sales teams use Provyx's file-based delivery (CSV/Excel) because it's faster and doesn't require engineering resources to set up."}}, {"@type": "Question", "name": "Can I get insurance network data from Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "No. Provyx focuses on provider contact data for B2B sales: emails, phones, addresses, NPI numbers, and taxonomy codes. Insurance network participation data is Ribbon Health's domain, designed for patient-facing applications."}}, {"@type": "Question", "name": "What if my company needs both sales data and a provider directory API?", "acceptedAnswer": {"@type": "Answer", "text": "Use Ribbon Health for your product's provider directory features and Provyx for your sales team's prospect lists. The use cases are different enough that separate tools typically deliver better results than trying to force one tool into both roles."}}, {"@type": "Question", "name": "How is Provyx's contact data different from Ribbon's?", "acceptedAnswer": {"@type": "Answer", "text": "Ribbon provides directory-level data: practice addresses, main phone numbers, insurance panels, and clinical attributes. Provyx provides sales-level data: verified email addresses, direct phone numbers, fax numbers, practice owner names, and office manager contacts. Ribbon's data answers patient-facing questions. Provyx's data enables outbound sales outreach."}}, {"@type": "Question", "name": "Can a sales team use Ribbon Health without developers?", "acceptedAnswer": {"@type": "Answer", "text": "Not easily. Ribbon delivers data through APIs that return JSON responses. A sales team would need a developer to build an integration, parse the responses, and export to a usable format like CSV. Provyx delivers data as ready-to-import files that don't require any technical setup."}}, {"@type": "Question", "name": "Is Ribbon Health's pricing model practical for sales data purchases?", "acceptedAnswer": {"@type": "Answer", "text": "Ribbon uses usage-based API pricing designed for technology companies embedding data into products at scale. For sales teams that need to pull a list of 5,000 providers once a quarter, that pricing model creates unpredictable costs and doesn't match the campaign-driven purchase pattern. Provyx's pay-per-record model gives you exact cost control."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is Ribbon Health or Provyx better for provider data?</summary>

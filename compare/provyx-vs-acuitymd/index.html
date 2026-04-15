@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to AcuityMD" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs AcuityMD: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -457,7 +463,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is AcuityMD only for medical device companies?", "acceptedAnswer": {"@type": "Answer", "text": "AcuityMD is designed primarily for medical device and surgical technology companies. Its procedure volume data and surgeon-level targeting are built around the medtech sales workflow. Companies outside the surgical device space (pharma, health IT, staffing, marketing agencies) typically find the platform too narrow for their needs."}}, {"@type": "Question", "name": "Does AcuityMD include contact data for providers?", "acceptedAnswer": {"@type": "Answer", "text": "AcuityMD includes some contact information for surgeons and facilities, but the platform's primary value is procedure targeting, not contact intelligence. Email coverage and direct phone numbers are thinner than what dedicated contact data vendors provide. Many AcuityMD users supplement with additional contact sources for outreach campaigns."}}, {"@type": "Question", "name": "Can Provyx show procedure volumes for surgeons?", "acceptedAnswer": {"@type": "Answer", "text": "No. Provyx does not include claims-based procedure data. If knowing how many knee replacements a surgeon performs per quarter is central to your targeting, you need a claims-based platform like AcuityMD. Provyx provides contact data and practice details for surgeons, but not procedure volume analytics."}}, {"@type": "Question", "name": "How does AcuityMD pricing compare to Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "AcuityMD contracts typically run $30,000-80,000+ per year with annual commitments. Provyx uses pay-per-record pricing with no annual contract. For teams that need procedure targeting, AcuityMD's pricing reflects that specialized capability. For teams that primarily need contact lists, Provyx's per-record model is significantly more affordable."}}, {"@type": "Question", "name": "What's the biggest difference between Provyx and AcuityMD?", "acceptedAnswer": {"@type": "Answer", "text": "Scope and targeting model. AcuityMD targets surgeons based on procedure volumes from claims data. Provyx targets all healthcare providers based on specialty taxonomy codes and geography. AcuityMD is deep and narrow; Provyx is broad and contact-focused. The right choice depends on whether your sales motion centers on surgical procedure opportunities or broader provider outreach."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is AcuityMD only for medical device companies?</summary>

@@ -104,13 +104,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -292,6 +292,14 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-taxonomy-classification.svg" alt="Taxonomy diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Taxonomy: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>Method 1: The NPPES API</h2>
 
 <p>CMS provides a free API for querying the NPI registry. This is the most reliable method for bulk verification because you are checking directly against the authoritative source.</p>
@@ -340,6 +348,24 @@
     </figure>
 
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
     <img src="/assets/images/content/healthcare-specialty-coverage-map.svg" alt="Specialty Coverage diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
     
  <figcaption>Specialty Coverage: visual guide for healthcare data teams.</figcaption>
@@ -370,6 +396,24 @@
     </figure>
 
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
     <img src="/assets/images/content/provider-segmentation-filters.svg" alt="Segmentation Filters diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
     
  <figcaption>Segmentation Filters: visual guide for healthcare data teams.</figcaption>
@@ -385,6 +429,32 @@
 <li><strong>Duplicate NPIs for the same provider:</strong> Some providers have multiple active NPIs, usually because they registered a new one when changing practices instead of updating the existing one. CMS tries to catch these, but some slip through.</li>
 <li><strong>Stale taxonomy codes:</strong> A provider changed their practice focus but never updated their taxonomy code with CMS. The NPI is valid, but the specialty data is outdated.</li>
 </ul>
+
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Data Sources diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Data Sources: visual guide for healthcare data teams.</figcaption>
+    </figure>
 <h2>When to Skip DIY and Use a Verified Data Source</h2>
 
 <p>Building and maintaining an NPI verification pipeline is worthwhile if your organization manages tens of thousands of provider records and has engineering resources to maintain the infrastructure. If you are a sales team that needs a verified provider list for a campaign, the time and effort of building this pipeline from scratch does not make sense.</p>
@@ -392,6 +462,19 @@
 <p><a href="/services/provider-contact-data/">Provyx runs NPI verification as part of every data delivery.</a> Every record is checked against current CMS data, matched on name and taxonomy, and flagged if anything does not align. You get clean data without building the verification infrastructure yourself.</p>
 
 <p>For teams that want to verify their existing data, send us a sample and we will run it through our verification pipeline and show you what your current error rate looks like. Most teams are surprised by the results.</p>
+
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="Verification diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Verification: visual guide for healthcare data teams.</figcaption>
+    </figure>
+
+    <figure class="content-figure">
+    <img src="/assets/images/content/email-list-building-process.svg" alt="Email List diagram related to How to Verify NPI Numbers in Bulk" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Email List: visual guide for healthcare data teams.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -410,7 +493,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does it take to verify 10,000 NPI numbers?", "acceptedAnswer": {"@type": "Answer", "text": "Using the NPPES API at a practical rate of 2-3 requests per second, verifying 10,000 NPIs takes 60-90 minutes. Using the bulk NPPES download file and local database matching, the same volume can be processed in under 5 minutes once the data is loaded. For very large datasets (100,000+), the bulk download method is strongly recommended."}}, {"@type": "Question", "name": "What percentage of NPI records in a typical list are invalid?", "acceptedAnswer": {"@type": "Answer", "text": "In vendor-sourced provider lists, we typically find 2-5% of NPIs fail Luhn checksum validation (structurally invalid), 1-2% are deactivated, and another 3-5% have name or taxonomy mismatches. Combined, 6-12% of records in a typical list have some form of NPI data issue."}}, {"@type": "Question", "name": "Does the NPI Registry API have rate limits?", "acceptedAnswer": {"@type": "Answer", "text": "CMS does not publish official rate limits, but the practical ceiling is 2-3 requests per second before experiencing throttling or timeouts. For bulk verification, downloading the full NPPES data file and running checks locally is faster and more reliable than the API."}}, {"@type": "Question", "name": "Can an NPI number be reactivated after deactivation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Deactivated NPIs can be reactivated by the provider through CMS. The NPPES record will show both a deactivation date and a reactivation date. When verifying NPIs, check that the most recent status-change date indicates an active status, not just the presence or absence of a deactivation date."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">How long does it take to verify 10,000 NPI numbers?</summary>

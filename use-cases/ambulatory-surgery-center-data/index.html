@@ -131,13 +131,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -392,6 +392,11 @@ that is not regularly refreshed misses these new facilities entirely.
  <figcaption>Segmentation Filters: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-sales-prospecting-workflow.svg" alt="Prospecting Workflow for Ambulatory Surgery Center Data for Medical Device Sales" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Prospecting Workflow: visual guide for this healthcare use case.</figcaption>
+    </figure>
+    <figure class="content-figure">
     <img src="/assets/images/content/practice-technology-stack.svg" alt="Tech Stack for Ambulatory Surgery Center Data for Medical Device Sales" width="1200" height="630" loading="lazy">
     
  <figcaption>Tech Stack: visual guide for this healthcare use case.</figcaption>
@@ -565,7 +570,7 @@ actively building its vendor relationships from scratch.
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many ASCs are in the database?", "acceptedAnswer": {"@type": "Answer", "text": "Our database includes all NPI-registered ambulatory surgery centers in the United States, covering both Medicare-certified and non-Medicare facilities. CMS certifies over 6,100 Medicare-participating ASCs; the total universe including non-Medicare ASCs is larger. New facilities are added as they receive NPIs and CMS certification."}}, {"@type": "Question", "name": "Can you show which physicians operate at each ASC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We map physician-to-ASC affiliations using NPI affiliation records and additional data sources. For each ASC, you can see the affiliated surgeons and their specialties. Conversely, for each surgeon, you can see their ASC affiliations. This bidirectional mapping supports both facility-first and physician-first sales strategies."}}, {"@type": "Question", "name": "Do you cover corporate ASC management companies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Facilities managed by USPI, AmSurg, SCA Health, and other corporate ASC operators are identified with their parent company. Corporate-level contacts are available for centralized procurement roles, and facility-level contacts are available for local decision making. The ownership structure field distinguishes physician-owned, hospital joint venture, and corporate-managed facilities."}}, {"@type": "Question", "name": "Is procedure volume data available for ASCs?", "acceptedAnswer": {"@type": "Answer", "text": "Procedure specialty classification is available for all ASCs (orthopedic, ophthalmologic, GI, pain management, multi-specialty, etc.). Specific procedure volume data derived from Medicare claims is available for Medicare-participating ASCs, broken down by procedure category. For non-Medicare volume, we provide proxy indicators based on physician affiliations, facility size, and specialty focus."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">How many ASCs are in the database?</summary>

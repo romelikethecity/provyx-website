@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to IQVIA OneKey" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs IQVIA OneKey: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -457,7 +463,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does IQVIA OneKey offer pay-per-record pricing?", "acceptedAnswer": {"@type": "Answer", "text": "No. IQVIA uses enterprise licensing with annual contracts. Pricing is customized based on data scope, geographic coverage, and which products you're bundling. Based on industry reports, contracts typically start at $50,000 per year and can exceed $200,000 for multi-product deals. Provyx offers pay-per-record pricing with no annual commitment."}}, {"@type": "Question", "name": "Can Provyx replace IQVIA for pharma commercial teams?", "acceptedAnswer": {"@type": "Answer", "text": "Not if you need prescribing data, claims analytics, or global HCP coverage. IQVIA's prescribing intelligence is unique at their scale and directly informs territory planning and field force deployment for pharma brands. Provyx can replace IQVIA for the contact data component if that's all you need, but the analytics layer is a different category entirely. Some teams use both: IQVIA for analytics, Provyx for day-to-day contact pulls."}}, {"@type": "Question", "name": "How does NPI verification differ between Provyx and IQVIA?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx verifies every record against the public CMS NPI Registry to confirm active NPI status and current taxonomy classification. IQVIA uses a combination of proprietary surveys, claims data matching, and their own verification processes. Both approaches produce verified records, but Provyx's method is transparent and tied directly to the federal registry that providers are legally required to maintain."}}, {"@type": "Question", "name": "Does IQVIA OneKey cover providers outside the United States?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. IQVIA reports that OneKey covers approximately 9 million healthcare professionals across more than 80 countries, according to their website. This global coverage is one of IQVIA's strongest differentiators. Provyx currently covers U.S.-based healthcare providers only. If you need international HCP data, IQVIA or a similar global vendor is the better fit."}}, {"@type": "Question", "name": "How quickly can I get data from each platform?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx customers typically go from signup to first data pull in under an hour. Data is delivered as CSV, through an API, or via CRM push with no implementation required. IQVIA OneKey requires an enterprise sales process, contract negotiation, and platform onboarding that can take weeks or months depending on scope, integration needs, and internal procurement timelines."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Does IQVIA OneKey offer pay-per-record pricing?</summary>

@@ -131,13 +131,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -344,6 +344,11 @@
  <figcaption>Segmentation Filters: visual guide for this healthcare use case.</figcaption>
     </figure>
     <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-sales-prospecting-workflow.svg" alt="Prospecting Workflow for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Prospecting Workflow: visual guide for this healthcare use case.</figcaption>
+    </figure>
+    <figure class="content-figure">
     <img src="/assets/images/content/crm-data-enrichment-before-after.svg" alt="Crm Enrichment for Medical Device Territory Planning Data Sources" width="1200" height="630" loading="lazy">
     
  <figcaption>Crm Enrichment: visual guide for this healthcare use case.</figcaption>
@@ -412,7 +417,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What mapping and BI tools can I import this data into?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx delivers data as geocoded CSV files with latitude and longitude columns, which import directly into Salesforce Maps, Maptive, Badger Maps, Geopointe, Tableau, Power BI, Google Maps, and any other platform that accepts coordinate data. We don't require a specific tool, any system that can ingest a CSV with lat/long coordinates will work."}}, {"@type": "Question", "name": "How granular is the sub-specialty filtering?", "acceptedAnswer": {"@type": "Answer", "text": "We go beyond standard NPI taxonomy codes to identify sub-specialty focus areas. For example, within orthopedic surgery, we can filter for spine, sports medicine, joint replacement, trauma, hand, foot and ankle, and pediatric orthopedics. This filtering uses board certification data, fellowship training records, and practice focus indicators. Specificity varies by specialty, surgical sub-specialties generally have higher classification accuracy than primary care."}}, {"@type": "Question", "name": "Do you include ASC and hospital outpatient department data?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can include ambulatory surgery centers and hospital outpatient departments as practice locations in addition to office-based practices. Each location type is tagged so you can filter by care setting. ASC data is particularly relevant for device companies since many surgical procedures have shifted to outpatient settings. ASC records include facility NPI, associated surgeons, and geocoded address."}}, {"@type": "Question", "name": "How does per-record pricing compare to a Definitive Healthcare or IQVIA subscription?", "acceptedAnswer": {"@type": "Answer", "text": "Per-record pricing from Provyx typically costs a fraction of what an annual platform subscription runs, especially if your data needs are focused on specific specialties and geographies. A medical device company needing 5,000-10,000 records for territory planning will pay significantly less than the entry-level annual contract at enterprise data platforms. The tradeoff is that Provyx provides a dataset, not a platform with dashboards and analytics. If you need the data for your own tools, per-record pricing is more cost-efficient."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">What mapping and BI tools can I import this data into?</summary>

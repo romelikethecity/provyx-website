@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to Lusha" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs Lusha: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -454,7 +460,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Lusha have NPI numbers for healthcare providers?", "acceptedAnswer": {"@type": "Answer", "text": "No. Lusha does not include National Provider Identifier numbers in its database and does not verify contacts against the CMS NPI Registry. This means you can't confirm whether a contact is an active, licensed healthcare provider using Lusha's data. If your outreach requires NPI verification, taxonomy code filtering, or any other healthcare-specific identifier, you'll need a platform built for healthcare provider data, not a general B2B contact tool."}}, {"@type": "Question", "name": "Is Lusha accurate enough for healthcare sales outreach?", "acceptedAnswer": {"@type": "Answer", "text": "Lusha's data accuracy is solid for general B2B contacts, with a G2 rating around 4.3 from over 1,400 reviews. But healthcare providers are underrepresented in its database. Many physicians don't maintain active LinkedIn profiles, which is where Lusha's enrichment works best. You'll find hospital executives and administrators, but individual providers in private practice, group practices, and rural clinics are sparse. For the contacts it does have, there's no way to verify specialty or licensure status."}}, {"@type": "Question", "name": "Can I filter by medical specialty in Lusha?", "acceptedAnswer": {"@type": "Answer", "text": "Not with clinical precision. Lusha's filters include job title, industry, company size, and location, but there's no NUCC taxonomy code filtering. You can search for job titles like \"cardiologist\" or \"orthopedic surgeon,\" but this relies on how contacts describe themselves on LinkedIn or in public profiles. Titles are inconsistent across healthcare. A taxonomy code search produces precise, registry-verified specialty matches. A job title search produces approximations with gaps and false positives."}}, {"@type": "Question", "name": "How does Lusha's pricing compare to Provyx for healthcare data?", "acceptedAnswer": {"@type": "Answer", "text": "Lusha is cheaper per credit. The Pro plan at $36 per user per month is one of the most affordable data tools available. Provyx's pay-per-record pricing costs more per individual record. The difference is what you're getting. Lusha credits return general B2B contacts without healthcare identifiers. Provyx records include NPI numbers, taxonomy codes, and practice-level addresses. If you factor in the time spent manually verifying Lusha contacts against the NPI Registry, the effective cost gap narrows significantly."}}, {"@type": "Question", "name": "What's the biggest difference between Provyx and Lusha?", "acceptedAnswer": {"@type": "Answer", "text": "Specialization. Lusha is a general-purpose B2B contact platform that covers many industries with a fast, browser-based workflow. Provyx is a healthcare-only provider data platform where every record is NPI-verified and filterable by NUCC taxonomy code. Lusha has no healthcare-specific features. Provyx has no non-healthcare data. If your sales pipeline is 100% healthcare providers, Provyx gives you data that's structured for how healthcare works. If you prospect across multiple industries, Lusha gives you broader coverage."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Does Lusha have NPI numbers for healthcare providers?</summary>

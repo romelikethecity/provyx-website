@@ -117,13 +117,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -344,6 +344,12 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="NPI data verification process showing how Provider Directory relates to healthcare provider data quality and validation" width="1200" height="630" loading="lazy">
+    
+ <figcaption>How NPI verification ensures data accuracy for healthcare provider records.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -351,7 +357,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How accurate are provider directories?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the source. CMS has found 30-50% error rates in insurance company directories. NPPES is more reliable for identity data but has outdated addresses. Commercial vendors with active verification typically achieve 85-95% accuracy on key fields."}}, {"@type": "Question", "name": "Is NPPES a provider directory?", "acceptedAnswer": {"@type": "Answer", "text": "NPPES functions as the national provider identity directory. It contains every NPI-assigned provider's basic information. However, it lacks the enriched contact data (emails, direct phones) and practice details that B2B teams need, so it's a starting point rather than a complete sales directory."}}, {"@type": "Question", "name": "Why are insurance provider directories so inaccurate?", "acceptedAnswer": {"@type": "Answer", "text": "Insurance directories rely on providers to self-report and update their information, which many don't do regularly. Providers join and leave networks frequently. The administrative burden of updating multiple directories means many changes go unreported for months or years."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">How accurate are provider directories?</summary>

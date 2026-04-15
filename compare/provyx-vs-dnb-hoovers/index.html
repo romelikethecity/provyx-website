@@ -98,13 +98,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -335,6 +335,12 @@
 <!-- Data Sources -->
 <section class="content-section">
     <div class="container">
+    
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases compared to D&B Hoovers" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline vs D&B Hoovers: how provider records are sourced and verified.</figcaption>
+    </figure>
     </div>
 </section>
 
@@ -457,7 +463,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does D&B Hoovers include NPI numbers for healthcare providers?", "acceptedAnswer": {"@type": "Answer", "text": "No. D&B Hoovers uses DUNS numbers to identify business entities, not NPI numbers to identify healthcare providers. If your workflow requires NPI-verified provider records (which most healthcare sales processes do), you need a data source that starts with the NPI Registry, like Provyx."}}, {"@type": "Question", "name": "Can I filter D&B Hoovers by medical specialty?", "acceptedAnswer": {"@type": "Answer", "text": "Hoovers lets you filter by SIC and NAICS industry codes, which classify businesses into broad categories like 'Offices of Physicians' or 'Offices of Dentists.' These codes don't distinguish between clinical specialties. A dermatologist and a cardiologist both fall under the same SIC code. For specialty-level filtering, you need NUCC taxonomy codes, which Provyx provides on every record."}}, {"@type": "Question", "name": "Is D&B Hoovers good for healthcare sales teams?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on what you need. Hoovers provides firmographic data (revenue, employee count, corporate linkage) that healthcare-specific databases often lack. But it doesn't include NPI numbers, clinical specialty codes, or provider-level records. For teams that need both firmographic context and provider-level detail, combining Hoovers with a healthcare data source like Provyx covers both needs."}}, {"@type": "Question", "name": "How does D&B Hoovers pricing compare to Provyx?", "acceptedAnswer": {"@type": "Answer", "text": "D&B Hoovers annual contracts typically run $10,000-50,000+ per year depending on user count and data access level. Provyx uses pay-per-record pricing with no annual commitment. For teams that sell exclusively into healthcare, Provyx's model is usually more cost-effective because you're paying only for healthcare records, not a multi-industry platform subscription."}}, {"@type": "Question", "name": "What's the biggest advantage Provyx has over D&B Hoovers for healthcare?", "acceptedAnswer": {"@type": "Answer", "text": "NPI verification and NUCC taxonomy codes. Every Provyx record is tied to a verified National Provider Identifier and classified by clinical specialty. D&B Hoovers doesn't include either of these healthcare-specific identifiers. For teams that need to target specific provider types and confirm records represent active, licensed clinicians, these identifiers are foundational."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Does D&B Hoovers include NPI numbers for healthcare providers?</summary>

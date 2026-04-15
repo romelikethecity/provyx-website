@@ -117,13 +117,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -344,6 +344,12 @@
 
     <section class="content-section">
         <div class="container" style="max-width:800px">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/npi-data-verification-process.svg" alt="NPI data verification process showing how PECOS relates to healthcare provider data quality and validation" width="1200" height="630" loading="lazy">
+    
+ <figcaption>How NPI verification ensures data accuracy for healthcare provider records.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -351,7 +357,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is PECOS data publicly available?", "acceptedAnswer": {"@type": "Answer", "text": "Partially. CMS publishes enrollment and reassignment data through the Medicare Provider Enrollment files, but the full PECOS database is not publicly searchable in the same way NPPES is. Some data is available through the Medicare Provider Use and Payment Data files."}}, {"@type": "Question", "name": "What is the difference between NPPES and PECOS?", "acceptedAnswer": {"@type": "Answer", "text": "NPPES assigns NPI numbers and maintains the provider identity registry. PECOS manages Medicare enrollment and billing eligibility. A provider needs an NPI first (from NPPES), then enrolls in Medicare through PECOS to bill Medicare."}}, {"@type": "Question", "name": "How do you check if a provider is enrolled in PECOS?", "acceptedAnswer": {"@type": "Answer", "text": "CMS provides online verification through the Medicare Provider Enrollment portal. Some data vendors also include PECOS enrollment status as an enrichment field in their provider databases."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Is PECOS data publicly available?</summary>

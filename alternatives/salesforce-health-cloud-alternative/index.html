@@ -72,13 +72,13 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/css/styles.min.css?v=12" as="style">
+    <link rel="preload" href="/css/styles.min.css?v=13" as="style">
 
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.min.css?v=12">
+    <link rel="stylesheet" href="/css/styles.min.css?v=13">
 
     <!-- Google Analytics 4 with Consent Mode v2 -->
     <script>
@@ -435,6 +435,12 @@
     <!-- Data Sources Pipeline -->
     <section class="content-section">
         <div class="container">
+        
+    <figure class="content-figure">
+    <img src="/assets/images/content/healthcare-data-sources.svg" alt="Healthcare data sources pipeline showing how Provyx aggregates NPI registry, state boards, and commercial databases as an alternative to Salesforce Health Cloud" width="1200" height="630" loading="lazy">
+    
+ <figcaption>Provyx multi-source data pipeline: an alternative to Salesforce Health Cloud for healthcare provider data.</figcaption>
+    </figure>
         </div>
     </section>
 
@@ -497,7 +503,7 @@
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Salesforce Health Cloud come with provider data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Health Cloud is a CRM platform with healthcare-specific data models and tools. It doesn't include provider contact data. You need a separate data source to populate it. This is a common misconception that leads teams to budget for Health Cloud without budgeting for data."}}, {"@type": "Question", "name": "Can I use Provyx data in standard Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Provyx delivers CSV files that import into any Salesforce edition. Add custom fields for NPI number and taxonomy code, import the file, and your reps have NPI-verified provider records in their existing Salesforce org. No Health Cloud upgrade needed."}}, {"@type": "Question", "name": "Is Salesforce Health Cloud worth it for B2B sales to providers?", "acceptedAnswer": {"@type": "Answer", "text": "For most B2B healthcare sales teams, no. Health Cloud's value is in patient relationship management, care coordination, and clinical data models. If your use case is outbound sales to healthcare providers, standard Salesforce (or any CRM) plus a provider data source like Provyx is simpler and significantly cheaper."}}, {"@type": "Question", "name": "How much does Provyx save compared to Health Cloud?", "acceptedAnswer": {"@type": "Answer", "text": "A 10-person team on Health Cloud Enterprise pays $39,000/year in CRM fees alone, before data, implementation, or consulting. The same team using their existing CRM plus Provyx data typically saves 60-80% while getting the same provider contact data quality."}}, {"@type": "Question", "name": "What if my team already has Salesforce Health Cloud?", "acceptedAnswer": {"@type": "Answer", "text": "You can still use Provyx. Import Provyx data into Health Cloud to populate your provider records. Many teams with Health Cloud use external data sources because Health Cloud doesn't include data. Provyx records map cleanly to Health Cloud's provider data model."}}, {"@type": "Question", "name": "How does migrating from Health Cloud affect my existing Salesforce data?", "acceptedAnswer": {"@type": "Answer", "text": "If you're not actually leaving Salesforce, there's nothing to migrate. Most teams evaluating Health Cloud alternatives aren't switching CRMs. They're deciding whether to upgrade to Health Cloud or stay on standard Salesforce with a separate data provider. If you already have Health Cloud and want to downgrade, your Salesforce admin can export your data and recreate the relevant custom objects in standard Salesforce. The provider data itself transfers cleanly since it's just contact and account records with custom fields."}}, {"@type": "Question", "name": "How fresh is Provyx data compared to what I'd put in Health Cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Provyx refreshes its NPI registry data in sync with the NPPES weekly update cycle. Practice contact details from business listings and commercial databases are updated on a rolling basis, with most records refreshed within a 90-day window. Since Health Cloud doesn't come with data, it's only as fresh as whatever source you use to populate it. Teams using Provyx as that source get records timestamped with their last verification date."}}]}</script>
         <section class="section faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="section__title">Frequently Asked Questions</h2>
                 
                 <details class="faq-item">
                     <summary class="faq-item__question">Does Salesforce Health Cloud come with provider data?</summary>
