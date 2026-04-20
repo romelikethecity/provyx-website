@@ -980,6 +980,18 @@ img {
 }
 
 /* Testimonial styling */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .testimonial {
   padding: var(--space-xl);
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(14, 165, 233, 0.03) 100%);
